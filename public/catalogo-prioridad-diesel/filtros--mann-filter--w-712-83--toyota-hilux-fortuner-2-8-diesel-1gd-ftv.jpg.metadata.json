@@ -1,0 +1,28 @@
+{
+  "product_name": "Filtro de aceite MANN-FILTER W 712/83",
+  "reference": "W 712/83",
+  "brand": "MANN-FILTER",
+  "category": "Filtros",
+  "vehicle_fitment": "Toyota Hilux / Fortuner 2.8 diésel 1GD-FTV (2015+)",
+  "engine": "1GD-FTV",
+  "position": "Motor",
+  "price_cop": 119900,
+  "price_type": "precio_sugerido_web_no_cotizacion",
+  "specifications": {
+    "diametro_exterior_mm": 76,
+    "altura_mm": 79,
+    "rosca": "3/4-16 UNF",
+    "valvula_bypass": true,
+    "valvula_antirretorno": true
+  },
+  "oe": [
+    "Toyota 90915-YZZD2",
+    "Toyota 90915-YZZD4"
+  ],
+  "source_image_url": "https://s7g10.scene7.com/is/image/mannhummel/W_712.83-filter-with-box",
+  "source_technical_url": "https://www.mann-filter.com/en/catalog/search-results/product.html/w712/83_mann-filter.html",
+  "retrieved_at": "2026-08-12",
+  "image_exact": true,
+  "confidence": "alta",
+  "copyright_notice": "Imagen del fabricante o distribuidor citado; revisar autorización de publicación comercial."
+}

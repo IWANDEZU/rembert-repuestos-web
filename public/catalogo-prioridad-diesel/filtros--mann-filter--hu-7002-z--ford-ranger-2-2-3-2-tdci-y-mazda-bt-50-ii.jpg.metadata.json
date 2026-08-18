@@ -1,0 +1,28 @@
+{
+  "product_name": "Filtro de aceite MANN-FILTER HU 7002 z",
+  "reference": "HU 7002 z",
+  "brand": "MANN-FILTER",
+  "category": "Filtros",
+  "vehicle_fitment": "Ford Ranger 2.2 / 3.2 TDCi y Mazda BT-50 II (2011+)",
+  "engine": "T22DD0P / P5-AT",
+  "position": "Motor",
+  "price_cop": 129900,
+  "price_type": "precio_sugerido_web_no_cotizacion",
+  "specifications": {
+    "diametro_exterior_mm": 64,
+    "diametro_interior_mm": 31,
+    "altura_mm": 69,
+    "incluye_junta": true
+  },
+  "oe": [
+    "Ford BB3Q-6744-BA",
+    "Ford 1720612",
+    "Mazda U2Y0-14302"
+  ],
+  "source_image_url": "https://s7g10.scene7.com/is/image/mannhummel/HU_7002_z-filter-with-box-1",
+  "source_technical_url": "https://www.mann-filter.com/es/catalogo/resultados-de-busqueda/producto.html/hu7002z_mann-filter.html",
+  "retrieved_at": "2026-08-12",
+  "image_exact": true,
+  "confidence": "alta",
+  "copyright_notice": "Imagen del fabricante o distribuidor citado; revisar autorización de publicación comercial."
+}

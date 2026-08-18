@@ -1,0 +1,26 @@
+{
+  "product_name": "Filtro de aire MANN-FILTER C 33 017",
+  "reference": "C 33 017",
+  "brand": "MANN-FILTER",
+  "category": "Filtros",
+  "vehicle_fitment": "Toyota Hilux / Fortuner 2.8 diésel 1GD-FTV (2015+)",
+  "engine": "1GD-FTV",
+  "position": "Admisión",
+  "price_cop": 149900,
+  "price_type": "precio_sugerido_web_no_cotizacion",
+  "specifications": {
+    "largo_mm": 323,
+    "ancho_mm": 240,
+    "alto_mm": 58
+  },
+  "oe": [
+    "Toyota 17801-0L040",
+    "Toyota 17801-0L050"
+  ],
+  "source_image_url": "https://s7g10.scene7.com/is/image/mannhummel/C_33_017",
+  "source_technical_url": "https://www.mann-filter.com/us-es/catalogo/resultados-de-la-busqueda/producto.html/c33017_mann-filter.html",
+  "retrieved_at": "2026-08-12",
+  "image_exact": true,
+  "confidence": "alta",
+  "copyright_notice": "Imagen del fabricante o distribuidor citado; revisar autorización de publicación comercial."
+}

@@ -1,0 +1,28 @@
+{
+  "product_name": "Filtro de cabina MANN-FILTER CU 24 006",
+  "reference": "CU 24 006",
+  "brand": "MANN-FILTER",
+  "category": "Filtros",
+  "vehicle_fitment": "Ford Ranger 2.2 / 3.2 TDCi y Mazda BT-50 II (2011+)",
+  "engine": "Varios",
+  "position": "Cabina",
+  "price_cop": 109900,
+  "price_type": "precio_sugerido_web_no_cotizacion",
+  "specifications": {
+    "largo_mm": 215,
+    "ancho_mm": 234,
+    "alto_mm": 30,
+    "medio": "Partículas"
+  },
+  "oe": [
+    "Ford AB39-19N619-AA",
+    "Ford 1718237",
+    "Mazda UCY0-61-P11"
+  ],
+  "source_image_url": "https://s7g10.scene7.com/is/image/mannhummel/CU_24_006",
+  "source_technical_url": "https://www.mann-filter.com/en/catalog/search-results/product.html/cu24006_mann-filter.html",
+  "retrieved_at": "2026-08-12",
+  "image_exact": true,
+  "confidence": "alta",
+  "copyright_notice": "Imagen del fabricante o distribuidor citado; revisar autorización de publicación comercial."
+}

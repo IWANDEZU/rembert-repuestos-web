@@ -39,3 +39,20 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+/src/generated/prisma
+
+.vercel
+.env*
+dev.db
+*.db
+*.bat
+live-marcas*.html
+partmo-home.html
+filter-section-live.png
+download-logos.js
+repositorio-1/
+.agents/
+.claude/
+.windsurf/
+skills-lock.json

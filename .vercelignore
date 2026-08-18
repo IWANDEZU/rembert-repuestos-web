@@ -1,0 +1,14 @@
+# Credentials are configured in Vercel's encrypted environment-variable store.
+.env
+.env.*
+
+# Local-only build and development artifacts.
+.next
+node_modules
+dev.db
+repositorio-1
+
+# Local agent/editor state.
+.agents
+.claude
+.windsurf

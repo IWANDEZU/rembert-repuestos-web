@@ -1,0 +1,26 @@
+{
+  "product_name": "Filtro de combustible diésel MANN-FILTER PU 9008 z",
+  "reference": "PU 9008 z",
+  "brand": "MANN-FILTER",
+  "category": "Filtros",
+  "vehicle_fitment": "Ford Ranger 2.2 / 3.2 TDCi y Mazda BT-50 II (2011+)",
+  "engine": "T22DD0P / P5-AT",
+  "position": "Combustible",
+  "price_cop": 259900,
+  "price_type": "precio_sugerido_web_no_cotizacion",
+  "specifications": {
+    "tipo": "Elemento filtrante",
+    "combustible": "Diésel"
+  },
+  "oe": [
+    "Ford AB39-9176-AC",
+    "Ford 1725552",
+    "Mazda U2Y0-13-ZA5"
+  ],
+  "source_image_url": "https://s7g10.scene7.com/is/image/mannhummel/PU_9008_z",
+  "source_technical_url": "https://www.mann-filter.com/es/catalogo/resultados-de-busqueda/producto.html/pu9008z_mann-filter.html",
+  "retrieved_at": "2026-08-12",
+  "image_exact": true,
+  "confidence": "alta",
+  "copyright_notice": "Imagen del fabricante o distribuidor citado; revisar autorización de publicación comercial."
+}

@@ -1,0 +1,23 @@
+{
+  "product_name": "Strut de gas Gabriel USA79313-A",
+  "reference": "USA79313-A",
+  "brand": "Gabriel",
+  "category": "Suspensión",
+  "vehicle_fitment": "Volkswagen Amarok 2.0 RWD / 4WD (2011-2016)",
+  "engine": "2.0",
+  "position": "Delantero, derecho o izquierdo",
+  "price_cop": 289900,
+  "price_type": "precio_sugerido_web_no_cotizacion",
+  "specifications": {
+    "tipo_catalogo": "S",
+    "atributo": "Gas",
+    "carroceria": "Crew Cab Pickup"
+  },
+  "oe": [],
+  "source_image_url": "https://miautoparte.com/cdn/shop/files/usa79313_0_2048x2048.jpg",
+  "source_technical_url": "https://www.gabriel.com.mx/fileadmin/gabrielmexico/img/doc/CATALOGO_SL_2026_FINAL_DIGITAL_1.pdf",
+  "retrieved_at": "2026-08-12",
+  "image_exact": true,
+  "confidence": "alta",
+  "copyright_notice": "Imagen del fabricante o distribuidor citado; revisar autorización de publicación comercial."
+}

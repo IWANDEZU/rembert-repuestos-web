@@ -1,0 +1,27 @@
+{
+  "product_name": "Filtro de aire MANN-FILTER C 22 024",
+  "reference": "C 22 024",
+  "brand": "MANN-FILTER",
+  "category": "Filtros",
+  "vehicle_fitment": "Ford Ranger 2.2 / 3.2 TDCi y Mazda BT-50 II (2011+)",
+  "engine": "T22DD0P / P5-AT",
+  "position": "Admisión",
+  "price_cop": 169900,
+  "price_type": "precio_sugerido_web_no_cotizacion",
+  "specifications": {
+    "largo_mm": 222,
+    "ancho_mm": 135,
+    "alto_mm": 138
+  },
+  "oe": [
+    "Ford AB39-9601-AB",
+    "Ford 1720719",
+    "Mazda U2Y0-13-Z40"
+  ],
+  "source_image_url": "https://s7g10.scene7.com/is/image/mannhummel/C_22_024",
+  "source_technical_url": "https://www.mann-filter.com/mx-es/catalogo/resultados-de-la-busqueda/producto.html/c22024_mann-filter.html",
+  "retrieved_at": "2026-08-12",
+  "image_exact": true,
+  "confidence": "alta",
+  "copyright_notice": "Imagen del fabricante o distribuidor citado; revisar autorización de publicación comercial."
+}

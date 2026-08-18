@@ -1,29 +1,161 @@
 import { Inter } from "next/font/google";
+import Image from "next/image";
+import Link from "next/link";
 import "./globals.css";
+import { CartProvider } from "@/components/CartContext";
+import CartIcon from "@/components/CartIcon";
+import UserMenu from "@/components/UserMenu";
+import AuthProvider from "@/components/AuthProvider";
+import ContactSidebar from "@/components/ContactSidebar";
+import CartDrawer from "@/components/CartDrawer";
+import SearchBar from "@/components/SearchBar";
+import CookieConsent from "@/components/CookieConsent";
+import { siteUrl } from "@/lib/site";
+import { Analytics } from '@vercel/analytics/next';
 
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700", "900"],
+  weight: ["400", "500", "600", "700"],
 });
 
+const baseUrl = siteUrl;
+
 export const metadata = {
-  title: "Victor Services | Lubricantes y Filtros",
-  description: "Multiservicios Victor Services Barrancabermeja - Lubricantes y filtros para motores diésel y gasolina.",
+  metadataBase: new URL(baseUrl),
+  title: {
+    default: "Victor Services | Lubricantes y Filtros en Barrancabermeja",
+    template: "%s | Victor Services",
+  },
+  description:
+    "Multiservicios Victor Services en Barrancabermeja, Santander. Venta de lubricantes y filtros de motor para autos, camiones, motores diésel y gasolina. Envíos a todo Colombia.",
+  keywords: [
+    "lubricantes Barrancabermeja",
+    "filtros de aceite Santander",
+    "WIX filters Colombia",
+    "Terpel Oiltec",
+    "Shell Rimula",
+    "Mobil Delvac 15W40",
+    "Castrol Edge",
+    "repuestos motores diésel",
+    "maquinaria pesada Barrancabermeja",
+    "cambio de aceite Barrancabermeja",
+  ],
+  authors: [{ name: "Victor Services", url: baseUrl }],
+  creator: "Victor Services",
+  publisher: "Victor Services",
+  formatDetection: {
+    email: false,
+    address: true,
+    telephone: true,
+  },
+  alternates: {
+    canonical: "/",
+  },
+  icons: {
+    icon: "/logo.png",
+    shortcut: "/logo.png",
+    apple: "/logo.png",
+  },
+  openGraph: {
+    title: "Victor Services | Lubricantes y Filtros en Barrancabermeja",
+    description:
+      "Venta especializada de lubricantes, filtros y repuestos para motores diésel y gasolina en Barrancabermeja. Envíos nacionales.",
+    url: baseUrl,
+    siteName: "Victor Services",
+    locale: "es_CO",
+    type: "website",
+    images: [
+      {
+        url: "/logo.png",
+        width: 800,
+        height: 800,
+        alt: "Multiservicios Victor Services Barrancabermeja Logo",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Victor Services | Lubricantes y Filtros",
+    description: "Venta de lubricantes y filtros para motores diésel y gasolina en Barrancabermeja, Colombia.",
+    images: ["/logo.png"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+};
+
+const jsonLdSchema = {
+  "@context": "https://schema.org",
+  "@type": "AutoPartsStore",
+  "name": "Multiservicios Victor Services",
+  "url": baseUrl,
+  "logo": `${baseUrl}/logo.png`,
+  "image": `${baseUrl}/logo.png`,
+  "telephone": "+573108737354",
+  "email": "contacto@victorservicesas.com",
+  "sameAs": [
+    "https://www.facebook.com/profile.php?id=61557618591007",
+    "https://wa.me/573108737354"
+  ],
+  "hasMap": "https://maps.google.com/?q=Victor+Services+Barrancabermeja",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Barrancabermeja",
+    "addressLocality": "Barrancabermeja",
+    "addressRegion": "Santander",
+    "addressCountry": "CO",
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 7.0653,
+    "longitude": -73.8547,
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opens": "08:00",
+      "closes": "18:00",
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Saturday",
+      "opens": "08:00",
+      "closes": "14:00",
+    },
+  ],
+  "priceRange": "$$",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="es" className={`${inter.variable}`}>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdSchema) }}
+        />
+      </head>
       <body>
+        <AuthProvider>
+        <CartProvider>
         {/* Top Bar */}
         <div className="top-bar">
-          <div style={{ display: 'flex', gap: '1.5rem' }}>
-            <span>📞 +57 300 000 0000</span>
-            <span>💬 Escríbenos por WhatsApp</span>
+          <div style={{ display: 'flex', gap: '1.5rem', alignItems: 'center' }}>
+            {/* Topbar despejado para estética más limpia */}
+            <span>Bienvenido a Victor Services</span>
           </div>
-          <div>
-            <span>🚚 Envíos a todo Colombia</span>
+          <div style={{ display: 'flex', gap: '1.5rem', alignItems: 'center' }}>
+            <span style={{ fontWeight: 'bold' }}>🚚 Envíos a todo Colombia</span>
           </div>
         </div>
 
@@ -31,57 +163,70 @@ export default function RootLayout({ children }) {
         <nav className="navbar">
           <div className="navbar__main main-container">
             {/* Brand / Logo */}
-            <a href="/" className="navbar__brand">
-              <img src="/logo.png" alt="Victor Services Logo" style={{ width: '70px', height: '70px', objectFit: 'contain', borderRadius: '50%' }} />
+            <Link href="/" className="navbar__brand">
+              <Image src="/logo.png" alt="Victor Services Logo" width={70} height={70} sizes="70px" style={{ objectFit: 'contain', borderRadius: '50%' }} />
               <div className="navbar__title">
                 <small>MULTISERVICIOS</small>
                 <strong>VICTOR SERVICES</strong>
                 <small style={{ color: '#fff' }}>BARRANCABERMEJA</small>
               </div>
-            </a>
+            </Link>
 
             {/* Search */}
-            <div className="navbar__search">
-              <input type="text" placeholder="Buscar por producto, marca o referencia..." />
-              <button>🔍</button>
-            </div>
+            <SearchBar />
+
 
             {/* Actions */}
-            <div className="navbar__actions">
-              <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                <span style={{ fontSize: '1.2rem' }}>👤</span>
-                <span>Mi cuenta</span>
-              </div>
-              <a href="/admin/dashboard" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                <span style={{ fontSize: '1.2rem', color: 'var(--primary-color)' }}>⚙️</span>
-                <span>CRM Admin</span>
-              </a>
-              <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', position: 'relative' }}>
-                <span style={{ fontSize: '1.2rem' }}>🛒</span>
-                <span>Carrito</span>
-                <span style={{ position: 'absolute', top: '-5px', right: '5px', background: 'var(--primary-color)', color: 'white', borderRadius: '50%', padding: '2px 6px', fontSize: '0.7rem' }}>2</span>
-              </div>
-            </div>
+            <UserMenu />
           </div>
 
           {/* Bottom Menu */}
           <ul className="navbar__menu main-container">
-            <li><a href="/" className="navbar__link active">INICIO</a></li>
-            <li><a href="/catalogo" className="navbar__link">LUBRICANTES ⌄</a></li>
-            <li><a href="/catalogo" className="navbar__link">FILTROS ⌄</a></li>
-            <li><a href="/marcas" className="navbar__link">MARCAS</a></li>
-            <li><a href="/nosotros" className="navbar__link">NOSOTROS</a></li>
-            <li><a href="/blog" className="navbar__link">BLOG TÉCNICO</a></li>
-            <li><a href="/contacto" className="navbar__link">CONTACTO</a></li>
+            <li><Link href="/" className="navbar__link">INICIO</Link></li>
+            <li><Link href="/catalogo?category=lubricantes" className="navbar__link">LUBRICANTES</Link></li>
+            <li><Link href="/catalogo?category=filtros" className="navbar__link">FILTROS</Link></li>
+            <li><Link href="/catalogo?category=frenos-y-suspension" className="navbar__link">FRENOS Y SUSPENSIÓN</Link></li>
+            <li><Link href="/marcas" className="navbar__link">MARCAS</Link></li>
+            <li><Link href="/nosotros" className="navbar__link">NOSOTROS</Link></li>
+            <li><Link href="/blog" className="navbar__link">BLOG TÉCNICO</Link></li>
+            <li><Link href="/contacto" className="navbar__link">CONTACTO</Link></li>
           </ul>
         </nav>
 
         {children}
 
-        <footer className="footer">
+        <footer className="footer" style={{ textAlign: 'center', padding: '3rem 1rem', background: '#111', color: '#999' }}>
+          <div style={{ display: 'flex', justifyContent: 'center', gap: '2rem', marginBottom: '1.5rem' }}>
+            <a href="https://www.facebook.com/profile.php?id=61557618591007" target="_blank" rel="noreferrer" style={{ color: '#1877F2', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '1.1rem' }}>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#1877F2" width="20" height="20"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.469h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.469h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg> Facebook
+            </a>
+            <a href="https://wa.me/573108737354" target="_blank" rel="noreferrer" style={{ color: '#fff', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '1.1rem' }}>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#25D366" width="20" height="20"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg> WhatsApp
+            </a>
+            <a href="mailto:contacto@victorservicesas.com" style={{ color: '#fff', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '1.1rem' }}>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#EA4335" width="20" height="20"><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></svg> Email
+            </a>
+            <a href="https://maps.google.com/?q=Victor+Services+Barrancabermeja" target="_blank" rel="noreferrer" style={{ color: '#fff', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '1.1rem' }}>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#34A853" width="20" height="20"><path d="M12 0C7.589 0 4 3.589 4 8c0 4.274 7.219 15.184 7.633 15.82a.498.498 0 00.734 0C12.781 23.184 20 12.274 20 8c0-4.411-3.589-8-8-8zm0 11.5a3.5 3.5 0 110-7 3.5 3.5 0 010 7z"/></svg> Ubicación
+            </a>
+          </div>
+          <nav aria-label="Información legal" style={{ display: 'flex', justifyContent: 'center', gap: '1rem', flexWrap: 'wrap', fontSize: '0.88rem', marginBottom: '1rem' }}>
+            <Link href="/politica-privacidad">Tratamiento de datos</Link>
+            <Link href="/politica-cookies">Cookies</Link>
+            <Link href="/terminos-y-condiciones">Términos y condiciones</Link>
+            <Link href="/eliminar-datos">Eliminar cuenta y datos</Link>
+          </nav>
           <p>&copy; {new Date().getFullYear()} Multiservicios Victor Services. Barrancabermeja, Colombia.</p>
-          <p style={{ marginTop: '0.5rem', color: '#666' }}>Plataforma Web + CRM conectada</p>
+          <p style={{ marginTop: '0.5rem', color: '#666', fontSize: '0.9rem' }}>
+            Sitio web creado por <a href="https://crk-publicity.pages.dev/" target="_blank" rel="noreferrer" style={{ color: 'var(--primary-color)', textDecoration: 'none', fontWeight: 'bold' }}>CRK Publicity</a>
+          </p>
         </footer>
+        <ContactSidebar />
+        <CartDrawer />
+        <CookieConsent />
+        <Analytics />
+        </CartProvider>
+        </AuthProvider>
       </body>
     </html>
   );

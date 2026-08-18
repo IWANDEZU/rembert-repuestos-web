@@ -1,0 +1,25 @@
+{
+  "product_name": "Filtro de combustible diésel MANN-FILTER PU 9023 z",
+  "reference": "PU 9023 z",
+  "brand": "MANN-FILTER",
+  "category": "Filtros",
+  "vehicle_fitment": "Toyota Hilux / Fortuner 2.8 diésel 1GD-FTV (2015+)",
+  "engine": "1GD-FTV",
+  "position": "Combustible",
+  "price_cop": 239900,
+  "price_type": "precio_sugerido_web_no_cotizacion",
+  "specifications": {
+    "diametro_exterior_mm": 90,
+    "diametro_interior_mm": 24.7,
+    "altura_mm": 106.7
+  },
+  "oe": [
+    "Toyota 23390-0L041"
+  ],
+  "source_image_url": "https://s7g10.scene7.com/is/image/mannhummel/PU_9023_z",
+  "source_technical_url": "https://www.mann-filter.com/br-pt/catalogo/resultados-da-pesquisa/produto.html/pu9023z_mann-filter.html",
+  "retrieved_at": "2026-08-12",
+  "image_exact": true,
+  "confidence": "alta",
+  "copyright_notice": "Imagen del fabricante o distribuidor citado; revisar autorización de publicación comercial."
+}

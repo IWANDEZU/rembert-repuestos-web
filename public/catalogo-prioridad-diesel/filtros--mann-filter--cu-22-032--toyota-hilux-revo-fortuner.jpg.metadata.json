@@ -1,0 +1,27 @@
+{
+  "product_name": "Filtro de cabina MANN-FILTER CU 22 032",
+  "reference": "CU 22 032",
+  "brand": "MANN-FILTER",
+  "category": "Filtros",
+  "vehicle_fitment": "Toyota Hilux Revo / Fortuner (verificar año por VIN)",
+  "engine": "Varios",
+  "position": "Cabina, detrás de guantera",
+  "price_cop": 109900,
+  "price_type": "precio_sugerido_web_no_cotizacion",
+  "specifications": {
+    "largo_mm": 216,
+    "ancho_mm": 185,
+    "alto_mm": 30,
+    "medio": "Partículas"
+  },
+  "oe": [
+    "Toyota 87139-0K060",
+    "Toyota 87139-0K090"
+  ],
+  "source_image_url": "https://s7g10.scene7.com/is/image/mannhummel/CU_22_032",
+  "source_technical_url": "https://www.mann-filter.com/ca-en/catalog/search-results/product.html/cu22032_mann-filter.html",
+  "retrieved_at": "2026-08-12",
+  "image_exact": true,
+  "confidence": "alta",
+  "copyright_notice": "Imagen del fabricante o distribuidor citado; revisar autorización de publicación comercial."
+}
