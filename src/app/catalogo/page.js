@@ -329,14 +329,14 @@ export default async function Catalogo({ searchParams }) {
     conditions.push({
       OR: [
         { category: { slug: { in: categorySlugs } } },
-        { name: { contains: "Aceite", mode: "insensitive" } },
-        { name: { contains: "Lubricante", mode: "insensitive" } },
-        { name: { contains: "Grasa", mode: "insensitive" } },
+        { name: { contains: "Aceite" } },
+        { name: { contains: "Lubricante" } },
+        { name: { contains: "Grasa" } },
       ],
     });
     conditions.push({
       NOT: [
-        { name: { contains: "Filtro", mode: "insensitive" } },
+        { name: { contains: "Filtro" } },
         { category: { slug: "filtros" } },
         { category: { slug: "frenos-y-suspension" } },
       ],
@@ -345,76 +345,76 @@ export default async function Catalogo({ searchParams }) {
     conditions.push({
       OR: [
         { category: { slug: "lubricantes-diesel" } },
-        { name: { contains: "Delvac", mode: "insensitive" } },
-        { name: { contains: "Delo", mode: "insensitive" } },
-        { name: { contains: "Rimula", mode: "insensitive" } },
-        { name: { contains: "Premium Blue", mode: "insensitive" } },
-        { name: { contains: "Diesel", mode: "insensitive" } },
-        { name: { contains: "Diésel", mode: "insensitive" } },
-        { name: { contains: "DEO", mode: "insensitive" } },
+        { name: { contains: "Delvac" } },
+        { name: { contains: "Delo" } },
+        { name: { contains: "Rimula" } },
+        { name: { contains: "Premium Blue" } },
+        { name: { contains: "Diesel" } },
+        { name: { contains: "Diésel" } },
+        { name: { contains: "DEO" } },
       ],
     });
     conditions.push({
-      NOT: [{ name: { contains: "Filtro", mode: "insensitive" } }, { category: { slug: "filtros" } }],
+      NOT: [{ name: { contains: "Filtro" } }, { category: { slug: "filtros" } }],
     });
   } else if (categoryParam === "lubricantes-gasolina") {
     conditions.push({
       OR: [
         { category: { slug: "lubricantes-gasolina" } },
-        { name: { contains: "Gasolina", mode: "insensitive" } },
-        { name: { contains: "Edge", mode: "insensitive" } },
-        { name: { contains: "Magnatec", mode: "insensitive" } },
-        { name: { contains: "Molygen", mode: "insensitive" } },
+        { name: { contains: "Gasolina" } },
+        { name: { contains: "Edge" } },
+        { name: { contains: "Magnatec" } },
+        { name: { contains: "Molygen" } },
       ],
     });
     conditions.push({
-      NOT: [{ name: { contains: "Filtro", mode: "insensitive" } }, { category: { slug: "filtros" } }],
+      NOT: [{ name: { contains: "Filtro" } }, { category: { slug: "filtros" } }],
     });
   } else if (categoryParam === "transmision") {
     conditions.push({
       OR: [
         { category: { slug: "transmision" } },
-        { name: { contains: "Transmisión", mode: "insensitive" } },
-        { name: { contains: "Transmision", mode: "insensitive" } },
-        { name: { contains: "TDTO", mode: "insensitive" } },
-        { name: { contains: "Gear", mode: "insensitive" } },
-        { name: { contains: "80W-90", mode: "insensitive" } },
+        { name: { contains: "Transmisión" } },
+        { name: { contains: "Transmision" } },
+        { name: { contains: "TDTO" } },
+        { name: { contains: "Gear" } },
+        { name: { contains: "80W-90" } },
       ],
     });
   } else if (categoryParam === "hidraulico") {
     conditions.push({
       OR: [
         { category: { slug: "hidraulico" } },
-        { name: { contains: "Hidráulico", mode: "insensitive" } },
-        { name: { contains: "Hidraulico", mode: "insensitive" } },
-        { name: { contains: "HYDO", mode: "insensitive" } },
-        { name: { contains: "Tellus", mode: "insensitive" } },
+        { name: { contains: "Hidráulico" } },
+        { name: { contains: "Hidraulico" } },
+        { name: { contains: "HYDO" } },
+        { name: { contains: "Tellus" } },
       ],
     });
   } else if (categoryParam === "coolant") {
     conditions.push({
       OR: [
         { category: { slug: "coolant" } },
-        { name: { contains: "Coolant", mode: "insensitive" } },
-        { name: { contains: "Refrigerante", mode: "insensitive" } },
-        { name: { contains: "ELC", mode: "insensitive" } },
+        { name: { contains: "Coolant" } },
+        { name: { contains: "Refrigerante" } },
+        { name: { contains: "ELC" } },
       ],
     });
   } else if (categoryParam === "grasas-y-aditivos") {
     conditions.push({
       OR: [
         { category: { slug: "grasas-y-aditivos" } },
-        { name: { contains: "Grasa", mode: "insensitive" } },
-        { name: { contains: "Grease", mode: "insensitive" } },
-        { name: { contains: "Aditivo", mode: "insensitive" } },
+        { name: { contains: "Grasa" } },
+        { name: { contains: "Grease" } },
+        { name: { contains: "Aditivo" } },
       ],
     });
   } else if (categoryParam === "filtros") {
     const baseFilter = {
       OR: [
         { category: { slug: "filtros" } },
-        { name: { contains: "Filtro", mode: "insensitive" } },
-        { shortDesc: { contains: "Filtro", mode: "insensitive" } },
+        { name: { contains: "Filtro" } },
+        { shortDesc: { contains: "Filtro" } },
       ],
     };
     const typeTerms = {
@@ -427,8 +427,8 @@ export default async function Catalogo({ searchParams }) {
     if (typeTerms[tipoParam]) {
       conditions.push({
         OR: typeTerms[tipoParam].flatMap((term) => [
-          { name: { contains: term, mode: "insensitive" } },
-          { shortDesc: { contains: term, mode: "insensitive" } },
+          { name: { contains: term } },
+          { shortDesc: { contains: term } },
         ]),
       });
     }
@@ -436,11 +436,11 @@ export default async function Catalogo({ searchParams }) {
     conditions.push({
       OR: [
         { category: { slug: { in: ["frenos-y-suspension", "liquido-frenos"] } } },
-        { name: { contains: "Pastilla", mode: "insensitive" } },
-        { name: { contains: "Disco", mode: "insensitive" } },
-        { name: { contains: "Amortiguador", mode: "insensitive" } },
-        { name: { contains: "Freno", mode: "insensitive" } },
-        { name: { contains: "Strut", mode: "insensitive" } },
+        { name: { contains: "Pastilla" } },
+        { name: { contains: "Disco" } },
+        { name: { contains: "Amortiguador" } },
+        { name: { contains: "Freno" } },
+        { name: { contains: "Strut" } },
       ],
     });
   } else if (categoryParam === "maquinaria-pesada") {
@@ -448,20 +448,20 @@ export default async function Catalogo({ searchParams }) {
       OR: [
         { category: { slug: "maquinaria-pesada" } },
         { brand: { slug: "caterpillar" } },
-        { name: { contains: "Delvac", mode: "insensitive" } },
-        { name: { contains: "Delo", mode: "insensitive" } },
-        { name: { contains: "Rimula", mode: "insensitive" } },
-        { name: { contains: "Premium Blue", mode: "insensitive" } },
-        { description: { contains: "maquinaria", mode: "insensitive" } },
+        { name: { contains: "Delvac" } },
+        { name: { contains: "Delo" } },
+        { name: { contains: "Rimula" } },
+        { name: { contains: "Premium Blue" } },
+        { description: { contains: "maquinaria" } },
       ],
     });
   } else if (categoryParam === "urea") {
     conditions.push({
       OR: [
         { category: { slug: "urea" } },
-        { name: { contains: "Urea", mode: "insensitive" } },
-        { name: { contains: "AdBlue", mode: "insensitive" } },
-        { name: { contains: "DEF", mode: "insensitive" } },
+        { name: { contains: "Urea" } },
+        { name: { contains: "AdBlue" } },
+        { name: { contains: "DEF" } },
       ],
     });
   } else if (categoryParam) {
@@ -475,10 +475,10 @@ export default async function Catalogo({ searchParams }) {
   if (searchQuery) {
     conditions.push({
       OR: [
-        { name: { contains: searchQuery, mode: "insensitive" } },
-        { description: { contains: searchQuery, mode: "insensitive" } },
-        { shortDesc: { contains: searchQuery, mode: "insensitive" } },
-        { sku: { contains: searchQuery, mode: "insensitive" } },
+        { name: { contains: searchQuery } },
+        { description: { contains: searchQuery } },
+        { shortDesc: { contains: searchQuery } },
+        { sku: { contains: searchQuery } },
       ],
     });
   }
@@ -571,16 +571,7 @@ export default async function Catalogo({ searchParams }) {
     "Catálogo completo",
     "Repuestos, lubricantes y filtros para vehículos y maquinaria.",
   ];
-  const filterTypeLabels = {
-    aceite: "Aceite",
-    aire: "Aire",
-    combustible: "Combustible y Separadores",
-    cabina: "Cabina / Habitáculo",
-  };
-  if (categoryParam === "filtros" && tipoParam) {
-    const tipoLabel = filterTypeLabels[tipoParam] || tipoParam;
-    bannerSubtitle += ` Tipo: ${tipoLabel}.`;
-  }
+  if (categoryParam === "filtros" && tipoParam) bannerSubtitle += ` Tipo: ${tipoParam}.`;
   if (brandParam) {
     const brandName = brands.find((brand) => brand.slug === brandParam)?.name || brandParam;
     bannerTitle = `Productos ${brandName}`;

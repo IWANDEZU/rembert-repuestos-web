@@ -22,7 +22,7 @@ export default async function CatalogSidebar({
   sortParam,
 }) {
   const brands = await prisma.brand.findMany({ 
-    where: { slug: { notIn: ['vanssoil', 'caterpillar'] } },
+    where: { slug: { not: 'vanssoil' } },
     orderBy: { name: "asc" } 
   });
 
