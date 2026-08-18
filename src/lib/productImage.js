@@ -1,8 +1,8 @@
+import dieselCatalog from "@/data/catalogo-filtros-diesel.json";
+
 const REFERENCE_FILTER_BRANDS = new Set(["donsson", "partmo"]);
 
-// Fotografías verificadas de la referencia o línea del fabricante. Estas rutas
-// tienen prioridad sobre la tarjeta de referencia para evitar reutilizar una
-// imagen de otro filtro.
+// Fotografías verificadas de la referencia o línea del fabricante.
 const PRODUCT_IMAGE_OVERRIDES = {
   "donsson-wfp2075": "/catalogo-filtros-donsson/donsson-wfp2075-coolant.png",
   "donsson-hfp6510": "/catalogo-filtros-donsson/donsson-hfp6510-hidraulico.png",
@@ -10,6 +10,31 @@ const PRODUCT_IMAGE_OVERRIDES = {
   "partmo-a14616": "/catalogo-filtros-web/partmo-linea-tradicional-a58-a1402-a14616.jpg",
   "partmo-a58": "/catalogo-filtros-web/partmo-linea-tradicional-a58-a1402-a14616.jpg",
 };
+
+// Índice de imágenes verificadas del catálogo técnico diésel
+const DIESEL_CATALOG_IMAGES = new Map();
+if (Array.isArray(dieselCatalog)) {
+  for (const item of dieselCatalog) {
+    if (item.image && item.status === "ready") {
+      if (item.id) {
+        DIESEL_CATALOG_IMAGES.set(item.id.toLowerCase(), item.image);
+        DIESEL_CATALOG_IMAGES.set(item.id.toLowerCase().replace(/[-_]/g, ""), item.image);
+      }
+      if (item.sku) {
+        DIESEL_CATALOG_IMAGES.set(item.sku.toLowerCase().replace(/[-_]/g, ""), item.image);
+      }
+      if (item.reference) {
+        DIESEL_CATALOG_IMAGES.set(item.reference.toLowerCase().replace(/[-_]/g, ""), item.image);
+      }
+    }
+  }
+}
+
+const GENERIC_PLACEHOLDER_IMAGES = new Set([
+  "/filtro-aceite.jpg",
+  "/filtro-aire.png",
+  "/logo.png",
+]);
 
 const FILTER_TYPE_IMAGES = {
   aceite: "/catalogo-filtros-tipos/filtro-aceite.webp",
@@ -45,31 +70,51 @@ export function usesReferenceFilterImage(product) {
 }
 
 export function getProductDisplayImage(product) {
-  const storedImage = product?.images?.[0]?.url || product?.image || "/logo.png";
+  if (!product) return "/logo.png";
 
-  const verifiedImage = PRODUCT_IMAGE_OVERRIDES[product?.slug];
-  if (verifiedImage) return verifiedImage;
+  const slug = product?.slug ? String(product.slug).toLowerCase() : "";
+  const cleanSlug = slug.replace(/[-_]/g, "");
+  const sku = product?.sku ? String(product.sku).toLowerCase().replace(/[-_]/g, "") : "";
 
-  if (!usesReferenceFilterImage(product)) return storedImage;
-
-  const filterType = getFilterType(product.name);
-  if (filterType === "aire") {
-    const normalizedName = normalize(product.name);
-    const isRadial = ["cilindrico", "pesado", "primario", "secundario", "radial"].some((term) => normalizedName.includes(term));
-    return isRadial
-      ? "/catalogo-filtros-tipos/filtro-aire-radial.webp"
-      : "/catalogo-filtros-tipos/filtro-aire-panel.webp";
+  // 1. Fotografías verificadas manuales
+  if (slug && PRODUCT_IMAGE_OVERRIDES[slug]) {
+    return PRODUCT_IMAGE_OVERRIDES[slug];
   }
 
-  if (FILTER_TYPE_IMAGES[filterType]) return FILTER_TYPE_IMAGES[filterType];
+  // 2. Imagen extraída del catálogo técnico diésel (139 imágenes individuales)
+  const dieselImage =
+    DIESEL_CATALOG_IMAGES.get(slug) ||
+    DIESEL_CATALOG_IMAGES.get(cleanSlug) ||
+    (sku ? DIESEL_CATALOG_IMAGES.get(sku) : null);
+  if (dieselImage) {
+    return dieselImage;
+  }
 
-  const brand = normalize(product.brand?.slug || product.brand?.name || product.brand);
-  const reference = product.sku || product.slug || "filtro";
-  const params = new URLSearchParams({
-    brand,
-    reference,
-    type: filterType,
-  });
+  // 3. Imagen propia almacenada en BD (si no es un placeholder genérico obsoleto)
+  const storedImage = product?.images?.[0]?.url || product?.image;
+  if (storedImage && !GENERIC_PLACEHOLDER_IMAGES.has(storedImage)) {
+    return storedImage;
+  }
 
-  return `/api/imagen-referencia?${params.toString()}`;
+  // 4. Si es de una marca sin foto física, generar ficha técnica personalizada con el SKU / referencia
+  if (usesReferenceFilterImage(product)) {
+    const filterType = getFilterType(product.name);
+    const brand = normalize(product.brand?.slug || product.brand?.name || product.brand);
+    const reference = product.sku || product.slug || "filtro";
+    const params = new URLSearchParams({
+      brand,
+      reference,
+      type: filterType,
+    });
+    return `/api/imagen-referencia?${params.toString()}`;
+  }
+
+  // 5. Fallback por tipo o imagen almacenada
+  const filterType = getFilterType(product.name);
+  if (FILTER_TYPE_IMAGES[filterType]) {
+    return FILTER_TYPE_IMAGES[filterType];
+  }
+
+  return storedImage || "/logo.png";
 }
+
