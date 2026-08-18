@@ -6,6 +6,10 @@ const REFERENCE_FILTER_BRANDS = new Set(["donsson", "partmo"]);
 const PRODUCT_IMAGE_OVERRIDES = {
   "donsson-wfp2075": "/catalogo-filtros-donsson/donsson-wfp2075-coolant.png",
   "donsson-hfp6510": "/catalogo-filtros-donsson/donsson-hfp6510-hidraulico.png",
+  "donsson-fsp1280": "/catalogo-filtros-donsson/donsson-fsp1280-separador.jpg",
+  "donsson-fsp19727": "/catalogo-filtros-donsson/donsson-fsp19727-separador.jpg",
+  "donsson-afp25544": "/catalogo-filtros-donsson/donsson-afp25544-aire.jpg",
+  "donsson-afp25708": "/catalogo-filtros-donsson/donsson-afp25708-aire.jpg",
   "partmo-a1402": "/catalogo-filtros-web/partmo-linea-tradicional-a58-a1402-a14616.jpg",
   "partmo-a14616": "/catalogo-filtros-web/partmo-linea-tradicional-a58-a1402-a14616.jpg",
   "partmo-a58": "/catalogo-filtros-web/partmo-linea-tradicional-a58-a1402-a14616.jpg",

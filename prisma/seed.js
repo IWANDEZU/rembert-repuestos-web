@@ -1659,7 +1659,7 @@ async function main() {
       sku: 'DON-FSP1280',
       categoryId: catMaquinaria.id,
       brandId: brandDonsson.id,
-      images: { create: [{ url: '/filtro-aceite.jpg', isMain: true }] },
+      images: { create: [{ url: '/catalogo-filtros-donsson/donsson-fsp1280-separador.jpg', isMain: true }] },
       variants: {
         create: [
           { name: 'Unidad', price: 45000, stock: 35, sku: 'DON-FSP1280-UN' }
@@ -1678,7 +1678,7 @@ async function main() {
       sku: 'DON-FSP19727',
       categoryId: catMaquinaria.id,
       brandId: brandDonsson.id,
-      images: { create: [{ url: '/filtro-aceite.jpg', isMain: true }] },
+      images: { create: [{ url: '/catalogo-filtros-donsson/donsson-fsp19727-separador.jpg', isMain: true }] },
       variants: {
         create: [
           { name: 'Unidad', price: 65000, stock: 20, sku: 'DON-FSP19727-UN' }
@@ -1697,7 +1697,7 @@ async function main() {
       sku: 'DON-AFP25544',
       categoryId: catMaquinaria.id,
       brandId: brandDonsson.id,
-      images: { create: [{ url: '/02_wix_wa9906_filtro_aire.png', isMain: true }] },
+      images: { create: [{ url: '/catalogo-filtros-donsson/donsson-afp25544-aire.jpg', isMain: true }] },
       variants: {
         create: [
           { name: 'Unidad', price: 145000, stock: 15, sku: 'DON-AFP25544-UN' }
@@ -1716,7 +1716,7 @@ async function main() {
       sku: 'DON-AFP25708',
       categoryId: catMaquinaria.id,
       brandId: brandDonsson.id,
-      images: { create: [{ url: '/02_wix_wa9906_filtro_aire.png', isMain: true }] },
+      images: { create: [{ url: '/catalogo-filtros-donsson/donsson-afp25708-aire.jpg', isMain: true }] },
       variants: {
         create: [
           { name: 'Unidad', price: 185000, stock: 12, sku: 'DON-AFP25708-UN' }
