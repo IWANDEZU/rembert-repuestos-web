@@ -5,14 +5,53 @@ const REFERENCE_FILTER_BRANDS = new Set(["donsson", "partmo"]);
 // Fotografías verificadas de la referencia o línea del fabricante.
 const PRODUCT_IMAGE_OVERRIDES = {
   "donsson-wfp2075": "/catalogo-filtros-donsson/donsson-wfp2075-coolant.png",
+  "donsson-wfp-2075": "/catalogo-filtros-donsson/donsson-wfp2075-coolant.png",
+  "donssonwfp2075": "/catalogo-filtros-donsson/donsson-wfp2075-coolant.png",
+  "don-wfp2075": "/catalogo-filtros-donsson/donsson-wfp2075-coolant.png",
+  "wfp2075": "/catalogo-filtros-donsson/donsson-wfp2075-coolant.png",
+  "wfp-2075": "/catalogo-filtros-donsson/donsson-wfp2075-coolant.png",
+
   "donsson-hfp6510": "/catalogo-filtros-donsson/donsson-hfp6510-hidraulico.png",
+  "donsson-hfp-6510": "/catalogo-filtros-donsson/donsson-hfp6510-hidraulico.png",
+  "donssonhfp6510": "/catalogo-filtros-donsson/donsson-hfp6510-hidraulico.png",
+  "don-hfp6510": "/catalogo-filtros-donsson/donsson-hfp6510-hidraulico.png",
+  "hfp6510": "/catalogo-filtros-donsson/donsson-hfp6510-hidraulico.png",
+  "hfp-6510": "/catalogo-filtros-donsson/donsson-hfp6510-hidraulico.png",
+
   "donsson-fsp1280": "/catalogo-filtros-donsson/donsson-fsp1280-separador.jpg",
+  "donsson-fsp-1280": "/catalogo-filtros-donsson/donsson-fsp1280-separador.jpg",
+  "donssonfsp1280": "/catalogo-filtros-donsson/donsson-fsp1280-separador.jpg",
+  "don-fsp1280": "/catalogo-filtros-donsson/donsson-fsp1280-separador.jpg",
+  "fsp1280": "/catalogo-filtros-donsson/donsson-fsp1280-separador.jpg",
+  "fsp-1280": "/catalogo-filtros-donsson/donsson-fsp1280-separador.jpg",
+
   "donsson-fsp19727": "/catalogo-filtros-donsson/donsson-fsp19727-separador.jpg",
+  "donsson-fsp-19727": "/catalogo-filtros-donsson/donsson-fsp19727-separador.jpg",
+  "donssonfsp19727": "/catalogo-filtros-donsson/donsson-fsp19727-separador.jpg",
+  "don-fsp19727": "/catalogo-filtros-donsson/donsson-fsp19727-separador.jpg",
+  "fsp19727": "/catalogo-filtros-donsson/donsson-fsp19727-separador.jpg",
+  "fsp-19727": "/catalogo-filtros-donsson/donsson-fsp19727-separador.jpg",
+
   "donsson-afp25544": "/catalogo-filtros-donsson/donsson-afp25544-aire.jpg",
+  "donsson-afp-25544": "/catalogo-filtros-donsson/donsson-afp25544-aire.jpg",
+  "donssonafp25544": "/catalogo-filtros-donsson/donsson-afp25544-aire.jpg",
+  "don-afp25544": "/catalogo-filtros-donsson/donsson-afp25544-aire.jpg",
+  "afp25544": "/catalogo-filtros-donsson/donsson-afp25544-aire.jpg",
+  "afp-25544": "/catalogo-filtros-donsson/donsson-afp25544-aire.jpg",
+
   "donsson-afp25708": "/catalogo-filtros-donsson/donsson-afp25708-aire.jpg",
+  "donsson-afp-25708": "/catalogo-filtros-donsson/donsson-afp25708-aire.jpg",
+  "donssonafp25708": "/catalogo-filtros-donsson/donsson-afp25708-aire.jpg",
+  "don-afp25708": "/catalogo-filtros-donsson/donsson-afp25708-aire.jpg",
+  "afp25708": "/catalogo-filtros-donsson/donsson-afp25708-aire.jpg",
+  "afp-25708": "/catalogo-filtros-donsson/donsson-afp25708-aire.jpg",
+
   "partmo-a1402": "/catalogo-filtros-web/partmo-linea-tradicional-a58-a1402-a14616.jpg",
+  "partmo-a-1402": "/catalogo-filtros-web/partmo-linea-tradicional-a58-a1402-a14616.jpg",
   "partmo-a14616": "/catalogo-filtros-web/partmo-linea-tradicional-a58-a1402-a14616.jpg",
+  "partmo-a-14616": "/catalogo-filtros-web/partmo-linea-tradicional-a58-a1402-a14616.jpg",
   "partmo-a58": "/catalogo-filtros-web/partmo-linea-tradicional-a58-a1402-a14616.jpg",
+  "partmo-a-58": "/catalogo-filtros-web/partmo-linea-tradicional-a58-a1402-a14616.jpg",
 };
 
 // Índice de imágenes verificadas del catálogo técnico diésel
@@ -78,18 +117,20 @@ export function getProductDisplayImage(product) {
 
   const slug = product?.slug ? String(product.slug).toLowerCase() : "";
   const cleanSlug = slug.replace(/[-_]/g, "");
-  const sku = product?.sku ? String(product.sku).toLowerCase().replace(/[-_]/g, "") : "";
+  const rawSku = product?.sku ? String(product.sku).toLowerCase() : "";
+  const cleanSku = rawSku.replace(/[-_]/g, "");
 
   // 1. Fotografías verificadas manuales
-  if (slug && PRODUCT_IMAGE_OVERRIDES[slug]) {
-    return PRODUCT_IMAGE_OVERRIDES[slug];
-  }
+  if (slug && PRODUCT_IMAGE_OVERRIDES[slug]) return PRODUCT_IMAGE_OVERRIDES[slug];
+  if (cleanSlug && PRODUCT_IMAGE_OVERRIDES[cleanSlug]) return PRODUCT_IMAGE_OVERRIDES[cleanSlug];
+  if (rawSku && PRODUCT_IMAGE_OVERRIDES[rawSku]) return PRODUCT_IMAGE_OVERRIDES[rawSku];
+  if (cleanSku && PRODUCT_IMAGE_OVERRIDES[cleanSku]) return PRODUCT_IMAGE_OVERRIDES[cleanSku];
 
   // 2. Imagen extraída del catálogo técnico diésel (139 imágenes individuales)
   const dieselImage =
     DIESEL_CATALOG_IMAGES.get(slug) ||
     DIESEL_CATALOG_IMAGES.get(cleanSlug) ||
-    (sku ? DIESEL_CATALOG_IMAGES.get(sku) : null);
+    (cleanSku ? DIESEL_CATALOG_IMAGES.get(cleanSku) : null);
   if (dieselImage) {
     return dieselImage;
   }
