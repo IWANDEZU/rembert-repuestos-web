@@ -1,65 +1,130 @@
 import { prisma } from "@/lib/prisma";
 import { siteUrl } from "@/lib/site";
 
-// Product data and truthful modification dates live in the production database.
-// Generate this route at request time rather than baking an incomplete sitemap
-// if the database is unavailable during a build.
 export const dynamic = "force-dynamic";
 
 export default async function sitemap() {
   const baseUrl = siteUrl;
+  const now = new Date();
 
-  // Rutas estáticas principales
+  // Rutas estáticas principales y páginas informativas / legales
   const staticRoutes = [
     {
       url: baseUrl,
-      changeFrequency: "weekly",
+      lastModified: now,
+      changeFrequency: "daily",
       priority: 1.0,
     },
     {
       url: `${baseUrl}/catalogo`,
+      lastModified: now,
       changeFrequency: "daily",
-      priority: 0.9,
+      priority: 0.95,
     },
     {
       url: `${baseUrl}/marcas`,
+      lastModified: now,
       changeFrequency: "weekly",
-      priority: 0.8,
+      priority: 0.85,
     },
     {
       url: `${baseUrl}/nosotros`,
+      lastModified: now,
       changeFrequency: "monthly",
       priority: 0.7,
     },
     {
       url: `${baseUrl}/contacto`,
+      lastModified: now,
       changeFrequency: "monthly",
       priority: 0.8,
     },
     {
       url: `${baseUrl}/blog`,
+      lastModified: now,
       changeFrequency: "weekly",
-      priority: 0.7,
+      priority: 0.75,
+    },
+    {
+      url: `${baseUrl}/politica-privacidad`,
+      lastModified: now,
+      changeFrequency: "yearly",
+      priority: 0.3,
+    },
+    {
+      url: `${baseUrl}/politica-cookies`,
+      lastModified: now,
+      changeFrequency: "yearly",
+      priority: 0.3,
+    },
+    {
+      url: `${baseUrl}/terminos-y-condiciones`,
+      lastModified: now,
+      changeFrequency: "yearly",
+      priority: 0.3,
+    },
+    {
+      url: `${baseUrl}/eliminar-datos`,
+      lastModified: now,
+      changeFrequency: "yearly",
+      priority: 0.2,
     },
   ];
 
-  // Rutas dinámicas de productos desde la base de datos
+  // Landing pages de categorías principales
+  const categorySlugs = [
+    "lubricantes",
+    "filtros",
+    "frenos-y-suspension",
+    "maquinaria-pesada",
+    "lubricantes-diesel",
+    "lubricantes-gasolina",
+    "transmision",
+    "hidraulico",
+    "coolant",
+    "grasas-y-aditivos",
+    "urea",
+  ];
+
+  const categoryRoutes = categorySlugs.map((slug) => ({
+    url: `${baseUrl}/catalogo?category=${slug}`,
+    lastModified: now,
+    changeFrequency: "daily",
+    priority: 0.85,
+  }));
+
+  // Rutas dinámicas de marcas y productos desde la base de datos
+  let brandRoutes = [];
   let productRoutes = [];
+
   try {
-    const products = await prisma.product.findMany({
-      where: { isActive: true },
-      select: { slug: true, updatedAt: true },
-    });
+    const [brands, products] = await Promise.all([
+      prisma.brand.findMany({
+        where: { slug: { not: "vanssoil" } },
+        select: { slug: true, updatedAt: true },
+      }),
+      prisma.product.findMany({
+        where: { isActive: true },
+        select: { slug: true, updatedAt: true },
+      }),
+    ]);
+
+    brandRoutes = brands.map((b) => ({
+      url: `${baseUrl}/catalogo?brand=${b.slug}`,
+      lastModified: b.updatedAt || now,
+      changeFrequency: "weekly",
+      priority: 0.8,
+    }));
 
     productRoutes = products.map((product) => ({
       url: `${baseUrl}/producto/${product.slug}`,
-      lastModified: product.updatedAt,
+      lastModified: product.updatedAt || now,
       changeFrequency: "weekly",
       priority: 0.8,
     }));
   } catch (error) {
-    console.warn("Error al generar sitemap de productos:", error.message);
+    console.warn("Advertencia al consultar base de datos para sitemap:", error.message);
   }
 
-  return [...staticRoutes, ...productRoutes];
+  return [...staticRoutes, ...categoryRoutes, ...brandRoutes, ...productRoutes];
 }

@@ -1,4 +1,5 @@
-import Link from "next/link"
+import Link from "next/link";
+import { siteUrl } from "@/lib/site";
 
 export const metadata = {
   title: "Blog técnico de mantenimiento automotriz y diésel",
@@ -16,6 +17,7 @@ export const metadata = {
 };
 
 export default function BlogPage() {
+  const baseUrl = siteUrl;
   const posts = [
     {
       id: 1,
@@ -38,10 +40,37 @@ export default function BlogPage() {
       date: "28 Nov 2023",
       category: "Seguridad"
     }
-  ]
+  ];
+
+  const blogJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "Blog Técnico Victor Services",
+    "description": "Guías técnicas y consejos de lubricación y mantenimiento preventivo para motores en Barrancabermeja.",
+    "url": `${baseUrl}/blog`,
+    "publisher": {
+      "@type": "AutoPartsStore",
+      "name": "Multiservicios Victor Services",
+      "url": baseUrl,
+    },
+    "blogPost": posts.map((p) => ({
+      "@type": "BlogPosting",
+      "headline": p.title,
+      "description": p.excerpt,
+      "datePublished": "2023-10-15",
+      "author": {
+        "@type": "Organization",
+        "name": "Victor Services",
+      },
+    })),
+  };
 
   return (
     <div className="main-container" style={{ padding: '3rem 1rem', minHeight: '70vh' }}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(blogJsonLd) }}
+      />
       <h1 style={{ fontSize: '2.5rem', marginBottom: '1rem', color: 'var(--primary-color)' }}>Blog Técnico</h1>
       <p style={{ color: '#666', marginBottom: '3rem', fontSize: '1.2rem' }}>
         Artículos, guías y consejos de expertos para el mantenimiento de su motor.

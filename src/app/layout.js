@@ -21,8 +21,16 @@ const inter = Inter({
 
 const baseUrl = siteUrl;
 
+export const viewport = {
+  themeColor: "#101010",
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
+};
+
 export const metadata = {
   metadataBase: new URL(baseUrl),
+  manifest: "/manifest.webmanifest",
   title: {
     default: "Victor Services | Lubricantes y Filtros en Barrancabermeja",
     template: "%s | Victor Services",
@@ -93,47 +101,69 @@ export const metadata = {
   },
 };
 
-const jsonLdSchema = {
+const jsonLdGraph = {
   "@context": "https://schema.org",
-  "@type": "AutoPartsStore",
-  "name": "Multiservicios Victor Services",
-  "url": baseUrl,
-  "logo": `${baseUrl}/logo.png`,
-  "image": `${baseUrl}/logo.png`,
-  "telephone": "+573108737354",
-  "email": "contacto@victorservicesas.com",
-  "sameAs": [
-    "https://www.facebook.com/profile.php?id=61557618591007",
-    "https://wa.me/573108737354"
-  ],
-  "hasMap": "https://maps.google.com/?q=Victor+Services+Barrancabermeja",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "Barrancabermeja",
-    "addressLocality": "Barrancabermeja",
-    "addressRegion": "Santander",
-    "addressCountry": "CO",
-  },
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": 7.0653,
-    "longitude": -73.8547,
-  },
-  "openingHoursSpecification": [
+  "@graph": [
     {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-      "opens": "08:00",
-      "closes": "18:00",
+      "@type": "AutoPartsStore",
+      "@id": `${baseUrl}/#store`,
+      "name": "Multiservicios Victor Services",
+      "url": baseUrl,
+      "logo": `${baseUrl}/logo.png`,
+      "image": `${baseUrl}/logo.png`,
+      "telephone": "+573108737354",
+      "email": "contacto@victorservicesas.com",
+      "sameAs": [
+        "https://www.facebook.com/profile.php?id=61557618591007",
+        "https://wa.me/573108737354"
+      ],
+      "hasMap": "https://maps.google.com/?q=Victor+Services+Barrancabermeja",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Barrancabermeja",
+        "addressLocality": "Barrancabermeja",
+        "addressRegion": "Santander",
+        "addressCountry": "CO",
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 7.0653,
+        "longitude": -73.8547,
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "08:00",
+          "closes": "18:00",
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "08:00",
+          "closes": "14:00",
+        },
+      ],
+      "priceRange": "$$",
     },
     {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": "Saturday",
-      "opens": "08:00",
-      "closes": "14:00",
+      "@type": "WebSite",
+      "@id": `${baseUrl}/#website`,
+      "url": baseUrl,
+      "name": "Victor Services",
+      "publisher": {
+        "@id": `${baseUrl}/#store`,
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": `${baseUrl}/catalogo?search={search_term_string}`,
+        },
+        "query-input": "required name=search_term_string",
+      },
     },
   ],
-  "priceRange": "$$",
 };
 
 export default function RootLayout({ children }) {
@@ -142,7 +172,7 @@ export default function RootLayout({ children }) {
       <head>
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdSchema) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdGraph) }}
         />
       </head>
       <body>

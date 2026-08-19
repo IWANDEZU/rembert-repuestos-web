@@ -56,7 +56,7 @@ export default async function Home() {
       }}>
         <Image
           src="/mecanico.jpg"
-          alt=""
+          alt="Mantenimiento de motores diésel y cambio de lubricantes en Barrancabermeja"
           fill
           priority
           sizes="100vw"
@@ -76,7 +76,7 @@ export default async function Home() {
           zIndex: 1,
           pointerEvents: 'none'
         }} className="spin-slow">
-          <Image src="/logo.png" alt="" fill sizes="800px" quality={60} style={{ objectFit: 'contain', opacity: 0.8 }} className="pulse-glow" />
+          <Image src="/logo.png" alt="Victor Services Barrancabermeja" fill sizes="800px" quality={60} style={{ objectFit: 'contain', opacity: 0.8 }} className="pulse-glow" />
         </div>
 
         <div className="main-container" style={{ width: '100%', display: 'flex', flexDirection: 'column', gap: '2rem', position: 'relative', zIndex: 2 }}>

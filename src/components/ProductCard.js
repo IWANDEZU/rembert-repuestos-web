@@ -132,6 +132,7 @@ export default function ProductCard({ product, onExpand, isFavorite = false }) {
           onClick={toggleFavorite}
           disabled={isUpdatingFav}
           title={favorite ? "Remover de favoritos" : "Guardar en favoritos"}
+          aria-label={favorite ? "Remover de favoritos" : "Guardar en favoritos"}
           style={{
             position: "absolute",
             top: "8px",

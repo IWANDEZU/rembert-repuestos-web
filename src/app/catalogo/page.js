@@ -594,8 +594,39 @@ export default async function Catalogo({ searchParams }) {
   const hasActiveFilters = !!(categoryParam || brandParam || searchQuery || tipoParam);
   const backHref = hasActiveFilters ? "/catalogo" : "/";
 
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Inicio",
+        "item": siteUrl,
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Catálogo",
+        "item": `${siteUrl}/catalogo`,
+      },
+      ...(categoryParam || brandParam ? [
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": bannerTitle,
+          "item": `${siteUrl}${categoryParam ? `/catalogo?category=${categoryParam}` : `/catalogo?brand=${brandParam}`}`,
+        }
+      ] : [])
+    ],
+  };
+
   return (
     <main className="main-container section catalog-layout">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
       <CatalogSidebar
         categoryParam={categoryParam}
         brandParam={brandParam}

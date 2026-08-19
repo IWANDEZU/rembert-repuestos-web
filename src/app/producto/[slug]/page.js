@@ -87,6 +87,46 @@ export default async function ProductPage({ params }) {
     : [toAbsoluteUrl(displayImage)];
   const productUrl = `${baseUrl}/producto/${product.slug}`;
 
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Inicio",
+        "item": baseUrl,
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Catálogo",
+        "item": `${baseUrl}/catalogo`,
+      },
+      ...(product.category ? [
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": product.category.name,
+          "item": `${baseUrl}/catalogo?category=${product.category.slug}`,
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": product.name,
+          "item": productUrl,
+        }
+      ] : [
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": product.name,
+          "item": productUrl,
+        }
+      ])
+    ],
+  };
+
   const productJsonLd = {
     "@context": "https://schema.org/",
     "@type": "Product",
@@ -124,6 +164,8 @@ export default async function ProductPage({ params }) {
     };
   }
 
+  const structuredData = [productJsonLd, breadcrumbJsonLd];
+
   const categoryParam = product.category ? product.category.slug : undefined;
   const brandParam = product.brand ? product.brand.slug : undefined;
 
@@ -132,7 +174,7 @@ export default async function ProductPage({ params }) {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(productJsonLd).replace(/</g, "\\u003c"),
+          __html: JSON.stringify(structuredData).replace(/</g, "\\u003c"),
         }}
       />
       <CatalogSidebar categoryParam={categoryParam} brandParam={brandParam} />
