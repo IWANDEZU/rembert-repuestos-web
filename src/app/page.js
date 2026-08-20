@@ -127,15 +127,15 @@ export default async function Home() {
         overflow: 'hidden'
       }}>
         <Image
-          src="/mecanico.jpg"
-          alt="Mantenimiento de motores y cambio de lubricantes en Barrancabermeja"
+          src="/hero-rembert-fachada.jpg"
+          alt="Fachada Sede Principal Rembert Repuestos BCA - Barrancabermeja"
           fill
           priority
           sizes="100vw"
-          quality={75}
-          style={{ objectFit: 'cover', zIndex: 0 }}
+          quality={85}
+          style={{ objectFit: 'cover', objectPosition: 'center 35%', zIndex: 0 }}
         />
-        <div aria-hidden="true" style={{ position: 'absolute', inset: 0, zIndex: 1, background: 'linear-gradient(90deg, rgba(10,10,10,0.95) 0%, rgba(10,10,10,0.7) 100%)' }} />
+        <div aria-hidden="true" style={{ position: 'absolute', inset: 0, zIndex: 1, background: 'linear-gradient(90deg, rgba(10,10,10,0.92) 0%, rgba(10,10,10,0.72) 55%, rgba(10,10,10,0.45) 100%)' }} />
         
 
 
