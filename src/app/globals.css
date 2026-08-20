@@ -330,13 +330,13 @@ h1, h2, h3, h4 {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: clamp(0.35rem, 0.85vw, 1rem);
-  font-size: clamp(0.72rem, 0.76vw, 0.8rem);
-  font-weight: 700;
+  gap: clamp(0.3rem, 0.75vw, 0.9rem);
+  font-size: 0.60rem;
+  font-weight: 800;
   text-transform: uppercase;
   flex-wrap: nowrap !important;
   white-space: nowrap !important;
-  padding: 0.25rem 0;
+  padding: 0.2rem 0;
   margin: 0 auto;
   width: 100%;
 }
@@ -355,19 +355,21 @@ h1, h2, h3, h4 {
   display: inline-flex !important;
   align-items: center;
   justify-content: center;
-  min-height: 32px;
+  min-height: 28px;
   height: auto;
   line-height: 1.2;
+  font-size: 0.60rem;
+  font-weight: 800;
   transition: var(--transition);
-  padding: 0.35rem 0.6rem;
+  padding: 0.25rem 0.5rem;
   color: #FFFFFF;
-  border-radius: 6px;
+  border-radius: 5px;
   white-space: nowrap !important;
   word-break: keep-all !important;
   overflow: visible !important;
   width: max-content !important;
   flex-shrink: 0 !important;
-  letter-spacing: 0.15px;
+  letter-spacing: 0.4px;
   text-align: center;
   text-decoration: none;
 }
