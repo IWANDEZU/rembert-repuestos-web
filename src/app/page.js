@@ -141,7 +141,7 @@ export default async function Home() {
 
         <div className="main-container" style={{ width: '100%', display: 'flex', flexDirection: 'column', gap: '1.5rem', position: 'relative', zIndex: 2 }}>
           <div>
-            <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', background: '#FFD700', color: '#111', padding: '0.4rem 1.1rem', borderRadius: '30px', fontWeight: '900', fontSize: '0.9rem', marginBottom: '1rem', letterSpacing: '0.5px', boxShadow: '0 4px 15px rgba(255, 215, 0, 0.4)' }}>
+            <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', background: '#E52421', color: '#FFFFFF', border: '5px solid #FFD700', padding: '0.4rem 1.1rem', borderRadius: '30px', fontWeight: '900', fontSize: '0.9rem', marginBottom: '1rem', letterSpacing: '0.5px', boxShadow: '0 4px 15px rgba(229, 36, 33, 0.45)' }}>
               ⭐ 38 AÑOS DE EXPERIENCIA EN EL SECTOR AUTOMOTRIZ
             </div>
             <h1 style={{ fontSize: 'clamp(2.4rem, 7.5vw, 3.8rem)', maxWidth: '850px', lineHeight: 1.1, marginBottom: '1rem', textTransform: 'uppercase', color: '#ffffff' }}>
@@ -323,11 +323,12 @@ export default async function Home() {
               <div 
                 key={idx} 
                 style={{ 
-                  background: 'var(--primary-color)', 
-                  color: '#111111', 
+                  background: '#E52421', 
+                  color: '#FFFFFF', 
+                  border: '5px solid #FFD700',
                   padding: '0.85rem 2rem', 
                   borderRadius: '30px', 
-                  boxShadow: '0 4px 14px rgba(255, 215, 0, 0.3)',
+                  boxShadow: '0 4px 14px rgba(229, 36, 33, 0.45)',
                   whiteSpace: 'nowrap',
                   fontWeight: '800',
                   letterSpacing: '0.5px'
