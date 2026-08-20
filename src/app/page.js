@@ -22,6 +22,18 @@ const brandLogos = [
   { name: "Max Power", src: "/logos/max-power.png" },
   { name: "Valvoline", src: "/logos/valvoline.svg" },
   { name: "Petroil", src: "/logos/petroil.png" },
+  { name: "Chevrolet", src: "/logos/autos/chevrolet.svg", darkBg: true },
+  { name: "Renault", src: "/logos/autos/renault.svg" },
+  { name: "Toyota", src: "/logos/autos/toyota.svg" },
+  { name: "Kia", src: "/logos/autos/kia.svg" },
+  { name: "Hyundai", src: "/logos/autos/hyundai.svg" },
+  { name: "Ford", src: "/logos/autos/ford.svg", darkBg: true },
+  { name: "Nissan", src: "/logos/autos/nissan.svg" },
+  { name: "Volkswagen", src: "/logos/autos/volkswagen.svg" },
+  { name: "Mitsubishi", src: "/logos/autos/mitsubishi.svg" },
+  { name: "Honda", src: "/logos/autos/honda.svg" },
+  { name: "BMW", src: "/logos/autos/bmw.svg" },
+  { name: "Volvo", src: "/logos/autos/volvo.svg" },
 ];
 
 const popularCarBrands = [
@@ -94,6 +106,27 @@ const popularCarBrands = [
     popularModels: "Swift, Vitara, Jimny, S-Presso, Alto",
     query: "suzuki",
     badge: "Económico",
+  },
+  {
+    name: "Mitsubishi",
+    logo: "/logos/autos/mitsubishi.svg",
+    popularModels: "L200, Montero, ASX, Outlander",
+    query: "mitsubishi",
+    badge: "Trabajo Pesado",
+  },
+  {
+    name: "Honda",
+    logo: "/logos/autos/honda.svg",
+    popularModels: "Civic, CR-V, HR-V, Fit",
+    query: "honda",
+    badge: "Japonesa",
+  },
+  {
+    name: "BMW",
+    logo: "/logos/autos/bmw.svg",
+    popularModels: "Serie 3, Serie 5, X1, X3, X5",
+    query: "bmw",
+    badge: "Premium",
   },
 ];
 

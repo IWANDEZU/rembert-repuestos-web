@@ -1,8 +1,9 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import AddToCartButton from "./AddToCartButton";
 import Image from "next/image";
+import Link from "next/link";
 import { getProductDisplayImage } from "@/lib/productImage";
 import { generateWhatsAppProductText, getWhatsAppUrl } from "@/lib/orderFormatter";
 
@@ -13,6 +14,31 @@ export default function ProductVariantSelector({ product }) {
   const [activeTab, setActiveTab] = useState("desc");
   const [isZoomOpen, setIsZoomOpen] = useState(false);
   const [quantity, setQuantity] = useState(1);
+
+  // Manejo de retroceso nativo en celular (botón atrás) y bloqueo de scroll
+  useEffect(() => {
+    if (!isZoomOpen) return;
+
+    window.history.pushState({ zoomOpen: true }, "");
+    const handlePopState = () => {
+      setIsZoomOpen(false);
+    };
+    window.addEventListener("popstate", handlePopState);
+
+    const originalOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+
+    const handleKeyDown = (e) => {
+      if (e.key === "Escape") setIsZoomOpen(false);
+    };
+    window.addEventListener("keydown", handleKeyDown);
+
+    return () => {
+      window.removeEventListener("popstate", handlePopState);
+      window.removeEventListener("keydown", handleKeyDown);
+      document.body.style.overflow = originalOverflow;
+    };
+  }, [isZoomOpen]);
 
   // Obtener solo las imágenes verdaderas del producto
   const defaultImage = getProductDisplayImage(product);
@@ -36,8 +62,8 @@ export default function ProductVariantSelector({ product }) {
   const currentPrice = selectedVariant ? (selectedVariant.price || product.price) : product.price;
   const currentStock = selectedVariant ? (selectedVariant.stock ?? 20) : (product.stock ?? 20);
   const canBuy = product.inStock && currentStock > 0 && currentPrice > 0;
-  const brandName = product.brand?.name || product.brand || "Victor Services";
-  const categoryName = product.category?.name || product.category || "Lubricantes";
+  const brandName = product.brand?.name || product.brand || "REMBERT";
+  const categoryName = product.category?.name || product.category || "Repuestos";
   const whatsappUrl = getWhatsAppUrl(
     generateWhatsAppProductText({
       product,
@@ -49,9 +75,35 @@ export default function ProductVariantSelector({ product }) {
   );
 
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', gap: '40px' }}>
+    <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
       
-      {/* Modal / Lightbox de Foto Ampliada */}
+      {/* Barra Superior de Retorno Rápido para Móvil */}
+      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '10px' }}>
+        <Link
+          href="/catalogo"
+          style={{
+            display: 'inline-flex',
+            alignItems: 'center',
+            gap: '8px',
+            background: '#1a1a1a',
+            color: '#FFFFFF',
+            border: '1px solid #333',
+            padding: '8px 16px',
+            borderRadius: '8px',
+            fontWeight: '700',
+            fontSize: '0.88rem',
+            textDecoration: 'none',
+            boxShadow: '0 2px 8px rgba(0,0,0,0.3)'
+          }}
+        >
+          ← Volver al Catálogo / Menú
+        </Link>
+        <span style={{ color: '#888', fontSize: '0.85rem' }}>
+          {categoryName} • <strong>{brandName}</strong>
+        </span>
+      </div>
+
+      {/* Modal / Lightbox de Foto Ampliada Ultra Accesible en Móvil */}
       {isZoomOpen && (
         <div 
           onClick={() => setIsZoomOpen(false)}
@@ -61,57 +113,112 @@ export default function ProductVariantSelector({ product }) {
             left: 0,
             right: 0,
             bottom: 0,
-            backgroundColor: 'rgba(0, 0, 0, 0.9)',
-            zIndex: 9999,
+            backgroundColor: 'rgba(0, 0, 0, 0.95)',
+            zIndex: 99999,
             display: 'flex',
+            flexDirection: 'column',
             alignItems: 'center',
             justifyContent: 'center',
-            padding: '20px',
-            cursor: 'zoom-out'
+            padding: '16px',
+            cursor: 'zoom-out',
+            overscrollBehavior: 'contain'
           }}
         >
-          <div style={{ position: 'relative', maxWidth: '90vw', maxHeight: '90vh' }}>
+          {/* Botón Volver Superior Fijo */}
+          <div
+            style={{
+              position: 'fixed',
+              top: '16px',
+              left: '16px',
+              right: '16px',
+              display: 'flex',
+              justifyContent: 'space-between',
+              alignItems: 'center',
+              zIndex: 100000,
+            }}
+          >
+            <button 
+              onClick={() => setIsZoomOpen(false)}
+              style={{
+                background: '#E52421',
+                color: '#fff',
+                border: 'none',
+                borderRadius: '8px',
+                padding: '8px 16px',
+                fontSize: '0.9rem',
+                fontWeight: '800',
+                cursor: 'pointer',
+                boxShadow: '0 4px 15px rgba(229, 36, 33, 0.5)',
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '6px'
+              }}
+            >
+              ← VOLVER
+            </button>
+
+            <button 
+              onClick={() => setIsZoomOpen(false)}
+              style={{
+                background: '#222',
+                color: '#fff',
+                border: '1px solid #555',
+                borderRadius: '50%',
+                width: '40px',
+                height: '40px',
+                fontSize: '20px',
+                fontWeight: 'bold',
+                cursor: 'pointer',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center'
+              }}
+            >
+              ✕
+            </button>
+          </div>
+
+          <div 
+            onClick={(e) => e.stopPropagation()}
+            style={{ position: 'relative', maxWidth: '92vw', maxHeight: '80vh', marginTop: '40px' }}
+          >
             <Image
               src={selectedImage} 
               alt={product.name} 
               width={1200}
               height={1000}
               unoptimized={selectedImage.startsWith('/api/imagen-referencia')}
-              style={{ maxWidth: '100%', maxHeight: '85vh', objectFit: 'contain', borderRadius: '8px', boxShadow: '0 10px 40px rgba(0,0,0,0.8)' }} 
+              style={{ maxWidth: '100%', maxHeight: '72vh', objectFit: 'contain', borderRadius: '12px', boxShadow: '0 10px 40px rgba(0,0,0,0.9)' }} 
             />
-            <button 
-              onClick={() => setIsZoomOpen(false)}
-              style={{
-                position: 'absolute',
-                top: '-40px',
-                right: '0',
-                background: 'var(--primary-color)',
-                color: '#000',
-                border: 'none',
-                borderRadius: '50%',
-                width: '36px',
-                height: '36px',
-                fontSize: '18px',
-                fontWeight: 'bold',
-                cursor: 'pointer'
-              }}
-            >
-              ✕
-            </button>
-            <p style={{ color: '#aaa', textAlign: 'center', marginTop: '10px', fontSize: '0.9rem' }}>
-              🔍 {product.name} - Haz clic en cualquier lugar para cerrar
-            </p>
           </div>
+
+          {/* Botón Inferior Táctil para Móvil */}
+          <button 
+            onClick={() => setIsZoomOpen(false)}
+            style={{
+              marginTop: '16px',
+              background: '#222',
+              color: '#ccc',
+              border: '1px solid #444',
+              borderRadius: '20px',
+              padding: '8px 20px',
+              fontSize: '0.85rem',
+              cursor: 'pointer',
+              fontWeight: '600'
+            }}
+          >
+            ✕ Toca aquí o en cualquier parte para cerrar
+          </button>
         </div>
       )}
 
       {/* Grid Principal de Producto */}
       <div style={{ 
         display: 'grid', 
-        gridTemplateColumns: 'minmax(300px, 1fr) minmax(320px, 1.2fr)', 
-        gap: '40px', 
+        gridTemplateColumns: 'repeat(auto-fit, minmax(290px, 1fr))', 
+        gap: '30px', 
         background: 'var(--card-dark)', 
-        padding: '30px', 
+        padding: 'clamp(16px, 3vw, 30px)', 
         borderRadius: '16px', 
         border: '1px solid var(--border-color)' 
       }}>

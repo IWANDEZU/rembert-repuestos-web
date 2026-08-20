@@ -17,6 +17,18 @@ export default function PrioridadDieselModal({ products, initialIndex, onClose }
   };
 
   useEffect(() => {
+    // 1. Manejo de botón 'Atrás' nativo en celular (Android / iOS)
+    window.history.pushState({ modalOpen: true }, "");
+    const handlePopState = () => {
+      onClose();
+    };
+    window.addEventListener("popstate", handlePopState);
+
+    // 2. Bloquear scroll del fondo
+    const originalOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+
+    // 3. Atajos de Teclado
     const handleKeyDown = (e) => {
       if (e.key === "Escape") {
         onClose();
@@ -27,7 +39,12 @@ export default function PrioridadDieselModal({ products, initialIndex, onClose }
       }
     };
     window.addEventListener("keydown", handleKeyDown);
-    return () => window.removeEventListener("keydown", handleKeyDown);
+
+    return () => {
+      window.removeEventListener("popstate", handlePopState);
+      window.removeEventListener("keydown", handleKeyDown);
+      document.body.style.overflow = originalOverflow;
+    };
   }, [onClose, products.length]);
 
   if (!product) return null;
@@ -53,7 +70,7 @@ export default function PrioridadDieselModal({ products, initialIndex, onClose }
         "@context": "https://schema.org/",
         "@type": "Product",
         name: `${product.subtype} ${product.brandName} ${product.reference}`,
-        image: product.web_image ? `https://victorservices.com${product.web_image}` : undefined,
+        image: product.web_image ? `https://rembertrepuestos.com${product.web_image}` : undefined,
         description: product.description,
         sku: product.reference,
         gtin: product.gtin || undefined,
@@ -80,13 +97,14 @@ export default function PrioridadDieselModal({ products, initialIndex, onClose }
         left: 0,
         right: 0,
         bottom: 0,
-        backgroundColor: "rgba(0, 0, 0, 0.85)",
-        backdropFilter: "blur(6px)",
+        backgroundColor: "rgba(0, 0, 0, 0.88)",
+        backdropFilter: "blur(8px)",
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        zIndex: 9999,
-        padding: "1rem",
+        zIndex: 99999,
+        padding: "clamp(6px, 2vw, 16px)",
+        overscrollBehavior: "contain",
       }}
       onClick={onClose}
       role="dialog"
@@ -105,44 +123,66 @@ export default function PrioridadDieselModal({ products, initialIndex, onClose }
         style={{
           background: "var(--card-dark)",
           border: "1px solid var(--border-color)",
-          borderRadius: "var(--border-radius)",
+          borderRadius: "16px",
           maxWidth: "850px",
           width: "100%",
-          maxHeight: "90vh",
+          maxHeight: "95vh",
           overflowY: "auto",
           position: "relative",
-          boxShadow: "0 10px 30px rgba(0,0,0,0.5)",
-          padding: "2rem",
+          boxShadow: "0 15px 45px rgba(0,0,0,0.8)",
+          padding: "clamp(12px, 3vw, 24px)",
           display: "flex",
           flexDirection: "column",
-          gap: "1.5rem",
+          gap: "1.2rem",
         }}
         onClick={(e) => e.stopPropagation()}
       >
-        {/* Header Modal */}
-        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start" }}>
-          <div>
-            <div style={{ fontSize: "0.8rem", color: "var(--primary-color)", fontWeight: "bold", textTransform: "uppercase", marginBottom: "4px" }}>
-              {product.brandName} • {product.categoryName} • {product.subtype}
-            </div>
-            <h2 id="modal-title" style={{ fontSize: "1.6rem", color: "#fff", margin: 0 }}>
-              <span className="product-reference">Ref: {product.reference}</span>
-            </h2>
-          </div>
+        {/* Header Modal con Botón Volver */}
+        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", gap: "8px", flexWrap: "wrap" }}>
           <button
             onClick={onClose}
             style={{
-              background: "#222",
+              background: "#E52421",
+              color: "#FFFFFF",
+              border: "none",
+              borderRadius: "8px",
+              padding: "6px 14px",
+              cursor: "pointer",
+              fontWeight: "800",
+              fontSize: "0.85rem",
+              display: "inline-flex",
+              alignItems: "center",
+              gap: "6px",
+              boxShadow: "0 2px 8px rgba(229, 36, 33, 0.4)",
+            }}
+          >
+            ← VOLVER
+          </button>
+
+          <div>
+            <div style={{ fontSize: "0.78rem", color: "var(--primary-color)", fontWeight: "bold", textTransform: "uppercase" }}>
+              {product.brandName} • {product.categoryName} • {product.subtype}
+            </div>
+            <h2 id="modal-title" style={{ fontSize: "1.3rem", color: "#fff", margin: 0 }}>
+              <span className="product-reference">Ref: {product.reference}</span>
+            </h2>
+          </div>
+
+          <button
+            onClick={onClose}
+            style={{
+              background: "#2a2a2a",
               border: "1px solid #444",
               color: "#fff",
-              fontSize: "1.2rem",
+              fontSize: "1.1rem",
               borderRadius: "50%",
-              width: "36px",
-              height: "36px",
+              width: "34px",
+              height: "34px",
               cursor: "pointer",
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
+              fontWeight: "bold",
             }}
             aria-label="Cerrar ventana"
           >
@@ -199,7 +239,7 @@ export default function PrioridadDieselModal({ products, initialIndex, onClose }
         </div>
 
         {/* Body Contenido Principal: Imagen + Ficha */}
-        <div style={{ display: "grid", gridTemplateColumns: "1fr 1.2fr", gap: "1.5rem" }}>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "1.5rem" }}>
           {/* Columna Izquierda: Imagen o Badge de Foto Pendiente */}
           <div
             style={{
@@ -211,7 +251,7 @@ export default function PrioridadDieselModal({ products, initialIndex, onClose }
               flexDirection: "column",
               alignItems: "center",
               justifyContent: "center",
-              minHeight: "260px",
+              minHeight: "240px",
             }}
           >
             {product.has_photo ? (
@@ -219,14 +259,14 @@ export default function PrioridadDieselModal({ products, initialIndex, onClose }
                 src={product.web_image}
                 alt={product.altText}
                 loading="lazy"
-                style={{ maxWidth: "100%", maxHeight: "280px", objectFit: "contain" }}
+                style={{ maxWidth: "100%", maxHeight: "260px", objectFit: "contain" }}
               />
             ) : (
               <div style={{ textAlign: "center", padding: "1.5rem" }}>
-                <span style={{ fontSize: "3rem", display: "block", marginBottom: "0.5rem" }}>📷</span>
-                <h4 style={{ color: "#ffc107", marginBottom: "0.4rem" }}>Foto exacta pendiente</h4>
+                <span style={{ fontSize: "2.8rem", display: "block", marginBottom: "0.5rem" }}>📷</span>
+                <h4 style={{ color: "#ffc107", marginBottom: "0.4rem" }}>Foto de referencia</h4>
                 <p style={{ fontSize: "0.8rem", color: "#aaa" }}>
-                  Esta referencia no cuenta con fotografía exacta publicada. No se muestra imagen genérica para evitar confusiones.
+                  Disponibilidad garantizada bajo código y medidas originales.
                 </p>
               </div>
             )}
@@ -235,11 +275,11 @@ export default function PrioridadDieselModal({ products, initialIndex, onClose }
           {/* Columna Derecha: Especificaciones y Compatibilidad */}
           <div style={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
             <div>
-              <div style={{ fontSize: "1.6rem", fontWeight: "bold", color: "var(--primary-color)", marginBottom: "2px" }}>
+              <div style={{ fontSize: "1.5rem", fontWeight: "bold", color: "var(--primary-color)", marginBottom: "2px" }}>
                 {product.formattedPrice}
               </div>
               <span style={{ fontSize: "0.78rem", color: "#aaa", fontStyle: "italic" }}>
-                Precio sugerido, sujeto a disponibilidad y confirmación.
+                Precio sujeto a confirmación y disponibilidad en bodega.
               </span>
             </div>
 
@@ -297,7 +337,7 @@ export default function PrioridadDieselModal({ products, initialIndex, onClose }
                 lineHeight: "1.4",
               }}
             >
-              <strong>⚠️ Confirmación de Compatibilidad:</strong> Confirma compatibilidad por VIN, código de motor, año y tracción antes de comprar o instalar.
+              <strong>⚠️ Confirmación de Compatibilidad:</strong> Confirma compatibilidad por VIN, código de motor, año y modelo antes de comprar o instalar.
             </div>
 
             {/* CTA WhatsApp */}
@@ -320,6 +360,26 @@ export default function PrioridadDieselModal({ products, initialIndex, onClose }
             >
               💬 Cotizar y Validar VIN por WhatsApp
             </a>
+
+            {/* Botón Volver Inferior */}
+            <button
+              onClick={onClose}
+              style={{
+                padding: "0.65rem",
+                fontSize: "0.85rem",
+                fontWeight: "700",
+                background: "#222",
+                color: "#ccc",
+                border: "1px solid #444",
+                borderRadius: "8px",
+                cursor: "pointer",
+                textAlign: "center",
+                display: "block",
+                width: "100%",
+              }}
+            >
+              ✕ Cerrar y volver al catálogo
+            </button>
           </div>
         </div>
       </div>

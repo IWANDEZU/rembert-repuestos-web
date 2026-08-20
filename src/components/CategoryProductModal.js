@@ -44,15 +44,32 @@ export default function CategoryProductModal({ products, initialIndex = 0, onClo
     selectProduct((currentIndex - 1 + products.length) % products.length);
   }, [currentIndex, products, selectProduct]);
 
-  // Escuchar Teclado (←, →, ESC)
+  // Escuchar Teclado (←, →, ESC), Bloqueo de Scroll y Retroceso en Móvil (Botón Atrás del Navegador)
   useEffect(() => {
+    // 1. Manejo de botón 'Atrás' nativo en celular (Android / iOS)
+    window.history.pushState({ modalOpen: true }, "");
+    const handlePopState = () => {
+      onClose();
+    };
+    window.addEventListener("popstate", handlePopState);
+
+    // 2. Bloquear scroll del fondo mientras el modal está abierto
+    const originalOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+
+    // 3. Atajos de Teclado
     const handleKeyDown = (e) => {
       if (e.key === "ArrowRight") handleNext();
       if (e.key === "ArrowLeft") handlePrev();
       if (e.key === "Escape") onClose();
     };
     window.addEventListener("keydown", handleKeyDown);
-    return () => window.removeEventListener("keydown", handleKeyDown);
+
+    return () => {
+      window.removeEventListener("popstate", handlePopState);
+      window.removeEventListener("keydown", handleKeyDown);
+      document.body.style.overflow = originalOverflow;
+    };
   }, [handleNext, handlePrev, onClose]);
 
   if (!currentProduct) return null;
@@ -60,8 +77,8 @@ export default function CategoryProductModal({ products, initialIndex = 0, onClo
   const currentPrice = selectedVariant ? (selectedVariant.price || currentProduct.price) : currentProduct.price;
   const currentStock = selectedVariant ? (selectedVariant.stock ?? 20) : (currentProduct.stock ?? 20);
   const canBuy = currentProduct.inStock && currentStock > 0 && currentPrice > 0;
-  const brandName = currentProduct.brand?.name || currentProduct.brand || "Victor Services";
-  const categoryName = currentProduct.category?.name || currentProduct.category || "Filtros y Lubricantes";
+  const brandName = currentProduct.brand?.name || currentProduct.brand || "REMBERT";
+  const categoryName = currentProduct.category?.name || currentProduct.category || "Repuestos";
 
   const handleAddToCart = () => {
     if (!canBuy) return;
@@ -104,13 +121,13 @@ export default function CategoryProductModal({ products, initialIndex = 0, onClo
         left: 0,
         right: 0,
         bottom: 0,
-        backgroundColor: "rgba(0, 0, 0, 0.85)",
+        backgroundColor: "rgba(0, 0, 0, 0.88)",
         backdropFilter: "blur(8px)",
         zIndex: 99999,
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
-        padding: "20px",
+        padding: "clamp(6px, 2vw, 20px)",
         overscrollBehavior: "contain",
       }}
       onClick={onClose}
@@ -122,33 +139,56 @@ export default function CategoryProductModal({ products, initialIndex = 0, onClo
           position: "relative",
           width: "100%",
           maxWidth: "1000px",
-          maxHeight: "92vh",
+          maxHeight: "95vh",
           background: "#141414",
           border: "1px solid #333",
           borderRadius: "16px",
           display: "flex",
           flexDirection: "column",
           overflow: "hidden",
-          boxShadow: "0 25px 50px -12px rgba(0, 0, 0, 0.9)",
+          boxShadow: "0 25px 50px -12px rgba(0, 0, 0, 0.95)",
         }}
       >
-        {/* Cabecera del Modal con Navegación y Contador */}
+        {/* Cabecera del Modal con Navegación y Botón Volver/Cerrar */}
         <div
           style={{
-            padding: "16px 24px",
+            padding: "12px 16px",
             background: "#0a0a0a",
             borderBottom: "1px solid #262626",
             display: "flex",
             alignItems: "center",
             justifyContent: "space-between",
+            gap: "8px",
+            flexWrap: "wrap",
           }}
         >
-          <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
+          {/* Botón Volver / Cerrar Rápido */}
+          <button
+            onClick={onClose}
+            style={{
+              background: "#E52421",
+              color: "#FFFFFF",
+              border: "none",
+              borderRadius: "8px",
+              padding: "6px 14px",
+              cursor: "pointer",
+              fontWeight: "800",
+              fontSize: "0.85rem",
+              display: "inline-flex",
+              alignItems: "center",
+              gap: "6px",
+              boxShadow: "0 2px 8px rgba(229, 36, 33, 0.4)",
+            }}
+          >
+            ← VOLVER
+          </button>
+
+          <div style={{ display: "flex", alignItems: "center", gap: "8px", flexWrap: "wrap" }}>
             <span
               style={{
                 background: "var(--primary-color)",
                 color: "#000",
-                fontSize: "0.75rem",
+                fontSize: "0.72rem",
                 fontWeight: "bold",
                 padding: "3px 8px",
                 borderRadius: "4px",
@@ -157,13 +197,13 @@ export default function CategoryProductModal({ products, initialIndex = 0, onClo
             >
               {categoryName}
             </span>
-            <span style={{ color: "#aaa", fontSize: "0.88rem" }}>
-              Producto <strong>{currentIndex + 1}</strong> de <strong>{products.length}</strong>
+            <span style={{ color: "#aaa", fontSize: "0.82rem" }}>
+              <strong>{currentIndex + 1}</strong> / <strong>{products.length}</strong>
             </span>
           </div>
 
           {/* Botones Centrales de Avanzar / Retroceder */}
-          <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
+          <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
             <button
               onClick={handlePrev}
               title="Producto Anterior (Flecha Izquierda)"
@@ -172,19 +212,16 @@ export default function CategoryProductModal({ products, initialIndex = 0, onClo
                 color: "#fff",
                 border: "1px solid #444",
                 borderRadius: "8px",
-                padding: "6px 14px",
+                padding: "6px 10px",
                 cursor: "pointer",
                 fontWeight: "bold",
-                fontSize: "0.85rem",
+                fontSize: "0.82rem",
                 display: "flex",
                 alignItems: "center",
-                gap: "6px",
-                transition: "background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease",
+                gap: "4px",
               }}
-              onMouseEnter={(e) => (e.currentTarget.style.borderColor = "var(--primary-color)")}
-              onMouseLeave={(e) => (e.currentTarget.style.borderColor = "#444")}
             >
-              ◄ Anterior
+              ◄
             </button>
             <button
               onClick={handleNext}
@@ -194,30 +231,41 @@ export default function CategoryProductModal({ products, initialIndex = 0, onClo
                 color: "#000",
                 border: "none",
                 borderRadius: "8px",
-                padding: "6px 16px",
+                padding: "6px 10px",
                 cursor: "pointer",
                 fontWeight: "bold",
-                fontSize: "0.85rem",
+                fontSize: "0.82rem",
                 display: "flex",
                 alignItems: "center",
-                gap: "6px",
-                transition: "transform 0.2s ease",
+                gap: "4px",
               }}
             >
-              Siguiente ►
+              ►
+            </button>
+
+            {/* Cerrar X */}
+            <button
+              onClick={onClose}
+              title="Cerrar (Esc)"
+              style={{
+                background: "#2a2a2a",
+                color: "#fff",
+                border: "1px solid #444",
+                borderRadius: "50%",
+                width: "32px",
+                height: "32px",
+                cursor: "pointer",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                fontSize: "1rem",
+                fontWeight: "bold",
+              }}
+            >
+              ✕
             </button>
           </div>
-
-          {/* Cerrar */}
-          <button
-            onClick={onClose}
-            title="Cerrar (Esc)"
-            style={{
-              background: "#222",
-              color: "#fff",
-              border: "1px solid #444",
-              borderRadius: "50%",
-              width: "34px",
+        </div>
               height: "34px",
               cursor: "pointer",
               fontWeight: "bold",
@@ -507,30 +555,50 @@ export default function CategoryProductModal({ products, initialIndex = 0, onClo
           </div>
         </div>
 
-        {/* Footer Modal con Atajos y Navegación Inferior */}
+        {/* Footer Modal con Botón Volver y Navegación Inferior */}
         <div
           style={{
-            padding: "12px 24px",
+            padding: "12px 16px",
             background: "#080808",
             borderTop: "1px solid #222",
             display: "flex",
             alignItems: "center",
             justifyContent: "space-between",
-            fontSize: "0.8rem",
-            color: "#777",
+            gap: "10px",
+            flexWrap: "wrap",
           }}
         >
-          <span>💡 Tip: Usa las flechas ◄ izquierda / derecha ► de tu teclado para navegar entre productos</span>
-          <div style={{ display: "flex", gap: "8px" }}>
+          <button
+            onClick={onClose}
+            style={{
+              background: "#222",
+              color: "#fff",
+              border: "1px solid #444",
+              borderRadius: "8px",
+              padding: "7px 16px",
+              cursor: "pointer",
+              fontWeight: "700",
+              fontSize: "0.85rem",
+              display: "inline-flex",
+              alignItems: "center",
+              gap: "6px",
+            }}
+          >
+            ✕ Cerrar y volver al catálogo
+          </button>
+
+          <div style={{ display: "flex", gap: "8px", alignItems: "center" }}>
             <button
               onClick={handlePrev}
               style={{
                 background: "#1c1c1c",
                 color: "#ccc",
                 border: "1px solid #333",
-                borderRadius: "4px",
-                padding: "4px 10px",
+                borderRadius: "6px",
+                padding: "6px 12px",
                 cursor: "pointer",
+                fontWeight: "bold",
+                fontSize: "0.82rem",
               }}
             >
               ◄ Anterior
@@ -541,10 +609,11 @@ export default function CategoryProductModal({ products, initialIndex = 0, onClo
                 background: "var(--primary-color)",
                 color: "#000",
                 border: "none",
-                borderRadius: "4px",
-                padding: "4px 10px",
+                borderRadius: "6px",
+                padding: "6px 14px",
                 fontWeight: "bold",
                 cursor: "pointer",
+                fontSize: "0.82rem",
               }}
             >
               Siguiente ►

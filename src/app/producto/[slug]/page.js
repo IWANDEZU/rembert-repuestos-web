@@ -33,15 +33,15 @@ export async function generateMetadata({ params }) {
   const description =
     product.description ||
     product.shortDesc ||
-    `Compra ${product.name} en Victor Services, Barrancabermeja. Envíos a toda Colombia.`;
+    `Compra ${product.name} en REMBERT, Barrancabermeja. Envíos a toda Colombia.`;
 
   return {
     title: product.name,
     description,
     keywords: [
       product.name,
-      product.brand?.name || "Victor Services",
-      product.category?.name || "Lubricantes",
+      product.brand?.name || "REMBERT",
+      product.category?.name || "Repuestos",
       "Barrancabermeja",
       "Colombia",
     ],
@@ -49,10 +49,10 @@ export async function generateMetadata({ params }) {
       canonical: `/producto/${product.slug}`,
     },
     openGraph: {
-      title: `${product.name} | Victor Services`,
+      title: `${product.name} | REMBERT`,
       description,
       url: `${baseUrl}/producto/${product.slug}`,
-      siteName: "Victor Services",
+      siteName: "REMBERT",
       images: [
         {
           url: imageUrl,
@@ -134,12 +134,12 @@ export default async function ProductPage({ params }) {
     "name": product.name,
     "url": productUrl,
     "image": imageUrls,
-    "description": product.description || product.shortDesc || `Compra ${product.name} en Victor Services, Barrancabermeja.`,
+    "description": product.description || product.shortDesc || `Compra ${product.name} en REMBERT, Barrancabermeja.`,
     "sku": product.sku || product.id,
     "category": product.category?.name || "Repuestos automotrices",
     "brand": {
       "@type": "Brand",
-      "name": product.brand?.name || "Victor Services",
+      "name": product.brand?.name || "REMBERT",
     },
     "additionalProperty": product.attributes.map((attribute) => ({
       "@type": "PropertyValue",
@@ -158,7 +158,7 @@ export default async function ProductPage({ params }) {
       "availability": product.inStock ? "https://schema.org/InStock" : "https://schema.org/OutOfStock",
       "seller": {
         "@type": "AutoPartsStore",
-        "name": "Multiservicios Victor Services",
+        "name": "REMBERT",
         "url": baseUrl,
       },
     };

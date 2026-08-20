@@ -39,6 +39,23 @@ const fallbackBrands = [
   { name: "Petroil", slug: "petroil", logo: "/logos/petroil.png", count: 4 },
 ];
 
+const automotiveBrands = [
+  { name: "Chevrolet", slug: "chevrolet", logo: "/logos/autos/chevrolet.svg", count: 0 },
+  { name: "Renault", slug: "renault", logo: "/logos/autos/renault.svg", count: 0 },
+  { name: "Toyota", slug: "toyota", logo: "/logos/autos/toyota.svg", count: 0 },
+  { name: "Kia", slug: "kia", logo: "/logos/autos/kia.svg", count: 0 },
+  { name: "Mazda", slug: "mazda", logo: "/logos/autos/mazda.svg", count: 0 },
+  { name: "Hyundai", slug: "hyundai", logo: "/logos/autos/hyundai.svg", count: 0 },
+  { name: "Ford", slug: "ford", logo: "/logos/autos/ford.svg", count: 0 },
+  { name: "Nissan", slug: "nissan", logo: "/logos/autos/nissan.svg", count: 0 },
+  { name: "Volkswagen", slug: "volkswagen", logo: "/logos/autos/volkswagen.svg", count: 0 },
+  { name: "Mitsubishi", slug: "mitsubishi", logo: "/logos/autos/mitsubishi.svg", count: 0 },
+  { name: "Honda", slug: "honda", logo: "/logos/autos/honda.svg", count: 0 },
+  { name: "Suzuki", slug: "suzuki", logo: "/logos/autos/suzuki.svg", count: 0 },
+  { name: "BMW", slug: "bmw", logo: "/logos/autos/bmw.svg", count: 0 },
+  { name: "Volvo", slug: "volvo", logo: "/logos/autos/volvo.svg", count: 0 },
+];
+
 export default async function MarcasPage() {
   let displayBrands = [];
 
@@ -57,11 +74,13 @@ export default async function MarcasPage() {
         logo: fallbackBrands.find((fb) => fb.slug === b.slug)?.logo || "/05_shell_logo_oficial.png",
         darkBg: ["wix", "global-oil", "max-power"].includes(b.slug),
       }));
+      const existing = new Set(displayBrands.map((b) => b.slug));
+      displayBrands = [...displayBrands, ...automotiveBrands.filter((b) => !existing.has(b.slug))];
     } else {
-      displayBrands = fallbackBrands;
+      displayBrands = [...fallbackBrands, ...automotiveBrands];
     }
   } catch (_err) {
-    displayBrands = fallbackBrands;
+    displayBrands = [...fallbackBrands, ...automotiveBrands];
   }
 
   return (
@@ -103,6 +122,7 @@ export default async function MarcasPage() {
                   justifyContent: "space-between",
                   alignItems: "center",
                   transition: "transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease",
+                  transform: "perspective(700px) rotateX(0deg)",
                 }}
                 className="hover-card"
               >
@@ -118,6 +138,8 @@ export default async function MarcasPage() {
                     padding: "0.75rem",
                     marginBottom: "1rem",
                     border: "1px solid #E2E8F0",
+                    boxShadow: "inset 0 1px 0 rgba(255,255,255,0.9), 0 5px 12px rgba(15,23,42,0.08)",
+                    transform: "translateZ(8px)",
                   }}
                 >
                   <Image
