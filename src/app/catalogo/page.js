@@ -171,6 +171,16 @@ const gasolineFilterApplications = [
   ["BMW", "Serie 1, Serie 3, Serie 5, X1, X3 gasolina", "Aceite · aire · combustible · cabina"],
 ];
 
+const gasolineBrakeApplications = [
+  ["Chevrolet", "Spark, Spark GT, Aveo, Optra, Onix, Onix Plus, Tracker y Montana"],
+  ["Renault", "Logan, Sandero, Duster y Captur gasolina"],
+  ["Nissan", "March, Versa y Kicks gasolina"],
+  ["Toyota", "Yaris, Etios, Etios Sedán y Etios Cross"],
+  ["Kia", "Picanto, Cerato y Sportage gasolina"],
+  ["Hyundai", "HB20, HB20X, Veloster y Tucson gasolina"],
+  ["Volkswagen", "Gol, Saveiro, Fox, SpaceFox y CrossFox"],
+];
+
 const gasolineFilterBrandVisuals = {
   Chevrolet: { logo: "/logos/autos/chevrolet.svg", image: "/filtro-aceite-gasolina-catalogo.png" },
   Renault: { logo: "/logos/autos/renault.svg", image: "/filtro-aire-gasolina-catalogo.png" },
@@ -626,7 +636,7 @@ export default async function Catalogo({ searchParams }) {
     siliconas: ["Siliconas y sellantes automotrices", "Sellantes adhesivos RTV, formadores de juntas de alta temperatura y empaques."],
     mantenimiento: ["Mantenimiento automotriz", "Silicona Victor Reinz, grasas, refrigerantes y valvulinas en una sola sección."],
     filtros: ["Filtros automotrices e industriales", "Filtros de aceite, aire, combustible, separadores de agua y cabina."],
-    "frenos-y-suspension": ["Frenos y suspensión", "Pastillas, discos, amortiguadores y líquidos de frenos."],
+    "frenos-y-suspension": ["Frenos para autos y camionetas a gasolina", "Pastillas delanteras, zapatas traseras, discos y líquidos con referencia, años y compatibilidad por modelo."],
     "lubricantes-gasolina": ["Lubricantes gasolina y livianos", "Aceites sintéticos y minerales para motores a gasolina."],
     transmision: ["Cajas y transmisiones automotrices", "Transmisiones manuales, automáticas y CVT para vehículos de las principales marcas."],
     "electrico-y-encendido": ["Sistema eléctrico y encendido", "Bujías y baterías originales seleccionadas por referencia y aplicación."],
@@ -758,6 +768,31 @@ export default async function Catalogo({ searchParams }) {
                     <p><strong>Modelos:</strong> {models}</p>
                     <p><strong>Tipos:</strong> {types}</p>
                     <Link href={`/catalogo?category=filtros&search=${encodeURIComponent(brand)}`}>Ver filtros {brand} →</Link>
+                  </div>
+                </article>
+              ))}
+            </div>
+          </section>
+        )}
+
+        {categoryParam === "frenos-y-suspension" && !brandParam && !searchQuery && (
+          <section className="filter-showcase" aria-labelledby="brake-applications-title">
+            <div className="filter-showcase__heading">
+              <div>
+                <p className="filter-showcase__eyebrow">Aplicaciones verificadas · gasolina</p>
+                <h2 id="brake-applications-title">Busca frenos por marca y modelo</h2>
+              </div>
+              <p>Las referencias son orientativas hasta confirmar VIN, año, motor, eje, diámetro de disco o tambor y sistema ABS.</p>
+            </div>
+            <div className="filter-showcase__grid">
+              {gasolineBrakeApplications.map(([brand, models]) => (
+                <article key={brand} className="filter-showcase__card filter-showcase__card--application">
+                  <div className="filter-showcase__copy">
+                    <h3>{brand}</h3>
+                    <p><strong>Modelos:</strong> {models}</p>
+                    <Link href={`/catalogo?category=frenos-y-suspension&search=${encodeURIComponent(brand)}`}>
+                      Ver referencias {brand} →
+                    </Link>
                   </div>
                 </article>
               ))}

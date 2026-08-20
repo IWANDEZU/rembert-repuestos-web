@@ -52,6 +52,11 @@ export default function ProductCard({ product, onExpand, isFavorite = false }) {
   };
 
   const imageUrl = getProductDisplayImage(product);
+  const compatibilityAttribute = Array.isArray(product.attributes)
+    ? product.attributes.find((attribute) =>
+        ["modelos compatibles", "modelos orientativos"].includes(String(attribute.name || "").toLowerCase())
+      )
+    : null;
 
   const handleAddToCart = () => {
     addToCart(
@@ -202,6 +207,12 @@ export default function ProductCard({ product, onExpand, isFavorite = false }) {
       <p style={{ color: "#5A6A80", fontSize: "0.82rem", marginBottom: "0.35rem", fontWeight: "500" }}>
         {product.brand?.name || product.brand || "Rembert Repuestos BCA"}
       </p>
+
+      {compatibilityAttribute?.value && (
+        <p style={{ color: "#334155", fontSize: "0.78rem", lineHeight: "1.35", marginBottom: "0.55rem", display: "-webkit-box", WebkitLineClamp: 2, WebkitBoxOrient: "vertical", overflow: "hidden" }}>
+          <strong>Compatible:</strong> {compatibilityAttribute.value}
+        </p>
+      )}
 
       <div style={{ marginBottom: "0.65rem" }}>
         <span className="product-reference">
