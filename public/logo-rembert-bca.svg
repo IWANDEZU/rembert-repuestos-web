@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 135" width="540" height="135">
+  <defs>
+    <linearGradient id="rembertYellowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFDD00" />
+      <stop offset="100%" stop-color="#FFB300" />
+    </linearGradient>
+  </defs>
+
+  <!-- Isotipo R estilo Racing / Automotriz -->
+  <g transform="translate(10, 10)">
+    <!-- Barra vertical izquierda con bisel superior a 45° -->
+    <path d="M 0 32 L 28 4 L 28 115 L 0 115 Z" fill="url(#rembertYellowGrad)" />
+    <!-- Bucle superior y pata diagonal derecha -->
+    <path d="M 36 4 L 84 4 C 106 4, 118 16, 118 36 C 118 52, 107 63, 90 67 L 118 115 L 85 115 L 61 71 L 36 71 L 36 115 L 36 4 Z M 36 24 L 36 51 L 76 51 C 88 51, 93 45, 93 37.5 C 93 30, 88 24, 76 24 Z" fill="url(#rembertYellowGrad)" />
+  </g>
+
+  <!-- Texto Principal: REMBERT (Blanco Nítido) -->
+  <text 
+    x="142" 
+    y="65" 
+    font-family="system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', 'Arial Black', sans-serif" 
+    font-weight="900" 
+    font-size="52" 
+    fill="#FFFFFF" 
+    letter-spacing="2"
+  >
+    REMBERT
+  </text>
+
+  <!-- Subtítulo: REPUESTOS BCA (Amarillo Oro) -->
+  <text 
+    x="143" 
+    y="107" 
+    font-family="system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', 'Arial Black', sans-serif" 
+    font-weight="900" 
+    font-size="29.5" 
+    fill="url(#rembertYellowGrad)" 
+    letter-spacing="3"
+  >
+    REPUESTOS BCA
+  </text>
+</svg>

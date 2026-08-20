@@ -17,7 +17,7 @@ export default function TermsPage() {
       <h2>4. Propiedad intelectual y enlaces</h2>
       <p>Los contenidos propios del sitio no pueden reutilizarse sin autorización. Las marcas y nombres de terceros pertenecen a sus respectivos titulares y se muestran únicamente para identificar productos o compatibilidades. Los enlaces externos se rigen por sus propios términos.</p>
       <h2>5. Contacto y cambios</h2>
-      <p>Para preguntas sobre estos términos, escribe a <a href="mailto:contacto@victorservices.com">contacto@victorservices.com</a>. La versión vigente será la publicada en esta página.</p>
+      <p>Para preguntas sobre estos términos, escribe a <a href="mailto:repuestosrembertsa@gmail.com">repuestosrembertsa@gmail.com</a>. La versión vigente será la publicada en esta página.</p>
     </LegalPage>
   );
 }

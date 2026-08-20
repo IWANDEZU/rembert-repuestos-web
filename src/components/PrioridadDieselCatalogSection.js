@@ -29,7 +29,7 @@ export default function PrioridadDieselCatalogSection({ activeCategory }) {
   const filteredProducts = useMemo(() => {
     // Si la categoría principal seleccionada en la web es "lubricantes" o "urea",
     // no mezclamos filtros ni amortiguadores de esta colección.
-    if (activeCategory === "lubricantes" || activeCategory === "lubricantes-diesel" || activeCategory === "lubricantes-gasolina" || activeCategory === "urea") {
+    if (activeCategory === "lubricantes" || activeCategory === "lubricantes-diesel" || activeCategory === "lubricantes-gasolina") {
       return [];
     }
 
@@ -42,7 +42,7 @@ export default function PrioridadDieselCatalogSection({ activeCategory }) {
     });
   }, [searchQuery, selectedCategory, selectedBrand, selectedVehicle, selectedPhotoStatus, activeCategory]);
 
-  if (activeCategory === "lubricantes" || activeCategory === "lubricantes-diesel" || activeCategory === "lubricantes-gasolina" || activeCategory === "urea") {
+  if (activeCategory === "lubricantes" || activeCategory === "lubricantes-diesel" || activeCategory === "lubricantes-gasolina") {
     return null;
   }
 

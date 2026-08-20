@@ -10,6 +10,7 @@ import ContactSidebar from "@/components/ContactSidebar";
 import CartDrawer from "@/components/CartDrawer";
 import SearchBar from "@/components/SearchBar";
 import CookieConsent from "@/components/CookieConsent";
+import BrandLogo from "@/components/BrandLogo";
 import { siteUrl } from "@/lib/site";
 import { Analytics } from '@vercel/analytics/next';
 
@@ -32,26 +33,26 @@ export const metadata = {
   metadataBase: new URL(baseUrl),
   manifest: "/manifest.webmanifest",
   title: {
-    default: "Victor Services | Lubricantes y Filtros en Barrancabermeja",
-    template: "%s | Victor Services",
+    default: "Rembert Repuestos BCA | Repuestos Automotrices en Barrancabermeja",
+    template: "%s | Rembert Repuestos BCA",
   },
   description:
-    "Multiservicios Victor Services en Barrancabermeja, Santander. Venta de lubricantes y filtros de motor para autos, camiones, motores diésel y gasolina. Envíos a todo Colombia.",
+    "Rembert Repuestos BCA en Barrancabermeja, Santander. Venta de repuestos automotrices, lubricantes y filtros para autos, camiones y maquinaria. Envíos a todo Colombia.",
   keywords: [
     "lubricantes Barrancabermeja",
     "filtros de aceite Santander",
     "WIX filters Colombia",
     "Terpel Oiltec",
-    "Shell Rimula",
-    "Mobil Delvac 15W40",
     "Castrol Edge",
-    "repuestos motores diésel",
-    "maquinaria pesada Barrancabermeja",
+    "repuestos automotrices",
+    "frenos y suspensión Barrancabermeja",
+    "radiadores Barrancabermeja",
+    "radiadores de aluminio Colombia",
     "cambio de aceite Barrancabermeja",
   ],
-  authors: [{ name: "Victor Services", url: baseUrl }],
-  creator: "Victor Services",
-  publisher: "Victor Services",
+  authors: [{ name: "Rembert Repuestos BCA", url: baseUrl }],
+  creator: "Rembert Repuestos BCA",
+  publisher: "Rembert Repuestos BCA",
   formatDetection: {
     email: false,
     address: true,
@@ -66,11 +67,11 @@ export const metadata = {
     apple: "/logo.png",
   },
   openGraph: {
-    title: "Victor Services | Lubricantes y Filtros en Barrancabermeja",
+    title: "Rembert Repuestos BCA | Repuestos Automotrices en Barrancabermeja",
     description:
-      "Venta especializada de lubricantes, filtros y repuestos para motores diésel y gasolina en Barrancabermeja. Envíos nacionales.",
+      "Venta especializada de repuestos automotrices, lubricantes y filtros en Barrancabermeja. Envíos nacionales.",
     url: baseUrl,
-    siteName: "Victor Services",
+    siteName: "Rembert Repuestos BCA",
     locale: "es_CO",
     type: "website",
     images: [
@@ -78,14 +79,14 @@ export const metadata = {
         url: "/logo.png",
         width: 800,
         height: 800,
-        alt: "Multiservicios Victor Services Barrancabermeja Logo",
+        alt: "Rembert Repuestos BCA Logo",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Victor Services | Lubricantes y Filtros",
-    description: "Venta de lubricantes y filtros para motores diésel y gasolina en Barrancabermeja, Colombia.",
+    title: "Rembert Repuestos BCA | Repuestos Automotrices",
+    description: "Venta de repuestos automotrices, lubricantes y filtros en Barrancabermeja, Colombia.",
     images: ["/logo.png"],
   },
   robots: {
@@ -107,20 +108,20 @@ const jsonLdGraph = {
     {
       "@type": "AutoPartsStore",
       "@id": `${baseUrl}/#store`,
-      "name": "Multiservicios Victor Services",
+      "name": "Rembert Repuestos BCA",
       "url": baseUrl,
       "logo": `${baseUrl}/logo.png`,
       "image": `${baseUrl}/logo.png`,
       "telephone": "+573108737354",
-      "email": "contacto@victorservicesas.com",
+      "email": "repuestosrembertsa@gmail.com",
       "sameAs": [
         "https://www.facebook.com/profile.php?id=61557618591007",
         "https://wa.me/573108737354"
       ],
-      "hasMap": "https://maps.google.com/?q=Victor+Services+Barrancabermeja",
+      "hasMap": "https://maps.app.goo.gl/FmmwX9PivNVnurEL7",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "Barrancabermeja",
+        "streetAddress": "Tv. 29, Barrancabermeja",
         "addressLocality": "Barrancabermeja",
         "addressRegion": "Santander",
         "addressCountry": "CO",
@@ -150,7 +151,7 @@ const jsonLdGraph = {
       "@type": "WebSite",
       "@id": `${baseUrl}/#website`,
       "url": baseUrl,
-      "name": "Victor Services",
+      "name": "Rembert Repuestos BCA",
       "publisher": {
         "@id": `${baseUrl}/#store`,
       },
@@ -177,87 +178,156 @@ export default function RootLayout({ children }) {
       </head>
       <body>
         <AuthProvider>
-        <CartProvider>
-        {/* Top Bar */}
-        <div className="top-bar">
-          <div style={{ display: 'flex', gap: '1.5rem', alignItems: 'center' }}>
-            {/* Topbar despejado para estética más limpia */}
-            <span>Bienvenido a Victor Services</span>
-          </div>
-          <div style={{ display: 'flex', gap: '1.5rem', alignItems: 'center' }}>
-            <span style={{ fontWeight: 'bold' }}>🚚 Envíos a todo Colombia</span>
-          </div>
-        </div>
+          <CartProvider>
+            {/* Top Bar (30% Amarillo) con Botones CTA */}
+            <div className="top-bar">
+              <div className="top-bar__inner main-container">
+                {/* Slogan oficial de marca */}
+                <div className="top-bar__highlight">
+                  <span style={{ fontWeight: '800', fontSize: '0.84rem', color: '#111111', letterSpacing: '0.4px', textTransform: 'uppercase' }}>
+                    🛡️ REPUESTOS CONFIABLES PARA TU VEHÍCULO
+                  </span>
+                </div>
 
-        {/* Navbar */}
-        <nav className="navbar">
-          <div className="navbar__main main-container">
-            {/* Brand / Logo */}
-            <Link href="/" className="navbar__brand">
-              <Image src="/logo.png" alt="Victor Services Logo" width={70} height={70} sizes="70px" style={{ objectFit: 'contain', borderRadius: '50%' }} />
-              <div className="navbar__title">
-                <small>MULTISERVICIOS</small>
-                <strong>VICTOR SERVICES</strong>
-                <small style={{ color: '#fff' }}>BARRANCABERMEJA</small>
+                {/* Botones de Llamado a la Acción Táctiles para Móvil y Desktop */}
+                <div className="top-bar__actions" role="navigation" aria-label="Canales de atención directa">
+                  <a
+                    href="https://wa.me/573102420490?text=Hola%2C%20me%20comunico%20con%20Punto%20Principal%20de%20Rembert%20Repuestos."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="top-bar__btn top-bar__btn--primary"
+                    title="Llamar o escribir al Punto Principal"
+                  >
+                    <span className="btn-icon">📍</span>
+                    <span><strong>Ppal:</strong> 310 242 0490</span>
+                  </a>
+
+                  <a
+                    href="https://wa.me/573102707375?text=Hola%2C%20me%20comunico%20con%20Punto%20El%20Cerro%20de%20Rembert%20Repuestos."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="top-bar__btn top-bar__btn--dark"
+                    title="Llamar o escribir al Punto El Cerro"
+                  >
+                    <span className="btn-icon">📍</span>
+                    <span><strong>El Cerro:</strong> 310 270 7375</span>
+                  </a>
+
+                  <a
+                    href="https://wa.me/573508299233?text=Hola%2C%20me%20comunico%20con%20Compras%20e%20Inventario%20de%20Rembert%20Repuestos."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="top-bar__btn top-bar__btn--cta"
+                    title="Compras e Inventario: +57 350 829 9233"
+                  >
+                    <span className="btn-icon">🛒</span>
+                    <span><strong>Compras e Inventario:</strong> +57 350 829 9233</span>
+                  </a>
+
+                  <div className="top-bar__chip">
+                    <span>🚚 <strong>Envíos Nacionales</strong></span>
+                  </div>
+                </div>
               </div>
-            </Link>
+            </div>
 
-            {/* Search */}
-            <SearchBar />
+            {/* Navbar */}
+            <nav className="navbar">
+              <div className="navbar__main main-container">
+                {/* Brand / Logo + 38 Años de Experiencia Debajo */}
+                <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.35rem' }}>
+                  <Link href="/" className="navbar__brand" style={{ display: 'flex', alignItems: 'center', textDecoration: 'none' }}>
+                    <BrandLogo width={240} height={64} />
+                  </Link>
+                  <span className="experience-badge" style={{ fontSize: '0.76rem', padding: '0.2rem 0.8rem', letterSpacing: '0.5px' }}>
+                    ⭐ <strong>38 AÑOS</strong> DE EXPERIENCIA
+                  </span>
+                </div>
 
+                {/* Search */}
+                <SearchBar />
 
-            {/* Actions */}
-            <UserMenu />
-          </div>
+                {/* Actions */}
+                <UserMenu />
+              </div>
 
-          {/* Bottom Menu */}
-          <ul className="navbar__menu main-container">
-            <li><Link href="/" className="navbar__link">INICIO</Link></li>
-            <li><Link href="/catalogo?category=lubricantes" className="navbar__link">LUBRICANTES</Link></li>
-            <li><Link href="/catalogo?category=filtros" className="navbar__link">FILTROS</Link></li>
-            <li><Link href="/catalogo?category=frenos-y-suspension" className="navbar__link">FRENOS Y SUSPENSIÓN</Link></li>
-            <li><Link href="/marcas" className="navbar__link">MARCAS</Link></li>
-            <li><Link href="/nosotros" className="navbar__link">NOSOTROS</Link></li>
-            <li><Link href="/blog" className="navbar__link">BLOG TÉCNICO</Link></li>
-            <li><Link href="/contacto" className="navbar__link">CONTACTO</Link></li>
-          </ul>
-        </nav>
+              {/* Bottom Menu */}
+              <ul className="navbar__menu main-container" style={{ whiteSpace: "nowrap", flexWrap: "nowrap" }}>
+                <li style={{ whiteSpace: "nowrap", flexShrink: 0 }}><Link href="/" className="navbar__link" style={{ whiteSpace: "nowrap" }}>INICIO</Link></li>
+                <li style={{ whiteSpace: "nowrap", flexShrink: 0 }}><Link href="/catalogo?category=lubricantes" className="navbar__link" style={{ whiteSpace: "nowrap" }}>LUBRICANTES</Link></li>
+                <li style={{ whiteSpace: "nowrap", flexShrink: 0 }}><Link href="/catalogo?category=filtros" className="navbar__link" style={{ whiteSpace: "nowrap" }}>FILTROS</Link></li>
+                <li style={{ whiteSpace: "nowrap", flexShrink: 0 }}><Link href="/catalogo?category=frenos-y-suspension" className="navbar__link" style={{ whiteSpace: "nowrap" }}>{"FRENOS\u00A0Y\u00A0SUSPENSIÓN"}</Link></li>
+                <li style={{ whiteSpace: "nowrap", flexShrink: 0 }}><Link href="/radiadores" className="navbar__link" style={{ whiteSpace: "nowrap" }}>RADIADORES</Link></li>
+                <li style={{ whiteSpace: "nowrap", flexShrink: 0 }}><Link href="/servicio-tecnico" className="navbar__link" style={{ whiteSpace: "nowrap" }}>{"SERVICIO\u00A0TÉCNICO"}</Link></li>
+                <li style={{ whiteSpace: "nowrap", flexShrink: 0 }}><Link href="/marcas" className="navbar__link" style={{ whiteSpace: "nowrap" }}>MARCAS</Link></li>
+                <li style={{ whiteSpace: "nowrap", flexShrink: 0 }}><Link href="/nosotros" className="navbar__link" style={{ whiteSpace: "nowrap" }}>NOSOTROS</Link></li>
+                <li style={{ whiteSpace: "nowrap", flexShrink: 0 }}><Link href="/contacto" className="navbar__link" style={{ whiteSpace: "nowrap" }}>CONTACTO</Link></li>
+              </ul>
+            </nav>
 
-        {children}
+            {children}
 
-        <footer className="footer" style={{ textAlign: 'center', padding: '3rem 1rem', background: '#111', color: '#999' }}>
-          <div style={{ display: 'flex', justifyContent: 'center', gap: '2rem', marginBottom: '1.5rem' }}>
-            <a href="https://www.facebook.com/profile.php?id=61557618591007" target="_blank" rel="noreferrer" style={{ color: '#1877F2', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '1.1rem' }}>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#1877F2" width="20" height="20"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.469h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.469h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg> Facebook
-            </a>
-            <a href="https://wa.me/573108737354" target="_blank" rel="noreferrer" style={{ color: '#fff', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '1.1rem' }}>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#25D366" width="20" height="20"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg> WhatsApp
-            </a>
-            <a href="mailto:contacto@victorservicesas.com" style={{ color: '#fff', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '1.1rem' }}>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#EA4335" width="20" height="20"><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></svg> Email
-            </a>
-            <a href="https://maps.google.com/?q=Victor+Services+Barrancabermeja" target="_blank" rel="noreferrer" style={{ color: '#fff', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '1.1rem' }}>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#34A853" width="20" height="20"><path d="M12 0C7.589 0 4 3.589 4 8c0 4.274 7.219 15.184 7.633 15.82a.498.498 0 00.734 0C12.781 23.184 20 12.274 20 8c0-4.411-3.589-8-8-8zm0 11.5a3.5 3.5 0 110-7 3.5 3.5 0 010 7z"/></svg> Ubicación
-            </a>
-          </div>
-          <nav aria-label="Información legal" style={{ display: 'flex', justifyContent: 'center', gap: '1rem', flexWrap: 'wrap', fontSize: '0.88rem', marginBottom: '1rem' }}>
-            <Link href="/politica-privacidad">Tratamiento de datos</Link>
-            <Link href="/politica-cookies">Cookies</Link>
-            <Link href="/terminos-y-condiciones">Términos y condiciones</Link>
-            <Link href="/eliminar-datos">Eliminar cuenta y datos</Link>
-          </nav>
-          <p>&copy; {new Date().getFullYear()} Multiservicios Victor Services. Barrancabermeja, Colombia.</p>
-          <p style={{ marginTop: '0.5rem', color: '#666', fontSize: '0.9rem' }}>
-            Sitio web creado por <a href="https://crk-publicity.pages.dev/" target="_blank" rel="noreferrer" style={{ color: 'var(--primary-color)', textDecoration: 'none', fontWeight: 'bold' }}>CRK Publicity</a>
-          </p>
-        </footer>
-        <ContactSidebar />
-        <CartDrawer />
-        <CookieConsent />
-        <Analytics />
-        </CartProvider>
+            <footer className="footer" style={{ textAlign: 'center', padding: '3.5rem 1rem', background: '#111', color: '#ccc' }}>
+              <div style={{ maxWidth: '1100px', margin: '0 auto 2.5rem', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: '2rem', textAlign: 'left' }}>
+                <div>
+                  <h4 style={{ color: 'var(--primary-color)', fontSize: '1.1rem', marginBottom: '1rem', textTransform: 'uppercase' }}>Rembert Repuestos BCA</h4>
+                  <p style={{ color: '#aaa', fontSize: '0.9rem', lineHeight: '1.6', marginBottom: '0.8rem' }}>
+                    Repuestos originales y alternativos para tu vehículo. Precios al por mayor y detal con envíos seguros a todo el país.
+                  </p>
+                  <p style={{ color: '#888', fontSize: '0.85rem' }}>Barrancabermeja, Santander - Colombia</p>
+                </div>
+
+                <div>
+                  <h4 style={{ color: 'var(--primary-color)', fontSize: '1.1rem', marginBottom: '1rem', textTransform: 'uppercase' }}>Sedes & Atención</h4>
+                  <p style={{ fontSize: '0.9rem', marginBottom: '0.5rem' }}>
+                    <strong style={{ color: '#fff' }}>Punto Principal:</strong><br />
+                    <a href="https://wa.me/573102420490" target="_blank" rel="noopener noreferrer" style={{ color: '#25D366' }}>📱 310 242 0490</a> / <a href="https://wa.me/573125022555" target="_blank" rel="noopener noreferrer" style={{ color: '#25D366' }}>312 502 2555</a>
+                  </p>
+                  <p style={{ fontSize: '0.9rem' }}>
+                    <strong style={{ color: '#fff' }}>Punto El Cerro:</strong><br />
+                    <a href="https://wa.me/573102707375" target="_blank" rel="noopener noreferrer" style={{ color: '#25D366' }}>📱 310 270 7375</a>
+                  </p>
+                </div>
+
+                <div>
+                  <h4 style={{ color: 'var(--primary-color)', fontSize: '1.1rem', marginBottom: '1rem', textTransform: 'uppercase' }}>Compras & Canales</h4>
+                  <p style={{ fontSize: '0.9rem', marginBottom: '0.75rem' }}>
+                    <strong style={{ color: '#fff' }}>Compras e Inventario:</strong><br />
+                    <a href="https://wa.me/573508299233" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary-color)', fontWeight: 'bold' }}>🛒 +57 350 829 9233</a>
+                  </p>
+                  <p style={{ fontSize: '0.9rem' }}>
+                    <strong style={{ color: '#fff' }}>Email Corporativo:</strong><br />
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=repuestosrembertsa@gmail.com&su=Consulta+de+Repuestos" target="_blank" rel="noopener noreferrer" style={{ color: '#aaa' }}>repuestosrembertsa@gmail.com</a>
+                  </p>
+                </div>
+              </div>
+
+              <div style={{ display: 'flex', justifyContent: 'center', gap: '1.5rem', marginBottom: '1.5rem', flexWrap: 'wrap' }}>
+                <a href="https://maps.app.goo.gl/FmmwX9PivNVnurEL7" target="_blank" rel="noreferrer" style={{ color: '#fff', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.95rem' }}>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#34A853" width="18" height="18"><path d="M12 0C7.589 0 4 3.589 4 8c0 4.274 7.219 15.184 7.633 15.82a.498.498 0 00.734 0C12.781 23.184 20 12.274 20 8c0-4.411-3.589-8-8-8zm0 11.5a3.5 3.5 0 110-7 3.5 3.5 0 010 7z" /></svg> Ver en Google Maps
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=61557618591007" target="_blank" rel="noreferrer" style={{ color: '#1877F2', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.95rem' }}>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#1877F2" width="18" height="18"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.469h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.469h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" /></svg> Facebook
+                </a>
+              </div>
+              <nav aria-label="Información legal" style={{ display: 'flex', justifyContent: 'center', gap: '1rem', flexWrap: 'wrap', fontSize: '0.88rem', marginBottom: '1rem' }}>
+                <Link href="/politica-privacidad">Tratamiento de datos</Link>
+                <Link href="/politica-cookies">Cookies</Link>
+                <Link href="/terminos-y-condiciones">Términos y condiciones</Link>
+                <Link href="/eliminar-datos">Eliminar cuenta y datos</Link>
+              </nav>
+              <p>&copy; {new Date().getFullYear()} Rembert Repuestos BCA. Barrancabermeja, Colombia.</p>
+              <p style={{ marginTop: '0.5rem', color: '#666', fontSize: '0.9rem' }}>
+                Sitio web creado por <a href="https://crk-publicity.pages.dev/" target="_blank" rel="noreferrer" style={{ color: 'var(--primary-color)', textDecoration: 'none', fontWeight: 'bold' }}>CRK Publicity</a>
+              </p>
+            </footer>
+            <ContactSidebar />
+            <CartDrawer />
+            <CookieConsent />
+            <Analytics />
+          </CartProvider>
         </AuthProvider>
-      </body>
-    </html>
+      </body >
+    </html >
   );
 }

@@ -1,9 +1,9 @@
 export default function manifest() {
   return {
-    name: "Victor Services | Lubricantes y Filtros",
-    short_name: "Victor Services",
+    name: "Rembert Repuestos BCA | Lubricantes y Filtros",
+    short_name: "Rembert BCA",
     description:
-      "Venta de lubricantes y filtros para motores diésel y gasolina en Barrancabermeja, Colombia.",
+      "Venta de lubricantes, filtros, frenos y repuestos automotrices en Barrancabermeja, Colombia.",
     start_url: "/",
     display: "standalone",
     background_color: "#101010",

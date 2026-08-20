@@ -1,15 +1,15 @@
 export const metadata = {
-  title: "Sobre Victor Services: lubricantes y filtros en Barrancabermeja",
+  title: "Sobre Rembert Repuestos BCA: lubricantes, filtros y repuestos en Barrancabermeja",
   description:
-    "Conozca la historia, misión y experiencia de Multiservicios Victor Services en Barrancabermeja. Soluciones en mantenimiento automotriz e industrial.",
+    "Conozca la historia, misión y experiencia de Rembert Repuestos BCA en Barrancabermeja. Soluciones en mantenimiento automotriz y repuestos.",
   alternates: {
     canonical: "/nosotros",
   },
   openGraph: {
-    title: "Sobre Victor Services",
+    title: "Sobre Rembert Repuestos BCA",
     description:
-      "Años de experiencia proveyendo lubricantes y filtros de alta calidad para motores diésel y gasolina.",
-    url: "https://www.victorservicesas.com/nosotros",
+      "Años de experiencia proveyendo lubricantes, filtros y repuestos de alta calidad para vehículos en Barrancabermeja.",
+    url: "https://www.rembertrepuestos.com/nosotros",
   },
 };
 
@@ -18,13 +18,13 @@ export default function NosotrosPage() {
     <div className="main-container" style={{ padding: '3rem 1rem', minHeight: '70vh' }}>
       <div style={{ maxWidth: '800px', margin: '0 auto' }}>
         <h1 style={{ fontSize: '2.5rem', marginBottom: '2rem', color: 'var(--primary-color)', textAlign: 'center' }}>
-          Sobre Victor Services
+          Sobre Rembert Repuestos BCA
         </h1>
         
         <div style={{ background: 'white', padding: '3rem', borderRadius: '12px', boxShadow: '0 10px 30px rgba(0,0,0,0.05)' }}>
           <h2 style={{ fontSize: '1.5rem', color: '#333', marginBottom: '1rem' }}>Nuestra Historia</h2>
           <p style={{ color: '#555', lineHeight: '1.8', marginBottom: '2rem' }}>
-            Nacidos en el corazón de <strong>Barrancabermeja</strong>, la capital petrolera de Colombia, Multiservicios Victor Services ha sido un pilar fundamental en el mantenimiento automotriz e industrial de la región. Entendemos perfectamente la exigencia que el clima y el trabajo duro imponen sobre los motores diésel y gasolina.
+            Nacidos en el corazón de <strong>Barrancabermeja</strong>, Santander, Rembert Repuestos BCA ha sido un pilar fundamental en el suministro de repuestos y lubricantes automotrices de la región. Entendemos perfectamente la exigencia que el clima y el trabajo imponen sobre los vehículos.
           </p>
 
           <h2 style={{ fontSize: '1.5rem', color: '#333', marginBottom: '1rem' }}>Nuestra Misión</h2>

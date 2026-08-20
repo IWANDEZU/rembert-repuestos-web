@@ -54,7 +54,7 @@ export default function ContactForm() {
       `==================================================`;
 
     const mailUrl = getMailtoUrl({
-      to: "contacto@victorservices.com",
+      to: "repuestosrembertsa@gmail.com",
       subject: `Consulta Web: ${formData.subject} (${formData.name})`,
       body,
     });

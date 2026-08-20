@@ -5,11 +5,11 @@ import { redirect } from "next/navigation";
 import CatalogGridWithModal from "@/components/CatalogGridWithModal";
 import CatalogSidebar from "@/components/CatalogSidebar";
 import { buildCatalogHref } from "@/lib/catalogUtils";
-import PrioridadDieselCatalogSection from "@/components/PrioridadDieselCatalogSection";
 import { siteUrl } from "@/lib/site";
 import { getServerSession } from "next-auth/next";
 import { authOptions } from "@/app/api/auth/[...nextauth]/route";
 import { generateWhatsAppProductText, getWhatsAppUrl } from "@/lib/orderFormatter";
+import { products as fallbackCatalogProducts } from "@/lib/products";
 
 export const dynamic = "force-dynamic";
 const PAGE_SIZE = 24;
@@ -29,14 +29,13 @@ export async function generateMetadata({ searchParams }) {
     lubricantes: "Lubricantes y Aceites de Motor",
     filtros: "Filtros Automotrices e Industriales",
     "frenos-y-suspension": "Frenos y Suspensión Automotriz",
-    "maquinaria-pesada": "Línea Amarilla y Maquinaria Pesada",
-    "lubricantes-diesel": "Lubricantes Diésel Trabajo Pesado",
     "lubricantes-gasolina": "Lubricantes para Motor a Gasolina",
     transmision: "Aceites de Transmisión y Diferencial",
     hidraulico: "Aceites Hidráulicos Industriales",
     coolant: "Refrigerantes y Coolant para Motor",
     "grasas-y-aditivos": "Grasas Automotrices y Aditivos",
-    urea: "Urea Automotriz (AdBlue / DEF)",
+    radiadores: "Radiadores y Sistema de Enfriamiento",
+    "servicio-tecnico": "Servicio Técnico y Taller Especializado",
   };
 
   if (categoryParam && categoryTitles[categoryParam]) {
@@ -81,13 +80,11 @@ export async function generateMetadata({ searchParams }) {
 }
 
 const categorySlugs = [
-  "lubricantes-diesel",
   "lubricantes-gasolina",
   "transmision",
   "hidraulico",
   "coolant",
   "grasas-y-aditivos",
-  "maquinaria-pesada",
 ];
 
 const filterTypeShowcase = [
@@ -153,14 +150,6 @@ const filterTypeShowcase = [
     description: "Mejor calidad de aire dentro del vehículo.",
     image: "/catalogo-filtros-tipos/filtro-habitaculo-cabina.webp",
     alt: "Filtro de cabina automotriz",
-  },
-  {
-    slug: "dpf",
-    category: "maquinaria-pesada",
-    title: "Filtro DPF",
-    description: "Control de partículas en motores diésel.",
-    image: "/catalogo-filtros-tipos/filtro-particulas-diesel-dpf.webp",
-    alt: "Filtro de partículas diésel DPF",
   },
   {
     slug: "scr",
@@ -341,22 +330,6 @@ export default async function Catalogo({ searchParams }) {
         { category: { slug: "frenos-y-suspension" } },
       ],
     });
-  } else if (categoryParam === "lubricantes-diesel") {
-    conditions.push({
-      OR: [
-        { category: { slug: "lubricantes-diesel" } },
-        { name: { contains: "Delvac" } },
-        { name: { contains: "Delo" } },
-        { name: { contains: "Rimula" } },
-        { name: { contains: "Premium Blue" } },
-        { name: { contains: "Diesel" } },
-        { name: { contains: "Diésel" } },
-        { name: { contains: "DEO" } },
-      ],
-    });
-    conditions.push({
-      NOT: [{ name: { contains: "Filtro" } }, { category: { slug: "filtros" } }],
-    });
   } else if (categoryParam === "lubricantes-gasolina") {
     conditions.push({
       OR: [
@@ -464,6 +437,18 @@ export default async function Catalogo({ searchParams }) {
         { name: { contains: "DEF" } },
       ],
     });
+  } else if (categoryParam === "radiadores") {
+    conditions.push({
+      OR: [
+        { category: { slug: { in: ["radiadores", "coolant"] } } },
+        { name: { contains: "Radiador" } },
+        { name: { contains: "Intercooler" } },
+        { name: { contains: "Enfriador" } },
+        { name: { contains: "Tapa" } },
+        { name: { contains: "Termostato" } },
+        { description: { contains: "radiador" } },
+      ],
+    });
   } else if (categoryParam) {
     conditions.push({ category: { slug: categoryParam } });
   }
@@ -483,6 +468,18 @@ export default async function Catalogo({ searchParams }) {
     });
   }
 
+  // Excluir artículos y categorías relacionados con diésel
+  conditions.push({
+    NOT: [
+      { name: { contains: "Diesel" } },
+      { name: { contains: "Diésel" } },
+      { name: { contains: "diesel" } },
+      { name: { contains: "diésel" } },
+      { category: { slug: "lubricantes-diesel" } },
+      { category: { slug: "maquinaria-pesada" } },
+    ],
+  });
+
   const where = {
     isActive: true,
     ...(conditions.length > 0 ? { AND: conditions } : {}),
@@ -497,18 +494,56 @@ export default async function Catalogo({ searchParams }) {
 
   const productInclude = { category: true, brand: true, images: true, variants: true, attributes: true };
   const requiresPriceSort = sortParam.startsWith("price");
-  const [fetchedProducts, totalProducts, brands, session] = await Promise.all([
-    prisma.product.findMany({
-      where,
-      include: productInclude,
-      orderBy: requiresPriceSort ? undefined : orderBy,
-      ...(requiresPriceSort ? {} : { skip: (requestedPage - 1) * PAGE_SIZE, take: PAGE_SIZE }),
-    }),
-    prisma.product.count({ where }),
-    prisma.brand.findMany({ orderBy: { name: "asc" } }),
-    getServerSession(authOptions),
-  ]);
 
+  let fetchedProducts = [];
+  let totalProducts = 0;
+  let brands = [];
+  let session = null;
+
+  try {
+    const [dbProducts, dbTotal, dbBrands, dbSession] = await Promise.all([
+      prisma.product.findMany({
+        where,
+        include: productInclude,
+        orderBy: requiresPriceSort ? undefined : orderBy,
+        ...(requiresPriceSort ? {} : { skip: (requestedPage - 1) * PAGE_SIZE, take: PAGE_SIZE }),
+      }),
+      prisma.product.count({ where }),
+      prisma.brand.findMany({ orderBy: { name: "asc" } }),
+      getServerSession(authOptions),
+    ]);
+    fetchedProducts = dbProducts;
+    totalProducts = dbTotal;
+    brands = dbBrands;
+    session = dbSession;
+  } catch (err) {
+    // Si la BD remota no responde o no está inicializada en local, filtrar del catálogo estático
+    let filtered = [...fallbackCatalogProducts];
+
+    if (categoryParam === "lubricantes") {
+      filtered = filtered.filter(p => p.category?.slug?.startsWith("lubricantes") || p.category?.slug === "transmision" || p.category?.slug === "hidraulico" || p.category?.slug === "coolant" || p.category?.slug === "grasas-y-aditivos");
+    } else if (categoryParam) {
+      filtered = filtered.filter(p => p.category?.slug === categoryParam);
+    }
+
+    if (brandParam) {
+      filtered = filtered.filter(p => p.brand?.slug === brandParam);
+    }
+
+    if (searchQuery) {
+      const q = searchQuery.toLowerCase();
+      filtered = filtered.filter(p => 
+        p.name.toLowerCase().includes(q) || 
+        p.description?.toLowerCase().includes(q) || 
+        p.sku?.toLowerCase().includes(q)
+      );
+    }
+
+    totalProducts = filtered.length;
+    fetchedProducts = filtered.slice((requestedPage - 1) * PAGE_SIZE, requestedPage * PAGE_SIZE);
+  }
+
+  const currentPage = requestedPage;
   const totalPages = Math.max(1, Math.ceil(totalProducts / PAGE_SIZE));
   if (totalProducts > 0 && requestedPage > totalPages) {
     redirect(buildCatalogHref({
@@ -520,14 +555,18 @@ export default async function Catalogo({ searchParams }) {
       page: totalPages,
     }));
   }
-  const currentPage = requestedPage;
+
   let favoriteProductIds = [];
   if (session?.user?.id) {
-    const favorites = await prisma.favorite.findMany({
-      where: { userId: session.user.id },
-      select: { productId: true },
-    });
-    favoriteProductIds = favorites.map(f => f.productId);
+    try {
+      const favorites = await prisma.favorite.findMany({
+        where: { userId: session.user.id },
+        select: { productId: true },
+      });
+      favoriteProductIds = favorites.map(f => f.productId);
+    } catch (err) {
+      favoriteProductIds = [];
+    }
   }
 
   // Los productos sin precio se cotizan, no se venden desde la web. Por eso
@@ -558,13 +597,12 @@ export default async function Catalogo({ searchParams }) {
     lubricantes: ["Lubricantes y aceites", "Aceites de motor, transmisión, hidráulicos, refrigerantes y grasas."],
     filtros: ["Filtros automotrices e industriales", "Filtros de aceite, aire, combustible, separadores de agua y cabina."],
     "frenos-y-suspension": ["Frenos y suspensión", "Pastillas, discos, amortiguadores y líquidos de frenos."],
-    "maquinaria-pesada": ["Maquinaria pesada y línea amarilla", "Fluidos de alto rendimiento para equipos, camiones y operación industrial."],
-    "lubricantes-diesel": ["Lubricantes diésel trabajo pesado", "Aceites para motores diésel de carga pesada y maquinaria."],
     "lubricantes-gasolina": ["Lubricantes gasolina y livianos", "Aceites sintéticos y minerales para motores a gasolina."],
     transmision: ["Aceites de transmisión y diferencial", "Fluidos para transmisiones, mandos finales, frenos húmedos y engranajes."],
     hidraulico: ["Aceites hidráulicos", "Fluidos para sistemas hidráulicos móviles e industriales."],
     coolant: ["Refrigerantes y coolant", "Refrigerantes de larga vida y anticongelantes para sistemas de enfriamiento."],
     "grasas-y-aditivos": ["Grasas y aditivos", "Protección para pasadores, bujes, rodamientos y aplicaciones de servicio severo."],
+    radiadores: ["Radiadores y sistema de refrigeración", "Radiadores de aluminio y cobre, tapas presurizadas, termostatos y refrigerantes para autos y camiones."],
     urea: ["Urea automotriz (AdBlue / DEF)", "Solución para reducción de emisiones en sistemas SCR."],
   };
   let [bannerTitle, bannerSubtitle] = banners[categoryParam] || [
@@ -734,7 +772,7 @@ export default async function Catalogo({ searchParams }) {
           </section>
         )}
 
-        {!categoryParam && !brandParam && !searchQuery && sortParam === "recent" && <PrioridadDieselCatalogSection />}
+
 
         <div className="catalog-toolbar">
           <p>Mostrando <strong>{firstProduct}-{lastProduct}</strong> de <strong>{totalProducts}</strong> producto(s)</p>

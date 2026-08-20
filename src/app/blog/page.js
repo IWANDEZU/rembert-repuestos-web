@@ -2,17 +2,17 @@ import Link from "next/link";
 import { siteUrl } from "@/lib/site";
 
 export const metadata = {
-  title: "Blog técnico de mantenimiento automotriz y diésel",
+  title: "Blog técnico de mantenimiento automotriz y repuestos",
   description:
-    "Guías técnicas, consejos de lubricación y mantenimiento preventivo para motores diésel, gasolina y maquinaria pesada en Barrancabermeja.",
+    "Guías técnicas, consejos de lubricación y mantenimiento preventivo para vehículos en Barrancabermeja.",
   alternates: {
     canonical: "/blog",
   },
   openGraph: {
-    title: "Blog técnico de Victor Services",
+    title: "Blog técnico de Rembert Repuestos BCA",
     description:
-      "Artículos y recomendaciones para prolongar la vida útil de motores y flotas vehiculares.",
-    url: "https://www.victorservicesas.com/blog",
+      "Artículos y recomendaciones para prolongar la vida útil de tu motor y sistema de frenos.",
+    url: "https://www.rembertrepuestos.com/blog",
   },
 };
 
@@ -21,17 +21,17 @@ export default function BlogPage() {
   const posts = [
     {
       id: 1,
-      title: "¿Qué significa el 15W-40 en tu aceite de motor?",
+      title: "¿Qué significa el 15W-40 o 20W-50 en tu aceite de motor?",
       excerpt: "Aprende a leer la viscosidad de tu lubricante y por qué es vital elegir la correcta según el clima de Barrancabermeja y el desgaste de tu motor.",
       date: "15 Oct 2023",
       category: "Lubricantes"
     },
     {
       id: 2,
-      title: "Mantenimiento Preventivo de Flotas Diésel",
-      excerpt: "Descubre cómo los análisis de aceite y los filtros separadores de combustible pueden ahorrarte millones en reparaciones de inyectores.",
+      title: "Mantenimiento Preventivo del Sistema de Filtración",
+      excerpt: "Descubre cómo los filtros de aceite, aire y combustible protegen la vida de tu motor y mejoran el consumo de gasolina.",
       date: "02 Nov 2023",
-      category: "Maquinaria Pesada"
+      category: "Filtros"
     },
     {
       id: 3,
@@ -45,12 +45,12 @@ export default function BlogPage() {
   const blogJsonLd = {
     "@context": "https://schema.org",
     "@type": "Blog",
-    "name": "Blog Técnico Victor Services",
+    "name": "Blog Técnico Rembert Repuestos BCA",
     "description": "Guías técnicas y consejos de lubricación y mantenimiento preventivo para motores en Barrancabermeja.",
     "url": `${baseUrl}/blog`,
     "publisher": {
       "@type": "AutoPartsStore",
-      "name": "Multiservicios Victor Services",
+      "name": "Rembert Repuestos BCA",
       "url": baseUrl,
     },
     "blogPost": posts.map((p) => ({

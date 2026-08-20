@@ -40,6 +40,18 @@ export default async function sitemap() {
       priority: 0.8,
     },
     {
+      url: `${baseUrl}/servicio-tecnico`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.85,
+    },
+    {
+      url: `${baseUrl}/radiadores`,
+      lastModified: now,
+      changeFrequency: "daily",
+      priority: 0.9,
+    },
+    {
       url: `${baseUrl}/blog`,
       lastModified: now,
       changeFrequency: "weekly",
@@ -76,14 +88,12 @@ export default async function sitemap() {
     "lubricantes",
     "filtros",
     "frenos-y-suspension",
-    "maquinaria-pesada",
-    "lubricantes-diesel",
+    "radiadores",
     "lubricantes-gasolina",
     "transmision",
     "hidraulico",
     "coolant",
     "grasas-y-aditivos",
-    "urea",
   ];
 
   const categoryRoutes = categorySlugs.map((slug) => ({

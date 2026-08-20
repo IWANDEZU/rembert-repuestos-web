@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 110">
+  <defs>
+    <linearGradient id="goldChevy" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFD700"/>
+      <stop offset="50%" stop-color="#DAA520"/>
+      <stop offset="100%" stop-color="#B8860B"/>
+    </linearGradient>
+  </defs>
+  <path d="M30 35 L115 35 L105 0 L195 0 L185 35 L270 35 L255 75 L175 75 L165 110 L75 110 L85 75 L15 75 Z" fill="#C0C0C0" stroke="#333" stroke-width="3"/>
+  <path d="M37 40 L118 40 L110 8 L190 8 L182 40 L263 40 L250 70 L172 70 L162 102 L82 102 L90 70 L24 70 Z" fill="url(#goldChevy)"/>
+</svg>

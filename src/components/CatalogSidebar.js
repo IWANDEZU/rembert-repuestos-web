@@ -21,10 +21,29 @@ export default async function CatalogSidebar({
   searchQuery,
   sortParam,
 }) {
-  const brands = await prisma.brand.findMany({ 
-    where: { slug: { not: 'vanssoil' } },
-    orderBy: { name: "asc" } 
-  });
+  let brands = [];
+  try {
+    brands = await prisma.brand.findMany({ 
+      where: { slug: { not: 'vanssoil' } },
+      orderBy: { name: "asc" } 
+    });
+  } catch (err) {
+    brands = [
+      { id: "1", name: "Castrol", slug: "castrol" },
+      { id: "2", name: "Mobil", slug: "mobil" },
+      { id: "3", name: "Shell", slug: "shell" },
+      { id: "4", name: "Terpel", slug: "terpel" },
+      { id: "5", name: "Chevron", slug: "chevron" },
+      { id: "6", name: "Liqui Moly", slug: "liqui-moly" },
+      { id: "7", name: "Bosch", slug: "bosch" },
+      { id: "8", name: "WIX Filters", slug: "wix" },
+      { id: "9", name: "Partmo", slug: "partmo" },
+      { id: "10", name: "ACDelco", slug: "acdelco" },
+      { id: "11", name: "Motorcraft", slug: "motorcraft" },
+      { id: "12", name: "Incolbest", slug: "incolbest" },
+      { id: "13", name: "Gabriel", slug: "gabriel" },
+    ];
+  }
 
   const sharedFilters = { brand: brandParam, search: searchQuery, sort: sortParam };
   const categoryHref = (category, tipo) => buildCatalogHref({ ...sharedFilters, category, tipo });
@@ -55,7 +74,6 @@ export default async function CatalogSidebar({
               <li>
                 <CatalogLink href={categoryHref("lubricantes")} active={categoryParam === "lubricantes"}>Lubricantes</CatalogLink>
                 <ul className="catalog-menu catalog-menu--nested">
-                  <li><CatalogLink href={categoryHref("lubricantes-diesel")} active={categoryParam === "lubricantes-diesel"}>Diésel trabajo pesado</CatalogLink></li>
                   <li><CatalogLink href={categoryHref("lubricantes-gasolina")} active={categoryParam === "lubricantes-gasolina"}>Gasolina y livianos</CatalogLink></li>
                   <li><CatalogLink href={categoryHref("transmision")} active={categoryParam === "transmision"}>Transmisión y mandos</CatalogLink></li>
                   <li><CatalogLink href={categoryHref("hidraulico")} active={categoryParam === "hidraulico"}>Aceites hidráulicos</CatalogLink></li>
@@ -66,16 +84,14 @@ export default async function CatalogSidebar({
               <li>
                 <CatalogLink href={categoryHref("filtros")} active={categoryParam === "filtros" && !tipoParam}>Filtros</CatalogLink>
                 <ul className="catalog-menu catalog-menu--nested">
-                  {[["aceite", "Aceite"], ["aire", "Aire"], ["combustible", "Combustible / separador"], ["cabina", "Cabina"]].map(([tipo, label]) => (
+                  {[["aceite", "Aceite"], ["aire", "Aire"], ["combustible", "Combustible"], ["cabina", "Cabina"]].map(([tipo, label]) => (
                     <li key={tipo}><CatalogLink href={categoryHref("filtros", tipo)} active={categoryParam === "filtros" && tipoParam === tipo}>{label}</CatalogLink></li>
                   ))}
                 </ul>
               </li>
               <li><CatalogLink href={categoryHref("frenos-y-suspension")} active={categoryParam === "frenos-y-suspension"}>Frenos y suspensión</CatalogLink></li>
-              <li><CatalogLink href={categoryHref("maquinaria-pesada")} active={categoryParam === "maquinaria-pesada"}>Línea amarilla / diésel</CatalogLink></li>
-              <li><CatalogLink href={buildCatalogHref({ brand: "caterpillar", sort: sortParam })} active={brandParam === "caterpillar"} className="catalog-menu__link--featured">Lubricantes Caterpillar</CatalogLink></li>
-              <li><CatalogLink href={categoryHref("urea")} active={categoryParam === "urea"}>Urea automotriz (DEF)</CatalogLink></li>
-              <li><Link href="/catalogo#coleccion-prioridad-diesel" className="catalog-menu__link catalog-menu__link--featured">Filtros y suspensión diésel</Link></li>
+              <li><CatalogLink href={categoryHref("radiadores")} active={categoryParam === "radiadores"}>❄️ Radiadores y refrigeración</CatalogLink></li>
+              <li><CatalogLink href={categoryHref("servicio-tecnico")} active={categoryParam === "servicio-tecnico"}>🛠️ Servicio técnico y taller</CatalogLink></li>
             </ul>
           </nav>
 

@@ -1,12 +1,12 @@
 {
-  "name": "victor-services",
+  "name": "rembert-repuestos-web",
   "version": "0.1.0",
   "private": true,
   "engines": {
     "node": ">=20.0.0"
   },
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -H 0.0.0.0",
     "build": "prisma generate && node prisma/prepare-production-db.js && node prisma/upsert-priority-filters.js --build-sync && next build",
     "postinstall": "prisma generate",
     "start": "next start",

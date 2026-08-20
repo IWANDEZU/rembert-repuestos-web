@@ -3,12 +3,16 @@
  * Victor Services - Barrancabermeja
  */
 
-export const DESTINATION_WHATSAPP = "573108737354";
-export const DESTINATION_EMAIL = "contacto@victorservices.com";
+export const DESTINATION_WHATSAPP = "573102420490"; // Punto Principal
+export const WHATSAPP_PRINCIPAL_1 = "573102420490";
+export const WHATSAPP_PRINCIPAL_2 = "573125022555";
+export const WHATSAPP_EL_CERRO = "573102707375";
+export const WHATSAPP_COMPRAS = "573508299233";
+export const DESTINATION_EMAIL = "repuestosrembertsa@gmail.com";
 const configuredSiteOrigin = process.env.NEXT_PUBLIC_SITE_URL;
 export const SITE_ORIGIN = /^https?:\/\/[^\s/$.?#].[^\s]*$/i.test(configuredSiteOrigin || "")
   ? configuredSiteOrigin.replace(/\/$/, "")
-  : "https://www.victorservicesas.com";
+  : "https://www.rembertrepuestos.com";
 
 /**
  * Convierte una ruta de imagen o producto en una URL pública absoluta.

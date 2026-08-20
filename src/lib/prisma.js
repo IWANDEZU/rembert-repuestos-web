@@ -2,14 +2,51 @@ import { PrismaClient } from "@prisma/client";
 
 const globalForPrisma = globalThis;
 
-// Reuse one client during local hot reloads. Vercel creates a fresh runtime for
-// a cold start, while warm invocations reuse this module instance.
-export const prisma =
-  globalForPrisma.__prisma ??
-  new PrismaClient({
-    log: process.env.NODE_ENV === "development" ? ["error", "warn"] : ["error"],
-  });
+const dbUrl = process.env.DATABASE_URL || "";
+const isValidPostgresUrl =
+  (dbUrl.startsWith("postgresql://") || dbUrl.startsWith("postgres://")) &&
+  !dbUrl.includes("[SENSITIVE]");
 
-if (process.env.NODE_ENV !== "production") {
+let prismaInstance;
+
+if (isValidPostgresUrl) {
+  try {
+    prismaInstance =
+      globalForPrisma.__prisma ??
+      new PrismaClient({
+        log: process.env.NODE_ENV === "development" ? ["error", "warn"] : ["error"],
+      });
+  } catch (err) {
+    console.warn("No se pudo instanciar PrismaClient con la URL actual:", err.message);
+  }
+}
+
+if (!prismaInstance) {
+  // Proxy seguro para desarrollo local sin conexión remota configurada
+  prismaInstance = new Proxy(
+    {},
+    {
+      get(_target, prop) {
+        if (prop === "$connect" || prop === "$disconnect") {
+          return async () => {};
+        }
+        return new Proxy(
+          {},
+          {
+            get(_mTarget, _method) {
+              return async () => {
+                throw new Error("DATABASE_URL no configurada o inválida. Usando datos locales de respaldo.");
+              };
+            },
+          }
+        );
+      },
+    }
+  );
+}
+
+export const prisma = prismaInstance;
+
+if (process.env.NODE_ENV !== "production" && isValidPostgresUrl) {
   globalForPrisma.__prisma = prisma;
 }

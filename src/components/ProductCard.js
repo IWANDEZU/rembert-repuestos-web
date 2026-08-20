@@ -8,12 +8,6 @@ import { useRouter } from "next/navigation";
 import { getProductDisplayImage } from "@/lib/productImage";
 import { generateWhatsAppProductText, getWhatsAppUrl } from "@/lib/orderFormatter";
 
-const copFormatter = new Intl.NumberFormat("es-CO", {
-  style: "currency",
-  currency: "COP",
-  maximumFractionDigits: 0,
-});
-
 export default function ProductCard({ product, onExpand, isFavorite = false }) {
   const { addToCart } = useCart();
   const [added, setAdded] = useState(false);
@@ -56,17 +50,15 @@ export default function ProductCard({ product, onExpand, isFavorite = false }) {
       setIsUpdatingFav(false);
     }
   };
-  const canBuy = product.inStock && product.price > 0;
 
   const imageUrl = getProductDisplayImage(product);
 
   const handleAddToCart = () => {
-    if (!canBuy) return;
     addToCart(
       {
         id: product.id,
         name: product.name,
-        price: product.price,
+        price: product.price > 0 ? product.price : 0,
         image: imageUrl,
         brand: product.brand?.name || product.brand || "Victor Services",
         category: product.category?.name || product.category || "Repuestos automotrices",
@@ -83,32 +75,44 @@ export default function ProductCard({ product, onExpand, isFavorite = false }) {
     generateWhatsAppProductText({ product, image: imageUrl, quantity: 1 })
   );
 
+  const handleViewExpanded = (e) => {
+    e.preventDefault();
+    if (onExpand) {
+      onExpand();
+    } else {
+      router.push(`/producto/${product.slug || product.id}`);
+    }
+  };
+
   return (
     <article
       style={{
-        background: "var(--card-dark)",
-        border: "1px solid var(--border-color)",
-        borderRadius: "var(--border-radius)",
-        padding: "1rem",
+        background: "#FFFFFF",
+        border: "1px solid #E2E8F0",
+        borderRadius: "12px",
+        padding: "1.15rem",
         display: "flex",
         flexDirection: "column",
         height: "100%",
-        transition: "transform 0.2s ease, border-color 0.2s ease",
+        transition: "all 0.25s ease",
+        boxShadow: "0 2px 8px rgba(0, 0, 0, 0.04)",
         position: "relative",
       }}
+      className="hover-card"
     >
       <div
         style={{
-          background: "#fff",
-          height: "180px",
+          background: "#F8FAFC",
+          height: "185px",
           borderRadius: "8px",
-          marginBottom: "0.8rem",
+          marginBottom: "0.85rem",
           overflow: "hidden",
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          padding: "10px",
+          padding: "12px",
           position: "relative",
+          border: "1px solid #EDF2F7",
         }}
       >
         <a
@@ -137,8 +141,8 @@ export default function ProductCard({ product, onExpand, isFavorite = false }) {
             position: "absolute",
             top: "8px",
             right: "8px",
-            background: "rgba(255, 255, 255, 0.9)",
-            border: "none",
+            background: "#FFFFFF",
+            border: "1px solid #E2E8F0",
             borderRadius: "50%",
             width: "32px",
             height: "32px",
@@ -146,7 +150,7 @@ export default function ProductCard({ product, onExpand, isFavorite = false }) {
             alignItems: "center",
             justifyContent: "center",
             cursor: "pointer",
-            boxShadow: "0 2px 4px rgba(0,0,0,0.1)",
+            boxShadow: "0 2px 6px rgba(0,0,0,0.08)",
             zIndex: 10,
           }}
         >
@@ -165,119 +169,134 @@ export default function ProductCard({ product, onExpand, isFavorite = false }) {
           </svg>
         </button>
 
-        {onExpand && (
-          <button
-            type="button"
-            onClick={onExpand}
-            title="Ver ficha técnica"
-            style={{
-              position: "absolute",
-              bottom: "6px",
-              right: "6px",
-              background: "rgba(0, 0, 0, 0.86)",
-              color: "var(--primary-color)",
-              border: "1px solid #444",
-              borderRadius: "16px",
-              padding: "4px 8px",
-              fontSize: "0.72rem",
-              fontWeight: "bold",
-              cursor: "pointer",
-            }}
-          >
-            Ficha técnica
-          </button>
-        )}
+        <button
+          type="button"
+          onClick={handleViewExpanded}
+          title="Ver ficha técnica"
+          style={{
+            position: "absolute",
+            bottom: "6px",
+            right: "6px",
+            background: "#111111",
+            color: "var(--primary-color)",
+            border: "1px solid #333",
+            borderRadius: "16px",
+            padding: "4px 8px",
+            fontSize: "0.72rem",
+            fontWeight: "bold",
+            cursor: "pointer",
+            zIndex: 10,
+          }}
+        >
+          Ficha técnica
+        </button>
       </div>
 
-      <h3 style={{ fontSize: "0.92rem", marginBottom: "0.25rem", flexGrow: 1, lineHeight: "1.3" }}>
+      <h3
+        style={{
+          fontSize: "0.98rem",
+          fontWeight: "700",
+          marginBottom: "0.25rem",
+          lineHeight: "1.35",
+          color: "#111111",
+          minHeight: "2.6rem",
+          display: "-webkit-box",
+          WebkitLineClamp: 2,
+          WebkitBoxOrient: "vertical",
+          overflow: "hidden",
+        }}
+      >
         <a href={`/producto/${product.slug || product.id}`} style={{ color: "inherit", textDecoration: "none" }}>
           {product.name}
         </a>
       </h3>
-      <p style={{ color: "var(--text-muted)", fontSize: "0.78rem", marginBottom: "0.25rem" }}>
-        {product.brand?.name || product.brand || "Victor Services"}
-      </p>
-      {product.sku && <p className="product-reference" style={{ marginBottom: "0.6rem" }}>Ref. {product.sku}</p>}
 
-      <p style={{ fontSize: "1.15rem", fontWeight: "bold", color: "var(--primary-color)", marginBottom: "0.8rem" }}>
-        {product.price > 0 ? copFormatter.format(product.price) : "Precio bajo cotización"}
+      <p style={{ color: "#5A6A80", fontSize: "0.82rem", marginBottom: "0.35rem", fontWeight: "500" }}>
+        {product.brand?.name || product.brand || "Rembert Repuestos BCA"}
+      </p>
+
+      <div style={{ marginBottom: "0.65rem" }}>
+        <span className="product-reference">
+          Ref. {product.sku || (product.id ? `REM-${String(product.id).slice(-6).toUpperCase()}` : "REM-BCA")}
+        </span>
+      </div>
+
+      <p style={{ fontSize: "1.25rem", fontWeight: "800", color: "#111111", marginBottom: "0.85rem" }}>
+        {product.price > 0 ? (
+          <span>
+            <span style={{ color: "#B8860B", fontSize: "1rem", marginRight: "2px" }}>$</span>
+            {Number(product.price).toLocaleString("es-CO")}
+          </span>
+        ) : (
+          <span style={{ color: "#B8860B", fontSize: "0.95rem" }}>Precio bajo cotización</span>
+        )}
       </p>
 
       <div style={{ display: "flex", flexDirection: "column", gap: "6px", marginTop: "auto" }}>
-        {onExpand && (
-          <button
-            type="button"
-            onClick={onExpand}
-            style={{
-              padding: "0.4rem 0.6rem",
-              fontSize: "0.78rem",
-              fontWeight: "bold",
-              width: "100%",
-              cursor: "pointer",
-              border: "1px solid #444",
-              background: "#1c1c1c",
-              color: "#ccc",
-              borderRadius: "6px",
-              transition: "background-color 0.2s ease, border-color 0.2s ease",
-            }}
-          >
-            Vista ampliada
-          </button>
-        )}
+        <button
+          type="button"
+          onClick={handleViewExpanded}
+          style={{
+            padding: "0.5rem 0.6rem",
+            fontSize: "0.8rem",
+            fontWeight: "700",
+            width: "100%",
+            cursor: "pointer",
+            border: "1px solid #E2E8F0",
+            background: "#F1F5F9",
+            color: "#334155",
+            borderRadius: "8px",
+            transition: "all 0.2s ease",
+          }}
+        >
+          🔍 Vista ampliada
+        </button>
 
-        {canBuy ? (
-          <>
-            <button
-              type="button"
-              onClick={handleAddToCart}
-              className="btn btn--primary"
-              style={{
-                padding: "0.6rem 0.8rem",
-                fontSize: "0.85rem",
-                fontWeight: "bold",
-                width: "100%",
-                border: "none",
-                background: added ? "#28a745" : "var(--primary-color)",
-                color: added ? "#fff" : "#000",
-                borderRadius: "6px",
-                transition: "background-color 0.2s ease",
-              }}
-            >
-              {added ? "Agregado" : "Agregar al carrito"}
-            </button>
-            <a
-              href={quoteUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn product-card__whatsapp-quote"
-              style={{
-                padding: "0.55rem 0.8rem",
-                fontSize: "0.82rem",
-                fontWeight: "bold",
-                width: "100%",
-                marginTop: "0.45rem",
-                background: "#25D366",
-                color: "#071b0d",
-                border: "none",
-                borderRadius: "6px",
-                textAlign: "center",
-                textDecoration: "none",
-              }}
-            >
-              💬 Cotizar por WhatsApp
-            </a>
-          </>
-        ) : (
-          <a
-            href={quoteUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn btn--primary"
-            style={{ padding: "0.6rem 0.8rem", fontSize: "0.85rem", width: "100%" }}
-          >
-            Cotizar por WhatsApp
-          </a>
-        )}
+        <button
+          type="button"
+          onClick={handleAddToCart}
+          className="btn btn--primary"
+          style={{
+            padding: "0.65rem 0.8rem",
+            fontSize: "0.85rem",
+            fontWeight: "800",
+            width: "100%",
+            border: "none",
+            background: added ? "#16A34A" : "var(--primary-color)",
+            color: added ? "#FFFFFF" : "#111111",
+            borderRadius: "8px",
+            cursor: "pointer",
+            transition: "background-color 0.2s ease",
+          }}
+        >
+          {added ? "✓ Agregado al carrito" : "🛒 Agregar al carrito"}
+        </button>
+
+        <a
+          href={quoteUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn product-card__whatsapp-quote"
+          style={{
+            padding: "0.55rem 0.8rem",
+            fontSize: "0.82rem",
+            fontWeight: "bold",
+            width: "100%",
+            background: "#25D366",
+            color: "#071b0d",
+            border: "none",
+            borderRadius: "6px",
+            textAlign: "center",
+            textDecoration: "none",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            gap: "6px",
+            transition: "opacity 0.2s ease",
+          }}
+        >
+          💬 Cotizar por WhatsApp
+        </a>
       </div>
     </article>
   );

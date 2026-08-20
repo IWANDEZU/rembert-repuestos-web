@@ -1,8 +1,7 @@
 import { withAuth } from "next-auth/middleware";
 import { NextResponse } from "next/server";
 
-const APEX_HOST = "victorservicesas.com";
-const CANONICAL_HOST = "www.victorservicesas.com";
+const AUTH_SECRET = process.env.NEXTAUTH_SECRET || "rembert-repuestos-bca-secret-key-2026-production-fallback";
 
 const authProxy = withAuth(
   function proxy() {
@@ -26,9 +25,7 @@ const authProxy = withAuth(
         return true;
       },
     },
-    secret: process.env.NEXTAUTH_SECRET,
-    // This must match authOptions.cookies.sessionToken.name. Without it,
-    // withAuth looks for NextAuth's default cookie and rejects valid sessions.
+    secret: AUTH_SECRET,
     cookies: {
       sessionToken: {
         name: "next-auth.session-token-v2",
@@ -40,10 +37,10 @@ const authProxy = withAuth(
 export default function proxy(request) {
   const host = request.headers.get("host")?.split(":")[0]?.toLowerCase();
 
-  if (host === APEX_HOST) {
+  if (host === "rembertrepuestos.com") {
     const url = request.nextUrl.clone();
     url.protocol = "https:";
-    url.hostname = CANONICAL_HOST;
+    url.hostname = "www.rembertrepuestos.com";
     url.port = "";
     return NextResponse.redirect(url, 308);
   }
