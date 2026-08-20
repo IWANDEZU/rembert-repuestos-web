@@ -26,14 +26,8 @@ export async function generateMetadata({ searchParams }) {
     "Explora nuestro catálogo de lubricantes, filtros de motor, frenos, radiadores y repuestos en Rembert Repuestos BCA. Atención en Barrancabermeja y envíos a toda Colombia.";
 
   const categoryTitles = {
-    lubricantes: "Lubricantes y Aceites de Motor",
     filtros: "Filtros Automotrices e Industriales",
     "frenos-y-suspension": "Frenos y Suspensión Automotriz",
-    "lubricantes-gasolina": "Lubricantes para Motor a Gasolina",
-    transmision: "Aceites de Transmisión y Diferencial",
-    hidraulico: "Aceites Hidráulicos Industriales",
-    coolant: "Refrigerantes y Coolant para Motor",
-    "grasas-y-aditivos": "Grasas Automotrices y Aditivos",
     radiadores: "Radiadores y Sistema de Enfriamiento",
     "servicio-tecnico": "Servicio Técnico y Taller Especializado",
   };
@@ -79,13 +73,7 @@ export async function generateMetadata({ searchParams }) {
   };
 }
 
-const categorySlugs = [
-  "lubricantes-gasolina",
-  "transmision",
-  "hidraulico",
-  "coolant",
-  "grasas-y-aditivos",
-];
+const categorySlugs = [];
 
 const filterTypeShowcase = [
   {

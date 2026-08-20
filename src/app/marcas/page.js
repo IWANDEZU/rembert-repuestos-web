@@ -8,14 +8,14 @@ export const dynamic = "force-dynamic";
 export const metadata = {
   title: "Marcas Oficiales | REMBERT",
   description:
-    "Marcas líderes en REMBERT: Shell, Mobil, Castrol, Terpel, Chevron, WIX Filters, Bosch, Liqui Moly, Valvoline, Incolbest, Gabriel y más en Barrancabermeja.",
+    "Marcas automotrices y de repuestos líderes en REMBERT: Chevrolet, Renault, Toyota, Kia, Mazda, Bosch, WIX, Incolbest y más en Barrancabermeja.",
   alternates: {
     canonical: "/marcas",
   },
   openGraph: {
     title: "Marcas Oficiales | REMBERT",
     description:
-      "Lubricantes, filtros y repuestos de las marcas líderes a nivel mundial en REMBERT con envíos a toda Colombia.",
+      "Filtros, radiadores, frenos, suspensión y repuestos de las marcas líderes en REMBERT con envíos a toda Colombia.",
     url: "https://www.rembertrepuestos.com/marcas",
   },
 };
@@ -38,6 +38,11 @@ const fallbackBrands = [
   { name: "Max Power", slug: "max-power", logo: "/logos/max-power.png", count: 6 },
   { name: "Petroil", slug: "petroil", logo: "/logos/petroil.png", count: 4 },
 ];
+
+const lubricantBrandSlugs = new Set([
+  "shell", "mobil", "castrol", "terpel", "chevron", "liqui-moly", "valvoline",
+  "global-oil", "max-power", "petroil", "motul", "totalenergies",
+]);
 
 const automotiveBrands = [
   { name: "Chevrolet", slug: "chevrolet", logo: "/logos/autos/chevrolet.svg", count: 0 },
@@ -66,7 +71,7 @@ export default async function MarcasPage() {
     });
 
     if (dbBrands && dbBrands.length > 0) {
-      displayBrands = dbBrands.map((b) => ({
+      displayBrands = dbBrands.filter((b) => !lubricantBrandSlugs.has(b.slug)).map((b) => ({
         id: b.id,
         name: b.name,
         slug: b.slug,
@@ -77,10 +82,10 @@ export default async function MarcasPage() {
       const existing = new Set(displayBrands.map((b) => b.slug));
       displayBrands = [...displayBrands, ...automotiveBrands.filter((b) => !existing.has(b.slug))];
     } else {
-      displayBrands = [...fallbackBrands, ...automotiveBrands];
+      displayBrands = [...fallbackBrands.filter((b) => !lubricantBrandSlugs.has(b.slug)), ...automotiveBrands];
     }
   } catch (_err) {
-    displayBrands = [...fallbackBrands, ...automotiveBrands];
+    displayBrands = [...fallbackBrands.filter((b) => !lubricantBrandSlugs.has(b.slug)), ...automotiveBrands];
   }
 
   return (

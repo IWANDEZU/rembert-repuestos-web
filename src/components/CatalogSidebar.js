@@ -29,12 +29,6 @@ export default async function CatalogSidebar({
     });
   } catch (err) {
     brands = [
-      { id: "1", name: "Castrol", slug: "castrol" },
-      { id: "2", name: "Mobil", slug: "mobil" },
-      { id: "3", name: "Shell", slug: "shell" },
-      { id: "4", name: "Terpel", slug: "terpel" },
-      { id: "5", name: "Chevron", slug: "chevron" },
-      { id: "6", name: "Liqui Moly", slug: "liqui-moly" },
       { id: "7", name: "Bosch", slug: "bosch" },
       { id: "8", name: "WIX Filters", slug: "wix" },
       { id: "9", name: "Partmo", slug: "partmo" },
@@ -71,16 +65,6 @@ export default async function CatalogSidebar({
           <nav aria-label="Categorías de productos">
             <ul className="catalog-menu">
               <li><CatalogLink href="/catalogo" active={!categoryParam && !brandParam}>Todas las categorías</CatalogLink></li>
-              <li>
-                <CatalogLink href={categoryHref("lubricantes")} active={categoryParam === "lubricantes"}>Lubricantes</CatalogLink>
-                <ul className="catalog-menu catalog-menu--nested">
-                  <li><CatalogLink href={categoryHref("lubricantes-gasolina")} active={categoryParam === "lubricantes-gasolina"}>Gasolina</CatalogLink></li>
-                  <li><CatalogLink href={categoryHref("transmision")} active={categoryParam === "transmision"}>Transmisión</CatalogLink></li>
-                  <li><CatalogLink href={categoryHref("hidraulico")} active={categoryParam === "hidraulico"}>Hidráulicos</CatalogLink></li>
-                  <li><CatalogLink href={categoryHref("coolant")} active={categoryParam === "coolant"}>Refrigerantes</CatalogLink></li>
-                  <li><CatalogLink href={categoryHref("grasas-y-aditivos")} active={categoryParam === "grasas-y-aditivos"}>Grasas y aditivos</CatalogLink></li>
-                </ul>
-              </li>
               <li>
                 <CatalogLink href={categoryHref("filtros")} active={categoryParam === "filtros" && !tipoParam}>Filtros</CatalogLink>
                 <ul className="catalog-menu catalog-menu--nested">

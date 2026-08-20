@@ -7,21 +7,11 @@ import ProductCard from "@/components/ProductCard";
 export const dynamic = "force-dynamic";
 
 const brandLogos = [
-  { name: "Shell", src: "/05_shell_logo_oficial.png" },
-  { name: "Mobil", src: "/07_mobil_logo_oficial.png" },
-  { name: "Castrol", src: "/06_castrol_logo_oficial.png" },
-  { name: "Terpel", src: "/04_terpel_logo_oficial.png" },
-  { name: "Chevron", src: "/14_chevron_lubricants_logo_oficial.png" },
-  { name: "Liqui Moly", src: "/logos/liqui-moly.svg" },
   { name: "Bosch", src: "/logos/bosch.svg" },
   { name: "WIX Filters", src: "/01_wix_filters_logo_oficial.png", darkBg: true },
   { name: "Partmo", src: "/logos/partmo-real.png" },
   { name: "Mazda", src: "/logos/mazda.svg", darkBg: true },
   { name: "Coéxito", src: "/03_coexito_logo_oficial.png" },
-  { name: "Global Oil", src: "/logos/global-oil.png", darkBg: true },
-  { name: "Max Power", src: "/logos/max-power.png" },
-  { name: "Valvoline", src: "/logos/valvoline.svg" },
-  { name: "Petroil", src: "/logos/petroil.png" },
   { name: "Chevrolet", src: "/logos/autos/chevrolet.svg", darkBg: true },
   { name: "Renault", src: "/logos/autos/renault.svg" },
   { name: "Toyota", src: "/logos/autos/toyota.svg" },

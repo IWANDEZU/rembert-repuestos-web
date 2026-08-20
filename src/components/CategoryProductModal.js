@@ -266,18 +266,6 @@ export default function CategoryProductModal({ products, initialIndex = 0, onClo
             </button>
           </div>
         </div>
-              height: "34px",
-              cursor: "pointer",
-              fontWeight: "bold",
-              fontSize: "1rem",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-            }}
-          >
-            ✕
-          </button>
-        </div>
 
         {/* Cuerpo del Modal (Scrollable) */}
         <div

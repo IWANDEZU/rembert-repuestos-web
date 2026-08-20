@@ -1,4 +1,4 @@
-export const products = [
+const allProducts = [
   // LUBRICANTES GASOLINA
   {
     id: "castrol-edge-5w30",
@@ -371,6 +371,16 @@ export const products = [
     stock: 50,
   },
 ];
+
+const excludedLubricantCategories = new Set([
+  "lubricantes-gasolina",
+  "transmision",
+  "hidraulico",
+  "coolant",
+  "grasas-y-aditivos",
+]);
+
+export const products = allProducts.filter((product) => !excludedLubricantCategories.has(product.category?.slug));
 
 export function getProductById(id) {
   return products.find(p => p.id === id || p.slug === id);
