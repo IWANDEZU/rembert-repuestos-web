@@ -37,7 +37,7 @@ function product({ id, name, brand = "Multimarca", sku, image, group = groups.ge
 
 export const frenosSuspensionProducts = [
   product({
-    id: "moog-tijera-inferior-completa-gasolina", name: "Tijera Inferior Completa MOOG — Referencia según Vehículo", brand: "MOOG", sku: "MOOG-CTRL-ARM-COT", image: images.steering,
+    id: "moog-tijera-inferior-completa-gasolina", name: "Tijera Inferior Completa MOOG — Referencia según Vehículo", brand: "MOOG", sku: "MOOG-CTRL-ARM-COT", image: "/catalogo-frenos-suspension/moog-tijera-empaque-catalogo.webp",
     system: "Suspensión delantera — brazo de control o tijera completa", position: "Delantera izquierda o derecha",
     description: "Conjunto de brazo de control con bujes y rótula cuando la aplicación lo incluye.",
     checks: "VIN, lado, diámetro de rótula, anclajes, tipo de buje y rótula integrada", source: "Catálogo oficial MOOG de trapecios, rótulas y silentblocs",
