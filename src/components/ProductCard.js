@@ -88,11 +88,23 @@ export default function ProductCard({ product, onExpand, isFavorite = false }) {
     <article
       className="product-card hover-card"
     >
-      <div className="product-card__media">
+      <div
+        className="product-card__media"
+        style={{
+          position: "relative",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          height: "185px",
+          minHeight: "185px",
+          overflow: "hidden",
+        }}
+      >
         <a
           href={`/producto/${product.slug || product.id}`}
           className="product-card__media-link"
           aria-label={`Ver ${product.name}`}
+          style={{ position: "relative", display: "block", width: "100%", height: "100%" }}
         >
           <Image
             src={imageUrl}
@@ -103,6 +115,7 @@ export default function ProductCard({ product, onExpand, isFavorite = false }) {
             loading="lazy"
             decoding="async"
             className="product-card__image"
+            style={{ objectFit: "contain", objectPosition: "center" }}
           />
         </a>
 
