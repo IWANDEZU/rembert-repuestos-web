@@ -34,6 +34,7 @@ const fallbackBrands = [
   { name: "Valvoline", slug: "valvoline", logo: "/logos/valvoline.svg", count: 8 },
   { name: "Incolbest", slug: "incolbest", logo: "/logos/incolbest-real.png", count: 12 },
   { name: "Gabriel", slug: "gabriel", logo: "/logos/gabriel-real.png", count: 10 },
+  { name: "Loctite", slug: "loctite", logo: "/logos/loctite.svg", count: 4 },
   { name: "Global Oil", slug: "global-oil", logo: "/logos/global-oil.png", count: 5, darkBg: true },
   { name: "Max Power", slug: "max-power", logo: "/logos/max-power.png", count: 6 },
   { name: "Petroil", slug: "petroil", logo: "/logos/petroil.png", count: 4 },

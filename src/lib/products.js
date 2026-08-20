@@ -249,6 +249,36 @@ const allProducts = [
     stock: 55,
   },
 
+  // SILICONAS Y SELLANTES AUTOMOTRICES
+  {
+    id: "loctite-si-593-negra",
+    name: "Loctite SI 593 Sellante Adhesivo Silicona RTV Negra (70ml)",
+    slug: "loctite-si-593-silicona-rtv-negra-70ml",
+    category: { name: "Siliconas y Sellantes", slug: "siliconas" },
+    brand: { name: "Loctite", slug: "loctite" },
+    price: 28000,
+    sku: "LOC-SI593-BLK-70ML",
+    description: "Sellante adhesivo de silicona RTV negra Loctite SI 593 Henkel (70 ml / 71 g, IDH: 285951). Silicona de uso profesional de vulcanización a temperatura ambiente. Sella, adhiere y aísla metales, vidrio, caucho y plásticos. Resistente a la humedad, intemperie y fluidos automotrices.",
+    image: "/catalogo-siliconas-automotrices/loctite-si-593-negra-70ml.png",
+    images: [{ url: "/catalogo-siliconas-automotrices/loctite-si-593-negra-70ml.png", alt: "Loctite SI 593 Silicona RTV Negra 70ml Henkel", isMain: true }],
+    inStock: true,
+    stock: 45,
+  },
+  {
+    id: "loctite-si-596-roja",
+    name: "Loctite SI 596 Formador de Juntas Silicona Roja RTV Alta Temperatura (70ml)",
+    slug: "loctite-si-596-silicona-rtv-roja-70ml",
+    category: { name: "Siliconas y Sellantes", slug: "siliconas" },
+    brand: { name: "Loctite", slug: "loctite" },
+    price: 29000,
+    sku: "LOC-SI596-RED-70ML",
+    description: "Silicona roja RTV para altas temperaturas (hasta 315°C) Loctite SI 596 Henkel (70 ml / 71 g, IDH: 285956). Formador de juntas flexible y resistente a la presión para motores, múltiples, bombas de agua y tapas de válvulas.",
+    image: "/catalogo-siliconas-automotrices/loctite-si-596-roja-70ml.png",
+    images: [{ url: "/catalogo-siliconas-automotrices/loctite-si-596-roja-70ml.png", alt: "Loctite SI 596 Silicona RTV Roja 70ml Henkel", isMain: true }],
+    inStock: true,
+    stock: 35,
+  },
+
   // GRASAS Y ADITIVOS
   {
     id: "mobil-grease-xhp-222",

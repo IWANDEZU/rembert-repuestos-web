@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 
-const STORAGE_KEY = "victor-services-cookie-consent";
+const STORAGE_KEY = "rembert-cookie-consent";
 const GA_ID = "G-60QBECZX1W";
 
 function setAnalyticsConsent(granted) {

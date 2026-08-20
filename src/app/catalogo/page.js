@@ -8,7 +8,6 @@ import { buildCatalogHref } from "@/lib/catalogUtils";
 import { siteUrl } from "@/lib/site";
 import { getServerSession } from "next-auth/next";
 import { authOptions } from "@/app/api/auth/[...nextauth]/route";
-import { generateWhatsAppProductText, getWhatsAppUrl } from "@/lib/orderFormatter";
 import { products as fallbackCatalogProducts } from "@/lib/products";
 
 export const dynamic = "force-dynamic";
@@ -23,10 +22,11 @@ export async function generateMetadata({ searchParams }) {
 
   let title = "Catálogo de productos";
   let description =
-    "Explora nuestro catálogo de filtros, frenos, radiadores y repuestos en Rembert Repuestos BCA. Atención en Barrancabermeja y envíos a toda Colombia.";
+    "Explora nuestro catálogo de filtros, siliconas, frenos, radiadores y repuestos en Rembert Repuestos BCA. Atención en Barrancabermeja y envíos a toda Colombia.";
 
   const categoryTitles = {
     filtros: "Filtros Automotrices e Industriales",
+    siliconas: "Siliconas y Sellantes Automotrices",
     "frenos-y-suspension": "Frenos y Suspensión Automotriz",
     transmision: "Cajas y Transmisiones Automotrices",
     radiadores: "Radiadores y Sistema de Enfriamiento",
@@ -61,7 +61,7 @@ export async function generateMetadata({ searchParams }) {
     title,
     description,
     alternates: {
-      canonical: canonicalPath,
+      canonical: `${siteUrl}${canonicalPath}`,
     },
     robots: searchQuery ? { index: false, follow: true } : undefined,
     openGraph: {
@@ -181,141 +181,6 @@ const gasolineFilterBrandVisuals = {
   Suzuki: { logo: "/logos/autos/suzuki.svg", image: "/filtro-combustible-gasolina-catalogo.png" },
   BMW: { logo: "/logos/autos/bmw.svg", image: "/filtro-aceite-gasolina-catalogo.png" },
 };
-
-const suspensionReferenceShowcase = [
-  {
-    slug: "mazda-bt50",
-    title: "Mazda BT-50 II / UR",
-    description: "Amortiguador delantero de gas para aplicaciones 2011+.",
-    image: "/catalogo-suspensiones/referencias-camionetas/mazda-bt50-front-shock.webp",
-    alt: "Amortiguador delantero de referencia para Mazda BT-50",
-  },
-  {
-    slug: "hyundai-h100-porter",
-    title: "Hyundai H-100 / Porter",
-    description: "Amortiguador delantero convencional para trabajo liviano.",
-    image: "/catalogo-suspensiones/referencias-camionetas/hyundai-h100-porter-front-shock.webp",
-    alt: "Amortiguador delantero de referencia para Hyundai H-100 Porter",
-  },
-  {
-    slug: "volkswagen-amarok",
-    title: "Volkswagen Amarok 2.0",
-    description: "Strut delantero con soporte de mangueta y vástago roscado.",
-    image: "/catalogo-suspensiones/referencias-camionetas/volkswagen-amarok-front-strut.webp",
-    alt: "Strut delantero de referencia para Volkswagen Amarok",
-  },
-  {
-    slug: "ford-ranger",
-    title: "Ford Ranger T6",
-    description: "Amortiguador delantero estructural para 4x2 y 4x4.",
-    image: "/catalogo-suspensiones/referencias-camionetas/ford-ranger-front-shock.webp",
-    alt: "Amortiguador delantero de referencia para Ford Ranger",
-  },
-  {
-    slug: "chevrolet-dmax",
-    title: "Chevrolet D-Max",
-    description: "Amortiguador delantero de gas para aplicaciones 4x2 y 4x4.",
-    image: "/catalogo-suspensiones/referencias-camionetas/chevrolet-dmax-front-shock.webp",
-    alt: "Amortiguador delantero de referencia para Chevrolet D-Max",
-  },
-  {
-    slug: "hino-300",
-    title: "Hino 300 / Dutro",
-    description: "Amortiguador reforzado para camión liviano de carga.",
-    image: "/catalogo-suspensiones/referencias-camionetas/hino-300-dutro-front-shock.webp",
-    alt: "Amortiguador delantero reforzado de referencia para Hino 300",
-  },
-  {
-    slug: "foton-tunland",
-    title: "Foton Tunland",
-    description: "Strut delantero directo para pickup diésel.",
-    image: "/catalogo-suspensiones/referencias-camionetas/foton-tunland-front-strut.webp",
-    alt: "Strut delantero de referencia para Foton Tunland",
-  },
-  {
-    slug: "isuzu-npr-turbo",
-    title: "Isuzu NPR Turbo",
-    description: "Amortiguador reforzado para camión cab-over diésel.",
-    image: "/catalogo-suspensiones/referencias-camionetas/isuzu-npr-turbo-front-shock.webp",
-    alt: "Amortiguador delantero reforzado de referencia para Isuzu NPR Turbo",
-  },
-];
-
-const brakeDiscReferenceShowcase = [
-  {
-    slug: "mazda-bt50-front-disc",
-    title: "Mazda BT-50 UP / UR",
-    description: "Disco delantero ventilado compartido con Ranger PX/T6.",
-    image: "/catalogo-frenos/discos-referencias/mazda-bt50-ford-ranger-front-disc.webp",
-    alt: "Disco de freno delantero ventilado de referencia para Mazda BT-50",
-  },
-  {
-    slug: "ford-ranger-front-disc",
-    title: "Ford Ranger PX / T6",
-    description: "Misma familia de rotor delantero 6x139,7 en varias aplicaciones.",
-    image: "/catalogo-frenos/discos-referencias/mazda-bt50-ford-ranger-front-disc.webp",
-    alt: "Disco de freno delantero ventilado de referencia para Ford Ranger",
-  },
-  {
-    slug: "hyundai-h100-front-disc",
-    title: "Hyundai H-100 / Porter",
-    description: "Rotor delantero ventilado compacto para camión liviano.",
-    image: "/catalogo-frenos/discos-referencias/hyundai-h100-porter-front-disc.webp",
-    alt: "Disco de freno delantero ventilado de referencia para Hyundai H-100 Porter",
-  },
-  {
-    slug: "volkswagen-amarok-front-disc",
-    title: "Volkswagen Amarok",
-    description: "Rotor delantero de alto diámetro y ventilación interna profunda.",
-    image: "/catalogo-frenos/discos-referencias/volkswagen-amarok-front-disc.webp",
-    alt: "Disco de freno delantero ventilado de referencia para Volkswagen Amarok",
-  },
-  {
-    slug: "chevrolet-dmax-front-disc",
-    title: "Chevrolet D-Max",
-    description: "Disco delantero ventilado para pickup 4x2 y 4x4.",
-    image: "/catalogo-frenos/discos-referencias/chevrolet-dmax-front-disc.webp",
-    alt: "Disco de freno delantero ventilado de referencia para Chevrolet D-Max",
-  },
-  {
-    slug: "hino-300-front-disc",
-    title: "Hino 300 / Dutro",
-    description: "Rotor ventilado reforzado para operación de carga.",
-    image: "/catalogo-frenos/discos-referencias/hino-300-front-disc.webp",
-    alt: "Disco de freno delantero ventilado de referencia para Hino 300",
-  },
-  {
-    slug: "foton-tunland-front-disc",
-    title: "Foton Tunland",
-    description: "Disco ventilado robusto para pickup diésel 4x4.",
-    image: "/catalogo-frenos/discos-referencias/foton-tunland-front-disc.webp",
-    alt: "Disco de freno delantero ventilado de referencia para Foton Tunland",
-  },
-  {
-    slug: "isuzu-npr-front-disc",
-    title: "Isuzu NPR Turbo",
-    description: "Rotor ventilado de alta masa para camión cab-over.",
-    image: "/catalogo-frenos/discos-referencias/isuzu-npr-turbo-front-disc.webp",
-    alt: "Disco de freno delantero ventilado de referencia para Isuzu NPR Turbo",
-  },
-];
-
-function getReferenceWhatsAppUrl(reference, type) {
-  return getWhatsAppUrl(
-    generateWhatsAppProductText({
-      product: {
-        name: reference.title,
-        reference: reference.slug,
-        brand: reference.title.split(" ")[0],
-        category: "Frenos y suspensión",
-        image: reference.image,
-        productPath: `/catalogo?category=frenos-y-suspension&search=${encodeURIComponent(reference.title)}`,
-      },
-      image: reference.image,
-      extraDetails: `${type}: ${reference.description}\nCompatibilidad: confirmar por VIN, medidas y año.`,
-    })
-  );
-}
 
 function getPageNumber(value) {
   const page = Number.parseInt(value, 10);
@@ -437,6 +302,65 @@ export default async function Catalogo({ searchParams }) {
         { category: { slug: { in: ["frenos-y-suspension", "liquido-frenos"] } } },
         { name: { contains: "Pastilla" } },
         { name: { contains: "Disco" } },
+      ],
+    });
+  } else if (categoryParam === "hidraulico") {
+    conditions.push({
+      OR: [
+        { category: { slug: "hidraulico" } },
+        { name: { contains: "Hidráulico" } },
+        { name: { contains: "Hidraulico" } },
+        { name: { contains: "HYDO" } },
+        { name: { contains: "Tellus" } },
+      ],
+    });
+  } else if (categoryParam === "coolant") {
+    conditions.push({
+      OR: [
+        { category: { slug: "coolant" } },
+        { name: { contains: "Coolant" } },
+        { name: { contains: "Refrigerante" } },
+        { name: { contains: "ELC" } },
+      ],
+    });
+  } else if (categoryParam === "grasas-y-aditivos") {
+    conditions.push({
+      OR: [
+        { category: { slug: "grasas-y-aditivos" } },
+        { name: { contains: "Grasa" } },
+        { name: { contains: "Grease" } },
+        { name: { contains: "Aditivo" } },
+      ],
+    });
+  } else if (categoryParam === "filtros") {
+    const baseFilter = {
+      OR: [
+        { category: { slug: "filtros" } },
+        { name: { contains: "Filtro" } },
+        { shortDesc: { contains: "Filtro" } },
+      ],
+    };
+    const typeTerms = {
+      aceite: ["Aceite"],
+      aire: ["Aire"],
+      combustible: ["Combustible", "Separador"],
+      cabina: ["Cabina"],
+    };
+    conditions.push(baseFilter);
+    if (typeTerms[tipoParam]) {
+      conditions.push({
+        OR: typeTerms[tipoParam].flatMap((term) => [
+          { name: { contains: term } },
+          { shortDesc: { contains: term } },
+        ]),
+      });
+    }
+  } else if (categoryParam === "frenos-y-suspension") {
+    conditions.push({
+      OR: [
+        { category: { slug: { in: ["frenos-y-suspension", "liquido-frenos"] } } },
+        { name: { contains: "Pastilla" } },
+        { name: { contains: "Disco" } },
         { name: { contains: "Amortiguador" } },
         { name: { contains: "Freno" } },
         { name: { contains: "Strut" } },
@@ -475,6 +399,17 @@ export default async function Catalogo({ searchParams }) {
         { description: { contains: "radiador" } },
       ],
     });
+  } else if (categoryParam === "siliconas") {
+    conditions.push({
+      OR: [
+        { category: { slug: { in: ["siliconas", "siliconas-y-sellantes"] } } },
+        { name: { contains: "Silicona" } },
+        { name: { contains: "Loctite" } },
+        { name: { contains: "Sellante" } },
+        { name: { contains: "RTV" } },
+        { description: { contains: "silicona" } },
+      ],
+    });
   } else if (categoryParam) {
     conditions.push({ category: { slug: categoryParam } });
   }
@@ -501,8 +436,6 @@ export default async function Catalogo({ searchParams }) {
       { name: { contains: "Diésel" } },
       { name: { contains: "diesel" } },
       { name: { contains: "diésel" } },
-      { category: { slug: "lubricantes-diesel" } },
-      { category: { slug: "maquinaria-pesada" } },
       { category: { slug: { in: removedLubricantCategories } } },
     ],
   });
@@ -549,6 +482,8 @@ export default async function Catalogo({ searchParams }) {
 
     if (categoryParam === "lubricantes") {
       filtered = filtered.filter(p => p.category?.slug?.startsWith("lubricantes") || p.category?.slug === "hidraulico" || p.category?.slug === "coolant" || p.category?.slug === "grasas-y-aditivos");
+    } else if (categoryParam === "siliconas") {
+      filtered = filtered.filter(p => p.category?.slug === "siliconas" || p.name.toLowerCase().includes("silicona") || p.name.toLowerCase().includes("loctite") || p.name.toLowerCase().includes("sellante"));
     } else if (categoryParam) {
       filtered = filtered.filter(p => p.category?.slug === categoryParam);
     }
@@ -622,6 +557,7 @@ export default async function Catalogo({ searchParams }) {
 
   const banners = {
     lubricantes: ["Lubricantes y aceites", "Aceites de motor, transmisión, hidráulicos, refrigerantes y grasas."],
+    siliconas: ["Siliconas y sellantes automotrices", "Sellantes adhesivos RTV, formadores de juntas de alta temperatura y empaques."],
     filtros: ["Filtros automotrices e industriales", "Filtros de aceite, aire, combustible, separadores de agua y cabina."],
     "frenos-y-suspension": ["Frenos y suspensión", "Pastillas, discos, amortiguadores y líquidos de frenos."],
     "lubricantes-gasolina": ["Lubricantes gasolina y livianos", "Aceites sintéticos y minerales para motores a gasolina."],
@@ -757,72 +693,6 @@ export default async function Catalogo({ searchParams }) {
             </div>
           </section>
         )}
-
-        {categoryParam === "frenos-y-suspension" && !brandParam && !searchQuery && (
-          <section className="brake-disc-showcase suspension-showcase" aria-labelledby="brake-disc-showcase-title">
-            <div className="suspension-showcase__heading">
-              <div>
-                <p className="filter-showcase__eyebrow">Referencias visuales investigadas</p>
-                <h2 id="brake-disc-showcase-title">Discos de freno por aplicación</h2>
-              </div>
-              <p>Los rotores cambian por diámetro, espesor, ventilación, número de pernos y posición. Confirma medidas y VIN antes de vender.</p>
-            </div>
-            <div className="suspension-showcase__grid">
-              {brakeDiscReferenceShowcase.map((reference) => (
-                <article key={reference.slug} className="suspension-showcase__card">
-                  <div className="suspension-showcase__image">
-                    <Image src={reference.image} alt={reference.alt} fill sizes="(max-width: 640px) 50vw, (max-width: 1100px) 25vw, 220px" />
-                  </div>
-                  <h3>{reference.title}</h3>
-                  <p>{reference.description}</p>
-                  <span>Referencia visual · verificar diámetro y patrón</span>
-                  <a
-                    href={getReferenceWhatsAppUrl(reference, "Disco de freno")}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="suspension-showcase__quote"
-                  >
-                    💬 Cotizar por WhatsApp
-                  </a>
-                </article>
-              ))}
-            </div>
-          </section>
-        )}
-
-        {categoryParam === "frenos-y-suspension" && !brandParam && !searchQuery && (
-          <section className="suspension-showcase" aria-labelledby="suspension-showcase-title">
-            <div className="suspension-showcase__heading">
-              <div>
-                <p className="filter-showcase__eyebrow">Guía visual de aplicaciones</p>
-                <h2 id="suspension-showcase-title">Amortiguadores para camionetas y camiones</h2>
-              </div>
-              <p>La geometría cambia por marca, año, posición y tracción. Confirma siempre la referencia por VIN antes de instalar.</p>
-            </div>
-            <div className="suspension-showcase__grid">
-              {suspensionReferenceShowcase.map((reference) => (
-                <article key={reference.slug} className="suspension-showcase__card">
-                  <div className="suspension-showcase__image">
-                    <Image src={reference.image} alt={reference.alt} fill sizes="(max-width: 640px) 50vw, (max-width: 1100px) 25vw, 220px" />
-                  </div>
-                  <h3>{reference.title}</h3>
-                  <p>{reference.description}</p>
-                  <span>Referencia visual · confirmar compatibilidad</span>
-                  <a
-                    href={getReferenceWhatsAppUrl(reference, "Amortiguador")}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="suspension-showcase__quote"
-                  >
-                    💬 Cotizar por WhatsApp
-                  </a>
-                </article>
-              ))}
-            </div>
-          </section>
-        )}
-
-
 
         <div className="catalog-toolbar">
           <p>Mostrando <strong>{firstProduct}-{lastProduct}</strong> de <strong>{totalProducts}</strong> producto(s)</p>

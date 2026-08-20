@@ -36,6 +36,7 @@ export default async function CatalogSidebar({
       { id: "11", name: "Motorcraft", slug: "motorcraft" },
       { id: "12", name: "Incolbest", slug: "incolbest" },
       { id: "13", name: "Gabriel", slug: "gabriel" },
+      { id: "14", name: "Loctite", slug: "loctite" },
     ];
   }
 
@@ -73,6 +74,7 @@ export default async function CatalogSidebar({
                   ))}
                 </ul>
               </li>
+              <li><CatalogLink href={categoryHref("siliconas")} active={categoryParam === "siliconas"}>Siliconas y sellantes</CatalogLink></li>
               <li><CatalogLink href={categoryHref("transmision")} active={categoryParam === "transmision"}>Transmisiones</CatalogLink></li>
               <li><CatalogLink href={categoryHref("frenos-y-suspension")} active={categoryParam === "frenos-y-suspension"}>Frenos y suspensión</CatalogLink></li>
               <li><CatalogLink href={categoryHref("radiadores")} active={categoryParam === "radiadores"}>Radiadores</CatalogLink></li>

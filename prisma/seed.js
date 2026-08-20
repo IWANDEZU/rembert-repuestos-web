@@ -28,7 +28,7 @@ async function main() {
   const adminUser = await prisma.user.create({
     data: {
       name: 'Administrador',
-      email: 'admin@victorservices.com',
+      email: 'admin@rembertrepuestos.com',
       password: hashedAdminPassword,
       role: 'ADMIN',
     },
@@ -40,7 +40,7 @@ async function main() {
   const customerUser = await prisma.user.create({
     data: {
       name: 'Cliente Prueba',
-      email: 'cliente@victorservices.com',
+      email: 'cliente@rembertrepuestos.com',
       password: hashedUserPassword,
       role: 'USER',
     },
@@ -78,6 +78,9 @@ async function main() {
   const catUrea = await prisma.category.create({
     data: { name: 'Urea Automotriz', slug: 'urea', description: 'Aditivo AdBlue / DEF' }
   })
+  const catSiliconas = await prisma.category.create({
+    data: { name: 'Siliconas y Sellantes', slug: 'siliconas', description: 'Siliconas RTV, sellantes adhesivos y formadores de empaques para motor y carrocería' }
+  })
 
   // 4. Marcas
   const brandShell = await prisma.brand.create({ data: { name: 'Shell', slug: 'shell' } })
@@ -104,6 +107,7 @@ async function main() {
   const brandValvoline = await prisma.brand.create({ data: { name: 'Valvoline', slug: 'valvoline' } })
   const brandMotorcraft = await prisma.brand.create({ data: { name: 'Motorcraft', slug: 'motorcraft' } })
   const brandCaterpillar = await prisma.brand.create({ data: { name: 'Caterpillar (CAT)', slug: 'caterpillar' } })
+  const brandLoctite = await prisma.brand.create({ data: { name: 'Loctite', slug: 'loctite' } })
 
   // 5. Productos y Variantes
   const p1 = await prisma.product.create({
@@ -1805,7 +1809,60 @@ async function main() {
     }
   })
 
-  console.log(`📦 Productos creados: 11 lubricantes base, 17 filtros Partmo, 19 productos nacionales, 7 Frenos/Suspensión y 16 Filtros Donsson. Se añadieron 2 productos KIXX.`)
+  const loctite593 = await prisma.product.create({
+    data: {
+      name: 'Loctite SI 593 Sellante Adhesivo Silicona RTV Negra (70ml)',
+      slug: 'loctite-si-593-silicona-rtv-negra-70ml',
+      description: 'Sellante adhesivo de silicona RTV negra Loctite SI 593 Henkel (70 ml / 71 g, IDH: 285951). Silicona de uso profesional de vulcanización a temperatura ambiente. Sella, adhiere y aísla metales, vidrio, caucho y plásticos. Resistente a la humedad, intemperie y fluidos automotrices.',
+      shortDesc: 'Silicona RTV Negra 70ml / 71g Henkel',
+      price: 28000,
+      sku: 'LOC-SI593-BLK-70ML',
+      categoryId: catSiliconas.id,
+      brandId: brandLoctite.id,
+      images: { create: [{ url: '/catalogo-siliconas-automotrices/loctite-si-593-negra-70ml.png', isMain: true }] },
+      attributes: {
+        create: [
+          { name: 'Color', value: 'Negro' },
+          { name: 'Contenido', value: '70 ml (71 g)' },
+          { name: 'Tipo', value: 'Silicona RTV Sellante' }
+        ]
+      },
+      variants: {
+        create: [
+          { name: 'Tubo 70ml', price: 28000, stock: 45, sku: 'LOC-SI593-BLK-70ML-UN' }
+        ]
+      }
+    }
+  })
+
+  const loctite596 = await prisma.product.create({
+    data: {
+      name: 'Loctite SI 596 Formador de Juntas Silicona Roja RTV Alta Temperatura (70ml)',
+      slug: 'loctite-si-596-silicona-rtv-roja-70ml',
+      description: 'Silicona roja RTV para altas temperaturas (hasta 315°C) Loctite SI 596 Henkel (70 ml / 71 g, IDH: 285956). Formador de juntas flexible y resistente a la presión para motores, múltiples, bombas de agua y tapas de válvulas.',
+      shortDesc: 'Silicona Roja RTV Alta Temperatura 315°C',
+      price: 29000,
+      sku: 'LOC-SI596-RED-70ML',
+      categoryId: catSiliconas.id,
+      brandId: brandLoctite.id,
+      images: { create: [{ url: '/catalogo-siliconas-automotrices/loctite-si-596-roja-70ml.png', isMain: true }] },
+      attributes: {
+        create: [
+          { name: 'Color', value: 'Rojo' },
+          { name: 'Temperatura máx.', value: '315°C' },
+          { name: 'Contenido', value: '70 ml (71 g)' },
+          { name: 'Tipo', value: 'Formador de Juntas RTV' }
+        ]
+      },
+      variants: {
+        create: [
+          { name: 'Tubo 70ml', price: 29000, stock: 35, sku: 'LOC-SI596-RED-70ML-UN' }
+        ]
+      }
+    }
+  })
+
+  console.log(`📦 Productos creados: lubricantes, filtros, frenos/suspensión, radiadores y siliconas Loctite.`)
 
   console.log('✅ Seeding completado con éxito.')
 }
