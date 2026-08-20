@@ -3,7 +3,7 @@ services:
     name: rembert-repuestos-web
     runtime: node
     plan: free
-    buildCommand: npm ci && npm run build
+    buildCommand: npm install && npm run build
     startCommand: npm start
     autoDeploy: true
     healthCheckPath: /
