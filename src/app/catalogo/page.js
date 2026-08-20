@@ -562,9 +562,10 @@ export default async function Catalogo({ searchParams }) {
     brands = dbBrands;
     session = dbSession;
 
-    // Una base de datos nueva puede responder sin error pero todavía no tener
-    // inventario. En ese caso la tienda debe seguir mostrando el catálogo base.
-    if (dbTotal === 0) applyFallbackCatalog();
+    // Estas líneas se administran en el catálogo versionado para que los
+    // productos validados no desaparezcan cuando la BD tenga inventario parcial.
+    const codeManagedCategories = new Set(["mantenimiento", "coolant", "transmision", "frenos-y-suspension"]);
+    if (dbTotal === 0 || codeManagedCategories.has(categoryParam)) applyFallbackCatalog();
   } catch (err) {
     // Si la BD remota no responde, conservar una tienda navegable y con contenido.
     applyFallbackCatalog();

@@ -64,6 +64,15 @@ export default function ProductVariantSelector({ product }) {
   const canBuy = product.inStock && currentStock > 0 && currentPrice > 0;
   const brandName = product.brand?.name || product.brand || "REMBERT";
   const categoryName = product.category?.name || product.category || "Repuestos";
+  const technicalAttributes = Array.isArray(product.attributes) ? product.attributes : [];
+  const findAttribute = (label) => technicalAttributes.find((attribute) =>
+    String(attribute.name || "").toLowerCase().includes(label)
+  );
+  const compatibleBrands = findAttribute("marcas compatibles")?.value
+    || "Compatibilidad por referencia: confirma marca, año, motor y número OE/VIN antes de comprar.";
+  const compatibleModels = findAttribute("modelos compatibles")?.value
+    || findAttribute("modelos orientativos")?.value
+    || "La aplicación cambia entre modelos y versiones; solicita validación con placa, VIN o referencia de la pieza instalada.";
   const whatsappUrl = getWhatsAppUrl(
     generateWhatsAppProductText({
       product,
@@ -338,6 +347,12 @@ export default function ProductVariantSelector({ product }) {
             {product.description || 'Lubricante formulado con tecnología avanzada para brindar máxima protección contra el desgaste y extender la vida útil del motor.'}
           </p>
 
+          <section style={{ background: '#F8FAFC', border: '1px solid #D8E0EA', borderRadius: '12px', padding: '16px', marginBottom: '24px', color: '#1E293B' }}>
+            <h2 style={{ fontSize: '1rem', marginBottom: '10px', color: '#111827' }}>Compatibilidad de marca y modelo</h2>
+            <p style={{ marginBottom: '8px', lineHeight: '1.5', fontSize: '0.9rem' }}><strong>Marcas:</strong> {compatibleBrands}</p>
+            <p style={{ margin: 0, lineHeight: '1.5', fontSize: '0.9rem' }}><strong>Modelos:</strong> {compatibleModels}</p>
+          </section>
+
           {/* Selector de Variantes / Presentación */}
           {product.variants && product.variants.length > 0 && (
             <div style={{ marginBottom: '25px' }}>
@@ -500,14 +515,10 @@ export default function ProductVariantSelector({ product }) {
           
           {activeTab === "desc" && (
             <div style={{ display: 'flex', flexDirection: 'column', gap: '15px', color: '#ccc', lineHeight: '1.7' }}>
-              <h3 style={{ color: '#fff', fontSize: '1.2rem' }}>Beneficios Clave de {product.name}</h3>
+              <h3 style={{ color: '#fff', fontSize: '1.2rem' }}>Descripción y aplicación de {product.name}</h3>
               <p>{product.description || 'Producto certificado de alta calidad diseñado para condiciones de operación extremas.'}</p>
-              <ul style={{ listStyleType: 'disc', paddingLeft: '20px', display: 'flex', flexDirection: 'column', gap: '8px' }}>
-                <li>Máxima protección del motor en arranques en frío y altas temperaturas operativas.</li>
-                <li>Excelente control de depósitos, lodos y neutralización de residuos nocivos.</li>
-                <li>Cumple con los estándares internacionales más estrictos de los fabricantes de vehículos.</li>
-                <li>Ideal para flotas, maquinaria pesada y vehículos particulares en Colombia.</li>
-              </ul>
+              <p><strong style={{ color: 'var(--primary-color)' }}>Compatibilidad:</strong> {compatibleBrands}</p>
+              <p><strong style={{ color: 'var(--primary-color)' }}>Modelos y versiones:</strong> {compatibleModels}</p>
             </div>
           )}
 
@@ -525,13 +536,27 @@ export default function ProductVariantSelector({ product }) {
                     <td style={{ padding: '12px' }}>{categoryName}</td>
                   </tr>
                   <tr style={{ borderBottom: '1px solid #222' }}>
-                    <td style={{ padding: '12px', fontWeight: 'bold', color: 'var(--primary-color)' }}>Estado:</td>
-                    <td style={{ padding: '12px' }}>Original 100% Sellado de Fábrica</td>
-                  </tr>
-                  <tr style={{ borderBottom: '1px solid #222' }}>
                     <td style={{ padding: '12px', fontWeight: 'bold', color: 'var(--primary-color)' }}>Disponibilidad:</td>
-                    <td style={{ padding: '12px' }}>Despacho inmediato en Barrancabermeja</td>
+                    <td style={{ padding: '12px' }}>{canBuy ? `${currentStock} unidad${currentStock === 1 ? '' : 'es'} disponible${currentStock === 1 ? '' : 's'}` : 'Confirmar con asesor'}</td>
                   </tr>
+                  {technicalAttributes.map((attribute) => (
+                    <tr key={attribute.id || `${attribute.name}-${attribute.value}`} style={{ borderBottom: '1px solid #222' }}>
+                      <td style={{ padding: '12px', fontWeight: 'bold', color: 'var(--primary-color)' }}>{attribute.name}:</td>
+                      <td style={{ padding: '12px' }}>{attribute.value}</td>
+                    </tr>
+                  ))}
+                  {!findAttribute("marcas compatibles") && (
+                    <tr style={{ borderBottom: '1px solid #222' }}>
+                      <td style={{ padding: '12px', fontWeight: 'bold', color: 'var(--primary-color)' }}>Marcas compatibles:</td>
+                      <td style={{ padding: '12px' }}>{compatibleBrands}</td>
+                    </tr>
+                  )}
+                  {!findAttribute("modelos compatibles") && !findAttribute("modelos orientativos") && (
+                    <tr style={{ borderBottom: '1px solid #222' }}>
+                      <td style={{ padding: '12px', fontWeight: 'bold', color: 'var(--primary-color)' }}>Modelos compatibles:</td>
+                      <td style={{ padding: '12px' }}>{compatibleModels}</td>
+                    </tr>
+                  )}
                 </tbody>
               </table>
             </div>
