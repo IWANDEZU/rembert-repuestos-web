@@ -1,6 +1,17 @@
 import Link from "next/link";
 import { prisma } from "@/lib/prisma";
 import { buildCatalogHref } from "@/lib/catalogUtils";
+import { products as fallbackCatalogProducts } from "@/lib/products";
+
+function getFallbackBrands() {
+  return Array.from(
+    new Map(
+      fallbackCatalogProducts
+        .filter((product) => product.brand?.slug && product.brand.slug !== "vanssoil")
+        .map((product) => [product.brand.slug, { id: product.brand.slug, ...product.brand }])
+    ).values()
+  ).sort((a, b) => a.name.localeCompare(b.name, "es"));
+}
 
 function CatalogLink({ href, active, children, className = "" }) {
   return (
@@ -27,17 +38,10 @@ export default async function CatalogSidebar({
       where: { slug: { not: 'vanssoil' } },
       orderBy: { name: "asc" } 
     });
+
+    if (brands.length === 0) brands = getFallbackBrands();
   } catch (err) {
-    brands = [
-      { id: "7", name: "Bosch", slug: "bosch" },
-      { id: "8", name: "WIX Filters", slug: "wix" },
-      { id: "9", name: "Partmo", slug: "partmo" },
-      { id: "10", name: "ACDelco", slug: "acdelco" },
-      { id: "11", name: "Motorcraft", slug: "motorcraft" },
-      { id: "12", name: "Incolbest", slug: "incolbest" },
-      { id: "13", name: "Gabriel", slug: "gabriel" },
-      { id: "14", name: "Loctite", slug: "loctite" },
-    ];
+    brands = getFallbackBrands();
   }
 
   const sharedFilters = { brand: brandParam, search: searchQuery, sort: sortParam };

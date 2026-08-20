@@ -187,6 +187,63 @@ function getPageNumber(value) {
   return Number.isSafeInteger(page) && page > 0 ? page : 1;
 }
 
+function filterFallbackCatalog({ categoryParam, brandParam, tipoParam, searchQuery }) {
+  let filtered = [...fallbackCatalogProducts];
+
+  if (categoryParam === "filtros") {
+    const typeTerms = {
+      aceite: ["aceite"],
+      aire: ["aire"],
+      combustible: ["combustible", "separador"],
+      cabina: ["cabina"],
+    };
+    filtered = filtered.filter((product) =>
+      product.category?.slug === "filtros" || product.name.toLowerCase().includes("filtro")
+    );
+    if (typeTerms[tipoParam]) {
+      filtered = filtered.filter((product) => {
+        const searchable = `${product.name} ${product.shortDesc || ""} ${product.description || ""}`.toLowerCase();
+        return typeTerms[tipoParam].some((term) => searchable.includes(term));
+      });
+    }
+  } else if (categoryParam === "frenos-y-suspension") {
+    filtered = filtered.filter((product) => {
+      const searchable = `${product.name} ${product.description || ""}`.toLowerCase();
+      return ["frenos-y-suspension", "liquido-frenos"].includes(product.category?.slug)
+        || ["pastilla", "disco", "amortiguador", "freno", "strut"].some((term) => searchable.includes(term));
+    });
+  } else if (categoryParam === "radiadores") {
+    filtered = filtered.filter((product) => {
+      const searchable = `${product.name} ${product.description || ""}`.toLowerCase();
+      return ["radiadores", "coolant"].includes(product.category?.slug)
+        || ["radiador", "intercooler", "enfriador", "refrigerante", "termostato"].some((term) => searchable.includes(term));
+    });
+  } else if (categoryParam === "siliconas") {
+    filtered = filtered.filter((product) => {
+      const searchable = `${product.name} ${product.description || ""}`.toLowerCase();
+      return ["siliconas", "siliconas-y-sellantes"].includes(product.category?.slug)
+        || ["silicona", "sellante", "rtv", "reinzosil"].some((term) => searchable.includes(term));
+    });
+  } else if (categoryParam) {
+    filtered = filtered.filter((product) => product.category?.slug === categoryParam);
+  }
+
+  if (brandParam) {
+    filtered = filtered.filter((product) => product.brand?.slug === brandParam);
+  }
+
+  if (searchQuery) {
+    const query = searchQuery.toLowerCase();
+    filtered = filtered.filter((product) =>
+      `${product.name} ${product.description || ""} ${product.shortDesc || ""} ${product.sku || ""}`
+        .toLowerCase()
+        .includes(query)
+    );
+  }
+
+  return filtered;
+}
+
 export default async function Catalogo({ searchParams }) {
   const resolvedParams = await searchParams;
   const categoryParam = resolvedParams?.category;
@@ -460,6 +517,21 @@ export default async function Catalogo({ searchParams }) {
   let brands = [];
   let session = null;
 
+  const applyFallbackCatalog = () => {
+    const filtered = filterFallbackCatalog({ categoryParam, brandParam, tipoParam, searchQuery });
+    totalProducts = filtered.length;
+    fetchedProducts = requiresPriceSort
+      ? filtered
+      : filtered.slice((requestedPage - 1) * PAGE_SIZE, requestedPage * PAGE_SIZE);
+    brands = Array.from(
+      new Map(
+        fallbackCatalogProducts
+          .filter((product) => product.brand?.slug)
+          .map((product) => [product.brand.slug, product.brand])
+      ).values()
+    ).sort((a, b) => a.name.localeCompare(b.name, "es"));
+  };
+
   try {
     const [dbProducts, dbTotal, dbBrands, dbSession] = await Promise.all([
       prisma.product.findMany({
@@ -476,33 +548,13 @@ export default async function Catalogo({ searchParams }) {
     totalProducts = dbTotal;
     brands = dbBrands;
     session = dbSession;
+
+    // Una base de datos nueva puede responder sin error pero todavía no tener
+    // inventario. En ese caso la tienda debe seguir mostrando el catálogo base.
+    if (dbTotal === 0) applyFallbackCatalog();
   } catch (err) {
-    // Si la BD remota no responde o no está inicializada en local, filtrar del catálogo estático
-    let filtered = [...fallbackCatalogProducts];
-
-    if (categoryParam === "lubricantes") {
-      filtered = filtered.filter(p => p.category?.slug?.startsWith("lubricantes") || p.category?.slug === "hidraulico" || p.category?.slug === "coolant" || p.category?.slug === "grasas-y-aditivos");
-    } else if (categoryParam === "siliconas") {
-      filtered = filtered.filter(p => p.category?.slug === "siliconas" || p.name.toLowerCase().includes("silicona") || p.name.toLowerCase().includes("loctite") || p.name.toLowerCase().includes("sellante"));
-    } else if (categoryParam) {
-      filtered = filtered.filter(p => p.category?.slug === categoryParam);
-    }
-
-    if (brandParam) {
-      filtered = filtered.filter(p => p.brand?.slug === brandParam);
-    }
-
-    if (searchQuery) {
-      const q = searchQuery.toLowerCase();
-      filtered = filtered.filter(p => 
-        p.name.toLowerCase().includes(q) || 
-        p.description?.toLowerCase().includes(q) || 
-        p.sku?.toLowerCase().includes(q)
-      );
-    }
-
-    totalProducts = filtered.length;
-    fetchedProducts = filtered.slice((requestedPage - 1) * PAGE_SIZE, requestedPage * PAGE_SIZE);
+    // Si la BD remota no responde, conservar una tienda navegable y con contenido.
+    applyFallbackCatalog();
   }
 
   const currentPage = requestedPage;
