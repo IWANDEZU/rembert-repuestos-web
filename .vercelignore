@@ -1,14 +1,6 @@
-# Credentials are configured in Vercel's encrypted environment-variable store.
+.next
+.git
 .env
 .env.*
-
-# Local-only build and development artifacts.
-.next
 node_modules
-dev.db
-repositorio-1
-
-# Local agent/editor state.
-.agents
-.claude
-.windsurf
+public/acdelco-dex-cool-50-50-galon.jpg
