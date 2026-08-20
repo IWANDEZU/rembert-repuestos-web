@@ -74,9 +74,9 @@ export default async function CatalogSidebar({
               <li>
                 <CatalogLink href={categoryHref("lubricantes")} active={categoryParam === "lubricantes"}>Lubricantes</CatalogLink>
                 <ul className="catalog-menu catalog-menu--nested">
-                  <li><CatalogLink href={categoryHref("lubricantes-gasolina")} active={categoryParam === "lubricantes-gasolina"}>Gasolina y livianos</CatalogLink></li>
-                  <li><CatalogLink href={categoryHref("transmision")} active={categoryParam === "transmision"}>Transmisión y mandos</CatalogLink></li>
-                  <li><CatalogLink href={categoryHref("hidraulico")} active={categoryParam === "hidraulico"}>Aceites hidráulicos</CatalogLink></li>
+                  <li><CatalogLink href={categoryHref("lubricantes-gasolina")} active={categoryParam === "lubricantes-gasolina"}>Gasolina</CatalogLink></li>
+                  <li><CatalogLink href={categoryHref("transmision")} active={categoryParam === "transmision"}>Transmisión</CatalogLink></li>
+                  <li><CatalogLink href={categoryHref("hidraulico")} active={categoryParam === "hidraulico"}>Hidráulicos</CatalogLink></li>
                   <li><CatalogLink href={categoryHref("coolant")} active={categoryParam === "coolant"}>Refrigerantes</CatalogLink></li>
                   <li><CatalogLink href={categoryHref("grasas-y-aditivos")} active={categoryParam === "grasas-y-aditivos"}>Grasas y aditivos</CatalogLink></li>
                 </ul>
@@ -90,8 +90,8 @@ export default async function CatalogSidebar({
                 </ul>
               </li>
               <li><CatalogLink href={categoryHref("frenos-y-suspension")} active={categoryParam === "frenos-y-suspension"}>Frenos y suspensión</CatalogLink></li>
-              <li><CatalogLink href={categoryHref("radiadores")} active={categoryParam === "radiadores"}>❄️ Radiadores y refrigeración</CatalogLink></li>
-              <li><CatalogLink href={categoryHref("servicio-tecnico")} active={categoryParam === "servicio-tecnico"}>🛠️ Servicio técnico y taller</CatalogLink></li>
+              <li><CatalogLink href={categoryHref("radiadores")} active={categoryParam === "radiadores"}>Radiadores</CatalogLink></li>
+              <li><CatalogLink href={categoryHref("servicio-tecnico")} active={categoryParam === "servicio-tecnico"}>Servicio técnico</CatalogLink></li>
             </ul>
           </nav>
 

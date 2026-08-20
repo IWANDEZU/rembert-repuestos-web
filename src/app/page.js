@@ -189,7 +189,7 @@ export default async function Home() {
           <h2 style={{ marginBottom: '2rem', textTransform: 'uppercase' }}>Categorías Principales</h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '1.5rem' }}>
             
-            {/* Categoría 1: Mantenimiento y Lubricación */}
+            {/* Categoría 1: Lubricantes */}
             <Link href="/catalogo?category=lubricantes" style={{ textDecoration: 'none', color: 'inherit' }}>
               <div style={{ 
                 background: '#fff', 
@@ -204,7 +204,7 @@ export default async function Home() {
                 <div style={{ height: '180px', borderRadius: '8px', marginBottom: '1rem', overflow: 'hidden', position: 'relative' }}>
                   <Image src="/mecanico.jpg" alt="Mantenimiento y Lubricación" fill sizes="(max-width: 700px) 100vw, 25vw" quality={75} style={{ objectFit: 'cover' }} />
                 </div>
-                <strong style={{ fontSize: '1.2rem', color: 'var(--primary-color)' }}>Lubricantes y Aceites</strong>
+                <strong style={{ fontSize: '1.15rem', color: 'var(--primary-color)', whiteSpace: 'nowrap', display: 'block' }}>Lubricantes</strong>
               </div>
             </Link>
 
@@ -223,7 +223,7 @@ export default async function Home() {
                 <div style={{ height: '180px', borderRadius: '8px', marginBottom: '1rem', overflow: 'hidden', position: 'relative' }}>
                   <Image src="/filtro-aceite.jpg" alt="Filtros de Motor" fill sizes="(max-width: 700px) 100vw, 25vw" quality={75} style={{ objectFit: 'cover' }} />
                 </div>
-                <strong style={{ fontSize: '1.2rem' }}>Filtros Automotrices</strong>
+                <strong style={{ fontSize: '1.15rem', whiteSpace: 'nowrap', display: 'block' }}>Filtros</strong>
               </div>
             </Link>
 
@@ -242,11 +242,11 @@ export default async function Home() {
                 <div style={{ height: '180px', borderRadius: '8px', marginBottom: '1rem', overflow: 'hidden', position: 'relative' }}>
                   <Image src="/catalogo-suspensiones/suspensiones-camionetas-referencias-populares.webp" alt="Suspensiones para camionetas de referencias populares" fill sizes="(max-width: 700px) 100vw, 25vw" quality={82} style={{ objectFit: 'cover' }} />
                 </div>
-                <strong style={{ fontSize: '1.2rem' }}>Frenos y Suspensión</strong>
+                <strong style={{ fontSize: '1.15rem', whiteSpace: 'nowrap', display: 'block' }}>Frenos y Suspensión</strong>
               </div>
             </Link>
 
-            {/* Categoría 4: Radiadores y Refrigeración */}
+            {/* Categoría 4: Radiadores */}
             <Link href="/radiadores" style={{ textDecoration: 'none', color: 'inherit' }}>
               <div style={{ 
                 background: '#fff', 
@@ -261,11 +261,11 @@ export default async function Home() {
                 <div style={{ height: '180px', borderRadius: '8px', marginBottom: '1rem', overflow: 'hidden', position: 'relative' }}>
                   <Image src="/radiador-auto.jpg" alt="Radiadores y Sistema de Enfriamiento" fill sizes="(max-width: 700px) 100vw, 25vw" quality={80} style={{ objectFit: 'cover' }} />
                 </div>
-                <strong style={{ fontSize: '1.2rem', color: 'var(--primary-dark)' }}>Radiadores & Enfriamiento</strong>
+                <strong style={{ fontSize: '1.15rem', color: 'var(--primary-dark)', whiteSpace: 'nowrap', display: 'block' }}>Radiadores</strong>
               </div>
             </Link>
 
-            {/* Categoría 5: Transmisión y Líquidos */}
+            {/* Categoría 5: Transmisión */}
             <Link href="/catalogo?category=transmision" style={{ textDecoration: 'none', color: 'inherit' }}>
               <div style={{ 
                 background: '#fff', 
@@ -280,11 +280,11 @@ export default async function Home() {
                 <div style={{ height: '180px', borderRadius: '8px', marginBottom: '1rem', overflow: 'hidden', background: '#e0e0e0', display: 'flex', alignItems: 'center', justifyContent: 'center', position: 'relative' }}>
                   <Image src="/transmision.png" alt="Transmisión y Líquidos" fill sizes="(max-width: 700px) 100vw, 25vw" quality={70} style={{ objectFit: 'contain', padding: '5%' }} />
                 </div>
-                <strong style={{ fontSize: '1.2rem' }}>Transmisión y Líquidos</strong>
+                <strong style={{ fontSize: '1.15rem', whiteSpace: 'nowrap', display: 'block' }}>Transmisión</strong>
               </div>
             </Link>
 
-            {/* Categoría 6: Servicio Técnico y Diagnóstico */}
+            {/* Categoría 6: Servicio Técnico */}
             <Link href="/servicio-tecnico" style={{ textDecoration: 'none', color: 'inherit' }}>
               <div style={{ 
                 background: '#fff', 
@@ -299,13 +299,13 @@ export default async function Home() {
                 <div style={{ height: '180px', borderRadius: '8px', marginBottom: '1rem', overflow: 'hidden', background: '#111', display: 'flex', alignItems: 'center', justifyContent: 'center', position: 'relative' }}>
                   <span style={{ fontSize: '4rem' }}>🛠️</span>
                 </div>
-                <strong style={{ fontSize: '1.2rem', color: 'var(--primary-dark)' }}>Servicio Técnico</strong>
+                <strong style={{ fontSize: '1.15rem', color: 'var(--primary-dark)', whiteSpace: 'nowrap', display: 'block' }}>Servicio Técnico</strong>
               </div>
             </Link>
 
           </div>
           <div style={{ textAlign: 'center', marginTop: '3rem' }}>
-            <Link href="/catalogo" className="btn btn--outline" style={{ color: 'var(--primary-color)', borderColor: 'var(--primary-color)' }}>
+            <Link href="/catalogo" className="btn btn--outline" style={{ color: 'var(--primary-color)', borderColor: 'var(--primary-color)', whiteSpace: 'nowrap' }}>
               VER TODAS LAS CATEGORÍAS
             </Link>
           </div>
@@ -315,7 +315,7 @@ export default async function Home() {
       {/* Servicios */}
       <section className="section" style={{ background: '#111111', color: 'white', borderTop: '3px solid var(--primary-color)', borderBottom: '3px solid var(--primary-color)' }}>
         <div className="main-container">
-          <h2 style={{ textTransform: 'uppercase', marginBottom: '2rem', textAlign: 'center', color: '#ffffff', letterSpacing: '1px' }}>
+          <h2 style={{ textTransform: 'uppercase', marginBottom: '2rem', textAlign: 'center', color: '#ffffff', letterSpacing: '1px', whiteSpace: 'nowrap' }}>
             Nuestros Servicios Automotrices
           </h2>
           <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '1rem', fontWeight: 'bold', fontSize: '1.05rem' }}>
@@ -328,6 +328,7 @@ export default async function Home() {
                   padding: '0.85rem 2rem', 
                   borderRadius: '30px', 
                   boxShadow: '0 4px 14px rgba(255, 215, 0, 0.3)',
+                  whiteSpace: 'nowrap',
                   fontWeight: '800',
                   letterSpacing: '0.5px'
                 }}

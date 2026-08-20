@@ -23,7 +23,7 @@ export async function generateMetadata({ searchParams }) {
 
   let title = "Catálogo de productos";
   let description =
-    "Explora nuestro catálogo de lubricantes, filtros de motor, frenos y repuestos en Victor Services. Atención en Barrancabermeja y envíos a toda Colombia.";
+    "Explora nuestro catálogo de lubricantes, filtros de motor, frenos, radiadores y repuestos en Rembert Repuestos BCA. Atención en Barrancabermeja y envíos a toda Colombia.";
 
   const categoryTitles = {
     lubricantes: "Lubricantes y Aceites de Motor",
@@ -40,13 +40,13 @@ export async function generateMetadata({ searchParams }) {
 
   if (categoryParam && categoryTitles[categoryParam]) {
     title = categoryTitles[categoryParam];
-    description = `Compra ${categoryTitles[categoryParam].toLowerCase()} al mejor precio en Victor Services Barrancabermeja. Productos originales con envíos a toda Colombia.`;
+    description = `Compra ${categoryTitles[categoryParam].toLowerCase()} al mejor precio en Rembert Repuestos BCA Barrancabermeja. Productos originales con envíos a toda Colombia.`;
   }
 
   if (brandParam) {
     const brandName = brandParam.charAt(0).toUpperCase() + brandParam.slice(1);
     title = `Productos ${brandName}`;
-    description = `Catálogo oficial de productos ${brandName} en Barrancabermeja. Lubricantes y filtros originales para tu motor.`;
+    description = `Catálogo oficial de productos ${brandName} en Barrancabermeja. Lubricantes y filtros originales para tu motor en Rembert Repuestos BCA.`;
   }
 
   if (searchQuery) {
@@ -73,7 +73,7 @@ export async function generateMetadata({ searchParams }) {
       title,
       description,
       url: `${siteUrl}${canonicalPath}`,
-      siteName: "Victor Services",
+      siteName: "Rembert Repuestos BCA",
       type: "website",
     },
   };
