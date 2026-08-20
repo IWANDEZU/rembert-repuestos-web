@@ -3,34 +3,39 @@ import Link from "next/link";
 import { siteUrl } from "@/lib/site";
 
 export const metadata = {
-  title: "Radiadores y Refrigeración Automotriz | REMBERT",
+  title: "Radiadores Chevrolet y Renault | REMBERT",
   description:
-    "Venta de radiadores de aluminio, cobre-bronce, intercoolers, tapas presurizadas, termostatos y refrigerantes para autos, camionetas y camiones en Barrancabermeja. Envíos a todo Colombia.",
+    "Venta especializada de radiadores para Chevrolet (Sail, Onix, Tracker, Spark, Aveo) y Renault (Duster, Sandero, Logan, Stepway, Kwid) en Barrancabermeja. Envíos a todo Colombia.",
   alternates: {
     canonical: "/radiadores",
   },
   keywords: [
+    "radiadores Chevrolet",
+    "radiadores Renault",
+    "radiador Sail",
+    "radiador Onix",
+    "radiador Tracker",
+    "radiador Spark GT",
+    "radiador Duster",
+    "radiador Sandero",
+    "radiador Logan",
+    "radiador Stepway",
+    "radiador Kwid",
     "radiadores Barrancabermeja",
-    "radiador aluminio autos",
-    "radiadores para camiones",
     "tapas de radiador",
     "refrigerante motor",
-    "radiador Hilux",
-    "radiador Duster",
-    "radiador Sail",
-    "radiador NPR",
   ],
   openGraph: {
-    title: "Radiadores Automotrices y Servicio Pesado - Rembert Repuestos BCA",
+    title: "Radiadores Chevrolet y Renault | REMBERT",
     description:
-      "Radiadores originales y homologados de alta eficiencia térmica. Atención técnica inmediata en Barrancabermeja y despachos nacionales.",
+      "Radiadores originales y homologados para Chevrolet y Renault. Alta eficiencia térmica, asesoría inmediata en Barrancabermeja y envíos a toda Colombia.",
     url: `${siteUrl}/radiadores`,
     images: [
       {
         url: "/radiador-banner.jpg",
         width: 1200,
         height: 630,
-        alt: "Radiadores Automotrices Rembert Repuestos",
+        alt: "Radiadores Chevrolet y Renault - REMBERT",
       },
     ],
   },
@@ -38,95 +43,83 @@ export const metadata = {
 
 const radiatorCategories = [
   {
-    id: "aluminio-plastico",
-    title: "Radiadores de Aluminio / Tanque Plástico",
-    badge: "Línea Liviana & SUV",
+    id: "chevrolet-radiadores",
+    title: "Radiadores para Chevrolet",
+    badge: "Especialidad Chevrolet",
     description:
-      "Paneles de aluminio con alta disipación térmica y tanques de polímero técnico reforzado con fibra de vidrio. Ajuste original de fábrica.",
+      "Radiadores de aluminio con panel de alta disipación térmica para Chevrolet Sail, Onix, Tracker, Spark GT, Aveo, Captiva, Cruze y Optra. Ajuste exacto OEM de fábrica.",
     image: "/radiador-auto.jpg",
-    specs: ["Enfriamiento eficiente", "Bajo peso", "Resistencia a la corrosión", "Ajuste OEM directo"],
-    whatsappText: "Hola, me interesa cotizar un Radiador de Aluminio con tanque plástico para mi vehículo.",
+    specs: ["Aluminio de alta transferencia", "Tanques de polímero reforzado", "Ajuste OEM directo", "Garantía térmica"],
+    whatsappText: "Hola, me interesa cotizar un Radiador para Chevrolet (Sail, Onix, Tracker, Spark, Aveo).",
   },
   {
-    id: "pesado-cobre-aluminio",
-    title: "Radiadores Diésel y Servicio Pesado",
-    badge: "Camiones & Maquinaria",
+    id: "renault-radiadores",
+    title: "Radiadores para Renault",
+    badge: "Especialidad Renault",
     description:
-      "Radiadores de alta resistencia para camiones (Isuzu NPR, Hino, Foton, Chevrolet FTR), tractomulas y maquinaria amarilla con celdas reforzadas para jornadas continuas.",
-    image: "/radiador-pesado.jpg",
-    specs: ["Estructura reforzada", "Máxima transferencia calórica", "Aptos para altas presiones", "Durabilidad extrema"],
-    whatsappText: "Hola, necesito cotizar un Radiador Diésel de Trabajo Pesado / Camión.",
+      "Radiadores de alto rendimiento térmico para Renault Duster, Sandero, Logan, Stepway, Kwid, Megane, Clio y Symbol. Diseñados para clima cálido y exigente.",
+    image: "/radiador-banner.jpg",
+    specs: ["Resistencia a altas presiones", "Tomas y conectores OEM", "Enfriamiento garantizado", "Durabilidad superior"],
+    whatsappText: "Hola, necesito cotizar un Radiador para Renault (Duster, Sandero, Logan, Stepway, Kwid).",
   },
   {
     id: "intercoolers-enfriadores",
-    title: "Intercoolers y Enfriadores de Aceite",
-    badge: "Turbo & Rendimiento",
+    title: "Enfriadores y Calefacción",
+    badge: "Sistema Térmico",
     description:
-      "Post-enfriadores de aire de admisión para motores turboalimentados y radiadores auxiliares de aceite para motor y transmisión.",
-    image: "/radiador-banner.jpg",
-    specs: ["Mayor densidad de aire", "Protección del turbo", "Rendimiento óptimo", "Enfriamiento de aceite"],
-    whatsappText: "Hola, requiero cotizar un Intercooler o Enfriador de Aceite para mi vehículo/máquina.",
+      "Radiadores de calefacción interior, enfriadores de aceite y post-enfriadores térmicos para vehículos Chevrolet y Renault.",
+    image: "/radiador-auto.jpg",
+    specs: ["Calefacción interior", "Enfriamiento de aceite", "Protección del motor", "Rendimiento óptimo"],
+    whatsappText: "Hola, requiero cotizar un radiador de calefacción o enfriador para Chevrolet/Renault.",
   },
   {
     id: "componentes-refrigeracion",
-    title: "Tapas, Termostatos y Mangueras",
+    title: "Tapas, Termostatos y Refrigerante",
     badge: "Accesorios Críticos",
     description:
-      "Tapas presurizadas calibradas (0.9, 1.1 y 1.3 Bar), termostatos de apertura precisa, mangueras moldeadas EPDM y refrigerantes Coolant OAT concentrados.",
+      "Tapas presurizadas calibradas (0.9, 1.1 y 1.4 Bar), termostatos de apertura precisa, mangueras moldeadas EPDM y refrigerantes Coolant OAT 50/50.",
     image: "/coolant.png",
-    specs: ["Tapas presurizadas de seguridad", "Termostatos OEM", "Mangueras de alta presión", "Refrigerante 50/50 OAT"],
-    whatsappText: "Hola, deseo cotizar tapas de radiador, mangueras, termostato o refrigerante.",
+    specs: ["Tapas presurizadas de seguridad", "Termostatos OEM", "Mangueras de alta resistencia", "Refrigerante 50/50 OAT"],
+    whatsappText: "Hola, deseo cotizar tapas de radiador, mangueras, termostato o refrigerante para mi vehículo.",
   },
 ];
 
 const brandCompatibilities = [
   {
-    brand: "Toyota",
-    logo: "/logos/autos/toyota.svg",
-    models: "Hilux, Fortuner, Prado, Land Cruiser, Corolla, RAV4",
-    tag: "Línea Japonesa",
-  },
-  {
     brand: "Chevrolet",
     logo: "/logos/autos/chevrolet.svg",
-    models: "Sail, Onix, Tracker, Spark GT, Aveo, D-Max, N300",
-    tag: "Más Vendido",
+    models: "Sail, Onix, Tracker, Spark GT, Aveo, Captiva, Cruze, Optra, Sonic, Cobalt",
+    tag: "Especialidad #1",
   },
   {
     brand: "Renault",
     logo: "/logos/autos/renault.svg",
-    models: "Duster, Sandero, Logan, Stepway, Kwid, Master",
-    tag: "Líder Colombia",
+    models: "Duster, Sandero, Logan, Stepway, Kwid, Megane, Clio Campus, Symbol, Twingo",
+    tag: "Especialidad #2",
+  },
+  {
+    brand: "Toyota",
+    logo: "/logos/autos/toyota.svg",
+    models: "Corolla, Yaris, RAV4, Prado, Fortuner",
+    tag: "Línea Liviana",
   },
   {
     brand: "Mazda",
     logo: "/logos/autos/mazda.svg",
-    models: "Mazda 2, Mazda 3, CX-30, CX-5, BT-50",
-    tag: "Línea Premium",
-  },
-  {
-    brand: "Nissan",
-    logo: "/logos/autos/nissan.svg",
-    models: "Frontier D22/NP300, Versa, March, Sentra, Kicks",
-    tag: "Alta Demanda",
+    models: "Mazda 2, Mazda 3, CX-30, CX-5, Allegro",
+    tag: "Línea Liviana",
   },
   {
     brand: "Kia & Hyundai",
     logo: "/logos/autos/kia.svg",
-    models: "Picanto, Rio, Sportage, Tucson, Accent, H-100, Porter",
+    models: "Picanto, Rio, Sportage, Tucson, Accent, i10",
     tag: "Línea Coreana",
   },
   {
-    brand: "Ford",
-    logo: "/logos/autos/ford.svg",
-    models: "Ranger T6, Fiesta, EcoSport, Explorer, Escape",
-    tag: "Trabajo & Ciudad",
-  },
-  {
-    brand: "Isuzu & Hino",
-    logo: "/logos/autos/volkswagen.svg",
-    models: "NPR, NHR, NQR, FRR, Hino 300, Hino 500, Dutro",
-    tag: "Diésel Pesado",
+    brand: "Nissan",
+    logo: "/logos/autos/nissan.svg",
+    models: "Versa, March, Sentra, Kicks, Tiida",
+    tag: "Línea Liviana",
   },
 ];
 
@@ -225,7 +218,7 @@ export default function RadiadoresPage() {
                 maxWidth: "600px",
               }}
             >
-              Radiadores originales y homologados en aluminio y cobre para vehículos particulares, camionetas, flotas y maquinaria pesada. Asesoría técnica y envíos a todo el país.
+              Radiadores originales y homologados en aluminio para vehículos Chevrolet, Renault, camionetas y línea liviana. Máxima disipación térmica, asesoría técnica y envíos a todo el país.
             </p>
 
             <div style={{ display: "flex", gap: "1rem", flexWrap: "wrap" }}>
@@ -364,7 +357,7 @@ export default function RadiadoresPage() {
               Catálogo de Radiadores y Enfriamiento
             </h2>
             <p style={{ color: "#5A6A80", fontSize: "1.05rem", maxWidth: "720px", margin: "0 auto" }}>
-              Disponemos de radiadores para toda la gama automotriz, desde autos compactos hasta maquinaria pesada de minería y construcción.
+              Disponemos de radiadores para toda la gama automotriz liviana, especialistas en las marcas líderes del país: Chevrolet y Renault.
             </p>
           </div>
 
