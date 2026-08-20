@@ -270,7 +270,9 @@ export default function RootLayout({ children }) {
             <footer className="footer" style={{ textAlign: 'center', padding: '3.5rem 1rem', background: '#111', color: '#ccc' }}>
               <div style={{ maxWidth: '1100px', margin: '0 auto 2.5rem', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: '2rem', textAlign: 'left' }}>
                 <div>
-                  <h4 style={{ color: 'var(--primary-color)', fontSize: '1.1rem', marginBottom: '1rem', textTransform: 'uppercase' }}>Rembert Repuestos BCA</h4>
+                  <div style={{ marginBottom: '1rem' }}>
+                    <BrandLogo width={180} height={46} />
+                  </div>
                   <p style={{ color: '#aaa', fontSize: '0.9rem', lineHeight: '1.6', marginBottom: '0.8rem' }}>
                     Repuestos originales y alternativos para tu vehículo. Precios al por mayor y detal con envíos seguros a todo el país.
                   </p>
