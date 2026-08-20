@@ -33,11 +33,11 @@ export const metadata = {
   metadataBase: new URL(baseUrl),
   manifest: "/manifest.webmanifest",
   title: {
-    default: "REMBERT | Repuestos Automotrices, Lubricantes & Radiadores",
+    default: "REMBERT | Repuestos Automotrices, Filtros & Radiadores",
     template: "%s | REMBERT",
   },
   description:
-    "REMBERT en Barrancabermeja, Santander. Venta especializada de repuestos automotrices, lubricantes, filtros y radiadores para autos, camiones y maquinaria pesada. Envíos seguros a todo Colombia.",
+    "REMBERT en Barrancabermeja, Santander. Venta especializada de repuestos automotrices, filtros y radiadores para autos, camiones y maquinaria pesada. Envíos seguros a todo Colombia.",
   keywords: [
     "REMBERT",
     "REMBERT repuestos",
@@ -70,9 +70,9 @@ export const metadata = {
     apple: "/icon.png",
   },
   openGraph: {
-    title: "REMBERT | Repuestos Automotrices, Lubricantes & Radiadores",
+    title: "REMBERT | Repuestos Automotrices, Filtros & Radiadores",
     description:
-      "Venta especializada de repuestos automotrices, lubricantes, filtros y radiadores en Barrancabermeja. Envíos a toda Colombia.",
+      "Venta especializada de repuestos automotrices, filtros y radiadores en Barrancabermeja. Envíos a toda Colombia.",
     url: baseUrl,
     siteName: "REMBERT",
     locale: "es_CO",
@@ -89,7 +89,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "REMBERT | Repuestos Automotrices",
-    description: "Venta de repuestos automotrices, lubricantes, filtros y radiadores en Barrancabermeja, Colombia.",
+    description: "Venta de repuestos automotrices, filtros y radiadores en Barrancabermeja, Colombia.",
     images: ["/logo.png"],
   },
   robots: {
@@ -257,7 +257,6 @@ export default function RootLayout({ children }) {
               {/* Bottom Menu */}
               <ul className="navbar__menu" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', whiteSpace: 'nowrap', flexWrap: 'nowrap' }}>
                 <li style={{ whiteSpace: 'nowrap', flexShrink: 0 }}><Link href="/" className="navbar__link" style={{ whiteSpace: 'nowrap' }}>INICIO</Link></li>
-                <li style={{ whiteSpace: 'nowrap', flexShrink: 0 }}><Link href="/catalogo?category=lubricantes" className="navbar__link" style={{ whiteSpace: 'nowrap' }}>LUBRICANTES</Link></li>
                 <li style={{ whiteSpace: 'nowrap', flexShrink: 0 }}><Link href="/catalogo?category=filtros" className="navbar__link" style={{ whiteSpace: 'nowrap' }}>FILTROS</Link></li>
                 <li style={{ whiteSpace: 'nowrap', flexShrink: 0 }}><Link href="/catalogo?category=frenos-y-suspension" className="navbar__link" style={{ whiteSpace: 'nowrap' }}>{"FRENOS\u00A0Y\u00A0SUSPENSIÓN"}</Link></li>
                 <li style={{ whiteSpace: 'nowrap', flexShrink: 0 }}><Link href="/radiadores" className="navbar__link" style={{ whiteSpace: 'nowrap' }}>RADIADORES</Link></li>

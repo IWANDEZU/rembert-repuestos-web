@@ -23,7 +23,7 @@ export async function generateMetadata({ searchParams }) {
 
   let title = "Catálogo de productos";
   let description =
-    "Explora nuestro catálogo de lubricantes, filtros de motor, frenos, radiadores y repuestos en Rembert Repuestos BCA. Atención en Barrancabermeja y envíos a toda Colombia.";
+    "Explora nuestro catálogo de filtros, frenos, radiadores y repuestos en Rembert Repuestos BCA. Atención en Barrancabermeja y envíos a toda Colombia.";
 
   const categoryTitles = {
     filtros: "Filtros Automotrices e Industriales",
@@ -300,6 +300,9 @@ export default async function Catalogo({ searchParams }) {
     ? resolvedParams.sort
     : "recent";
 
+  const removedLubricantCategories = ["lubricantes", "lubricantes-gasolina", "transmision", "hidraulico", "coolant", "grasas-y-aditivos"];
+  if (removedLubricantCategories.includes(categoryParam)) redirect("/catalogo");
+
   const conditions = [];
 
   if (categoryParam === "lubricantes") {
@@ -465,6 +468,7 @@ export default async function Catalogo({ searchParams }) {
       { name: { contains: "diésel" } },
       { category: { slug: "lubricantes-diesel" } },
       { category: { slug: "maquinaria-pesada" } },
+      { category: { slug: { in: removedLubricantCategories } } },
     ],
   });
 

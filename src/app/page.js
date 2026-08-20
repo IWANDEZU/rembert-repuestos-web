@@ -212,25 +212,6 @@ export default async function Home() {
           <h2 style={{ marginBottom: '2rem', textTransform: 'uppercase' }}>Categorías Principales</h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '1.5rem' }}>
             
-            {/* Categoría 1: Lubricantes */}
-            <Link href="/catalogo?category=lubricantes" style={{ textDecoration: 'none', color: 'inherit' }}>
-              <div style={{ 
-                background: '#fff', 
-                borderRadius: 'var(--border-radius)', 
-                padding: '1.5rem', 
-                textAlign: 'center',
-                boxShadow: 'var(--box-shadow-light)',
-                cursor: 'pointer',
-                border: '1px solid transparent',
-                transition: 'var(--transition)'
-              }} className="hover-card">
-                <div style={{ height: '180px', borderRadius: '8px', marginBottom: '1rem', overflow: 'hidden', position: 'relative' }}>
-                  <Image src="/mecanico.jpg" alt="Mantenimiento y Lubricación" fill sizes="(max-width: 700px) 100vw, 25vw" quality={75} style={{ objectFit: 'cover' }} />
-                </div>
-                <strong style={{ fontSize: '1.15rem', color: 'var(--primary-color)', whiteSpace: 'nowrap', display: 'block' }}>Lubricantes</strong>
-              </div>
-            </Link>
-
             {/* Categoría 2: Filtros */}
             <Link href="/catalogo?category=filtros" style={{ textDecoration: 'none', color: 'inherit' }}>
               <div style={{ 
@@ -383,7 +364,7 @@ export default async function Home() {
               Repuestos por Marca de Vehículo
             </h2>
             <p style={{ color: '#666666', fontSize: '1.05rem', maxWidth: '700px', margin: '0 auto' }}>
-              Disponemos de lubricantes certificados, filtros y repuestos para las marcas y modelos más vendidos en Colombia.
+              Disponemos de filtros, radiadores, frenos y repuestos para las marcas y modelos más vendidos en Colombia.
             </p>
           </div>
 
