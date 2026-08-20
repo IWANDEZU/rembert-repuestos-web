@@ -252,16 +252,16 @@ export default function RootLayout({ children }) {
               </div>
 
               {/* Bottom Menu */}
-              <ul className="navbar__menu">
-                <li><Link href="/" className="navbar__link">INICIO</Link></li>
-                <li><Link href="/catalogo?category=lubricantes" className="navbar__link">LUBRICANTES</Link></li>
-                <li><Link href="/catalogo?category=filtros" className="navbar__link">FILTROS</Link></li>
-                <li><Link href="/catalogo?category=frenos-y-suspension" className="navbar__link">FRENOS&nbsp;Y&nbsp;SUSPENSIÓN</Link></li>
-                <li><Link href="/radiadores" className="navbar__link">RADIADORES</Link></li>
-                <li><Link href="/servicio-tecnico" className="navbar__link">SERVICIO&nbsp;TÉCNICO</Link></li>
-                <li><Link href="/marcas" className="navbar__link">MARCAS</Link></li>
-                <li><Link href="/nosotros" className="navbar__link">NOSOTROS</Link></li>
-                <li><Link href="/contacto" className="navbar__link">CONTACTO</Link></li>
+              <ul className="navbar__menu" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', whiteSpace: 'nowrap', flexWrap: 'nowrap' }}>
+                <li style={{ whiteSpace: 'nowrap', flexShrink: 0 }}><Link href="/" className="navbar__link" style={{ whiteSpace: 'nowrap' }}>INICIO</Link></li>
+                <li style={{ whiteSpace: 'nowrap', flexShrink: 0 }}><Link href="/catalogo?category=lubricantes" className="navbar__link" style={{ whiteSpace: 'nowrap' }}>LUBRICANTES</Link></li>
+                <li style={{ whiteSpace: 'nowrap', flexShrink: 0 }}><Link href="/catalogo?category=filtros" className="navbar__link" style={{ whiteSpace: 'nowrap' }}>FILTROS</Link></li>
+                <li style={{ whiteSpace: 'nowrap', flexShrink: 0 }}><Link href="/catalogo?category=frenos-y-suspension" className="navbar__link" style={{ whiteSpace: 'nowrap' }}>{"FRENOS\u00A0Y\u00A0SUSPENSIÓN"}</Link></li>
+                <li style={{ whiteSpace: 'nowrap', flexShrink: 0 }}><Link href="/radiadores" className="navbar__link" style={{ whiteSpace: 'nowrap' }}>RADIADORES</Link></li>
+                <li style={{ whiteSpace: 'nowrap', flexShrink: 0 }}><Link href="/servicio-tecnico" className="navbar__link" style={{ whiteSpace: 'nowrap' }}>{"SERVICIO\u00A0TÉCNICO"}</Link></li>
+                <li style={{ whiteSpace: 'nowrap', flexShrink: 0 }}><Link href="/marcas" className="navbar__link" style={{ whiteSpace: 'nowrap' }}>MARCAS</Link></li>
+                <li style={{ whiteSpace: 'nowrap', flexShrink: 0 }}><Link href="/nosotros" className="navbar__link" style={{ whiteSpace: 'nowrap' }}>NOSOTROS</Link></li>
+                <li style={{ whiteSpace: 'nowrap', flexShrink: 0 }}><Link href="/contacto" className="navbar__link" style={{ whiteSpace: 'nowrap' }}>CONTACTO</Link></li>
               </ul>
             </nav>
 
