@@ -252,16 +252,16 @@ export default function RootLayout({ children }) {
               </div>
 
               {/* Bottom Menu */}
-              <ul className="navbar__menu main-container" style={{ whiteSpace: "nowrap", flexWrap: "nowrap" }}>
-                <li style={{ whiteSpace: "nowrap", flexShrink: 0 }}><Link href="/" className="navbar__link" style={{ whiteSpace: "nowrap" }}>INICIO</Link></li>
-                <li style={{ whiteSpace: "nowrap", flexShrink: 0 }}><Link href="/catalogo?category=lubricantes" className="navbar__link" style={{ whiteSpace: "nowrap" }}>LUBRICANTES</Link></li>
-                <li style={{ whiteSpace: "nowrap", flexShrink: 0 }}><Link href="/catalogo?category=filtros" className="navbar__link" style={{ whiteSpace: "nowrap" }}>FILTROS</Link></li>
-                <li style={{ whiteSpace: "nowrap", flexShrink: 0 }}><Link href="/catalogo?category=frenos-y-suspension" className="navbar__link" style={{ whiteSpace: "nowrap" }}>{"FRENOS\u00A0Y\u00A0SUSPENSIÓN"}</Link></li>
-                <li style={{ whiteSpace: "nowrap", flexShrink: 0 }}><Link href="/radiadores" className="navbar__link" style={{ whiteSpace: "nowrap" }}>RADIADORES</Link></li>
-                <li style={{ whiteSpace: "nowrap", flexShrink: 0 }}><Link href="/servicio-tecnico" className="navbar__link" style={{ whiteSpace: "nowrap" }}>{"SERVICIO\u00A0TÉCNICO"}</Link></li>
-                <li style={{ whiteSpace: "nowrap", flexShrink: 0 }}><Link href="/marcas" className="navbar__link" style={{ whiteSpace: "nowrap" }}>MARCAS</Link></li>
-                <li style={{ whiteSpace: "nowrap", flexShrink: 0 }}><Link href="/nosotros" className="navbar__link" style={{ whiteSpace: "nowrap" }}>NOSOTROS</Link></li>
-                <li style={{ whiteSpace: "nowrap", flexShrink: 0 }}><Link href="/contacto" className="navbar__link" style={{ whiteSpace: "nowrap" }}>CONTACTO</Link></li>
+              <ul className="navbar__menu main-container" style={{ display: "flex", justifyContent: "center", alignItems: "center", whiteSpace: "nowrap", flexWrap: "nowrap", height: "40px", lineHeight: "1" }}>
+                <li style={{ display: "inline-flex", alignItems: "center", whiteSpace: "nowrap", flexShrink: 0, height: "100%" }}><Link href="/" className="navbar__link" style={{ display: "inline-flex", alignItems: "center", whiteSpace: "nowrap", height: "32px", lineHeight: "1" }}>INICIO</Link></li>
+                <li style={{ display: "inline-flex", alignItems: "center", whiteSpace: "nowrap", flexShrink: 0, height: "100%" }}><Link href="/catalogo?category=lubricantes" className="navbar__link" style={{ display: "inline-flex", alignItems: "center", whiteSpace: "nowrap", height: "32px", lineHeight: "1" }}>LUBRICANTES</Link></li>
+                <li style={{ display: "inline-flex", alignItems: "center", whiteSpace: "nowrap", flexShrink: 0, height: "100%" }}><Link href="/catalogo?category=filtros" className="navbar__link" style={{ display: "inline-flex", alignItems: "center", whiteSpace: "nowrap", height: "32px", lineHeight: "1" }}>FILTROS</Link></li>
+                <li style={{ display: "inline-flex", alignItems: "center", whiteSpace: "nowrap", flexShrink: 0, height: "100%" }}><Link href="/catalogo?category=frenos-y-suspension" className="navbar__link" style={{ display: "inline-flex", alignItems: "center", whiteSpace: "nowrap", height: "32px", lineHeight: "1" }}>{"FRENOS\u00A0Y\u00A0SUSPENSIÓN"}</Link></li>
+                <li style={{ display: "inline-flex", alignItems: "center", whiteSpace: "nowrap", flexShrink: 0, height: "100%" }}><Link href="/radiadores" className="navbar__link" style={{ display: "inline-flex", alignItems: "center", whiteSpace: "nowrap", height: "32px", lineHeight: "1" }}>RADIADORES</Link></li>
+                <li style={{ display: "inline-flex", alignItems: "center", whiteSpace: "nowrap", flexShrink: 0, height: "100%" }}><Link href="/servicio-tecnico" className="navbar__link" style={{ display: "inline-flex", alignItems: "center", whiteSpace: "nowrap", height: "32px", lineHeight: "1" }}>{"SERVICIO\u00A0TÉCNICO"}</Link></li>
+                <li style={{ display: "inline-flex", alignItems: "center", whiteSpace: "nowrap", flexShrink: 0, height: "100%" }}><Link href="/marcas" className="navbar__link" style={{ display: "inline-flex", alignItems: "center", whiteSpace: "nowrap", height: "32px", lineHeight: "1" }}>MARCAS</Link></li>
+                <li style={{ display: "inline-flex", alignItems: "center", whiteSpace: "nowrap", flexShrink: 0, height: "100%" }}><Link href="/nosotros" className="navbar__link" style={{ display: "inline-flex", alignItems: "center", whiteSpace: "nowrap", height: "32px", lineHeight: "1" }}>NOSOTROS</Link></li>
+                <li style={{ display: "inline-flex", alignItems: "center", whiteSpace: "nowrap", flexShrink: 0, height: "100%" }}><Link href="/contacto" className="navbar__link" style={{ display: "inline-flex", alignItems: "center", whiteSpace: "nowrap", height: "32px", lineHeight: "1" }}>CONTACTO</Link></li>
               </ul>
             </nav>
 

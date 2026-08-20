@@ -330,35 +330,48 @@ h1, h2, h3, h4 {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: clamp(0.3rem, 0.85vw, 1.1rem);
-  font-size: clamp(0.68rem, 0.74vw, 0.78rem);
+  gap: clamp(0.35rem, 0.9vw, 1.2rem);
+  font-size: clamp(0.7rem, 0.76vw, 0.82rem);
   font-weight: 700;
   text-transform: uppercase;
   flex-wrap: nowrap !important;
   white-space: nowrap !important;
-  overflow-x: auto;
-  scrollbar-width: none;
-}
-
-.navbar__menu::-webkit-scrollbar {
-  display: none;
+  height: 40px;
+  line-height: 1;
+  padding: 0;
+  margin: 0 auto;
 }
 
 .navbar__menu li {
   white-space: nowrap !important;
   flex-shrink: 0;
   display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  line-height: 1;
+  list-style: none;
 }
 
 .navbar__link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 32px;
+  line-height: 1;
   transition: var(--transition);
-  padding: 0.25rem 0.35rem;
+  padding: 0 0.5rem;
   color: #FFFFFF;
   border-radius: 4px;
   white-space: nowrap !important;
   word-break: keep-all !important;
-  letter-spacing: 0.05px;
-  display: inline-block;
+  letter-spacing: 0.15px;
+  text-align: center;
+}
+
+.navbar__link:hover, .navbar__link.active {
+  color: #111111;
+  background-color: var(--primary-color);
 }
 
 .navbar__link:hover, .navbar__link.active {
