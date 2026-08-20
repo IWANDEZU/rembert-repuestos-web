@@ -252,16 +252,16 @@ export default function RootLayout({ children }) {
               </div>
 
               {/* Bottom Menu */}
-              <ul className="navbar__menu" style={{ display: "flex", justifyContent: "center", alignItems: "center", whiteSpace: "nowrap", flexWrap: "nowrap", width: "100%", padding: "0.2rem 1rem", fontSize: "0.60rem", overflowX: "auto", scrollbarWidth: "none" }}>
-                <li style={{ display: "inline-flex", alignItems: "center", whiteSpace: "nowrap", flexShrink: 0, minWidth: "max-content" }}><Link href="/" className="navbar__link" style={{ display: "inline-flex", alignItems: "center", whiteSpace: "nowrap", minWidth: "max-content", minHeight: "28px", height: "auto", lineHeight: "1", fontSize: "0.60rem", fontWeight: "800" }}>INICIO</Link></li>
-                <li style={{ display: "inline-flex", alignItems: "center", whiteSpace: "nowrap", flexShrink: 0, minWidth: "max-content" }}><Link href="/catalogo?category=lubricantes" className="navbar__link" style={{ display: "inline-flex", alignItems: "center", whiteSpace: "nowrap", minWidth: "max-content", minHeight: "28px", height: "auto", lineHeight: "1", fontSize: "0.60rem", fontWeight: "800" }}>LUBRICANTES</Link></li>
-                <li style={{ display: "inline-flex", alignItems: "center", whiteSpace: "nowrap", flexShrink: 0, minWidth: "max-content" }}><Link href="/catalogo?category=filtros" className="navbar__link" style={{ display: "inline-flex", alignItems: "center", whiteSpace: "nowrap", minWidth: "max-content", minHeight: "28px", height: "auto", lineHeight: "1", fontSize: "0.60rem", fontWeight: "800" }}>FILTROS</Link></li>
-                <li style={{ display: "inline-flex", alignItems: "center", whiteSpace: "nowrap", flexShrink: 0, minWidth: "max-content" }}><Link href="/catalogo?category=frenos-y-suspension" className="navbar__link" style={{ display: "inline-flex", alignItems: "center", whiteSpace: "nowrap", minWidth: "max-content", minHeight: "28px", height: "auto", lineHeight: "1", fontSize: "0.60rem", fontWeight: "800" }}>FRENOS Y SUSPENSIÓN</Link></li>
-                <li style={{ display: "inline-flex", alignItems: "center", whiteSpace: "nowrap", flexShrink: 0, minWidth: "max-content" }}><Link href="/radiadores" className="navbar__link" style={{ display: "inline-flex", alignItems: "center", whiteSpace: "nowrap", minWidth: "max-content", minHeight: "28px", height: "auto", lineHeight: "1", fontSize: "0.60rem", fontWeight: "800" }}>RADIADORES</Link></li>
-                <li style={{ display: "inline-flex", alignItems: "center", whiteSpace: "nowrap", flexShrink: 0, minWidth: "max-content" }}><Link href="/servicio-tecnico" className="navbar__link" style={{ display: "inline-flex", alignItems: "center", whiteSpace: "nowrap", minWidth: "max-content", minHeight: "28px", height: "auto", lineHeight: "1", fontSize: "0.60rem", fontWeight: "800" }}>SERVICIO TÉCNICO</Link></li>
-                <li style={{ display: "inline-flex", alignItems: "center", whiteSpace: "nowrap", flexShrink: 0, minWidth: "max-content" }}><Link href="/marcas" className="navbar__link" style={{ display: "inline-flex", alignItems: "center", whiteSpace: "nowrap", minWidth: "max-content", minHeight: "28px", height: "auto", lineHeight: "1", fontSize: "0.60rem", fontWeight: "800" }}>MARCAS</Link></li>
-                <li style={{ display: "inline-flex", alignItems: "center", whiteSpace: "nowrap", flexShrink: 0, minWidth: "max-content" }}><Link href="/nosotros" className="navbar__link" style={{ display: "inline-flex", alignItems: "center", whiteSpace: "nowrap", minWidth: "max-content", minHeight: "28px", height: "auto", lineHeight: "1", fontSize: "0.60rem", fontWeight: "800" }}>NOSOTROS</Link></li>
-                <li style={{ display: "inline-flex", alignItems: "center", whiteSpace: "nowrap", flexShrink: 0, minWidth: "max-content" }}><Link href="/contacto" className="navbar__link" style={{ display: "inline-flex", alignItems: "center", whiteSpace: "nowrap", minWidth: "max-content", minHeight: "28px", height: "auto", lineHeight: "1", fontSize: "0.60rem", fontWeight: "800" }}>CONTACTO</Link></li>
+              <ul className="navbar__menu">
+                <li><Link href="/" className="navbar__link">INICIO</Link></li>
+                <li><Link href="/catalogo?category=lubricantes" className="navbar__link">LUBRICANTES</Link></li>
+                <li><Link href="/catalogo?category=filtros" className="navbar__link">FILTROS</Link></li>
+                <li><Link href="/catalogo?category=frenos-y-suspension" className="navbar__link">FRENOS&nbsp;Y&nbsp;SUSPENSIÓN</Link></li>
+                <li><Link href="/radiadores" className="navbar__link">RADIADORES</Link></li>
+                <li><Link href="/servicio-tecnico" className="navbar__link">SERVICIO&nbsp;TÉCNICO</Link></li>
+                <li><Link href="/marcas" className="navbar__link">MARCAS</Link></li>
+                <li><Link href="/nosotros" className="navbar__link">NOSOTROS</Link></li>
+                <li><Link href="/contacto" className="navbar__link">CONTACTO</Link></li>
               </ul>
             </nav>
 

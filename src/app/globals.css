@@ -258,11 +258,12 @@ h1, h2, h3, h4 {
 /* Navbar (10% Negro con Borde 30% Amarillo) */
 .navbar {
   background-color: var(--color-black);
-  padding: var(--spacing-md) var(--spacing-lg);
+  padding: var(--spacing-md) var(--spacing-lg) 0;
   display: flex;
   flex-direction: column;
   border-bottom: 4px solid var(--primary-color);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
 }
 
 .navbar__main {
@@ -335,16 +336,22 @@ h1, h2, h3, h4 {
   font-weight: 800;
   text-transform: uppercase;
   flex-wrap: nowrap !important;
-  white-space: nowrap !important;
-  padding: 0.2rem 0;
-  margin: 0 auto;
-  width: 100%;
+  list-style: none;
+  margin: 0 calc(-1 * var(--spacing-lg));
+  padding: 0.2rem var(--spacing-lg);
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.navbar__menu::-webkit-scrollbar {
+  display: none;
 }
 
 .navbar__menu li {
   white-space: nowrap !important;
   flex-shrink: 0 !important;
-  width: max-content !important;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -357,17 +364,16 @@ h1, h2, h3, h4 {
   justify-content: center;
   min-height: 28px;
   height: auto;
-  line-height: 1.2;
+  line-height: 1;
   font-size: 0.60rem;
   font-weight: 800;
   transition: var(--transition);
-  padding: 0.25rem 0.5rem;
+  padding: 0.25rem 0.55rem;
   color: #FFFFFF;
   border-radius: 5px;
   white-space: nowrap !important;
   word-break: keep-all !important;
   overflow: visible !important;
-  width: max-content !important;
   flex-shrink: 0 !important;
   letter-spacing: 0.4px;
   text-align: center;
