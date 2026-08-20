@@ -179,6 +179,8 @@ const gasolineBrakeApplications = [
   ["Kia", "Picanto, Cerato y Sportage gasolina"],
   ["Hyundai", "HB20, HB20X, Veloster y Tucson gasolina"],
   ["Volkswagen", "Gol, Saveiro, Fox, SpaceFox y CrossFox"],
+  ["Mazda", "Mazda 2, Mazda 3 y CX-5 gasolina"],
+  ["Ford", "Fiesta, EcoSport y Escape gasolina"],
 ];
 
 const gasolineFilterBrandVisuals = {
@@ -636,7 +638,7 @@ export default async function Catalogo({ searchParams }) {
     siliconas: ["Siliconas y sellantes automotrices", "Sellantes adhesivos RTV, formadores de juntas de alta temperatura y empaques."],
     mantenimiento: ["Mantenimiento automotriz", "Silicona Victor Reinz, grasas, refrigerantes y valvulinas en una sola sección."],
     filtros: ["Filtros automotrices e industriales", "Filtros de aceite, aire, combustible, separadores de agua y cabina."],
-    "frenos-y-suspension": ["Frenos para autos y camionetas a gasolina", "Pastillas delanteras, zapatas traseras, discos y líquidos con referencia, años y compatibilidad por modelo."],
+    "frenos-y-suspension": ["Frenos, dirección y suspensión para vehículos a gasolina", "Pastillas, discos, freno hidráulico, sensores ABS, amortiguación, rótulas, terminales, axiales, bieletas, bujes y tijeras con validación por vehículo."],
     "lubricantes-gasolina": ["Lubricantes gasolina y livianos", "Aceites sintéticos y minerales para motores a gasolina."],
     transmision: ["Cajas y transmisiones automotrices", "Transmisiones manuales, automáticas y CVT para vehículos de las principales marcas."],
     "electrico-y-encendido": ["Sistema eléctrico y encendido", "Bujías y baterías originales seleccionadas por referencia y aplicación."],
@@ -780,7 +782,7 @@ export default async function Catalogo({ searchParams }) {
             <div className="filter-showcase__heading">
               <div>
                 <p className="filter-showcase__eyebrow">Aplicaciones verificadas · gasolina</p>
-                <h2 id="brake-applications-title">Busca frenos por marca y modelo</h2>
+                <h2 id="brake-applications-title">Busca frenos y suspensión por marca y modelo</h2>
               </div>
               <p>Las referencias son orientativas hasta confirmar VIN, año, motor, eje, diámetro de disco o tambor y sistema ABS.</p>
             </div>

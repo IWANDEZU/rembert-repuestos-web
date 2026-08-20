@@ -1,3 +1,5 @@
+import { frenosSuspensionProducts } from "../data/frenosSuspensionProducts.js";
+
 function brakeApplication({
   id, name, slug, brand, reference, image, vehicleBrands, models,
   years, axle, fmsi, oe, source,
@@ -287,8 +289,8 @@ const allProducts = [
     price: 38000,
     sku: "MOT-DOT4-BRAKE",
     description: "Líquido de frenos sintético 100% poliglicol para sistemas hidráulicos y ABS.",
-    image: "/frenos-liq.png",
-    images: [{ url: "/frenos-liq.png", alt: "Líquido Frenos DOT 4", isMain: true }],
+    image: "/frenos-liq.webp",
+    images: [{ url: "/frenos-liq.webp", alt: "Líquido Frenos DOT 4", isMain: true }],
     inStock: true,
     stock: 50,
   },
@@ -302,8 +304,8 @@ const allProducts = [
     sku: "LF028",
     shortDesc: "Líquido DOT 3 para sistemas de freno de disco y campana; presentación de 900 cm³.",
     description: "Líquido para frenos Cofre DOT 3 recomendado por el fabricante para sistemas de disco y campana. La ficha oficial indica cumplimiento de DOT 3, NTC 1703, FMVSS 116, SAE J1703, ISO 4925 y JIS K2233. Utilizar únicamente cuando el manual del vehículo autorice DOT 3 y evitar contaminación con aceite mineral, agua o líquido DOT 5 a base de silicona.",
-    image: "/catalogo-mantenimiento/cofre-liquido-frenos-dot3-900cm3.png",
-    images: [{ url: "/catalogo-mantenimiento/cofre-liquido-frenos-dot3-900cm3.png", alt: "Líquido para frenos Cofre DOT 3 de 900 cm³", isMain: true }],
+    image: "/catalogo-mantenimiento/cofre-liquido-frenos-dot3-900cm3.webp",
+    images: [{ url: "/catalogo-mantenimiento/cofre-liquido-frenos-dot3-900cm3.webp", alt: "Líquido para frenos Cofre DOT 3 de 900 cm³", isMain: true }],
     attributes: [
       { id: "cofredot3-1", name: "Especificación", value: "DOT 3 · NTC 1703 · FMVSS 116 · SAE J1703 · ISO 4925 · JIS K2233" },
       { id: "cofredot3-2", name: "Sistema", value: "Frenos hidráulicos de disco y campana" },
@@ -403,7 +405,7 @@ const allProducts = [
   ].map((application) => brakeApplication({
     ...application,
     brand: "Fras-le",
-    image: "/catalogo-frenos/fras-le-pastillas-familia.png",
+    image: "/catalogo-frenos/fras-le-pastillas-familia.webp",
     axle: "Eje delantero",
   })),
   brakeApplication({
@@ -411,7 +413,7 @@ const allProducts = [
     name: "Pastillas Delanteras Bosch F 002 H26 431 — Chevrolet Aveo / Optra",
     slug: "pastillas-delanteras-bosch-f002h26431-chevrolet-aveo-optra-gasolina",
     brand: "Bosch", reference: "F 002 H26 431",
-    image: "/catalogo-frenos/bosch-pastillas-familia.png",
+    image: "/catalogo-frenos/bosch-pastillas-familia.webp",
     vehicleBrands: "Chevrolet", models: "Aveo 1.4/1.6 y Optra 1.6/1.8/2.0 gasolina",
     years: "según mercado y versión", axle: "Eje delantero",
     source: "Bosch — catálogo internacional oficial de sistemas de freno; confirmar equivalencia para Colombia",
@@ -421,7 +423,7 @@ const allProducts = [
     name: "Zapatas Traseras Bosch F 002 H26 418 — Chevrolet Spark / Daewoo Matiz",
     slug: "zapatas-traseras-bosch-f002h26418-chevrolet-spark-daewoo-matiz-gasolina",
     brand: "Bosch", reference: "F 002 H26 418",
-    image: "/catalogo-frenos/bosch-zapatas-familia.png",
+    image: "/catalogo-frenos/bosch-zapatas-familia.webp",
     vehicleBrands: "Chevrolet / Daewoo", models: "Spark 1.0 gasolina y Matiz 0.8 gasolina",
     years: "según mercado y versión", axle: "Eje trasero · freno de tambor",
     source: "Bosch — catálogo internacional oficial de sistemas de freno; confirmar diámetro para Colombia",
@@ -431,7 +433,7 @@ const allProducts = [
     name: "Zapatas Traseras Bosch F 002 H26 419 — Chevrolet Aveo",
     slug: "zapatas-traseras-bosch-f002h26419-chevrolet-aveo-gasolina",
     brand: "Bosch", reference: "F 002 H26 419",
-    image: "/catalogo-frenos/bosch-zapatas-familia.png",
+    image: "/catalogo-frenos/bosch-zapatas-familia.webp",
     vehicleBrands: "Chevrolet", models: "Aveo 1.2/1.4/1.6 gasolina",
     years: "según mercado y versión", axle: "Eje trasero · freno de tambor",
     source: "Bosch — catálogo internacional oficial de sistemas de freno; confirmar diámetro para Colombia",
@@ -445,8 +447,8 @@ const allProducts = [
     price: 85000,
     sku: "INC-PAD-FRONT",
     description: "Pastillas de freno formulación cerámica de alto frenado y bajo desgaste de disco.",
-    image: "/incolbest-pastillas-menu.png",
-    images: [{ url: "/incolbest-pastillas-menu.png", alt: "Pastillas Incolbest", isMain: true }],
+    image: "/incolbest-pastillas-menu.webp",
+    images: [{ url: "/incolbest-pastillas-menu.webp", alt: "Pastillas Incolbest", isMain: true }],
     inStock: true,
     stock: 35,
   },
@@ -459,8 +461,8 @@ const allProducts = [
     price: 165000,
     sku: "INC-ROTOR-VENT",
     description: "Par de discos de freno ventilados con maquinado de alta precisión.",
-    image: "/incolbest-discos-menu.png",
-    images: [{ url: "/incolbest-discos-menu.png", alt: "Discos Incolbest", isMain: true }],
+    image: "/incolbest-discos-menu.webp",
+    images: [{ url: "/incolbest-discos-menu.webp", alt: "Discos Incolbest", isMain: true }],
     inStock: true,
     stock: 18,
   },
@@ -473,11 +475,14 @@ const allProducts = [
     price: 195000,
     sku: "GAB-GAS-FRONT",
     description: "Amortiguador presurizado con nitrógeno para máxima estabilidad y confort en ruta.",
-    image: "/gabriel-amortiguador-01.png",
-    images: [{ url: "/gabriel-amortiguador-01.png", alt: "Amortiguador Gabriel", isMain: true }],
+    image: "/gabriel-amortiguador-01.webp",
+    images: [{ url: "/gabriel-amortiguador-01.webp", alt: "Amortiguador Gabriel", isMain: true }],
     inStock: true,
     stock: 22,
   },
+
+  // DIRECCIÓN, SUSPENSIÓN Y FRENO HIDRÁULICO — COTIZACIÓN VALIDADA POR VIN
+  ...frenosSuspensionProducts,
 
   // FILTROS
   {

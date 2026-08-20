@@ -1040,8 +1040,19 @@ h1, h2, h3, h4 {
   }
 }
 
+.catalog-sidebar__toggle-checkbox,
+.catalog-sidebar__toggle-label,
+.catalog-sidebar__back-btn {
+  display: none;
+}
+
 /* Smartphone y Dispositivos Móviles */
 @media (max-width: 768px) {
+  .main-container {
+    width: 100%;
+    padding-inline: 1rem;
+  }
+
   .top-bar {
     padding: 0.45rem 0.25rem;
   }
@@ -1146,6 +1157,18 @@ h1, h2, h3, h4 {
     gap: 1.25rem;
   }
 
+  .catalog-content,
+  .catalog-banner,
+  .filter-showcase {
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  .catalog-banner h1,
+  .filter-showcase h2 {
+    overflow-wrap: anywhere;
+  }
+
   .catalog-sidebar__mobile-nav {
     display: flex;
     flex-wrap: wrap;
@@ -1239,16 +1262,4 @@ h1, h2, h3, h4 {
     min-width: 0;
     width: 100%;
   }
-}
-
-.catalog-sidebar__toggle-checkbox {
-  display: none;
-}
-
-.catalog-sidebar__toggle-label {
-  display: none;
-}
-
-.catalog-sidebar__back-btn {
-  display: none;
 }
