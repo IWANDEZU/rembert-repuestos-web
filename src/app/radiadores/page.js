@@ -74,13 +74,13 @@ const radiatorCategories = [
   },
   {
     id: "componentes-refrigeracion",
-    title: "Tapas, Termostatos y Refrigerante",
+    title: "Tapas, Termostatos y Refrigerante ACDelco",
     badge: "Accesorios Críticos",
     description:
-      "Tapas presurizadas calibradas (0.9, 1.1 y 1.4 Bar), termostatos de apertura precisa, mangueras moldeadas EPDM y refrigerantes Coolant OAT 50/50.",
-    image: "/coolant.png",
-    specs: ["Tapas presurizadas de seguridad", "Termostatos OEM", "Mangueras de alta resistencia", "Refrigerante 50/50 OAT"],
-    whatsappText: "Hola, deseo cotizar tapas de radiador, mangueras, termostato o refrigerante para mi vehículo.",
+      "Refrigerante original ACDelco DEX-COOL 50/50 OAT, tapas presurizadas de seguridad calibradas (0.9, 1.1 y 1.4 Bar) y termostatos de apertura precisa.",
+    image: "/acdelco-dex-cool-50-50-galon.png",
+    specs: ["ACDelco DEX-COOL 50/50 OAT", "Tapas presurizadas calibradas", "Termostatos OEM de precisión", "Protección anticorrosiva 5 años"],
+    whatsappText: "Hola, deseo cotizar el Refrigerante ACDelco DEX-COOL 50/50, tapas de radiador o termostato para mi vehículo.",
   },
 ];
 

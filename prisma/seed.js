@@ -1862,7 +1862,35 @@ async function main() {
     }
   })
 
-  console.log(`📦 Productos creados: lubricantes, filtros, frenos/suspensión, radiadores y siliconas Loctite.`)
+  const acdelcoDexCool = await prisma.product.create({
+    data: {
+      name: 'Líquido Refrigerante ACDelco DEX-COOL 50/50 Prediluido Galón (4L)',
+      slug: 'refrigerante-acdelco-dex-cool-50-50-galon-4l',
+      description: 'Refrigerante y anticongelante original ACDelco DEX-COOL Extended Life 50/50 prediluido listo para usar (Galón / 4 Litros, Ref. GM 88863336). Fórmula OAT orgánica color naranja de larga duración (hasta 5 años o 240.000 km). Protección avanzada contra corrosión, ebullición y cavitación en radiadores de aluminio para Chevrolet, GM y vehículos multimarca.',
+      shortDesc: 'Refrigerante DEX-COOL 50/50 Galón (4L) ACDelco',
+      price: 62000,
+      comparePrice: 72000,
+      sku: 'ACD-DEXCOOL-88863336-4L',
+      categoryId: catCoolant.id,
+      brandId: brandACDelco.id,
+      images: { create: [{ url: '/acdelco-dex-cool-50-50-galon.png', isMain: true }] },
+      attributes: {
+        create: [
+          { name: 'Color', value: 'Naranja' },
+          { name: 'Fórmula', value: 'OAT Orgánica 50/50 Prediluido' },
+          { name: 'Contenido', value: 'Galón (4 Litros / 1.06 Gal)' },
+          { name: 'Referencia GM', value: '88863336' }
+        ]
+      },
+      variants: {
+        create: [
+          { name: 'Galón 4L', price: 62000, stock: 30, sku: 'ACD-DEXCOOL-88863336-GL' }
+        ]
+      }
+    }
+  })
+
+  console.log(`📦 Productos creados: lubricantes, filtros, frenos/suspensión, radiadores, refrigerante ACDelco DEX-COOL y siliconas Loctite.`)
 
   console.log('✅ Seeding completado con éxito.')
 }
