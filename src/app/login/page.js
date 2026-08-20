@@ -6,6 +6,7 @@ import { useRouter } from "next/navigation";
 import Link from "next/link";
 import FacebookSignInButton from "@/components/FacebookSignInButton";
 import GoogleSignInButton from "@/components/GoogleSignInButton";
+import GitHubSignInButton from "@/components/GitHubSignInButton";
 
 export default function LoginPage() {
   const router = useRouter();
@@ -35,6 +36,7 @@ export default function LoginPage() {
         <p style={{ textAlign: "center", color: "#666", marginBottom: "25px" }}>Bienvenido de vuelta a REMBERT</p>
         <FacebookSignInButton label="Ingresar con Facebook" />
         <GoogleSignInButton label="Ingresar con Google" />
+        <GitHubSignInButton label="Ingresar con GitHub" callbackUrl="/perfil" />
         <div style={{ display: "flex", alignItems: "center", margin: "20px 0", color: "#999" }}><div style={{ flex: 1, height: "1px", background: "#eee" }} /><span style={{ padding: "0 10px", fontSize: "0.85rem" }}>O usa tu correo</span><div style={{ flex: 1, height: "1px", background: "#eee" }} /></div>
         {error && <div role="alert" style={{ background: "#ffeeee", color: "#cc0000", padding: "10px", borderRadius: "6px", marginBottom: "20px", textAlign: "center", fontSize: "0.9rem" }}>{error}</div>}
         <form onSubmit={handleSubmit} style={{ display: "flex", flexDirection: "column", gap: "15px" }}>

@@ -6,6 +6,16 @@ const prisma = new PrismaClient()
 async function main() {
   console.log('🌱 Iniciando seeder...')
 
+  if (process.env.NODE_ENV === 'production') {
+    throw new Error('El seeder está bloqueado en producción.');
+  }
+
+  const adminPassword = process.env.SEED_ADMIN_PASSWORD;
+  const customerPassword = process.env.SEED_CUSTOMER_PASSWORD;
+  if (!adminPassword || !customerPassword) {
+    throw new Error('Configura SEED_ADMIN_PASSWORD y SEED_CUSTOMER_PASSWORD en el entorno local antes de ejecutar el seeder.');
+  }
+
   // Limpiar BD (opcional en desarrollo)
   await prisma.orderItem.deleteMany()
   await prisma.order.deleteMany()
@@ -24,7 +34,7 @@ async function main() {
   await prisma.user.deleteMany()
 
   // 1. Crear usuario Admin
-  const hashedAdminPassword = await bcrypt.hash('admin123', 10)
+  const hashedAdminPassword = await bcrypt.hash(adminPassword, 10)
   const adminUser = await prisma.user.create({
     data: {
       name: 'Administrador',
@@ -36,7 +46,7 @@ async function main() {
   console.log(`👤 Admin creado: ${adminUser.email}`)
 
   // 2. Crear usuario cliente de prueba
-  const hashedUserPassword = await bcrypt.hash('cliente123', 10)
+  const hashedUserPassword = await bcrypt.hash(customerPassword, 10)
   const customerUser = await prisma.user.create({
     data: {
       name: 'Cliente Prueba',

@@ -6,6 +6,7 @@ import Link from "next/link";
 import { signIn } from "next-auth/react";
 import FacebookSignInButton from "@/components/FacebookSignInButton";
 import GoogleSignInButton from "@/components/GoogleSignInButton";
+import GitHubSignInButton from "@/components/GitHubSignInButton";
 
 export default function RegisterPage() {
   const router = useRouter();
@@ -46,6 +47,7 @@ export default function RegisterPage() {
         <p style={{ textAlign: "center", color: "#666", marginBottom: "25px" }}>Únete a REMBERT de forma rápida</p>
         <FacebookSignInButton label="Registrarse con Facebook" />
         <GoogleSignInButton label="Registrarse con Google" />
+        <GitHubSignInButton label="Registrarse con GitHub" callbackUrl="/perfil" />
         <div style={{ display: "flex", alignItems: "center", margin: "20px 0", color: "#999" }}><div style={{ flex: 1, height: "1px", background: "#eee" }} /><span style={{ padding: "0 10px", fontSize: "0.85rem" }}>O regístrate con correo</span><div style={{ flex: 1, height: "1px", background: "#eee" }} /></div>
         {error && <div role="alert" style={{ background: "#ffeeee", color: "#cc0000", padding: "10px", borderRadius: "6px", marginBottom: "20px", textAlign: "center", fontSize: "0.9rem" }}>{error}</div>}
         <form onSubmit={handleSubmit} style={{ display: "flex", flexDirection: "column", gap: "15px" }}>

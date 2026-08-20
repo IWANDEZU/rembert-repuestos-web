@@ -16,6 +16,9 @@
 # next.js
 /.next/
 /out/
+/.open-next/
+/.wrangler/
+/.npm-cache/
 
 # production
 /build
@@ -56,3 +59,7 @@ repositorio-1/
 .claude/
 .windsurf/
 skills-lock.json
+
+.dev.vars*
+!.dev.vars.example
+!.env.example

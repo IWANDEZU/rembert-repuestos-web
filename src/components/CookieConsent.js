@@ -4,9 +4,12 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 
 const STORAGE_KEY = "rembert-cookie-consent";
-const GA_ID = "G-60QBECZX1W";
+// El identificador de Analytics es público, pero debe poder cambiarse por
+// entorno sin editar el código al publicar en Cloudflare o Vercel.
+const GA_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID || "G-60QBECZX1W";
 
 function setAnalyticsConsent(granted) {
+  if (!GA_ID) return;
   window[`ga-disable-${GA_ID}`] = !granted;
   window.dataLayer = window.dataLayer || [];
   window.gtag = window.gtag || function gtag() {
@@ -18,6 +21,7 @@ function setAnalyticsConsent(granted) {
 }
 
 function loadAnalytics() {
+  if (!GA_ID) return;
   setAnalyticsConsent(true);
 
   if (document.querySelector(`script[data-ga-id="${GA_ID}"]`)) return;

@@ -1,6 +1,7 @@
 import NextAuth from "next-auth";
 import CredentialsProvider from "next-auth/providers/credentials";
 import FacebookProvider from "next-auth/providers/facebook";
+import GithubProvider from "next-auth/providers/github";
 import GoogleProvider from "next-auth/providers/google";
 import { PrismaAdapter } from "@next-auth/prisma-adapter";
 import { prisma } from "@/lib/prisma";
@@ -19,6 +20,14 @@ const googleConfigured = Boolean(
   process.env.GOOGLE_CLIENT_ID &&
   process.env.GOOGLE_CLIENT_SECRET &&
   !process.env.GOOGLE_CLIENT_ID.includes("tu-google")
+);
+
+const githubId = process.env.GITHUB_CLIENT_ID || process.env.GITHUB_ID;
+const githubSecret = process.env.GITHUB_CLIENT_SECRET || process.env.GITHUB_SECRET;
+const githubConfigured = Boolean(
+  githubId &&
+  githubSecret &&
+  !githubId.includes("tu-github")
 );
 
 const isDbConfigured = Boolean(
@@ -43,6 +52,14 @@ export const authOptions = {
           GoogleProvider({
             clientId: process.env.GOOGLE_CLIENT_ID,
             clientSecret: process.env.GOOGLE_CLIENT_SECRET,
+          }),
+        ]
+      : []),
+    ...(githubConfigured
+      ? [
+          GithubProvider({
+            clientId: githubId,
+            clientSecret: githubSecret,
           }),
         ]
       : []),
@@ -74,15 +91,6 @@ export const authOptions = {
 
           return user;
         } catch (_err) {
-          // Fallback para pruebas sin base de datos
-          if (credentials.email === "admin@rembertrepuestos.com" && credentials.password === "admin123") {
-            return {
-              id: "admin-1",
-              name: "Administrador",
-              email: "admin@rembertrepuestos.com",
-              role: "ADMIN",
-            };
-          }
           throw new Error("Servicio de autenticación no disponible en este momento.");
         }
       },
@@ -119,7 +127,7 @@ export const authOptions = {
     signIn: "/login",
   },
   trustHost: true,
-  secret: process.env.NEXTAUTH_SECRET || "rembert-repuestos-bca-secret-key-2026-production-fallback",
+  secret: process.env.NEXTAUTH_SECRET,
   debug: false,
   cookies: {
     sessionToken: {

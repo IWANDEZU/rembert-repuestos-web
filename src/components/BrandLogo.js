@@ -4,7 +4,7 @@ export default function BrandLogo({ width = 230, height = 62, className = "" }) 
   return (
     <div className={`brand-logo-container ${className}`} style={{ display: "inline-flex", alignItems: "center" }}>
       <Image
-        src="/logo-rembert-v4.png"
+        src="/logo-rembert-v5.png"
         alt="Rembert Repuestos BCA"
         width={width}
         height={height}
