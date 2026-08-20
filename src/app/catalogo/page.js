@@ -166,6 +166,22 @@ const gasolineFilterApplications = [
   ["BMW", "Serie 1, Serie 3, Serie 5, X1, X3 gasolina", "Aceite · aire · combustible · cabina"],
 ];
 
+const gasolineFilterBrandVisuals = {
+  Chevrolet: { logo: "/logos/autos/chevrolet.svg", image: "/filtro-aceite-gasolina-catalogo.png" },
+  Renault: { logo: "/logos/autos/renault.svg", image: "/filtro-aire-gasolina-catalogo.png" },
+  Toyota: { logo: "/logos/autos/toyota.svg", image: "/filtro-cabina-gasolina-catalogo.png" },
+  Kia: { logo: "/logos/autos/kia.svg", image: "/filtro-combustible-gasolina-catalogo.png" },
+  Mazda: { logo: "/logos/autos/mazda.svg", image: "/filtro-aceite-gasolina-catalogo.png" },
+  Hyundai: { logo: "/logos/autos/hyundai.svg", image: "/filtro-aire-gasolina-catalogo.png" },
+  Ford: { logo: "/logos/autos/ford.svg", image: "/filtro-cabina-gasolina-catalogo.png" },
+  Nissan: { logo: "/logos/autos/nissan.svg", image: "/filtro-combustible-gasolina-catalogo.png" },
+  Volkswagen: { logo: "/logos/autos/volkswagen.svg", image: "/filtro-aceite-gasolina-catalogo.png" },
+  Mitsubishi: { logo: "/logos/autos/mitsubishi.svg", image: "/filtro-aire-gasolina-catalogo.png" },
+  Honda: { logo: "/logos/autos/honda.svg", image: "/filtro-cabina-gasolina-catalogo.png" },
+  Suzuki: { logo: "/logos/autos/suzuki.svg", image: "/filtro-combustible-gasolina-catalogo.png" },
+  BMW: { logo: "/logos/autos/bmw.svg", image: "/filtro-aceite-gasolina-catalogo.png" },
+};
+
 const suspensionReferenceShowcase = [
   {
     slug: "mazda-bt50",
@@ -726,6 +742,10 @@ export default async function Catalogo({ searchParams }) {
             <div className="filter-showcase__grid">
               {gasolineFilterApplications.map(([brand, models, types]) => (
                 <article key={brand} className="filter-showcase__card filter-showcase__card--application">
+                  <div className="filter-showcase__brand-visual">
+                    <Image src={gasolineFilterBrandVisuals[brand].logo} alt={`Logo ${brand}`} width={58} height={38} />
+                    <Image src={gasolineFilterBrandVisuals[brand].image} alt={`Referencia visual de filtros para ${brand}`} width={92} height={72} />
+                  </div>
                   <div className="filter-showcase__copy">
                     <h3>{brand}</h3>
                     <p><strong>Modelos:</strong> {models}</p>

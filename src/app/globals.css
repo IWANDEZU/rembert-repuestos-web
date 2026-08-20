@@ -839,6 +839,29 @@ h1, h2, h3, h4 {
   min-height: 178px;
 }
 
+.filter-showcase__brand-visual {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 92px;
+  padding: 0.7rem 0.9rem;
+  background: linear-gradient(135deg, #f8fafc 0%, #fffbe6 100%);
+  border-bottom: 1px solid #edf2f7;
+}
+
+.filter-showcase__brand-visual img:first-child {
+  width: 58px;
+  height: 38px;
+  object-fit: contain;
+}
+
+.filter-showcase__brand-visual img:last-child {
+  width: 92px;
+  height: 72px;
+  object-fit: contain;
+  filter: drop-shadow(0 7px 7px rgba(15, 23, 42, 0.12));
+}
+
 @media (max-width: 1050px) {
   .filter-showcase__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
