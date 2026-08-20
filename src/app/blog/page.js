@@ -50,7 +50,7 @@ export default function BlogPage() {
     "url": `${baseUrl}/blog`,
     "publisher": {
       "@type": "AutoPartsStore",
-      "name": "Rembert Repuestos BCA",
+      "name": "REMBERT",
       "url": baseUrl,
     },
     "blogPost": posts.map((p) => ({
@@ -60,7 +60,7 @@ export default function BlogPage() {
       "datePublished": "2023-10-15",
       "author": {
         "@type": "Organization",
-        "name": "Victor Services",
+        "name": "REMBERT",
       },
     })),
   };

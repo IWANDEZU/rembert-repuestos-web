@@ -23,17 +23,17 @@ export default function ContactForm() {
     }
 
     const text =
-      `💬 *NUEVA CONSULTA - VICTOR SERVICES*\n` +
-      `=================================\n` +
+      `💬 *NUEVA CONSULTA - REMBERT*\n` +
+      `--------------------------------\n` +
       `👤 *Nombre:* ${formData.name}\n` +
-      `📞 *Teléfono:* ${formData.phone || "No especificado"}\n` +
+      `📱 *Teléfono:* ${formData.phone || "No especificado"}\n` +
       `✉️ *Email:* ${formData.email || "No especificado"}\n` +
-      `📌 *Asunto:* ${formData.subject}\n` +
-      `=================================\n` +
+      (formData.vehicle ? `🚗 *Vehículo / Modelo:* ${formData.vehicle}\n` : "") +
       `📝 *Mensaje:* ${formData.message}\n` +
-      `=================================`;
+      `--------------------------------\n` +
+      `Enviado desde el formulario de contacto web.`;
 
-    window.open(getWhatsAppUrl(text), "_blank");
+    window.open(getWhatsAppUrl(text), "_blank", "noopener,noreferrer");
   };
 
   const handleSendEmail = (e) => {
@@ -43,7 +43,7 @@ export default function ContactForm() {
     }
 
     const body =
-      `NUEVA CONSULTA DESDE LA WEB - VICTOR SERVICES\n` +
+      `NUEVA CONSULTA DESDE LA WEB - REMBERT\n` +
       `==================================================\n` +
       `Nombre: ${formData.name}\n` +
       `Teléfono: ${formData.phone || "No especificado"}\n` +

@@ -32,7 +32,7 @@ export default function LoginPage() {
     <div className="main-container" style={{ minHeight: "60vh", display: "flex", alignItems: "center", justifyContent: "center", padding: "40px 20px" }}>
       <div style={{ maxWidth: "420px", width: "100%", background: "#fff", padding: "40px", borderRadius: "12px", boxShadow: "0 4px 20px rgba(0,0,0,0.08)", color: "#333" }}>
         <h1 style={{ textAlign: "center", marginBottom: "8px", color: "#111" }}>Iniciar sesión</h1>
-        <p style={{ textAlign: "center", color: "#666", marginBottom: "25px" }}>Bienvenido de vuelta a Victor Services</p>
+        <p style={{ textAlign: "center", color: "#666", marginBottom: "25px" }}>Bienvenido de vuelta a REMBERT</p>
         <FacebookSignInButton label="Ingresar con Facebook" />
         <GoogleSignInButton label="Ingresar con Google" />
         <div style={{ display: "flex", alignItems: "center", margin: "20px 0", color: "#999" }}><div style={{ flex: 1, height: "1px", background: "#eee" }} /><span style={{ padding: "0 10px", fontSize: "0.85rem" }}>O usa tu correo</span><div style={{ flex: 1, height: "1px", background: "#eee" }} /></div>

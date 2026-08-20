@@ -70,7 +70,7 @@ export async function POST(req) {
     const order = await prisma.order.create({
       data: {
         customerName: address.fullName,
-        customerEmail: address.email || session?.user?.email || "sin-correo@victorservices.com",
+        customerEmail: address.email || session?.user?.email || "sin-correo@rembertrepuestos.com",
         customerPhone: address.phone,
         address: fullAddressString,
         subtotal,

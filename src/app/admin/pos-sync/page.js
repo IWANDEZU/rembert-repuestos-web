@@ -9,15 +9,17 @@ export default function PosSyncPage() {
   const [posSecret, setPosSecret] = useState('rembert-pos-secret-2026');
   const [webhookInfo, setWebhookInfo] = useState(null);
   const [copied, setCopied] = useState(false);
-  const [origin, setOrigin] = useState('');
-
   useEffect(() => {
-    if (typeof window !== 'undefined') {
-      setOrigin(window.location.origin);
-    }
-    checkWebhookStatus().then(setWebhookInfo);
+    let mounted = true;
+    checkWebhookStatus().then((data) => {
+      if (mounted) setWebhookInfo(data);
+    });
+    return () => {
+      mounted = false;
+    };
   }, [checkWebhookStatus]);
 
+  const origin = typeof window !== 'undefined' ? window.location.origin : '';
   const webhookUrl = `${origin}/api/pos/webhook?secret=${posSecret}&provider=${provider}`;
 
   const handleCopyWebhook = () => {

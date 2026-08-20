@@ -2,7 +2,7 @@ import LegalPage from "@/components/LegalPage";
 
 export const metadata = {
   title: "Política de cookies",
-  description: "Información sobre cookies y preferencias de analítica de Victor Services.",
+  description: "Información sobre cookies y preferencias de analítica de REMBERT.",
 };
 
 export default function CookiesPolicyPage() {

@@ -39,7 +39,7 @@ export default async function PedidosPage() {
         <div>
           <h1 style={{ fontSize: "2rem", marginBottom: "5px" }}>📦 Mis Pedidos</h1>
           <p style={{ color: "var(--text-muted)" }}>
-            Historial de pedidos realizados en Victor Services Barrancabermeja.
+            Historial de pedidos realizados en REMBERT Barrancabermeja.
           </p>
         </div>
         <Link href="/catalogo" className="btn btn--primary" style={{ padding: "10px 20px" }}>

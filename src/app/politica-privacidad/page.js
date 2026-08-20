@@ -2,14 +2,14 @@ import LegalPage from "@/components/LegalPage";
 
 export const metadata = {
   title: "Política de tratamiento de datos personales",
-  description: "Política de tratamiento de datos personales de Victor Services.",
+  description: "Política de tratamiento de datos personales de REMBERT.",
 };
 
 export default function PrivacyPolicyPage() {
   return (
     <LegalPage title="Política de tratamiento de datos personales" updatedAt="13 de agosto de 2026">
       <h2>1. Responsable y alcance</h2>
-      <p>Multiservicios Victor Services, con operación en Barrancabermeja, Colombia, es responsable del tratamiento de los datos personales recolectados en este sitio. Para solicitudes relacionadas con tus datos usa la página de <a href="/eliminar-datos">eliminación de cuenta y datos</a> o contáctanos por WhatsApp al +57 310 873 7354.</p>
+      <p>REMBERT S.A., con operación en Barrancabermeja, Colombia, es responsable del tratamiento de los datos personales recolectados en este sitio. Para solicitudes relacionadas con tus datos usa la página de <a href="/eliminar-datos">eliminación de cuenta y datos</a> o contáctanos por correo a <a href="mailto:repuestosrembertsa@gmail.com">repuestosrembertsa@gmail.com</a> o por WhatsApp al +57 310 242 0490.</p>
 
       <h2>2. Datos y finalidades</h2>
       <p>Podemos tratar datos de identificación y contacto, información de cuenta, productos de interés, solicitudes, pedidos y datos técnicos básicos de navegación. Los usamos para crear y administrar cuentas, atender consultas y pedidos, coordinar entregas, prestar soporte, prevenir fraude, cumplir obligaciones legales y mejorar el sitio. No vendemos datos personales.</p>

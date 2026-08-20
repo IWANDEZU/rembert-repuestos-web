@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, useCallback } from "react";
 import { generateWhatsAppProductText, getWhatsAppUrl } from "@/lib/orderFormatter";
 
 export default function PrioridadDieselModal({ products, initialIndex, onClose }) {
@@ -8,13 +8,13 @@ export default function PrioridadDieselModal({ products, initialIndex, onClose }
 
   const product = products[currentIndex];
 
-  const handlePrev = () => {
+  const handlePrev = useCallback(() => {
     setCurrentIndex((prev) => (prev > 0 ? prev - 1 : products.length - 1));
-  };
+  }, [products.length]);
 
-  const handleNext = () => {
+  const handleNext = useCallback(() => {
     setCurrentIndex((prev) => (prev < products.length - 1 ? prev + 1 : 0));
-  };
+  }, [products.length]);
 
   useEffect(() => {
     // 1. Manejo de botón 'Atrás' nativo en celular (Android / iOS)
@@ -45,7 +45,7 @@ export default function PrioridadDieselModal({ products, initialIndex, onClose }
       window.removeEventListener("keydown", handleKeyDown);
       document.body.style.overflow = originalOverflow;
     };
-  }, [onClose, products.length]);
+  }, [onClose, handlePrev, handleNext]);
 
   if (!product) return null;
 

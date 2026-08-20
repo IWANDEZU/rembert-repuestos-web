@@ -60,7 +60,7 @@ export default function ProductCard({ product, onExpand, isFavorite = false }) {
         name: product.name,
         price: product.price > 0 ? product.price : 0,
         image: imageUrl,
-        brand: product.brand?.name || product.brand || "Victor Services",
+        brand: product.brand?.name || product.brand || "REMBERT",
         category: product.category?.name || product.category || "Repuestos automotrices",
         sku: product.sku || "",
         slug: product.slug || product.id,

@@ -282,9 +282,9 @@ export default async function Home() {
                 transition: 'var(--transition)'
               }} className="hover-card">
                 <div style={{ height: '180px', borderRadius: '8px', marginBottom: '1rem', overflow: 'hidden', background: '#e0e0e0', display: 'flex', alignItems: 'center', justifyContent: 'center', position: 'relative' }}>
-                  <Image src="/transmision.png" alt="Transmisión y Líquidos" fill sizes="(max-width: 700px) 100vw, 25vw" quality={70} style={{ objectFit: 'contain', padding: '5%' }} />
+                  <Image src="/transmision.png" alt="Cajas y transmisiones automotrices" fill sizes="(max-width: 700px) 100vw, 25vw" quality={70} style={{ objectFit: 'contain', padding: '5%' }} />
                 </div>
-                <strong style={{ fontSize: '1.15rem', whiteSpace: 'nowrap', display: 'block' }}>Transmisión</strong>
+                <strong style={{ fontSize: '1.15rem', whiteSpace: 'nowrap', display: 'block' }}>Transmisiones</strong>
               </div>
             </Link>
 

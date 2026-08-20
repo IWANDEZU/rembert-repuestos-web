@@ -192,6 +192,62 @@ const allProducts = [
     inStock: true,
     stock: 30,
   },
+  {
+    id: "filtro-aceite-gasolina-multimarca",
+    name: "Filtro de Aceite para Autos a Gasolina Multimarca",
+    slug: "filtro-aceite-gasolina-multimarca",
+    category: { name: "Filtros", slug: "filtros" },
+    brand: { name: "WIX Filters", slug: "wix" },
+    price: 38000,
+    sku: "FIL-ACE-GAS-MULTI",
+    description: "Filtro de aceite para Chevrolet, Renault, Toyota, Kia, Mazda, Hyundai, Ford, Nissan, Volkswagen, Mitsubishi, Honda y Suzuki. La rosca y dimensión cambian por motor: confirmar por VIN.",
+    image: "/filtro-aceite-gasolina-catalogo.png",
+    images: [{ url: "/filtro-aceite-gasolina-catalogo.png", alt: "Filtro de aceite para autos a gasolina", isMain: true }],
+    inStock: true,
+    stock: 80,
+  },
+  {
+    id: "filtro-aire-gasolina-multimarca",
+    name: "Filtro de Aire para Autos a Gasolina Multimarca",
+    slug: "filtro-aire-gasolina-multimarca",
+    category: { name: "Filtros", slug: "filtros" },
+    brand: { name: "WIX Filters", slug: "wix" },
+    price: 52000,
+    sku: "FIL-AIR-GAS-MULTI",
+    description: "Filtro de aire tipo panel para Chevrolet Spark/Onix, Renault Kwid/Duster, Toyota Yaris/Corolla, Kia Picanto/Rio, Mazda 2/3, Hyundai i10/Accent, Ford Fiesta/EcoSport y Nissan March/Versa. Confirmar referencia por motor.",
+    image: "/filtro-aire-gasolina-catalogo.png",
+    images: [{ url: "/filtro-aire-gasolina-catalogo.png", alt: "Filtro de aire para autos a gasolina", isMain: true }],
+    inStock: true,
+    stock: 70,
+  },
+  {
+    id: "filtro-combustible-gasolina-multimarca",
+    name: "Filtro de Combustible para Autos a Gasolina",
+    slug: "filtro-combustible-gasolina-multimarca",
+    category: { name: "Filtros", slug: "filtros" },
+    brand: { name: "Bosch", slug: "bosch" },
+    price: 68000,
+    sku: "FIL-COMB-GAS-MULTI",
+    description: "Filtro de gasolina para sistemas de inyección de las principales marcas. No aplica a diésel. Confirmar presión, conectores y referencia por VIN.",
+    image: "/filtro-combustible-gasolina-catalogo.png",
+    images: [{ url: "/filtro-combustible-gasolina-catalogo.png", alt: "Filtro de combustible para autos a gasolina", isMain: true }],
+    inStock: true,
+    stock: 45,
+  },
+  {
+    id: "filtro-cabina-gasolina-multimarca",
+    name: "Filtro de Cabina para Autos a Gasolina Multimarca",
+    slug: "filtro-cabina-gasolina-multimarca",
+    category: { name: "Filtros", slug: "filtros" },
+    brand: { name: "Coéxito", slug: "coexito" },
+    price: 45000,
+    sku: "FIL-CAB-GAS-MULTI",
+    description: "Filtro de habitáculo para Chevrolet, Renault, Toyota, Kia, Mazda, Hyundai, Ford, Nissan, Volkswagen, Mitsubishi, Honda y Suzuki. Disponible en versión estándar o carbón activado según vehículo.",
+    image: "/filtro-cabina-gasolina-catalogo.png",
+    images: [{ url: "/filtro-cabina-gasolina-catalogo.png", alt: "Filtro de cabina para autos a gasolina", isMain: true }],
+    inStock: true,
+    stock: 55,
+  },
 
   // GRASAS Y ADITIVOS
   {
@@ -374,13 +430,14 @@ const allProducts = [
 
 const excludedLubricantCategories = new Set([
   "lubricantes-gasolina",
-  "transmision",
   "hidraulico",
   "coolant",
   "grasas-y-aditivos",
 ]);
 
-export const products = allProducts.filter((product) => !excludedLubricantCategories.has(product.category?.slug));
+export const products = allProducts.filter((product) =>
+  !excludedLubricantCategories.has(product.category?.slug) && product.id !== "motul-motylgear-75w90"
+);
 
 export function getProductById(id) {
   return products.find(p => p.id === id || p.slug === id);

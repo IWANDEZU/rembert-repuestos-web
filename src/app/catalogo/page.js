@@ -28,6 +28,7 @@ export async function generateMetadata({ searchParams }) {
   const categoryTitles = {
     filtros: "Filtros Automotrices e Industriales",
     "frenos-y-suspension": "Frenos y Suspensión Automotriz",
+    transmision: "Cajas y Transmisiones Automotrices",
     radiadores: "Radiadores y Sistema de Enfriamiento",
     "servicio-tecnico": "Servicio Técnico y Taller Especializado",
   };
@@ -147,6 +148,22 @@ const filterTypeShowcase = [
     image: "/catalogo-filtros-tipos/filtro-urea-adblue-scr.webp",
     alt: "Filtro para urea AdBlue SCR",
   },
+];
+
+const gasolineFilterApplications = [
+  ["Chevrolet", "Spark, Spark GT, Onix, Sail, Aveo, Tracker", "Aceite · aire · combustible · cabina"],
+  ["Renault", "Kwid, Sandero, Logan, Stepway, Duster, Duster Oroch", "Aceite · aire · combustible · cabina"],
+  ["Toyota", "Yaris, Corolla, Etios, RAV4, Fortuner", "Aceite · aire · combustible · cabina"],
+  ["Kia", "Picanto, Rio, Cerato, Sportage, Sonet", "Aceite · aire · combustible · cabina"],
+  ["Mazda", "Mazda 2, Mazda 3, CX-3, CX-5", "Aceite · aire · combustible · cabina"],
+  ["Hyundai", "i10, Grand i10, Accent, Elantra, Tucson, Creta", "Aceite · aire · combustible · cabina"],
+  ["Ford", "Fiesta, EcoSport, Escape, Focus, Ranger gasolina", "Aceite · aire · combustible · cabina"],
+  ["Nissan", "March, Versa, Sentra, Kicks, X-Trail", "Aceite · aire · combustible · cabina"],
+  ["Volkswagen", "Gol, Voyage, Polo, Virtus, T-Cross", "Aceite · aire · combustible · cabina"],
+  ["Mitsubishi", "Lancer, ASX, Outlander, Montero gasolina", "Aceite · aire · combustible · cabina"],
+  ["Honda", "Fit, City, Civic, HR-V, CR-V", "Aceite · aire · combustible · cabina"],
+  ["Suzuki", "Alto, Swift, Celerio, Vitara, S-Cross", "Aceite · aire · combustible · cabina"],
+  ["BMW", "Serie 1, Serie 3, Serie 5, X1, X3 gasolina", "Aceite · aire · combustible · cabina"],
 ];
 
 const suspensionReferenceShowcase = [
@@ -300,7 +317,7 @@ export default async function Catalogo({ searchParams }) {
     ? resolvedParams.sort
     : "recent";
 
-  const removedLubricantCategories = ["lubricantes", "lubricantes-gasolina", "transmision", "hidraulico", "coolant", "grasas-y-aditivos"];
+  const removedLubricantCategories = ["lubricantes", "lubricantes-gasolina", "hidraulico", "coolant", "grasas-y-aditivos"];
   if (removedLubricantCategories.includes(categoryParam)) redirect("/catalogo");
 
   const conditions = [];
@@ -338,11 +355,13 @@ export default async function Catalogo({ searchParams }) {
     conditions.push({
       OR: [
         { category: { slug: "transmision" } },
+        { name: { contains: "Caja" } },
         { name: { contains: "Transmisión" } },
         { name: { contains: "Transmision" } },
-        { name: { contains: "TDTO" } },
-        { name: { contains: "Gear" } },
-        { name: { contains: "80W-90" } },
+        { name: { contains: "Automática" } },
+        { name: { contains: "Automatica" } },
+        { name: { contains: "CVT" } },
+        { name: { contains: "Manual" } },
       ],
     });
   } else if (categoryParam === "hidraulico") {
@@ -513,7 +532,7 @@ export default async function Catalogo({ searchParams }) {
     let filtered = [...fallbackCatalogProducts];
 
     if (categoryParam === "lubricantes") {
-      filtered = filtered.filter(p => p.category?.slug?.startsWith("lubricantes") || p.category?.slug === "transmision" || p.category?.slug === "hidraulico" || p.category?.slug === "coolant" || p.category?.slug === "grasas-y-aditivos");
+      filtered = filtered.filter(p => p.category?.slug?.startsWith("lubricantes") || p.category?.slug === "hidraulico" || p.category?.slug === "coolant" || p.category?.slug === "grasas-y-aditivos");
     } else if (categoryParam) {
       filtered = filtered.filter(p => p.category?.slug === categoryParam);
     }
@@ -590,7 +609,7 @@ export default async function Catalogo({ searchParams }) {
     filtros: ["Filtros automotrices e industriales", "Filtros de aceite, aire, combustible, separadores de agua y cabina."],
     "frenos-y-suspension": ["Frenos y suspensión", "Pastillas, discos, amortiguadores y líquidos de frenos."],
     "lubricantes-gasolina": ["Lubricantes gasolina y livianos", "Aceites sintéticos y minerales para motores a gasolina."],
-    transmision: ["Aceites de transmisión y diferencial", "Fluidos para transmisiones, mandos finales, frenos húmedos y engranajes."],
+    transmision: ["Cajas y transmisiones automotrices", "Transmisiones manuales, automáticas y CVT para vehículos de las principales marcas."],
     hidraulico: ["Aceites hidráulicos", "Fluidos para sistemas hidráulicos móviles e industriales."],
     coolant: ["Refrigerantes y coolant", "Refrigerantes de larga vida y anticongelantes para sistemas de enfriamiento."],
     "grasas-y-aditivos": ["Grasas y aditivos", "Protección para pasadores, bujes, rodamientos y aplicaciones de servicio severo."],
@@ -695,6 +714,25 @@ export default async function Catalogo({ searchParams }) {
                     <span>Ver referencias <span aria-hidden="true">→</span></span>
                   </div>
                 </Link>
+              ))}
+            </div>
+            <div className="filter-showcase__heading" style={{ marginTop: "2.5rem" }}>
+              <div>
+                <p className="filter-showcase__eyebrow">Aplicaciones para gasolina</p>
+                <h2>Filtros por marca y modelo</h2>
+              </div>
+              <p>Listado orientativo para vehículos a gasolina. Confirma siempre año, motor, dimensiones y VIN antes de despachar.</p>
+            </div>
+            <div className="filter-showcase__grid">
+              {gasolineFilterApplications.map(([brand, models, types]) => (
+                <article key={brand} className="filter-showcase__card filter-showcase__card--application">
+                  <div className="filter-showcase__copy">
+                    <h3>{brand}</h3>
+                    <p><strong>Modelos:</strong> {models}</p>
+                    <p><strong>Tipos:</strong> {types}</p>
+                    <Link href={`/catalogo?category=filtros&search=${encodeURIComponent(brand)}`}>Ver filtros {brand} →</Link>
+                  </div>
+                </article>
               ))}
             </div>
           </section>

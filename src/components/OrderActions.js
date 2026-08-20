@@ -22,7 +22,7 @@ export default function OrderActions({
 
       const dataUrl = await toJpeg(receiptRef.current, { quality: 0.95 });
       const link = document.createElement("a");
-      link.download = `Pedido_Victor_Services_${order.id.slice(-6).toUpperCase()}.jpg`;
+      link.download = `Pedido_REMBERT_${order.id.slice(-6).toUpperCase()}.jpg`;
       link.href = dataUrl;
       link.click();
     } catch (err) {

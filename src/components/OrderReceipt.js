@@ -42,8 +42,8 @@ const OrderReceipt = forwardRef(({ order, items, customer }, ref) => {
       >
         {/* Encabezado */}
         <div style={{ textAlign: "center", borderBottom: "1px solid #333", paddingBottom: "20px", marginBottom: "20px" }}>
-          <img src="/logo.png" alt="Victor Services" style={{ width: "120px", marginBottom: "15px", filter: "drop-shadow(0 0 10px rgba(234, 67, 53, 0.4))" }} />
-          <h1 style={{ margin: "0 0 5px 0", fontSize: "24px", color: "#EA4335" }}>COMPROBANTE DE PEDIDO</h1>
+          <img src="/logo.png" alt="REMBERT" style={{ width: "140px", marginBottom: "15px" }} />
+          <h1 style={{ margin: "0 0 5px 0", fontSize: "24px", color: "#E52421" }}>COMPROBANTE DE PEDIDO</h1>
           <p style={{ margin: 0, color: "#aaa", fontSize: "14px" }}>{dateStr}</p>
           <div style={{ background: "#222", display: "inline-block", padding: "5px 15px", borderRadius: "20px", marginTop: "10px", fontSize: "14px", fontWeight: "bold" }}>
             Pedido #{order.id.substring(0, 8).toUpperCase()}
@@ -100,8 +100,8 @@ const OrderReceipt = forwardRef(({ order, items, customer }, ref) => {
 
         {/* Footer */}
         <div style={{ textAlign: "center", marginTop: "30px", fontSize: "12px", color: "#666" }}>
-          Generado automáticamente por Victor Services
-          <br />www.victorservicesas.com
+          Generado automáticamente por REMBERT
+          <br />www.rembertrepuestos.com
         </div>
       </div>
     </div>

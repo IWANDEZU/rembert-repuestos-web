@@ -1,6 +1,6 @@
 /**
  * Formateador de pedidos para WhatsApp y Correo Electrónico
- * Victor Services - Barrancabermeja
+ * REMBERT - Barrancabermeja
  */
 
 export const DESTINATION_WHATSAPP = "573102420490"; // Punto Principal
@@ -66,13 +66,13 @@ export function generateWhatsAppProductText({
 }) {
   const productName = product.name || product.productName || product.product?.name || "Producto";
   const reference = variant?.sku || product.sku || product.reference || product.id || "Por confirmar";
-  const brand = product.brand?.name || product.brandName || product.brand || "Victor Services";
+  const brand = product.brand?.name || product.brandName || product.brand || "REMBERT";
   const category = product.category?.name || product.categoryName || product.category || "Repuestos automotrices";
   const photoUrl = getProductImageUrl({ ...product, image: image || product.image });
   const productUrl = toAbsoluteUrl(getProductPath(product));
   const selectedName = variant?.name ? `${productName} (${variant.name})` : productName;
   const lines = [
-    "Hola Victor Services, deseo cotizar este producto:",
+    "Hola REMBERT, deseo cotizar este producto:",
     `*${quantity}x ${selectedName}*`,
     `Referencia: ${reference}`,
     `Marca: ${brand}`,
@@ -105,7 +105,7 @@ export function generateWhatsAppOrderText({
     day: "numeric",
   });
 
-  let message = `🛒 *NUEVO PEDIDO - VICTOR SERVICES*\n`;
+  let message = `🛒 *NUEVO PEDIDO - REMBERT*\n`;
   message += `=================================\n`;
   if (orderNumber) {
     message += `📋 *Pedido N°:* #${orderNumber}\n`;
@@ -119,45 +119,36 @@ export function generateWhatsAppOrderText({
     message += `• *Email:* ${customer.email}\n`;
   }
   
-  const addressParts = [customer.street, customer.city, customer.state].filter(Boolean);
-  if (addressParts.length > 0) {
-    message += `📍 *Dirección:* ${addressParts.join(", ")}\n`;
-  }
+  message += `• *Dirección:* ${customer.street || "No especificada"}\n`;
+  message += `• *Ciudad:* ${customer.city || "No especificada"}\n`;
+  message += `• *Departamento:* ${customer.state || "No especificado"}\n`;
   if (customer.zipCode) {
-    message += `• *Cód. Postal:* ${customer.zipCode}\n`;
+    message += `• *Código Postal:* ${customer.zipCode}\n`;
   }
 
-  message += `\n📦 *DETALLE DEL PEDIDO*\n`;
+  message += `\n📦 *PRODUCTOS SOLICITADOS*\n`;
+  message += `---------------------------------\n`;
   items.forEach((item, index) => {
-    const quantity = Number(item.quantity) || 1;
-    const unitPrice = item.price || item.unitPrice || 0;
-    const itemTotal = unitPrice * quantity;
+    const itemTotal = (item.price || item.unitPrice || 0) * item.quantity;
     const name = item.name || item.productName || item.product?.name || "Producto";
-    const reference = item.sku || item.reference || item.product?.sku;
-    const brand = item.brand?.name || item.brandName || item.brand || item.product?.brand?.name;
-    const category = item.category?.name || item.categoryName || item.category || item.product?.category?.name;
-    const photoUrl = getProductImageUrl(item);
-    const productUrl = toAbsoluteUrl(getProductPath(item));
     message += `${index + 1}. *${name}*\n`;
-    message += `   Cantidad: ${quantity} x ${formatCurrency(unitPrice)}\n`;
-    message += `   Subtotal: ${formatCurrency(itemTotal)}\n`;
-    if (reference) message += `   Referencia: ${reference}\n`;
-    if (brand) message += `   Marca: ${brand}\n`;
-    if (category) message += `   Categoría: ${category}\n`;
+    message += `   Cant: ${item.quantity} | Valor: ${formatCurrency(item.price || item.unitPrice)} | Subtotal: ${formatCurrency(itemTotal)}\n`;
+    const photoUrl = getProductImageUrl(item);
+    const itemPath = getProductPath(item);
     if (photoUrl) message += `   📷 Foto: ${photoUrl}\n`;
-    if (productUrl) message += `   🔗 Producto: ${productUrl}\n`;
+    if (itemPath) message += `   🔗 Ficha: ${toAbsoluteUrl(itemPath)}\n`;
   });
 
-  message += `\n=================================\n`;
+  message += `---------------------------------\n`;
   message += `💰 *TOTAL A PAGAR:* ${formatCurrency(totalAmount)}\n`;
   message += `💳 *Método de Pago:* ${paymentMethod}\n`;
 
   if (notes && notes.trim()) {
-    message += `📝 *Notas:* ${notes.trim()}\n`;
+    message += `\n📝 *Notas:* ${notes.trim()}\n`;
   }
 
   message += `=================================\n`;
-  message += `¡Hola! Quisiera confirmar la disponibilidad y envío de este pedido.`;
+  message += `Por favor indíquenme el tiempo estimado de entrega y los datos para el despacho. ¡Gracias!`;
 
   return message;
 }
@@ -166,7 +157,7 @@ export function generateWhatsAppOrderText({
  * Genera el enlace directo a WhatsApp
  */
 export function getWhatsAppUrl(text, phone = DESTINATION_WHATSAPP) {
-  const cleanPhone = phone.replace(/[^0-9]/g, "");
+  const cleanPhone = String(phone).replace(/\D/g, "");
   return `https://api.whatsapp.com/send?phone=${cleanPhone}&text=${encodeURIComponent(text)}`;
 }
 
@@ -181,7 +172,7 @@ export function generateEmailOrderContent({
   paymentMethod = "Pago contra entrega",
   notes = "",
 }) {
-  const subject = `Nuevo Pedido ${orderNumber ? `#${orderNumber} ` : ""}- Victor Services`;
+  const subject = `Nuevo Pedido ${orderNumber ? `#${orderNumber} ` : ""}- REMBERT`;
 
   const dateStr = new Date().toLocaleDateString("es-CO", {
     year: "numeric",
@@ -191,7 +182,7 @@ export function generateEmailOrderContent({
     minute: "2-digit",
   });
 
-  let body = `SOLICITUD DE NUEVO PEDIDO - VICTOR SERVICES\n`;
+  let body = `SOLICITUD DE NUEVO PEDIDO - REMBERT\n`;
   body += `==================================================\n`;
   if (orderNumber) {
     body += `Número de Pedido: #${orderNumber}\n`;
@@ -227,7 +218,7 @@ export function generateEmailOrderContent({
   }
 
   body += `==================================================\n`;
-  body += `Mensaje enviado desde la tienda online Victor Services.`;
+  body += `Mensaje enviado desde la tienda online REMBERT.`;
 
   return { subject, body };
 }

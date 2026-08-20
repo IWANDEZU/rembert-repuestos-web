@@ -73,6 +73,7 @@ export default async function CatalogSidebar({
                   ))}
                 </ul>
               </li>
+              <li><CatalogLink href={categoryHref("transmision")} active={categoryParam === "transmision"}>Transmisiones</CatalogLink></li>
               <li><CatalogLink href={categoryHref("frenos-y-suspension")} active={categoryParam === "frenos-y-suspension"}>Frenos y suspensión</CatalogLink></li>
               <li><CatalogLink href={categoryHref("radiadores")} active={categoryParam === "radiadores"}>Radiadores</CatalogLink></li>
               <li><CatalogLink href={categoryHref("servicio-tecnico")} active={categoryParam === "servicio-tecnico"}>Servicio técnico</CatalogLink></li>
