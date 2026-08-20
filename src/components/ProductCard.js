@@ -86,48 +86,23 @@ export default function ProductCard({ product, onExpand, isFavorite = false }) {
 
   return (
     <article
-      style={{
-        background: "#FFFFFF",
-        border: "1px solid #E2E8F0",
-        borderRadius: "12px",
-        padding: "1.15rem",
-        display: "flex",
-        flexDirection: "column",
-        height: "100%",
-        transition: "all 0.25s ease",
-        boxShadow: "0 2px 8px rgba(0, 0, 0, 0.04)",
-        position: "relative",
-      }}
-      className="hover-card"
+      className="product-card hover-card"
     >
-      <div
-        style={{
-          background: "#F8FAFC",
-          height: "185px",
-          borderRadius: "8px",
-          marginBottom: "0.85rem",
-          overflow: "hidden",
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          padding: "12px",
-          position: "relative",
-          border: "1px solid #EDF2F7",
-        }}
-      >
+      <div className="product-card__media">
         <a
           href={`/producto/${product.slug || product.id}`}
-          style={{ display: "flex", justifyContent: "center", alignItems: "center", width: "100%", height: "100%" }}
+          className="product-card__media-link"
+          aria-label={`Ver ${product.name}`}
         >
           <Image
             src={imageUrl}
             alt={product.images?.[0]?.alt || product.name}
-            width={640}
-            height={480}
+            fill
+            sizes="(max-width: 640px) 100vw, (max-width: 1100px) 33vw, 260px"
             unoptimized={imageUrl.startsWith("/api/imagen-referencia")}
             loading="lazy"
             decoding="async"
-            style={{ width: "100%", height: "100%", objectFit: "contain" }}
+            className="product-card__image"
           />
         </a>
 
