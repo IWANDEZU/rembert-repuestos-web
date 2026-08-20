@@ -15,9 +15,9 @@ services:
       - key: NEXTAUTH_SECRET
         sync: false
       - key: NEXTAUTH_URL
-        sync: false
+        value: "https://rembert-repuestos-web.onrender.com"
       - key: NEXT_PUBLIC_SITE_URL
-        sync: false
+        value: "https://rembert-repuestos-web.onrender.com"
       - key: ADMIN_TOKEN
         sync: false
       - key: SMTP_HOST
@@ -29,7 +29,7 @@ services:
       - key: SMTP_PASSWORD
         sync: false
       - key: FRONTEND_URL
-        sync: false
+        value: "https://rembert-repuestos-web.onrender.com"
       - key: FACEBOOK_CLIENT_ID
         sync: false
       - key: FACEBOOK_CLIENT_SECRET
