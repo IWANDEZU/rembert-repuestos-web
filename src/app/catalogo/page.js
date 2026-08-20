@@ -27,6 +27,7 @@ export async function generateMetadata({ searchParams }) {
   const categoryTitles = {
     filtros: "Filtros Automotrices e Industriales",
     siliconas: "Siliconas y Sellantes Automotrices",
+    mantenimiento: "Mantenimiento Automotriz",
     "frenos-y-suspension": "Frenos y Suspensión Automotriz",
     transmision: "Cajas y Transmisiones Automotrices",
     radiadores: "Radiadores y Sistema de Enfriamiento",
@@ -190,7 +191,13 @@ function getPageNumber(value) {
 function filterFallbackCatalog({ categoryParam, brandParam, tipoParam, searchQuery }) {
   let filtered = [...fallbackCatalogProducts];
 
-  if (categoryParam === "filtros") {
+  if (categoryParam === "mantenimiento") {
+    filtered = filtered.filter((product) => {
+      const searchable = `${product.name} ${product.description || ""}`.toLowerCase();
+      return ["siliconas", "coolant", "grasas-y-aditivos", "transmision"].includes(product.category?.slug)
+        || ["refrigerante", "silicona", "grasa", "valvulina"].some((term) => searchable.includes(term));
+    });
+  } else if (categoryParam === "filtros") {
     const typeTerms = {
       aceite: ["aceite"],
       aire: ["aire"],
@@ -255,12 +262,17 @@ export default async function Catalogo({ searchParams }) {
     ? resolvedParams.sort
     : "recent";
 
-  const removedLubricantCategories = ["lubricantes", "lubricantes-gasolina", "hidraulico", "coolant", "grasas-y-aditivos"];
-  if (removedLubricantCategories.includes(categoryParam)) redirect("/catalogo");
-
   const conditions = [];
 
-  if (categoryParam === "lubricantes") {
+  if (categoryParam === "mantenimiento") {
+    conditions.push({
+      OR: [
+        { category: { slug: { in: ["siliconas", "coolant", "grasas-y-aditivos", "transmision"] } } },
+        { name: { contains: "Refrigerante" } },
+        { name: { contains: "Valvulina" } },
+      ],
+    });
+  } else if (categoryParam === "lubricantes") {
     conditions.push({
       OR: [
         { category: { slug: { in: categorySlugs } } },
@@ -459,12 +471,8 @@ export default async function Catalogo({ searchParams }) {
   } else if (categoryParam === "siliconas") {
     conditions.push({
       OR: [
-        { category: { slug: { in: ["siliconas", "siliconas-y-sellantes"] } } },
-        { name: { contains: "Silicona" } },
-        { name: { contains: "Loctite" } },
-        { name: { contains: "Sellante" } },
-        { name: { contains: "RTV" } },
-        { description: { contains: "silicona" } },
+        { brand: { slug: "victor-reinz" } },
+        { name: { contains: "Reinzosil" } },
       ],
     });
   } else if (categoryParam) {
@@ -486,14 +494,15 @@ export default async function Catalogo({ searchParams }) {
     });
   }
 
-  // Excluir artículos y categorías relacionados con diésel
+  // Excluir únicamente artículos diésel; refrigerantes, grasas y valvulinas
+  // forman parte del catálogo de mantenimiento solicitado.
   conditions.push({
     NOT: [
       { name: { contains: "Diesel" } },
       { name: { contains: "Diésel" } },
       { name: { contains: "diesel" } },
       { name: { contains: "diésel" } },
-      { category: { slug: { in: removedLubricantCategories } } },
+      { brand: { slug: "loctite" } },
     ],
   });
 
@@ -610,6 +619,7 @@ export default async function Catalogo({ searchParams }) {
   const banners = {
     lubricantes: ["Lubricantes y aceites", "Aceites de motor, transmisión, hidráulicos, refrigerantes y grasas."],
     siliconas: ["Siliconas y sellantes automotrices", "Sellantes adhesivos RTV, formadores de juntas de alta temperatura y empaques."],
+    mantenimiento: ["Mantenimiento automotriz", "Silicona Victor Reinz, grasas, refrigerantes y valvulinas en una sola sección."],
     filtros: ["Filtros automotrices e industriales", "Filtros de aceite, aire, combustible, separadores de agua y cabina."],
     "frenos-y-suspension": ["Frenos y suspensión", "Pastillas, discos, amortiguadores y líquidos de frenos."],
     "lubricantes-gasolina": ["Lubricantes gasolina y livianos", "Aceites sintéticos y minerales para motores a gasolina."],

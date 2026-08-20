@@ -90,6 +90,20 @@ const allProducts = [
     inStock: true,
     stock: 40,
   },
+  {
+    id: "starfree-refrigerante-rojo-galon",
+    name: "Refrigerante Rojo Star Free Anticorrosivo Galón",
+    slug: "refrigerante-rojo-star-free-galon-3785l",
+    category: { name: "Refrigerantes", slug: "coolant" },
+    brand: { name: "Star Free", slug: "star-free" },
+    price: 34729,
+    sku: "STARFREE-REF-ROJO-GAL",
+    description: "Refrigerante rojo anticorrosivo y antioxidante para sistemas de refrigeración de vehículos livianos, camionetas y camiones. Presentación de 1 galón US (3,785 litros). Ayuda a controlar la corrosión y el recalentamiento; confirmar compatibilidad y concentración recomendada por el fabricante del vehículo.",
+    image: "/refrigerante-starfree-rojo-galon-original.png",
+    images: [{ url: "/refrigerante-starfree-rojo-galon-original.png", alt: "Refrigerante rojo Star Free anticorrosivo galón", isMain: true }],
+    inStock: true,
+    stock: 30,
+  },
 
   // FRENOS Y SUSPENSIÓN
   {
@@ -249,34 +263,20 @@ const allProducts = [
     stock: 55,
   },
 
-  // SILICONAS Y SELLANTES AUTOMOTRICES
+  // SILICONAS Y SELLANTES AUTOMOTRICES — marca exclusiva Victor Reinz
   {
-    id: "loctite-si-593-negra",
-    name: "Loctite SI 593 Sellante Adhesivo Silicona RTV Negra (70ml)",
-    slug: "loctite-si-593-silicona-rtv-negra-70ml",
+    id: "victor-reinz-reinzosil-70ml",
+    name: "Victor Reinz REINZOSIL Sellante Universal Antracita 70 ml",
+    slug: "victor-reinz-reinzosil-sellante-universal-70ml",
     category: { name: "Siliconas y Sellantes", slug: "siliconas" },
-    brand: { name: "Loctite", slug: "loctite" },
-    price: 28000,
-    sku: "LOC-SI593-BLK-70ML",
-    description: "Sellante adhesivo de silicona RTV negra Loctite SI 593 Henkel (70 ml / 71 g, IDH: 285951). Silicona de uso profesional de vulcanización a temperatura ambiente. Sella, adhiere y aísla metales, vidrio, caucho y plásticos. Resistente a la humedad, intemperie y fluidos automotrices.",
-    image: "/catalogo-siliconas-automotrices/loctite-si-593-negra-70ml.png",
-    images: [{ url: "/catalogo-siliconas-automotrices/loctite-si-593-negra-70ml.png", alt: "Loctite SI 593 Silicona RTV Negra 70ml Henkel", isMain: true }],
+    brand: { name: "Victor Reinz", slug: "victor-reinz" },
+    price: 0,
+    sku: "VR-REINZOSIL-70ML",
+    description: "Compuesto sellante universal antracita permanentemente elástico para formar y reparar juntas en motores, cajas, bombas y carcasas. Presentación de 70 ml, resistente a temperaturas de hasta +300 °C. Precio sujeto a cotización y disponibilidad.",
+    image: "/catalogo-siliconas-automotrices/victor-reinz-reinzosil-70ml-original.png",
+    images: [{ url: "/catalogo-siliconas-automotrices/victor-reinz-reinzosil-70ml-original.png", alt: "Victor Reinz REINZOSIL sellante universal antracita 70 ml", isMain: true }],
     inStock: true,
-    stock: 45,
-  },
-  {
-    id: "loctite-si-596-roja",
-    name: "Loctite SI 596 Formador de Juntas Silicona Roja RTV Alta Temperatura (70ml)",
-    slug: "loctite-si-596-silicona-rtv-roja-70ml",
-    category: { name: "Siliconas y Sellantes", slug: "siliconas" },
-    brand: { name: "Loctite", slug: "loctite" },
-    price: 29000,
-    sku: "LOC-SI596-RED-70ML",
-    description: "Silicona roja RTV para altas temperaturas (hasta 315°C) Loctite SI 596 Henkel (70 ml / 71 g, IDH: 285956). Formador de juntas flexible y resistente a la presión para motores, múltiples, bombas de agua y tapas de válvulas.",
-    image: "/catalogo-siliconas-automotrices/loctite-si-596-roja-70ml.png",
-    images: [{ url: "/catalogo-siliconas-automotrices/loctite-si-596-roja-70ml.png", alt: "Loctite SI 596 Silicona RTV Roja 70ml Henkel", isMain: true }],
-    inStock: true,
-    stock: 35,
+    stock: 20,
   },
 
   // GRASAS Y ADITIVOS
@@ -472,16 +472,7 @@ const allProducts = [
   },
 ];
 
-const excludedLubricantCategories = new Set([
-  "lubricantes-gasolina",
-  "hidraulico",
-  "coolant",
-  "grasas-y-aditivos",
-]);
-
-export const products = allProducts.filter((product) =>
-  !excludedLubricantCategories.has(product.category?.slug) && product.id !== "motul-motylgear-75w90"
-);
+export const products = allProducts;
 
 export function getProductById(id) {
   return products.find(p => p.id === id || p.slug === id);

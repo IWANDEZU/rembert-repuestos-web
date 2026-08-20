@@ -5,23 +5,36 @@ import ProductVariantSelector from "@/components/ProductVariantSelector";
 import CatalogSidebar from "@/components/CatalogSidebar";
 import { siteUrl } from "@/lib/site";
 import { getProductDisplayImage } from "@/lib/productImage";
+import { getProductById } from "@/lib/products";
 
 export const dynamic = "force-dynamic";
 
 const baseUrl = siteUrl;
 
-const getProduct = cache(async (slug) =>
-  prisma.product.findUnique({
-    where: { slug },
-    include: {
-      category: true,
-      brand: true,
-      images: true,
-      variants: true,
-      attributes: true,
-    },
-  })
-);
+const getProduct = cache(async (slug) => {
+  let product = null;
+  try {
+    product = await prisma.product.findUnique({
+      where: { slug },
+      include: {
+        category: true,
+        brand: true,
+        images: true,
+        variants: true,
+        attributes: true,
+      },
+    });
+  } catch (error) {
+    product = null;
+  }
+
+  if (product) return product;
+
+  const fallbackProduct = getProductById(slug);
+  return fallbackProduct
+    ? { ...fallbackProduct, variants: fallbackProduct.variants || [], attributes: fallbackProduct.attributes || [] }
+    : null;
+});
 
 export async function generateMetadata({ params }) {
   const resolvedParams = await params;

@@ -212,8 +212,8 @@ export default async function Home() {
           <h2 style={{ marginBottom: '2rem', textTransform: 'uppercase' }}>Categorías Principales</h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '1.5rem' }}>
             
-            {/* Categoría 1: Siliconas y Sellantes */}
-            <Link href="/catalogo?category=siliconas" style={{ textDecoration: 'none', color: 'inherit' }}>
+            {/* Categoría 1: Mantenimiento automotriz */}
+            <Link href="/catalogo?category=mantenimiento" style={{ textDecoration: 'none', color: 'inherit' }}>
               <div style={{ 
                 background: '#fff', 
                 borderRadius: 'var(--border-radius)', 
@@ -225,9 +225,9 @@ export default async function Home() {
                 transition: 'var(--transition)'
               }} className="hover-card">
                 <div style={{ height: '180px', borderRadius: '8px', marginBottom: '1rem', overflow: 'hidden', position: 'relative', background: '#f8f8f8', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                  <Image src="/catalogo-siliconas-automotrices/loctite-si-593-negra-70ml.png" alt="Siliconas y Sellantes RTV Loctite" fill sizes="(max-width: 700px) 100vw, 25vw" quality={85} style={{ objectFit: 'contain', padding: '6px' }} />
+                  <Image src="/catalogo-siliconas-automotrices/victor-reinz-reinzosil-70ml-original.png" alt="Mantenimiento automotriz con sellante Victor Reinz" fill sizes="(max-width: 700px) 100vw, 25vw" quality={85} style={{ objectFit: 'contain', padding: '6px' }} />
                 </div>
-                <strong style={{ fontSize: '1.15rem', whiteSpace: 'nowrap', display: 'block' }}>Siliconas y Sellantes</strong>
+                <strong style={{ fontSize: '1.15rem', display: 'block' }}>Mantenimiento automotriz</strong>
               </div>
             </Link>
 

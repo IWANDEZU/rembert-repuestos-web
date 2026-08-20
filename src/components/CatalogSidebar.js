@@ -7,7 +7,7 @@ function getFallbackBrands() {
   return Array.from(
     new Map(
       fallbackCatalogProducts
-        .filter((product) => product.brand?.slug && product.brand.slug !== "vanssoil")
+        .filter((product) => product.brand?.slug && !["vanssoil", "loctite"].includes(product.brand.slug))
         .map((product) => [product.brand.slug, { id: product.brand.slug, ...product.brand }])
     ).values()
   ).sort((a, b) => a.name.localeCompare(b.name, "es"));
@@ -35,7 +35,7 @@ export default async function CatalogSidebar({
   let brands = [];
   try {
     brands = await prisma.brand.findMany({ 
-      where: { slug: { not: 'vanssoil' } },
+      where: { slug: { notIn: ['vanssoil', 'loctite'] } },
       orderBy: { name: "asc" } 
     });
 
@@ -79,6 +79,7 @@ export default async function CatalogSidebar({
                 </ul>
               </li>
               <li><CatalogLink href={categoryHref("siliconas")} active={categoryParam === "siliconas"}>Siliconas y sellantes</CatalogLink></li>
+              <li><CatalogLink href={categoryHref("mantenimiento")} active={categoryParam === "mantenimiento"}>Mantenimiento: silicona, grasa, refrigerante y valvulina</CatalogLink></li>
               <li><CatalogLink href={categoryHref("transmision")} active={categoryParam === "transmision"}>Transmisiones</CatalogLink></li>
               <li><CatalogLink href={categoryHref("frenos-y-suspension")} active={categoryParam === "frenos-y-suspension"}>Frenos y suspensión</CatalogLink></li>
               <li><CatalogLink href={categoryHref("radiadores")} active={categoryParam === "radiadores"}>Radiadores</CatalogLink></li>
