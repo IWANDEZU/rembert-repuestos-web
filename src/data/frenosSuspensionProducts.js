@@ -49,16 +49,22 @@ export const frenosSuspensionProducts = [
     checks: "VIN, posición, montaje prensado/atornillado, diámetro del cono y material de mangueta", source: "Catálogo oficial MOOG de rótulas de suspensión",
   }),
   product({
-    id: "moog-terminal-direccion-exterior-gasolina", name: "Terminal de Dirección Exterior MOOG — Referencia según Vehículo", brand: "MOOG", sku: "MOOG-TIE-ROD-END-COT", image: images.steering,
+    id: "moog-terminal-direccion-exterior-gasolina", name: "Terminal de Dirección Exterior MOOG — Referencia según Vehículo", brand: "MOOG", sku: "MOOG-TIE-ROD-END-COT", image: "/catalogo-frenos-suspension/moog-terminal-direccion-empaque-catalogo.webp",
     system: "Dirección — terminal exterior", position: "Delantera izquierda o derecha",
     description: "Terminal articulado que transmite el movimiento de la cremallera a la mangueta.",
     checks: "VIN, lado, longitud, paso de rosca, diámetro del cono y tipo de cremallera", source: "Catálogo oficial MOOG de rótulas de dirección",
   }),
   product({
-    id: "moog-axial-direccion-interior-gasolina", name: "Axial de Dirección Interior MOOG — Referencia según Vehículo", brand: "MOOG", sku: "MOOG-INNER-TIE-ROD-COT", image: images.steering,
+    id: "moog-axial-direccion-interior-gasolina", name: "Axial de Dirección Interior MOOG — Referencia según Vehículo", brand: "MOOG", sku: "MOOG-INNER-TIE-ROD-COT", image: "/catalogo-frenos-suspension/moog-rotula-axial-empaque-catalogo.webp",
     system: "Dirección — rótula axial interior", position: "Delantera izquierda o derecha",
     description: "Articulación interior que conecta la cremallera con el terminal exterior.",
     checks: "VIN, fabricante de cremallera, largo total y roscas interior/exterior", source: "Catálogo oficial MOOG de rótulas axiales",
+  }),
+  product({
+    id: "moog-guardapolvos-cremallera-direccion-gasolina", name: "Kit Guardapolvos de Cremallera de Dirección MOOG — Referencia según Vehículo", brand: "MOOG", sku: "MOOG-RACK-GAITER-COT", image: "/catalogo-frenos-suspension/moog-guardapolvos-direccion-empaque-catalogo.webp",
+    system: "Dirección — fuelles o guardapolvos de cremallera", position: "Cremallera de dirección; juego izquierdo y derecho cuando aplica",
+    description: "Kit de protección para la unión entre la cremallera y el axial; según aplicación puede incluir fuelles, abrazaderas y grasa.",
+    checks: "VIN, diámetro de cremallera y axial, longitudes, número de fuelles, abrazaderas y contenido del kit", source: "MOOG — Steering Rack Gaiter Kits",
   }),
   product({
     id: "moog-bieleta-estabilizadora-gasolina", name: "Bieleta de Barra Estabilizadora MOOG — Referencia según Vehículo", brand: "MOOG", sku: "MOOG-LINK-STAB-COT", image: images.steering,
