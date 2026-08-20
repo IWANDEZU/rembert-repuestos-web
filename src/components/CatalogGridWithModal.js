@@ -56,7 +56,7 @@ export default function CatalogGridWithModal({ products, favoriteProductIds = []
         }}
       >
         {products.map((product, idx) => (
-          <div key={product.id} style={{ display: "flex", flexDirection: "column" }}>
+          <div key={product.id} className="catalog-grid__item">
             <ProductCard 
               product={product} 
               onExpand={() => handleOpenModal(idx)} 

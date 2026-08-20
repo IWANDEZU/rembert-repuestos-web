@@ -548,6 +548,24 @@ h1, h2, h3, h4 {
   gap: 2rem;
 }
 
+.catalog-content {
+  min-width: 0;
+}
+
+.catalog-grid {
+  align-items: stretch;
+  min-width: 0;
+}
+
+.catalog-grid__item {
+  display: flex;
+  min-width: 0;
+}
+
+.catalog-grid__item > .product-card {
+  width: 100%;
+}
+
 .catalog-sidebar__panel {
   background: #FFFFFF;
   border: 1px solid #E2E8F0;
@@ -629,6 +647,71 @@ h1, h2, h3, h4 {
   color: #5A6A80;
   font-size: 0.95rem;
   line-height: 1.5;
+}
+
+.catalog-toolbar {
+  align-items: center;
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem 1.25rem;
+  justify-content: space-between;
+  margin: 0 0 1.5rem;
+  padding: 0.9rem 1rem;
+}
+
+.catalog-toolbar p {
+  color: #4A5568;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.catalog-sort-form {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.catalog-sort-form label {
+  color: #334155;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.catalog-sort-form select {
+  appearance: auto;
+  background: #FFFFFF;
+  border: 1px solid #CBD5E1;
+  border-radius: 7px;
+  color: #111111;
+  min-height: 36px;
+  padding: 0.35rem 0.55rem;
+}
+
+.catalog-sort-form select:focus-visible,
+.catalog-menu__link:focus-visible,
+.catalog-brand-link:focus-visible,
+.product-card__media-link:focus-visible {
+  outline: 3px solid rgba(255, 215, 0, 0.65);
+  outline-offset: 2px;
+}
+
+.catalog-pagination {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.catalog-pagination span {
+  color: #475569;
+  font-size: 0.9rem;
+  font-weight: 700;
 }
 
 /* Badges y Cápsulas (30% Amarillo y 20% Gris) */
@@ -1072,11 +1155,11 @@ h1, h2, h3, h4 {
     position: sticky;
     top: 0.5rem;
     z-index: 100;
-    background: #141414;
+    background: #FFFFFF;
     padding: 0.65rem 0.75rem;
     border-radius: 10px;
-    border: 1px solid #333333;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+    border: 1px solid #E2E8F0;
+    box-shadow: 0 4px 15px rgba(15, 23, 42, 0.1);
   }
 
   .catalog-sidebar__back-btn {
@@ -1103,13 +1186,13 @@ h1, h2, h3, h4 {
     display: inline-flex;
     align-items: center;
     gap: 0.4rem;
-    background: #222222;
-    color: #FFFFFF;
+    background: #F8FAFC;
+    color: #334155;
     font-weight: 700;
     font-size: 0.85rem;
     padding: 0.55rem 1rem;
     border-radius: 8px;
-    border: 1px solid #444;
+    border: 1px solid #CBD5E1;
     cursor: pointer;
     flex-grow: 1;
     justify-content: center;
@@ -1136,6 +1219,25 @@ h1, h2, h3, h4 {
 
   .catalog-sidebar__toggle-checkbox:checked ~ .catalog-sidebar__panel {
     display: block;
+  }
+
+  .catalog-toolbar {
+    align-items: stretch;
+    padding: 0.85rem;
+  }
+
+  .catalog-sort-form {
+    display: grid;
+    grid-template-columns: 1fr auto;
+  }
+
+  .catalog-sort-form label {
+    grid-column: 1 / -1;
+  }
+
+  .catalog-sort-form select {
+    min-width: 0;
+    width: 100%;
   }
 }
 
