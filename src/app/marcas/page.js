@@ -26,7 +26,7 @@ const fallbackBrands = [
   { name: "Castrol", slug: "castrol", logo: "/06_castrol_logo_oficial.png", count: 14 },
   { name: "Terpel", slug: "terpel", logo: "/04_terpel_logo_oficial.png", count: 8 },
   { name: "Chevron", slug: "chevron", logo: "/14_chevron_lubricants_logo_oficial.png", count: 9 },
-  { name: "WIX Filters", slug: "wix", logo: "/01_wix_filters_logo_oficial.png", count: 16, darkBg: true },
+  { name: "WIX Filters", slug: "wix", logo: "/logos/wix-filters.svg", count: 16 },
   { name: "Coéxito", slug: "coexito", logo: "/03_coexito_logo_oficial.png", count: 7 },
   { name: "Partmo", slug: "partmo", logo: "/logos/partmo-real.png", count: 11 },
   { name: "Liqui Moly", slug: "liqui-moly", logo: "/logos/liqui-moly.svg", count: 6 },
@@ -35,7 +35,7 @@ const fallbackBrands = [
   { name: "Incolbest", slug: "incolbest", logo: "/logos/incolbest-real.png", count: 12 },
   { name: "Gabriel", slug: "gabriel", logo: "/logos/gabriel-real.png", count: 10 },
   { name: "Victor Reinz", slug: "victor-reinz", logo: "/catalogo-siliconas-automotrices/victor-reinz-reinzosil-70ml-original.png", count: 1 },
-  { name: "Global Oil", slug: "global-oil", logo: "/logos/global-oil.png", count: 5, darkBg: true },
+  { name: "Global Oil", slug: "global-oil", logo: "/logos/global-oil.svg", count: 5 },
   { name: "Max Power", slug: "max-power", logo: "/logos/max-power.png", count: 6 },
   { name: "Petroil", slug: "petroil", logo: "/logos/petroil.png", count: 4 },
 ];
@@ -78,7 +78,6 @@ export default async function MarcasPage() {
         slug: b.slug,
         count: b._count?.products || 0,
         logo: fallbackBrands.find((fb) => fb.slug === b.slug)?.logo || "/05_shell_logo_oficial.png",
-        darkBg: ["wix", "global-oil", "max-power"].includes(b.slug),
       }));
       const existing = new Set(displayBrands.map((b) => b.slug));
       displayBrands = [...displayBrands, ...automotiveBrands.filter((b) => !existing.has(b.slug))];
@@ -139,12 +138,12 @@ export default async function MarcasPage() {
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "center",
-                    background: brand.darkBg ? "#111111" : "#F8FAFC",
+                    background: "#FFFFFF",
                     borderRadius: "8px",
                     padding: "0.75rem",
                     marginBottom: "1rem",
                     border: "1px solid #E2E8F0",
-                    boxShadow: "inset 0 1px 0 rgba(255,255,255,0.9), 0 5px 12px rgba(15,23,42,0.08)",
+                    boxShadow: "inset 0 1px 0 rgba(255,255,255,0.9), 0 2px 8px rgba(15,23,42,0.05)",
                     transform: "translateZ(8px)",
                   }}
                 >

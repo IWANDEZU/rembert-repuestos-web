@@ -8,16 +8,16 @@ export const dynamic = "force-dynamic";
 
 const brandLogos = [
   { name: "Bosch", src: "/logos/bosch.svg" },
-  { name: "WIX Filters", src: "/01_wix_filters_logo_oficial.png", darkBg: true },
+  { name: "WIX Filters", src: "/logos/wix-filters.svg" },
   { name: "Partmo", src: "/logos/partmo-real.png" },
-  { name: "Mazda", src: "/logos/mazda.svg", darkBg: true },
+  { name: "Mazda", src: "/logos/autos/mazda.svg" },
   { name: "Coéxito", src: "/03_coexito_logo_oficial.png" },
-  { name: "Chevrolet", src: "/logos/autos/chevrolet.svg", darkBg: true },
+  { name: "Chevrolet", src: "/logos/autos/chevrolet.svg" },
   { name: "Renault", src: "/logos/autos/renault.svg" },
   { name: "Toyota", src: "/logos/autos/toyota.svg" },
   { name: "Kia", src: "/logos/autos/kia.svg" },
   { name: "Hyundai", src: "/logos/autos/hyundai.svg" },
-  { name: "Ford", src: "/logos/autos/ford.svg", darkBg: true },
+  { name: "Ford", src: "/logos/autos/ford.svg" },
   { name: "Nissan", src: "/logos/autos/nissan.svg" },
   { name: "Volkswagen", src: "/logos/autos/volkswagen.svg" },
   { name: "Mitsubishi", src: "/logos/autos/mitsubishi.svg" },
@@ -160,8 +160,6 @@ export default async function Home() {
         />
         <div aria-hidden="true" style={{ position: 'absolute', inset: 0, zIndex: 1, background: 'linear-gradient(90deg, rgba(10,10,10,0.92) 0%, rgba(10,10,10,0.72) 55%, rgba(10,10,10,0.45) 100%)' }} />
         
-
-
         <div className="main-container" style={{ width: '100%', display: 'flex', flexDirection: 'column', gap: '1.5rem', position: 'relative', zIndex: 2 }}>
           <div>
             <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', background: '#E52421', color: '#FFFFFF', padding: '0.4rem 1.1rem', borderRadius: '30px', fontWeight: '900', fontSize: '0.9rem', marginBottom: '1rem', letterSpacing: '0.5px', boxShadow: '0 4px 15px rgba(229, 36, 33, 0.45)' }}>
@@ -186,19 +184,19 @@ export default async function Home() {
         </div>
       </header>
 
-      {/* Cenefa Móvil de Marcas (Limpia, Cápsulas Redondas) */}
+      {/* Cenefa Móvil de Marcas (Limpia, Cápsulas Blancas) */}
       <div className="marquee-container">
         <div className="marquee-track">
           <div className="marquee-group">
             {brandLogos.map((b, i) => (
-              <div className={`marquee-item-wrapper ${b.darkBg ? 'marquee-item-wrapper--dark' : ''}`} key={`a-${i}`}>
+              <div className="marquee-item-wrapper" key={`a-${i}`}>
                 <Image src={b.src} alt={b.name} className="marquee-item" width={160} height={72} sizes="160px" loading="lazy" />
               </div>
             ))}
           </div>
           <div className="marquee-group" aria-hidden="true">
             {brandLogos.map((b, i) => (
-              <div className={`marquee-item-wrapper ${b.darkBg ? 'marquee-item-wrapper--dark' : ''}`} key={`b-${i}`}>
+              <div className="marquee-item-wrapper" key={`b-${i}`}>
                 <Image src={b.src} alt="" className="marquee-item" width={160} height={72} sizes="160px" loading="lazy" />
               </div>
             ))}
@@ -323,6 +321,42 @@ export default async function Home() {
                   <span style={{ fontSize: '4rem' }}>🛠️</span>
                 </div>
                 <strong style={{ fontSize: '1.15rem', color: 'var(--primary-dark)', whiteSpace: 'nowrap', display: 'block' }}>Servicio Técnico</strong>
+              </div>
+            </Link>
+
+            <Link href="/catalogo?category=electrico-y-encendido" style={{ textDecoration: 'none', color: 'inherit' }}>
+              <div className="hover-card" style={{ background: '#fff', borderRadius: 'var(--border-radius)', padding: '1.5rem', textAlign: 'center', boxShadow: 'var(--box-shadow-light)', border: '1px solid transparent', transition: 'var(--transition)' }}>
+                <div style={{ height: '180px', borderRadius: '8px', marginBottom: '1rem', overflow: 'hidden', position: 'relative', background: '#f8f8f8' }}>
+                  <Image src="/catalogo-nuevas-lineas/acdelco-bujia-catalogo.png" alt="Sistema eléctrico y encendido ACDelco" fill sizes="(max-width: 700px) 100vw, 25vw" quality={80} style={{ objectFit: 'contain', padding: '6px' }} />
+                </div>
+                <strong style={{ fontSize: '1.15rem', display: 'block' }}>Eléctrico y encendido</strong>
+              </div>
+            </Link>
+
+            <Link href="/catalogo?category=motor-y-distribucion" style={{ textDecoration: 'none', color: 'inherit' }}>
+              <div className="hover-card" style={{ background: '#fff', borderRadius: 'var(--border-radius)', padding: '1.5rem', textAlign: 'center', boxShadow: 'var(--box-shadow-light)', border: '1px solid transparent', transition: 'var(--transition)' }}>
+                <div style={{ height: '180px', borderRadius: '8px', marginBottom: '1rem', overflow: 'hidden', position: 'relative', background: '#f8f8f8' }}>
+                  <Image src="/catalogo-nuevas-lineas/gates-kit-distribucion-bomba-agua-catalogo.png" alt="Kit de distribución Gates PowerGrip" fill sizes="(max-width: 700px) 100vw, 25vw" quality={80} style={{ objectFit: 'contain', padding: '6px' }} />
+                </div>
+                <strong style={{ fontSize: '1.15rem', display: 'block' }}>Motor y distribución</strong>
+              </div>
+            </Link>
+
+            <Link href="/catalogo?category=embrague" style={{ textDecoration: 'none', color: 'inherit' }}>
+              <div className="hover-card" style={{ background: '#fff', borderRadius: 'var(--border-radius)', padding: '1.5rem', textAlign: 'center', boxShadow: 'var(--box-shadow-light)', border: '1px solid transparent', transition: 'var(--transition)' }}>
+                <div style={{ height: '180px', borderRadius: '8px', marginBottom: '1rem', overflow: 'hidden', position: 'relative', background: '#f8f8f8' }}>
+                  <Image src="/catalogo-nuevas-lineas/luk-repset-kit-embrague-catalogo.png" alt="Kit de embrague LuK RepSet" fill sizes="(max-width: 700px) 100vw, 25vw" quality={80} style={{ objectFit: 'contain', padding: '6px' }} />
+                </div>
+                <strong style={{ fontSize: '1.15rem', display: 'block' }}>Embragues y clutch</strong>
+              </div>
+            </Link>
+
+            <Link href="/catalogo?category=rodamientos-y-traccion" style={{ textDecoration: 'none', color: 'inherit' }}>
+              <div className="hover-card" style={{ background: '#fff', borderRadius: 'var(--border-radius)', padding: '1.5rem', textAlign: 'center', boxShadow: 'var(--box-shadow-light)', border: '1px solid transparent', transition: 'var(--transition)' }}>
+                <div style={{ height: '180px', borderRadius: '8px', marginBottom: '1rem', overflow: 'hidden', position: 'relative', background: '#f8f8f8' }}>
+                  <Image src="/catalogo-nuevas-lineas/skf-kit-rodamiento-catalogo.png" alt="Kit de rodamiento de rueda SKF" fill sizes="(max-width: 700px) 100vw, 25vw" quality={80} style={{ objectFit: 'contain', padding: '6px' }} />
+                </div>
+                <strong style={{ fontSize: '1.15rem', display: 'block' }}>Rodamientos y tracción</strong>
               </div>
             </Link>
 

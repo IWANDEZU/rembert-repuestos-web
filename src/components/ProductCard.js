@@ -240,25 +240,27 @@ export default function ProductCard({ product, onExpand, isFavorite = false }) {
           🔍 Vista ampliada
         </button>
 
-        <button
-          type="button"
-          onClick={handleAddToCart}
-          className="btn btn--primary"
-          style={{
-            padding: "0.65rem 0.8rem",
-            fontSize: "0.85rem",
-            fontWeight: "800",
-            width: "100%",
-            border: "none",
-            background: added ? "#16A34A" : "var(--primary-color)",
-            color: added ? "#FFFFFF" : "#111111",
-            borderRadius: "8px",
-            cursor: "pointer",
-            transition: "background-color 0.2s ease",
-          }}
-        >
-          {added ? "✓ Agregado al carrito" : "🛒 Agregar al carrito"}
-        </button>
+        {product.price > 0 && product.inStock !== false && (product.stock ?? 1) > 0 && (
+          <button
+            type="button"
+            onClick={handleAddToCart}
+            className="btn btn--primary"
+            style={{
+              padding: "0.65rem 0.8rem",
+              fontSize: "0.85rem",
+              fontWeight: "800",
+              width: "100%",
+              border: "none",
+              background: added ? "#16A34A" : "var(--primary-color)",
+              color: added ? "#FFFFFF" : "#111111",
+              borderRadius: "8px",
+              cursor: "pointer",
+              transition: "background-color 0.2s ease",
+            }}
+          >
+            {added ? "✓ Agregado al carrito" : "🛒 Agregar al carrito"}
+          </button>
+        )}
 
         <a
           href={quoteUrl}
