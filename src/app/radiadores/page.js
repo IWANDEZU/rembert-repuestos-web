@@ -3,7 +3,7 @@ import Link from "next/link";
 import { siteUrl } from "@/lib/site";
 
 export const metadata = {
-  title: "Radiadores y Refrigeración Automotriz | Rembert Repuestos BCA",
+  title: "Radiadores y Refrigeración Automotriz | REMBERT",
   description:
     "Venta de radiadores de aluminio, cobre-bronce, intercoolers, tapas presurizadas, termostatos y refrigerantes para autos, camionetas y camiones en Barrancabermeja. Envíos a todo Colombia.",
   alternates: {

@@ -1,12 +1,12 @@
 export const metadata = {
-  title: "Sobre Rembert Repuestos BCA: lubricantes, filtros y repuestos en Barrancabermeja",
+  title: "Sobre Nosotros | REMBERT",
   description:
-    "Conozca la historia, misión y experiencia de Rembert Repuestos BCA en Barrancabermeja. Soluciones en mantenimiento automotriz y repuestos.",
+    "Conozca la historia, misión y experiencia de REMBERT en Barrancabermeja. Soluciones en mantenimiento automotriz, lubricantes y repuestos.",
   alternates: {
     canonical: "/nosotros",
   },
   openGraph: {
-    title: "Sobre Rembert Repuestos BCA",
+    title: "Sobre REMBERT | Repuestos Automotrices",
     description:
       "Años de experiencia proveyendo lubricantes, filtros y repuestos de alta calidad para vehículos en Barrancabermeja.",
     url: "https://www.rembertrepuestos.com/nosotros",

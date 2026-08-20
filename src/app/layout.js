@@ -33,12 +33,15 @@ export const metadata = {
   metadataBase: new URL(baseUrl),
   manifest: "/manifest.webmanifest",
   title: {
-    default: "Rembert Repuestos BCA | Repuestos Automotrices en Barrancabermeja",
-    template: "%s | Rembert Repuestos BCA",
+    default: "REMBERT | Repuestos Automotrices, Lubricantes & Radiadores",
+    template: "%s | REMBERT",
   },
   description:
-    "Rembert Repuestos BCA en Barrancabermeja, Santander. Venta de repuestos automotrices, lubricantes y filtros para autos, camiones y maquinaria. Envíos a todo Colombia.",
+    "REMBERT en Barrancabermeja, Santander. Venta especializada de repuestos automotrices, lubricantes, filtros y radiadores para autos, camiones y maquinaria pesada. Envíos seguros a todo Colombia.",
   keywords: [
+    "REMBERT",
+    "REMBERT repuestos",
+    "REMBERT Barrancabermeja",
     "lubricantes Barrancabermeja",
     "filtros de aceite Santander",
     "WIX filters Colombia",
@@ -50,9 +53,9 @@ export const metadata = {
     "radiadores de aluminio Colombia",
     "cambio de aceite Barrancabermeja",
   ],
-  authors: [{ name: "Rembert Repuestos BCA", url: baseUrl }],
-  creator: "Rembert Repuestos BCA",
-  publisher: "Rembert Repuestos BCA",
+  authors: [{ name: "REMBERT", url: baseUrl }],
+  creator: "REMBERT",
+  publisher: "REMBERT",
   formatDetection: {
     email: false,
     address: true,
@@ -62,16 +65,16 @@ export const metadata = {
     canonical: "/",
   },
   icons: {
-    icon: "/logo.png",
-    shortcut: "/logo.png",
-    apple: "/logo.png",
+    icon: "/icon.png",
+    shortcut: "/icon.png",
+    apple: "/icon.png",
   },
   openGraph: {
-    title: "Rembert Repuestos BCA | Repuestos Automotrices en Barrancabermeja",
+    title: "REMBERT | Repuestos Automotrices, Lubricantes & Radiadores",
     description:
-      "Venta especializada de repuestos automotrices, lubricantes y filtros en Barrancabermeja. Envíos nacionales.",
+      "Venta especializada de repuestos automotrices, lubricantes, filtros y radiadores en Barrancabermeja. Envíos a toda Colombia.",
     url: baseUrl,
-    siteName: "Rembert Repuestos BCA",
+    siteName: "REMBERT",
     locale: "es_CO",
     type: "website",
     images: [
@@ -79,14 +82,14 @@ export const metadata = {
         url: "/logo.png",
         width: 800,
         height: 800,
-        alt: "Rembert Repuestos BCA Logo",
+        alt: "REMBERT Logo",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Rembert Repuestos BCA | Repuestos Automotrices",
-    description: "Venta de repuestos automotrices, lubricantes y filtros en Barrancabermeja, Colombia.",
+    title: "REMBERT | Repuestos Automotrices",
+    description: "Venta de repuestos automotrices, lubricantes, filtros y radiadores en Barrancabermeja, Colombia.",
     images: ["/logo.png"],
   },
   robots: {
@@ -108,7 +111,7 @@ const jsonLdGraph = {
     {
       "@type": "AutoPartsStore",
       "@id": `${baseUrl}/#store`,
-      "name": "Rembert Repuestos BCA",
+      "name": "REMBERT",
       "url": baseUrl,
       "logo": `${baseUrl}/logo.png`,
       "image": `${baseUrl}/logo.png`,
@@ -312,7 +315,7 @@ export default function RootLayout({ children }) {
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#1877F2" width="18" height="18"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.469h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.469h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" /></svg> Facebook
                 </a>
                 <a href="https://mail.google.com/mail/?view=cm&fs=1&to=repuestosrembertsa@gmail.com&su=Consulta+de+Repuestos+-+Rembert+Repuestos+BCA" target="_blank" rel="noopener noreferrer" style={{ color: '#fff', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '0.45rem', fontSize: '0.95rem' }}>
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#EA4335" width="18" height="18"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg> repuestosrembertsa@gmail.com
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#EA4335" width="18" height="18"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" /></svg> repuestosrembertsa@gmail.com
                 </a>
               </div>
               <nav aria-label="Información legal" style={{ display: 'flex', justifyContent: 'center', gap: '1rem', flexWrap: 'wrap', fontSize: '0.88rem', marginBottom: '1rem' }}>

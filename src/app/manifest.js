@@ -1,9 +1,9 @@
 export default function manifest() {
   return {
-    name: "Rembert Repuestos BCA | Lubricantes y Filtros",
-    short_name: "Rembert BCA",
+    name: "REMBERT | Repuestos Automotrices, Lubricantes & Radiadores",
+    short_name: "REMBERT",
     description:
-      "Venta de lubricantes, filtros, frenos y repuestos automotrices en Barrancabermeja, Colombia.",
+      "Venta de repuestos automotrices, lubricantes, filtros y radiadores en Barrancabermeja, Colombia.",
     start_url: "/",
     display: "standalone",
     background_color: "#101010",

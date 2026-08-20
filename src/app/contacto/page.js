@@ -1,14 +1,14 @@
 import ContactForm from "@/components/ContactForm";
 
 export const metadata = {
-  title: "Contacto y Sedes | Rembert Repuestos BCA",
+  title: "Contacto y Sedes | REMBERT",
   description:
-    "Punto Principal y Punto El Cerro en Barrancabermeja. Líneas de atención: 310 242 0490, 312 502 2555, 310 270 7375 y Compras 350 829 9233. Repuestos originales y alternativos.",
+    "Puntos de atención, teléfonos y WhatsApp de REMBERT en Barrancabermeja. Punto Principal y Punto El Cerro.",
   alternates: {
     canonical: "/contacto",
   },
   openGraph: {
-    title: "Contacto y Sedes - Rembert Repuestos BCA",
+    title: "Contacto y Sedes | REMBERT",
     description:
       "Atención en Barrancabermeja: Punto Principal, Punto El Cerro y Línea de Compras. Envíos a todo Colombia.",
     url: "https://www.rembertrepuestos.com/contacto",

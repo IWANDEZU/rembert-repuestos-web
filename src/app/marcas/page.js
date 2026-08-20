@@ -6,16 +6,16 @@ import Image from "next/image";
 export const dynamic = "force-dynamic";
 
 export const metadata = {
-  title: "Marcas Aliadas | Rembert Repuestos BCA",
+  title: "Marcas Oficiales | REMBERT",
   description:
-    "Trabajamos con las marcas líderes a nivel mundial: Shell, Mobil, Castrol, Terpel, Chevron, WIX Filters, Bosch, Liqui Moly, Valvoline, Incolbest, Gabriel y más en Barrancabermeja.",
+    "Marcas líderes en REMBERT: Shell, Mobil, Castrol, Terpel, Chevron, WIX Filters, Bosch, Liqui Moly, Valvoline, Incolbest, Gabriel y más en Barrancabermeja.",
   alternates: {
     canonical: "/marcas",
   },
   openGraph: {
-    title: "Marcas Aliadas de Rembert Repuestos BCA",
+    title: "Marcas Oficiales | REMBERT",
     description:
-      "Lubricantes, filtros y repuestos de las marcas líderes a nivel mundial con envíos a toda Colombia.",
+      "Lubricantes, filtros y repuestos de las marcas líderes a nivel mundial en REMBERT con envíos a toda Colombia.",
     url: "https://www.rembertrepuestos.com/marcas",
   },
 };

@@ -2,14 +2,14 @@ import Link from "next/link";
 import Image from "next/image";
 
 export const metadata = {
-  title: "Servicio Técnico Automotriz | Rembert Repuestos BCA",
+  title: "Servicio Técnico Automotriz | REMBERT",
   description:
-    "Servicio técnico especializado en Barrancabermeja: Diagnóstico por escáner, cambio de aceite y filtros, mantenimiento de frenos, suspensión y baterías.",
+    "Servicio técnico especializado de REMBERT en Barrancabermeja: Diagnóstico por escáner, cambio de aceite y filtros, mantenimiento de frenos, suspensión y radiadores.",
   alternates: {
     canonical: "/servicio-tecnico",
   },
   openGraph: {
-    title: "Servicio Técnico Automotriz - Rembert Repuestos BCA",
+    title: "Servicio Técnico Automotriz | REMBERT",
     description:
       "Mantenimiento preventivo, diagnóstico y montaje de repuestos con garantía en Barrancabermeja.",
     url: "https://www.rembertrepuestos.com/servicio-tecnico",
