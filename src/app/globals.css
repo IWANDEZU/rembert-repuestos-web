@@ -305,7 +305,7 @@ h1, h2, h3, h4 {
   padding: 0 1.5rem;
   border-radius: 0 25px 25px 0;
   background-color: #E52421;
-  border: 5px solid #FFD700;
+  border: none;
   color: #FFFFFF;
   font-weight: 800;
   cursor: pointer;
@@ -314,7 +314,6 @@ h1, h2, h3, h4 {
 
 .navbar__search button:hover {
   background-color: #C81917;
-  border-color: #FFE033;
 }
 
 .navbar__actions {
@@ -426,11 +425,11 @@ h1, h2, h3, h4 {
   letter-spacing: 0.3px;
 }
 
-/* Botón Primario: Rojo Corporativo Rembert con Borde de 5px */
+/* Botón Primario: Rojo Corporativo Rembert */
 .btn--primary {
   background-color: #E52421;
   color: #FFFFFF;
-  border: 5px solid #FFD700;
+  border: none;
   border-radius: 12px;
   box-shadow: 0 4px 14px rgba(229, 36, 33, 0.4);
   font-weight: 800;
@@ -438,7 +437,6 @@ h1, h2, h3, h4 {
 
 .btn--primary:hover {
   background-color: #C81917;
-  border-color: #FFE033;
   color: #FFFFFF;
   box-shadow: 0 6px 20px rgba(229, 36, 33, 0.6);
   transform: translateY(-2px);
