@@ -127,7 +127,7 @@ export default async function Home() {
         overflow: 'hidden'
       }}>
         <Image
-          src="/hero-rembert-fachada.jpg"
+          src="/hero-rembert-fachada-v2.jpg"
           alt="Fachada Sede Principal Rembert Repuestos BCA - Barrancabermeja"
           fill
           priority
