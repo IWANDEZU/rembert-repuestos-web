@@ -241,12 +241,12 @@ export default function RootLayout({ children }) {
             <nav className="navbar">
               <div className="navbar__floating-logo" aria-hidden="true">
                 <Image
-                  src="/logo-rembert-v5.png"
+                  src="/logo-rembert-medallion-transparent.webp"
                   alt=""
-                  width={300}
-                  height={110}
+                  width={512}
+                  height={512}
                   priority={false}
-                  sizes="300px"
+                  sizes="110px"
                 />
               </div>
               <div className="navbar__main">
