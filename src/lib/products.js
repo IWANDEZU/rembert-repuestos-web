@@ -1,6 +1,7 @@
 import { frenosSuspensionProducts } from "../data/frenosSuspensionProducts.js";
 import { brandPanelProducts } from "../data/brandPanelProducts.js";
 import { catalogoProveedoresProducts } from "../data/catalogoProveedoresProducts.js";
+import { kiaProducts } from "../data/kiaProducts.js";
 
 function brakeApplication({
   id, name, slug, brand, reference, image, vehicleBrands, models,
@@ -191,7 +192,7 @@ const allProducts = [
     id: "acdelco-bujia-familia",
     name: "Bujía ACDelco para Motor a Gasolina — Referencia según Vehículo",
     slug: "bujia-acdelco-motor-gasolina-referencia-vehiculo",
-    category: { name: "Eléctrico y Encendido", slug: "electrico-y-encendido" },
+    category: { name: "PARTES ELÉCTRICAS", slug: "electrico-y-encendido" },
     brand: { name: "ACDelco", slug: "acdelco" },
     price: 0,
     sku: "ACD-BUJIA-COT",
@@ -212,7 +213,7 @@ const allProducts = [
     id: "acdelco-bateria-familia",
     name: "Batería ACDelco Libre de Mantenimiento — Capacidad según Vehículo",
     slug: "bateria-acdelco-libre-mantenimiento-capacidad-vehiculo",
-    category: { name: "Eléctrico y Encendido", slug: "electrico-y-encendido" },
+    category: { name: "PARTES ELÉCTRICAS", slug: "electrico-y-encendido" },
     brand: { name: "ACDelco", slug: "acdelco" },
     price: 0,
     sku: "ACD-BAT-COT",
@@ -233,7 +234,7 @@ const allProducts = [
     id: "osram-ledriving-hl-bright-h4-h19",
     name: "OSRAM LEDriving HL BRIGHT H4/H19 12 V — 64193DWBRT",
     slug: "osram-ledriving-hl-bright-h4-h19-64193dwbrt",
-    category: { name: "Eléctrico y Encendido", slug: "electrico-y-encendido" },
+    category: { name: "PARTES ELÉCTRICAS", slug: "electrico-y-encendido" },
     brand: { name: "OSRAM", slug: "osram" },
     price: 0,
     sku: "64193DWBRT",
@@ -620,6 +621,7 @@ const allProducts = [
   ...brandPanelProducts,
   ...frenosSuspensionProducts,
   ...catalogoProveedoresProducts,
+  ...kiaProducts,
 
   // FILTROS
   {

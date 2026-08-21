@@ -251,9 +251,9 @@ export default async function Home() {
             <Link href="/catalogo?category=electrico-y-encendido" style={{ textDecoration: 'none', color: 'inherit' }}>
               <div className="hover-card" style={{ background: '#fff', borderRadius: 'var(--border-radius)', padding: '1.5rem', textAlign: 'center', boxShadow: 'var(--box-shadow-light)', border: '1px solid transparent', transition: 'var(--transition)' }}>
                 <div style={{ height: '180px', borderRadius: '8px', marginBottom: '1rem', overflow: 'hidden', position: 'relative', background: '#f8f8f8' }}>
-                  <Image src="/catalogo-nuevas-lineas/acdelco-bujia-catalogo.png" alt="Sistema eléctrico y encendido ACDelco" fill sizes="(max-width: 700px) 100vw, 25vw" quality={80} style={{ objectFit: 'contain', padding: '6px' }} />
+                <Image src="/catalogo-kia/kmx-kia-bobina-encendido-referencia-vin.jpg" alt="PARTES ELÉCTRICAS KMX" fill sizes="(max-width: 700px) 100vw, 25vw" quality={80} style={{ objectFit: 'contain', padding: '6px' }} />
                 </div>
-                <strong style={{ fontSize: '1.15rem', display: 'block' }}>Eléctrico y encendido</strong>
+                <strong style={{ fontSize: '1.15rem', display: 'block' }}>PARTES ELÉCTRICAS</strong>
               </div>
             </Link>
 

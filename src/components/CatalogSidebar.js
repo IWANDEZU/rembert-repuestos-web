@@ -83,7 +83,7 @@ export default async function CatalogSidebar({
               <li><CatalogLink href={categoryHref("siliconas")} active={categoryParam === "siliconas"}>Siliconas y sellantes</CatalogLink></li>
               <li><CatalogLink href={categoryHref("mantenimiento")} active={categoryParam === "mantenimiento"}>Mantenimiento: silicona, grasa, refrigerante y valvulina</CatalogLink></li>
               <li><CatalogLink href={categoryHref("transmision")} active={categoryParam === "transmision"}>Transmisiones</CatalogLink></li>
-              <li><CatalogLink href={categoryHref("electrico-y-encendido")} active={categoryParam === "electrico-y-encendido"}>Eléctrico y encendido</CatalogLink></li>
+              <li><CatalogLink href={categoryHref("electrico-y-encendido")} active={categoryParam === "electrico-y-encendido"}>PARTES ELÉCTRICAS</CatalogLink></li>
               <li><CatalogLink href={categoryHref("motor-y-distribucion")} active={categoryParam === "motor-y-distribucion"}>Motor y distribución</CatalogLink></li>
               <li><CatalogLink href={categoryHref("embrague")} active={categoryParam === "embrague"}>Embrague</CatalogLink></li>
               <li><CatalogLink href={categoryHref("rodamientos-y-traccion")} active={categoryParam === "rodamientos-y-traccion"}>Rodamientos y tracción</CatalogLink></li>

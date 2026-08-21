@@ -1,0 +1,14 @@
+{
+  "catalog": "Kia passenger vehicles and pickups",
+  "currency": "COP",
+  "generatedImages": true,
+  "watermark": "REMBERT R",
+  "sources": [
+    { "brand": "TNK", "url": "https://tnk.com.co/producto/axial-tkx109/", "references": ["TKX109"] },
+    { "brand": "TNK", "url": "https://tnk.com.co/producto/axial-thx049/", "references": ["THX049"] },
+    { "brand": "CTR", "url": "https://aftermarket.ctr.co.kr/", "references": ["CL0846L", "GV0347"] },
+    { "brand": "Rowen", "url": "https://autofrenos.co/producto/pastillas-kia-picanto-all-new-ceramica/", "references": ["3602-CH"] },
+    { "brand": "KMX", "url": "https://kgroupcorp.com/productos/kmx/", "references": ["KMX-PICANTO-AXLE-COT", "KMX-IGN-COIL-COT"] }
+  ],
+  "validationPolicy": "Compatibility must be verified by VIN, OE reference, model year, engine, axle and side before dispatch."
+}

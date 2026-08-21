@@ -743,7 +743,7 @@ export default async function Catalogo({ searchParams }) {
     "frenos-y-suspension": ["Frenos, dirección y suspensión para vehículos a gasolina", "Pastillas, discos, freno hidráulico, sensores ABS, amortiguación, rótulas, terminales, axiales, bieletas, bujes y tijeras con validación por vehículo."],
     "lubricantes-gasolina": ["Lubricantes gasolina y livianos", "Aceites sintéticos y minerales para motores a gasolina."],
     transmision: ["Cajas y transmisiones automotrices", "Transmisiones manuales, automáticas y CVT para vehículos de las principales marcas."],
-    "electrico-y-encendido": ["Sistema eléctrico y encendido", "Bujías y baterías originales seleccionadas por referencia y aplicación."],
+    "electrico-y-encendido": ["PARTES ELÉCTRICAS", "Bobinas, sensores, motoventiladores, bujías y componentes seleccionados por referencia, motor y VIN."],
     "motor-y-distribucion": ["Motor y distribución", "Kits de distribución, correas, tensores, poleas y bombas de agua."],
     embrague: ["Embragues y clutch", "Kits de prensa, disco y rodamiento con validación por VIN."],
     "rodamientos-y-traccion": ["Rodamientos y tracción", "Rodamientos, cubos y componentes de rueda según eje y sistema ABS."],
@@ -836,7 +836,7 @@ export default async function Catalogo({ searchParams }) {
 
         {categoryParam === "electrico-y-encendido" && !brandParam && !searchQuery && (
           <section
-            aria-label="Repuestos eléctricos y de encendido"
+            aria-label="PARTES ELÉCTRICAS"
             style={{
               position: "relative",
               width: "100%",

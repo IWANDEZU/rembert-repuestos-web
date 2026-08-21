@@ -38,7 +38,7 @@ export const brandPanelProducts = [
     name: "NGK Encendido: Bujías, Bobinas y Cables — Referencia según Vehículo",
     brand: "NGK",
     sku: "NGK-IGN-COT",
-    category: { name: "Eléctrico y Encendido", slug: "electrico-y-encendido" },
+    category: { name: "PARTES ELÉCTRICAS", slug: "electrico-y-encendido" },
     image: "/catalogo-marcas-panel/ngk-encendido-caja.webp",
     summary: "Familia NGK para mantenimiento del sistema de encendido.",
     description: "Incluye bujías convencionales y especiales, bobinas, cables y terminales de encendido. El grado térmico, alcance de rosca, resistencia, luz y tipo de bobina no son intercambiables por apariencia.",
