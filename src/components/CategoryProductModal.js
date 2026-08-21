@@ -6,6 +6,7 @@ import Image from "next/image";
 import { getProductDisplayImage } from "@/lib/productImage";
 import { generateWhatsAppProductText, getWhatsAppUrl } from "@/lib/orderFormatter";
 import WhatsAppIcon from "@/components/WhatsAppIcon";
+import { getProductCompatibility } from "@/lib/productCompatibility";
 
 const getMainImage = (product) => getProductDisplayImage(product);
 const getFirstVariant = (product) => product?.variants?.[0] || null;
@@ -21,6 +22,7 @@ export default function CategoryProductModal({ products, initialIndex = 0, onClo
   const { addToCart } = useCart();
 
   const currentProduct = products && products.length > 0 ? products[currentIndex] : null;
+  const compatibilityText = getProductCompatibility(currentProduct);
   const [selectedVariant, setSelectedVariant] = useState(() => getFirstVariant(initialProduct));
   const [selectedImage, setSelectedImage] = useState(() => getMainImage(initialProduct));
 
@@ -375,6 +377,21 @@ export default function CategoryProductModal({ products, initialIndex = 0, onClo
               <p style={{ color: "#aaa", fontSize: "0.9rem", lineHeight: "1.5" }}>
                 {currentProduct.description}
               </p>
+
+              <div
+                style={{
+                  color: "#f8fafc",
+                  background: "rgba(255, 212, 0, 0.08)",
+                  border: "1px solid rgba(255, 212, 0, 0.35)",
+                  borderRadius: "8px",
+                  padding: "0.65rem 0.75rem",
+                  fontSize: "0.86rem",
+                  lineHeight: "1.45",
+                }}
+              >
+                <strong style={{ color: "var(--primary-color)" }}>Compatible con:</strong>{" "}
+                {compatibilityText}
+              </div>
 
               {/* Selector de Presentación / Variantes */}
               {currentProduct.variants && currentProduct.variants.length > 0 && (

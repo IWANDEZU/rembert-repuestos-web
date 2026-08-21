@@ -8,6 +8,7 @@ import { useRouter } from "next/navigation";
 import { getProductDisplayImage } from "@/lib/productImage";
 import { generateWhatsAppProductText, getWhatsAppUrl } from "@/lib/orderFormatter";
 import WhatsAppIcon from "@/components/WhatsAppIcon";
+import { getProductCompatibility } from "@/lib/productCompatibility";
 
 export default function ProductCard({ product, onExpand, isFavorite = false }) {
   const { addToCart } = useCart();
@@ -53,11 +54,7 @@ export default function ProductCard({ product, onExpand, isFavorite = false }) {
   };
 
   const imageUrl = getProductDisplayImage(product);
-  const compatibilityAttribute = Array.isArray(product.attributes)
-    ? product.attributes.find((attribute) =>
-        ["modelos compatibles", "modelos orientativos"].includes(String(attribute.name || "").toLowerCase())
-      )
-    : null;
+  const compatibilityText = getProductCompatibility(product);
 
   const handleAddToCart = () => {
     addToCart(
@@ -216,7 +213,7 @@ export default function ProductCard({ product, onExpand, isFavorite = false }) {
           </span>
         )}
 
-        {compatibilityAttribute?.value ? (
+        {compatibilityText ? (
           <p
             style={{
               fontSize: "0.74rem",
@@ -232,9 +229,9 @@ export default function ProductCard({ product, onExpand, isFavorite = false }) {
               WebkitBoxOrient: "vertical",
               overflow: "hidden",
             }}
-            title={compatibilityAttribute.value}
+            title={compatibilityText}
           >
-            <strong>Aplica:</strong> {compatibilityAttribute.value}
+            <strong>Compatible con:</strong> {compatibilityText}
           </p>
         ) : null}
 
