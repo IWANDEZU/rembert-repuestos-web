@@ -1,5 +1,6 @@
 import { getServerSession } from "@/lib/auth";
 import { prisma } from "@/lib/prisma";
+import { products as catalogFallback } from "@/lib/products";
 import { NextResponse } from "next/server";
 import { enforceRateLimit } from "@/lib/security/rateLimit";
 
@@ -19,7 +20,14 @@ export async function GET(request) {
     });
     return NextResponse.json(products);
   } catch (error) {
-    return NextResponse.json({ error: "Failed to fetch products" }, { status: 500 });
+    console.warn("Base de datos no disponible; /api/products usa el catálogo versionado.");
+    return NextResponse.json(catalogFallback, {
+      status: 200,
+      headers: {
+        "Cache-Control": "public, s-maxage=300, stale-while-revalidate=3600",
+        "X-Data-Source": "catalog-fallback",
+      },
+    });
   }
 }
 
