@@ -23,7 +23,27 @@ const PART_FILTERS = {
   bujes: ["buje", "silentbloc"],
   sensores: ["sensor", "abs"],
   brazos: ["brazo", "tijera"],
+  mordazas: ["mordaza", "caliper"],
+  servofrenos: ["servofreno", "booster"],
+  cables: ["cable", "estacionamiento"],
+  resortes: ["resorte", "helicoidal"],
+  rodamientos: ["rodamiento", "cubo"],
+  mangueras: ["manguera", "línea flexible"],
+  bombas: ["bomba maestra", "cilindro maestro"],
+  cilindros: ["cilindro de rueda"],
+  bieletas: ["bieleta", "estabilizadora"],
+  guardapolvos: ["guardapolvo", "fuelle"],
 };
+
+const SMART_BRAKE_FAMILIES = [
+  ["pastillas", "Pastillas"], ["discos", "Discos"], ["bandas", "Bandas y zapatas"],
+  ["campanas", "Campanas"], ["mordazas", "Mordazas"], ["bombas", "Bombas maestras"],
+  ["cilindros", "Cilindros de rueda"], ["mangueras", "Mangueras"], ["servofrenos", "Servofrenos"],
+  ["cables", "Cables de estacionamiento"], ["amortiguadores", "Amortiguadores"], ["resortes", "Resortes"],
+  ["rotulas", "Rótulas"], ["terminales", "Terminales"], ["axiales", "Axiales"],
+  ["bieletas", "Bieletas"], ["bujes", "Bujes"], ["brazos", "Tijeras y brazos"],
+  ["rodamientos", "Cubos y rodamientos"], ["sensores", "Sensores ABS"], ["guardapolvos", "Guardapolvos"],
+];
 
 function filterSlug(value = "") {
   return value.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
@@ -910,6 +930,21 @@ export default async function Catalogo({ searchParams }) {
               <div><strong>VIN</strong><span>validación antes de compra</span></div>
               <div><strong>Colombia</strong><span>envíos nacionales</span></div>
             </div>
+            <nav className="smart-parts-menu" aria-label="Buscar frenos, dirección y suspensión por tipo de repuesto">
+              <strong>Buscar por repuesto:</strong>
+              <div>
+                {SMART_BRAKE_FAMILIES.map(([part, label]) => (
+                  <Link
+                    key={part}
+                    href={buildCatalogHref({ category: "frenos-y-suspension", part })}
+                    className={partParam === part ? "is-active" : ""}
+                    aria-current={partParam === part ? "page" : undefined}
+                  >
+                    {label}
+                  </Link>
+                ))}
+              </div>
+            </nav>
             <div className="filter-showcase__grid filter-showcase__grid--vehicles">
               {gasolineBrakeApplications.map(({ brand, logo, models, systems }) => (
                 <article key={brand} className="filter-showcase__card filter-showcase__card--application vehicle-application-card">

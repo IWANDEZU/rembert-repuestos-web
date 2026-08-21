@@ -11,12 +11,12 @@ const groups = {
   renaultKorean: ["Renault, Kia y Hyundai", "Logan, Sandero, Stepway, Duster, Picanto, Rio, Sportage, i10, Accent y Tucson"],
 };
 
-function product({ id, name, brand = "Multimarca", sku, image, group = groups.general, system, position, description, checks, source }) {
+function product({ id, name, brand = "Multimarca", sku, image, group = groups.general, system, position, description, checks, source, marketRange }) {
   return {
     id, name, slug: id, category,
     brand: { name: brand, slug: brand.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "") },
     price: 0, sku,
-    shortDesc: `${system}; selección técnica por VIN y muestra.`,
+    shortDesc: `${system}; selección técnica por VIN y muestra.${marketRange ? ` Mercado colombiano observado: ${marketRange}.` : ""}`,
     description: `${description} Compatible con ${group[0]} (${group[1]}). Cotización por VIN y muestra.`,
     image,
     images: [{ url: image, alt: name, isMain: true }],
@@ -25,6 +25,8 @@ function product({ id, name, brand = "Multimarca", sku, image, group = groups.ge
       { id: `${id}-position`, name: "Posición", value: position },
       { id: `${id}-brands`, name: "Marcas", value: group[0] },
       { id: `${id}-checks`, name: "Validación", value: checks },
+      ...(marketRange ? [{ id: `${id}-market`, name: "Precio orientativo Colombia", value: `${marketRange}. No es precio de venta; cambia por referencia, marca y proveedor.` }] : []),
+      ...(source ? [{ id: `${id}-source`, name: "Fuente técnica/comercial", value: source }] : []),
     ],
     inStock: false,
     stock: 0,
@@ -37,24 +39,28 @@ export const frenosSuspensionProducts = [
     system: "Suspensión delantera — brazo de control o tijera completa", position: "Delantera izquierda o derecha",
     description: "Conjunto de brazo de control con bujes y rótula cuando la aplicación lo incluye.",
     checks: "VIN, lado, diámetro de rótula, anclajes, tipo de buje y rótula integrada", source: "Catálogo oficial MOOG de trapecios, rótulas y silentblocs",
+    marketRange: "$153.000–$520.000 COP por unidad, según vehículo y contenido",
   }),
   product({
     id: "moog-rotula-suspension-delantera-gasolina", name: "Rótula de Suspensión Delantera MOOG — Referencia según Vehículo", brand: "MOOG", sku: "MOOG-BALL-JOINT-COT", image: images.steering,
     system: "Suspensión delantera — rótula inferior o superior", position: "Delantera; inferior o superior",
     description: "Articulación esférica entre la mangueta y el brazo de suspensión.",
     checks: "VIN, posición, montaje prensado/atornillado, diámetro del cono y material de mangueta", source: "Catálogo oficial MOOG de rótulas de suspensión",
+    marketRange: "$45.000–$180.000 COP por unidad",
   }),
   product({
     id: "moog-terminal-direccion-exterior-gasolina", name: "Terminal de Dirección Exterior MOOG — Referencia según Vehículo", brand: "MOOG", sku: "MOOG-TIE-ROD-END-COT", image: "/catalogo-frenos-suspension/moog-terminal-direccion-empaque-catalogo.webp",
     system: "Dirección — terminal exterior", position: "Delantera izquierda o derecha",
     description: "Terminal articulado que transmite el movimiento de la cremallera a la mangueta.",
     checks: "VIN, lado, longitud, paso de rosca, diámetro del cono y tipo de cremallera", source: "Catálogo oficial MOOG de rótulas de dirección",
+    marketRange: "$45.000–$160.000 COP por unidad",
   }),
   product({
     id: "moog-axial-direccion-interior-gasolina", name: "Axial de Dirección Interior MOOG — Referencia según Vehículo", brand: "MOOG", sku: "MOOG-INNER-TIE-ROD-COT", image: "/catalogo-frenos-suspension/moog-rotula-axial-empaque-catalogo.webp",
     system: "Dirección — rótula axial interior", position: "Delantera izquierda o derecha",
     description: "Articulación interior que conecta la cremallera con el terminal exterior.",
     checks: "VIN, fabricante de cremallera, largo total y roscas interior/exterior", source: "Catálogo oficial MOOG de rótulas axiales",
+    marketRange: "$55.000–$190.000 COP por unidad",
   }),
   product({
     id: "moog-guardapolvos-cremallera-direccion-gasolina", name: "Kit Guardapolvos de Cremallera de Dirección MOOG — Referencia según Vehículo", brand: "MOOG", sku: "MOOG-RACK-GAITER-COT", image: "/catalogo-frenos-suspension/moog-guardapolvos-direccion-empaque-catalogo.webp",
@@ -73,6 +79,7 @@ export const frenosSuspensionProducts = [
     system: "Suspensión — silentblocs y bujes de brazo de control", position: "Delantera o trasera",
     description: "Bujes elastoméricos que aíslan vibración y conservan la posición del brazo bajo carga.",
     checks: "VIN, eje, brazo, diámetro interior/exterior, ancho y orientación", source: "Catálogo oficial MOOG de silentblocs y kits de reparación",
+    marketRange: "$35.700–$160.000 COP según buje o juego",
   }),
   product({
     id: "gabriel-soporte-amortiguador-rodamiento-gasolina", name: "Soporte de Amortiguador con Rodamiento — Referencia según Vehículo", brand: "Gabriel", sku: "GAB-STRUT-MOUNT-COT", image: images.mounts,
@@ -85,6 +92,7 @@ export const frenosSuspensionProducts = [
     system: "Suspensión — protección de vástago y tope de compresión", position: "Delantera o trasera",
     description: "Protege el vástago de contaminación y limita el recorrido extremo del amortiguador.",
     checks: "VIN, eje, diámetro de vástago, longitud de guardapolvo y diseño del tope", source: "Gabriel de Colombia — partes de suspensión",
+    marketRange: "$45.000–$140.000 COP por kit",
   }),
   product({
     id: "bomba-freno-maestra-chevrolet-gasolina", name: "Bomba Maestra de Freno — Chevrolet Gasolina", sku: "BRK-MASTER-CHEV-COT", image: images.hydraulic, group: groups.chevrolet,
@@ -127,5 +135,55 @@ export const frenosSuspensionProducts = [
     system: "Freno mecánico/hidráulico — campana trasera", position: "Eje trasero",
     description: "Campana para aplicaciones con zapatas; algunas versiones integran cubo, rodamiento o aro ABS.",
     checks: "VIN, diámetro interior, altura, perforación, centro, rodamiento y aro ABS", source: "Catálogos Fras-le/Incolbest y equivalencias OE",
+    marketRange: "$205.000–$355.800 COP el par en compactos; otras aplicaciones varían",
+  }),
+  product({
+    id: "pastillas-freno-traseras-gasolina", name: "Pastillas de Freno Traseras — Referencia según Vehículo", brand: "Incolbest / Bosch / Fras-le", sku: "BRK-REAR-PAD-COT", image: "/incolbest-pastillas-menu.webp",
+    system: "Freno de disco — pastillas traseras", position: "Eje trasero",
+    description: "Juego de pastillas para vehículos con freno de disco trasero; algunas versiones incorporan avisador o sensor de desgaste.",
+    checks: "VIN, año, motor, eje, fabricante de mordaza, forma FMSI, espesor y sensor", source: "Catálogos Incolbest, Bosch y Fras-le; referencia comercial Azupartes Renault Megane",
+    marketRange: "$60.000–$180.000 COP por juego",
+  }),
+  product({
+    id: "mordaza-caliper-freno-completa-gasolina", name: "Mordaza o Caliper de Freno Completo — Referencia según Vehículo", sku: "BRK-CALIPER-COT", image: images.hydraulic,
+    system: "Freno de disco — mordaza completa", position: "Delantera o trasera; izquierda o derecha",
+    description: "Conjunto de mordaza que aloja pistón y pastillas; puede venderse con o sin soporte, guías y motor eléctrico de estacionamiento.",
+    checks: "VIN, eje, lado, diámetro y cantidad de pistones, soporte, purgador, freno eléctrico y fabricante", source: "Catálogos Bosch Automotive Aftermarket y Brake Pak Colombia",
+    marketRange: "$180.000–$850.000 COP por unidad",
+  }),
+  product({
+    id: "kit-guias-pasadores-mordaza-gasolina", name: "Kit de Guías y Pasadores de Mordaza — Referencia según Vehículo", sku: "BRK-CALIPER-SLIDE-COT", image: images.hydraulic,
+    system: "Freno de disco — guías, pasadores y guardapolvos", position: "Mordaza delantera o trasera",
+    description: "Kit para recuperar el deslizamiento controlado de la mordaza flotante cuando las guías presentan corrosión, juego o bloqueo.",
+    checks: "VIN, fabricante de mordaza, eje, diámetro, longitud, rosca y contenido del kit", source: "Oferta Brake Pak Colombia y catálogos de reparación de mordaza",
+    marketRange: "$35.900–$79.800 COP por kit",
+  }),
+  product({
+    id: "servofreno-booster-vacio-gasolina", name: "Servofreno o Booster de Vacío — Referencia según Vehículo", sku: "BRK-BOOSTER-COT", image: images.hydraulic,
+    system: "Asistencia de freno — servofreno por vacío", position: "Mamparo del compartimiento del motor",
+    description: "Multiplica el esfuerzo del pedal mediante vacío; no incluye bomba maestra salvo que la referencia indique conjunto completo.",
+    checks: "VIN, diámetro, patrón de pernos, longitud de vástagos, válvula, bomba compatible y sistema de asistencia", source: "Brake Pak / Disbrake Colombia; precios publicados para Chevrolet Spark",
+    marketRange: "$327.900–$520.000 COP por unidad en compactos",
+  }),
+  product({
+    id: "cable-freno-estacionamiento-gasolina", name: "Cable de Freno de Estacionamiento — Referencia según Vehículo", sku: "BRK-PARK-CABLE-COT", image: images.hydraulic,
+    system: "Freno de estacionamiento — cable mecánico", position: "Central, izquierdo o derecho según diseño",
+    description: "Transmite el accionamiento de la palanca o pedal a las ruedas traseras; algunos vehículos utilizan varios tramos.",
+    checks: "VIN, carrocería, longitud, terminales, soportes, lado y cantidad de cables", source: "Catálogos de freno Bosch y equivalencias OE",
+    marketRange: "$55.000–$220.000 COP por tramo",
+  }),
+  product({
+    id: "resorte-helicoidal-suspension-gasolina", name: "Resorte Helicoidal de Suspensión — Referencia según Vehículo", brand: "Gabriel / Multimarca", sku: "SUS-COIL-SPRING-COT", image: images.mounts,
+    system: "Suspensión — resorte helicoidal", position: "Delantero o trasero; venta por unidad o par según referencia",
+    description: "Elemento elástico que sostiene la carga y determina altura de marcha; debe emparejarse por eje y especificación.",
+    checks: "VIN, eje, carrocería, motor, carga, diámetro de alambre, altura y código de color", source: "Catálogos de suspensión Gabriel y equivalencias OE",
+    marketRange: "$120.000–$420.000 COP por unidad",
+  }),
+  product({
+    id: "cubo-rodamiento-rueda-abs-gasolina", name: "Cubo y Rodamiento de Rueda con/sin ABS — Referencia según Vehículo", brand: "MOOG / SKF / FAG", sku: "HUB-BEARING-COT", image: images.sensors,
+    system: "Rodamiento y cubo de rueda", position: "Delantero o trasero; izquierda o derecha",
+    description: "Conjunto que soporta la rueda; según aplicación integra brida, rodamiento, sensor o aro magnético ABS.",
+    checks: "VIN, eje, tracción, perforación, diámetro, estrías, sensor ABS y aro magnético", source: "MOOG — rodamientos de rueda; catálogos SKF/FAG",
+    marketRange: "$140.000–$650.000 COP por unidad",
   }),
 ];
