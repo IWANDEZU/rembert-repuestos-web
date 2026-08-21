@@ -239,6 +239,16 @@ export default function RootLayout({ children }) {
 
             {/* Navbar */}
             <nav className="navbar">
+              <div className="navbar__floating-logo" aria-hidden="true">
+                <Image
+                  src="/logo-rembert-v5.png"
+                  alt=""
+                  width={300}
+                  height={110}
+                  priority={false}
+                  sizes="300px"
+                />
+              </div>
               <div className="navbar__main">
                 {/* Brand / Logo + 38 Años de Experiencia Debajo */}
                 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: '0.35rem' }}>
