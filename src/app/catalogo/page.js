@@ -19,37 +19,37 @@ export async function generateMetadata({ searchParams }) {
   const tipoParam = resolvedParams?.tipo;
   const searchQuery = resolvedParams?.search || resolvedParams?.q;
 
-  let title = "Catálogo de productos";
+  let title = "Repuestos para Automóviles de Todas las Marcas | REMBERT";
   let description =
-    "Explora nuestro catálogo de filtros, siliconas, frenos, radiadores y repuestos en Rembert Repuestos BCA. Atención en Barrancabermeja y envíos a toda Colombia.";
+    "Encuentra repuestos originales y alternativos para automóviles de todas las marcas en Rembert Repuestos BCA. Filtros, siliconas, frenos, radiadores y más con envíos a toda Colombia.";
 
   const categoryTitles = {
-    filtros: "Filtros Automotrices e Industriales",
-    siliconas: "Siliconas y Sellantes Automotrices",
+    filtros: "Filtros Automotrices",
+    siliconas: "Siliconas y Sellantes",
     mantenimiento: "Mantenimiento Automotriz",
-    "frenos-y-suspension": "Frenos y Suspensión Automotriz",
-    transmision: "Cajas y Transmisiones Automotrices",
+    "frenos-y-suspension": "Frenos y Suspensión",
+    transmision: "Cajas y Transmisiones",
     "electrico-y-encendido": "Sistema Eléctrico y Encendido",
     "motor-y-distribucion": "Motor y Distribución",
     embrague: "Embragues y Clutch",
     "rodamientos-y-traccion": "Rodamientos y Tracción",
-    radiadores: "Radiadores y Sistema de Enfriamiento",
-    "servicio-tecnico": "Servicio Técnico y Taller Especializado",
+    radiadores: "Radiadores y Sistema Térmico",
+    "servicio-tecnico": "Servicio Técnico Especializado",
   };
 
   if (categoryParam && categoryTitles[categoryParam]) {
-    title = categoryTitles[categoryParam];
-    description = `Compra ${categoryTitles[categoryParam].toLowerCase()} al mejor precio en Rembert Repuestos BCA Barrancabermeja. Productos originales con envíos a toda Colombia.`;
+    title = `Repuestos para Automóviles de Todas las Marcas - ${categoryTitles[categoryParam]} | REMBERT`;
+    description = `Compra ${categoryTitles[categoryParam].toLowerCase()} y repuestos para automóviles de todas las marcas al mejor precio en Rembert Repuestos BCA Barrancabermeja. Envíos seguros a todo el país.`;
   }
 
   if (brandParam) {
     const brandName = brandParam.charAt(0).toUpperCase() + brandParam.slice(1);
-    title = `Productos ${brandName}`;
-    description = `Catálogo oficial de productos ${brandName} en Barrancabermeja. Lubricantes y filtros originales para tu motor en Rembert Repuestos BCA.`;
+    title = `Repuestos para Automóviles ${brandName} y Todas las Marcas | REMBERT`;
+    description = `Catálogo oficial de repuestos para automóviles ${brandName} y todas las marcas en Barrancabermeja. Filtros, lubricantes y piezas originales en Rembert Repuestos BCA.`;
   }
 
   if (searchQuery) {
-    title = `Búsqueda: ${searchQuery}`;
+    title = `Repuestos ${searchQuery} para Automóviles de Todas las Marcas | REMBERT`;
   }
 
   const queryParams = new URLSearchParams();
@@ -72,8 +72,22 @@ export async function generateMetadata({ searchParams }) {
       title,
       description,
       url: `${siteUrl}${canonicalPath}`,
-      siteName: "Rembert Repuestos BCA",
+      siteName: "REMBERT Repuestos BCA",
       type: "website",
+      images: [
+        {
+          url: `${siteUrl}/logo.png`,
+          width: 1011,
+          height: 387,
+          alt: "REMBERT - Repuestos para Automóviles de Todas las Marcas",
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: [`${siteUrl}/logo.png`],
     },
   };
 }
