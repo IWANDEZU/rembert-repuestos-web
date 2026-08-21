@@ -3,6 +3,7 @@
 import { useCart } from "@/components/CartContext";
 import { useState } from "react";
 import { generateWhatsAppProductText, getWhatsAppUrl } from "@/lib/orderFormatter";
+import WhatsAppIcon from "@/components/WhatsAppIcon";
 
 export default function PrioridadDieselCard({ product, onSelect }) {
   const { addToCart } = useCart();
@@ -306,16 +307,21 @@ export default function PrioridadDieselCard({ product, onSelect }) {
               fontSize: "0.82rem",
               fontWeight: "bold",
               background: "#25D366",
-              color: "#000",
+              color: "#FFFFFF",
               border: "none",
               borderRadius: "6px",
               textDecoration: "none",
               textAlign: "center",
-              display: "block",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              gap: "6px",
+              boxShadow: "0 2px 6px rgba(37, 211, 102, 0.25)",
               transition: "opacity 0.2s ease",
             }}
           >
-            💬 Confirmar Compatibilidad por VIN
+            <WhatsAppIcon size={16} color="#FFFFFF" />
+            <span>Confirmar Compatibilidad por VIN</span>
           </a>
         </div>
       </div>

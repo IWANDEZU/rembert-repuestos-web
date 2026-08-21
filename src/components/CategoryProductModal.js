@@ -5,6 +5,7 @@ import { useCart } from "@/components/CartContext";
 import Image from "next/image";
 import { getProductDisplayImage } from "@/lib/productImage";
 import { generateWhatsAppProductText, getWhatsAppUrl } from "@/lib/orderFormatter";
+import WhatsAppIcon from "@/components/WhatsAppIcon";
 
 const getMainImage = (product) => getProductDisplayImage(product);
 const getFirstVariant = (product) => product?.variants?.[0] || null;
@@ -472,14 +473,16 @@ export default function CategoryProductModal({ products, initialIndex = 0, onClo
                   gap: "8px",
                   padding: "10px",
                   borderRadius: "8px",
-                  border: "1px solid #25D366",
+                  border: "1.5px solid #25D366",
+                  background: "rgba(37, 211, 102, 0.08)",
                   color: "#25D366",
                   textDecoration: "none",
                   fontWeight: "bold",
                   fontSize: "0.85rem",
                 }}
               >
-                💬 Comprar por WhatsApp (+57 310 873 7354)
+                <WhatsAppIcon size={18} color="#25D366" />
+                <span>Comprar por WhatsApp (+57 310 873 7354)</span>
               </a>
             </div>
           </div>

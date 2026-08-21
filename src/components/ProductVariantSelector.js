@@ -6,6 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { getProductDisplayImage } from "@/lib/productImage";
 import { generateWhatsAppProductText, getWhatsAppUrl } from "@/lib/orderFormatter";
+import WhatsAppIcon from "@/components/WhatsAppIcon";
 
 export default function ProductVariantSelector({ product }) {
   const [selectedVariant, setSelectedVariant] = useState(
@@ -441,16 +442,17 @@ export default function ProductVariantSelector({ product }) {
                 gap: '10px', 
                 padding: '12px', 
                 borderRadius: '8px', 
-                borderColor: '#25D366', 
+                background: 'rgba(37, 211, 102, 0.08)',
+                border: '1.5px solid #25D366', 
                 color: '#25D366',
                 textDecoration: 'none',
                 fontWeight: 'bold',
                 fontSize: '0.95rem'
               }}
             >
-              Cotizar por WhatsApp (+57 310 873 7354)
+              <WhatsAppIcon size={20} color="#25D366" />
+              <span>Cotizar por WhatsApp (+57 310 873 7354)</span>
             </a>
-
 
           </div>
 
@@ -506,7 +508,7 @@ export default function ProductVariantSelector({ product }) {
               fontSize: '0.95rem'
             }}
           >
-            🚚 Envíos y Garantía
+            🚚 Envío & Garantía
           </button>
         </div>
 
@@ -514,17 +516,23 @@ export default function ProductVariantSelector({ product }) {
         <div style={{ padding: '30px' }}>
           
           {activeTab === "desc" && (
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '15px', color: '#ccc', lineHeight: '1.7' }}>
-              <h3 style={{ color: '#fff', fontSize: '1.2rem' }}>Descripción y aplicación de {product.name}</h3>
-              <p>{product.description || 'Producto certificado de alta calidad diseñado para condiciones de operación extremas.'}</p>
-              <p><strong style={{ color: 'var(--primary-color)' }}>Compatibilidad:</strong> {compatibleBrands}</p>
-              <p><strong style={{ color: 'var(--primary-color)' }}>Modelos y versiones:</strong> {compatibleModels}</p>
+            <div style={{ color: '#ccc', lineHeight: '1.7', display: 'flex', flexDirection: 'column', gap: '15px' }}>
+              <h3 style={{ color: '#fff', fontSize: '1.2rem' }}>Detalles del Producto y Recomendaciones</h3>
+              <p>{product.description || 'Producto de alto rendimiento con los más exigentes estándares de calidad de la industria automotriz y de maquinaria pesada.'}</p>
+              
+              <div style={{ background: '#111', padding: '20px', borderRadius: '10px', border: '1px solid #222', marginTop: '10px' }}>
+                <h4 style={{ color: 'var(--primary-color)', marginBottom: '8px' }}>💡 Beneficios Clave:</h4>
+                <ul style={{ paddingLeft: '20px', color: '#aaa' }}>
+                  <li>Protección superior en condiciones severas de operación.</li>
+                  <li>Reduce la fricción y optimiza el consumo y rendimiento.</li>
+                  <li>Compatibilidad garantizada según especificaciones OEM de fabricante.</li>
+                </ul>
+              </div>
             </div>
           )}
 
           {activeTab === "specs" && (
             <div>
-              <h3 style={{ color: '#fff', fontSize: '1.2rem', marginBottom: '15px' }}>Ficha Técnica del Producto</h3>
               <table style={{ width: '100%', borderCollapse: 'collapse', color: '#ccc', fontSize: '0.95rem' }}>
                 <tbody>
                   <tr style={{ borderBottom: '1px solid #222' }}>

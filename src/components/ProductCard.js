@@ -7,6 +7,7 @@ import { useSession } from "@/components/AuthProvider";
 import { useRouter } from "next/navigation";
 import { getProductDisplayImage } from "@/lib/productImage";
 import { generateWhatsAppProductText, getWhatsAppUrl } from "@/lib/orderFormatter";
+import WhatsAppIcon from "@/components/WhatsAppIcon";
 
 export default function ProductCard({ product, onExpand, isFavorite = false }) {
   const { addToCart } = useCart();
@@ -92,6 +93,18 @@ export default function ProductCard({ product, onExpand, isFavorite = false }) {
   return (
     <article
       className="product-card hover-card"
+      style={{
+        background: "#FFFFFF",
+        border: "1px solid #E2E8F0",
+        borderRadius: "14px",
+        padding: "1rem",
+        display: "flex",
+        flexDirection: "column",
+        height: "100%",
+        boxShadow: "0 2px 8px rgba(0,0,0,0.04)",
+        transition: "transform 0.2s ease, box-shadow 0.2s ease",
+        position: "relative",
+      }}
     >
       <div
         className="product-card__media"
@@ -143,174 +156,201 @@ export default function ProductCard({ product, onExpand, isFavorite = false }) {
             alignItems: "center",
             justifyContent: "center",
             cursor: "pointer",
-            boxShadow: "0 2px 6px rgba(0,0,0,0.08)",
-            zIndex: 10,
+            boxShadow: "0 2px 6px rgba(0,0,0,0.1)",
+            zIndex: 3,
+            transition: "transform 0.2s ease",
           }}
         >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill={favorite ? "#e63946" : "none"}
-            stroke={favorite ? "#e63946" : "#666"}
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            width="18"
-            height="18"
-          >
-            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
-          </svg>
-        </button>
-
-        <button
-          type="button"
-          onClick={handleViewExpanded}
-          title="Ver ficha técnica"
-          style={{
-            position: "absolute",
-            bottom: "6px",
-            right: "6px",
-            background: "#111111",
-            color: "var(--primary-color)",
-            border: "1px solid #333",
-            borderRadius: "16px",
-            padding: "4px 8px",
-            fontSize: "0.72rem",
-            fontWeight: "bold",
-            cursor: "pointer",
-            zIndex: 10,
-          }}
-        >
-          Ficha técnica
-        </button>
-      </div>
-
-      <h3
-        style={{
-          fontSize: "0.98rem",
-          fontWeight: "700",
-          marginBottom: "0.25rem",
-          lineHeight: "1.35",
-          color: "#111111",
-          minHeight: "2.6rem",
-          display: "-webkit-box",
-          WebkitLineClamp: 2,
-          WebkitBoxOrient: "vertical",
-          overflow: "hidden",
-        }}
-      >
-        <a href={`/producto/${product.slug || product.id}`} style={{ color: "inherit", textDecoration: "none" }}>
-          {product.name}
-        </a>
-      </h3>
-
-      <p style={{ color: "#5A6A80", fontSize: "0.82rem", marginBottom: "0.35rem", fontWeight: "500" }}>
-        {product.brand?.name || product.brand || "Rembert Repuestos BCA"}
-      </p>
-
-      {compatibilityAttribute?.value && (
-        <p style={{ color: "#334155", fontSize: "0.78rem", lineHeight: "1.35", marginBottom: "0.55rem", display: "-webkit-box", WebkitLineClamp: 2, WebkitBoxOrient: "vertical", overflow: "hidden" }}>
-          <strong>Compatible:</strong> {compatibilityAttribute.value}
-        </p>
-      )}
-
-      <div style={{ marginBottom: "0.65rem" }}>
-        <span className="product-reference">
-          Ref. {product.sku || (product.id ? `REM-${String(product.id).slice(-6).toUpperCase()}` : "REM-BCA")}
-        </span>
-      </div>
-
-      <p style={{ fontSize: "1.25rem", fontWeight: "800", color: "#111111", marginBottom: "0.85rem" }}>
-        {product.price > 0 ? (
-          <span>
-            <span style={{ color: "#B8860B", fontSize: "1rem", marginRight: "2px" }}>$</span>
-            {Number(product.price).toLocaleString("es-CO")}
+          <span style={{ fontSize: "1rem", color: favorite ? "#EF4444" : "#94A3B8" }}>
+            {favorite ? "❤️" : "🤍"}
           </span>
-        ) : (
-          <span style={{ color: "#B8860B", fontSize: "0.95rem" }}>Precio bajo cotización</span>
-        )}
-      </p>
-
-      <div style={{ display: "flex", flexDirection: "column", gap: "6px", marginTop: "auto" }}>
-        <button
-          type="button"
-          onClick={handleViewExpanded}
-          style={{
-            padding: "0.5rem 0.6rem",
-            fontSize: "0.8rem",
-            fontWeight: "700",
-            width: "100%",
-            cursor: "pointer",
-            border: "1px solid #E2E8F0",
-            background: "#F1F5F9",
-            color: "#334155",
-            borderRadius: "8px",
-            transition: "all 0.2s ease",
-          }}
-        >
-          🔍 Vista ampliada
-        </button>
-
-        <button
-          type="button"
-          onClick={handleAddToCart}
-          className="btn-add-to-cart"
-          style={{
-            padding: "0.65rem 0.8rem",
-            fontSize: "0.85rem",
-            fontWeight: "800",
-            width: "100%",
-            borderRadius: "8px",
-            border: added ? "1.5px solid #16A34A" : "1.5px solid #FFD700",
-            background: added ? "#16A34A" : "#111111",
-            color: added ? "#FFFFFF" : "#FFD700",
-            display: "inline-flex",
-            alignItems: "center",
-            justifyContent: "center",
-            gap: "0.45rem",
-            cursor: "pointer",
-            boxShadow: added ? "0 0 10px rgba(22, 163, 74, 0.5)" : "0 2px 8px rgba(0, 0, 0, 0.4)",
-            transition: "all 0.22s ease",
-          }}
-        >
-          {added ? (
-            <>
-              <span>✓</span>
-              <span>¡Agregado al carrito!</span>
-            </>
-          ) : (
-            <>
-              <span style={{ color: "#FFD700", fontSize: "1rem" }}>🛒</span>
-              <span>Añadir al carrito</span>
-            </>
-          )}
         </button>
 
         <a
-          href={quoteUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="btn product-card__whatsapp-quote"
+          href={`/producto/${product.slug || product.id}`}
           style={{
-            padding: "0.55rem 0.8rem",
-            fontSize: "0.82rem",
+            position: "absolute",
+            bottom: "8px",
+            right: "8px",
+            background: "rgba(0, 0, 0, 0.9)",
+            color: "#FFF",
+            borderRadius: "999px",
+            padding: "3px 8px",
+            fontSize: "0.68rem",
             fontWeight: "bold",
-            width: "100%",
-            background: "#25D366",
-            color: "#071b0d",
-            border: "none",
-            borderRadius: "6px",
-            textAlign: "center",
             textDecoration: "none",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            gap: "6px",
-            transition: "opacity 0.2s ease",
+            zIndex: 2,
+            border: "1px solid rgba(255,255,255,0.2)",
           }}
         >
-          💬 Cotizar por WhatsApp
+          Ficha técnica
         </a>
+      </div>
+
+      <div style={{ margin: "0.75rem 0 0.5rem" }}>
+        <h3
+          style={{
+            fontSize: "0.95rem",
+            fontWeight: "700",
+            color: "#1E293B",
+            lineHeight: "1.3",
+            marginBottom: "0.35rem",
+            display: "-webkit-box",
+            WebkitLineClamp: 2,
+            WebkitBoxOrient: "vertical",
+            overflow: "hidden",
+            minHeight: "2.5rem",
+          }}
+        >
+          <a
+            href={`/producto/${product.slug || product.id}`}
+            style={{ color: "inherit", textDecoration: "none" }}
+          >
+            {product.name}
+          </a>
+        </h3>
+
+        {product.brand && (
+          <span style={{ fontSize: "0.78rem", fontWeight: "600", color: "#64748B", display: "block" }}>
+            {typeof product.brand === "string" ? product.brand : product.brand.name}
+          </span>
+        )}
+
+        {compatibilityAttribute?.value ? (
+          <p
+            style={{
+              fontSize: "0.74rem",
+              color: "#475569",
+              background: "#F8FAFC",
+              border: "1px solid #E2E8F0",
+              borderRadius: "6px",
+              padding: "4px 6px",
+              marginTop: "0.35rem",
+              lineHeight: "1.25",
+              display: "-webkit-box",
+              WebkitLineClamp: 2,
+              WebkitBoxOrient: "vertical",
+              overflow: "hidden",
+            }}
+            title={compatibilityAttribute.value}
+          >
+            <strong>Aplica:</strong> {compatibilityAttribute.value}
+          </p>
+        ) : null}
+
+        {product.sku && (
+          <span
+            style={{
+              fontSize: "0.7rem",
+              fontFamily: "monospace",
+              color: "#664d03",
+              background: "#fff3cd",
+              padding: "2px 6px",
+              borderRadius: "4px",
+              display: "inline-block",
+              marginTop: "0.25rem",
+            }}
+          >
+            Ref. {product.sku}
+          </span>
+        )}
+      </div>
+
+      <div style={{ marginTop: "auto", paddingTop: "0.5rem" }}>
+        <p style={{ fontSize: "1.25rem", fontWeight: "800", color: "#111111", marginBottom: "0.65rem" }}>
+          {product.price > 0 ? (
+            <span>
+              <span style={{ color: "#B8860B", fontSize: "1rem", marginRight: "2px" }}>$</span>
+              {Number(product.price).toLocaleString("es-CO")}
+            </span>
+          ) : (
+            <span style={{ color: "#B8860B", fontSize: "0.95rem" }}>Precio bajo cotización</span>
+          )}
+        </p>
+
+        <div style={{ display: "flex", flexDirection: "column", gap: "6px" }}>
+          <button
+            type="button"
+            onClick={handleViewExpanded}
+            style={{
+              padding: "0.5rem 0.6rem",
+              fontSize: "0.8rem",
+              fontWeight: "700",
+              width: "100%",
+              cursor: "pointer",
+              border: "1px solid #E2E8F0",
+              background: "#F1F5F9",
+              color: "#334155",
+              borderRadius: "8px",
+              transition: "all 0.2s ease",
+            }}
+          >
+            🔍 Vista ampliada
+          </button>
+
+          <button
+            type="button"
+            onClick={handleAddToCart}
+            className="btn-add-to-cart"
+            style={{
+              padding: "0.65rem 0.8rem",
+              fontSize: "0.85rem",
+              fontWeight: "800",
+              width: "100%",
+              borderRadius: "8px",
+              border: added ? "1.5px solid #16A34A" : "1.5px solid #FFD700",
+              background: added ? "#16A34A" : "#111111",
+              color: added ? "#FFFFFF" : "#FFD700",
+              display: "inline-flex",
+              alignItems: "center",
+              justifyContent: "center",
+              gap: "0.45rem",
+              cursor: "pointer",
+              boxShadow: added ? "0 0 10px rgba(22, 163, 74, 0.5)" : "0 2px 8px rgba(0, 0, 0, 0.4)",
+              transition: "all 0.22s ease",
+            }}
+          >
+            {added ? (
+              <>
+                <span>✓</span>
+                <span>¡Agregado al carrito!</span>
+              </>
+            ) : (
+              <>
+                <span style={{ color: "#FFD700", fontSize: "1rem" }}>🛒</span>
+                <span>Añadir al carrito</span>
+              </>
+            )}
+          </button>
+
+          <a
+            href={quoteUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn product-card__whatsapp-quote"
+            style={{
+              padding: "0.55rem 0.8rem",
+              fontSize: "0.82rem",
+              fontWeight: "bold",
+              width: "100%",
+              background: "#25D366",
+              color: "#FFFFFF",
+              border: "none",
+              borderRadius: "6px",
+              textAlign: "center",
+              textDecoration: "none",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              gap: "7px",
+              boxShadow: "0 2px 6px rgba(37, 211, 102, 0.25)",
+              transition: "opacity 0.2s ease, transform 0.2s ease",
+            }}
+          >
+            <WhatsAppIcon size={17} color="#FFFFFF" />
+            <span>COTIZAR POR WHATSAPP</span>
+          </a>
+        </div>
       </div>
     </article>
   );

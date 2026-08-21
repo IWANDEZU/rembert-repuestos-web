@@ -3,6 +3,7 @@
 import { useEffect, useState, useCallback } from "react";
 import { useCart } from "@/components/CartContext";
 import { generateWhatsAppProductText, getWhatsAppUrl } from "@/lib/orderFormatter";
+import WhatsAppIcon from "@/components/WhatsAppIcon";
 
 export default function PrioridadDieselModal({ products, initialIndex, onClose }) {
   const [currentIndex, setCurrentIndex] = useState(initialIndex);
@@ -404,15 +405,19 @@ export default function PrioridadDieselModal({ products, initialIndex, onClose }
                 fontSize: "0.9rem",
                 fontWeight: "bold",
                 background: "#25D366",
-                color: "#000",
+                color: "#FFFFFF",
                 borderRadius: "8px",
                 textDecoration: "none",
                 textAlign: "center",
-                display: "block",
-                boxShadow: "0 4px 12px rgba(37, 211, 102, 0.2)",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                gap: "8px",
+                boxShadow: "0 4px 12px rgba(37, 211, 102, 0.3)",
               }}
             >
-              💬 Cotizar y Validar VIN por WhatsApp
+              <WhatsAppIcon size={18} color="#FFFFFF" />
+              <span>Cotizar y Validar VIN por WhatsApp</span>
             </a>
 
             {/* Botón Volver Inferior */}
