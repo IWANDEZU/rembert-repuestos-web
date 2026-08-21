@@ -22,13 +22,13 @@ export default function ContactoPage() {
     <div className="main-container" style={{ padding: "3rem 1rem", minHeight: "70vh" }}>
       {/* Encabezado */}
       <div style={{ textAlign: "center", marginBottom: "2.5rem" }}>
-        <span style={{ 
-          background: "var(--primary-color)", 
-          color: "#111", 
-          fontWeight: "800", 
-          fontSize: "0.85rem", 
-          padding: "0.35rem 0.9rem", 
-          borderRadius: "20px", 
+        <span style={{
+          background: "var(--primary-color)",
+          color: "#111",
+          fontWeight: "800",
+          fontSize: "0.85rem",
+          padding: "0.35rem 0.9rem",
+          borderRadius: "20px",
           textTransform: "uppercase",
           letterSpacing: "0.5px"
         }}>
@@ -87,17 +87,17 @@ export default function ContactoPage() {
             </div>
             <p style={{ color: "#aaa", fontSize: "0.88rem", marginBottom: "0.75rem" }}>Tv. 29, Barrancabermeja, Santander</p>
             <div style={{ display: "flex", flexDirection: "column", gap: "0.4rem" }}>
-              <a 
-                href="https://wa.me/573102420490?text=Hola%2C%20me%20comunico%20con%20Punto%20Principal%20de%20Rembert%20Repuestos." 
-                target="_blank" 
+              <a
+                href="https://wa.me/573102420490?text=Hola%2C%20me%20comunico%20con%20Punto%20Principal%20de%20Rembert%20Repuestos."
+                target="_blank"
                 rel="noopener noreferrer"
                 style={{ color: "#fff", textDecoration: "none", display: "inline-flex", alignItems: "center", gap: "0.5rem", fontWeight: "bold", fontSize: "0.95rem" }}
               >
                 <span style={{ color: "#25D366" }}>📱 WhatsApp:</span> 310 242 0490
               </a>
-              <a 
-                href="https://wa.me/573125022555?text=Hola%2C%20me%20comunico%20con%20Punto%20Principal%20de%20Rembert%20Repuestos." 
-                target="_blank" 
+              <a
+                href="https://wa.me/573125022555?text=Hola%2C%20me%20comunico%20con%20Punto%20Principal%20de%20Rembert%20Repuestos."
+                target="_blank"
                 rel="noopener noreferrer"
                 style={{ color: "#fff", textDecoration: "none", display: "inline-flex", alignItems: "center", gap: "0.5rem", fontWeight: "bold", fontSize: "0.95rem" }}
               >
@@ -114,9 +114,9 @@ export default function ContactoPage() {
             </div>
             <p style={{ color: "#aaa", fontSize: "0.88rem", marginBottom: "0.75rem" }}>Sector El Cerro, Barrancabermeja</p>
             <div>
-              <a 
-                href="https://wa.me/573102707375?text=Hola%2C%20me%20comunico%20con%20Punto%20El%20Cerro%20de%20Rembert%20Repuestos." 
-                target="_blank" 
+              <a
+                href="https://wa.me/573102707375?text=Hola%2C%20me%20comunico%20con%20Punto%20El%20Cerro%20de%20Rembert%20Repuestos."
+                target="_blank"
                 rel="noopener noreferrer"
                 style={{ color: "#fff", textDecoration: "none", display: "inline-flex", alignItems: "center", gap: "0.5rem", fontWeight: "bold", fontSize: "0.95rem" }}
               >
@@ -133,10 +133,10 @@ export default function ContactoPage() {
             </div>
             <p style={{ color: "#aaa", fontSize: "0.88rem", marginBottom: "0.75rem" }}>Gestión de stock, pedidos al por mayor, talleres y flotas de transporte</p>
             <div>
-              <a 
-                href="https://wa.me/573508299233?text=Hola%2C%20me%20comunico%20con%20Compras%20e%20Inventario%20de%20Rembert%20Repuestos." 
-                target="_blank" 
-                rel="noopener noreferrer" 
+              <a
+                href="https://wa.me/573508299233?text=Hola%2C%20me%20comunico%20con%20Compras%20e%20Inventario%20de%20Rembert%20Repuestos."
+                target="_blank"
+                rel="noopener noreferrer"
                 style={{ color: "#fff", textDecoration: "none", display: "inline-flex", alignItems: "center", gap: "0.5rem", fontWeight: "bold", fontSize: "0.95rem" }}
               >
                 <span style={{ color: "#25D366" }}>📱 WhatsApp:</span> +57 350 829 9233
@@ -180,19 +180,19 @@ export default function ContactoPage() {
             className="btn btn--primary"
             style={{ padding: "0.75rem 1.5rem", fontSize: "0.95rem", display: "inline-flex", alignItems: "center", gap: "0.5rem" }}
           >
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 0C7.589 0 4 3.589 4 8c0 4.274 7.219 15.184 7.633 15.82a.498.498 0 00.734 0C12.781 23.184 20 12.274 20 8c0-4.411-3.589-8-8-8zm0 11.5a3.5 3.5 0 110-7 3.5 3.5 0 010 7z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 0C7.589 0 4 3.589 4 8c0 4.274 7.219 15.184 7.633 15.82a.498.498 0 00.734 0C12.781 23.184 20 12.274 20 8c0-4.411-3.589-8-8-8zm0 11.5a3.5 3.5 0 110-7 3.5 3.5 0 010 7z" /></svg>
             Cómo Llegar con Google Maps
           </a>
         </div>
-        
+
         <div style={{ position: "relative", borderRadius: "14px", overflow: "hidden", boxShadow: "0 10px 30px rgba(0,0,0,0.12)", border: "2px solid #e0e0e0" }}>
-          <iframe 
-            src="https://maps.google.com/maps?q=Rembeat,+Tv.+29,+Barrancabermeja,+Santander&t=&z=16&ie=UTF8&iwloc=&output=embed" 
-            width="100%" 
-            height="450" 
-            style={{ border: 0, display: "block" }} 
-            allowFullScreen="" 
-            loading="lazy" 
+          <iframe
+            src="https://maps.google.com/maps?q=Rembeat,+Tv.+29,+Barrancabermeja,+Santander&t=&z=16&ie=UTF8&iwloc=&output=embed"
+            width="100%"
+            height="450"
+            style={{ border: 0, display: "block" }}
+            allowFullScreen=""
+            loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
             title="Ubicación Rembert Repuestos Barrancabermeja"
           ></iframe>
