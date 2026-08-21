@@ -1,4 +1,5 @@
 import { PrismaClient } from "@prisma/client";
+import { PrismaPg } from "@prisma/adapter-pg";
 
 const globalForPrisma = globalThis;
 
@@ -11,9 +12,16 @@ let prismaInstance;
 
 if (isValidPostgresUrl) {
   try {
+    const adapter = new PrismaPg({
+      connectionString: dbUrl,
+      max: 5,
+      idleTimeoutMillis: 10_000,
+      connectionTimeoutMillis: 10_000,
+    });
     prismaInstance =
       globalForPrisma.__prisma ??
       new PrismaClient({
+        adapter,
         log: process.env.NODE_ENV === "development" ? ["error", "warn"] : ["error"],
       });
   } catch (err) {

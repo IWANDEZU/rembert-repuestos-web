@@ -9,9 +9,26 @@ function clientKey(request, scope) {
   return `${scope}:${ip}`;
 }
 
-export function enforceRateLimit(request, { scope, limit, windowMs }) {
+export async function enforceRateLimit(request, { scope, limit, windowMs }) {
   const now = Date.now();
   const key = clientKey(request, scope);
+
+  try {
+    const { getCloudflareContext } = await import("@opennextjs/cloudflare");
+    const { env } = await getCloudflareContext({ async: true });
+    if (env?.API_RATE_LIMITER?.limit) {
+      const result = await env.API_RATE_LIMITER.limit({ key });
+      if (!result.success) {
+        return NextResponse.json(
+          { message: "Demasiadas solicitudes. Intenta nuevamente más tarde." },
+          { status: 429, headers: { "Cache-Control": "no-store", "Retry-After": "60" } },
+        );
+      }
+    }
+  } catch {
+    // Fuera de Workers se conserva el límite local inferior.
+  }
+
   let bucket = buckets.get(key);
 
   if (!bucket || bucket.resetAt <= now) {

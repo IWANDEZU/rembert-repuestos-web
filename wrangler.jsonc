@@ -17,6 +17,16 @@
       "service": "rembert"
     }
   ],
+  "ratelimits": [
+    {
+      "name": "API_RATE_LIMITER",
+      "namespace_id": "314159",
+      "simple": {
+        "limit": 30,
+        "period": 60
+      }
+    }
+  ],
   "observability": {
     "logs": {
       "enabled": true,

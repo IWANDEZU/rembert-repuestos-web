@@ -11,7 +11,7 @@ export const dynamic = "force-dynamic";
  * GET/POST /api/pos/sync?provider=siigo|alegra
  */
 export async function POST(request) {
-  const limited = enforceRateLimit(request, { scope: "pos-sync", limit: 10, windowMs: 60_000 });
+  const limited = await enforceRateLimit(request, { scope: "pos-sync", limit: 10, windowMs: 60_000 });
   if (limited) return limited;
   try {
     const session = await getServerSession();

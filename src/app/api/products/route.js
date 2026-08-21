@@ -24,7 +24,7 @@ export async function GET(request) {
 }
 
 export async function POST(request) {
-  const limited = enforceRateLimit(request, { scope: "admin-products", limit: 20, windowMs: 60_000 });
+  const limited = await enforceRateLimit(request, { scope: "admin-products", limit: 20, windowMs: 60_000 });
   if (limited) return limited;
   try {
     const session = await getServerSession();

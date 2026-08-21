@@ -25,6 +25,9 @@ const contentSecurityPolicy = [
 const nextConfig = {
   compress: true,
   poweredByHeader: false,
+  outputFileTracingIncludes: {
+    "/*": ["./node_modules/pg-cloudflare/dist/**/*", "./node_modules/pg-cloudflare/esm/**/*"],
+  },
   images: {
     formats: ["image/avif", "image/webp"],
     qualities: [60, 70, 75],

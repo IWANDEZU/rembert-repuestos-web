@@ -24,7 +24,15 @@ export default function AuthProvider({ children }) {
 
   useEffect(() => {
     let active = true;
-    const supabase = createClient();
+    let supabase;
+    try {
+      supabase = createClient();
+    } catch {
+      setStatus("unauthenticated");
+      return () => {
+        active = false;
+      };
+    }
 
     supabase.auth.getUser().then(({ data: result }) => {
       if (!active) return;

@@ -14,7 +14,7 @@ export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 
 export async function POST(req) {
-  const limited = enforceRateLimit(req, { scope: "checkout", limit: 8, windowMs: 60_000 });
+  const limited = await enforceRateLimit(req, { scope: "checkout", limit: 8, windowMs: 60_000 });
   if (limited) return limited;
   try {
     const session = await getServerSession();

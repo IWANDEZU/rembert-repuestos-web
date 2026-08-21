@@ -4,7 +4,7 @@ import { prisma } from "@/lib/prisma";
 import { enforceRateLimit } from "@/lib/security/rateLimit";
 
 export async function POST(req) {
-  const limited = enforceRateLimit(req, { scope: "favorites-write", limit: 30, windowMs: 60_000 });
+  const limited = await enforceRateLimit(req, { scope: "favorites-write", limit: 30, windowMs: 60_000 });
   if (limited) return limited;
   try {
     const session = await getServerSession();
@@ -58,7 +58,7 @@ export async function POST(req) {
 }
 
 export async function DELETE(req) {
-  const limited = enforceRateLimit(req, { scope: "favorites-write", limit: 30, windowMs: 60_000 });
+  const limited = await enforceRateLimit(req, { scope: "favorites-write", limit: 30, windowMs: 60_000 });
   if (limited) return limited;
   try {
     const session = await getServerSession();

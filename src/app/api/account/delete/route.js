@@ -3,6 +3,7 @@ import { NextResponse } from "next/server";
 import { prisma } from "@/lib/prisma";
 import { deleteUserData } from "@/lib/deleteUserData";
 import { enforceRateLimit } from "@/lib/security/rateLimit";
+import { createAdminClient } from "@/lib/supabase/admin";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -13,7 +14,7 @@ function hasSameOrigin(request) {
 }
 
 export async function DELETE(request) {
-  const limited = enforceRateLimit(request, { scope: "account-delete", limit: 3, windowMs: 3_600_000 });
+  const limited = await enforceRateLimit(request, { scope: "account-delete", limit: 3, windowMs: 3_600_000 });
   if (limited) return limited;
   if (!hasSameOrigin(request)) {
     return NextResponse.json({ message: "Origen no permitido" }, { status: 403 });
@@ -37,6 +38,16 @@ export async function DELETE(request) {
   const user = await prisma.user.findUnique({ where: { id: userId }, select: { id: true } });
   if (!user) return NextResponse.json({ message: "Cuenta no encontrada" }, { status: 404 });
 
+  if (session.user.authId) {
+    const { error } = await createAdminClient().auth.admin.deleteUser(session.user.authId);
+    if (error) {
+      console.error("No fue posible eliminar la identidad Supabase:", error.message);
+      return NextResponse.json(
+        { message: "No fue posible validar la eliminación completa de la cuenta." },
+        { status: 502 },
+      );
+    }
+  }
   await deleteUserData(user.id);
   return NextResponse.json({ message: "Cuenta y datos personales eliminados" });
 }
