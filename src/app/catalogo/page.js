@@ -1,3 +1,4 @@
+import { getServerSession } from "@/lib/auth";
 import { prisma } from "@/lib/prisma";
 import Image from "next/image";
 import Link from "next/link";
@@ -580,7 +581,7 @@ export default async function Catalogo({ searchParams }) {
       }),
       prisma.product.count({ where }),
       prisma.brand.findMany({ orderBy: { name: "asc" } }),
-      getServerSession(authOptions),
+      getServerSession(),
     ]);
     fetchedProducts = dbProducts;
     totalProducts = dbTotal;

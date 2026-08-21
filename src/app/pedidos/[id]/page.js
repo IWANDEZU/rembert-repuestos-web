@@ -1,10 +1,9 @@
+import { getServerSession } from "@/lib/auth";
 import { prisma } from "@/lib/prisma";
 
 export const dynamic = "force-dynamic";
 import { notFound, redirect } from "next/navigation";
 import Link from "next/link";
-import { getServerSession } from "next-auth/next";
-import { authOptions } from "@/app/api/auth/[...nextauth]/route";
 import {
   generateWhatsAppOrderText,
   getWhatsAppUrl,
@@ -22,7 +21,7 @@ export default async function OrderSuccessPage({ params }) {
     notFound();
   }
 
-  const session = await getServerSession(authOptions);
+  const session = await getServerSession();
 
   const order = await prisma.order.findUnique({
     where: { id: orderId },

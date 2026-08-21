@@ -3,7 +3,7 @@
 import { useCart } from "@/components/CartContext";
 import { useState } from "react";
 import Image from "next/image";
-import { useSession } from "next-auth/react";
+import { useSession } from "@/components/AuthProvider";
 import { useRouter } from "next/navigation";
 import { getProductDisplayImage } from "@/lib/productImage";
 import { generateWhatsAppProductText, getWhatsAppUrl } from "@/lib/orderFormatter";

@@ -1,8 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import { signIn } from "next-auth/react";
 import { useRouter } from "next/navigation";
+import { createClient } from "@/lib/supabase/client";
 import Link from "next/link";
 import FacebookSignInButton from "@/components/FacebookSignInButton";
 import GoogleSignInButton from "@/components/GoogleSignInButton";
@@ -19,8 +19,8 @@ export default function LoginPage() {
     event.preventDefault();
     setLoading(true);
     setError("");
-    const result = await signIn("credentials", { redirect: false, email, password });
-    if (result?.error) {
+    const { error: signInError } = await createClient().auth.signInWithPassword({ email, password });
+    if (signInError) {
       setError("No fue posible iniciar sesión con esos datos.");
       setLoading(false);
       return;

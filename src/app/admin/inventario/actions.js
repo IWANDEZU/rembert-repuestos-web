@@ -1,13 +1,12 @@
 'use server';
 
+import { getServerSession } from "@/lib/auth";
 import { prisma } from '@/lib/prisma';
-import { getServerSession } from 'next-auth/next';
-import { authOptions } from '@/app/api/auth/[...nextauth]/route'; // Assuming authOptions is here, or we can just check role manually if there is no session but this is better
 
 export async function processInventoryCSV(data) {
   try {
     // 1. Verify user is ADMIN
-    const session = await getServerSession(authOptions);
+    const session = await getServerSession();
     if (!session || session?.user?.role !== 'ADMIN') {
       return { success: false, error: 'No autorizado. Se requiere cuenta de Administrador.' };
     }

@@ -1,9 +1,14 @@
-const { PrismaClient } = require("@prisma/client");
+const { createPrismaClient } = require("./create-client");
 
 const prioridadDiesel = require("../src/data/catalogo-prioridad-diesel.json");
 const catalogoPartmo = require("../src/data/catalogo-filtros-diesel.json");
 
-const prisma = new PrismaClient();
+let prisma;
+
+function getPrisma() {
+  prisma ??= createPrismaClient();
+  return prisma;
+}
 
 const MANN_REFERENCES = [
   "W 712/83",
@@ -126,6 +131,7 @@ function validateSource(products) {
 }
 
 async function ensureCatalogEntities() {
+  const prisma = getPrisma();
   const category = await prisma.category.upsert({
     where: { slug: "filtros" },
     update: {
@@ -163,6 +169,7 @@ async function ensureCatalogEntities() {
 }
 
 async function dryRun(products) {
+  const prisma = getPrisma();
   const existing = await prisma.product.findMany({
     where: { slug: { in: products.map((product) => product.slug) } },
     select: { slug: true, sku: true, name: true },
@@ -176,6 +183,7 @@ async function dryRun(products) {
 }
 
 async function apply(products) {
+  const prisma = getPrisma();
   const { category, brands } = await ensureCatalogEntities();
 
   for (const product of products) {
@@ -254,5 +262,5 @@ main()
     process.exitCode = 1;
   })
   .finally(async () => {
-    await prisma.$disconnect();
+    await prisma?.$disconnect();
   });

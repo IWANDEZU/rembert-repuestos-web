@@ -1,7 +1,6 @@
+import { getServerSession } from "@/lib/auth";
 import { NextResponse } from "next/server";
 import { prisma } from "@/lib/prisma";
-import { getServerSession } from "next-auth";
-import { authOptions } from "@/app/api/auth/[...nextauth]/route";
 import {
   generateWhatsAppOrderText,
   getWhatsAppUrl,
@@ -15,7 +14,7 @@ export const dynamic = "force-dynamic";
 
 export async function POST(req) {
   try {
-    const session = await getServerSession(authOptions);
+    const session = await getServerSession();
     const body = await req.json();
     const { items, address, paymentMethod = "Pago contra entrega", notes = "" } = body;
 

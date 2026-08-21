@@ -1,28 +1,19 @@
 "use client";
 
-import { useEffect, useState } from "react";
-import { signIn } from "next-auth/react";
+import { createClient } from "@/lib/supabase/client";
 
 export default function GitHubSignInButton({ label = "Continuar con GitHub", callbackUrl = "/perfil" }) {
-  const [isAvailable, setIsAvailable] = useState(false);
-
-  useEffect(() => {
-    const controller = new AbortController();
-
-    fetch("/api/auth/providers", { signal: controller.signal, cache: "no-store" })
-      .then((response) => (response.ok ? response.json() : {}))
-      .then((providers) => setIsAvailable(Boolean(providers.github)))
-      .catch(() => setIsAvailable(false));
-
-    return () => controller.abort();
-  }, []);
-
-  if (!isAvailable) return null;
+  const signIn = async () => {
+    await createClient().auth.signInWithOAuth({
+      provider: "github",
+      options: { redirectTo: `${window.location.origin}/auth/callback?next=${encodeURIComponent(callbackUrl)}` },
+    });
+  };
 
   return (
     <button
       type="button"
-      onClick={() => signIn("github", { callbackUrl })}
+      onClick={signIn}
       style={{
         width: "100%",
         padding: "12px 16px",

@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
-import { signIn } from "next-auth/react";
+import { createClient } from "@/lib/supabase/client";
 import FacebookSignInButton from "@/components/FacebookSignInButton";
 import GoogleSignInButton from "@/components/GoogleSignInButton";
 import GitHubSignInButton from "@/components/GitHubSignInButton";
@@ -22,16 +22,17 @@ export default function RegisterPage() {
     setLoading(true);
     setError("");
     try {
-      const response = await fetch("/api/auth/register", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ name, email, password, privacyAccepted }),
+      if (!privacyAccepted) throw new Error("Debes autorizar el tratamiento de datos.");
+      const { data, error: signUpError } = await createClient().auth.signUp({
+        email,
+        password,
+        options: {
+          emailRedirectTo: `${window.location.origin}/auth/callback?next=/perfil`,
+          data: { full_name: name.trim(), privacy_accepted_at: new Date().toISOString() },
+        },
       });
-      const data = await response.json();
-      if (!response.ok) throw new Error(data.message || "Error al registrarse");
-      const result = await signIn("credentials", { redirect: false, email, password });
-      if (result?.error) throw new Error("Cuenta creada, pero no fue posible iniciar sesión.");
-      router.push("/perfil");
+      if (signUpError) throw signUpError;
+      router.push(data.session ? "/perfil" : "/login?registered=1");
       router.refresh();
     } catch (requestError) {
       setError(requestError.message);

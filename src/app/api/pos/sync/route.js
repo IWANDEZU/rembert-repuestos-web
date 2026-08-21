@@ -1,6 +1,5 @@
+import { getServerSession } from "@/lib/auth";
 import { NextResponse } from "next/server";
-import { getServerSession } from "next-auth/next";
-import { authOptions } from "@/app/api/auth/[...nextauth]/route";
 import { SiigoApiClient, AlegraApiClient, POS_PROVIDERS } from "@/lib/posIntegrations";
 
 export const runtime = "nodejs";
@@ -12,7 +11,7 @@ export const dynamic = "force-dynamic";
  */
 export async function POST(request) {
   try {
-    const session = await getServerSession(authOptions);
+    const session = await getServerSession();
     const authHeader = request.headers.get("authorization");
     const secretQuery = new URL(request.url).searchParams.get("secret");
     const expectedSecret = process.env.POS_SYNC_SECRET;

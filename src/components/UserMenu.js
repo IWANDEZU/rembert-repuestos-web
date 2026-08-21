@@ -1,6 +1,6 @@
 "use client";
 
-import { useSession, signOut } from "next-auth/react";
+import { useSession, signOut } from "@/components/AuthProvider";
 import Link from "next/link";
 import CartIcon from "@/components/CartIcon";
 
