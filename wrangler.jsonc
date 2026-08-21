@@ -25,6 +25,31 @@
         "limit": 30,
         "period": 60
       }
+    },
+    {
+      "name": "CHECKOUT_RATE_LIMITER",
+      "namespace_id": "314160",
+      "simple": { "limit": 8, "period": 60 }
+    },
+    {
+      "name": "FAVORITES_RATE_LIMITER",
+      "namespace_id": "314161",
+      "simple": { "limit": 30, "period": 60 }
+    },
+    {
+      "name": "ADMIN_RATE_LIMITER",
+      "namespace_id": "314162",
+      "simple": { "limit": 20, "period": 60 }
+    },
+    {
+      "name": "ACCOUNT_DELETE_RATE_LIMITER",
+      "namespace_id": "314163",
+      "simple": { "limit": 3, "period": 60 }
+    },
+    {
+      "name": "POS_RATE_LIMITER",
+      "namespace_id": "314164",
+      "simple": { "limit": 10, "period": 60 }
     }
   ],
   "observability": {

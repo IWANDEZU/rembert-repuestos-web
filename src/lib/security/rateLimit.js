@@ -3,6 +3,14 @@ import { NextResponse } from "next/server";
 const buckets = globalThis.__rembertRateLimitBuckets ?? new Map();
 globalThis.__rembertRateLimitBuckets = buckets;
 
+const CLOUDFLARE_BINDINGS = {
+  checkout: "CHECKOUT_RATE_LIMITER",
+  "favorites-write": "FAVORITES_RATE_LIMITER",
+  "admin-products": "ADMIN_RATE_LIMITER",
+  "account-delete": "ACCOUNT_DELETE_RATE_LIMITER",
+  "pos-sync": "POS_RATE_LIMITER",
+};
+
 function clientKey(request, scope) {
   const forwarded = request.headers.get("cf-connecting-ip") || request.headers.get("x-forwarded-for");
   const ip = forwarded?.split(",")[0]?.trim() || "unknown";
@@ -16,8 +24,9 @@ export async function enforceRateLimit(request, { scope, limit, windowMs }) {
   try {
     const { getCloudflareContext } = await import("@opennextjs/cloudflare");
     const { env } = await getCloudflareContext({ async: true });
-    if (env?.API_RATE_LIMITER?.limit) {
-      const result = await env.API_RATE_LIMITER.limit({ key });
+    const limiter = env?.[CLOUDFLARE_BINDINGS[scope] || "API_RATE_LIMITER"];
+    if (limiter?.limit) {
+      const result = await limiter.limit({ key });
       if (!result.success) {
         return NextResponse.json(
           { message: "Demasiadas solicitudes. Intenta nuevamente más tarde." },
