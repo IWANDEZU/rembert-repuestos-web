@@ -15,12 +15,15 @@ export async function POST(request) {
     const session = await getServerSession(authOptions);
     const authHeader = request.headers.get("authorization");
     const secretQuery = new URL(request.url).searchParams.get("secret");
-    const expectedSecret = process.env.POS_SYNC_SECRET || "rembert-pos-secret-2026";
+    const expectedSecret = process.env.POS_SYNC_SECRET;
+
+    if (!expectedSecret && session?.user?.role !== "ADMIN") {
+      return NextResponse.json({ error: "Sincronización deshabilitada: POS_SYNC_SECRET no configurado en el servidor" }, { status: 500 });
+    }
 
     const isAuthorized = 
       session?.user?.role === "ADMIN" || 
-      secretQuery === expectedSecret || 
-      authHeader === `Bearer ${expectedSecret}`;
+      (expectedSecret && (secretQuery === expectedSecret || authHeader === `Bearer ${expectedSecret}`));
 
     if (!isAuthorized) {
       return NextResponse.json({ error: "No autorizado para sincronizar con POS" }, { status: 401 });

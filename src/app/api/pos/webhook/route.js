@@ -19,8 +19,15 @@ export async function POST(request) {
     const { searchParams } = new URL(request.url);
     const secretQuery = searchParams.get("secret");
 
-    const expectedSecret = process.env.POS_SYNC_SECRET || "rembert-pos-secret-2026";
+    const expectedSecret = process.env.POS_SYNC_SECRET;
     const providedSecret = posApiKey || secretQuery || authHeader?.replace("Bearer ", "");
+
+    if (!expectedSecret) {
+      return NextResponse.json(
+        { error: "Webhook POS no configurado: Falta definir POS_SYNC_SECRET en variables de entorno." },
+        { status: 500 }
+      );
+    }
 
     if (providedSecret !== expectedSecret) {
       return NextResponse.json(
