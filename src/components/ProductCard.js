@@ -187,16 +187,11 @@ export default function ProductCard({ product, onExpand, isFavorite = false }) {
       <div style={{ margin: "0.75rem 0 0.5rem" }}>
         <h3
           style={{
-            fontSize: "0.95rem",
+            fontSize: "0.92rem",
             fontWeight: "700",
             color: "#1E293B",
-            lineHeight: "1.3",
+            lineHeight: "1.35",
             marginBottom: "0.35rem",
-            display: "-webkit-box",
-            WebkitLineClamp: 2,
-            WebkitBoxOrient: "vertical",
-            overflow: "hidden",
-            minHeight: "2.5rem",
           }}
         >
           <a
@@ -208,48 +203,60 @@ export default function ProductCard({ product, onExpand, isFavorite = false }) {
         </h3>
 
         {product.brand && (
-          <span style={{ fontSize: "0.78rem", fontWeight: "600", color: "#64748B", display: "block" }}>
+          <span
+            style={{
+              fontSize: "0.78rem",
+              fontWeight: "700",
+              color: "#64748B",
+              display: "block",
+              textTransform: "uppercase",
+              letterSpacing: "0.025em",
+              marginBottom: "0.25rem",
+            }}
+          >
             {typeof product.brand === "string" ? product.brand : product.brand.name}
           </span>
         )}
 
         {compatibilityText ? (
-          <p
+          <div
             style={{
-              fontSize: "0.74rem",
-              color: "#475569",
+              fontSize: "0.75rem",
+              color: "#334155",
               background: "#F8FAFC",
               border: "1px solid #E2E8F0",
               borderRadius: "6px",
-              padding: "4px 6px",
+              padding: "6px 8px",
               marginTop: "0.35rem",
-              lineHeight: "1.25",
-              display: "-webkit-box",
-              WebkitLineClamp: 2,
-              WebkitBoxOrient: "vertical",
-              overflow: "hidden",
+              lineHeight: "1.4",
+              wordBreak: "break-word",
             }}
             title={compatibilityText}
           >
-            <strong>Compatible con:</strong> {compatibilityText}
-          </p>
+            <strong style={{ color: "#0F172A", fontWeight: "700" }}>Compatible con:</strong>{" "}
+            <span>{compatibilityText}</span>
+          </div>
         ) : null}
 
         {product.sku && (
-          <span
-            style={{
-              fontSize: "0.7rem",
-              fontFamily: "monospace",
-              color: "#664d03",
-              background: "#fff3cd",
-              padding: "2px 6px",
-              borderRadius: "4px",
-              display: "inline-block",
-              marginTop: "0.25rem",
-            }}
-          >
-            Ref. {product.sku}
-          </span>
+          <div style={{ marginTop: "0.35rem" }}>
+            <span
+              style={{
+                fontSize: "0.72rem",
+                fontFamily: "ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace",
+                fontWeight: "700",
+                color: "#78350F",
+                background: "#FEF3C7",
+                border: "1px solid #FDE68A",
+                padding: "2px 7px",
+                borderRadius: "4px",
+                display: "inline-block",
+                letterSpacing: "0.02em",
+              }}
+            >
+              Ref. {product.sku}
+            </span>
+          </div>
         )}
       </div>
 
