@@ -6,8 +6,6 @@ import CatalogGridWithModal from "@/components/CatalogGridWithModal";
 import CatalogSidebar from "@/components/CatalogSidebar";
 import { buildCatalogHref } from "@/lib/catalogUtils";
 import { siteUrl } from "@/lib/site";
-import { getServerSession } from "next-auth/next";
-import { authOptions } from "@/app/api/auth/[...nextauth]/route";
 import { products as fallbackCatalogProducts } from "@/lib/products";
 
 export const dynamic = "force-dynamic";
