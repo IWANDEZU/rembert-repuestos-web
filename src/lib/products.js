@@ -2,6 +2,106 @@ import { frenosSuspensionProducts } from "../data/frenosSuspensionProducts.js";
 import { brandPanelProducts } from "../data/brandPanelProducts.js";
 import { catalogoProveedoresProducts } from "../data/catalogoProveedoresProducts.js";
 import { kiaProducts } from "../data/kiaProducts.js";
+import partmoCatalog from "../data/catalogo-filtros-diesel.json";
+import priorityCatalog from "../data/catalogo-prioridad-diesel.json";
+
+const toCatalogSlug = (value) => String(value || "producto")
+  .normalize("NFD")
+  .replace(/[\u0300-\u036f]/g, "")
+  .toLowerCase()
+  .replace(/[^a-z0-9]+/g, "-")
+  .replace(/(^-|-$)/g, "");
+
+const specificationsToAttributes = (product, id) => Object.entries(product.specifications || {})
+  .map(([key, value], index) => ({
+    id: `${id}-spec-${index}`,
+    name: key.replaceAll("_", " ").replace(/\b\w/g, (letter) => letter.toUpperCase()),
+    value: typeof value === "boolean" ? (value ? "Sí" : "No") : String(value),
+  }));
+
+const partmoFilterProducts = partmoCatalog
+  .filter((product) => product.status === "ready" && product.image)
+  .map((product) => ({
+    id: `catalogo-${product.id}`,
+    name: product.name,
+    slug: `${toCatalogSlug(product.brand)}-${toCatalogSlug(product.reference)}-${toCatalogSlug(product.category)}`,
+    category: { name: "Filtros", slug: "filtros" },
+    brand: { name: product.brand, slug: toCatalogSlug(product.brand) },
+    price: 0,
+    sku: product.reference,
+    referenceType: "manufacturer",
+    fitmentStatus: "verified",
+    fitments: [{
+      make: "Aplicación de catálogo",
+      model: product.description,
+      years: "Confirmar según referencia OE/equivalente",
+      position: product.category,
+    }],
+    fitmentSummary: `${product.reference}: ${product.description}`,
+    fitmentRequirements: ["VIN", "año", "motor", "referencia OE o equivalente"],
+    fitmentSource: `${product.source} · página ${product.sourcePage}`,
+    shortDesc: `${product.category}. ${product.description}`,
+    description: `${product.description}. Referencia Partmo ${product.reference}${product.equivalentReference ? `; equivalencia ${product.equivalentReference}` : ""}. Verificar por VIN, motor y referencia desmontada antes del despacho.`,
+    image: product.image,
+    images: [{ url: product.image, alt: product.alt || product.name, isMain: true }],
+    imageStatus: "manufacturer-catalog",
+    attributes: [
+      { id: `${product.id}-ref`, name: "Referencia fabricante", value: product.reference },
+      ...(product.equivalentReference ? [{ id: `${product.id}-equiv`, name: "Equivalencia", value: product.equivalentReference }] : []),
+      { id: `${product.id}-application`, name: "Aplicación", value: product.description },
+      { id: `${product.id}-source`, name: "Fuente técnica", value: `${product.source} · página ${product.sourcePage}` },
+      { id: `${product.id}-validation`, name: "Validación de venta", value: "Confirmar VIN, motor y referencia OE/equivalente" },
+    ],
+    inStock: false,
+    stock: 0,
+  }));
+
+const priorityCatalogProducts = (priorityCatalog.products || [])
+  .filter((product) => product.image_exact && product.web_image)
+  .map((product) => {
+    const id = `prioridad-${toCatalogSlug(product.brand)}-${toCatalogSlug(product.reference)}`;
+    const isFilter = product.category === "Filtros";
+    return {
+      id,
+      name: `${product.subtype} ${product.brand} ${product.reference}`,
+      slug: `${toCatalogSlug(product.brand)}-${toCatalogSlug(product.reference)}-${toCatalogSlug(product.vehicle)}`,
+      category: isFilter
+        ? { name: "Filtros", slug: "filtros" }
+        : { name: "Frenos y Suspensión", slug: "frenos-y-suspension" },
+      brand: { name: product.brand, slug: toCatalogSlug(product.brand) },
+      price: product.price_cop || 0,
+      sku: product.reference,
+      referenceType: "manufacturer",
+      fitmentStatus: "verified",
+      fitments: [{
+        make: product.vehicle.split(" ")[0],
+        model: product.vehicle,
+        engine: product.engine || "",
+        years: product.vehicle.match(/\(([^)]+)\)/)?.[1] || "Confirmar por VIN",
+        position: product.position || product.subtype,
+      }],
+      fitmentSummary: `${product.reference}: ${product.vehicle}${product.engine ? ` · motor ${product.engine}` : ""}.`,
+      fitmentRequirements: ["VIN", "año", "motor", "tracción", "referencia OE"],
+      fitmentSource: product.technical_source,
+      shortDesc: `${product.subtype} para ${product.vehicle}.`,
+      description: `${product.subtype} ${product.brand}, referencia ${product.reference}, aplicación de catálogo para ${product.vehicle}. ${product.fitment_note}`,
+      image: product.web_image,
+      images: [{ url: product.web_image, alt: `${product.subtype} ${product.brand} ${product.reference}`, isMain: true }],
+      imageStatus: "manufacturer-exact",
+      attributes: [
+        { id: `${id}-ref`, name: "Referencia fabricante", value: product.reference },
+        { id: `${id}-vehicle`, name: "Compatible con", value: product.vehicle },
+        ...(product.engine ? [{ id: `${id}-engine`, name: "Motor", value: product.engine }] : []),
+        ...(product.position ? [{ id: `${id}-position`, name: "Posición", value: product.position }] : []),
+        ...((product.oe || []).length ? [{ id: `${id}-oe`, name: "Referencias OE", value: product.oe.join(" · ") }] : []),
+        ...specificationsToAttributes(product, id),
+        { id: `${id}-source`, name: "Fuente técnica", value: product.technical_source },
+        { id: `${id}-price`, name: "Precio de referencia", value: `Actualizado ${product.price_updated_at}; sujeto a disponibilidad y validación de costo` },
+      ],
+      inStock: false,
+      stock: 0,
+    };
+  });
 
 function brakeApplication({
   id, name, slug, brand, reference, image, vehicleBrands, models,
@@ -960,7 +1060,20 @@ const allProducts = [
   },
 ];
 
-export const products = allProducts;
+const expandedCatalog = [
+  ...allProducts,
+  ...priorityCatalogProducts,
+  ...partmoFilterProducts,
+];
+
+// Una referencia fabricante solo debe aparecer una vez. Se conserva primero la
+// ficha editorial existente y después se incorporan catálogos técnicos nuevos.
+export const products = expandedCatalog.filter((product, index, catalog) => {
+  const key = `${product.brand?.slug || "sin-marca"}:${String(product.sku || product.id).toLowerCase()}`;
+  return catalog.findIndex((candidate) => (
+    `${candidate.brand?.slug || "sin-marca"}:${String(candidate.sku || candidate.id).toLowerCase()}` === key
+  )) === index;
+});
 
 export function getProductById(id) {
   return products.find(p => p.id === id || p.slug === id);

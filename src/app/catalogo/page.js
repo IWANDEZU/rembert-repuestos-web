@@ -676,7 +676,22 @@ export default async function Catalogo({ searchParams }) {
 
     // Estas líneas se administran en el catálogo versionado para que los
     // productos validados no desaparezcan cuando la BD tenga inventario parcial.
-    const codeManagedCategories = new Set(["mantenimiento", "coolant", "transmision", "frenos-y-suspension"]);
+    const codeManagedCategories = new Set([
+      "mantenimiento",
+      "coolant",
+      "transmision",
+      "frenos-y-suspension",
+      "filtros",
+      "electrico-y-encendido",
+      "motor-y-distribucion",
+      "embrague",
+      "rodamientos-y-traccion",
+      "radiadores",
+      "siliconas",
+      "lubricantes-gasolina",
+      "grasas-y-aditivos",
+      "urea",
+    ]);
     if (dbTotal === 0 || codeManagedCategories.has(categoryParam)) applyFallbackCatalog();
   } catch (err) {
     // Si la BD remota no responde, conservar una tienda navegable y con contenido.
