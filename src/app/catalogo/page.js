@@ -11,12 +11,35 @@ import { products as fallbackCatalogProducts } from "@/lib/products";
 
 export const dynamic = "force-dynamic";
 const PAGE_SIZE = 24;
+const PART_FILTERS = {
+  pastillas: ["pastilla"],
+  discos: ["disco", "rotor"],
+  bandas: ["banda", "zapata"],
+  campanas: ["campana", "tambor"],
+  amortiguadores: ["amortiguador", "strut", "puntal"],
+  terminales: ["terminal"],
+  rotulas: ["rótula", "rotula"],
+  axiales: ["axial"],
+  bujes: ["buje", "silentbloc"],
+  sensores: ["sensor", "abs"],
+  brazos: ["brazo", "tijera"],
+};
+
+function filterSlug(value = "") {
+  return value.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
+}
+
+function normalizeCatalogText(value = "") {
+  return value.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+}
 
 export async function generateMetadata({ searchParams }) {
   const resolvedParams = await searchParams;
   const categoryParam = resolvedParams?.category;
   const brandParam = resolvedParams?.brand;
   const tipoParam = resolvedParams?.tipo;
+  const vehicleParam = resolvedParams?.vehicle;
+  const partParam = resolvedParams?.part;
   const searchQuery = resolvedParams?.search || resolvedParams?.q;
 
   const titularPrincipal = "Repuestos para Automóviles de Todas las Marcas";
@@ -42,6 +65,8 @@ export async function generateMetadata({ searchParams }) {
   if (categoryParam) queryParams.set("category", categoryParam);
   if (brandParam) queryParams.set("brand", brandParam);
   if (tipoParam) queryParams.set("tipo", tipoParam);
+  if (vehicleParam) queryParams.set("vehicle", vehicleParam);
+  if (partParam) queryParams.set("part", partParam);
   const requestedPage = getPageNumber(resolvedParams?.page);
   if (requestedPage > 1) queryParams.set("page", requestedPage);
   const queryString = queryParams.toString();
@@ -218,7 +243,7 @@ function getPageNumber(value) {
   return Number.isSafeInteger(page) && page > 0 ? page : 1;
 }
 
-function filterFallbackCatalog({ categoryParam, brandParam, tipoParam, searchQuery }) {
+function filterFallbackCatalog({ categoryParam, brandParam, tipoParam, vehicleParam, partParam, searchQuery }) {
   let filtered = [...fallbackCatalogProducts];
 
   if (categoryParam === "mantenimiento") {
@@ -269,6 +294,22 @@ function filterFallbackCatalog({ categoryParam, brandParam, tipoParam, searchQue
     filtered = filtered.filter((product) => product.brand?.slug === brandParam);
   }
 
+  if (vehicleParam) {
+    const vehicle = normalizeCatalogText(vehicleParam);
+    filtered = filtered.filter((product) => {
+      const attributes = (product.attributes || []).map((attribute) => `${attribute.name || ""} ${attribute.value || ""}`).join(" ");
+      return normalizeCatalogText(`${product.name} ${product.shortDesc || ""} ${product.description || ""} ${attributes}`).includes(vehicle);
+    });
+  }
+
+  if (partParam && PART_FILTERS[partParam]) {
+    filtered = filtered.filter((product) => {
+      const attributes = (product.attributes || []).map((attribute) => `${attribute.name || ""} ${attribute.value || ""}`).join(" ");
+      const searchable = normalizeCatalogText(`${product.name} ${product.shortDesc || ""} ${product.description || ""} ${attributes}`);
+      return PART_FILTERS[partParam].some((term) => searchable.includes(normalizeCatalogText(term)));
+    });
+  }
+
   if (searchQuery) {
     const query = searchQuery.toLowerCase();
     filtered = filtered.filter((product) =>
@@ -286,6 +327,8 @@ export default async function Catalogo({ searchParams }) {
   const categoryParam = resolvedParams?.category;
   const brandParam = resolvedParams?.brand;
   const tipoParam = resolvedParams?.tipo;
+  const vehicleParam = resolvedParams?.vehicle;
+  const partParam = resolvedParams?.part;
   const searchQuery = resolvedParams?.search || resolvedParams?.q;
   const requestedPage = getPageNumber(resolvedParams?.page);
   const sortParam = ["recent", "price-asc", "price-desc"].includes(resolvedParams?.sort)
@@ -513,6 +556,29 @@ export default async function Catalogo({ searchParams }) {
     conditions.push({ brand: { slug: brandParam } });
   }
 
+
+  if (vehicleParam) {
+    conditions.push({
+      OR: [
+        { name: { contains: vehicleParam } },
+        { description: { contains: vehicleParam } },
+        { shortDesc: { contains: vehicleParam } },
+        { attributes: { some: { value: { contains: vehicleParam } } } },
+      ],
+    });
+  }
+
+  if (partParam && PART_FILTERS[partParam]) {
+    conditions.push({
+      OR: PART_FILTERS[partParam].flatMap((term) => [
+        { name: { contains: term } },
+        { description: { contains: term } },
+        { shortDesc: { contains: term } },
+        { attributes: { some: { value: { contains: term } } } },
+      ]),
+    });
+  }
+
   if (searchQuery) {
     conditions.push({
       OR: [
@@ -557,7 +623,7 @@ export default async function Catalogo({ searchParams }) {
   let session = null;
 
   const applyFallbackCatalog = () => {
-    const filtered = filterFallbackCatalog({ categoryParam, brandParam, tipoParam, searchQuery });
+    const filtered = filterFallbackCatalog({ categoryParam, brandParam, tipoParam, vehicleParam, partParam, searchQuery });
     totalProducts = filtered.length;
     fetchedProducts = requiresPriceSort
       ? filtered
@@ -604,6 +670,8 @@ export default async function Catalogo({ searchParams }) {
       category: categoryParam,
       brand: brandParam,
       tipo: tipoParam,
+      vehicle: vehicleParam,
+      part: partParam,
       search: searchQuery,
       sort: sortParam,
       page: totalPages,
@@ -670,6 +738,10 @@ export default async function Catalogo({ searchParams }) {
     "Repuestos, lubricantes y filtros para vehículos y maquinaria.",
   ];
   if (categoryParam === "filtros" && tipoParam) bannerSubtitle += ` Tipo: ${tipoParam}.`;
+  if (vehicleParam) {
+    bannerTitle = `${partParam ? `${partParam.replace(/-/g, " ")} para` : "Repuestos compatibles con"} ${vehicleParam}`;
+    bannerSubtitle = "Resultados técnicos por aplicación vehicular. Confirma año, motor, versión, eje y VIN antes de comprar.";
+  }
   if (brandParam) {
     const brandName = brands.find((brand) => brand.slug === brandParam)?.name || brandParam;
     bannerTitle = `Productos ${brandName}`;
@@ -678,18 +750,20 @@ export default async function Catalogo({ searchParams }) {
       : `Productos disponibles de la marca ${brandName}.`;
   }
 
-  const sharedFilters = { brand: brandParam, search: searchQuery, sort: sortParam };
+  const sharedFilters = { brand: brandParam, vehicle: vehicleParam, part: partParam, search: searchQuery, sort: sortParam };
   const categoryHref = (category, tipo) => buildCatalogHref({ ...sharedFilters, category, tipo });
   const pageHref = (page) => buildCatalogHref({
     category: categoryParam,
     brand: brandParam,
     tipo: tipoParam,
+    vehicle: vehicleParam,
+    part: partParam,
     search: searchQuery,
     sort: sortParam,
     page,
   });
 
-  const hasActiveFilters = !!(categoryParam || brandParam || searchQuery || tipoParam);
+  const hasActiveFilters = !!(categoryParam || brandParam || searchQuery || tipoParam || vehicleParam || partParam);
   const backHref = hasActiveFilters ? "/catalogo" : "/";
 
   const breadcrumbJsonLd = {
@@ -729,6 +803,8 @@ export default async function Catalogo({ searchParams }) {
         categoryParam={categoryParam}
         brandParam={brandParam}
         tipoParam={tipoParam}
+        vehicleParam={vehicleParam}
+        partParam={partParam}
         searchQuery={searchQuery}
         sortParam={sortParam}
       />
@@ -846,8 +922,18 @@ export default async function Catalogo({ searchParams }) {
                   <div className="filter-showcase__copy">
                     <h3>{brand}</h3>
                     <p><strong>Modelos:</strong> {models}</p>
-                    <p><strong>Encuentra:</strong> {systems}</p>
-                    <Link href={`/catalogo?category=frenos-y-suspension&search=${encodeURIComponent(brand)}`}>
+                    <div className="vehicle-part-links" aria-label={`Repuestos disponibles para ${brand}`}>
+                      <strong>Encuentra:</strong>
+                      {systems.split(" · ").map((partName) => (
+                        <Link
+                          key={partName}
+                          href={buildCatalogHref({ category: "frenos-y-suspension", vehicle: brand, part: filterSlug(partName) })}
+                        >
+                          {partName}
+                        </Link>
+                      ))}
+                    </div>
+                    <Link href={buildCatalogHref({ category: "frenos-y-suspension", vehicle: brand })}>
                       Ver productos compatibles <span aria-hidden="true">→</span>
                     </Link>
                   </div>
@@ -879,6 +965,8 @@ export default async function Catalogo({ searchParams }) {
             {categoryParam && <input type="hidden" name="category" value={categoryParam} />}
             {brandParam && <input type="hidden" name="brand" value={brandParam} />}
             {tipoParam && <input type="hidden" name="tipo" value={tipoParam} />}
+            {vehicleParam && <input type="hidden" name="vehicle" value={vehicleParam} />}
+            {partParam && <input type="hidden" name="part" value={partParam} />}
             {searchQuery && <input type="hidden" name="search" value={searchQuery} />}
             <label htmlFor="catalog-sort">Ordenar por</label>
             <select id="catalog-sort" name="sort" defaultValue={sortParam}>

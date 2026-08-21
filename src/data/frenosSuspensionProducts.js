@@ -6,7 +6,7 @@ const images = {
   sensors: "/catalogo-frenos-suspension/sensores-freno-familia.webp",
 };
 const groups = {
-  general: ["Chevrolet, Renault, Kia, Hyundai, Nissan, Toyota, Mazda, Ford y Volkswagen", "automóviles, SUV y camionetas livianas a gasolina de alta circulación en Colombia"],
+  general: ["Chevrolet, Renault, Nissan, Toyota, Kia, Hyundai, Volkswagen, Mazda, Ford, Suzuki, Honda, Mitsubishi, Peugeot, SEAT, Skoda, Daihatsu, Daewoo y BMW", "automóviles, SUV y pickups livianas a gasolina; la referencia exacta depende del vehículo"],
   chevrolet: ["Chevrolet", "Spark, Spark GT, Beat, Sail, Aveo, Optra, Onix y Tracker"],
   renaultKorean: ["Renault, Kia y Hyundai", "Logan, Sandero, Stepway, Duster, Picanto, Rio, Sportage, i10, Accent y Tucson"],
 };

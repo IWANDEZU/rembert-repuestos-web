@@ -1316,6 +1316,39 @@ h1, h2, h3, h4 {
 
 .vehicle-application-card .filter-showcase__copy { min-height: 210px; }
 
+.vehicle-part-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem;
+  color: #64748b;
+  font-size: 0.78rem;
+}
+
+.vehicle-part-links strong {
+  margin-right: 0.15rem;
+}
+
+.vehicle-part-links a {
+  display: inline-flex;
+  min-height: 32px;
+  align-items: center;
+  padding: 0.25rem 0.5rem;
+  border: 1px solid #e7d88d;
+  border-radius: 999px;
+  color: #5f4900;
+  background: #fffbea;
+  font-weight: 750;
+  text-decoration: none;
+}
+
+.vehicle-part-links a:hover,
+.vehicle-part-links a:focus-visible {
+  border-color: #d2aa00;
+  color: #111827;
+  background: #ffef9a;
+}
+
 .vehicle-application-card .filter-showcase__copy > a {
   display: inline-flex;
   min-height: 44px;

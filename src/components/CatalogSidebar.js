@@ -29,6 +29,8 @@ export default async function CatalogSidebar({
   categoryParam,
   brandParam,
   tipoParam,
+  vehicleParam,
+  partParam,
   searchQuery,
   sortParam,
 }) {
@@ -44,10 +46,10 @@ export default async function CatalogSidebar({
     brands = getFallbackBrands();
   }
 
-  const sharedFilters = { brand: brandParam, search: searchQuery, sort: sortParam };
+  const sharedFilters = { brand: brandParam, vehicle: vehicleParam, part: partParam, search: searchQuery, sort: sortParam };
   const categoryHref = (category, tipo) => buildCatalogHref({ ...sharedFilters, category, tipo });
 
-  const hasActiveFilters = !!(categoryParam || brandParam || searchQuery || tipoParam);
+  const hasActiveFilters = !!(categoryParam || brandParam || searchQuery || tipoParam || vehicleParam || partParam);
   const backHref = hasActiveFilters ? "/catalogo" : "/";
 
   return (
@@ -94,7 +96,7 @@ export default async function CatalogSidebar({
           <h2 className="catalog-sidebar__title">Marca</h2>
           <ul className="catalog-brand-list">
             {brands.map((brand) => {
-              const href = buildCatalogHref({ category: categoryParam, brand: brand.slug, tipo: tipoParam, search: searchQuery, sort: sortParam });
+              const href = buildCatalogHref({ category: categoryParam, brand: brand.slug, tipo: tipoParam, vehicle: vehicleParam, part: partParam, search: searchQuery, sort: sortParam });
               const active = brandParam === brand.slug;
               return (
                 <li key={brand.id}>
@@ -106,7 +108,7 @@ export default async function CatalogSidebar({
               );
             })}
           </ul>
-          {(categoryParam || brandParam || searchQuery || tipoParam) && <Link href="/catalogo" className="btn btn--outline catalog-clear">Limpiar filtros</Link>}
+          {hasActiveFilters && <Link href="/catalogo" className="btn btn--outline catalog-clear">Limpiar filtros</Link>}
         </div>
       </div>
     </aside>
