@@ -23,7 +23,7 @@ export const kiaProducts = [
     fitmentSummary: "TNK THX049: Kia Picanto Ion / Eko Taxi 2011–2017; axial interior para ambos lados.", fitmentRequirements: ["VIN", "año", "versión", "roscas", "longitud", "referencia OE"],
     fitmentSource: "TNK Colombia — THX049; OE 577241Y000; longitud 211 mm; roscas M14x1.5. Precio público consultado: $57.800 COP.",
     shortDesc: "Axial interior para Picanto Ion y Eko Taxi.", description: "Axial TNK THX049 para Kia Picanto Ion y Eko Taxi 2011–2017. Longitud 211 mm y roscas M14x1.5. Validar VIN y OE 577241Y000 antes de instalar.",
-    image: kiaImage("ads-kia-axial-direccion-referencia-vin.jpg"), images: [image("ads-kia-axial-direccion-referencia-vin.jpg", "Axial de dirección TNK THX049 Kia Picanto Ion")], imageStatus: "ai-catalog-watermarked",
+    image: kiaImage("tnk-thx049-kia-picanto-ion.jpg"), images: [image("tnk-thx049-kia-picanto-ion.jpg", "Axial de dirección TNK THX049 Kia Picanto Ion")], imageStatus: "ai-catalog-watermarked",
     attributes: [{ id: "thx049-ref", name: "Referencia", value: "THX049" }, { id: "thx049-oe", name: "OE", value: "577241Y000" }, { id: "thx049-size", name: "Medidas", value: "211 mm · M14x1.5 / M14x1.5" }, { id: "thx049-position", name: "Posición", value: "Axial interior · ambos lados" }, { id: "thx049-fitment", name: "Compatible con", value: "Kia Picanto Ion / Eko Taxi 2011–2017" }], inStock: true, stock: 1,
   },
   {
