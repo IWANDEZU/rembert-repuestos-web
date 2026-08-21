@@ -228,7 +228,8 @@ export default function ProductVariantSelector({ product }) {
         background: 'var(--card-dark)', 
         padding: 'clamp(16px, 3vw, 30px)', 
         borderRadius: '16px', 
-        border: '1px solid var(--border-color)' 
+        border: '1px solid var(--border-color)',
+        color: '#F8FAFC'
       }}>
         
         {/* Galería e Imagen Ampliada */}
@@ -312,13 +313,13 @@ export default function ProductVariantSelector({ product }) {
         </div>
 
         {/* Información Detallada del Producto */}
-        <div style={{ display: 'flex', flexDirection: 'column' }}>
+        <div style={{ display: 'flex', flexDirection: 'column', minWidth: 0, color: '#F8FAFC' }}>
           
           <div style={{ color: 'var(--primary-color)', fontWeight: 'bold', textTransform: 'uppercase', fontSize: '0.85rem', marginBottom: '8px', letterSpacing: '1px' }}>
             {brandName} • {categoryName}
           </div>
           
-          <h1 style={{ fontSize: '2.2rem', marginBottom: '12px', lineHeight: '1.2' }}>{product.name}</h1>
+          <h1 style={{ color: '#FFFFFF', fontSize: '2.2rem', marginBottom: '12px', lineHeight: '1.2', overflowWrap: 'anywhere', textWrap: 'balance' }}>{product.name}</h1>
 
           {product.sku && <p className="product-reference product-reference--detail">{referenceLabel}: {product.sku}</p>}
           
@@ -342,7 +343,7 @@ export default function ProductVariantSelector({ product }) {
             </span>
           </div>
 
-          <p style={{ color: 'var(--text-muted)', lineHeight: '1.6', marginBottom: '24px', fontSize: '1rem' }}>
+          <p style={{ color: '#CBD5E1', lineHeight: '1.6', marginBottom: '24px', fontSize: '1rem' }}>
             {product.description || 'Lubricante formulado con tecnología avanzada para brindar máxima protección contra el desgaste y extender la vida útil del motor.'}
           </p>
 
