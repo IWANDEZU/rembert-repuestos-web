@@ -76,6 +76,20 @@ function verifiedProduct({ id, name, sku, image, description, fitments, position
 
 export const frenosSuspensionProducts = [
   verifiedProduct({
+    id: "moog-kit-rotulas-super-duty-f250-f350-4x4-1999-2019",
+    name: "Kit MOOG de Rótulas Delanteras Superiores e Inferiores — Ford F-250 / F-350 Super Duty 4x4 1999–2019",
+    sku: "K80026 ×2 + K8607T ×2",
+    image: "/catalogo-frenos-suspension/moog-kit-rotulas-super-duty-k80026-k8607t.webp",
+    position: "Eje delantero 4x4: dos superiores y dos inferiores",
+    description: "Kit de cuatro rótulas para el eje delantero de las Ford Super Duty con tracción 4x4: 2 rótulas superiores MOOG K80026 y 2 inferiores MOOG K8607T. Es una reparación de eje completo; no es una pieza universal ni aplica a F-250/F-350 convencionales fuera de la plataforma Super Duty.",
+    fitments: [
+      { make: "Ford", model: "F-250 Super Duty", years: "1999–2019", position: "delantero superior e inferior, 4x4", engine: "4x4; confirmar eje delantero por VIN" },
+      { make: "Ford", model: "F-350 Super Duty", years: "1999–2019", position: "delantero superior e inferior, 4x4", engine: "4x4; confirmar eje delantero por VIN" },
+    ],
+    pairedReference: "Contenido: K80026 superior (2 unidades) + K8607T inferior (2 unidades).",
+    source: "MOOG Parts — ficha técnica ‘Solving Memory Steer on Ford and Ram Trucks’ y spotlight 2015 Ford F-250/F-350 Super Duty 4WD: K80026 delantero superior y K8607T delantero inferior.",
+  }),
+  verifiedProduct({
     id: "moog-de-wp-10653-chevrolet-spark-m300-izquierdo",
     name: "Brazo de Control Delantero Izquierdo MOOG DE-WP-10653 — Chevrolet Spark M300",
     sku: "DE-WP-10653",
