@@ -4,40 +4,13 @@ import { siteUrl } from "@/lib/site";
 
 export const metadata = {
   title: "Radiadores Chevrolet y Renault | REMBERT",
-  description:
-    "Venta especializada de radiadores para Chevrolet (Sail, Onix, Tracker, Spark, Aveo) y Renault (Duster, Sandero, Logan, Stepway, Kwid) en Barrancabermeja. Envíos a todo Colombia.",
-  alternates: {
-    canonical: "/radiadores",
-  },
-  keywords: [
-    "radiadores Chevrolet",
-    "radiadores Renault",
-    "radiador Sail",
-    "radiador Onix",
-    "radiador Tracker",
-    "radiador Spark GT",
-    "radiador Duster",
-    "radiador Sandero",
-    "radiador Logan",
-    "radiador Stepway",
-    "radiador Kwid",
-    "radiadores Barrancabermeja",
-    "tapas de radiador",
-    "refrigerante motor",
-  ],
+  description: "Venta de radiadores para Chevrolet y Renault en Barrancabermeja y Colombia.",
+  alternates: { canonical: "/radiadores" },
   openGraph: {
     title: "Radiadores Chevrolet y Renault | REMBERT",
-    description:
-      "Radiadores originales y homologados para Chevrolet y Renault. Alta eficiencia térmica, asesoría inmediata en Barrancabermeja y envíos a toda Colombia.",
+    description: "Radiadores para Chevrolet y Renault. Alta eficiencia térmica en Barrancabermeja.",
     url: `${siteUrl}/radiadores`,
-    images: [
-      {
-        url: "/radiador-banner.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Radiadores Chevrolet y Renault - REMBERT",
-      },
-    ],
+    images: [{ url: "/radiador-banner.jpg", width: 1200, height: 630, alt: "Radiadores REMBERT" }],
   },
 };
 
@@ -46,108 +19,54 @@ const radiatorCategories = [
     id: "chevrolet-radiadores",
     title: "Radiadores para Chevrolet",
     badge: "Especialidad Chevrolet",
-    description:
-      "Radiadores de aluminio con panel de alta disipación térmica para Chevrolet Sail, Onix, Tracker, Spark GT, Aveo, Captiva, Cruze y Optra. Ajuste exacto OEM de fábrica.",
+    description: "Radiadores de aluminio para Sail, Onix, Tracker, Spark GT, Aveo, Captiva, Cruze y Optra. Ajuste exacto OEM.",
     image: "/radiador-auto.jpg",
     specs: ["Aluminio de alta transferencia", "Tanques de polímero reforzado", "Ajuste OEM directo", "Garantía térmica"],
-    whatsappText: "Hola, me interesa cotizar un Radiador para Chevrolet (Sail, Onix, Tracker, Spark, Aveo).",
+    whatsappText: "Hola, me interesa cotizar un Radiador para Chevrolet.",
   },
   {
     id: "renault-radiadores",
     title: "Radiadores para Renault",
     badge: "Especialidad Renault",
-    description:
-      "Radiadores de alto rendimiento térmico para Renault Duster, Sandero, Logan, Stepway, Kwid, Megane, Clio y Symbol. Diseñados para clima cálido y exigente.",
+    description: "Radiadores de alto rendimiento para Duster, Sandero, Logan, Stepway, Kwid, Megane, Clio y Symbol.",
     image: "/radiador-banner.jpg",
     specs: ["Resistencia a altas presiones", "Tomas y conectores OEM", "Enfriamiento garantizado", "Durabilidad superior"],
-    whatsappText: "Hola, necesito cotizar un Radiador para Renault (Duster, Sandero, Logan, Stepway, Kwid).",
+    whatsappText: "Hola, necesito cotizar un Radiador para Renault.",
   },
   {
     id: "intercoolers-enfriadores",
     title: "Enfriadores y Calefacción",
     badge: "Sistema Térmico",
-    description:
-      "Radiadores de calefacción interior, enfriadores de aceite y post-enfriadores térmicos para vehículos Chevrolet y Renault.",
+    description: "Radiadores de calefacción interior, enfriadores de aceite y post-enfriadores para Chevrolet y Renault.",
     image: "/radiador-auto.jpg",
     specs: ["Calefacción interior", "Enfriamiento de aceite", "Protección del motor", "Rendimiento óptimo"],
-    whatsappText: "Hola, requiero cotizar un radiador de calefacción o enfriador para Chevrolet/Renault.",
+    whatsappText: "Hola, requiero cotizar un radiador de calefacción o enfriador.",
   },
   {
     id: "componentes-refrigeracion",
     title: "Tapas, Termostatos y Refrigerante ACDelco",
     badge: "Accesorios Críticos",
-    description:
-      "Refrigerante original ACDelco DEX-COOL 50/50 OAT, tapas presurizadas de seguridad calibradas (0.9, 1.1 y 1.4 Bar) y termostatos de apertura precisa.",
+    description: "Refrigerante original ACDelco DEX-COOL 50/50 OAT, tapas presurizadas (0.9, 1.1 y 1.4 Bar) y termostatos.",
     image: "/acdelco-dex-cool-50-50-galon.png",
-    specs: ["ACDelco DEX-COOL 50/50 OAT", "Tapas presurizadas calibradas", "Termostatos OEM de precisión", "Protección anticorrosiva 5 años"],
-    whatsappText: "Hola, deseo cotizar el Refrigerante ACDelco DEX-COOL 50/50, tapas de radiador o termostato para mi vehículo.",
+    specs: ["ACDelco DEX-COOL 50/50 OAT", "Tapas presurizadas calibradas", "Termostatos OEM", "Protección anticorrosiva"],
+    whatsappText: "Hola, deseo cotizar el Refrigerante ACDelco DEX-COOL 50/50 o tapas de radiador.",
   },
 ];
 
 const brandCompatibilities = [
-  {
-    brand: "Chevrolet",
-    logo: "/logos/autos/chevrolet.svg",
-    models: "Sail, Onix, Tracker, Spark GT, Aveo, Captiva, Cruze, Optra, Sonic, Cobalt",
-    tag: "Especialidad #1",
-  },
-  {
-    brand: "Renault",
-    logo: "/logos/autos/renault.svg",
-    models: "Duster, Sandero, Logan, Stepway, Kwid, Megane, Clio Campus, Symbol, Twingo",
-    tag: "Especialidad #2",
-  },
-  {
-    brand: "Toyota",
-    logo: "/logos/autos/toyota.svg",
-    models: "Corolla, Yaris, RAV4, Prado, Fortuner",
-    tag: "Línea Liviana",
-  },
-  {
-    brand: "Mazda",
-    logo: "/logos/autos/mazda.svg",
-    models: "Mazda 2, Mazda 3, CX-30, CX-5, Allegro",
-    tag: "Línea Liviana",
-  },
-  {
-    brand: "Kia & Hyundai",
-    logo: "/logos/autos/kia.svg",
-    models: "Picanto, Rio, Sportage, Tucson, Accent, i10",
-    tag: "Línea Coreana",
-  },
-  {
-    brand: "Nissan",
-    logo: "/logos/autos/nissan.svg",
-    models: "Versa, March, Sentra, Kicks, Tiida",
-    tag: "Línea Liviana",
-  },
-];
+  ["Chevrolet", "Sail, Onix, Tracker, Spark GT, Aveo, Captiva, Cruze, Optra", "Especialidad #1", "/logos/autos/chevrolet.svg"],
+  ["Renault", "Duster, Sandero, Logan, Stepway, Kwid, Megane, Clio, Symbol", "Especialidad #2", "/logos/autos/renault.svg"],
+  ["Toyota", "Corolla, Yaris, RAV4, Prado, Fortuner", "Línea Liviana", "/logos/autos/toyota.svg"],
+  ["Mazda", "Mazda 2, Mazda 3, CX-30, CX-5, Allegro", "Línea Liviana", "/logos/autos/mazda.svg"],
+  ["Kia & Hyundai", "Picanto, Rio, Sportage, Tucson, Accent, i10", "Línea Coreana", "/logos/autos/kia.svg"],
+  ["Nissan", "Versa, March, Sentra, Kicks, Tiida", "Línea Liviana", "/logos/autos/nissan.svg"],
+].map(([brand, models, tag, logo]) => ({ brand, models, tag, logo }));
 
 const diagnosticTips = [
-  {
-    icon: "🌡️",
-    title: "Temperatura Alta en Subidas o Tráfico",
-    description:
-      "Si la aguja sube en pendientes o trancones, el panel del radiador puede tener sarro interno o aletas dobladas que impiden el flujo de aire.",
-  },
-  {
-    icon: "💧",
-    title: "Fugas Verdes o Rojas en el Suelo",
-    description:
-      "Goteras de color en la parte frontal indican fisuras en los tanques plásticos, juntas desgastadas o micro-perforaciones en las celdas.",
-  },
-  {
-    icon: "💨",
-    title: "Pérdida de Presión por la Tapa",
-    description:
-      "Una tapa de radiador vencida no retiene la presión (0.9 a 1.1 Bar), provocando ebullición prematura del líquido y retorno descontrolado al depósito.",
-  },
-  {
-    icon: "🚫",
-    title: "Uso de Agua Corriente en vez de Coolant",
-    description:
-      "El agua de grifo oxida los conductos de aluminio y crea sarro calcáreo que tapona el radiador en pocos meses. Usa siempre refrigerante con etilenglicol.",
-  },
+  { icon: "🌡️", title: "Temperatura Alta en Subidas o Tráfico", description: "Sarro interno o aletas dobladas que impiden el flujo de aire." },
+  { icon: "💧", title: "Fugas Verdes o Rojas en el Suelo", description: "Fisuras en los tanques plásticos o micro-perforaciones en las celdas." },
+  { icon: "💨", title: "Pérdida de Presión por la Tapa", description: "Una tapa vencida no retiene la presión (0.9 a 1.1 Bar), causando ebullición." },
+  { icon: "🚫", title: "Uso de Agua Corriente en vez de Coolant", description: "El agua oxida el aluminio y tapa el radiador. Usa refrigerante con etilenglicol." },
 ];
 
 export default function RadiadoresPage() {
