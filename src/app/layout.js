@@ -250,7 +250,7 @@ export default function RootLayout({ children }) {
                 {/* Brand / Logo + 38 Años de Experiencia Debajo */}
                 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: '0.35rem' }}>
                   <Link href="/" className="navbar__brand" style={{ display: 'flex', alignItems: 'center', textDecoration: 'none' }}>
-                    <BrandLogo width={285} height={105} />
+                    <BrandLogo width={285} height={95} />
                   </Link>
                   <span className="experience-badge" style={{ fontSize: '0.74rem', padding: '0.2rem 0.8rem', letterSpacing: '0.5px' }}>
                     ⭐ <strong>38 AÑOS</strong> DE EXPERIENCIA
@@ -284,7 +284,7 @@ export default function RootLayout({ children }) {
               <div style={{ maxWidth: '1100px', margin: '0 auto 2.5rem', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: '2rem', textAlign: 'left' }}>
                 <div>
                   <div style={{ marginBottom: '1rem' }}>
-                    <BrandLogo width={160} height={58} />
+                    <BrandLogo width={160} height={52} />
                   </div>
                   <p style={{ color: '#aaa', fontSize: '0.9rem', lineHeight: '1.6', marginBottom: '0.8rem' }}>
                     Repuestos originales y alternativos para tu vehículo. Precios al por mayor y detal con envíos seguros a todo el país.
