@@ -24,6 +24,11 @@ const brandLogos = [
   { name: "Honda", src: "/logos/autos/honda.svg" },
   { name: "BMW", src: "/logos/autos/bmw.svg" },
   { name: "Volvo", src: "/logos/autos/volvo.svg" },
+  { name: "Daihatsu", src: "/logos/autos/daihatsu.svg" },
+  { name: "Daewoo", src: "/logos/autos/daewoo.svg" },
+  { name: "Škoda", src: "/logos/autos/skoda.svg" },
+  { name: "SEAT", src: "/logos/autos/seat.svg" },
+  { name: "Peugeot", src: "/logos/autos/peugeot.svg" },
 ];
 
 const popularCarBrands = [
@@ -117,6 +122,41 @@ const popularCarBrands = [
     popularModels: "Serie 3, Serie 5, X1, X3, X5",
     query: "bmw",
     badge: "Premium",
+  },
+  {
+    name: "Daihatsu",
+    logo: "/logos/autos/daihatsu.svg",
+    popularModels: "Terios, Sirion, Charade, Feroza, Rocky",
+    query: "daihatsu",
+    badge: "Japonesa",
+  },
+  {
+    name: "Daewoo",
+    logo: "/logos/autos/daewoo.svg",
+    popularModels: "Matiz, Lanos, Nubira, Tacuma, Cielo",
+    query: "daewoo",
+    badge: "Línea Clásica",
+  },
+  {
+    name: "Škoda",
+    logo: "/logos/autos/skoda.svg",
+    popularModels: "Fabia, Octavia, Rapid, Superb, Karoq",
+    query: "skoda",
+    badge: "Europea",
+  },
+  {
+    name: "SEAT",
+    logo: "/logos/autos/seat.svg",
+    popularModels: "Ibiza, León, Córdoba, Toledo, Ateca",
+    query: "seat",
+    badge: "Europea",
+  },
+  {
+    name: "Peugeot",
+    logo: "/logos/autos/peugeot.svg",
+    popularModels: "206, 207, 208, 301, 2008, Partner",
+    query: "peugeot",
+    badge: "Francesa",
   },
 ];
 

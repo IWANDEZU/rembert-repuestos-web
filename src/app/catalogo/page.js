@@ -172,15 +172,24 @@ const gasolineFilterApplications = [
 ];
 
 const gasolineBrakeApplications = [
-  ["Chevrolet", "Spark, Spark GT, Aveo, Optra, Onix, Onix Plus, Tracker y Montana"],
-  ["Renault", "Logan, Sandero, Duster y Captur gasolina"],
-  ["Nissan", "March, Versa y Kicks gasolina"],
-  ["Toyota", "Yaris, Etios, Etios Sedán y Etios Cross"],
-  ["Kia", "Picanto, Cerato y Sportage gasolina"],
-  ["Hyundai", "HB20, HB20X, Veloster y Tucson gasolina"],
-  ["Volkswagen", "Gol, Saveiro, Fox, SpaceFox y CrossFox"],
-  ["Mazda", "Mazda 2, Mazda 3 y CX-5 gasolina"],
-  ["Ford", "Fiesta, EcoSport y Escape gasolina"],
+  { brand: "Chevrolet", logo: "/logos/autos/chevrolet.svg", models: "Spark, Spark GT, Aveo, Optra, Sail, Onix, Tracker y Montana", systems: "Pastillas · discos · bandas · amortiguadores · terminales" },
+  { brand: "Renault", logo: "/logos/autos/renault.svg", models: "Kwid, Logan, Sandero, Stepway, Duster, Oroch y Captur", systems: "Pastillas · discos · campanas · amortiguadores · rótulas" },
+  { brand: "Nissan", logo: "/logos/autos/nissan.svg", models: "March, Versa, Sentra, Kicks, Qashqai y X-Trail", systems: "Pastillas · discos · amortiguadores · axiales · terminales" },
+  { brand: "Toyota", logo: "/logos/autos/toyota.svg", models: "Yaris, Corolla, Etios, RAV4, Rush y Hilux gasolina", systems: "Pastillas · discos · bandas · amortiguadores · bujes" },
+  { brand: "Kia", logo: "/logos/autos/kia.svg", models: "Picanto, Rio, Cerato, Soul, Sonet y Sportage", systems: "Pastillas · discos · amortiguadores · rótulas · axiales" },
+  { brand: "Hyundai", logo: "/logos/autos/hyundai.svg", models: "i10, Grand i10, Accent, HB20, Elantra, Creta y Tucson", systems: "Pastillas · discos · amortiguadores · terminales · bujes" },
+  { brand: "Volkswagen", logo: "/logos/autos/volkswagen.svg", models: "Gol, Voyage, Saveiro, Fox, Polo, Virtus y T-Cross", systems: "Pastillas · discos · campanas · amortiguadores · rótulas" },
+  { brand: "Mazda", logo: "/logos/autos/mazda.svg", models: "Mazda 2, Mazda 3, Mazda 6, CX-3, CX-30 y CX-5", systems: "Pastillas · discos · amortiguadores · axiales · terminales" },
+  { brand: "Ford", logo: "/logos/autos/ford.svg", models: "Fiesta, Focus, EcoSport, Escape, Edge y Ranger gasolina", systems: "Pastillas · discos · bandas · amortiguadores · rótulas" },
+  { brand: "Suzuki", logo: "/logos/autos/suzuki.svg", models: "Alto, Celerio, Swift, Baleno, Jimny, Vitara y S-Cross", systems: "Pastillas · discos · bandas · amortiguadores · terminales" },
+  { brand: "Honda", logo: "/logos/autos/honda.svg", models: "Fit, City, Civic, Accord, HR-V y CR-V", systems: "Pastillas · discos · amortiguadores · rótulas · bujes" },
+  { brand: "Mitsubishi", logo: "/logos/autos/mitsubishi.svg", models: "Lancer, Mirage, ASX, Outlander y Montero gasolina", systems: "Pastillas · discos · amortiguadores · terminales · bujes" },
+  { brand: "Peugeot", logo: "/logos/autos/peugeot.svg", models: "206, 207, 208, 301, 2008 y 3008 gasolina", systems: "Pastillas · discos · amortiguadores · axiales · rótulas" },
+  { brand: "SEAT", logo: "/logos/autos/seat.svg", models: "Ibiza, Córdoba, León, Toledo, Arona y Ateca", systems: "Pastillas · discos · amortiguadores · terminales · bujes" },
+  { brand: "Škoda", logo: "/logos/autos/skoda.svg", models: "Fabia, Octavia, Rapid, Scala, Kamiq y Karoq", systems: "Pastillas · discos · amortiguadores · rótulas · axiales" },
+  { brand: "Daihatsu", logo: "/logos/autos/daihatsu.svg", models: "Mira, Cuore, Sirion, Terios, Bego y Gran Max gasolina", systems: "Pastillas · discos · bandas · amortiguadores · terminales" },
+  { brand: "Daewoo", logo: "/logos/autos/daewoo.svg", models: "Tico, Matiz, Lanos, Nubira, Espero y Leganza", systems: "Pastillas · discos · bandas · amortiguadores · rótulas" },
+  { brand: "BMW", logo: "/logos/autos/bmw.svg", models: "Serie 1, Serie 3, Serie 5, X1 y X3 gasolina", systems: "Pastillas · discos · sensores · amortiguadores · brazos" },
 ];
 
 const gasolineFilterBrandVisuals = {
@@ -724,6 +733,34 @@ export default async function Catalogo({ searchParams }) {
           <p>{bannerSubtitle}</p>
         </header>
 
+        {categoryParam === "electrico-y-encendido" && !brandParam && !searchQuery && (
+          <section
+            aria-label="Repuestos eléctricos y de encendido"
+            style={{
+              position: "relative",
+              width: "100%",
+              aspectRatio: "3 / 1",
+              minHeight: "180px",
+              maxHeight: "430px",
+              marginBottom: "1.5rem",
+              overflow: "hidden",
+              borderRadius: "18px",
+              background: "#050505",
+              border: "1px solid rgba(255, 212, 0, 0.45)",
+              boxShadow: "0 14px 36px rgba(0, 0, 0, 0.2)",
+            }}
+          >
+            <Image
+              src="/catalogo-electricos-neon-rembert.webp"
+              alt="Bujías, bobinas, cables y sensores automotrices sobre fondo neón amarillo REMBERT"
+              fill
+              priority
+              sizes="(max-width: 900px) 100vw, 75vw"
+              style={{ objectFit: "cover" }}
+            />
+          </section>
+        )}
+
         {categoryParam === "filtros" && !brandParam && !searchQuery && (
           <section className="filter-showcase" aria-labelledby="filter-showcase-title">
             <div className="filter-showcase__heading">
@@ -781,24 +818,53 @@ export default async function Catalogo({ searchParams }) {
           <section className="filter-showcase" aria-labelledby="brake-applications-title">
             <div className="filter-showcase__heading">
               <div>
-                <p className="filter-showcase__eyebrow">Aplicaciones verificadas · gasolina</p>
-                <h2 id="brake-applications-title">Busca frenos y suspensión por marca y modelo</h2>
+                <p className="filter-showcase__eyebrow">Catálogo para automóviles y pickups a gasolina</p>
+                <h2 id="brake-applications-title">Encuentra frenos y suspensión por vehículo</h2>
               </div>
-              <p>Las referencias son orientativas hasta confirmar VIN, año, motor, eje, diámetro de disco o tambor y sistema ABS.</p>
+              <p>Explora la cobertura por marca y solicita la referencia exacta con los datos de tu vehículo. Confirmamos aplicación antes del despacho.</p>
             </div>
-            <div className="filter-showcase__grid">
-              {gasolineBrakeApplications.map(([brand, models]) => (
-                <article key={brand} className="filter-showcase__card filter-showcase__card--application">
+            <div className="vehicle-catalog-summary" aria-label="Cobertura del catálogo">
+              <div><strong>{gasolineBrakeApplications.length}</strong><span>marcas cubiertas</span></div>
+              <div><strong>5+</strong><span>familias por vehículo</span></div>
+              <div><strong>VIN</strong><span>validación antes de compra</span></div>
+              <div><strong>Colombia</strong><span>envíos nacionales</span></div>
+            </div>
+            <div className="filter-showcase__grid filter-showcase__grid--vehicles">
+              {gasolineBrakeApplications.map(({ brand, logo, models, systems }) => (
+                <article key={brand} className="filter-showcase__card filter-showcase__card--application vehicle-application-card">
+                  <div className="vehicle-application-card__header">
+                    <div className="vehicle-application-card__logo">
+                      <Image src={logo} alt={`Logo ${brand}`} width={92} height={52} />
+                    </div>
+                    <span>Gasolina</span>
+                  </div>
                   <div className="filter-showcase__copy">
                     <h3>{brand}</h3>
                     <p><strong>Modelos:</strong> {models}</p>
+                    <p><strong>Encuentra:</strong> {systems}</p>
                     <Link href={`/catalogo?category=frenos-y-suspension&search=${encodeURIComponent(brand)}`}>
-                      Ver referencias {brand} →
+                      Ver productos compatibles <span aria-hidden="true">→</span>
                     </Link>
                   </div>
                 </article>
               ))}
             </div>
+            <aside className="vehicle-fitment-cta" aria-label="Ayuda para confirmar compatibilidad">
+              <div>
+                <p className="filter-showcase__eyebrow">Compra segura</p>
+                <h3>¿No encuentras tu modelo o no conoces la referencia?</h3>
+                <p>Envíanos marca, modelo, año, motorización, versión y VIN. Para frenos también confirma eje delantero o trasero y si utiliza ABS.</p>
+              </div>
+              <a
+                href="https://wa.me/573508299233?text=Hola%20Rembert%2C%20necesito%20confirmar%20un%20repuesto%20de%20frenos%20o%20suspensi%C3%B3n.%20Marca%3A%20___%20Modelo%3A%20___%20A%C3%B1o%3A%20___%20Motor%3A%20___%20VIN%3A%20___"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="vehicle-fitment-cta__button"
+              >
+                Confirmar por WhatsApp
+              </a>
+            </aside>
+            <p className="vehicle-fitment-note">Las aplicaciones publicadas son una guía de búsqueda. La referencia final depende de VIN, año, motor, versión, eje, medidas y configuración ABS.</p>
           </section>
         )}
 

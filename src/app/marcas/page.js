@@ -38,6 +38,8 @@ const fallbackBrands = [
   { name: "Global Oil", slug: "global-oil", logo: "/logos/global-oil.svg", count: 5 },
   { name: "Max Power", slug: "max-power", logo: "/logos/max-power.png", count: 6 },
   { name: "Petroil", slug: "petroil", logo: "/logos/petroil.png", count: 4 },
+  { name: "OSRAM", slug: "osram", logo: "/catalogo-ktx-osram/osram-ledriving-hl-bright-h4.webp", count: 1 },
+  { name: "KTX", slug: "ktx", logo: "/catalogo-ktx-osram/ktx-kit-embrague-familia.webp", count: 1 },
 ];
 
 const lubricantBrandSlugs = new Set([
@@ -60,6 +62,11 @@ const automotiveBrands = [
   { name: "Suzuki", slug: "suzuki", logo: "/logos/autos/suzuki.svg", count: 0 },
   { name: "BMW", slug: "bmw", logo: "/logos/autos/bmw.svg", count: 0 },
   { name: "Volvo", slug: "volvo", logo: "/logos/autos/volvo.svg", count: 0 },
+  { name: "Daihatsu", slug: "daihatsu", logo: "/logos/autos/daihatsu.svg", count: 0 },
+  { name: "Daewoo", slug: "daewoo", logo: "/logos/autos/daewoo.svg", count: 0 },
+  { name: "Škoda", slug: "skoda", logo: "/logos/autos/skoda.svg", count: 0 },
+  { name: "SEAT", slug: "seat", logo: "/logos/autos/seat.svg", count: 0 },
+  { name: "Peugeot", slug: "peugeot", logo: "/logos/autos/peugeot.svg", count: 0 },
 ];
 
 export default async function MarcasPage() {
