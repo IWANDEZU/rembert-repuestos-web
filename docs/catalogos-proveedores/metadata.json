@@ -1,0 +1,83 @@
+{
+  "schemaVersion": "1.0",
+  "generatedAt": "2026-08-21",
+  "owner": "REMBERT Repuestos BCA",
+  "imagePolicy": "Visuales de catálogo generadas y marcadas. No representan empaque original ni autorizan una aplicación sin validar VIN.",
+  "assets": [
+    {
+      "file": "gti-tijera-suspension-delantera-referencia-vin.jpg",
+      "brand": "GTI",
+      "product": "Tijera de suspensión delantera",
+      "reference": "GTI-CTRL-ARM-COT",
+      "status": "family",
+      "fitment": "Pendiente de VIN, lado, plataforma y OE.",
+      "source": "https://dispartes.com/gtiautoparts/"
+    },
+    {
+      "file": "ads-brazo-axial-hyundai-atos-56540-02000.jpg",
+      "brand": "ADS",
+      "product": "Brazo axial interior de dirección",
+      "reference": "56540-02000",
+      "status": "verified",
+      "fitment": "Hyundai Atos, motores 1.0 y 1.1, 1997–2014; validar VIN, roscas y longitud.",
+      "source": "https://ligaderepuestos.com/product/brazo-axial-hyundai-atos-ads/"
+    },
+    {
+      "file": "tnk-terminal-exterior-nissan-qashqai-nc050a.jpg",
+      "brand": "TNK",
+      "product": "Terminal exterior de dirección",
+      "reference": "NC050A",
+      "status": "verified",
+      "fitment": "Nissan Qashqai II 2013–2021; validar versión, lado y VIN.",
+      "source": "https://tnk.com.co/"
+    },
+    {
+      "file": "gabriel-amortiguador-automovil-referencia-vin.jpg",
+      "brand": "Gabriel",
+      "product": "Amortiguador automóvil",
+      "reference": "GAB-GAS-FRONT",
+      "status": "family",
+      "fitment": "Se determina por VIN, eje, lado, longitud y anclajes.",
+      "source": "https://www.gabriel.com.co/"
+    },
+    {
+      "file": "kmx-pastillas-freno-friction-referencia-vin.jpg",
+      "brand": "KMX",
+      "product": "Pastillas de freno KMX Friction",
+      "reference": "KMX-FRICTION-COT",
+      "status": "family",
+      "fitment": "Se determina por VIN, eje, mordaza, forma y sistema de freno.",
+      "source": "https://kgroupcorp.com/productos/kmx/"
+    },
+    {
+      "file": "rowen-amortiguador-hyundai-i10-kia-picanto-morning.jpg",
+      "brand": "Rowen",
+      "product": "Amortiguador",
+      "reference": "ROWEN-SHOCK-I10-PICANTO-COT",
+      "status": "conditional",
+      "fitment": "Hyundai i10; Kia Picanto Eko / Morning. Confirmar eje, anclajes, año y VIN.",
+      "source": "https://todorepuestosvirtual.com/brand/63-rowen"
+    },
+    {
+      "file": "ctr-amortiguador-trasero-hyundai-i10-pa-gy1628g.jpg",
+      "brand": "CTR",
+      "product": "Amortiguador trasero",
+      "reference": "GY1628G / OE 55300-0X200",
+      "status": "verified",
+      "fitment": "Hyundai i10 (PA), 2008–2013, eje trasero; validar VIN.",
+      "source": "https://aftermarket.ctr.co.kr/files/acd4814d8322d704b0ea5574b1d8f50b.pdf"
+    }
+  ],
+  "pendingBrands": [
+    {
+      "brand": "Verke",
+      "reason": "La evidencia localizada corresponde a amortiguación para Ford Cargo / vehículo comercial. No se debe ofrecer como aplicación para automóvil sin ficha específica.",
+      "source": "https://importruck.com/"
+    },
+    {
+      "brand": "Safeti",
+      "reason": "No se localizó una ficha de autoparte liviana trazable con referencia y aplicación. Se requiere catálogo del proveedor antes de publicar un producto.",
+      "source": "Proveedor pendiente"
+    }
+  ]
+}

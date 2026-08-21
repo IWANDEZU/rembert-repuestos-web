@@ -1,5 +1,6 @@
 import { frenosSuspensionProducts } from "../data/frenosSuspensionProducts.js";
 import { brandPanelProducts } from "../data/brandPanelProducts.js";
+import { catalogoProveedoresProducts } from "../data/catalogoProveedoresProducts.js";
 
 function brakeApplication({
   id, name, slug, brand, reference, image, vehicleBrands, models,
@@ -608,8 +609,9 @@ const allProducts = [
     fitmentRequirements: ["VIN", "marca", "modelo", "año", "motor", "carrocería", "eje", "lado", "tipo de suspensión", "referencia OE"],
     fitmentSource: "Catálogo Gabriel; referencia exacta pendiente de identificación por vehículo",
     description: "Familia de amortiguadores Gabriel Gas-Matic. La aplicación se confirma por VIN, eje, lado, anclajes y configuración de suspensión; no se vende por semejanza visual.",
-    image: "/gabriel-amortiguador-01.webp",
-    images: [{ url: "/gabriel-amortiguador-01.webp", alt: "Amortiguador Gabriel", isMain: true }],
+    image: "/catalogo-proveedores/gabriel-amortiguador-automovil-referencia-vin.jpg",
+    images: [{ url: "/catalogo-proveedores/gabriel-amortiguador-automovil-referencia-vin.jpg", alt: "Amortiguador Gabriel", isMain: true }],
+    imageStatus: "ai-catalog-watermarked",
     inStock: false,
     stock: 0,
   },
@@ -617,6 +619,7 @@ const allProducts = [
   // DIRECCIÓN, SUSPENSIÓN Y FRENO HIDRÁULICO — COTIZACIÓN VALIDADA POR VIN
   ...brandPanelProducts,
   ...frenosSuspensionProducts,
+  ...catalogoProveedoresProducts,
 
   // FILTROS
   {
