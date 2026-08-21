@@ -155,58 +155,64 @@ const filterTypeShowcase = [
   },
 ];
 
+const defaultFilterSystems = "Aceite · aire · combustible · cabina";
 const gasolineFilterApplications = [
-  ["Chevrolet", "Spark, Spark GT, Onix, Sail, Aveo, Tracker", "Aceite · aire · combustible · cabina"],
-  ["Renault", "Kwid, Sandero, Logan, Stepway, Duster, Duster Oroch", "Aceite · aire · combustible · cabina"],
-  ["Toyota", "Yaris, Corolla, Etios, RAV4, Fortuner", "Aceite · aire · combustible · cabina"],
-  ["Kia", "Picanto, Rio, Cerato, Sportage, Sonet", "Aceite · aire · combustible · cabina"],
-  ["Mazda", "Mazda 2, Mazda 3, CX-3, CX-5", "Aceite · aire · combustible · cabina"],
-  ["Hyundai", "i10, Grand i10, Accent, Elantra, Tucson, Creta", "Aceite · aire · combustible · cabina"],
-  ["Ford", "Fiesta, EcoSport, Escape, Focus, Ranger gasolina", "Aceite · aire · combustible · cabina"],
-  ["Nissan", "March, Versa, Sentra, Kicks, X-Trail", "Aceite · aire · combustible · cabina"],
-  ["Volkswagen", "Gol, Voyage, Polo, Virtus, T-Cross", "Aceite · aire · combustible · cabina"],
-  ["Mitsubishi", "Lancer, ASX, Outlander, Montero gasolina", "Aceite · aire · combustible · cabina"],
-  ["Honda", "Fit, City, Civic, HR-V, CR-V", "Aceite · aire · combustible · cabina"],
-  ["Suzuki", "Alto, Swift, Celerio, Vitara, S-Cross", "Aceite · aire · combustible · cabina"],
-  ["BMW", "Serie 1, Serie 3, Serie 5, X1, X3 gasolina", "Aceite · aire · combustible · cabina"],
+  ["Chevrolet", "Spark, Spark GT, Onix, Sail, Aveo, Tracker", defaultFilterSystems],
+  ["Renault", "Kwid, Sandero, Logan, Stepway, Duster, Duster Oroch", defaultFilterSystems],
+  ["Toyota", "Yaris, Corolla, Etios, RAV4, Fortuner", defaultFilterSystems],
+  ["Kia", "Picanto, Rio, Cerato, Sportage, Sonet", defaultFilterSystems],
+  ["Mazda", "Mazda 2, Mazda 3, CX-3, CX-5", defaultFilterSystems],
+  ["Hyundai", "i10, Grand i10, Accent, Elantra, Tucson, Creta", defaultFilterSystems],
+  ["Ford", "Fiesta, EcoSport, Escape, Focus, Ranger gasolina", defaultFilterSystems],
+  ["Nissan", "March, Versa, Sentra, Kicks, X-Trail", defaultFilterSystems],
+  ["Volkswagen", "Gol, Voyage, Polo, Virtus, T-Cross", defaultFilterSystems],
+  ["Mitsubishi", "Lancer, ASX, Outlander, Montero gasolina", defaultFilterSystems],
+  ["Honda", "Fit, City, Civic, HR-V, CR-V", defaultFilterSystems],
+  ["Suzuki", "Alto, Swift, Celerio, Vitara, S-Cross", defaultFilterSystems],
+  ["BMW", "Serie 1, Serie 3, Serie 5, X1, X3 gasolina", defaultFilterSystems],
 ];
 
+const defaultBrakeSystems = "Pastillas · discos · amortiguadores · terminales";
 const gasolineBrakeApplications = [
-  { brand: "Chevrolet", logo: "/logos/autos/chevrolet.svg", models: "Spark, Spark GT, Aveo, Optra, Sail, Onix, Tracker y Montana", systems: "Pastillas · discos · bandas · amortiguadores · terminales" },
-  { brand: "Renault", logo: "/logos/autos/renault.svg", models: "Kwid, Logan, Sandero, Stepway, Duster, Oroch y Captur", systems: "Pastillas · discos · campanas · amortiguadores · rótulas" },
-  { brand: "Nissan", logo: "/logos/autos/nissan.svg", models: "March, Versa, Sentra, Kicks, Qashqai y X-Trail", systems: "Pastillas · discos · amortiguadores · axiales · terminales" },
-  { brand: "Toyota", logo: "/logos/autos/toyota.svg", models: "Yaris, Corolla, Etios, RAV4, Rush y Hilux gasolina", systems: "Pastillas · discos · bandas · amortiguadores · bujes" },
-  { brand: "Kia", logo: "/logos/autos/kia.svg", models: "Picanto, Rio, Cerato, Soul, Sonet y Sportage", systems: "Pastillas · discos · amortiguadores · rótulas · axiales" },
-  { brand: "Hyundai", logo: "/logos/autos/hyundai.svg", models: "i10, Grand i10, Accent, HB20, Elantra, Creta y Tucson", systems: "Pastillas · discos · amortiguadores · terminales · bujes" },
-  { brand: "Volkswagen", logo: "/logos/autos/volkswagen.svg", models: "Gol, Voyage, Saveiro, Fox, Polo, Virtus y T-Cross", systems: "Pastillas · discos · campanas · amortiguadores · rótulas" },
-  { brand: "Mazda", logo: "/logos/autos/mazda.svg", models: "Mazda 2, Mazda 3, Mazda 6, CX-3, CX-30 y CX-5", systems: "Pastillas · discos · amortiguadores · axiales · terminales" },
-  { brand: "Ford", logo: "/logos/autos/ford.svg", models: "Fiesta, Focus, EcoSport, Escape, Edge y Ranger gasolina", systems: "Pastillas · discos · bandas · amortiguadores · rótulas" },
-  { brand: "Suzuki", logo: "/logos/autos/suzuki.svg", models: "Alto, Celerio, Swift, Baleno, Jimny, Vitara y S-Cross", systems: "Pastillas · discos · bandas · amortiguadores · terminales" },
-  { brand: "Honda", logo: "/logos/autos/honda.svg", models: "Fit, City, Civic, Accord, HR-V y CR-V", systems: "Pastillas · discos · amortiguadores · rótulas · bujes" },
-  { brand: "Mitsubishi", logo: "/logos/autos/mitsubishi.svg", models: "Lancer, Mirage, ASX, Outlander y Montero gasolina", systems: "Pastillas · discos · amortiguadores · terminales · bujes" },
-  { brand: "Peugeot", logo: "/logos/autos/peugeot.svg", models: "206, 207, 208, 301, 2008 y 3008 gasolina", systems: "Pastillas · discos · amortiguadores · axiales · rótulas" },
-  { brand: "SEAT", logo: "/logos/autos/seat.svg", models: "Ibiza, Córdoba, León, Toledo, Arona y Ateca", systems: "Pastillas · discos · amortiguadores · terminales · bujes" },
-  { brand: "Škoda", logo: "/logos/autos/skoda.svg", models: "Fabia, Octavia, Rapid, Scala, Kamiq y Karoq", systems: "Pastillas · discos · amortiguadores · rótulas · axiales" },
-  { brand: "Daihatsu", logo: "/logos/autos/daihatsu.svg", models: "Mira, Cuore, Sirion, Terios, Bego y Gran Max gasolina", systems: "Pastillas · discos · bandas · amortiguadores · terminales" },
-  { brand: "Daewoo", logo: "/logos/autos/daewoo.svg", models: "Tico, Matiz, Lanos, Nubira, Espero y Leganza", systems: "Pastillas · discos · bandas · amortiguadores · rótulas" },
-  { brand: "BMW", logo: "/logos/autos/bmw.svg", models: "Serie 1, Serie 3, Serie 5, X1 y X3 gasolina", systems: "Pastillas · discos · sensores · amortiguadores · brazos" },
-];
+  ["Chevrolet", "Spark, Spark GT, Aveo, Optra, Sail, Onix, Tracker y Montana", "Pastillas · discos · bandas · amortiguadores · terminales"],
+  ["Renault", "Kwid, Logan, Sandero, Stepway, Duster, Oroch y Captur", "Pastillas · discos · campanas · amortiguadores · rótulas"],
+  ["Nissan", "March, Versa, Sentra, Kicks, Qashqai y X-Trail", "Pastillas · discos · amortiguadores · axiales · terminales"],
+  ["Toyota", "Yaris, Corolla, Etios, RAV4, Rush y Hilux gasolina", "Pastillas · discos · bandas · amortiguadores · bujes"],
+  ["Kia", "Picanto, Rio, Cerato, Soul, Sonet y Sportage", "Pastillas · discos · amortiguadores · rótulas · axiales"],
+  ["Hyundai", "i10, Grand i10, Accent, HB20, Elantra, Creta y Tucson", "Pastillas · discos · amortiguadores · terminales · bujes"],
+  ["Volkswagen", "Gol, Voyage, Saveiro, Fox, Polo, Virtus y T-Cross", "Pastillas · discos · campanas · amortiguadores · rótulas"],
+  ["Mazda", "Mazda 2, Mazda 3, Mazda 6, CX-3, CX-30 y CX-5", "Pastillas · discos · amortiguadores · axiales · terminales"],
+  ["Ford", "Fiesta, Focus, EcoSport, Escape, Edge y Ranger gasolina", "Pastillas · discos · bandas · amortiguadores · rótulas"],
+  ["Suzuki", "Alto, Celerio, Swift, Baleno, Jimny, Vitara y S-Cross", "Pastillas · discos · bandas · amortiguadores · terminales"],
+  ["Honda", "Fit, City, Civic, Accord, HR-V y CR-V", "Pastillas · discos · amortiguadores · rótulas · bujes"],
+  ["Mitsubishi", "Lancer, Mirage, ASX, Outlander y Montero gasolina", "Pastillas · discos · amortiguadores · terminales · bujes"],
+  ["Peugeot", "206, 207, 208, 301, 2008 y 3008 gasolina", "Pastillas · discos · amortiguadores · axiales · rótulas"],
+  ["SEAT", "Ibiza, Córdoba, León, Toledo, Arona y Ateca", defaultBrakeSystems],
+  ["Škoda", "Fabia, Octavia, Rapid, Scala, Kamiq y Karoq", "Pastillas · discos · amortiguadores · rótulas · axiales"],
+  ["Daihatsu", "Mira, Cuore, Sirion, Terios, Bego y Gran Max gasolina", "Pastillas · discos · bandas · amortiguadores · terminales"],
+  ["Daewoo", "Tico, Matiz, Lanos, Nubira, Espero y Leganza", "Pastillas · discos · bandas · amortiguadores · rótulas"],
+  ["BMW", "Serie 1, Serie 3, Serie 5, X1 y X3 gasolina", "Pastillas · discos · sensores · amortiguadores · brazos"],
+].map(([brand, models, systems]) => ({
+  brand,
+  logo: `/logos/autos/${brand.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "")}.svg`,
+  models,
+  systems,
+}));
 
-const gasolineFilterBrandVisuals = {
-  Chevrolet: { logo: "/logos/autos/chevrolet.svg", image: "/filtro-aceite-gasolina-catalogo.png" },
-  Renault: { logo: "/logos/autos/renault.svg", image: "/filtro-aire-gasolina-catalogo.png" },
-  Toyota: { logo: "/logos/autos/toyota.svg", image: "/filtro-cabina-gasolina-catalogo.png" },
-  Kia: { logo: "/logos/autos/kia.svg", image: "/filtro-combustible-gasolina-catalogo.png" },
-  Mazda: { logo: "/logos/autos/mazda.svg", image: "/filtro-aceite-gasolina-catalogo.png" },
-  Hyundai: { logo: "/logos/autos/hyundai.svg", image: "/filtro-aire-gasolina-catalogo.png" },
-  Ford: { logo: "/logos/autos/ford.svg", image: "/filtro-cabina-gasolina-catalogo.png" },
-  Nissan: { logo: "/logos/autos/nissan.svg", image: "/filtro-combustible-gasolina-catalogo.png" },
-  Volkswagen: { logo: "/logos/autos/volkswagen.svg", image: "/filtro-aceite-gasolina-catalogo.png" },
-  Mitsubishi: { logo: "/logos/autos/mitsubishi.svg", image: "/filtro-aire-gasolina-catalogo.png" },
-  Honda: { logo: "/logos/autos/honda.svg", image: "/filtro-cabina-gasolina-catalogo.png" },
-  Suzuki: { logo: "/logos/autos/suzuki.svg", image: "/filtro-combustible-gasolina-catalogo.png" },
-  BMW: { logo: "/logos/autos/bmw.svg", image: "/filtro-aceite-gasolina-catalogo.png" },
-};
+const filterVisualImgs = [
+  "/filtro-aceite-gasolina-catalogo.png",
+  "/filtro-aire-gasolina-catalogo.png",
+  "/filtro-cabina-gasolina-catalogo.png",
+  "/filtro-combustible-gasolina-catalogo.png",
+];
+const gasolineFilterBrandVisuals = Object.fromEntries([
+  ["Chevrolet", 0], ["Renault", 1], ["Toyota", 2], ["Kia", 3],
+  ["Mazda", 0], ["Hyundai", 1], ["Ford", 2], ["Nissan", 3],
+  ["Volkswagen", 0], ["Mitsubishi", 1], ["Honda", 2], ["Suzuki", 3], ["BMW", 0],
+].map(([brand, imgIdx]) => [
+  brand,
+  { logo: `/logos/autos/${brand.toLowerCase()}.svg`, image: filterVisualImgs[imgIdx] },
+]));
 
 function getPageNumber(value) {
   const page = Number.parseInt(value, 10);
