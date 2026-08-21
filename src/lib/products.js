@@ -2,6 +2,8 @@ import { frenosSuspensionProducts } from "../data/frenosSuspensionProducts.js";
 import { brandPanelProducts } from "../data/brandPanelProducts.js";
 import { catalogoProveedoresProducts } from "../data/catalogoProveedoresProducts.js";
 import { kiaProducts } from "../data/kiaProducts.js";
+import { electricalProducts } from "../data/electricalProducts.js";
+import { phcValeoProducts } from "../data/phcValeoProducts.js";
 import partmoCatalog from "../data/catalogo-filtros-diesel.json";
 import priorityCatalog from "../data/catalogo-prioridad-diesel.json";
 
@@ -722,6 +724,8 @@ const allProducts = [
   ...frenosSuspensionProducts,
   ...catalogoProveedoresProducts,
   ...kiaProducts,
+  ...electricalProducts,
+  ...phcValeoProducts,
 
   // FILTROS
   {
