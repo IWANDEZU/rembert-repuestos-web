@@ -8,7 +8,8 @@ import { useRouter } from "next/navigation";
 import { getProductDisplayImage } from "@/lib/productImage";
 import { generateWhatsAppProductText, getWhatsAppUrl } from "@/lib/orderFormatter";
 import WhatsAppIcon from "@/components/WhatsAppIcon";
-import { getProductCompatibility } from "@/lib/productCompatibility";
+import ProductCompatibilityPanel from "@/components/ProductCompatibilityPanel";
+import { getProductReferenceLabel } from "@/lib/productCompatibility";
 
 export default function ProductCard({ product, onExpand, isFavorite = false }) {
   const { addToCart } = useCart();
@@ -54,9 +55,11 @@ export default function ProductCard({ product, onExpand, isFavorite = false }) {
   };
 
   const imageUrl = getProductDisplayImage(product);
-  const compatibilityText = getProductCompatibility(product);
+  const referenceLabel = getProductReferenceLabel(product);
+  const canBuy = Boolean(product.inStock && Number(product.stock) > 0 && Number(product.price) > 0);
 
   const handleAddToCart = () => {
+    if (!canBuy) return;
     addToCart(
       {
         id: product.id,
@@ -218,25 +221,9 @@ export default function ProductCard({ product, onExpand, isFavorite = false }) {
           </span>
         )}
 
-        {compatibilityText ? (
-          <div
-            style={{
-              fontSize: "0.75rem",
-              color: "#334155",
-              background: "#F8FAFC",
-              border: "1px solid #E2E8F0",
-              borderRadius: "6px",
-              padding: "6px 8px",
-              marginTop: "0.35rem",
-              lineHeight: "1.4",
-              wordBreak: "break-word",
-            }}
-            title={compatibilityText}
-          >
-            <strong style={{ color: "#0F172A", fontWeight: "700" }}>Compatible con:</strong>{" "}
-            <span>{compatibilityText}</span>
-          </div>
-        ) : null}
+        <div style={{ marginTop: "0.35rem" }}>
+          <ProductCompatibilityPanel product={product} compact />
+        </div>
 
         {product.sku && (
           <div style={{ marginTop: "0.35rem" }}>
@@ -254,7 +241,7 @@ export default function ProductCard({ product, onExpand, isFavorite = false }) {
                 letterSpacing: "0.02em",
               }}
             >
-              Ref. {product.sku}
+              {referenceLabel}: {product.sku}
             </span>
           </div>
         )}
@@ -292,40 +279,40 @@ export default function ProductCard({ product, onExpand, isFavorite = false }) {
             🔍 Vista ampliada
           </button>
 
-          <button
-            type="button"
-            onClick={handleAddToCart}
-            className="btn-add-to-cart"
-            style={{
-              padding: "0.65rem 0.8rem",
-              fontSize: "0.85rem",
-              fontWeight: "800",
-              width: "100%",
-              borderRadius: "8px",
-              border: added ? "1.5px solid #16A34A" : "1.5px solid #FFD700",
-              background: added ? "#16A34A" : "#111111",
-              color: added ? "#FFFFFF" : "#FFD700",
-              display: "inline-flex",
-              alignItems: "center",
-              justifyContent: "center",
-              gap: "0.45rem",
-              cursor: "pointer",
-              boxShadow: added ? "0 0 10px rgba(22, 163, 74, 0.5)" : "0 2px 8px rgba(0, 0, 0, 0.4)",
-              transition: "all 0.22s ease",
-            }}
-          >
-            {added ? (
-              <>
-                <span>✓</span>
-                <span>¡Agregado al carrito!</span>
-              </>
-            ) : (
-              <>
-                <span style={{ color: "#FFD700", fontSize: "1rem" }}>🛒</span>
-                <span>Añadir al carrito</span>
-              </>
-            )}
-          </button>
+          {canBuy ? (
+            <button
+              type="button"
+              onClick={handleAddToCart}
+              className="btn-add-to-cart"
+              style={{
+                padding: "0.65rem 0.8rem",
+                fontSize: "0.85rem",
+                fontWeight: "800",
+                width: "100%",
+                borderRadius: "8px",
+                border: added ? "1.5px solid #16A34A" : "1.5px solid #FFD700",
+                background: added ? "#16A34A" : "#111111",
+                color: added ? "#FFFFFF" : "#FFD700",
+                display: "inline-flex",
+                alignItems: "center",
+                justifyContent: "center",
+                gap: "0.45rem",
+                cursor: "pointer",
+                boxShadow: added ? "0 0 10px rgba(22, 163, 74, 0.5)" : "0 2px 8px rgba(0, 0, 0, 0.4)",
+                transition: "all 0.22s ease",
+              }}
+            >
+              {added ? (
+                <><span>✓</span><span>¡Agregado al carrito!</span></>
+              ) : (
+                <><span style={{ color: "#FFD700", fontSize: "1rem" }}>🛒</span><span>Añadir al carrito</span></>
+              )}
+            </button>
+          ) : (
+            <div className="product-card__quote-notice">
+              Validamos referencia, precio y existencia antes de vender
+            </div>
+          )}
 
           <a
             href={quoteUrl}

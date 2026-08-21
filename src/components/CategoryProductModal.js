@@ -6,7 +6,8 @@ import Image from "next/image";
 import { getProductDisplayImage } from "@/lib/productImage";
 import { generateWhatsAppProductText, getWhatsAppUrl } from "@/lib/orderFormatter";
 import WhatsAppIcon from "@/components/WhatsAppIcon";
-import { getProductCompatibility } from "@/lib/productCompatibility";
+import ProductCompatibilityPanel from "@/components/ProductCompatibilityPanel";
+import { getProductReferenceLabel } from "@/lib/productCompatibility";
 
 const getMainImage = (product) => getProductDisplayImage(product);
 const getFirstVariant = (product) => product?.variants?.[0] || null;
@@ -22,7 +23,7 @@ export default function CategoryProductModal({ products, initialIndex = 0, onClo
   const { addToCart } = useCart();
 
   const currentProduct = products && products.length > 0 ? products[currentIndex] : null;
-  const compatibilityText = getProductCompatibility(currentProduct);
+  const referenceLabel = getProductReferenceLabel(currentProduct);
   const [selectedVariant, setSelectedVariant] = useState(() => getFirstVariant(initialProduct));
   const [selectedImage, setSelectedImage] = useState(() => getMainImage(initialProduct));
 
@@ -348,7 +349,7 @@ export default function CategoryProductModal({ products, initialIndex = 0, onClo
             {/* Información del Producto y Compra */}
             <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
               <div style={{ color: "var(--primary-color)", fontWeight: "bold", fontSize: "0.82rem", letterSpacing: "1px" }}>
-                {brandName} • <span className="product-reference">SKU: {currentProduct.sku || currentProduct.id.slice(-8)}</span>
+                {brandName} • <span className="product-reference">{referenceLabel}: {currentProduct.sku || currentProduct.id.slice(-8)}</span>
               </div>
 
               <h2 style={{ fontSize: "1.6rem", color: "#fff", lineHeight: "1.2" }}>{currentProduct.name}</h2>
@@ -378,20 +379,7 @@ export default function CategoryProductModal({ products, initialIndex = 0, onClo
                 {currentProduct.description}
               </p>
 
-              <div
-                style={{
-                  color: "#f8fafc",
-                  background: "rgba(255, 212, 0, 0.08)",
-                  border: "1px solid rgba(255, 212, 0, 0.35)",
-                  borderRadius: "8px",
-                  padding: "0.65rem 0.75rem",
-                  fontSize: "0.86rem",
-                  lineHeight: "1.45",
-                }}
-              >
-                <strong style={{ color: "var(--primary-color)" }}>Compatible con:</strong>{" "}
-                {compatibilityText}
-              </div>
+              <ProductCompatibilityPanel product={currentProduct} dark />
 
               {/* Selector de Presentación / Variantes */}
               {currentProduct.variants && currentProduct.variants.length > 0 && (
@@ -442,40 +430,36 @@ export default function CategoryProductModal({ products, initialIndex = 0, onClo
                   </button>
                 </div>
 
-                <button
-                  type="button"
-                  onClick={handleAddToCart}
-                  className="btn-add-to-cart"
-                  style={{
-                    flex: 1,
-                    padding: "10px 14px",
-                    fontWeight: "800",
-                    fontSize: "0.9rem",
-                    borderRadius: "8px",
-                    border: added ? "1.5px solid #16A34A" : "1.5px solid #FFD700",
-                    background: added ? "#16A34A" : "#111111",
-                    color: added ? "#FFFFFF" : "#FFD700",
-                    display: "inline-flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    gap: "0.5rem",
-                    cursor: "pointer",
-                    boxShadow: added ? "0 0 10px rgba(22, 163, 74, 0.5)" : "0 2px 8px rgba(0, 0, 0, 0.4)",
-                    transition: "all 0.22s ease",
-                  }}
-                >
-                  {added ? (
-                    <>
-                      <span>✓</span>
-                      <span>¡Agregado!</span>
-                    </>
-                  ) : (
-                    <>
-                      <span style={{ color: "#FFD700", fontSize: "1rem" }}>🛒</span>
-                      <span>Añadir al carrito</span>
-                    </>
-                  )}
-                </button>
+                {canBuy ? (
+                  <button
+                    type="button"
+                    onClick={handleAddToCart}
+                    className="btn-add-to-cart"
+                    style={{
+                      flex: 1,
+                      padding: "10px 14px",
+                      fontWeight: "800",
+                      fontSize: "0.9rem",
+                      borderRadius: "8px",
+                      border: added ? "1.5px solid #16A34A" : "1.5px solid #FFD700",
+                      background: added ? "#16A34A" : "#111111",
+                      color: added ? "#FFFFFF" : "#FFD700",
+                      display: "inline-flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      gap: "0.5rem",
+                      cursor: "pointer",
+                      boxShadow: added ? "0 0 10px rgba(22, 163, 74, 0.5)" : "0 2px 8px rgba(0, 0, 0, 0.4)",
+                      transition: "all 0.22s ease",
+                    }}
+                  >
+                    {added ? <><span>✓</span><span>¡Agregado!</span></> : <><span>🛒</span><span>Añadir al carrito</span></>}
+                  </button>
+                ) : (
+                  <div className="product-card__quote-notice product-card__quote-notice--dark">
+                    Validamos referencia, precio y existencia antes de vender
+                  </div>
+                )}
               </div>
 
               {/* WhatsApp */}

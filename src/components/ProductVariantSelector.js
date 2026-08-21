@@ -7,6 +7,8 @@ import Link from "next/link";
 import { getProductDisplayImage } from "@/lib/productImage";
 import { generateWhatsAppProductText, getWhatsAppUrl } from "@/lib/orderFormatter";
 import WhatsAppIcon from "@/components/WhatsAppIcon";
+import ProductCompatibilityPanel from "@/components/ProductCompatibilityPanel";
+import { getProductReferenceLabel } from "@/lib/productCompatibility";
 
 export default function ProductVariantSelector({ product }) {
   const [selectedVariant, setSelectedVariant] = useState(
@@ -69,11 +71,7 @@ export default function ProductVariantSelector({ product }) {
   const findAttribute = (label) => technicalAttributes.find((attribute) =>
     String(attribute.name || "").toLowerCase().includes(label)
   );
-  const compatibleBrands = findAttribute("marcas compatibles")?.value
-    || "Compatibilidad por referencia: confirma marca, año, motor y número OE/VIN antes de comprar.";
-  const compatibleModels = findAttribute("modelos compatibles")?.value
-    || findAttribute("modelos orientativos")?.value
-    || "La aplicación cambia entre modelos y versiones; solicita validación con placa, VIN o referencia de la pieza instalada.";
+  const referenceLabel = getProductReferenceLabel(product);
   const whatsappUrl = getWhatsAppUrl(
     generateWhatsAppProductText({
       product,
@@ -322,7 +320,7 @@ export default function ProductVariantSelector({ product }) {
           
           <h1 style={{ fontSize: '2.2rem', marginBottom: '12px', lineHeight: '1.2' }}>{product.name}</h1>
 
-          {product.sku && <p className="product-reference product-reference--detail">Ref. {product.sku}</p>}
+          {product.sku && <p className="product-reference product-reference--detail">{referenceLabel}: {product.sku}</p>}
           
           {/* Precio y Disponibilidad */}
           <div style={{ display: 'flex', alignItems: 'center', gap: '15px', marginBottom: '20px', paddingBottom: '15px', borderBottom: '1px solid var(--border-color)' }}>
@@ -348,11 +346,9 @@ export default function ProductVariantSelector({ product }) {
             {product.description || 'Lubricante formulado con tecnología avanzada para brindar máxima protección contra el desgaste y extender la vida útil del motor.'}
           </p>
 
-          <section style={{ background: '#F8FAFC', border: '1px solid #D8E0EA', borderRadius: '12px', padding: '16px', marginBottom: '24px', color: '#1E293B' }}>
-            <h2 style={{ fontSize: '1rem', marginBottom: '10px', color: '#111827' }}>Compatibilidad de marca y modelo</h2>
-            <p style={{ marginBottom: '8px', lineHeight: '1.5', fontSize: '0.9rem' }}><strong>Marcas:</strong> {compatibleBrands}</p>
-            <p style={{ margin: 0, lineHeight: '1.5', fontSize: '0.9rem' }}><strong>Modelos:</strong> {compatibleModels}</p>
-          </section>
+          <div style={{ marginBottom: '24px' }}>
+            <ProductCompatibilityPanel product={product} />
+          </div>
 
           {/* Selector de Variantes / Presentación */}
           {product.variants && product.variants.length > 0 && (
@@ -525,7 +521,7 @@ export default function ProductVariantSelector({ product }) {
                 <ul style={{ paddingLeft: '20px', color: '#aaa' }}>
                   <li>Protección superior en condiciones severas de operación.</li>
                   <li>Reduce la fricción y optimiza el consumo y rendimiento.</li>
-                  <li>Compatibilidad garantizada según especificaciones OEM de fabricante.</li>
+                  <li>Aplicación validada contra referencia fabricante, VIN y especificaciones del vehículo.</li>
                 </ul>
               </div>
             </div>
@@ -553,18 +549,6 @@ export default function ProductVariantSelector({ product }) {
                       <td style={{ padding: '12px' }}>{attribute.value}</td>
                     </tr>
                   ))}
-                  {!findAttribute("marcas compatibles") && (
-                    <tr style={{ borderBottom: '1px solid #222' }}>
-                      <td style={{ padding: '12px', fontWeight: 'bold', color: 'var(--primary-color)' }}>Marcas compatibles:</td>
-                      <td style={{ padding: '12px' }}>{compatibleBrands}</td>
-                    </tr>
-                  )}
-                  {!findAttribute("modelos compatibles") && !findAttribute("modelos orientativos") && (
-                    <tr style={{ borderBottom: '1px solid #222' }}>
-                      <td style={{ padding: '12px', fontWeight: 'bold', color: 'var(--primary-color)' }}>Modelos compatibles:</td>
-                      <td style={{ padding: '12px' }}>{compatibleModels}</td>
-                    </tr>
-                  )}
                 </tbody>
               </table>
             </div>
