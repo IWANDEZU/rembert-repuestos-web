@@ -246,7 +246,7 @@ export default function RootLayout({ children }) {
                   width={512}
                   height={512}
                   priority={false}
-                  sizes="110px"
+                  sizes="330px"
                 />
               </div>
               <div className="navbar__main">

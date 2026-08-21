@@ -273,7 +273,10 @@ h1, h2, h3, h4 {
   z-index: 0;
   top: 48%;
   left: 0;
-  width: clamp(72px, 8vw, 110px);
+  width: clamp(216px, 24vw, 330px);
+  border: 0;
+  outline: 0;
+  background: transparent;
   opacity: 0.32;
   pointer-events: none;
   user-select: none;
@@ -286,6 +289,9 @@ h1, h2, h3, h4 {
   display: block;
   width: 100%;
   height: auto;
+  border: 0;
+  outline: 0;
+  background: transparent;
   animation: navbarLogoSpin 5.5s linear infinite;
 }
 
