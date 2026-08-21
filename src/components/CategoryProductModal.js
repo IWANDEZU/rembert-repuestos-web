@@ -424,26 +424,40 @@ export default function CategoryProductModal({ products, initialIndex = 0, onClo
                   </button>
                 </div>
 
-                {canBuy && (
-                  <button
-                    type="button"
-                    onClick={handleAddToCart}
-                    className="btn btn--primary"
-                    style={{
-                      flex: 1,
-                      padding: "10px",
-                      fontWeight: "bold",
-                      fontSize: "0.9rem",
-                      background: added ? "#28a745" : "var(--primary-color)",
-                      color: added ? "#fff" : "#000",
-                      border: "none",
-                      borderRadius: "8px",
-                      cursor: "pointer",
-                    }}
-                  >
-                    {added ? "Agregado" : "Agregar al carrito"}
-                  </button>
-                )}
+                <button
+                  type="button"
+                  onClick={handleAddToCart}
+                  className="btn-add-to-cart"
+                  style={{
+                    flex: 1,
+                    padding: "10px 14px",
+                    fontWeight: "800",
+                    fontSize: "0.9rem",
+                    borderRadius: "8px",
+                    border: added ? "1.5px solid #16A34A" : "1.5px solid #FFD700",
+                    background: added ? "#16A34A" : "#111111",
+                    color: added ? "#FFFFFF" : "#FFD700",
+                    display: "inline-flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    gap: "0.5rem",
+                    cursor: "pointer",
+                    boxShadow: added ? "0 0 10px rgba(22, 163, 74, 0.5)" : "0 2px 8px rgba(0, 0, 0, 0.4)",
+                    transition: "all 0.22s ease",
+                  }}
+                >
+                  {added ? (
+                    <>
+                      <span>✓</span>
+                      <span>¡Agregado!</span>
+                    </>
+                  ) : (
+                    <>
+                      <span style={{ color: "#FFD700", fontSize: "1rem" }}>🛒</span>
+                      <span>Añadir al carrito</span>
+                    </>
+                  )}
+                </button>
               </div>
 
               {/* WhatsApp */}

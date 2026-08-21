@@ -251,27 +251,40 @@ export default function ProductCard({ product, onExpand, isFavorite = false }) {
           🔍 Vista ampliada
         </button>
 
-        {product.price > 0 && product.inStock !== false && (product.stock ?? 1) > 0 && (
-          <button
-            type="button"
-            onClick={handleAddToCart}
-            className="btn btn--primary"
-            style={{
-              padding: "0.65rem 0.8rem",
-              fontSize: "0.85rem",
-              fontWeight: "800",
-              width: "100%",
-              border: "none",
-              background: added ? "#16A34A" : "var(--primary-color)",
-              color: added ? "#FFFFFF" : "#111111",
-              borderRadius: "8px",
-              cursor: "pointer",
-              transition: "background-color 0.2s ease",
-            }}
-          >
-            {added ? "✓ Agregado al carrito" : "🛒 Agregar al carrito"}
-          </button>
-        )}
+        <button
+          type="button"
+          onClick={handleAddToCart}
+          className="btn-add-to-cart"
+          style={{
+            padding: "0.65rem 0.8rem",
+            fontSize: "0.85rem",
+            fontWeight: "800",
+            width: "100%",
+            borderRadius: "8px",
+            border: added ? "1.5px solid #16A34A" : "1.5px solid #FFD700",
+            background: added ? "#16A34A" : "#111111",
+            color: added ? "#FFFFFF" : "#FFD700",
+            display: "inline-flex",
+            alignItems: "center",
+            justifyContent: "center",
+            gap: "0.45rem",
+            cursor: "pointer",
+            boxShadow: added ? "0 0 10px rgba(22, 163, 74, 0.5)" : "0 2px 8px rgba(0, 0, 0, 0.4)",
+            transition: "all 0.22s ease",
+          }}
+        >
+          {added ? (
+            <>
+              <span>✓</span>
+              <span>¡Agregado al carrito!</span>
+            </>
+          ) : (
+            <>
+              <span style={{ color: "#FFD700", fontSize: "1rem" }}>🛒</span>
+              <span>Añadir al carrito</span>
+            </>
+          )}
+        </button>
 
         <a
           href={quoteUrl}

@@ -1,8 +1,28 @@
 "use client";
 
+import { useCart } from "@/components/CartContext";
+import { useState } from "react";
 import { generateWhatsAppProductText, getWhatsAppUrl } from "@/lib/orderFormatter";
 
 export default function PrioridadDieselCard({ product, onSelect }) {
+  const { addToCart } = useCart();
+  const [added, setAdded] = useState(false);
+
+  const handleAddToCart = () => {
+    addToCart({
+      id: product.id || product.reference,
+      name: `${product.subtype || ""} ${product.brandName || ""} ${product.reference}`.trim(),
+      price: product.price || 0,
+      image: product.web_image || "",
+      brand: product.brandName,
+      category: product.categoryName,
+      sku: product.reference,
+      slug: product.reference,
+    }, 1);
+    setAdded(true);
+    setTimeout(() => setAdded(false), 2000);
+  };
+
   const whatsappUrl = getWhatsAppUrl(
     generateWhatsAppProductText({
       product: {
@@ -225,6 +245,41 @@ export default function PrioridadDieselCard({ product, onSelect }) {
 
         {/* Botones de Acción */}
         <div style={{ display: "flex", flexDirection: "column", gap: "6px" }}>
+          <button
+            type="button"
+            onClick={handleAddToCart}
+            className="btn-add-to-cart"
+            style={{
+              padding: "0.65rem 0.8rem",
+              fontSize: "0.85rem",
+              fontWeight: "800",
+              width: "100%",
+              borderRadius: "6px",
+              border: added ? "1.5px solid #16A34A" : "1.5px solid #FFD700",
+              background: added ? "#16A34A" : "#111111",
+              color: added ? "#FFFFFF" : "#FFD700",
+              display: "inline-flex",
+              alignItems: "center",
+              justifyContent: "center",
+              gap: "0.45rem",
+              cursor: "pointer",
+              boxShadow: added ? "0 0 10px rgba(22, 163, 74, 0.5)" : "0 2px 8px rgba(0, 0, 0, 0.4)",
+              transition: "all 0.22s ease",
+            }}
+          >
+            {added ? (
+              <>
+                <span>✓</span>
+                <span>¡Agregado al carrito!</span>
+              </>
+            ) : (
+              <>
+                <span style={{ color: "#FFD700", fontSize: "1rem" }}>🛒</span>
+                <span>Añadir al carrito</span>
+              </>
+            )}
+          </button>
+
           <button
             onClick={onSelect}
             style={{

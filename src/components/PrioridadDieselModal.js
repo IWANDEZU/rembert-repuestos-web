@@ -1,12 +1,30 @@
 "use client";
 
 import { useEffect, useState, useCallback } from "react";
+import { useCart } from "@/components/CartContext";
 import { generateWhatsAppProductText, getWhatsAppUrl } from "@/lib/orderFormatter";
 
 export default function PrioridadDieselModal({ products, initialIndex, onClose }) {
   const [currentIndex, setCurrentIndex] = useState(initialIndex);
+  const { addToCart } = useCart();
+  const [added, setAdded] = useState(false);
 
   const product = products[currentIndex];
+
+  const handleAddToCart = () => {
+    addToCart({
+      id: product.id || product.reference,
+      name: `${product.subtype || ""} ${product.brandName || ""} ${product.reference}`.trim(),
+      price: product.price || 0,
+      image: product.web_image || "",
+      brand: product.brandName,
+      category: product.categoryName,
+      sku: product.reference,
+      slug: product.reference,
+    }, 1);
+    setAdded(true);
+    setTimeout(() => setAdded(false), 2000);
+  };
 
   const handlePrev = useCallback(() => {
     setCurrentIndex((prev) => (prev > 0 ? prev - 1 : products.length - 1));
@@ -339,6 +357,42 @@ export default function PrioridadDieselModal({ products, initialIndex, onClose }
             >
               <strong>⚠️ Confirmación de Compatibilidad:</strong> Confirma compatibilidad por VIN, código de motor, año y modelo antes de comprar o instalar.
             </div>
+
+            {/* Botón Añadir al Carrito */}
+            <button
+              type="button"
+              onClick={handleAddToCart}
+              className="btn-add-to-cart"
+              style={{
+                padding: "0.75rem",
+                fontSize: "0.9rem",
+                fontWeight: "800",
+                width: "100%",
+                borderRadius: "8px",
+                border: added ? "1.5px solid #16A34A" : "1.5px solid #FFD700",
+                background: added ? "#16A34A" : "#111111",
+                color: added ? "#FFFFFF" : "#FFD700",
+                display: "inline-flex",
+                alignItems: "center",
+                justifyContent: "center",
+                gap: "0.5rem",
+                cursor: "pointer",
+                boxShadow: added ? "0 0 10px rgba(22, 163, 74, 0.5)" : "0 2px 8px rgba(0, 0, 0, 0.4)",
+                transition: "all 0.22s ease",
+              }}
+            >
+              {added ? (
+                <>
+                  <span>✓</span>
+                  <span>¡AGREGADO AL CARRITO!</span>
+                </>
+              ) : (
+                <>
+                  <span style={{ color: "#FFD700", fontSize: "1.1rem" }}>🛒</span>
+                  <span>AÑADIR AL CARRITO</span>
+                </>
+              )}
+            </button>
 
             {/* CTA WhatsApp */}
             <a
