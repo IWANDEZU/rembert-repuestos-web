@@ -1,4 +1,4 @@
-import dieselCatalog from "@/data/catalogo-filtros-diesel.json";
+import dieselImages from "@/data/diesel-images.json";
 
 const REFERENCE_FILTER_BRANDS = new Set(["donsson", "partmo"]);
 
@@ -55,23 +55,7 @@ const PRODUCT_IMAGE_OVERRIDES = {
 };
 
 // Índice de imágenes verificadas del catálogo técnico diésel
-const DIESEL_CATALOG_IMAGES = new Map();
-if (Array.isArray(dieselCatalog)) {
-  for (const item of dieselCatalog) {
-    if (item.image && item.status === "ready") {
-      if (item.id) {
-        DIESEL_CATALOG_IMAGES.set(item.id.toLowerCase(), item.image);
-        DIESEL_CATALOG_IMAGES.set(item.id.toLowerCase().replace(/[-_]/g, ""), item.image);
-      }
-      if (item.sku) {
-        DIESEL_CATALOG_IMAGES.set(item.sku.toLowerCase().replace(/[-_]/g, ""), item.image);
-      }
-      if (item.reference) {
-        DIESEL_CATALOG_IMAGES.set(item.reference.toLowerCase().replace(/[-_]/g, ""), item.image);
-      }
-    }
-  }
-}
+const DIESEL_CATALOG_IMAGES = new Map(Object.entries(dieselImages || {}));
 
 const GENERIC_PLACEHOLDER_IMAGES = new Set([
   "/filtro-aceite.jpg",
