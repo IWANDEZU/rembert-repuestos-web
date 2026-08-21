@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function BrandLogo({ width = 230, height = 85, className = "" }) {
+export default function BrandLogo({ width = 285, height = 105, className = "" }) {
   return (
     <div className={`brand-logo-container ${className}`} style={{ display: "inline-flex", alignItems: "center" }}>
       <Image

@@ -239,13 +239,13 @@ export default function RootLayout({ children }) {
 
             {/* Navbar */}
             <nav className="navbar">
-              <div className="navbar__main main-container">
+              <div className="navbar__main">
                 {/* Brand / Logo + 38 Años de Experiencia Debajo */}
-                <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.35rem' }}>
+                <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: '0.35rem' }}>
                   <Link href="/" className="navbar__brand" style={{ display: 'flex', alignItems: 'center', textDecoration: 'none' }}>
-                    <BrandLogo width={230} height={85} />
+                    <BrandLogo width={285} height={105} />
                   </Link>
-                  <span className="experience-badge" style={{ fontSize: '0.76rem', padding: '0.2rem 0.8rem', letterSpacing: '0.5px' }}>
+                  <span className="experience-badge" style={{ fontSize: '0.74rem', padding: '0.2rem 0.8rem', letterSpacing: '0.5px' }}>
                     ⭐ <strong>38 AÑOS</strong> DE EXPERIENCIA
                   </span>
                 </div>

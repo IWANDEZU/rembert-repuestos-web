@@ -2,6 +2,7 @@ import { getServerSession } from "@/lib/auth";
 import { NextResponse } from "next/server";
 import { prisma } from "@/lib/prisma";
 import { deleteUserData } from "@/lib/deleteUserData";
+import { enforceRateLimit } from "@/lib/security/rateLimit";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -12,6 +13,8 @@ function hasSameOrigin(request) {
 }
 
 export async function DELETE(request) {
+  const limited = enforceRateLimit(request, { scope: "account-delete", limit: 3, windowMs: 3_600_000 });
+  if (limited) return limited;
   if (!hasSameOrigin(request)) {
     return NextResponse.json({ message: "Origen no permitido" }, { status: 403 });
   }

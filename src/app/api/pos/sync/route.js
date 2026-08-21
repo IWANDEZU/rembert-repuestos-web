@@ -1,6 +1,7 @@
 import { getServerSession } from "@/lib/auth";
 import { NextResponse } from "next/server";
 import { SiigoApiClient, AlegraApiClient, POS_PROVIDERS } from "@/lib/posIntegrations";
+import { enforceRateLimit } from "@/lib/security/rateLimit";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -10,6 +11,8 @@ export const dynamic = "force-dynamic";
  * GET/POST /api/pos/sync?provider=siigo|alegra
  */
 export async function POST(request) {
+  const limited = enforceRateLimit(request, { scope: "pos-sync", limit: 10, windowMs: 60_000 });
+  if (limited) return limited;
   try {
     const session = await getServerSession();
     const authHeader = request.headers.get("authorization");

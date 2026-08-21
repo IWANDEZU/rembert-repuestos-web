@@ -1,6 +1,7 @@
 import { getServerSession } from "@/lib/auth";
 import { prisma } from "@/lib/prisma";
 import { NextResponse } from "next/server";
+import { enforceRateLimit } from "@/lib/security/rateLimit";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -23,6 +24,8 @@ export async function GET(request) {
 }
 
 export async function POST(request) {
+  const limited = enforceRateLimit(request, { scope: "admin-products", limit: 20, windowMs: 60_000 });
+  if (limited) return limited;
   try {
     const session = await getServerSession();
     if (!session || session?.user?.role !== "ADMIN") {

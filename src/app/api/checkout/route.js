@@ -8,11 +8,14 @@ import {
   getMailtoUrl,
 } from "@/lib/orderFormatter";
 import { getProductDisplayImage } from "@/lib/productImage";
+import { enforceRateLimit } from "@/lib/security/rateLimit";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 
 export async function POST(req) {
+  const limited = enforceRateLimit(req, { scope: "checkout", limit: 8, windowMs: 60_000 });
+  if (limited) return limited;
   try {
     const session = await getServerSession();
     const body = await req.json();
