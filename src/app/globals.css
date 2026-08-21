@@ -283,36 +283,56 @@ h1, h2, h3, h4 {
   flex: 1;
   max-width: 520px;
   display: flex;
+  align-items: stretch;
+  height: 44px;
   margin: 0 var(--spacing-lg);
+  background-color: #FFFFFF;
+  border-radius: 999px;
+  border: 2px solid var(--border-color);
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.navbar__search:focus-within {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(255, 215, 0, 0.35);
 }
 
 .navbar__search input {
+  flex: 1;
   width: 100%;
-  padding: 0.75rem 1.25rem;
-  border-radius: 25px 0 0 25px;
-  border: 2px solid var(--border-color);
-  background-color: #FFFFFF;
+  height: 100%;
+  padding: 0 1.25rem;
+  border: none;
+  background-color: transparent;
   color: #111111;
   outline: none;
   font-size: 0.95rem;
 }
 
 .navbar__search input:focus {
-  border-color: var(--primary-color);
+  outline: none;
 }
 
-.navbar__search button {
+.navbar__search button,
+.navbar__search .navbar__search-btn {
   padding: 0 1.5rem;
-  border-radius: 0 25px 25px 0;
   background-color: #E52421;
   border: none;
   color: #FFFFFF;
   font-weight: 800;
   cursor: pointer;
-  transition: var(--transition);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  height: 100%;
+  transition: background-color 0.25s ease;
 }
 
-.navbar__search button:hover {
+.navbar__search button:hover,
+.navbar__search .navbar__search-btn:hover {
   background-color: #C81917;
 }
 
@@ -1113,11 +1133,17 @@ h1, h2, h3, h4 {
     margin: 0;
     width: 100%;
     max-width: 100%;
+    height: 42px;
   }
 
   .navbar__search input {
     font-size: 0.88rem;
-    padding: 0.65rem 1rem;
+    padding: 0 1rem;
+  }
+
+  .navbar__search button,
+  .navbar__search .navbar__search-btn {
+    padding: 0 1.15rem;
   }
 
   .navbar__menu {
