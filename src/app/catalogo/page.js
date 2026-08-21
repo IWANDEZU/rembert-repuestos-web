@@ -657,45 +657,14 @@ export default async function Catalogo({ searchParams }) {
     ).sort((a, b) => a.name.localeCompare(b.name, "es"));
   };
 
+  // INVENTARIO GENERAL es la única fuente de publicación pública. La base de
+  // datos conserva usuarios, pedidos y favoritos, pero no puede reintroducir
+  // productos ausentes del documento autorizado.
+  applyFallbackCatalog();
   try {
-    const [dbProducts, dbTotal, dbBrands, dbSession] = await Promise.all([
-      prisma.product.findMany({
-        where,
-        include: productInclude,
-        orderBy: requiresPriceSort ? undefined : orderBy,
-        ...(requiresPriceSort ? {} : { skip: (requestedPage - 1) * PAGE_SIZE, take: PAGE_SIZE }),
-      }),
-      prisma.product.count({ where }),
-      prisma.brand.findMany({ orderBy: { name: "asc" } }),
-      getServerSession(),
-    ]);
-    fetchedProducts = dbProducts;
-    totalProducts = dbTotal;
-    brands = dbBrands;
-    session = dbSession;
-
-    // Estas líneas se administran en el catálogo versionado para que los
-    // productos validados no desaparezcan cuando la BD tenga inventario parcial.
-    const codeManagedCategories = new Set([
-      "mantenimiento",
-      "coolant",
-      "transmision",
-      "frenos-y-suspension",
-      "filtros",
-      "electrico-y-encendido",
-      "motor-y-distribucion",
-      "embrague",
-      "rodamientos-y-traccion",
-      "radiadores",
-      "siliconas",
-      "lubricantes-gasolina",
-      "grasas-y-aditivos",
-      "urea",
-    ]);
-    if (dbTotal === 0 || codeManagedCategories.has(categoryParam)) applyFallbackCatalog();
+    session = await getServerSession();
   } catch (err) {
-    // Si la BD remota no responde, conservar una tienda navegable y con contenido.
-    applyFallbackCatalog();
+    session = null;
   }
 
   const currentPage = requestedPage;
@@ -767,6 +736,8 @@ export default async function Catalogo({ searchParams }) {
     "grasas-y-aditivos": ["Grasas y aditivos", "Protección para pasadores, bujes, rodamientos y aplicaciones de servicio severo."],
     radiadores: ["Radiadores y sistema de refrigeración", "Radiadores de aluminio y cobre, tapas presurizadas, termostatos y refrigerantes para autos y camiones."],
     urea: ["Urea automotriz (AdBlue / DEF)", "Solución para reducción de emisiones en sistemas SCR."],
+    "mangueras-y-tubos": ["Mangueras y tubos automotrices", "Líneas de refrigeración, admisión, freno y combustible seleccionadas por medidas, posición y referencia OE."],
+    "soportes-retenedores-y-guayas": ["Soportes, retenedores y guayas", "Soportes de motor y caja, retenedores y cables de mando identificados por VIN, medidas y posición."],
   };
   let [bannerTitle, bannerSubtitle] = banners[categoryParam] || [
     "Catálogo completo",

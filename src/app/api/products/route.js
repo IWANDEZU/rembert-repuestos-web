@@ -8,27 +8,14 @@ export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 
 export async function GET(request) {
-  try {
-    const products = await prisma.product.findMany({
-      where: { isActive: true },
-      include: {
-        category: true,
-        brand: true,
-        images: true,
-        variants: true,
-      },
-    });
-    return NextResponse.json(products);
-  } catch (error) {
-    console.warn("Base de datos no disponible; /api/products usa el catálogo versionado.");
-    return NextResponse.json(catalogFallback, {
-      status: 200,
-      headers: {
-        "Cache-Control": "public, s-maxage=300, stale-while-revalidate=3600",
-        "X-Data-Source": "catalog-fallback",
-      },
-    });
-  }
+  return NextResponse.json(catalogFallback, {
+    status: 200,
+    headers: {
+      "Cache-Control": "public, s-maxage=300, stale-while-revalidate=3600",
+      "X-Data-Source": "inventory-general-pdf",
+      "X-Inventory-Items": String(catalogFallback.length),
+    },
+  });
 }
 
 export async function POST(request) {

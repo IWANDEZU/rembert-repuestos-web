@@ -4,6 +4,8 @@ import { catalogoProveedoresProducts } from "../data/catalogoProveedoresProducts
 import { kiaProducts } from "../data/kiaProducts.js";
 import { electricalProducts } from "../data/electricalProducts.js";
 import { phcValeoProducts } from "../data/phcValeoProducts.js";
+import { inventoryLineProducts } from "../data/inventoryLineProducts.js";
+import { inventoryProducts } from "../data/inventoryProducts.js";
 import partmoCatalog from "../data/catalogo-filtros-diesel.json";
 import priorityCatalog from "../data/catalogo-prioridad-diesel.json";
 
@@ -726,6 +728,7 @@ const allProducts = [
   ...kiaProducts,
   ...electricalProducts,
   ...phcValeoProducts,
+  ...inventoryLineProducts,
 
   // FILTROS
   {
@@ -1064,19 +1067,50 @@ const allProducts = [
   },
 ];
 
-const expandedCatalog = [
+const curatedCatalog = [
   ...allProducts,
   ...priorityCatalogProducts,
   ...partmoFilterProducts,
 ];
 
-// Una referencia fabricante solo debe aparecer una vez. Se conserva primero la
-// ficha editorial existente y después se incorporan catálogos técnicos nuevos.
-export const products = expandedCatalog.filter((product, index, catalog) => {
-  const key = `${product.brand?.slug || "sin-marca"}:${String(product.sku || product.id).toLowerCase()}`;
-  return catalog.findIndex((candidate) => (
-    `${candidate.brand?.slug || "sin-marca"}:${String(candidate.sku || candidate.id).toLowerCase()}` === key
-  )) === index;
+const normalizeInventoryCode = (value) => String(value || "")
+  .normalize("NFD")
+  .replace(/[\u0300-\u036f]/g, "")
+  .toUpperCase()
+  .replace(/[^A-Z0-9]/g, "");
+
+// El PDF de inventario es la lista de publicación. Las fichas editoriales,
+// imágenes y fuentes técnicas solo se conservan cuando su código coincide con
+// una referencia del documento; ninguna referencia adicional llega a la web.
+const curatedByCode = new Map();
+for (const product of curatedCatalog) {
+  const key = normalizeInventoryCode(product.sku);
+  if (key && !curatedByCode.has(key)) curatedByCode.set(key, product);
+}
+
+export const products = inventoryProducts.map((inventoryProduct) => {
+  const curated = curatedByCode.get(normalizeInventoryCode(inventoryProduct.sku));
+  if (!curated) return inventoryProduct;
+
+  return {
+    ...inventoryProduct,
+    name: curated.name || inventoryProduct.name,
+    brand: curated.brand || inventoryProduct.brand,
+    shortDesc: curated.shortDesc || inventoryProduct.shortDesc,
+    description: `${curated.description || inventoryProduct.description} Existencia, precio y publicación validados contra INVENTARIO GENERAL.`,
+    image: curated.image || inventoryProduct.image,
+    images: curated.images?.length ? curated.images : inventoryProduct.images,
+    imageStatus: curated.imageStatus || "inventory-matched-editorial",
+    fitments: curated.fitments?.length ? curated.fitments : inventoryProduct.fitments,
+    fitmentSummary: curated.fitmentSummary || inventoryProduct.fitmentSummary,
+    fitmentRequirements: curated.fitmentRequirements || inventoryProduct.fitmentRequirements,
+    fitmentSource: `${inventoryProduct.fitmentSource}${curated.fitmentSource ? ` · ${curated.fitmentSource}` : ""}`,
+    attributes: [...(curated.attributes || []), ...inventoryProduct.attributes],
+    // Estos campos nunca se heredan de una ficha promocional.
+    price: inventoryProduct.price,
+    stock: inventoryProduct.stock,
+    inStock: inventoryProduct.inStock,
+  };
 });
 
 export function getProductById(id) {

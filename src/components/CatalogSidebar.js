@@ -80,8 +80,7 @@ export default async function CatalogSidebar({
                   ))}
                 </ul>
               </li>
-              <li><CatalogLink href={categoryHref("siliconas")} active={categoryParam === "siliconas"}>Siliconas y sellantes</CatalogLink></li>
-              <li><CatalogLink href={categoryHref("mantenimiento")} active={categoryParam === "mantenimiento"}>Mantenimiento: silicona, grasa, refrigerante y valvulina</CatalogLink></li>
+              <li><CatalogLink href={categoryHref("lubricantes-gasolina")} active={categoryParam === "lubricantes-gasolina"}>Lubricantes y fluidos</CatalogLink></li>
               <li><CatalogLink href={categoryHref("transmision")} active={categoryParam === "transmision"}>Transmisiones</CatalogLink></li>
               <li><CatalogLink href={categoryHref("electrico-y-encendido")} active={categoryParam === "electrico-y-encendido"}>PARTES ELÉCTRICAS</CatalogLink></li>
               <li><CatalogLink href={categoryHref("motor-y-distribucion")} active={categoryParam === "motor-y-distribucion"}>Motor y distribución</CatalogLink></li>
@@ -89,7 +88,11 @@ export default async function CatalogSidebar({
               <li><CatalogLink href={categoryHref("rodamientos-y-traccion")} active={categoryParam === "rodamientos-y-traccion"}>Rodamientos y tracción</CatalogLink></li>
               <li><CatalogLink href={categoryHref("frenos-y-suspension")} active={categoryParam === "frenos-y-suspension"}>Frenos y suspensión</CatalogLink></li>
               <li><CatalogLink href={categoryHref("radiadores")} active={categoryParam === "radiadores"}>Radiadores</CatalogLink></li>
-              <li><CatalogLink href={categoryHref("servicio-tecnico")} active={categoryParam === "servicio-tecnico"}>Servicio técnico</CatalogLink></li>
+              <li><CatalogLink href={categoryHref("combustible")} active={categoryParam === "combustible"}>Combustible e inyección</CatalogLink></li>
+              <li><CatalogLink href={categoryHref("mangueras-y-tubos")} active={categoryParam === "mangueras-y-tubos"}>Mangueras y tubos</CatalogLink></li>
+              <li><CatalogLink href={categoryHref("soportes-retenedores-y-guayas")} active={categoryParam === "soportes-retenedores-y-guayas"}>Soportes, retenedores y guayas</CatalogLink></li>
+              <li><CatalogLink href={categoryHref("carroceria-iluminacion")} active={categoryParam === "carroceria-iluminacion"}>Carrocería e iluminación</CatalogLink></li>
+              <li><CatalogLink href={categoryHref("repuestos-varios")} active={categoryParam === "repuestos-varios"}>Otros repuestos</CatalogLink></li>
             </ul>
           </nav>
 
