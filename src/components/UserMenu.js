@@ -10,33 +10,31 @@ export default function UserMenu() {
   return (
     <div className="navbar__actions">
       {status === "loading" ? (
-        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-          <span style={{ fontSize: '1.2rem' }}>⏳</span>
-          <span>Cargando...</span>
+        <div className="navbar__action-btn">
+          <span className="navbar__action-icon">⏳</span>
+          <span className="navbar__action-text">Cargando...</span>
         </div>
       ) : session ? (
-        <>
-          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', position: 'relative', cursor: 'pointer' }} className="user-dropdown">
-            <span style={{ fontSize: '1.2rem' }}>👤</span>
-            <span>{session.user?.name?.split(' ')[0] || 'Mi cuenta'}</span>
-            <div className="dropdown-content">
-              <Link href="/perfil">Mi Perfil</Link>
-              <Link href="/pedidos">Mis Pedidos</Link>
-              {session.user?.role === "ADMIN" && (
-                <Link href="/admin/dashboard" style={{ color: 'var(--primary-color)' }}>
-                  ⚙️ Admin CRM
-                </Link>
-              )}
-              <button onClick={() => signOut()} style={{ background: 'none', border: 'none', color: '#ff4d4f', cursor: 'pointer', textAlign: 'left', padding: '10px 15px', width: '100%' }}>
-                Cerrar Sesión
-              </button>
-            </div>
+        <div className="navbar__action-btn user-dropdown">
+          <span className="navbar__action-icon">👤</span>
+          <span className="navbar__action-text">{session.user?.name?.split(' ')[0] || 'Mi cuenta'}</span>
+          <div className="dropdown-content">
+            <Link href="/perfil">Mi Perfil</Link>
+            <Link href="/pedidos">Mis Pedidos</Link>
+            {session.user?.role === "ADMIN" && (
+              <Link href="/admin/dashboard" style={{ color: '#FFD700', fontWeight: 800 }}>
+                ⚙️ Admin CRM
+              </Link>
+            )}
+            <button onClick={() => signOut()} style={{ background: 'none', border: 'none', color: '#ff4d4f', cursor: 'pointer', textAlign: 'left', padding: '10px 15px', width: '100%', fontWeight: 700 }}>
+              Cerrar Sesión
+            </button>
           </div>
-        </>
+        </div>
       ) : (
-        <Link href="/login" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-          <span style={{ fontSize: '1.2rem' }}>🔑</span>
-          <span>Ingresar</span>
+        <Link href="/login" className="navbar__action-btn">
+          <span className="navbar__action-icon">🔑</span>
+          <span className="navbar__action-text">Ingresar</span>
         </Link>
       )}
 
@@ -46,28 +44,33 @@ export default function UserMenu() {
       <style jsx>{`
         .user-dropdown {
           position: relative;
-          display: inline-block;
         }
         .dropdown-content {
           display: none;
           position: absolute;
-          background-color: #fff;
-          min-width: 160px;
-          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          background-color: #141414;
+          min-width: 170px;
+          box-shadow: 0px 10px 24px rgba(0,0,0,0.7), 0 0 12px rgba(255, 215, 0, 0.25);
+          border: 1.5px solid rgba(255, 215, 0, 0.4);
           z-index: 100;
-          top: 100%;
+          top: calc(100% + 8px);
           right: 0;
-          border-radius: 8px;
+          border-radius: 10px;
           overflow: hidden;
+          backdrop-filter: blur(8px);
         }
         .dropdown-content a {
-          color: black;
+          color: #ffffff;
           padding: 12px 16px;
           text-decoration: none;
           display: block;
+          font-size: 0.85rem;
+          font-weight: 600;
+          transition: background-color 0.2s ease, color 0.2s ease;
         }
         .dropdown-content a:hover, .dropdown-content button:hover {
-          background-color: #f1f1f1;
+          background-color: rgba(255, 215, 0, 0.15);
+          color: #FFD700;
         }
         .user-dropdown:hover .dropdown-content {
           display: block;

@@ -7,18 +7,23 @@ export default function CartIcon() {
   if (!isMounted) return null;
 
   return (
-    <div 
+    <button 
+      type="button"
       onClick={toggleCart}
-      style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', position: 'relative', cursor: 'pointer' }}
+      className="navbar__action-btn navbar__action-btn--cart"
+      aria-label={`Carrito de compras (${cartCount} productos)`}
+      style={{ background: 'none', border: 'none', cursor: 'pointer', padding: 0 }}
     >
-      <span style={{ fontSize: '1.2rem' }}>🛒</span>
-      <span>Carrito</span>
-      {cartCount > 0 && (
-        <span style={{ position: 'absolute', top: '-5px', right: '5px', background: 'var(--primary-color)', color: 'white', borderRadius: '50%', padding: '2px 6px', fontSize: '0.7rem' }}>
-          {cartCount}
-        </span>
-      )}
-    </div>
+      <div style={{ position: 'relative', display: 'inline-flex', alignItems: 'center', justifyContent: 'center' }}>
+        <span className="navbar__action-icon">🛒</span>
+        {cartCount > 0 && (
+          <span className="navbar__cart-badge">
+            {cartCount}
+          </span>
+        )}
+      </div>
+      <span className="navbar__action-text">Carrito</span>
+    </button>
   );
 }
 
