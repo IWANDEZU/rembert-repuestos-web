@@ -1,4 +1,5 @@
 import { frenosSuspensionProducts } from "../data/frenosSuspensionProducts.js";
+import { brandPanelProducts } from "../data/brandPanelProducts.js";
 
 function brakeApplication({
   id, name, slug, brand, reference, image, vehicleBrands, models,
@@ -520,6 +521,7 @@ const allProducts = [
   },
 
   // DIRECCIÓN, SUSPENSIÓN Y FRENO HIDRÁULICO — COTIZACIÓN VALIDADA POR VIN
+  ...brandPanelProducts,
   ...frenosSuspensionProducts,
 
   // FILTROS

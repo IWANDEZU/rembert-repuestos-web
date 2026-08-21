@@ -1,0 +1,82 @@
+const commonVehicles =
+  "Chevrolet Spark, Spark GT, Beat, Aveo, Sail, Onix y Tracker; Renault Kwid, Logan, Sandero, Stepway y Duster; Kia Picanto, Rio, Cerato y Sportage; Hyundai i10, Grand i10, Accent, HB20 y Tucson; Nissan March, Versa, Sentra y Kicks; Toyota Yaris, Corolla y RAV4; Mazda 2, Mazda 3 y CX-5; Ford Fiesta y EcoSport; Volkswagen Gol, Fox y Jetta";
+
+function familyProduct({ id, name, brand, sku, category, image, summary, description, components, validation, source }) {
+  return {
+    id,
+    name,
+    slug: id,
+    category,
+    brand: { name: brand, slug: brand.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "") },
+    price: 0,
+    sku,
+    shortDesc: `${summary} Referencia y precio bajo validación técnica.`,
+    description: `${description} Existen aplicaciones para vehículos livianos a gasolina del parque automotor colombiano, incluidos ${commonVehicles}. Esta lista es orientativa: la compatibilidad final depende de la referencia seleccionada.`,
+    image,
+    images: [{ url: image, alt: `${name} con empaque de marca`, isMain: true }],
+    attributes: [
+      { id: `${id}-components`, name: "Familia de productos", value: components },
+      { id: `${id}-vehicles`, name: "Vehículos orientativos", value: commonVehicles },
+      { id: `${id}-validation`, name: "Validación obligatoria", value: validation },
+      { id: `${id}-source`, name: "Fuente técnica", value: source },
+      { id: `${id}-image`, name: "Imagen", value: "Representación comercial de la familia; caja, forma y contenido cambian según el SKU confirmado." },
+    ],
+    inStock: false,
+    stock: 0,
+  };
+}
+
+export const brandPanelProducts = [
+  familyProduct({
+    id: "ngk-encendido-bujias-bobinas-familia",
+    name: "NGK Encendido: Bujías, Bobinas y Cables — Referencia según Vehículo",
+    brand: "NGK",
+    sku: "NGK-IGN-COT",
+    category: { name: "Eléctrico y Encendido", slug: "electrico-y-encendido" },
+    image: "/catalogo-marcas-panel/ngk-encendido-caja.webp",
+    summary: "Familia NGK para mantenimiento del sistema de encendido.",
+    description: "Incluye bujías convencionales y especiales, bobinas, cables y terminales de encendido. El grado térmico, alcance de rosca, resistencia, luz y tipo de bobina no son intercambiables por apariencia.",
+    components: "Bujías de encendido, bujías especiales, bobinas, cables y terminales",
+    validation: "VIN, placa, marca, modelo, año, código de motor, combustible, número de cilindros y referencia desmontada",
+    source: "Catálogo oficial NGK Automotivo — velas, bobinas, cables y terminales",
+  }),
+  familyProduct({
+    id: "dayco-kit-distribucion-bomba-agua-familia",
+    name: "Dayco Kit de Distribución con Bomba de Agua — Referencia según Motor",
+    brand: "Dayco",
+    sku: "DAYCO-KTBWP-COT",
+    category: { name: "Motor y Distribución", slug: "motor-y-distribucion" },
+    image: "/catalogo-marcas-panel/dayco-kit-distribucion-caja.webp",
+    summary: "Kit de distribución Dayco para reparación integral del mando del motor.",
+    description: "Según aplicación puede reunir correa dentada, tensor, poleas, bomba de agua, sellos y herrajes. Instalar una correa o bomba incorrecta puede causar pérdida de sincronización y daño grave del motor.",
+    components: "Correa de distribución, tensor, poleas, bomba de agua y herrajes según kit",
+    validation: "VIN, código de motor, número de dientes, ancho, perfil, tensores, bomba, año y fecha de corte de producción",
+    source: "Dayco Aftermarket — Timing Belt Component Kits y kits con bomba de agua",
+  }),
+  familyProduct({
+    id: "ina-tensor-poleas-motor-familia",
+    name: "INA Tensores, Poleas y Rodamientos de Motor — Referencia según Vehículo",
+    brand: "INA",
+    sku: "INA-DRIVE-COT",
+    category: { name: "Motor y Distribución", slug: "motor-y-distribucion" },
+    image: "/catalogo-marcas-panel/ina-tensores-caja.webp",
+    summary: "Componentes INA para distribución y transmisión auxiliar del motor.",
+    description: "Familia de tensores automáticos, poleas guía, rodamientos, ruedas libres de alternador y kits de distribución. El conjunto debe corresponder al trazado, carga y velocidad definidos para cada motor.",
+    components: "Tensores, poleas locas, rodamientos, rueda libre de alternador y kits de distribución",
+    validation: "VIN, código de motor, trazado de correa, diámetro y ancho de polea, número de canales, montaje y referencia OE",
+    source: "Schaeffler Vehicle Lifetime Solutions — portafolio INA Engine",
+  }),
+  familyProduct({
+    id: "monroe-amortiguadores-struts-gas-familia",
+    name: "Monroe Amortiguadores y Struts a Gas — Referencia según Vehículo",
+    brand: "Monroe",
+    sku: "MONROE-SHOCK-COT",
+    category: { name: "Frenos y Suspensión", slug: "frenos-y-suspension" },
+    image: "/catalogo-marcas-panel/monroe-amortiguadores-caja.webp",
+    summary: "Amortiguación Monroe para recuperar control, estabilidad y confort.",
+    description: "Incluye amortiguadores convencionales, struts y conjuntos según aplicación. La calibración, recorrido, anclajes y lado deben coincidir con el peso, carrocería y geometría del vehículo; se recomienda reemplazar por pares en el mismo eje.",
+    components: "Amortiguadores delanteros y traseros, struts, soportes y kits de protección según aplicación",
+    validation: "VIN, carrocería, motor, eje, lado, largo extendido/comprimido, anclajes, carga y suspensión original",
+    source: "DRiV / Monroe — catálogo de control de conducción y amortiguadores",
+  }),
+];

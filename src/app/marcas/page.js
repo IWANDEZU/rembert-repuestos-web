@@ -40,6 +40,10 @@ const fallbackBrands = [
   { name: "Petroil", slug: "petroil", logo: "/logos/petroil.png", count: 4 },
   { name: "OSRAM", slug: "osram", logo: "/catalogo-ktx-osram/osram-ledriving-hl-bright-h4.webp", count: 1 },
   { name: "KTX", slug: "ktx", logo: "/catalogo-ktx-osram/ktx-kit-embrague-familia.webp", count: 1 },
+  { name: "NGK", slug: "ngk", logo: "/catalogo-marcas-panel/ngk-encendido-caja.webp", count: 1 },
+  { name: "Dayco", slug: "dayco", logo: "/catalogo-marcas-panel/dayco-kit-distribucion-caja.webp", count: 1 },
+  { name: "INA", slug: "ina", logo: "/catalogo-marcas-panel/ina-tensores-caja.webp", count: 1 },
+  { name: "Monroe", slug: "monroe", logo: "/catalogo-marcas-panel/monroe-amortiguadores-caja.webp", count: 1 },
 ];
 
 const lubricantBrandSlugs = new Set([
