@@ -2,9 +2,8 @@ import { frenosSuspensionProducts } from "../data/frenosSuspensionProducts.js";
 
 function brakeApplication({
   id, name, slug, brand, reference, image, vehicleBrands, models,
-  years, axle, fmsi, oe, source,
+  years = "", axle = "Eje delantero", fmsi, oe, source = "",
 }) {
-  const application = `${vehicleBrands}: ${models} (${years}), únicamente versiones a gasolina; confirmar VIN, motorización, diámetro de disco/tambor y sistema ABS.`;
   return {
     id,
     name,
@@ -13,20 +12,17 @@ function brakeApplication({
     brand: { name: brand, slug: brand.toLowerCase().replace(/[^a-z0-9]+/g, "-") },
     price: 0,
     sku: reference,
-    shortDesc: `${axle} para ${models}; aplicación gasolina sujeta a validación por VIN.`,
-    description: `${name}. Aplicación de catálogo: ${application} Esta referencia se publica bajo cotización porque un mismo modelo puede cambiar de pinza, disco, tambor o material de fricción según año, versión y planta de fabricación.`,
+    shortDesc: `${axle} para ${models}.`,
+    description: `${name}. Compatible con ${vehicleBrands}: ${models} (${years}). Cotización por VIN.`,
     image,
-    images: [{ url: image, alt: `${name} — imagen comercial de familia`, isMain: true }],
+    images: [{ url: image, alt: name, isMain: true }],
     attributes: [
       { id: `${id}-ref`, name: "Referencia", value: reference },
       { id: `${id}-axis`, name: "Posición", value: axle },
-      { id: `${id}-fuel`, name: "Combustible", value: "Solo automóviles, SUV y camionetas livianas a gasolina" },
-      { id: `${id}-brands`, name: "Marcas compatibles", value: vehicleBrands },
-      { id: `${id}-models`, name: "Modelos compatibles", value: `${models} · años ${years} · solo gasolina` },
-      ...(fmsi ? [{ id: `${id}-fmsi`, name: "Equivalencia FMSI", value: fmsi }] : []),
-      ...(oe ? [{ id: `${id}-oe`, name: "Referencia OE publicada", value: oe }] : []),
-      { id: `${id}-source`, name: "Fuente técnica", value: source },
-      { id: `${id}-image`, name: "Imagen", value: "Representación de familia; la geometría exacta se confirma con VIN y muestra" },
+      { id: `${id}-brands`, name: "Marcas", value: vehicleBrands },
+      { id: `${id}-models`, name: "Modelos", value: `${models} (${years})` },
+      ...(fmsi ? [{ id: `${id}-fmsi`, name: "FMSI", value: fmsi }] : []),
+      ...(oe ? [{ id: `${id}-oe`, name: "OE", value: oe }] : []),
     ],
     inStock: true,
     stock: 0,
