@@ -915,7 +915,7 @@ export default async function Catalogo({ searchParams }) {
           </section>
         )}
 
-        {categoryParam === "frenos-y-suspension" && !brandParam && !searchQuery && (
+        {categoryParam === "frenos-y-suspension" && !brandParam && !searchQuery && !vehicleParam && !partParam && (
           <section className="filter-showcase" aria-labelledby="brake-applications-title">
             <div className="filter-showcase__heading">
               <div>
@@ -936,7 +936,7 @@ export default async function Catalogo({ searchParams }) {
                 {SMART_BRAKE_FAMILIES.map(([part, label]) => (
                   <Link
                     key={part}
-                    href={buildCatalogHref({ category: "frenos-y-suspension", part })}
+                    href={`${buildCatalogHref({ category: "frenos-y-suspension", part })}#productos`}
                     className={partParam === part ? "is-active" : ""}
                     aria-current={partParam === part ? "page" : undefined}
                   >
@@ -962,13 +962,13 @@ export default async function Catalogo({ searchParams }) {
                       {systems.split(" · ").map((partName) => (
                         <Link
                           key={partName}
-                          href={buildCatalogHref({ category: "frenos-y-suspension", vehicle: brand, part: filterSlug(partName) })}
+                          href={`${buildCatalogHref({ category: "frenos-y-suspension", vehicle: brand, part: filterSlug(partName) })}#productos`}
                         >
                           {partName}
                         </Link>
                       ))}
                     </div>
-                    <Link href={buildCatalogHref({ category: "frenos-y-suspension", vehicle: brand })}>
+                    <Link href={`${buildCatalogHref({ category: "frenos-y-suspension", vehicle: brand })}#productos`}>
                       Ver productos compatibles <span aria-hidden="true">→</span>
                     </Link>
                   </div>
@@ -994,7 +994,7 @@ export default async function Catalogo({ searchParams }) {
           </section>
         )}
 
-        <div className="catalog-toolbar">
+        <div id="productos" className="catalog-toolbar">
           <p>Mostrando <strong>{firstProduct}-{lastProduct}</strong> de <strong>{totalProducts}</strong> producto(s)</p>
           <form action="/catalogo" method="get" className="catalog-sort-form">
             {categoryParam && <input type="hidden" name="category" value={categoryParam} />}
