@@ -2,6 +2,7 @@ import Link from "next/link";
 import { prisma } from "@/lib/prisma";
 import { buildCatalogHref } from "@/lib/catalogUtils";
 import { products as fallbackCatalogProducts } from "@/lib/products";
+import { inventoryLineSummary } from "@/data/inventoryProducts";
 
 function getFallbackBrands() {
   return Array.from(
@@ -29,6 +30,7 @@ export default async function CatalogSidebar({
   categoryParam,
   brandParam,
   tipoParam,
+  lineParam,
   vehicleParam,
   partParam,
   searchQuery,
@@ -46,10 +48,10 @@ export default async function CatalogSidebar({
     brands = getFallbackBrands();
   }
 
-  const sharedFilters = { brand: brandParam, vehicle: vehicleParam, part: partParam, search: searchQuery, sort: sortParam };
+  const sharedFilters = { brand: brandParam, line: lineParam, vehicle: vehicleParam, part: partParam, search: searchQuery, sort: sortParam };
   const categoryHref = (category, tipo) => buildCatalogHref({ ...sharedFilters, category, tipo });
 
-  const hasActiveFilters = !!(categoryParam || brandParam || searchQuery || tipoParam || vehicleParam || partParam);
+  const hasActiveFilters = !!(categoryParam || brandParam || searchQuery || tipoParam || lineParam || vehicleParam || partParam);
   const backHref = hasActiveFilters ? "/catalogo" : "/";
 
   return (
@@ -96,10 +98,40 @@ export default async function CatalogSidebar({
             </ul>
           </nav>
 
+          <details className="catalog-lines" open={Boolean(lineParam)}>
+            <summary className="catalog-sidebar__title">Líneas del inventario</summary>
+            <ul className="catalog-brand-list">
+              {inventoryLineSummary
+                .filter((line) => line.name !== "SIN LINEA")
+                .map((line) => {
+                  const href = buildCatalogHref({
+                    category: categoryParam,
+                    brand: brandParam,
+                    tipo: tipoParam,
+                    line: line.name,
+                    vehicle: vehicleParam,
+                    part: partParam,
+                    search: searchQuery,
+                    sort: sortParam,
+                  });
+                  const active = lineParam === line.name;
+                  return (
+                    <li key={line.name}>
+                      <Link href={href} className={`catalog-brand-link ${active ? "is-active" : ""}`} aria-current={active ? "page" : undefined}>
+                        <span className="catalog-brand-link__marker" aria-hidden="true" />
+                        <span>{line.name}</span>
+                        <small aria-label={`${line.count} referencias`}>{line.count}</small>
+                      </Link>
+                    </li>
+                  );
+                })}
+            </ul>
+          </details>
+
           <h2 className="catalog-sidebar__title">Marca</h2>
           <ul className="catalog-brand-list">
             {brands.map((brand) => {
-              const href = buildCatalogHref({ category: categoryParam, brand: brand.slug, tipo: tipoParam, vehicle: vehicleParam, part: partParam, search: searchQuery, sort: sortParam });
+              const href = buildCatalogHref({ category: categoryParam, brand: brand.slug, tipo: tipoParam, line: lineParam, vehicle: vehicleParam, part: partParam, search: searchQuery, sort: sortParam });
               const active = brandParam === brand.slug;
               return (
                 <li key={brand.id}>

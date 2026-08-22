@@ -5,9 +5,11 @@ import Link from "next/link";
 import { redirect } from "next/navigation";
 import CatalogGridWithModal from "@/components/CatalogGridWithModal";
 import CatalogSidebar from "@/components/CatalogSidebar";
+import VerkePriorityShowcase from "@/components/VerkePriorityShowcase";
 import { buildCatalogHref } from "@/lib/catalogUtils";
 import { siteUrl } from "@/lib/site";
 import { products as fallbackCatalogProducts } from "@/lib/products";
+import { inventoryLineSummary } from "@/data/inventoryProducts";
 
 export const dynamic = "force-dynamic";
 const PAGE_SIZE = 24;
@@ -263,7 +265,7 @@ function getPageNumber(value) {
   return Number.isSafeInteger(page) && page > 0 ? page : 1;
 }
 
-function filterFallbackCatalog({ categoryParam, brandParam, tipoParam, vehicleParam, partParam, searchQuery }) {
+function filterFallbackCatalog({ categoryParam, brandParam, tipoParam, lineParam, vehicleParam, partParam, searchQuery }) {
   let filtered = [...fallbackCatalogProducts];
 
   if (categoryParam === "mantenimiento") {
@@ -314,6 +316,10 @@ function filterFallbackCatalog({ categoryParam, brandParam, tipoParam, vehiclePa
     filtered = filtered.filter((product) => product.brand?.slug === brandParam);
   }
 
+  if (lineParam) {
+    filtered = filtered.filter((product) => product.inventoryLine === lineParam);
+  }
+
   if (vehicleParam) {
     const vehicle = normalizeCatalogText(vehicleParam);
     filtered = filtered.filter((product) => {
@@ -347,6 +353,7 @@ export default async function Catalogo({ searchParams }) {
   const categoryParam = resolvedParams?.category;
   const brandParam = resolvedParams?.brand;
   const tipoParam = resolvedParams?.tipo;
+  const lineParam = resolvedParams?.line;
   const vehicleParam = resolvedParams?.vehicle;
   const partParam = resolvedParams?.part;
   const searchQuery = resolvedParams?.search || resolvedParams?.q;
@@ -643,7 +650,7 @@ export default async function Catalogo({ searchParams }) {
   let session = null;
 
   const applyFallbackCatalog = () => {
-    const filtered = filterFallbackCatalog({ categoryParam, brandParam, tipoParam, vehicleParam, partParam, searchQuery });
+    const filtered = filterFallbackCatalog({ categoryParam, brandParam, tipoParam, lineParam, vehicleParam, partParam, searchQuery });
     totalProducts = filtered.length;
     fetchedProducts = requiresPriceSort
       ? filtered
@@ -674,6 +681,7 @@ export default async function Catalogo({ searchParams }) {
       category: categoryParam,
       brand: brandParam,
       tipo: tipoParam,
+      line: lineParam,
       vehicle: vehicleParam,
       part: partParam,
       search: searchQuery,
@@ -756,12 +764,18 @@ export default async function Catalogo({ searchParams }) {
       : `Productos disponibles de la marca ${brandName}.`;
   }
 
-  const sharedFilters = { brand: brandParam, vehicle: vehicleParam, part: partParam, search: searchQuery, sort: sortParam };
+  if (lineParam) {
+    bannerTitle = `Línea ${lineParam}`;
+    bannerSubtitle = `Referencias con existencia clasificadas en la línea oficial ${lineParam} del inventario.`;
+  }
+
+  const sharedFilters = { brand: brandParam, line: lineParam, vehicle: vehicleParam, part: partParam, search: searchQuery, sort: sortParam };
   const categoryHref = (category, tipo) => buildCatalogHref({ ...sharedFilters, category, tipo });
   const pageHref = (page) => buildCatalogHref({
     category: categoryParam,
     brand: brandParam,
     tipo: tipoParam,
+    line: lineParam,
     vehicle: vehicleParam,
     part: partParam,
     search: searchQuery,
@@ -769,7 +783,7 @@ export default async function Catalogo({ searchParams }) {
     page,
   });
 
-  const hasActiveFilters = !!(categoryParam || brandParam || searchQuery || tipoParam || vehicleParam || partParam);
+  const hasActiveFilters = !!(categoryParam || brandParam || searchQuery || tipoParam || lineParam || vehicleParam || partParam);
   const backHref = hasActiveFilters ? "/catalogo" : "/";
 
   const breadcrumbJsonLd = {
@@ -809,6 +823,7 @@ export default async function Catalogo({ searchParams }) {
         categoryParam={categoryParam}
         brandParam={brandParam}
         tipoParam={tipoParam}
+        lineParam={lineParam}
         vehicleParam={vehicleParam}
         partParam={partParam}
         searchQuery={searchQuery}
@@ -901,6 +916,12 @@ export default async function Catalogo({ searchParams }) {
           </section>
         )}
 
+        {categoryParam === "frenos-y-suspension" && !brandParam && !searchQuery && !vehicleParam && !partParam && (!lineParam || lineParam === "AMORTIGUADORES") && (
+          <VerkePriorityShowcase
+            inventoryCount={inventoryLineSummary.find((entry) => entry.name === "AMORTIGUADORES")?.count || 0}
+          />
+        )}
+
         {categoryParam === "frenos-y-suspension" && !brandParam && !searchQuery && !vehicleParam && !partParam && (
           <section className="filter-showcase" aria-labelledby="brake-applications-title">
             <div className="filter-showcase__heading">
@@ -986,6 +1007,7 @@ export default async function Catalogo({ searchParams }) {
             {categoryParam && <input type="hidden" name="category" value={categoryParam} />}
             {brandParam && <input type="hidden" name="brand" value={brandParam} />}
             {tipoParam && <input type="hidden" name="tipo" value={tipoParam} />}
+            {lineParam && <input type="hidden" name="line" value={lineParam} />}
             {vehicleParam && <input type="hidden" name="vehicle" value={vehicleParam} />}
             {partParam && <input type="hidden" name="part" value={partParam} />}
             {searchQuery && <input type="hidden" name="search" value={searchQuery} />}

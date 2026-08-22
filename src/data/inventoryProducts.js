@@ -12,7 +12,7 @@ const CATEGORY_RULES = [
     name: "Frenos, Dirección y Suspensión",
     image: "/catalogo-frenos-suspension/direccion-suspension-familia.webp",
     terms: [
-      "AMORT", "PASTILLA", "DISCO", "BANDA", "ZAPATA", "FRENO", "ESFERICA",
+      "AMORTIGUADOR", "AMORTIGUADORES", "AMORT", "PASTILLA", "DISCO", "BANDA", "ZAPATA", "FRENO", "ESFERICA",
       "MUÑECO", "ROTULA", "TERMINAL", "TIJERA", "BUJE", "SUSP", "DIRECCION",
       "COLOMBINA", "PORTAMANGUETA", "BIELETA", "ESPIRAL", "GUARDAPOLVO",
       "BRAZO", "CHUPA", "CILINDRO RUEDA", "CIL FRENO", "ANTIRRUIDO", "MORDaza",
@@ -128,9 +128,108 @@ const CATEGORY_RULES = [
   },
 ];
 
+// The line names come directly from INVENTARIO GENERAL POR LINEAS. Images are
+// real catalog photographs already held by REMBERT. They are representative
+// of the product family unless an exact-code editorial image exists.
+const LINE_PRESENTATION = {
+  AMORTIGUADORES: {
+    slug: "frenos-y-suspension", name: "Frenos, Dirección y Suspensión",
+    image: "/catalogo-proveedores/gabriel-amortiguador-automovil-referencia-vin.jpg",
+  },
+  BUJES: {
+    slug: "frenos-y-suspension", name: "Frenos, Dirección y Suspensión",
+    image: "/catalogo-frenos-suspension/soportes-bujes-suspension-familia.webp",
+  },
+  CAJA: {
+    slug: "transmision", name: "Cajas y Transmisión", image: "/transmision.png",
+  },
+  CHASIS: {
+    slug: "frenos-y-suspension", name: "Frenos, Dirección y Suspensión",
+    image: "/catalogo-frenos-suspension/direccion-suspension-familia.webp",
+  },
+  CORREAS: {
+    slug: "motor-y-distribucion", name: "Motor y Distribución",
+    image: "/catalogo-marcas-watermarked/gates-kit-distribucion-bomba-agua-catalogo.webp",
+  },
+  DIRECCION: {
+    slug: "frenos-y-suspension", name: "Frenos, Dirección y Suspensión",
+    image: "/catalogo-frenos-suspension/moog-rotula-axial-empaque-catalogo.webp",
+  },
+  ELECTRICOS: {
+    slug: "electrico-y-encendido", name: "Partes Eléctricas y Encendido",
+    image: "/catalogo-electricos/encendido-rembert.webp",
+  },
+  EMBRAGUE: {
+    slug: "embrague", name: "Embrague",
+    image: "/catalogo-electricos/phc-valeo-kit-embrague-rembert.webp",
+  },
+  EMPAQUES: {
+    slug: "motor-y-distribucion", name: "Motor y Distribución",
+    image: "/catalogo-siliconas-automotrices/victor-reinz-reinzosil-70ml-original.png",
+  },
+  FAROLA: {
+    slug: "carroceria-iluminacion", name: "Carrocería e Iluminación",
+    image: "/catalogo-electricos/iluminacion-accesorios-rembert.webp",
+  },
+  FILTRO: {
+    slug: "filtros", name: "Filtros", image: "/filtros-gasolina-render-catalogo.png",
+  },
+  FRENO: {
+    slug: "frenos-y-suspension", name: "Frenos, Dirección y Suspensión",
+    image: "/catalogo-frenos-suspension/freno-hidraulico-familia.webp",
+  },
+  GUARDAPOLVO: {
+    slug: "frenos-y-suspension", name: "Frenos, Dirección y Suspensión",
+    image: "/catalogo-frenos-suspension/moog-guardapolvos-direccion-empaque-catalogo.webp",
+  },
+  GUAYAS: {
+    slug: "soportes-retenedores-y-guayas", name: "Soportes, Retenedores y Guayas",
+    image: "/catalogo-lineas/soportes-retenedores-guayas-rembert.webp",
+  },
+  LUBRICANTES: {
+    slug: "lubricantes-gasolina", name: "Lubricantes y Fluidos",
+    image: "/catalogo-mantenimiento/valvoline-high-performance-80w90-gl5.png",
+  },
+  MANGUERAS: {
+    slug: "mangueras-y-tubos", name: "Mangueras y Tubos",
+    image: "/catalogo-lineas/mangueras-tubos-rembert.webp",
+  },
+  MOTOR: {
+    slug: "motor-y-distribucion", name: "Motor y Distribución",
+    image: "/catalogo-marcas-watermarked/gates-kit-distribucion-bomba-agua-catalogo.webp",
+  },
+  MOTOVENTILADORES: {
+    slug: "radiadores", name: "Radiadores y Refrigeración", image: "/radiador-auto.jpg",
+  },
+  PASTILLAS: {
+    slug: "frenos-y-suspension", name: "Frenos, Dirección y Suspensión",
+    image: "/catalogo-frenos/bosch-pastillas-familia.webp",
+  },
+  RETENEDORES: {
+    slug: "soportes-retenedores-y-guayas", name: "Soportes, Retenedores y Guayas",
+    image: "/catalogo-lineas/soportes-retenedores-guayas-rembert.webp",
+  },
+  RODAMIENTOS: {
+    slug: "rodamientos-y-traccion", name: "Rodamientos y Tracción",
+    image: "/catalogo-marcas-watermarked/skf-kit-rodamiento-catalogo.webp",
+  },
+  SOPORTES: {
+    slug: "soportes-retenedores-y-guayas", name: "Soportes, Retenedores y Guayas",
+    image: "/catalogo-frenos-suspension/soportes-bujes-suspension-familia.webp",
+  },
+  SUSPENSION: {
+    slug: "frenos-y-suspension", name: "Frenos, Dirección y Suspensión",
+    image: "/catalogo-frenos-suspension/direccion-suspension-familia.webp",
+  },
+  TUBOS: {
+    slug: "mangueras-y-tubos", name: "Mangueras y Tubos",
+    image: "/catalogo-lineas/mangueras-tubos-rembert.webp",
+  },
+};
+
 const EXPLICIT_MANUFACTURERS = [
   "ACDELCO", "BOSCH", "CORTeco", "DAYCO", "GATES", "INA", "KOREASTAR",
-  "MOBIS", "SKF", "VALEO", "VICTOR REINZ", "WIX",
+  "MOBIS", "SKF", "VALEO", "VERKE", "VICTOR REINZ", "WIX",
 ];
 
 const normalize = (value = "") => String(value)
@@ -143,11 +242,52 @@ const slugify = (value = "") => normalize(value)
   .replace(/[^a-z0-9]+/g, "-")
   .replace(/(^-|-$)/g, "");
 
-function categoryFor(name) {
+// Editorial normalization for the abbreviated descriptions exported by the
+// point-of-sale report. Replacements are deliberately contextual: the source
+// wording is retained in attributes and never used to infer an unlisted SKU.
+function expandInventoryName(value = "") {
+  return String(value)
+    .replace(/\bAMORT\.?\b/gi, "AMORTIGUADOR")
+    .replace(/\bAMORTIGUADOR\s+DEL\b/gi, "AMORTIGUADOR DELANTERO")
+    .replace(/\bTRAS\b/gi, "TRASERO")
+    .replace(/\bLH\b/g, "IZQUIERDO (LH)")
+    .replace(/\bRH\b/g, "DERECHO (RH)")
+    .replace(/\bDER\b/g, "DERECHO")
+    .replace(/\bIZQ\b/g, "IZQUIERDO")
+    .replace(/\bDIR\b/g, "DIRECCIÓN")
+    .replace(/\bINF\b/g, "INFERIOR")
+    .replace(/\bSUP\b/g, "SUPERIOR")
+    .replace(/^EMP\b/i, "EMPAQUE")
+    .replace(/^SOP\b/i, "SOPORTE")
+    .replace(/^MANG\.?\b/i, "MANGUERA")
+    .replace(/\b(?:MAGUERA|MANGERA)\b/gi, "MANGUERA")
+    .replace(/\bRAD\b/g, "RADIADOR")
+    .replace(/\bGPOLVO\b|\bG\s+POLVO\b|\bGUARDA\s+POLVO\b/gi, "GUARDAPOLVO")
+    .replace(/\bTEMINAL\b/gi, "TERMINAL")
+    .replace(/\bHYU\b|\bHUY\b|\bHYNDAY\b/g, "HYUNDAI")
+    .replace(/\bCHEV\b/g, "CHEVROLET")
+    .replace(/\bSYM\b/g, "SYMBOL")
+    .replace(/\bMEG\b/g, "MEGANE")
+    .replace(/\bTACSON\b/g, "TUCSON")
+    .replace(/\bFIERTA\b/g, "FIESTA")
+    .replace(/\bKIWD\b/g, "KWID")
+    .replace(/^CIL(?=\s+(?:FRENO|MATIZ|SPARK))\b/i, "CILINDRO")
+    .replace(/\b(\d+)\s+CIL\b/g, "$1 CILINDROS")
+    .replace(/\bMULT\s+ADMS?\b/g, "MÚLTIPLE DE ADMISIÓN")
+    .replace(/\bMULT\s+ESC\b/g, "MÚLTIPLE DE ESCAPE")
+    .replace(/\s{2,}/g, " ")
+    .trim();
+}
+
+function categoryFor(name, inventoryLine) {
   const searchable = normalize(name);
-  return CATEGORY_RULES.find((category) => (
+  const technicalMatch = CATEGORY_RULES.find((category) => (
     category.terms.some((term) => searchable.includes(normalize(term)))
-  )) || {
+  ));
+  if (technicalMatch) return technicalMatch;
+  const linePresentation = LINE_PRESENTATION[normalize(inventoryLine)];
+  if (linePresentation) return linePresentation;
+  return {
     slug: "repuestos-varios",
     name: "Otros Repuestos en Inventario",
     image: "/logo.png",
@@ -168,45 +308,52 @@ function stockValue(value) {
 }
 
 export const inventoryProducts = inventoryRows.map((row) => {
-  const category = categoryFor(row.n);
+  const category = categoryFor(row.n, row.l);
   const brand = manufacturerFor(row.n);
+  const displayName = expandInventoryName(row.n);
   const id = `inventario-${row.i}-${slugify(row.c)}`;
   const stock = stockValue(row.s);
-  const sourceLabel = `INVENTARIO GENERAL · página ${row.g} · renglón ${row.i}`;
+  const sourceLabel = `INVENTARIO GENERAL · página ${row.g} · renglón ${row.i} · línea ${row.l || "SIN LINEA"} verificada en página ${row.h || "—"} del informe por líneas`;
 
   return {
     id,
-    slug: `${slugify(row.n).slice(0, 72)}-${slugify(row.c)}`,
-    name: row.n,
+    slug: `${slugify(displayName).slice(0, 72)}-${slugify(row.c)}`,
+    name: displayName,
+    sourceName: row.n,
     sku: row.c,
     referenceType: "inventory",
+    inventoryLine: row.l || "SIN LINEA",
     category: { name: category.name, slug: category.slug },
     brand,
     price: row.p,
     stock,
     inStock: stock > 0,
     shortDesc: `Referencia ${row.c} · ${stock} unidad${stock === 1 ? "" : "es"} registrada${stock === 1 ? "" : "s"} en inventario.`,
-    description: `${row.n}. Referencia interna o fabricante ${row.c}. La aplicación vehicular se conserva exactamente como aparece en el inventario y debe confirmarse por VIN, año, motor, versión y muestra antes del despacho.`,
+    description: `${displayName}. Referencia interna o fabricante ${row.c}. La aplicación vehicular se conserva exactamente como aparece en el inventario y debe confirmarse por VIN, año, motor, versión y muestra antes del despacho.`,
     image: category.image,
     images: [{
       url: category.image,
-      alt: `Imagen referencial de la línea ${category.name} para ${row.n}`,
+      alt: `Imagen referencial de la línea ${category.name} para ${displayName}`,
       isMain: true,
     }],
-    imageStatus: "inventory-family-reference",
+    imageStatus: row.l && row.l !== "SIN LINEA"
+      ? "inventory-line-real-reference"
+      : "inventory-family-reference",
     fitmentStatus: "inventory-listed",
-    fitmentSummary: `Aplicación registrada: ${row.n}`,
+    fitmentSummary: `Aplicación registrada: ${displayName}`,
     fitmentRequirements: ["VIN", "año", "motor", "versión", "muestra o referencia desmontada"],
     fitmentSource: sourceLabel,
     fitments: [{
       make: "Aplicación indicada en inventario",
-      model: row.n,
+      model: displayName,
       years: "Confirmar por VIN",
       position: category.name,
     }],
     attributes: [
       { id: `${id}-code`, name: "Código de inventario", value: row.c },
       { id: `${id}-application`, name: "Aplicación registrada", value: row.n },
+      { id: `${id}-editorial`, name: "Descripción normalizada", value: displayName },
+      { id: `${id}-line`, name: "Línea de inventario", value: row.l || "SIN LINEA" },
       { id: `${id}-stock`, name: "Existencia registrada", value: String(stock) },
       { id: `${id}-source`, name: "Fuente", value: sourceLabel },
       { id: `${id}-validation`, name: "Validación obligatoria", value: "Confirmar VIN, año, motor, versión y muestra antes del despacho" },
@@ -220,3 +367,12 @@ export const inventoryCategorySummary = CATEGORY_RULES.map(({ slug, name }) => (
   name,
   count: inventoryProducts.filter((product) => product.category.slug === slug).length,
 })).filter((category) => category.count > 0);
+
+export const inventoryLineSummary = Array.from(
+  inventoryProducts.reduce((lines, product) => {
+    const line = product.inventoryLine || "SIN LINEA";
+    lines.set(line, (lines.get(line) || 0) + 1);
+    return lines;
+  }, new Map())
+).map(([name, count]) => ({ name, count }))
+  .sort((a, b) => a.name.localeCompare(b.name, "es"));
