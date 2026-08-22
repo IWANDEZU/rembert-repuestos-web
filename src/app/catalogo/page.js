@@ -6,6 +6,7 @@ import { redirect } from "next/navigation";
 import CatalogGridWithModal from "@/components/CatalogGridWithModal";
 import CatalogSidebar from "@/components/CatalogSidebar";
 import VerkePriorityShowcase from "@/components/VerkePriorityShowcase";
+import RowenPriorityShowcase from "@/components/RowenPriorityShowcase";
 import { buildCatalogHref } from "@/lib/catalogUtils";
 import { siteUrl } from "@/lib/site";
 import { products as fallbackCatalogProducts } from "@/lib/products";
@@ -917,9 +918,12 @@ export default async function Catalogo({ searchParams }) {
         )}
 
         {categoryParam === "frenos-y-suspension" && !brandParam && !searchQuery && !vehicleParam && !partParam && (!lineParam || lineParam === "AMORTIGUADORES") && (
-          <VerkePriorityShowcase
-            inventoryCount={inventoryLineSummary.find((entry) => entry.name === "AMORTIGUADORES")?.count || 0}
-          />
+          <>
+            <VerkePriorityShowcase
+              inventoryCount={inventoryLineSummary.find((entry) => entry.name === "AMORTIGUADORES")?.count || 0}
+            />
+            <RowenPriorityShowcase />
+          </>
         )}
 
         {categoryParam === "frenos-y-suspension" && !brandParam && !searchQuery && !vehicleParam && !partParam && (

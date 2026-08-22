@@ -229,8 +229,114 @@ const LINE_PRESENTATION = {
 
 const EXPLICIT_MANUFACTURERS = [
   "ACDELCO", "BOSCH", "CORTeco", "DAYCO", "GATES", "INA", "KOREASTAR",
-  "MOBIS", "SKF", "VALEO", "VERKE", "VICTOR REINZ", "WIX",
+  "MOBIS", "ROWEN", "SKF", "VALEO", "VERKE", "VICTOR REINZ", "WIX",
 ];
+
+// Brand and application overrides are deliberately limited to inventory codes
+// that were cross-checked against public Colombian catalogs or import records.
+// A visual resemblance is never enough to assign a manufacturer or fitment.
+const VERIFIED_SKU_OVERRIDES = {
+  "96586886": {
+    brand: "ROWEN",
+    image: "/catalogo-rowen/rowen-amortiguadores-macpherson-empaque-real.webp",
+    imageAlt: "Fotografía real de amortiguadores Rowen con empaque rojo; referencia visual de familia",
+    shortDesc: "Amortiguador delantero derecho Rowen · Chevrolet Aveo / Sail · referencia 96586886.",
+    description: "Amortiguador delantero derecho Rowen referencia 96586886 para aplicaciones Chevrolet Aveo / Sail. Confirmar año, versión, plataforma, anclajes, diámetro de vástago y VIN antes del despacho.",
+    fitmentSummary: "Chevrolet Aveo / Sail · delantero derecho · confirmar año, versión y VIN.",
+    fitmentPosition: "Delantero derecho",
+    fitmentSource: "Referencia Rowen 96586886 contrastada con publicación comercial colombiana de amortiguación",
+    marketBenchmark: "REMBERT $198.314; comparable Rowen observado: $145.000 por unidad. Revisar costo y margen antes de ajustar",
+  },
+  "96424027": {
+    brand: "ROWEN",
+    image: "/catalogo-rowen/rowen-amortiguadores-macpherson-empaque-real.webp",
+    imageAlt: "Fotografía real de amortiguadores Rowen con su empaque rojo; imagen de familia de producto",
+    shortDesc: "Amortiguador trasero Rowen · Chevrolet Spark / Spark Cronos · referencia 96424027.",
+    description: "Amortiguador trasero Rowen referencia 96424027 para aplicaciones Chevrolet Spark y Spark Cronos. La posición por lado, generación, año y montaje final deben validarse con VIN y con la pieza desmontada antes del despacho.",
+    fitmentSummary: "Chevrolet Spark / Spark Cronos · eje trasero · confirmar generación, año y VIN.",
+    fitmentPosition: "Eje trasero",
+    fitmentSource: "Referencia Rowen 96424027 verificada en registros de importación colombianos y contrastada con publicaciones comerciales nacionales",
+    marketBenchmark: "REMBERT $90.250; comparables observados: $85.000 por unidad y $155.000–$180.000 por juego",
+  },
+  "333723": {
+    brand: "ROWEN",
+    image: "/catalogo-rowen/rowen-amortiguadores-macpherson-empaque-real.webp",
+    imageAlt: "Fotografía real de amortiguadores Rowen con su empaque rojo; imagen de familia de producto",
+    shortDesc: "Amortiguador delantero derecho Rowen · Renault Twingo 16V · referencia 333723.",
+    description: "Amortiguador delantero derecho Rowen referencia 333723 para aplicaciones Renault Twingo 16V. Confirmar año, versión, lado, diámetro de vástago, anclajes y VIN antes del despacho.",
+    fitmentSummary: "Renault Twingo 16V · delantero derecho · confirmar año, versión y VIN.",
+    fitmentPosition: "Delantero derecho",
+    fitmentSource: "Referencia Rowen 333723 contrastada con catálogo comercial colombiano de amortiguación",
+    marketBenchmark: "REMBERT $220.894 por unidad; mercado observado: $130.000–$220.300 por unidad y $229.890–$330.000 por juego",
+  },
+  "348018": {
+    brand: "ROWEN",
+    image: "/catalogo-rowen/rowen-amortiguadores-macpherson-empaque-real.webp",
+    imageAlt: "Fotografía real de amortiguadores Rowen con empaque rojo; referencia visual de familia",
+    shortDesc: "Amortiguador trasero Rowen · Mazda 2 / Ford Fiesta 2010+ · referencia 348018.",
+    description: "Amortiguador trasero Rowen referencia 348018 para aplicaciones Mazda 2 / Ford Fiesta desde 2010 según publicación colombiana. Confirmar generación, carrocería, suspensión, anclajes y VIN antes del despacho.",
+    fitmentSummary: "Mazda 2 / Ford Fiesta 2010+ · eje trasero · confirmar generación y VIN.",
+    fitmentPosition: "Eje trasero",
+    fitmentSource: "Referencia Rowen 348018-CH contrastada con publicación colombiana y catálogo técnico de aplicación Mazda 2",
+    marketBenchmark: "REMBERT $166.848 por unidad; juego Rowen observado a $272.792. Comparar solo después de confirmar cantidad y referencia",
+  },
+  "333494": {
+    brand: "ROWEN",
+    image: "/catalogo-rowen/rowen-amortiguadores-macpherson-empaque-real.webp",
+    imageAlt: "Fotografía real de amortiguadores Rowen con empaque rojo; referencia visual de familia",
+    shortDesc: "Amortiguador delantero derecho Rowen · Mazda 2 2008–2015 · referencia 333494.",
+    description: "Amortiguador delantero derecho Rowen referencia 333494 para Mazda 2 2008–2015. Confirmar año, generación, motor, lado, anclajes y VIN; la referencia pareja habitual es 333495, cuya marca en inventario todavía no está demostrada.",
+    fitmentSummary: "Mazda 2 2008–2015 · delantero derecho · confirmar año, lado y VIN.",
+    fitmentPosition: "Delantero derecho",
+    fitmentSource: "Referencia Rowen 333494-CH contrastada con publicación colombiana; posición y años apoyados por catálogos técnicos",
+    marketBenchmark: "REMBERT $226.784 por unidad; publicación Rowen consultada sin precio vigente comparable",
+  },
+  "3430045": {
+    brand: "ROWEN",
+    image: "/catalogo-rowen/rowen-amortiguadores-macpherson-empaque-real.webp",
+    imageAlt: "Fotografía real de amortiguadores Rowen con empaque rojo; referencia visual de familia",
+    shortDesc: "Amortiguador trasero Rowen · Mazda 2 Skyactiv 2016–2023 · referencia 3430045.",
+    description: "Amortiguador trasero Rowen referencia 3430045 para Mazda 2 Skyactiv 2016–2023. La publicación comercial lo ofrece como juego derecho/izquierdo; el precio REMBERT corresponde a la unidad registrada. Confirmar año, suspensión, anclajes y VIN.",
+    fitmentSummary: "Mazda 2 Skyactiv 2016–2023 · eje trasero · confirmar año y VIN.",
+    fitmentPosition: "Eje trasero",
+    fitmentSource: "Referencia Rowen 3430045-CH contrastada con publicación colombiana; años apoyados por catálogo técnico",
+    marketBenchmark: "REMBERT $185.551 por unidad; publicación Rowen consultada sin precio vigente comparable",
+  },
+};
+
+// Some inventory rows use a generic stock code (for example, "CERAMICA")
+// shared by unrelated applications. Those cases must be keyed by the audited
+// report row, never by SKU, so one fitment cannot leak into another product.
+const VERIFIED_ROW_OVERRIDES = {
+  "1883": {
+    brand: "ROWEN",
+    image: "/catalogo-rowen/rowen-pastillas-ceramicas-referencia-familia.webp",
+    imageAlt: "Referencia visual de familia de pastillas cerámicas Rowen; confirmar geometría exacta antes del despacho",
+    shortDesc: "Pastillas delanteras cerámicas Rowen · Chevrolet Aveo / Optra · aplicación registrada en inventario.",
+    description: "Juego de pastillas delanteras cerámicas Rowen registrado para Chevrolet Aveo / Optra. El código de inventario es genérico y no sustituye la referencia del fabricante: confirmar año, versión, forma de la pastilla, sistema de freno, mordaza y VIN antes del despacho.",
+    fitmentSummary: "Chevrolet Aveo / Optra · eje delantero · compatibilidad literal del inventario; confirmar geometría y VIN.",
+    fitmentPosition: "Freno delantero",
+    fitmentSource: "Marca y aplicación declaradas en INVENTARIO GENERAL; la familia Rowen 7668-CH publicada en Colombia respalda la aplicación Aveo/Optra, pero no se equipara al código genérico del inventario",
+    marketBenchmark: "REMBERT $107.993; comparables Aveo/Optra observados entre $80.750 y $107.993, sujetos a formulación y referencia exacta",
+    fitmentStatus: "inventory-listed",
+    imageStatus: "inventory-brand-family-reference",
+    brandProof: "ROWEN · marca declarada en el renglón de inventario; referencia fabricante por confirmar",
+  },
+  "1943": {
+    brand: "ROWEN",
+    image: "/catalogo-rowen/rowen-pastillas-ceramicas-referencia-familia.webp",
+    imageAlt: "Referencia visual de familia de pastillas cerámicas Rowen; confirmar geometría exacta antes del despacho",
+    shortDesc: "Pastillas cerámicas Rowen · Mazda 2 / Ford Fiesta 2010+ · aplicación registrada en inventario.",
+    description: "Juego de pastillas cerámicas Rowen registrado para Mazda 2 / Ford Fiesta desde 2010. Como el inventario no conserva una referencia fabricante inequívoca, se debe confirmar eje, año, versión, forma de la pastilla, sistema de freno, mordaza y VIN antes del despacho.",
+    fitmentSummary: "Mazda 2 / Ford Fiesta 2010+ · posición por confirmar · compatibilidad literal del inventario; validar geometría y VIN.",
+    fitmentPosition: "Posición por confirmar",
+    fitmentSource: "Marca y aplicación declaradas en INVENTARIO GENERAL; sin referencia Rowen inequívoca para cruce externo",
+    marketBenchmark: "REMBERT $115.000; no se compara precio sin una referencia fabricante exacta",
+    fitmentStatus: "inventory-listed",
+    imageStatus: "inventory-brand-family-reference",
+    brandProof: "ROWEN · marca declarada en el renglón de inventario; referencia fabricante por confirmar",
+  },
+};
 
 const normalize = (value = "") => String(value)
   .normalize("NFD")
@@ -309,7 +415,11 @@ function stockValue(value) {
 
 export const inventoryProducts = inventoryRows.map((row) => {
   const category = categoryFor(row.n, row.l);
-  const brand = manufacturerFor(row.n);
+  const normalizedSku = normalize(row.c).replace(/[^A-Z0-9]/g, "");
+  const verifiedOverride = VERIFIED_ROW_OVERRIDES[String(row.i)] || VERIFIED_SKU_OVERRIDES[normalizedSku];
+  const brand = verifiedOverride
+    ? { name: verifiedOverride.brand, slug: slugify(verifiedOverride.brand) }
+    : manufacturerFor(row.n);
   const displayName = expandInventoryName(row.n);
   const id = `inventario-${row.i}-${slugify(row.c)}`;
   const stock = stockValue(row.s);
@@ -328,26 +438,28 @@ export const inventoryProducts = inventoryRows.map((row) => {
     price: row.p,
     stock,
     inStock: stock > 0,
-    shortDesc: `Referencia ${row.c} · ${stock} unidad${stock === 1 ? "" : "es"} registrada${stock === 1 ? "" : "s"} en inventario.`,
-    description: `${displayName}. Referencia interna o fabricante ${row.c}. La aplicación vehicular se conserva exactamente como aparece en el inventario y debe confirmarse por VIN, año, motor, versión y muestra antes del despacho.`,
-    image: category.image,
+    shortDesc: verifiedOverride?.shortDesc || `Referencia ${row.c} · ${stock} unidad${stock === 1 ? "" : "es"} registrada${stock === 1 ? "" : "s"} en inventario.`,
+    description: verifiedOverride?.description || `${displayName}. Referencia interna o fabricante ${row.c}. La aplicación vehicular se conserva exactamente como aparece en el inventario y debe confirmarse por VIN, año, motor, versión y muestra antes del despacho.`,
+    image: verifiedOverride?.image || category.image,
     images: [{
-      url: category.image,
-      alt: `Imagen referencial de la línea ${category.name} para ${displayName}`,
+      url: verifiedOverride?.image || category.image,
+      alt: verifiedOverride?.imageAlt || `Imagen referencial de la línea ${category.name} para ${displayName}`,
       isMain: true,
     }],
-    imageStatus: row.l && row.l !== "SIN LINEA"
+    imageStatus: verifiedOverride
+      ? verifiedOverride.imageStatus || "verified-brand-family-reference"
+      : row.l && row.l !== "SIN LINEA"
       ? "inventory-line-real-reference"
       : "inventory-family-reference",
-    fitmentStatus: "inventory-listed",
-    fitmentSummary: `Aplicación registrada: ${displayName}`,
+    fitmentStatus: verifiedOverride?.fitmentStatus || (verifiedOverride ? "cross-reference-verified" : "inventory-listed"),
+    fitmentSummary: verifiedOverride?.fitmentSummary || `Aplicación registrada: ${displayName}`,
     fitmentRequirements: ["VIN", "año", "motor", "versión", "muestra o referencia desmontada"],
-    fitmentSource: sourceLabel,
+    fitmentSource: verifiedOverride ? `${sourceLabel} · ${verifiedOverride.fitmentSource}` : sourceLabel,
     fitments: [{
       make: "Aplicación indicada en inventario",
       model: displayName,
       years: "Confirmar por VIN",
-      position: category.name,
+      position: verifiedOverride?.fitmentPosition || category.name,
     }],
     attributes: [
       { id: `${id}-code`, name: "Código de inventario", value: row.c },
@@ -356,6 +468,10 @@ export const inventoryProducts = inventoryRows.map((row) => {
       { id: `${id}-line`, name: "Línea de inventario", value: row.l || "SIN LINEA" },
       { id: `${id}-stock`, name: "Existencia registrada", value: String(stock) },
       { id: `${id}-source`, name: "Fuente", value: sourceLabel },
+      ...(verifiedOverride ? [
+        { id: `${id}-brand-proof`, name: "Marca verificada", value: verifiedOverride.brandProof || `${verifiedOverride.brand} · cruce exacto por referencia ${row.c}` },
+        { id: `${id}-market`, name: "Referencia de mercado", value: verifiedOverride.marketBenchmark },
+      ] : []),
       { id: `${id}-validation`, name: "Validación obligatoria", value: "Confirmar VIN, año, motor, versión y muestra antes del despacho" },
       { id: `${id}-image`, name: "Imagen", value: "Referencia visual de la línea; el producto se identifica por código y descripción" },
     ],
