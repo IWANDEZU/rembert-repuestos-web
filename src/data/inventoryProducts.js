@@ -1,10 +1,10 @@
-import inventoryRows from "./inventory-stock.json";
+import inventoryRows from "./inventory-stock.json" with { type: "json" };
 
 const CATEGORY_RULES = [
   {
     slug: "filtros",
     name: "Filtros",
-    image: "/filtro-aire-gasolina-catalogo.png",
+    image: "/filtro-aire-gasolina-catalogo.webp",
     terms: ["FILTRO", "FILTRP", "PURIFICADOR AIRE", "ELEMENTO FILTRANTE"],
   },
   {
@@ -36,7 +36,7 @@ const CATEGORY_RULES = [
   {
     slug: "radiadores",
     name: "Radiadores y Refrigeración",
-    image: "/radiador-auto.jpg",
+    image: "/radiador-auto.webp",
     terms: [
       "RADIADOR", "MOTOVENT", "TERMOSTATO", "REFRIGERANTE", "DEPOSITO AGUA",
       "TANQUE AGUA", "TANQUE RAD", "ENFRIADOR", "TAPA RADIADOR", "BOMBA AGUA",
@@ -57,7 +57,7 @@ const CATEGORY_RULES = [
   {
     slug: "transmision",
     name: "Cajas y Transmisión",
-    image: "/transmision.png",
+    image: "/transmision.webp",
     terms: [
       "CAJA", "TRANSM", "SELECTOR CAMBIOS", "PALANCA CAMBIO", "PALANCA CAMBIOS",
       "REPARACION PALANCA", "REP P/CAMBIO", "T SELEC CAMBIO", "PIÑON VELOC",
@@ -69,7 +69,7 @@ const CATEGORY_RULES = [
   {
     slug: "rodamientos-y-traccion",
     name: "Rodamientos y Tracción",
-    image: "/catalogo-nuevas-lineas/skf-kit-rodamiento-catalogo.png",
+    image: "/catalogo-nuevas-lineas/skf-kit-rodamiento-catalogo.webp",
     terms: [
       "RODAM", "BALINERA", "BOCIN", "CUBO RUEDA", "PUNTA EJE", "PUNTA L/C",
       "PUNTA L/R", "PUNTA KIA", "EJE RUEDA", "EJE IZQ", "CRUCETA CARDAN",
@@ -102,7 +102,7 @@ const CATEGORY_RULES = [
   {
     slug: "lubricantes-gasolina",
     name: "Lubricantes y Fluidos",
-    image: "/catalogo-mantenimiento/valvoline-high-performance-80w90-gl5.png",
+    image: "/catalogo-mantenimiento/valvoline-high-performance-80w90-gl5.webp",
     terms: ["ACEITE", "LIQUIDO FRENO", "LIGA FRENO", "GRASA"],
   },
   {
@@ -114,7 +114,7 @@ const CATEGORY_RULES = [
   {
     slug: "motor-y-distribucion",
     name: "Motor y Distribución",
-    image: "/catalogo-nuevas-lineas/gates-kit-distribucion-bomba-agua-catalogo.png",
+    image: "/catalogo-nuevas-lineas/gates-kit-distribucion-bomba-agua-catalogo.webp",
     terms: [
       "CORREA", "EMPAQUE", "EMP ", "ANILLO", "PISTON", "PISTO ", "JGO PIS",
       "CASQ", "CASQUETE", "VALVULA", "VALV ", "VAL ", "MOTOR", "CIGÜEÑAL",
@@ -141,7 +141,7 @@ const LINE_PRESENTATION = {
     image: "/catalogo-frenos-suspension/soportes-bujes-suspension-familia.webp",
   },
   CAJA: {
-    slug: "transmision", name: "Cajas y Transmisión", image: "/transmision.png",
+    slug: "transmision", name: "Cajas y Transmisión", image: "/transmision.webp",
   },
   CHASIS: {
     slug: "frenos-y-suspension", name: "Frenos, Dirección y Suspensión",
@@ -165,14 +165,14 @@ const LINE_PRESENTATION = {
   },
   EMPAQUES: {
     slug: "motor-y-distribucion", name: "Motor y Distribución",
-    image: "/catalogo-siliconas-automotrices/victor-reinz-reinzosil-70ml-original.png",
+    image: "/catalogo-siliconas-automotrices/victor-reinz-reinzosil-70ml-original.webp",
   },
   FAROLA: {
     slug: "carroceria-iluminacion", name: "Carrocería e Iluminación",
     image: "/catalogo-electricos/iluminacion-accesorios-rembert.webp",
   },
   FILTRO: {
-    slug: "filtros", name: "Filtros", image: "/filtros-gasolina-render-catalogo.png",
+    slug: "filtros", name: "Filtros", image: "/filtros-gasolina-render-catalogo.webp",
   },
   FRENO: {
     slug: "frenos-y-suspension", name: "Frenos, Dirección y Suspensión",
@@ -188,7 +188,7 @@ const LINE_PRESENTATION = {
   },
   LUBRICANTES: {
     slug: "lubricantes-gasolina", name: "Lubricantes y Fluidos",
-    image: "/catalogo-mantenimiento/valvoline-high-performance-80w90-gl5.png",
+    image: "/catalogo-mantenimiento/valvoline-high-performance-80w90-gl5.webp",
   },
   MANGUERAS: {
     slug: "mangueras-y-tubos", name: "Mangueras y Tubos",
@@ -199,7 +199,7 @@ const LINE_PRESENTATION = {
     image: "/catalogo-marcas-watermarked/gates-kit-distribucion-bomba-agua-catalogo.webp",
   },
   MOTOVENTILADORES: {
-    slug: "radiadores", name: "Radiadores y Refrigeración", image: "/radiador-auto.jpg",
+    slug: "radiadores", name: "Radiadores y Refrigeración", image: "/radiador-auto.webp",
   },
   PASTILLAS: {
     slug: "frenos-y-suspension", name: "Frenos, Dirección y Suspensión",
@@ -228,8 +228,50 @@ const LINE_PRESENTATION = {
 };
 
 const EXPLICIT_MANUFACTURERS = [
-  "ACDELCO", "BOSCH", "CORTeco", "DAYCO", "GATES", "INA", "KOREASTAR",
-  "MOBIS", "ROWEN", "SKF", "VALEO", "VERKE", "VICTOR REINZ", "WIX",
+  "PHC VALEO",
+  "VICTOR REINZ",
+  "CHEVROLET / EQUIPO ORIGINAL",
+  "MANDO / EQUIPO ORIGINAL COREA",
+  "ACDELCO",
+  "ADS",
+  "BOSCH",
+  "CASTROL",
+  "CHEVRON",
+  "COFRE",
+  "CORTECO",
+  "CTR",
+  "DAYCO",
+  "DONSSON",
+  "GABRIEL",
+  "GATES",
+  "GLOBAL OIL",
+  "GTI",
+  "INA",
+  "INCOLBEST",
+  "KOREASTAR",
+  "LIQUI MOLY",
+  "LUK",
+  "MANDO",
+  "MAX POWER",
+  "MOBIL",
+  "MOBIS",
+  "MONROE",
+  "MOTUL",
+  "NGK",
+  "OSRAM",
+  "PARTMO",
+  "PETROIL",
+  "ROWEN",
+  "SAFETY",
+  "SHELL",
+  "SKF",
+  "TERPEL",
+  "TNK",
+  "VALEO",
+  "VALVOLINE",
+  "VERKE",
+  "WIX",
+  "555",
 ];
 
 // Brand and application overrides are deliberately limited to inventory codes
@@ -308,6 +350,119 @@ const VERIFIED_SKU_OVERRIDES = {
 // shared by unrelated applications. Those cases must be keyed by the audited
 // report row, never by SKU, so one fitment cannot leak into another product.
 const VERIFIED_ROW_OVERRIDES = {
+  "3": {
+    name: "Abrazadera plástica ancha 380 × 7,6 mm",
+    brand: "Marca según empaque",
+    image: "/catalogo-varios/abrazadera-plastica-ancha-380x7-6-rembert.webp",
+    imageAlt: "Abrazaderas plásticas anchas negras de aproximadamente 380 por 7,6 milímetros con marca REMBERT",
+    shortDesc: "Brida plástica ancha de uso universal · medida aproximada 380 × 7,6 mm · para organizar y sujetar cableado o mangueras livianas.",
+    description: "Abrazadera o brida plástica ancha de uso universal, registrada en inventario como 38 × 7,6. Se representa como una correa dentada con cabezal de cierre, destinada a organizar y sujetar mazos de cables, fundas y mangueras livianas. No es un filtro, una abrazadera metálica de manguera ni una pieza con compatibilidad exclusiva para un modelo de vehículo. Antes de vender se deben confirmar la longitud física, el ancho, el diámetro máximo de cierre y las condiciones de temperatura del punto de instalación.",
+    fitmentSummary: "Uso universal en automóviles y camionetas, condicionado a la medida requerida y al entorno de instalación.",
+    fitmentPosition: "Sujeción auxiliar de cableado, fundas o mangueras livianas",
+    fitmentRequirements: ["longitud física", "ancho de 7,6 mm", "diámetro del mazo", "temperatura y exposición del montaje"],
+    fitmentSource: "Descripción literal del INVENTARIO GENERAL; aplicación universal determinada por dimensión, no por marca o modelo de vehículo",
+    fitments: [
+      {
+        make: "Universal",
+        model: "Automóviles y camionetas",
+        years: "Todos, según medida y condiciones de montaje",
+        position: "Sujeción auxiliar; no usar como abrazadera presurizada",
+      },
+    ],
+    attributes: [
+      { name: "Tipo de producto", value: "Abrazadera / brida plástica ancha" },
+      { name: "Medida de inventario", value: "38 × 7,6; confirmar si corresponde a 380 × 7,6 mm" },
+      { name: "Aplicación", value: "Organización y sujeción auxiliar de cableado, fundas o mangueras livianas" },
+      { name: "Restricción", value: "No sustituye abrazaderas metálicas en circuitos presurizados o de alta temperatura" },
+    ],
+    marketBenchmark: "Precio REMBERT $290 COP por unidad; presentación y cantidad por empaque pendientes de confirmación",
+    fitmentStatus: "universal-by-dimension",
+    imageStatus: "generated-product-reference",
+    brandProof: "Marca por confirmar en empaque; imagen de referencia identificada con sello REMBERT",
+  },
+  "5": {
+    name: "Actuador IAC ADS — Kia Rio Space / Hyundai i25",
+    brand: "ADS",
+    image: "/catalogo-ads/ads-actuador-iac-kia-rio-space.webp",
+    imageAlt: "Actuador de control de aire en ralentí IAC marca ADS para aplicación Kia Rio Space / Hyundai i25",
+    shortDesc: "Actuador IAC ADS para control de ralentí · aplicación registrada Kia Rio Space / Hyundai i25 · validar OEM y conector.",
+    description: "Actuador o válvula IAC ADS encargado de dosificar el aire de bypass del cuerpo de aceleración para estabilizar las RPM en ralentí, especialmente durante el arranque en frío y los cambios de carga. La aplicación figura en el inventario REMBERT para Kia Rio Space / Hyundai i25, pero debe confrontarse la referencia OEM, la forma y el pinout del conector, la separación de los dos pernos y el cuerpo de aceleración antes de instalar. No sustituye un cuerpo de aceleración electrónico con control de ralentí integrado.",
+    fitmentSummary: "Kia Rio Space / Hyundai i25 gasolina · aplicación condicionada a OEM, cuerpo de aceleración y conector multipin.",
+    fitmentPosition: "Cuerpo de aceleración / control de ralentí",
+    fitmentRequirements: ["VIN", "año", "motor y cilindraje", "referencia OEM grabada", "forma y pinout del conector", "separación de los dos pernos"],
+    fitmentSource: "Marca ADS visible en la fotografía suministrada por REMBERT; aplicación Kia Rio Space / Hyundai i25 declarada en inventario. Catálogos comerciales colombianos relacionan la familia 35150-22600G con aplicaciones Kia/Hyundai, pero el cruce OEM de esta unidad debe confirmarse en la pieza o el empaque",
+    fitments: [
+      {
+        make: "Kia",
+        model: "Rio Space / Rio Spice (denominación comercial por confirmar)",
+        engine: "Gasolina · cilindraje por confirmar",
+        years: "Confirmar por VIN y OEM",
+        position: "Cuerpo de aceleración / control de ralentí",
+      },
+      {
+        make: "Hyundai",
+        model: "i25 / Accent (aplicación indicada en inventario)",
+        engine: "Gasolina · sistema por confirmar",
+        years: "Confirmar por VIN y OEM",
+        position: "Cuerpo de aceleración / control de ralentí",
+      },
+    ],
+    attributes: [
+      { name: "Tipo de componente", value: "Actuador / válvula de control de aire en ralentí (IAC)" },
+      { name: "Función", value: "Estabiliza las RPM regulando el aire de bypass en ralentí" },
+      { name: "Montaje visible", value: "Brida de dos pernos y conector eléctrico multipin" },
+      { name: "Código adicional del inventario", value: "1121224 · código interno, no confirmado como OEM" },
+      { name: "Cruce orientativo", value: "Familia Kia/Hyundai 35150-22600G; no vender como equivalencia exacta sin confrontar la pieza" },
+    ],
+    marketBenchmark: "Precio REMBERT $176.185 COP; referencias IAC Kia/Hyundai observadas en Colombia aproximadamente entre $152.999 y $179.999, comparables solo después de confirmar OEM y conector",
+    fitmentStatus: "conditional",
+    imageStatus: "ai-catalog-watermarked",
+    brandProof: "ADS · marca confirmada en la fotografía real suministrada por REMBERT; imagen principal recreada para catálogo y marcada con REMBERT",
+  },
+  "606": {
+    name: "Caja de dirección ADS 56500-07000 — Kia Picanto I (SA)",
+    brand: "ADS",
+    image: "/catalogo-ads/ads-56500-07000-caja-direccion-kia-picanto.webp",
+    imageAlt: "Caja de dirección ADS 56500-07000 con empaque para Kia Picanto I SA",
+    shortDesc: "Cremallera de dirección ADS 56500-07000 · Kia Picanto I (SA) 1.0 / 1.1, 2004–2011.",
+    description: "Caja o cremallera de dirección ADS con cruce OE 56500-07000 para Kia Picanto I plataforma SA/BA. Catálogos técnicos cruzan esta referencia con Picanto 1.0 y 1.1 entre 2004 y 2011; algunas fuentes también listan 1.1 CRDi. No se publicita como Hyundai i10 porque ese cruce no quedó respaldado por una fuente técnica primaria. Confirmar VIN, guía izquierda, tipo de asistencia, longitud y anclajes antes del despacho.",
+    fitmentSummary: "Kia Picanto I (SA/BA) 1.0 / 1.1, 2004–2011 · referencia OE 56500-07000 · confirmar VIN y sistema de dirección.",
+    fitmentPosition: "Sistema de dirección · cremallera / caja",
+    fitmentRequirements: ["VIN", "año", "motor", "plataforma SA/BA", "guía izquierda", "tipo de asistencia", "longitud", "anclajes"],
+    fitmentSource: "Cruce OE 56500-07000 validado en catálogos técnicos para Kia Picanto I SA/BA 1.0 y 1.1 2004–2011; la mención Hyundai i10 del inventario no se considera aplicación confirmada",
+    fitments: [{ make: "Kia", model: "Picanto I (SA / BA)", engine: "1.0 / 1.1 gasolina; 1.1 CRDi solo bajo confirmación", years: "2004–2011", position: "Dirección · cremallera / caja" }],
+    attributes: [
+      { name: "Referencia OE", value: "56500-07000" },
+      { name: "Aplicación respaldada", value: "Kia Picanto I (SA/BA) 2004–2011" },
+      { name: "Restricción", value: "No ofrecer para Hyundai i10 sin cruce de catálogo o VIN" },
+      { name: "Imagen", value: "Recreación de catálogo con empaque ADS y sello REMBERT" },
+    ],
+    fitmentStatus: "verified-by-oe",
+    imageStatus: "ai-catalog-watermarked",
+    brandProof: "ADS · marca declarada en inventario REMBERT; referencia OE verificada por catálogos técnicos",
+  },
+  "776": {
+    name: "Brazo axial ADS 56540-1S000 — Hyundai HB20",
+    brand: "ADS",
+    image: "/catalogo-ads/ads-56540-1s000-brazo-axial-hyundai-hb20.webp",
+    imageAlt: "Brazo axial ADS 56540-1S000 con empaque para Hyundai HB20",
+    shortDesc: "Articulación axial interior ADS 56540-1S000 · Hyundai HB20 2012–2019 · ambos lados.",
+    description: "Brazo axial interior ADS 56540-1S000 para Hyundai HB20. El catálogo técnico ZF/TRW cruza el OE 56540-1S000 con HB20 2012–2019 y posición derecha/izquierda; el producto se debe vender por esta referencia, no por el nombre incompleto 'colombina'. Confirmar VIN, versión de dirección, longitud y roscas antes del despacho.",
+    fitmentSummary: "Hyundai HB20 2012–2019 · brazo axial interior derecho o izquierdo · OE 56540-1S000.",
+    fitmentPosition: "Dirección · articulación axial interior · ambos lados",
+    fitmentRequirements: ["VIN", "año", "motor 1.0 o 1.6", "tipo de dirección", "longitud", "roscas", "OE 56540-1S000"],
+    fitmentSource: "ZF/TRW Aftermarket: JAR1638 para Hyundai HB20 2012–2019, derecha/izquierda, OE 56540-1S000; Viemar 680539K confirma la familia",
+    fitments: [{ make: "Hyundai", model: "HB20", engine: "1.0 / 1.6 según versión", years: "2012–2019", position: "Dirección · axial interior · derecho o izquierdo" }],
+    attributes: [
+      { name: "Referencia ADS / OE", value: "56540-1S000" },
+      { name: "Cruces técnicos", value: "TRW JAR1638 · Viemar 680539 / 680539K" },
+      { name: "Posición", value: "Derecha o izquierda" },
+      { name: "Imagen", value: "Recreación de catálogo con empaque ADS y sello REMBERT" },
+    ],
+    fitmentStatus: "verified-by-oe",
+    imageStatus: "ai-catalog-watermarked",
+    brandProof: "ADS · marca declarada en inventario REMBERT; OE y aplicación verificados en catálogo técnico",
+  },
   "1883": {
     brand: "ROWEN",
     image: "/catalogo-rowen/rowen-pastillas-ceramicas-referencia-familia.webp",
@@ -342,6 +497,12 @@ const normalize = (value = "") => String(value)
   .normalize("NFD")
   .replace(/[\u0300-\u036f]/g, "")
   .toUpperCase();
+
+const MANUFACTURER_VERIFIED_STATUSES = new Set([
+  "verified",
+  "verified-by-oe",
+  "cross-reference-verified",
+]);
 
 const slugify = (value = "") => normalize(value)
   .toLowerCase()
@@ -379,8 +540,8 @@ function expandInventoryName(value = "") {
     .replace(/\bKIWD\b/g, "KWID")
     .replace(/^CIL(?=\s+(?:FRENO|MATIZ|SPARK))\b/i, "CILINDRO")
     .replace(/\b(\d+)\s+CIL\b/g, "$1 CILINDROS")
-    .replace(/\bMULT\s+ADMS?\b/g, "MÚLTIPLE DE ADMISIÓN")
-    .replace(/\bMULT\s+ESC\b/g, "MÚLTIPLE DE ESCAPE")
+    .replace(/\bCLUCTH\b/gi, "CLUTCH")
+    .replace(/\bBALINERA CLUTCH SAIL\b/gi, "RODAMIENTO CLUTCH CHEVROLET SAIL / N200 / N300")
     .replace(/\s{2,}/g, " ")
     .trim();
 }
@@ -401,10 +562,12 @@ function categoryFor(name, inventoryLine) {
 }
 
 function manufacturerFor(name) {
-  const searchable = normalize(name);
-  const manufacturer = EXPLICIT_MANUFACTURERS.find((candidate) => (
-    searchable.includes(normalize(candidate))
-  ));
+  const normName = normalize(name);
+  const manufacturer = EXPLICIT_MANUFACTURERS.find((candidate) => {
+    const normCandidate = normalize(candidate);
+    const regex = new RegExp(`(?:^|[^A-Z0-9])${normCandidate}(?:[^A-Z0-9]|$)`, "i");
+    return regex.test(normName);
+  });
   const label = manufacturer || "Marca según empaque";
   return { name: label, slug: slugify(label) };
 }
@@ -420,7 +583,7 @@ export const inventoryProducts = inventoryRows.map((row) => {
   const brand = verifiedOverride
     ? { name: verifiedOverride.brand, slug: slugify(verifiedOverride.brand) }
     : manufacturerFor(row.n);
-  const displayName = expandInventoryName(row.n);
+  const displayName = verifiedOverride?.name || expandInventoryName(row.n);
   const id = `inventario-${row.i}-${slugify(row.c)}`;
   const stock = stockValue(row.s);
   const sourceLabel = `INVENTARIO GENERAL · página ${row.g} · renglón ${row.i} · línea ${row.l || "SIN LINEA"} verificada en página ${row.h || "—"} del informe por líneas`;
@@ -431,7 +594,11 @@ export const inventoryProducts = inventoryRows.map((row) => {
     name: displayName,
     sourceName: row.n,
     sku: row.c,
-    referenceType: "inventory",
+    referenceType: MANUFACTURER_VERIFIED_STATUSES.has(
+      verifiedOverride?.fitmentStatus,
+    )
+      ? "manufacturer"
+      : "inventory",
     inventoryLine: row.l || "SIN LINEA",
     category: { name: category.name, slug: category.slug },
     brand,
@@ -453,9 +620,9 @@ export const inventoryProducts = inventoryRows.map((row) => {
       : "inventory-family-reference",
     fitmentStatus: verifiedOverride?.fitmentStatus || (verifiedOverride ? "cross-reference-verified" : "inventory-listed"),
     fitmentSummary: verifiedOverride?.fitmentSummary || `Aplicación registrada: ${displayName}`,
-    fitmentRequirements: ["VIN", "año", "motor", "versión", "muestra o referencia desmontada"],
+    fitmentRequirements: verifiedOverride?.fitmentRequirements || ["VIN", "año", "motor", "versión", "muestra o referencia desmontada"],
     fitmentSource: verifiedOverride ? `${sourceLabel} · ${verifiedOverride.fitmentSource}` : sourceLabel,
-    fitments: [{
+    fitments: verifiedOverride?.fitments?.length ? verifiedOverride.fitments : [{
       make: "Aplicación indicada en inventario",
       model: displayName,
       years: "Confirmar por VIN",
@@ -472,8 +639,19 @@ export const inventoryProducts = inventoryRows.map((row) => {
         { id: `${id}-brand-proof`, name: "Marca verificada", value: verifiedOverride.brandProof || `${verifiedOverride.brand} · cruce exacto por referencia ${row.c}` },
         { id: `${id}-market`, name: "Referencia de mercado", value: verifiedOverride.marketBenchmark },
       ] : []),
+      ...(verifiedOverride?.attributes || []).map((attribute, index) => ({
+        id: `${id}-verified-${index + 1}`,
+        name: attribute.name,
+        value: attribute.value,
+      })),
       { id: `${id}-validation`, name: "Validación obligatoria", value: "Confirmar VIN, año, motor, versión y muestra antes del despacho" },
-      { id: `${id}-image`, name: "Imagen", value: "Referencia visual de la línea; el producto se identifica por código y descripción" },
+      {
+        id: `${id}-image`,
+        name: "Imagen",
+        value: verifiedOverride?.imageStatus === "real-product-photo"
+          ? "Fotografía real del producto suministrada por REMBERT; confirmar la referencia grabada antes del despacho"
+          : "Referencia visual de la línea; el producto se identifica por código y descripción",
+      },
     ],
   };
 });

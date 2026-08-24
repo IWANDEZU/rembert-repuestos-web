@@ -1,12 +1,18 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "main": ".open-next/worker.js",
+  "main": "cloudflare-worker.js",
   "name": "rembert",
   "compatibility_date": "2026-08-20",
   "compatibility_flags": [
     "nodejs_compat",
     "global_fetch_strictly_public"
   ],
+  "vars": {
+    "NEXT_PUBLIC_SUPABASE_URL": "https://yrgycsbspqjqifyypueo.supabase.co",
+    "NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY": "sb_publishable_jlucq9hvHJnIorxJiWrZwA_ozES6FfS",
+    "NEXT_PUBLIC_SITE_URL": "https://rembert.iwandesu2018.workers.dev",
+    "NEXTAUTH_URL": "https://rembert.iwandesu2018.workers.dev"
+  },
   "assets": {
     "directory": ".open-next/assets",
     "binding": "ASSETS"

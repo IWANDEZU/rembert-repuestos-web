@@ -1,13 +1,15 @@
 import { frenosSuspensionProducts } from "../data/frenosSuspensionProducts.js";
 import { brandPanelProducts } from "../data/brandPanelProducts.js";
 import { catalogoProveedoresProducts } from "../data/catalogoProveedoresProducts.js";
+import { automatedCatalogProducts } from "../data/automatedCatalogProducts.js";
 import { kiaProducts } from "../data/kiaProducts.js";
 import { electricalProducts } from "../data/electricalProducts.js";
 import { phcValeoProducts } from "../data/phcValeoProducts.js";
 import { inventoryLineProducts } from "../data/inventoryLineProducts.js";
 import { inventoryProducts } from "../data/inventoryProducts.js";
-import partmoCatalog from "../data/catalogo-filtros-diesel.json";
-import priorityCatalog from "../data/catalogo-prioridad-diesel.json";
+import { gtiProducts } from "../data/gtiProducts.js";
+import { motorcraftProducts } from "../data/motorcraftProducts.js";
+import priorityCatalog from "../data/catalogo-prioridad-diesel.json" with { type: "json" };
 
 const toCatalogSlug = (value) => String(value || "producto")
   .normalize("NFD")
@@ -21,43 +23,6 @@ const specificationsToAttributes = (product, id) => Object.entries(product.speci
     id: `${id}-spec-${index}`,
     name: key.replaceAll("_", " ").replace(/\b\w/g, (letter) => letter.toUpperCase()),
     value: typeof value === "boolean" ? (value ? "Sí" : "No") : String(value),
-  }));
-
-const partmoFilterProducts = partmoCatalog
-  .filter((product) => product.status === "ready" && product.image)
-  .map((product) => ({
-    id: `catalogo-${product.id}`,
-    name: product.name,
-    slug: `${toCatalogSlug(product.brand)}-${toCatalogSlug(product.reference)}-${toCatalogSlug(product.category)}`,
-    category: { name: "Filtros", slug: "filtros" },
-    brand: { name: product.brand, slug: toCatalogSlug(product.brand) },
-    price: 0,
-    sku: product.reference,
-    referenceType: "manufacturer",
-    fitmentStatus: "verified",
-    fitments: [{
-      make: "Aplicación de catálogo",
-      model: product.description,
-      years: "Confirmar según referencia OE/equivalente",
-      position: product.category,
-    }],
-    fitmentSummary: `${product.reference}: ${product.description}`,
-    fitmentRequirements: ["VIN", "año", "motor", "referencia OE o equivalente"],
-    fitmentSource: `${product.source} · página ${product.sourcePage}`,
-    shortDesc: `${product.category}. ${product.description}`,
-    description: `${product.description}. Referencia Partmo ${product.reference}${product.equivalentReference ? `; equivalencia ${product.equivalentReference}` : ""}. Verificar por VIN, motor y referencia desmontada antes del despacho.`,
-    image: product.image,
-    images: [{ url: product.image, alt: product.alt || product.name, isMain: true }],
-    imageStatus: "manufacturer-catalog",
-    attributes: [
-      { id: `${product.id}-ref`, name: "Referencia fabricante", value: product.reference },
-      ...(product.equivalentReference ? [{ id: `${product.id}-equiv`, name: "Equivalencia", value: product.equivalentReference }] : []),
-      { id: `${product.id}-application`, name: "Aplicación", value: product.description },
-      { id: `${product.id}-source`, name: "Fuente técnica", value: `${product.source} · página ${product.sourcePage}` },
-      { id: `${product.id}-validation`, name: "Validación de venta", value: "Confirmar VIN, motor y referencia OE/equivalente" },
-    ],
-    inStock: false,
-    stock: 0,
   }));
 
 const priorityCatalogProducts = (priorityCatalog.products || [])
@@ -164,8 +129,8 @@ const allProducts = [
     price: 180000,
     sku: "CAS-5W30-SYN",
     description: "Aceite de motor avanzado 100% sintético con tecnología Fluid TITANIUM.",
-    image: "/castrol.png",
-    images: [{ url: "/castrol.png", alt: "Castrol EDGE 5W-30", isMain: true }],
+    image: "/castrol.webp",
+    images: [{ url: "/castrol.webp", alt: "Castrol EDGE 5W-30", isMain: true }],
     inStock: true,
     stock: 45,
   },
@@ -178,8 +143,8 @@ const allProducts = [
     price: 160000,
     sku: "LM-10W40-MOS2",
     description: "Aceite de motor semisintético con disulfuro de molibdeno para máxima protección.",
-    image: "/liquimoly.png",
-    images: [{ url: "/liquimoly.png", alt: "Liqui Moly 10W40", isMain: true }],
+    image: "/liquimoly.webp",
+    images: [{ url: "/liquimoly.webp", alt: "Liqui Moly 10W40", isMain: true }],
     inStock: true,
     stock: 30,
   },
@@ -192,8 +157,8 @@ const allProducts = [
     price: 75000,
     sku: "TER-20W50-TIT",
     description: "Aceite mineral premium desarrollado para las condiciones del parque automotor colombiano.",
-    image: "/12_terpel_oiltec_10w40_titanio.png",
-    images: [{ url: "/12_terpel_oiltec_10w40_titanio.png", alt: "Terpel Oiltec 20W-50", isMain: true }],
+    image: "/12_terpel_oiltec_10w40_titanio.webp",
+    images: [{ url: "/12_terpel_oiltec_10w40_titanio.webp", alt: "Terpel Oiltec 20W-50", isMain: true }],
     inStock: true,
     stock: 60,
   },
@@ -208,8 +173,8 @@ const allProducts = [
     price: 95000,
     sku: "MOT-75W90-GEAR",
     description: "Lubricante Technosynthese para cajas de velocidades manuales y diferenciales.",
-    image: "/transmision.png",
-    images: [{ url: "/transmision.png", alt: "Motul Motylgear 75W-90", isMain: true }],
+    image: "/transmision.webp",
+    images: [{ url: "/transmision.webp", alt: "Motul Motylgear 75W-90", isMain: true }],
     inStock: true,
     stock: 25,
   },
@@ -223,8 +188,8 @@ const allProducts = [
     sku: "M0536",
     shortDesc: "Valvulina mineral de extrema presión para engranajes y diferenciales que exijan SAE 80W-90 API GL-5.",
     description: "Aceite Valvoline High Performance SAE 80W-90 API GL-5 para diferenciales hipoides convencionales, transmisiones manuales no sincronizadas, cajas de dirección, mandos finales y tomas de fuerza donde el fabricante especifique esta viscosidad y nivel de servicio. Presentación de 1 cuarto US (0,946 L). No debe elegirse solo por marca del vehículo: confirmar manual, tipo de diferencial y presencia de sincronizadores o deslizamiento limitado.",
-    image: "/catalogo-mantenimiento/valvoline-high-performance-80w90-gl5.png",
-    images: [{ url: "/catalogo-mantenimiento/valvoline-high-performance-80w90-gl5.png", alt: "Valvoline High Performance SAE 80W-90 API GL-5", isMain: true }],
+    image: "/catalogo-mantenimiento/valvoline-high-performance-80w90-gl5.webp",
+    images: [{ url: "/catalogo-mantenimiento/valvoline-high-performance-80w90-gl5.webp", alt: "Valvoline High Performance SAE 80W-90 API GL-5", isMain: true }],
     attributes: [
       { id: "valv8090-1", name: "Viscosidad y desempeño", value: "SAE 80W-90 · API GL-5" },
       { id: "valv8090-2", name: "Aplicaciones", value: "Diferenciales hipoides convencionales y transmisiones manuales no sincronizadas" },
@@ -247,8 +212,8 @@ const allProducts = [
     price: 85000,
     sku: "CHV-AW68-HYD",
     description: "Fluido hidráulico antidesgaste para sistemas hidráulicos y bombas de alta presión.",
-    image: "/chevron.png",
-    images: [{ url: "/chevron.png", alt: "Chevron AW 68", isMain: true }],
+    image: "/chevron.webp",
+    images: [{ url: "/chevron.webp", alt: "Chevron AW 68", isMain: true }],
     inStock: true,
     stock: 20,
   },
@@ -263,8 +228,8 @@ const allProducts = [
     price: 55000,
     sku: "TOT-GLACELF-COOL",
     description: "Anticongelante y refrigerante de larga vida (OAT) para protección del radiador.",
-    image: "/coolant.png",
-    images: [{ url: "/coolant.png", alt: "Coolant TotalEnergies", isMain: true }],
+    image: "/coolant.webp",
+    images: [{ url: "/coolant.webp", alt: "Coolant TotalEnergies", isMain: true }],
     inStock: true,
     stock: 40,
   },
@@ -278,8 +243,8 @@ const allProducts = [
     sku: "STARFREE-REF-ROJO-GAL",
     shortDesc: "Refrigerante rojo anticorrosivo y antioxidante para vehículos livianos, camionetas y camiones.",
     description: "Refrigerante rojo Star Free anticorrosivo y antioxidante para sistemas de enfriamiento. Presentación de 1 galón US (3,785 litros). Ayuda al control de la corrosión y el recalentamiento. El color por sí solo no determina compatibilidad: antes de mezclar o reemplazar se debe confirmar en el manual la tecnología, concentración y especificación admitidas por cada vehículo.",
-    image: "/catalogo-mantenimiento/star-free-refrigerante-rojo-galon.png",
-    images: [{ url: "/catalogo-mantenimiento/star-free-refrigerante-rojo-galon.png", alt: "Refrigerante rojo Star Free anticorrosivo galón", isMain: true }],
+    image: "/catalogo-mantenimiento/star-free-refrigerante-rojo-galon.webp",
+    images: [{ url: "/catalogo-mantenimiento/star-free-refrigerante-rojo-galon.webp", alt: "Refrigerante rojo Star Free anticorrosivo galón", isMain: true }],
     attributes: [
       { id: "starfree-1", name: "Tipo", value: "Refrigerante rojo anticorrosivo y antioxidante" },
       { id: "starfree-2", name: "Marcas compatibles", value: "Multimarca; Chevrolet, Renault, Mazda, Toyota, Nissan, Kia, Hyundai, Ford y otras solo cuando el manual admita esta tecnología de refrigerante" },
@@ -302,8 +267,8 @@ const allProducts = [
     sku: "ACD-BUJIA-COT",
     shortDesc: "Bujía ACDelco; confirmar referencia por marca, modelo, año y motor.",
     description: "Bujía ACDelco para sistemas de encendido de motores a gasolina, alcohol, GNC o combustible dual. Produce la chispa que inicia la combustión y contribuye al rendimiento, consumo y control de emisiones. La geometría, grado térmico y luz cambian según el motor; se cotiza únicamente después de validar vehículo y motorización.",
-    image: "/catalogo-nuevas-lineas/acdelco-bujia-catalogo.png",
-    images: [{ url: "/catalogo-nuevas-lineas/acdelco-bujia-catalogo.png", alt: "Imagen de catálogo de bujía ACDelco", isMain: true }],
+    image: "/catalogo-nuevas-lineas/acdelco-bujia-catalogo.webp",
+    images: [{ url: "/catalogo-nuevas-lineas/acdelco-bujia-catalogo.webp", alt: "Imagen de catálogo de bujía ACDelco", isMain: true }],
     attributes: [
       { id: "acdbujia-1", name: "Aplicación", value: "Gasolina, alcohol, GNC y combustible dual" },
       { id: "acdbujia-2", name: "Selección", value: "Por marca, modelo, año y motor" },
@@ -323,8 +288,8 @@ const allProducts = [
     sku: "ACD-BAT-COT",
     shortDesc: "Batería de arranque ACDelco; validar caja, polaridad, CCA y capacidad.",
     description: "Batería automotriz ACDelco para arranque, iluminación y alimentación de los sistemas eléctricos y electrónicos. La capacidad, corriente de arranque, polaridad y dimensiones deben corresponder exactamente al vehículo; precio sujeto a diagnóstico y referencia.",
-    image: "/catalogo-nuevas-lineas/acdelco-bateria-catalogo.png",
-    images: [{ url: "/catalogo-nuevas-lineas/acdelco-bateria-catalogo.png", alt: "Imagen de catálogo de batería ACDelco", isMain: true }],
+    image: "/catalogo-nuevas-lineas/acdelco-bateria-catalogo.webp",
+    images: [{ url: "/catalogo-nuevas-lineas/acdelco-bateria-catalogo.webp", alt: "Imagen de catálogo de batería ACDelco", isMain: true }],
     attributes: [
       { id: "acdbat-1", name: "Función", value: "Arranque, iluminación y alimentación eléctrica" },
       { id: "acdbat-2", name: "Validar", value: "Capacidad, CCA, polaridad, base y dimensiones" },
@@ -366,8 +331,8 @@ const allProducts = [
     sku: "GATES-TCKWP-COT",
     shortDesc: "Solución completa Gates; contenido y referencia varían por motor.",
     description: "Familia de kits Gates PowerGrip para mantenimiento del sistema de distribución. Según aplicación puede incluir correa dentada, tensor, poleas, bomba de agua y herrajes. Gates recomienda sustituir la bomba accionada por distribución junto con la correa para reducir retrabajos y conservar el desempeño del sistema.",
-    image: "/catalogo-nuevas-lineas/gates-kit-distribucion-bomba-agua-catalogo.png",
-    images: [{ url: "/catalogo-nuevas-lineas/gates-kit-distribucion-bomba-agua-catalogo.png", alt: "Imagen de catálogo de kit de distribución Gates PowerGrip", isMain: true }],
+    image: "/catalogo-nuevas-lineas/gates-kit-distribucion-bomba-agua-catalogo.webp",
+    images: [{ url: "/catalogo-nuevas-lineas/gates-kit-distribucion-bomba-agua-catalogo.webp", alt: "Imagen de catálogo de kit de distribución Gates PowerGrip", isMain: true }],
     attributes: [
       { id: "gateskit-1", name: "Contenido típico", value: "Correa, tensor, poleas, bomba de agua y herrajes" },
       { id: "gateskit-2", name: "Selección", value: "Por motor, año y código de aplicación" },
@@ -387,8 +352,8 @@ const allProducts = [
     sku: "LUK-6201080000",
     shortDesc: "Prensa, disco y rodamiento; validar aplicación Renault/Dacia/Nissan/Lada.",
     description: "Kit de embrague LuK RepSet 620 1080 00. La ficha oficial incluye prensa 120 0201 10, disco 320 0467 10 y rodamiento de desembrague 500 0758 10. Cuenta con aplicaciones Dacia, Lada, Nissan y Renault, sujetas a confirmación por VIN y número OE.",
-    image: "/catalogo-nuevas-lineas/luk-repset-kit-embrague-catalogo.png",
-    images: [{ url: "/catalogo-nuevas-lineas/luk-repset-kit-embrague-catalogo.png", alt: "Imagen de catálogo de kit de embrague LuK RepSet", isMain: true }],
+    image: "/catalogo-nuevas-lineas/luk-repset-kit-embrague-catalogo.webp",
+    images: [{ url: "/catalogo-nuevas-lineas/luk-repset-kit-embrague-catalogo.webp", alt: "Imagen de catálogo de kit de embrague LuK RepSet", isMain: true }],
     attributes: [
       { id: "luk620-1", name: "Referencia", value: "620 1080 00" },
       { id: "luk620-2", name: "Contenido", value: "Prensa, disco y rodamiento de desembrague" },
@@ -420,6 +385,82 @@ const allProducts = [
     stock: 0,
   },
   {
+    id: "rodamiento-clutch-chevrolet-sail-n200-n300",
+    name: "Rodamiento de Embrague (Clutch / Balinera) — Chevrolet Sail / N200 / N300",
+    slug: "rodamiento-clutch-chevrolet-sail-n200-n300",
+    category: { name: "Embrague", slug: "embrague" },
+    brand: { name: "Chevrolet / Equipo Original", slug: "chevrolet" },
+    price: 60840,
+    sku: "24521039A",
+    shortDesc: "Balinera / rodamiento de desembrague para Chevrolet Sail 1.4/1.5, N200 1.2 y N300 1.2/1.5.",
+    description: "Rodamiento de desembrague (balinera de clutch / collarín) de alta precisión para Chevrolet Sail 1.4 / 1.5, Chevrolet N200 y Chevrolet N300 Max/Move. Fabricado bajo especificaciones de Equipo Original con pista tratada térmicamente, sellado de alta temperatura y clips de anclaje a la horquilla para un desembrague suave y libre de ruidos.",
+    image: "/catalogo-embrague/rodamiento-clutch-chevrolet-sail-n200-n300.webp",
+    images: [{
+      url: "/catalogo-embrague/rodamiento-clutch-chevrolet-sail-n200-n300.webp",
+      alt: "Rodamiento de embrague Chevrolet Sail N200 N300",
+      isMain: true,
+    }],
+    imageStatus: "exact-real-photo",
+    inStock: true,
+    stock: 6,
+    fitmentStatus: "verified",
+    fitmentSummary: "Chevrolet Sail 1.4 / 1.5 (2012–2020), Chevrolet N200 1.2 (2009–2014) y Chevrolet N300 1.2 / 1.5 (2012–2022).",
+    fitmentRequirements: ["VIN", "modelo", "año", "motor 1.2 / 1.4 / 1.5", "referencias OE 24521039A / 24512523 / 9023914"],
+    fitmentSource: "Equipo Original GM / SGMW — referencias OE 24521039A / 24512523 / 9023914 / 24525897 / LuK 500 1048 10.",
+    fitments: [
+      { make: "Chevrolet", model: "Sail 1.4L / 1.5L", years: "2012–2020", engine: "1.4L S-TEC III / 1.5L DVVT", position: "Transmisión manual · Rodamiento de embrague" },
+      { make: "Chevrolet", model: "N200 1.2L", years: "2009–2014", engine: "1.2L B12 Gasolina", position: "Transmisión manual · Balinera de clutch" },
+      { make: "Chevrolet", model: "N300 Max / Move / Pasajeros", years: "2012–2022", engine: "1.2L / 1.5L", position: "Transmisión manual · Collarín de desembrague" },
+    ],
+    attributes: [
+      { id: "rod-clutch-sail-1", name: "Tipo de Repuesto", value: "Rodamiento / Balinera de Desembrague (Release Bearing)" },
+      { id: "rod-clutch-sail-2", name: "Referencia Principal", value: "24521039A / 24512523" },
+      { id: "rod-clutch-sail-3", name: "Referencias Cruzadas OEM", value: "9023914, 24525897, 500104810, CT55-1, C514" },
+      { id: "rod-clutch-sail-4", name: "Vehículos Compatibles", value: "Chevrolet Sail 1.4/1.5, Chevrolet N200 1.2, Chevrolet N300 1.2/1.5" },
+      { id: "rod-clutch-sail-5", name: "Transmisión", value: "Caja manual de 5 velocidades" },
+      { id: "rod-clutch-sail-6", name: "Construcción", value: "Pista templada con clips de retención de horquilla" },
+      { id: "rod-clutch-sail-7", name: "Garantía", value: "100% de compatibilidad y ajuste exacto OEM" },
+    ],
+  },
+  {
+    id: "rodamiento-clutch-chevrolet-sail-n200-n300-oe",
+    name: "Rodamiento de Embrague (Clutch / Balinera) — Chevrolet Sail / N200 / N300",
+    slug: "rodamiento-clutch-chevrolet-sail-n200-n300",
+    category: { name: "Embrague", slug: "embrague" },
+    brand: { name: "Chevrolet / Equipo Original", slug: "chevrolet" },
+    price: 60840,
+    sku: "24512523",
+    shortDesc: "Balinera / rodamiento de desembrague para Chevrolet Sail 1.4/1.5, N200 1.2 y N300 1.2/1.5.",
+    description: "Rodamiento de desembrague (balinera de clutch / collarín) de alta precisión para Chevrolet Sail 1.4 / 1.5, Chevrolet N200 y Chevrolet N300 Max/Move. Fabricado bajo especificaciones de Equipo Original con pista tratada térmicamente, sellado de alta temperatura y clips de anclaje a la horquilla para un desembrague suave y libre de ruidos.",
+    image: "/catalogo-embrague/rodamiento-clutch-chevrolet-sail-n200-n300.webp",
+    images: [{
+      url: "/catalogo-embrague/rodamiento-clutch-chevrolet-sail-n200-n300.webp",
+      alt: "Rodamiento de embrague Chevrolet Sail N200 N300",
+      isMain: true,
+    }],
+    imageStatus: "exact-real-photo",
+    inStock: true,
+    stock: 6,
+    fitmentStatus: "verified",
+    fitmentSummary: "Chevrolet Sail 1.4 / 1.5 (2012–2020), Chevrolet N200 1.2 (2009–2014) y Chevrolet N300 1.2 / 1.5 (2012–2022).",
+    fitmentRequirements: ["VIN", "modelo", "año", "motor 1.2 / 1.4 / 1.5", "referencias OE 24521039A / 24512523 / 9023914"],
+    fitmentSource: "Equipo Original GM / SGMW — referencias OE 24521039A / 24512523 / 9023914 / 24525897 / LuK 500 1048 10.",
+    fitments: [
+      { make: "Chevrolet", model: "Sail 1.4L / 1.5L", years: "2012–2020", engine: "1.4L S-TEC III / 1.5L DVVT", position: "Transmisión manual · Rodamiento de embrague" },
+      { make: "Chevrolet", model: "N200 1.2L", years: "2009–2014", engine: "1.2L B12 Gasolina", position: "Transmisión manual · Balinera de clutch" },
+      { make: "Chevrolet", model: "N300 Max / Move / Pasajeros", years: "2012–2022", engine: "1.2L / 1.5L", position: "Transmisión manual · Collarín de desembrague" },
+    ],
+    attributes: [
+      { id: "rod-clutch-sail-oe-1", name: "Tipo de Repuesto", value: "Rodamiento / Balinera de Desembrague (Release Bearing)" },
+      { id: "rod-clutch-sail-oe-2", name: "Referencia Principal", value: "24512523 / 24521039A" },
+      { id: "rod-clutch-sail-oe-3", name: "Referencias Cruzadas OEM", value: "9023914, 24525897, 500104810, CT55-1, C514" },
+      { id: "rod-clutch-sail-oe-4", name: "Vehículos Compatibles", value: "Chevrolet Sail 1.4/1.5, Chevrolet N200 1.2, Chevrolet N300 1.2/1.5" },
+      { id: "rod-clutch-sail-oe-5", name: "Transmisión", value: "Caja manual de 5 velocidades" },
+      { id: "rod-clutch-sail-oe-6", name: "Construcción", value: "Pista templada con clips de retención de horquilla" },
+      { id: "rod-clutch-sail-oe-7", name: "Garantía", value: "100% de compatibilidad y ajuste exacto OEM" },
+    ],
+  },
+  {
     id: "skf-kit-rodamiento-rueda-familia",
     name: "Kit de Rodamiento de Rueda SKF — Referencia según Vehículo",
     slug: "kit-rodamiento-rueda-skf-referencia-vehiculo",
@@ -429,8 +470,8 @@ const allProducts = [
     sku: "SKF-VKBA-COT",
     shortDesc: "Kit SKF sellado y lubricado; validar generación, eje y sistema ABS.",
     description: "Familia de kits de rodamiento de rueda SKF para vehículos livianos. Según aplicación pueden incluir rodamiento, cubo, tuerca, circlip, pernos o anillo impulsor ABS. Los rodamientos están sellados y lubricados para su vida útil; la generación y el contenido del kit deben confirmarse por vehículo y posición.",
-    image: "/catalogo-nuevas-lineas/skf-kit-rodamiento-catalogo.png",
-    images: [{ url: "/catalogo-nuevas-lineas/skf-kit-rodamiento-catalogo.png", alt: "Imagen de catálogo de kit de rodamiento SKF", isMain: true }],
+    image: "/catalogo-nuevas-lineas/skf-kit-rodamiento-catalogo.webp",
+    images: [{ url: "/catalogo-nuevas-lineas/skf-kit-rodamiento-catalogo.webp", alt: "Imagen de catálogo de kit de rodamiento SKF", isMain: true }],
     attributes: [
       { id: "skfkit-1", name: "Diseños", value: "Generaciones HBU1, HBU2 y HBU3 según aplicación" },
       { id: "skfkit-2", name: "Validar", value: "Eje, posición, medidas, cubo y sistema ABS" },
@@ -724,6 +765,7 @@ const allProducts = [
   // DIRECCIÓN, SUSPENSIÓN Y FRENO HIDRÁULICO — COTIZACIÓN VALIDADA POR VIN
   ...brandPanelProducts,
   ...frenosSuspensionProducts,
+  ...gtiProducts,
   ...catalogoProveedoresProducts,
   ...kiaProducts,
   ...electricalProducts,
@@ -740,8 +782,8 @@ const allProducts = [
     price: 32000,
     sku: "WIX-WL7570",
     description: "Filtro de aceite blindado para máxima retención de impurezas y flujo de lubricante.",
-    image: "/01_wix_wl7570_filtro_aceite.png",
-    images: [{ url: "/01_wix_wl7570_filtro_aceite.png", alt: "Filtro WIX WL7570", isMain: true }],
+    image: "/01_wix_wl7570_filtro_aceite.webp",
+    images: [{ url: "/01_wix_wl7570_filtro_aceite.webp", alt: "Filtro WIX WL7570", isMain: true }],
     inStock: true,
     stock: 75,
   },
@@ -754,8 +796,8 @@ const allProducts = [
     price: 45000,
     sku: "WIX-WA9906",
     description: "Filtro de aire tipo panel de alta eficiencia para admisión del motor.",
-    image: "/02_wix_wa9906_filtro_aire.png",
-    images: [{ url: "/02_wix_wa9906_filtro_aire.png", alt: "Filtro Aire WIX", isMain: true }],
+    image: "/02_wix_wa9906_filtro_aire.webp",
+    images: [{ url: "/02_wix_wa9906_filtro_aire.webp", alt: "Filtro Aire WIX", isMain: true }],
     inStock: true,
     stock: 40,
   },
@@ -768,8 +810,8 @@ const allProducts = [
     price: 38000,
     sku: "COX-COAC-305",
     description: "Filtro antipolen para aire acondicionado y purificación de aire en cabina.",
-    image: "/07_auto_coexito_coac_305_filtro_cabina.png",
-    images: [{ url: "/07_auto_coexito_coac_305_filtro_cabina.png", alt: "Filtro Cabina Coéxito", isMain: true }],
+    image: "/07_auto_coexito_coac_305_filtro_cabina.webp",
+    images: [{ url: "/07_auto_coexito_coac_305_filtro_cabina.webp", alt: "Filtro Cabina Coéxito", isMain: true }],
     inStock: true,
     stock: 30,
   },
@@ -786,8 +828,8 @@ const allProducts = [
     fitmentSummary: "Familia de filtros de aceite; cada motor exige una referencia, rosca, válvula y dimensiones concretas.",
     fitmentRequirements: ["VIN", "motor", "rosca", "diámetro", "altura", "válvula bypass y antirretorno", "referencia OE"],
     description: "Familia de filtros de aceite para automóviles a gasolina. No es un filtro único para todas las marcas: se cotiza la referencia exacta por VIN, motor, dimensiones y número OE.",
-    image: "/filtro-aceite-gasolina-catalogo.png",
-    images: [{ url: "/filtro-aceite-gasolina-catalogo.png", alt: "Filtro de aceite para autos a gasolina", isMain: true }],
+    image: "/filtro-aceite-gasolina-catalogo.webp",
+    images: [{ url: "/filtro-aceite-gasolina-catalogo.webp", alt: "Filtro de aceite para autos a gasolina", isMain: true }],
     inStock: false,
     stock: 0,
   },
@@ -804,8 +846,8 @@ const allProducts = [
     fitmentSummary: "Familia de filtros de aire; la forma, largo, ancho y sello cambian por modelo, motor y caja del filtro.",
     fitmentRequirements: ["VIN", "motor", "medidas del elemento", "forma", "referencia OE"],
     description: "Familia de filtros de aire tipo panel para vehículos a gasolina. Los modelos enumerados en el catálogo usan referencias diferentes; confirmar VIN, motor, forma y medidas.",
-    image: "/filtro-aire-gasolina-catalogo.png",
-    images: [{ url: "/filtro-aire-gasolina-catalogo.png", alt: "Filtro de aire para autos a gasolina", isMain: true }],
+    image: "/filtro-aire-gasolina-catalogo.webp",
+    images: [{ url: "/filtro-aire-gasolina-catalogo.webp", alt: "Filtro de aire para autos a gasolina", isMain: true }],
     inStock: false,
     stock: 0,
   },
@@ -822,8 +864,8 @@ const allProducts = [
     fitmentSummary: "Familia de filtros de combustible gasolina; presión, caudal, conexiones y ubicación varían por sistema de inyección.",
     fitmentRequirements: ["VIN", "motor", "presión del sistema", "conectores", "sentido de flujo", "referencia OE"],
     description: "Familia de filtros para sistemas de gasolina. No aplica a diésel y no corresponde a una referencia universal; validar presión, conectores, ubicación y referencia OE.",
-    image: "/filtro-combustible-gasolina-catalogo.png",
-    images: [{ url: "/filtro-combustible-gasolina-catalogo.png", alt: "Filtro de combustible para autos a gasolina", isMain: true }],
+    image: "/filtro-combustible-gasolina-catalogo.webp",
+    images: [{ url: "/filtro-combustible-gasolina-catalogo.webp", alt: "Filtro de combustible para autos a gasolina", isMain: true }],
     inStock: false,
     stock: 0,
   },
@@ -840,8 +882,8 @@ const allProducts = [
     fitmentSummary: "Familia de filtros de cabina; medidas, orientación del flujo y acceso cambian por plataforma y año.",
     fitmentRequirements: ["VIN", "año", "carrocería", "medidas", "sentido de flujo", "referencia OE"],
     description: "Familia de filtros de habitáculo estándar o de carbón activado. Cada plataforma usa medidas y orientación específicas; validar VIN y referencia OE.",
-    image: "/filtro-cabina-gasolina-catalogo.png",
-    images: [{ url: "/filtro-cabina-gasolina-catalogo.png", alt: "Filtro de cabina para autos a gasolina", isMain: true }],
+    image: "/filtro-cabina-gasolina-catalogo.webp",
+    images: [{ url: "/filtro-cabina-gasolina-catalogo.webp", alt: "Filtro de cabina para autos a gasolina", isMain: true }],
     inStock: false,
     stock: 0,
   },
@@ -856,8 +898,8 @@ const allProducts = [
     price: 0,
     sku: "VR-REINZOSIL-70ML",
     description: "Compuesto sellante universal antracita permanentemente elástico para formar y reparar juntas en motores, cajas, bombas y carcasas. Presentación de 70 ml, resistente a temperaturas de hasta +300 °C. Precio sujeto a cotización y disponibilidad.",
-    image: "/catalogo-siliconas-automotrices/victor-reinz-reinzosil-70ml-original.png",
-    images: [{ url: "/catalogo-siliconas-automotrices/victor-reinz-reinzosil-70ml-original.png", alt: "Victor Reinz REINZOSIL sellante universal antracita 70 ml", isMain: true }],
+    image: "/catalogo-siliconas-automotrices/victor-reinz-reinzosil-70ml-original.webp",
+    images: [{ url: "/catalogo-siliconas-automotrices/victor-reinz-reinzosil-70ml-original.webp", alt: "Victor Reinz REINZOSIL sellante universal antracita 70 ml", isMain: true }],
     inStock: true,
     stock: 20,
   },
@@ -872,8 +914,8 @@ const allProducts = [
     price: 35000,
     sku: "MOB-XHP222-GRS",
     description: "Grasa de complejo de litio para rodamientos, chasis y condiciones severas de carga.",
-    image: "/caneca.png",
-    images: [{ url: "/caneca.png", alt: "Mobilgrease XHP 222", isMain: true }],
+    image: "/caneca.webp",
+    images: [{ url: "/caneca.webp", alt: "Mobilgrease XHP 222", isMain: true }],
     inStock: true,
     stock: 50,
   },
@@ -888,8 +930,8 @@ const allProducts = [
     price: 68000,
     sku: "DEF-UREA-5GAL",
     description: "Solución de urea al 32.5% de alta pureza para reducción catalítica selectiva SCR.",
-    image: "/urea.png",
-    images: [{ url: "/urea.png", alt: "Urea DEF Automotriz", isMain: true }],
+    image: "/urea.webp",
+    images: [{ url: "/urea.webp", alt: "Urea DEF Automotriz", isMain: true }],
     inStock: true,
     stock: 60,
   },
@@ -904,8 +946,8 @@ const allProducts = [
     price: 520000,
     sku: "RAD-CHV-DMX-25",
     description: "Radiador de reemplazo para Chevrolet LUV D-Max 2.5 diésel. Aplicaciones 2WD/4WD; confirmar año, transmisión y VIN.",
-    image: "/radiador-dmax-25.png",
-    images: [{ url: "/radiador-dmax-25.png", alt: "Radiador Chevrolet LUV D-Max 2.5", isMain: true }],
+    image: "/radiador-dmax-25.webp",
+    images: [{ url: "/radiador-dmax-25.webp", alt: "Radiador Chevrolet LUV D-Max 2.5", isMain: true }],
     inStock: true,
     stock: 8,
   },
@@ -918,8 +960,8 @@ const allProducts = [
     price: 560000,
     sku: "RAD-CHV-DMX-30",
     description: "Radiador de reemplazo para Chevrolet LUV D-Max 3.0 diésel, motores 4JH1. Confirmar configuración por VIN.",
-    image: "/radiador-dmax-30.png",
-    images: [{ url: "/radiador-dmax-30.png", alt: "Radiador Chevrolet LUV D-Max 3.0", isMain: true }],
+    image: "/radiador-dmax-30.webp",
+    images: [{ url: "/radiador-dmax-30.webp", alt: "Radiador Chevrolet LUV D-Max 3.0", isMain: true }],
     inStock: true,
     stock: 7,
   },
@@ -932,8 +974,8 @@ const allProducts = [
     price: 590000,
     sku: "RAD-CHV-COL-S10",
     description: "Radiador para pickup Chevrolet Colorado/S10. La aplicación cambia según motor, año y transmisión; confirmar por VIN.",
-    image: "/radiador-colorado-s10.png",
-    images: [{ url: "/radiador-colorado-s10.png", alt: "Radiador Chevrolet Colorado S10", isMain: true }],
+    image: "/radiador-colorado-s10.webp",
+    images: [{ url: "/radiador-colorado-s10.webp", alt: "Radiador Chevrolet Colorado S10", isMain: true }],
     inStock: true,
     stock: 5,
   },
@@ -946,8 +988,8 @@ const allProducts = [
     price: 430000,
     sku: "RAD-REN-OROCH",
     description: "Radiador de aluminio para Renault Duster Oroch 1.6 y 2.0. Confirmar versión, aire acondicionado y transmisión.",
-    image: "/radiador-oroch.png",
-    images: [{ url: "/radiador-oroch.png", alt: "Radiador Renault Duster Oroch", isMain: true }],
+    image: "/radiador-oroch.webp",
+    images: [{ url: "/radiador-oroch.webp", alt: "Radiador Renault Duster Oroch", isMain: true }],
     inStock: true,
     stock: 6,
   },
@@ -960,8 +1002,8 @@ const allProducts = [
     price: 850000,
     sku: "RAD-REN-ALASKAN-25",
     description: "Radiador de servicio pesado para Renault Alaskan 2.5 diésel. Confirmar 4x2/4x4, transmisión y año por VIN.",
-    image: "/radiador-alaskan.png",
-    images: [{ url: "/radiador-alaskan.png", alt: "Radiador Renault Alaskan 2.5", isMain: true }],
+    image: "/radiador-alaskan.webp",
+    images: [{ url: "/radiador-alaskan.webp", alt: "Radiador Renault Alaskan 2.5", isMain: true }],
     inStock: true,
     stock: 3,
   },
@@ -974,11 +1016,11 @@ const allProducts = [
     price: 299000,
     sku: "RAD-CHV-SPK-GT-96676341",
     description: "Radiador de aluminio para Chevrolet Spark GT / Beat M300 1.2L 16V, transmisión mecánica. Referencia OEM 96676341; confirmar compatibilidad por VIN antes de comprar.",
-    image: "/radiador-spark-gt-frontal.png",
+    image: "/radiador-spark-gt-frontal.webp",
     images: [
-      { url: "/radiador-spark-gt-frontal.png", alt: "Radiador Chevrolet Spark GT frontal", isMain: true },
-      { url: "/radiador-spark-gt-angulo.png", alt: "Radiador Chevrolet Spark GT en ángulo", isMain: false },
-      { url: "/radiador-spark-gt-detalle.png", alt: "Detalle del radiador Chevrolet Spark GT", isMain: false }
+      { url: "/radiador-spark-gt-frontal.webp", alt: "Radiador Chevrolet Spark GT frontal", isMain: true },
+      { url: "/radiador-spark-gt-angulo.webp", alt: "Radiador Chevrolet Spark GT en ángulo", isMain: false },
+      { url: "/radiador-spark-gt-detalle.webp", alt: "Detalle del radiador Chevrolet Spark GT", isMain: false }
     ],
     inStock: true,
     stock: 15,
@@ -996,8 +1038,8 @@ const allProducts = [
     fitmentSummary: "Sail, Aveo y Optra no comparten un radiador universal; existen referencias diferentes por año, motor, transmisión y sistema de aire acondicionado.",
     fitmentRequirements: ["VIN", "año", "motor", "transmisión", "aire acondicionado", "medidas", "posición de bocas y soportes", "referencia OE"],
     description: "Familia de radiadores Chevrolet. Sail, Aveo y Optra requieren selección individual por VIN, motor, transmisión, medidas y referencia OE; no comparten una pieza entre todas sus generaciones.",
-    image: "/radiador-banner.jpg",
-    images: [{ url: "/radiador-banner.jpg", alt: "Radiador Chevrolet Sail 1.4", isMain: true }],
+    image: "/radiador-banner.webp",
+    images: [{ url: "/radiador-banner.webp", alt: "Radiador Chevrolet Sail 1.4", isMain: true }],
     inStock: false,
     stock: 0,
   },
@@ -1014,8 +1056,8 @@ const allProducts = [
     fitmentSummary: "Duster, Logan, Sandero y Stepway usan referencias distintas según plataforma, motor, transmisión y aire acondicionado.",
     fitmentRequirements: ["VIN", "motor K4M/H4M/F4R u otro", "año", "transmisión", "aire acondicionado", "medidas y bocas", "referencia OE"],
     description: "Familia de radiadores Renault. La mención de varios modelos no significa que la pieza sea intercambiable; se cotiza por VIN, código de motor, transmisión, medidas y referencia OE.",
-    image: "/radiador-auto.jpg",
-    images: [{ url: "/radiador-auto.jpg", alt: "Radiador Renault Duster Sandero", isMain: true }],
+    image: "/radiador-auto.webp",
+    images: [{ url: "/radiador-auto.webp", alt: "Radiador Renault Duster Sandero", isMain: true }],
     inStock: false,
     stock: 0,
   },
@@ -1032,8 +1074,8 @@ const allProducts = [
     fitmentSummary: "Kwid, Clio, Mégane y Symbol pertenecen a plataformas distintas y no usan un radiador común.",
     fitmentRequirements: ["VIN", "plataforma", "año", "motor", "transmisión", "aire acondicionado", "medidas y referencia OE"],
     description: "Familia de radiadores Renault para cotización. Kwid, Clio, Mégane y Symbol no deben agruparse como una pieza única: cada plataforma requiere una referencia específica.",
-    image: "/radiador-banner.jpg",
-    images: [{ url: "/radiador-banner.jpg", alt: "Radiador Renault Kwid Clio", isMain: true }],
+    image: "/radiador-banner.webp",
+    images: [{ url: "/radiador-banner.webp", alt: "Radiador Renault Kwid Clio", isMain: true }],
     inStock: false,
     stock: 0,
   },
@@ -1046,8 +1088,8 @@ const allProducts = [
     price: 62000,
     sku: "ACD-DEXCOOL-88863336-4L",
     description: "Refrigerante y anticongelante original ACDelco DEX-COOL Extended Life 50/50 prediluido listo para usar (Galón / 4 Litros, Ref. GM 88863336). Fórmula OAT orgánica color naranja de larga duración (hasta 5 años o 240.000 km). Protección avanzada contra corrosión, ebullición y cavitación en radiadores de aluminio para Chevrolet, GM y vehículos multimarca.",
-    image: "/acdelco-dex-cool-50-50-galon.png",
-    images: [{ url: "/acdelco-dex-cool-50-50-galon.png", alt: "Refrigerante ACDelco DEX-COOL 50/50 Galón 4 Litros", isMain: true }],
+    image: "/acdelco-dex-cool-50-50-galon.webp",
+    images: [{ url: "/acdelco-dex-cool-50-50-galon.webp", alt: "Refrigerante ACDelco DEX-COOL 50/50 Galón 4 Litros", isMain: true }],
     inStock: true,
     stock: 30,
   },
@@ -1060,8 +1102,8 @@ const allProducts = [
     price: 32000,
     sku: "CAP-RAD-11-BAR",
     description: "Tapa presurizada de acero inoxidable con sello de caucho sintético de alta temperatura y válvula de escape para control óptimo de presión del circuito de refrigeración.",
-    image: "/coolant.png",
-    images: [{ url: "/coolant.png", alt: "Tapa Radiador 1.1 Bar", isMain: true }],
+    image: "/coolant.webp",
+    images: [{ url: "/coolant.webp", alt: "Tapa Radiador 1.1 Bar", isMain: true }],
     inStock: true,
     stock: 50,
   },
@@ -1070,7 +1112,16 @@ const allProducts = [
 const curatedCatalog = [
   ...allProducts,
   ...priorityCatalogProducts,
-  ...partmoFilterProducts,
+  ...catalogoProveedoresProducts,
+  ...frenosSuspensionProducts,
+  ...brandPanelProducts,
+  ...kiaProducts,
+  ...electricalProducts,
+  ...phcValeoProducts,
+  ...inventoryLineProducts,
+  ...gtiProducts,
+  ...motorcraftProducts,
+  ...automatedCatalogProducts,
 ];
 
 const normalizeInventoryCode = (value) => String(value || "")
@@ -1088,12 +1139,13 @@ for (const product of curatedCatalog) {
   if (key && !curatedByCode.has(key)) curatedByCode.set(key, product);
 }
 
-export const products = inventoryProducts.map((inventoryProduct) => {
+const inventoryBackedProducts = inventoryProducts.map((inventoryProduct) => {
   const curated = curatedByCode.get(normalizeInventoryCode(inventoryProduct.sku));
   if (!curated) return inventoryProduct;
 
   return {
     ...inventoryProduct,
+    slug: curated.slug || inventoryProduct.slug,
     name: curated.name || inventoryProduct.name,
     brand: curated.brand || inventoryProduct.brand,
     shortDesc: curated.shortDesc || inventoryProduct.shortDesc,
@@ -1101,6 +1153,8 @@ export const products = inventoryProducts.map((inventoryProduct) => {
     image: curated.image || inventoryProduct.image,
     images: curated.images?.length ? curated.images : inventoryProduct.images,
     imageStatus: curated.imageStatus || "inventory-matched-editorial",
+    referenceType: curated.referenceType || inventoryProduct.referenceType,
+    fitmentStatus: curated.fitmentStatus || inventoryProduct.fitmentStatus,
     fitments: curated.fitments?.length ? curated.fitments : inventoryProduct.fitments,
     fitmentSummary: curated.fitmentSummary || inventoryProduct.fitmentSummary,
     fitmentRequirements: curated.fitmentRequirements || inventoryProduct.fitmentRequirements,
@@ -1113,6 +1167,100 @@ export const products = inventoryProducts.map((inventoryProduct) => {
   };
 });
 
+// El inventario sigue siendo la fuente general de publicación. Estas fichas
+// fueron solicitadas expresamente después del cierre del PDF y se publican
+// solo para cotización, sin inventar precio, existencia ni compatibilidad.
+const approvedPostInventoryCatalogIds = new Set([
+  "verke-amortiguadores-delanteros-honda-crv-2002-2006",
+  "verke-kit-amortiguadores-chevrolet-tracker-familia",
+  "tnk-nc050a-terminal-nissan-qashqai",
+  "tnk-vx9810-axial-volkswagen-gol-saveiro",
+  "tnk-va7021-rotula-superior-volkswagen-amarok",
+  "tnk-tol4882-link-toyota-hilux-fortuner",
+  "tnk-tol0030-link-trasero-toyota-4runner-prado-fj",
+  "tnk-cvl829-link-chevrolet-spark-gt",
+  "tnk-cvl8051-link-chevrolet-luv-dmax-isuzu-kb",
+  "tnk-cvl067-link-chevrolet-grand-vitara",
+  "tnk-tkx109-axial-kia-picanto-all-new",
+  "tnk-thx049-axial-kia-picanto-ion",
+  "tnk-thc074-terminal-derecho-kia-picanto-ion",
+  "skf-kit-cubo-rodamiento-abs-familia",
+  "skf-kit-distribucion-vkma-familia",
+  "skf-kit-distribucion-bomba-agua-vkmc-familia",
+  "skf-kit-homocinetica-vkjc-familia",
+  "skf-componentes-suspension-direccion-vkds-familia",
+  "skf-vkba3548-bocamaza-trasera-vw-new-gol-polo",
+    "skf-br3-rodamiento-rodillos-conicos",
+  "skf-32005-xq-rodamiento-conico",
+  "skf-vkms-04106-kit-distribucion",
+  "monroe-kit-amortiguadores-delanteros-chevrolet-spark-2008-2010",
+  ]);
+
+const approvedPostInventoryProducts = curatedCatalog.filter(
+  (product) => (approvedPostInventoryCatalogIds.has(product.id) || product.catalogApproval === "explicit-batch")
+    && !inventoryBackedProducts.some((inventoryProduct) => (
+      inventoryProduct.id === product.id
+      || inventoryProduct.slug === product.slug
+      || normalizeInventoryCode(inventoryProduct.sku) === normalizeInventoryCode(product.sku)
+    )),
+);
+
+// Una referencia comercial debe producir una sola tarjeta. El inventario
+// histórico contiene la misma referencia escrita con y sin guiones, espacios
+// o mayúsculas distintas; publicarlas por separado duplica productos y rompe
+// la navegación por slug. Conservamos la primera ficha (orden del inventario),
+// usamos el mayor stock informado para no duplicar existencias y unimos la
+// galería sin repetir imágenes.
+const consolidateCatalogProducts = (catalog) => {
+  const byReference = new Map();
+
+  for (const product of catalog) {
+    const normalizedSku = normalizeInventoryCode(product.sku);
+    const key = normalizedSku
+      ? `sku:${normalizedSku}`
+      : `record:${product.id || product.slug}`;
+    const existing = byReference.get(key);
+
+    if (!existing) {
+      byReference.set(key, { ...product });
+      continue;
+    }
+
+    const images = [...(existing.images || []), ...(product.images || [])]
+      .filter((image, index, list) => image?.url && list.findIndex((item) => item?.url === image.url) === index);
+    const stock = Math.max(Number(existing.stock) || 0, Number(product.stock) || 0);
+
+    byReference.set(key, {
+      ...existing,
+      images: images.length ? images : existing.images,
+      stock,
+      inStock: stock > 0,
+    });
+  }
+
+  const seenSlugs = new Set();
+  return [...byReference.values()].map((product) => {
+    const baseSlug = product.slug || product.id;
+    if (!seenSlugs.has(baseSlug)) {
+      seenSlugs.add(baseSlug);
+      return product;
+    }
+
+    const skuSuffix = normalizeInventoryCode(product.sku).toLowerCase();
+    let uniqueSlug = `${baseSlug}-${skuSuffix || "referencia"}`;
+    let counter = 2;
+    while (seenSlugs.has(uniqueSlug)) uniqueSlug = `${baseSlug}-${skuSuffix || "referencia"}-${counter++}`;
+    seenSlugs.add(uniqueSlug);
+    return { ...product, slug: uniqueSlug };
+  });
+};
+
+export const products = consolidateCatalogProducts([
+  ...inventoryBackedProducts,
+  ...approvedPostInventoryProducts,
+]);
+
 export function getProductById(id) {
-  return products.find(p => p.id === id || p.slug === id);
+  const norm = normalizeInventoryCode(id);
+  return products.find(p => p.id === id || p.slug === id || p.sku === id || (norm && normalizeInventoryCode(p.sku) === norm) || (norm && normalizeInventoryCode(p.id) === norm));
 }

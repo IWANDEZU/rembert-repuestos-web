@@ -2,9 +2,17 @@ import { getServerSession } from "@/lib/auth";
 import { NextResponse } from "next/server";
 import { SiigoApiClient, AlegraApiClient, POS_PROVIDERS } from "@/lib/posIntegrations";
 import { enforceRateLimit } from "@/lib/security/rateLimit";
+import { createHash, timingSafeEqual } from "node:crypto";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
+
+const secretsMatch = (provided, expected) => {
+  if (!provided || !expected) return false;
+  const left = createHash("sha256").update(provided).digest();
+  const right = createHash("sha256").update(expected).digest();
+  return timingSafeEqual(left, right);
+};
 
 /**
  * Endpoint para disparar sincronización activa hacia el POS (Siigo / Alegra)
@@ -16,7 +24,7 @@ export async function POST(request) {
   try {
     const session = await getServerSession();
     const authHeader = request.headers.get("authorization");
-    const secretQuery = new URL(request.url).searchParams.get("secret");
+    const posApiKey = request.headers.get("x-pos-key");
     const expectedSecret = process.env.POS_SYNC_SECRET;
 
     if (!expectedSecret && session?.user?.role !== "ADMIN") {
@@ -25,7 +33,7 @@ export async function POST(request) {
 
     const isAuthorized = 
       session?.user?.role === "ADMIN" || 
-      (expectedSecret && (secretQuery === expectedSecret || authHeader === `Bearer ${expectedSecret}`));
+      secretsMatch(posApiKey || authHeader?.replace(/^Bearer\s+/i, ""), expectedSecret);
 
     if (!isAuthorized) {
       return NextResponse.json({ error: "No autorizado para sincronizar con POS" }, { status: 401 });
@@ -47,9 +55,9 @@ export async function POST(request) {
     }
 
     // Reenviar al webhook interno para procesar y persistir en la BD
-    const webhookRes = await fetch(`${new URL(request.url).origin}/api/pos/webhook?secret=${expectedSecret}`, {
+    const webhookRes = await fetch(`${new URL(request.url).origin}/api/pos/webhook`, {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
+      headers: { "Content-Type": "application/json", "x-pos-key": expectedSecret },
       body: JSON.stringify({ items: syncedItems, provider }),
     });
 
@@ -58,7 +66,7 @@ export async function POST(request) {
   } catch (error) {
     console.error("Error disparando sincronización POS:", error);
     return NextResponse.json(
-      { error: "Error en sincronización con POS", message: error.message },
+      { error: "Error en sincronización con POS" },
       { status: 500 }
     );
   }

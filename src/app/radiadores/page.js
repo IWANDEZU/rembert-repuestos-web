@@ -10,7 +10,7 @@ export const metadata = {
     title: "Radiadores Chevrolet y Renault | REMBERT",
     description: "Radiadores para Chevrolet y Renault. Alta eficiencia térmica en Barrancabermeja.",
     url: `${siteUrl}/radiadores`,
-    images: [{ url: "/radiador-banner.jpg", width: 1200, height: 630, alt: "Radiadores REMBERT" }],
+    images: [{ url: "/radiador-banner.webp", width: 1200, height: 630, alt: "Radiadores REMBERT" }],
   },
 };
 
@@ -20,7 +20,7 @@ const radiatorCategories = [
     title: "Radiadores para Chevrolet",
     badge: "Especialidad Chevrolet",
     description: "Radiadores de aluminio para Sail, Onix, Tracker, Spark GT, Aveo, Captiva, Cruze y Optra. Ajuste exacto OEM.",
-    image: "/radiador-auto.jpg",
+    image: "/radiador-auto.webp",
     specs: ["Aluminio de alta transferencia", "Tanques de polímero reforzado", "Ajuste OEM directo", "Garantía térmica"],
     whatsappText: "Hola, me interesa cotizar un Radiador para Chevrolet.",
   },
@@ -29,7 +29,7 @@ const radiatorCategories = [
     title: "Radiadores para Renault",
     badge: "Especialidad Renault",
     description: "Radiadores de alto rendimiento para Duster, Sandero, Logan, Stepway, Kwid, Megane, Clio y Symbol.",
-    image: "/radiador-banner.jpg",
+    image: "/radiador-banner.webp",
     specs: ["Resistencia a altas presiones", "Tomas y conectores OEM", "Enfriamiento garantizado", "Durabilidad superior"],
     whatsappText: "Hola, necesito cotizar un Radiador para Renault.",
   },
@@ -38,7 +38,7 @@ const radiatorCategories = [
     title: "Enfriadores y Calefacción",
     badge: "Sistema Térmico",
     description: "Radiadores de calefacción interior, enfriadores de aceite y post-enfriadores para Chevrolet y Renault.",
-    image: "/radiador-auto.jpg",
+    image: "/radiador-auto.webp",
     specs: ["Calefacción interior", "Enfriamiento de aceite", "Protección del motor", "Rendimiento óptimo"],
     whatsappText: "Hola, requiero cotizar un radiador de calefacción o enfriador.",
   },
@@ -47,7 +47,7 @@ const radiatorCategories = [
     title: "Tapas, Termostatos y Refrigerante ACDelco",
     badge: "Accesorios Críticos",
     description: "Refrigerante original ACDelco DEX-COOL 50/50 OAT, tapas presurizadas (0.9, 1.1 y 1.4 Bar) y termostatos.",
-    image: "/acdelco-dex-cool-50-50-galon.png",
+    image: "/acdelco-dex-cool-50-50-galon.webp",
     specs: ["ACDelco DEX-COOL 50/50 OAT", "Tapas presurizadas calibradas", "Termostatos OEM", "Protección anticorrosiva"],
     whatsappText: "Hola, deseo cotizar el Refrigerante ACDelco DEX-COOL 50/50 o tapas de radiador.",
   },
@@ -208,7 +208,7 @@ export default function RadiadoresPage() {
             }}
           >
             <Image
-              src="/radiador-banner.jpg"
+              src="/radiador-banner.webp"
               alt="Radiador automotriz de aluminio Rembert Repuestos"
               fill
               sizes="(max-width: 768px) 100vw, 50vw"

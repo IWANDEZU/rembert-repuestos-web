@@ -3,6 +3,30 @@ import { NextResponse } from "next/server";
 import { prisma } from "@/lib/prisma";
 import { enforceRateLimit } from "@/lib/security/rateLimit";
 
+export async function GET(req) {
+  const limited = await enforceRateLimit(req, { scope: "favorites-read", limit: 60, windowMs: 60_000 });
+  if (limited) return limited;
+
+  try {
+    const session = await getServerSession();
+    if (!session?.user?.id) {
+      return NextResponse.json({ productIds: [] }, { status: 401 });
+    }
+
+    const favorites = await prisma.favorite.findMany({
+      where: { userId: session.user.id },
+      select: { productId: true },
+    });
+    return NextResponse.json(
+      { productIds: favorites.map((favorite) => favorite.productId) },
+      { headers: { "Cache-Control": "private, no-store" } },
+    );
+  } catch (error) {
+    console.error("Error al consultar favoritos:", error);
+    return NextResponse.json({ productIds: [] }, { status: 500 });
+  }
+}
+
 export async function POST(req) {
   const limited = await enforceRateLimit(req, { scope: "favorites-write", limit: 30, windowMs: 60_000 });
   if (limited) return limited;

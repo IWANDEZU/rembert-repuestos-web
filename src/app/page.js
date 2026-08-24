@@ -1,14 +1,14 @@
 import Link from "next/link";
 import Image from "next/image";
 import { products as fallbackProducts } from "@/lib/products";
-import { prisma } from "@/lib/prisma";
 import ProductCard from "@/components/ProductCard";
 
-export const dynamic = "force-dynamic";
+export const revalidate = false;
 
 const brandLogos = [
-  ["Bosch", "/logos/bosch.svg"], ["WIX Filters", "/logos/wix-filters.svg"], ["Partmo", "/logos/partmo-real.png"],
-  ["Mazda", "/logos/autos/mazda.svg"], ["Coéxito", "/03_coexito_logo_oficial.png"], ["Chevrolet", "/logos/autos/chevrolet.svg"],
+  ["Verke", "/logos/verke.svg"], ["TNK", "/logos/tnk-oficial.png"], ["Bosch", "/logos/bosch.svg"], ["WIX Filters", "/logos/wix-filters.svg"], ["MANN-FILTER", "/11_mann_filter_logo_oficial.png"],
+  ["Gabriel", "/logos/gabriel-real.png"], ["Incolbest", "/logos/incolbest-real.png"], ["Safety Auto Parts", "/logos/safety-auto-parts.png"], ["Mazda", "/logos/autos/mazda.svg"],
+  ["Coéxito", "/03_coexito_logo_oficial.png"], ["Chevrolet", "/logos/autos/chevrolet.svg"],
   ["Renault", "/logos/autos/renault.svg"], ["Toyota", "/logos/autos/toyota.svg"], ["Kia", "/logos/autos/kia.svg"],
   ["Hyundai", "/logos/autos/hyundai.svg"], ["Ford", "/logos/autos/ford.svg"], ["Nissan", "/logos/autos/nissan.svg"],
   ["Volkswagen", "/logos/autos/volkswagen.svg"], ["Mitsubishi", "/logos/autos/mitsubishi.svg"], ["Honda", "/logos/autos/honda.svg"],
@@ -44,23 +44,8 @@ const popularCarBrands = [
   badge,
 }));
 
-export default async function Home() {
-  let featuredProducts = [];
-  try {
-    const dbProducts = await prisma.product.findMany({
-      where: { isActive: true },
-      include: {
-        category: true,
-        brand: true,
-        images: true,
-      },
-      orderBy: { createdAt: "desc" },
-      take: 8,
-    });
-    featuredProducts = dbProducts.length > 0 ? dbProducts : fallbackProducts;
-  } catch (err) {
-    featuredProducts = fallbackProducts;
-  }
+export default function Home() {
+  const featuredProducts = fallbackProducts.slice(0, 12);
 
   return (
     <main>
@@ -74,12 +59,12 @@ export default async function Home() {
         overflow: 'hidden'
       }}>
         <Image
-          src="/hero-rembert-fachada-v2.jpg"
+          src="/hero-rembert-fachada-v2.webp"
           alt="Fachada Sede Principal Rembert Repuestos BCA - Barrancabermeja"
           fill
-          priority
+          preload
           sizes="100vw"
-          quality={85}
+          quality={80}
           style={{ objectFit: 'cover', objectPosition: 'center 35%', zIndex: 0 }}
         />
         <div aria-hidden="true" style={{ position: 'absolute', inset: 0, zIndex: 1, background: 'linear-gradient(90deg, rgba(10,10,10,0.92) 0%, rgba(10,10,10,0.72) 55%, rgba(10,10,10,0.45) 100%)' }} />
@@ -147,7 +132,7 @@ export default async function Home() {
                 transition: 'var(--transition)'
               }} className="hover-card">
                 <div style={{ height: '180px', borderRadius: '8px', marginBottom: '1rem', overflow: 'hidden', position: 'relative', background: '#f8f8f8', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                  <Image src="/catalogo-siliconas-automotrices/victor-reinz-reinzosil-70ml-original.png" alt="Mantenimiento automotriz con sellante Victor Reinz" fill sizes="(max-width: 700px) 100vw, 25vw" quality={85} style={{ objectFit: 'contain', padding: '6px' }} />
+                  <Image src="/catalogo-siliconas-automotrices/victor-reinz-reinzosil-70ml-original.webp" alt="Mantenimiento automotriz con sellante Victor Reinz" fill sizes="(max-width: 700px) 100vw, 25vw" quality={80} style={{ objectFit: 'contain', padding: '6px' }} />
                 </div>
                 <strong style={{ fontSize: '1.15rem', display: 'block' }}>Mantenimiento automotriz</strong>
               </div>
@@ -166,7 +151,7 @@ export default async function Home() {
                 transition: 'var(--transition)'
               }} className="hover-card">
                 <div style={{ height: '180px', borderRadius: '8px', marginBottom: '1rem', overflow: 'hidden', position: 'relative' }}>
-                  <Image src="/filtro-aceite.jpg" alt="Filtros de Motor" fill sizes="(max-width: 700px) 100vw, 25vw" quality={75} style={{ objectFit: 'cover' }} />
+                  <Image src="/filtro-aceite.webp" alt="Filtros de Motor" fill sizes="(max-width: 700px) 100vw, 25vw" quality={75} style={{ objectFit: 'cover' }} />
                 </div>
                 <strong style={{ fontSize: '1.15rem', whiteSpace: 'nowrap', display: 'block' }}>Filtros</strong>
               </div>
@@ -185,7 +170,7 @@ export default async function Home() {
                 transition: 'var(--transition)'
               }} className="hover-card">
                 <div style={{ height: '180px', borderRadius: '8px', marginBottom: '1rem', overflow: 'hidden', position: 'relative' }}>
-                  <Image src="/catalogo-suspensiones/suspensiones-camionetas-referencias-populares.webp" alt="Suspensiones para camionetas de referencias populares" fill sizes="(max-width: 700px) 100vw, 25vw" quality={82} style={{ objectFit: 'cover' }} />
+                  <Image src="/catalogo-suspensiones/suspensiones-camionetas-referencias-populares.webp" alt="Suspensiones para camionetas de referencias populares" fill sizes="(max-width: 700px) 100vw, 25vw" quality={80} style={{ objectFit: 'cover' }} />
                 </div>
                 <strong style={{ fontSize: '1.15rem', whiteSpace: 'nowrap', display: 'block' }}>Frenos y Suspensión</strong>
               </div>
@@ -204,7 +189,7 @@ export default async function Home() {
                 transition: 'var(--transition)'
               }} className="hover-card">
                 <div style={{ height: '180px', borderRadius: '8px', marginBottom: '1rem', overflow: 'hidden', position: 'relative' }}>
-                  <Image src="/radiador-auto.jpg" alt="Radiadores y Sistema de Enfriamiento" fill sizes="(max-width: 700px) 100vw, 25vw" quality={80} style={{ objectFit: 'cover' }} />
+                  <Image src="/radiador-auto.webp" alt="Radiadores y Sistema de Enfriamiento" fill sizes="(max-width: 700px) 100vw, 25vw" quality={80} style={{ objectFit: 'cover' }} />
                 </div>
                 <strong style={{ fontSize: '1.15rem', color: 'var(--primary-dark)', whiteSpace: 'nowrap', display: 'block' }}>Radiadores</strong>
               </div>
@@ -223,7 +208,7 @@ export default async function Home() {
                 transition: 'var(--transition)'
               }} className="hover-card">
                 <div style={{ height: '180px', borderRadius: '8px', marginBottom: '1rem', overflow: 'hidden', background: '#e0e0e0', display: 'flex', alignItems: 'center', justifyContent: 'center', position: 'relative' }}>
-                  <Image src="/transmision.png" alt="Cajas y transmisiones automotrices" fill sizes="(max-width: 700px) 100vw, 25vw" quality={70} style={{ objectFit: 'contain', padding: '5%' }} />
+                  <Image src="/transmision.webp" alt="Cajas y transmisiones automotrices" fill sizes="(max-width: 700px) 100vw, 25vw" quality={70} style={{ objectFit: 'contain', padding: '5%' }} />
                 </div>
                 <strong style={{ fontSize: '1.15rem', whiteSpace: 'nowrap', display: 'block' }}>Transmisiones</strong>
               </div>
@@ -260,7 +245,7 @@ export default async function Home() {
             <Link href="/catalogo?category=motor-y-distribucion" style={{ textDecoration: 'none', color: 'inherit' }}>
               <div className="hover-card" style={{ background: '#fff', borderRadius: 'var(--border-radius)', padding: '1.5rem', textAlign: 'center', boxShadow: 'var(--box-shadow-light)', border: '1px solid transparent', transition: 'var(--transition)' }}>
                 <div style={{ height: '180px', borderRadius: '8px', marginBottom: '1rem', overflow: 'hidden', position: 'relative', background: '#f8f8f8' }}>
-                  <Image src="/catalogo-nuevas-lineas/gates-kit-distribucion-bomba-agua-catalogo.png" alt="Kit de distribución Gates PowerGrip" fill sizes="(max-width: 700px) 100vw, 25vw" quality={80} style={{ objectFit: 'contain', padding: '6px' }} />
+                  <Image src="/catalogo-nuevas-lineas/gates-kit-distribucion-bomba-agua-catalogo.webp" alt="Kit de distribución Gates PowerGrip" fill sizes="(max-width: 700px) 100vw, 25vw" quality={80} style={{ objectFit: 'contain', padding: '6px' }} />
                 </div>
                 <strong style={{ fontSize: '1.15rem', display: 'block' }}>Motor y distribución</strong>
               </div>
@@ -269,7 +254,7 @@ export default async function Home() {
             <Link href="/catalogo?category=embrague" style={{ textDecoration: 'none', color: 'inherit' }}>
               <div className="hover-card" style={{ background: '#fff', borderRadius: 'var(--border-radius)', padding: '1.5rem', textAlign: 'center', boxShadow: 'var(--box-shadow-light)', border: '1px solid transparent', transition: 'var(--transition)' }}>
                 <div style={{ height: '180px', borderRadius: '8px', marginBottom: '1rem', overflow: 'hidden', position: 'relative', background: '#f8f8f8' }}>
-                  <Image src="/catalogo-nuevas-lineas/luk-repset-kit-embrague-catalogo.png" alt="Kit de embrague LuK RepSet" fill sizes="(max-width: 700px) 100vw, 25vw" quality={80} style={{ objectFit: 'contain', padding: '6px' }} />
+                  <Image src="/catalogo-nuevas-lineas/luk-repset-kit-embrague-catalogo.webp" alt="Kit de embrague LuK RepSet" fill sizes="(max-width: 700px) 100vw, 25vw" quality={80} style={{ objectFit: 'contain', padding: '6px' }} />
                 </div>
                 <strong style={{ fontSize: '1.15rem', display: 'block' }}>Embragues y clutch</strong>
               </div>
@@ -278,7 +263,7 @@ export default async function Home() {
             <Link href="/catalogo?category=rodamientos-y-traccion" style={{ textDecoration: 'none', color: 'inherit' }}>
               <div className="hover-card" style={{ background: '#fff', borderRadius: 'var(--border-radius)', padding: '1.5rem', textAlign: 'center', boxShadow: 'var(--box-shadow-light)', border: '1px solid transparent', transition: 'var(--transition)' }}>
                 <div style={{ height: '180px', borderRadius: '8px', marginBottom: '1rem', overflow: 'hidden', position: 'relative', background: '#f8f8f8' }}>
-                  <Image src="/catalogo-nuevas-lineas/skf-kit-rodamiento-catalogo.png" alt="Kit de rodamiento de rueda SKF" fill sizes="(max-width: 700px) 100vw, 25vw" quality={80} style={{ objectFit: 'contain', padding: '6px' }} />
+                  <Image src="/catalogo-nuevas-lineas/skf-kit-rodamiento-catalogo.webp" alt="Kit de rodamiento de rueda SKF" fill sizes="(max-width: 700px) 100vw, 25vw" quality={80} style={{ objectFit: 'contain', padding: '6px' }} />
                 </div>
                 <strong style={{ fontSize: '1.15rem', display: 'block' }}>Rodamientos y tracción</strong>
               </div>
@@ -426,7 +411,7 @@ export default async function Home() {
                     Ver Repuestos
                   </Link>
                   <a 
-                    href={`https://wa.me/573108737354?text=Hola%2C%20estoy%20buscando%20repuestos%20para%20veh%C3%ADculo%20${encodeURIComponent(brand.name)}`}
+                    href={`https://wa.me/573102420490?text=Hola%2C%20estoy%20buscando%20repuestos%20para%20veh%C3%ADculo%20${encodeURIComponent(brand.name)}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     style={{
@@ -453,7 +438,7 @@ export default async function Home() {
               ¿Tu vehículo no aparece en la lista? Tenemos stock para marcas europeas, asiáticas y americanas.
             </p>
             <a 
-              href="https://wa.me/573108737354?text=Hola%2C%20necesito%20cotizar%20repuestos%20para%20mi%20veh%C3%ADculo." 
+              href="https://wa.me/573102420490?text=Hola%2C%20necesito%20cotizar%20repuestos%20para%20mi%20veh%C3%ADculo."
               target="_blank" 
               rel="noopener noreferrer" 
               className="btn btn--primary"
@@ -520,7 +505,7 @@ export default async function Home() {
 
             <div style={{ position: 'relative', borderRadius: '16px', overflow: 'hidden', border: '2px solid #333', boxShadow: '0 12px 35px rgba(0,0,0,0.6)', height: '360px' }}>
               <Image 
-                src="/radiador-banner.jpg" 
+                src="/radiador-banner.webp"
                 alt="Radiadores automotrices de alta eficiencia térmica" 
                 fill 
                 sizes="(max-width: 768px) 100vw, 50vw" 
@@ -539,7 +524,7 @@ export default async function Home() {
             <Link href="/catalogo" className="text-primary" style={{ fontWeight: 'bold' }}>VER TODOS →</Link>
           </div>
           
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(220px, 1fr))', gap: '1.5rem' }}>
+          <div className="catalog-grid">
             {featuredProducts.map((p) => (
               <ProductCard key={p.id} product={p} />
             ))}
@@ -641,7 +626,7 @@ export default async function Home() {
             {/* Mapa Interactivo Google Maps */}
             <div style={{ borderRadius: '16px', overflow: 'hidden', border: '2px solid #333', boxShadow: '0 12px 35px rgba(0,0,0,0.5)', height: '420px', minHeight: '380px' }}>
               <iframe 
-                src="https://maps.google.com/maps?q=Rembeat,+Tv.+29,+Barrancabermeja,+Santander&t=&z=16&ie=UTF8&iwloc=&output=embed" 
+                src="https://maps.google.com/maps?q=Rembert,+Tv.+29,+Barrancabermeja,+Santander&t=&z=16&ie=UTF8&iwloc=&output=embed"
                 width="100%" 
                 height="100%" 
                 style={{ border: 0, display: 'block' }} 

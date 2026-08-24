@@ -11,7 +11,7 @@ import WhatsAppIcon from "@/components/WhatsAppIcon";
 import ProductCompatibilityPanel from "@/components/ProductCompatibilityPanel";
 import { getProductReferenceLabel } from "@/lib/productCompatibility";
 
-export default function ProductCard({ product, onExpand, isFavorite = false }) {
+export default function ProductCard({ product, onExpand, isFavorite = false, imagePriority = false }) {
   const { addToCart } = useCart();
   const [added, setAdded] = useState(false);
   const [favorite, setFavorite] = useState(isFavorite);
@@ -33,19 +33,18 @@ export default function ProductCard({ product, onExpand, isFavorite = false }) {
     setFavorite(!favorite);
 
     try {
-      if (prevFavorite) {
-        await fetch("/api/favorites", {
+      const response = prevFavorite
+        ? await fetch("/api/favorites", {
           method: "DELETE",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ productId: product.id }),
-        });
-      } else {
-        await fetch("/api/favorites", {
+        })
+        : await fetch("/api/favorites", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ productId: product.id }),
-        });
-      }
+      });
+      if (!response.ok) throw new Error("No fue posible actualizar el favorito");
     } catch (error) {
       console.error("Error al actualizar favorito", error);
       setFavorite(prevFavorite);
@@ -70,6 +69,7 @@ export default function ProductCard({ product, onExpand, isFavorite = false }) {
         category: product.category?.name || product.category || "Repuestos automotrices",
         sku: product.sku || "",
         slug: product.slug || product.id,
+        stock: product.stock,
       },
       1
     );
@@ -91,33 +91,8 @@ export default function ProductCard({ product, onExpand, isFavorite = false }) {
   };
 
   return (
-    <article
-      className="product-card hover-card"
-      style={{
-        background: "#FFFFFF",
-        border: "1px solid #E2E8F0",
-        borderRadius: "14px",
-        padding: "1rem",
-        display: "flex",
-        flexDirection: "column",
-        height: "100%",
-        boxShadow: "0 2px 8px rgba(0,0,0,0.04)",
-        transition: "transform 0.2s ease, box-shadow 0.2s ease",
-        position: "relative",
-      }}
-    >
-      <div
-        className="product-card__media"
-        style={{
-          position: "relative",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          height: "185px",
-          minHeight: "185px",
-          overflow: "hidden",
-        }}
-      >
+    <article className="product-card hover-card">
+      <div className="product-card__media">
         <a
           href={`/producto/${product.slug || product.id}`}
           className="product-card__media-link"
@@ -130,7 +105,8 @@ export default function ProductCard({ product, onExpand, isFavorite = false }) {
             fill
             sizes="(max-width: 640px) 100vw, (max-width: 1100px) 33vw, 260px"
             unoptimized={imageUrl.startsWith("/api/imagen-referencia")}
-            loading="lazy"
+            loading={imagePriority ? "eager" : "lazy"}
+            fetchPriority={imagePriority ? "high" : "auto"}
             decoding="async"
             className="product-card__image"
             style={{ objectFit: "contain", objectPosition: "center" }}
@@ -156,7 +132,7 @@ export default function ProductCard({ product, onExpand, isFavorite = false }) {
             alignItems: "center",
             justifyContent: "center",
             cursor: "pointer",
-            boxShadow: "0 2px 6px rgba(0,0,0,0.1)",
+            boxShadow: "0 2px 6px rgba(0,0,0,0.15)",
             zIndex: 3,
             transition: "transform 0.2s ease",
           }}
@@ -166,35 +142,41 @@ export default function ProductCard({ product, onExpand, isFavorite = false }) {
           </span>
         </button>
 
-        <a
-          href={`/producto/${product.slug || product.id}`}
+        <button
+          type="button"
+          onClick={handleViewExpanded}
           style={{
             position: "absolute",
             bottom: "8px",
             right: "8px",
-            background: "rgba(0, 0, 0, 0.9)",
-            color: "#FFF",
+            background: "rgba(0, 0, 0, 0.88)",
+            color: "var(--primary-color)",
             borderRadius: "999px",
-            padding: "3px 8px",
+            padding: "3px 9px",
             fontSize: "0.68rem",
             fontWeight: "bold",
-            textDecoration: "none",
+            border: "1px solid rgba(255,215,0,0.35)",
+            cursor: "pointer",
             zIndex: 2,
-            border: "1px solid rgba(255,255,255,0.2)",
           }}
         >
-          Ficha técnica
-        </a>
+          🔍 Ficha
+        </button>
       </div>
 
-      <div style={{ margin: "0.75rem 0 0.5rem" }}>
+      <div style={{ margin: "0.5rem 0 0.35rem" }}>
         <h3
           style={{
-            fontSize: "0.92rem",
+            fontSize: "0.88rem",
             fontWeight: "700",
-            color: "#1E293B",
-            lineHeight: "1.35",
-            marginBottom: "0.35rem",
+            color: "#FFFFFF",
+            lineHeight: "1.3",
+            marginBottom: "0.25rem",
+            display: "-webkit-box",
+            WebkitLineClamp: 2,
+            WebkitBoxOrient: "vertical",
+            overflow: "hidden",
+            minHeight: "2.4em",
           }}
         >
           <a
@@ -208,34 +190,34 @@ export default function ProductCard({ product, onExpand, isFavorite = false }) {
         {product.brand && (
           <span
             style={{
-              fontSize: "0.78rem",
+              fontSize: "0.74rem",
               fontWeight: "700",
-              color: "#64748B",
+              color: "#94A3B8",
               display: "block",
               textTransform: "uppercase",
               letterSpacing: "0.025em",
-              marginBottom: "0.25rem",
+              marginBottom: "0.2rem",
             }}
           >
             {typeof product.brand === "string" ? product.brand : product.brand.name}
           </span>
         )}
 
-        <div style={{ marginTop: "0.35rem" }}>
-          <ProductCompatibilityPanel product={product} compact />
+        <div style={{ marginTop: "0.25rem" }}>
+          <ProductCompatibilityPanel product={product} compact dark />
         </div>
 
         {product.sku && (
-          <div style={{ marginTop: "0.35rem" }}>
+          <div style={{ marginTop: "0.3rem" }}>
             <span
               style={{
-                fontSize: "0.72rem",
+                fontSize: "0.7rem",
                 fontFamily: "ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace",
                 fontWeight: "700",
-                color: "#78350F",
-                background: "#FEF3C7",
-                border: "1px solid #FDE68A",
-                padding: "2px 7px",
+                color: "#FFD700",
+                background: "rgba(255, 215, 0, 0.1)",
+                border: "1px solid rgba(255, 215, 0, 0.3)",
+                padding: "2px 6px",
                 borderRadius: "4px",
                 display: "inline-block",
                 letterSpacing: "0.02em",
@@ -247,70 +229,51 @@ export default function ProductCard({ product, onExpand, isFavorite = false }) {
         )}
       </div>
 
-      <div style={{ marginTop: "auto", paddingTop: "0.5rem" }}>
-        <p style={{ fontSize: "1.25rem", fontWeight: "800", color: "#111111", marginBottom: "0.65rem" }}>
+      <div style={{ marginTop: "auto", paddingTop: "0.4rem" }}>
+        <p style={{ fontSize: "1.18rem", fontWeight: "800", color: "#FFFFFF", marginBottom: "0.5rem" }}>
           {product.price > 0 ? (
             <span>
-              <span style={{ color: "#B8860B", fontSize: "1rem", marginRight: "2px" }}>$</span>
+              <span style={{ color: "#FFD700", fontSize: "0.95rem", marginRight: "2px" }}>$</span>
               {Number(product.price).toLocaleString("es-CO")}
             </span>
           ) : (
-            <span style={{ color: "#B8860B", fontSize: "0.95rem" }}>Precio bajo cotización</span>
+            <span style={{ color: "#FFD700", fontSize: "0.88rem" }}>Precio bajo cotización</span>
           )}
         </p>
 
         <div style={{ display: "flex", flexDirection: "column", gap: "6px" }}>
-          <button
-            type="button"
-            onClick={handleViewExpanded}
-            style={{
-              padding: "0.5rem 0.6rem",
-              fontSize: "0.8rem",
-              fontWeight: "700",
-              width: "100%",
-              cursor: "pointer",
-              border: "1px solid #E2E8F0",
-              background: "#F1F5F9",
-              color: "#334155",
-              borderRadius: "8px",
-              transition: "all 0.2s ease",
-            }}
-          >
-            🔍 Vista ampliada
-          </button>
-
           {canBuy ? (
             <button
               type="button"
               onClick={handleAddToCart}
               className="btn-add-to-cart"
               style={{
-                padding: "0.65rem 0.8rem",
-                fontSize: "0.85rem",
+                padding: "0.52rem 0.75rem",
+                fontSize: "0.82rem",
                 fontWeight: "800",
                 width: "100%",
-                borderRadius: "8px",
+                borderRadius: "7px",
                 border: added ? "1.5px solid #16A34A" : "1.5px solid #FFD700",
-                background: added ? "#16A34A" : "#111111",
+                background: added ? "#16A34A" : "#0A0A0A",
                 color: added ? "#FFFFFF" : "#FFD700",
                 display: "inline-flex",
                 alignItems: "center",
                 justifyContent: "center",
-                gap: "0.45rem",
+                gap: "0.4rem",
                 cursor: "pointer",
-                boxShadow: added ? "0 0 10px rgba(22, 163, 74, 0.5)" : "0 2px 8px rgba(0, 0, 0, 0.4)",
-                transition: "all 0.22s ease",
+                boxShadow: added ? "0 0 10px rgba(22, 163, 74, 0.5)" : "0 2px 8px rgba(0, 0, 0, 0.6)",
+                transition: "all 0.2s ease",
               }}
             >
               {added ? (
-                <><span>✓</span><span>¡Agregado al carrito!</span></>
+                <><span>✓</span><span>¡Agregado!</span></>
               ) : (
-                <><span style={{ color: "#FFD700", fontSize: "1rem" }}>🛒</span><span>Añadir al carrito</span></>
+                <><span style={{ color: "#FFD700", fontSize: "0.95rem" }}>🛒</span><span>Añadir al carrito</span></>
               )}
             </button>
           ) : (
-            <div className="product-card__quote-notice">
-              Validamos referencia, precio y existencia antes de vender
+            <div className="product-card__quote-notice product-card__quote-notice--dark" style={{ padding: "0.45rem 0.6rem", fontSize: "0.74rem" }}>
+              Validamos referencia y precio antes de vender
             </div>
           )}
 
@@ -320,8 +283,8 @@ export default function ProductCard({ product, onExpand, isFavorite = false }) {
             rel="noopener noreferrer"
             className="btn product-card__whatsapp-quote"
             style={{
-              padding: "0.55rem 0.8rem",
-              fontSize: "0.82rem",
+              padding: "0.48rem 0.75rem",
+              fontSize: "0.78rem",
               fontWeight: "bold",
               width: "100%",
               background: "#25D366",
@@ -333,12 +296,12 @@ export default function ProductCard({ product, onExpand, isFavorite = false }) {
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
-              gap: "7px",
+              gap: "6px",
               boxShadow: "0 2px 6px rgba(37, 211, 102, 0.25)",
-              transition: "opacity 0.2s ease, transform 0.2s ease",
+              transition: "opacity 0.2s ease",
             }}
           >
-            <WhatsAppIcon size={17} color="#FFFFFF" />
+            <WhatsAppIcon size={15} color="#FFFFFF" />
             <span>COTIZAR POR WHATSAPP</span>
           </a>
         </div>

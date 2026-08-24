@@ -1,0 +1,26 @@
+{
+  "brand": "ADS",
+  "reviewedAt": "2026-08-22",
+  "imageMode": "ai-catalog-watermarked",
+  "imageDirectory": "/catalogo-ads/",
+  "products": [
+    { "reference": "56500-07000", "image": "ads-56500-07000-caja-direccion-kia-picanto.webp", "fitmentStatus": "verified-by-oe" },
+    { "reference": "56540-02000", "image": "ads-56540-02000-brazo-axial-hyundai-atos.webp", "fitmentStatus": "supplier-catalog" },
+    { "reference": "56540-1S000", "image": "ads-56540-1s000-brazo-axial-hyundai-hb20.webp", "fitmentStatus": "verified-by-oe" },
+    { "reference": "MI-162", "image": "ads-mi-162-punta-eje-hyundai-grand-i10.webp", "fitmentStatus": "conditional" },
+    { "reference": "SK-022", "image": "ads-sk-022-punta-eje-chevrolet-sprint.webp", "fitmentStatus": "conditional" },
+    { "reference": "8-97365-012", "image": "ads-897365012-tijera-superior-chevrolet-dmax.webp", "fitmentStatus": "conditional" },
+    { "reference": "7858", "image": "ads-7858-bieleta-izquierda-chevrolet-captiva.webp", "fitmentStatus": "conditional" },
+    { "reference": "INVENTORY-1121224", "image": "ads-actuador-iac-kia-rio-space.webp", "fitmentStatus": "conditional" },
+    { "reference": "94636985 / CWG-11-A", "image": "ads-94636985-bomba-agua-monza-espero.webp", "fitmentStatus": "conditional" },
+    { "reference": "90142161 / HR011241", "image": "ads-90142161-bocin-trasero-daewoo.webp", "fitmentStatus": "conditional" },
+    { "reference": "51750-1J000", "image": "ads-51750-1j000-bocin-delantero-abs-kia-hyundai.webp", "fitmentStatus": "conditional" },
+    { "reference": "52710-2E100 / HR020553", "image": "ads-52710-2e100-bocin-trasero-abs-tucson-sportage.webp", "fitmentStatus": "conditional" },
+    { "reference": "52750-0U000", "image": "ads-52750-0u000-bocin-trasero-abs-kia-hyundai.webp", "fitmentStatus": "conditional" }
+  ],
+  "rules": {
+    "compatibilityEvidence": "Reference/OE and technical attributes; never image similarity",
+    "price": "External prices are benchmarks only",
+    "dispatch": "VIN and physical reference validation required"
+  }
+}

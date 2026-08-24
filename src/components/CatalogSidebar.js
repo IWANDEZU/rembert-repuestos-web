@@ -1,17 +1,25 @@
 import Link from "next/link";
-import { prisma } from "@/lib/prisma";
 import { buildCatalogHref } from "@/lib/catalogUtils";
 import { products as fallbackCatalogProducts } from "@/lib/products";
 import { inventoryLineSummary } from "@/data/inventoryProducts";
 
 function getFallbackBrands() {
-  return Array.from(
-    new Map(
-      fallbackCatalogProducts
-        .filter((product) => product.brand?.slug && !["vanssoil", "loctite"].includes(product.brand.slug))
-        .map((product) => [product.brand.slug, { id: product.brand.slug, ...product.brand }])
-    ).values()
-  ).sort((a, b) => a.name.localeCompare(b.name, "es"));
+  const brandMap = new Map();
+  for (const product of fallbackCatalogProducts) {
+    if (!product.brand?.slug || ["vanssoil", "loctite"].includes(product.brand.slug)) continue;
+    const existing = brandMap.get(product.brand.slug);
+    if (existing) {
+      existing.count += 1;
+    } else {
+      brandMap.set(product.brand.slug, {
+        id: product.brand.slug,
+        name: product.brand.name,
+        slug: product.brand.slug,
+        count: 1,
+      });
+    }
+  }
+  return Array.from(brandMap.values()).sort((a, b) => a.name.localeCompare(b.name, "es"));
 }
 
 function CatalogLink({ href, active, children, className = "" }) {
@@ -26,7 +34,7 @@ function CatalogLink({ href, active, children, className = "" }) {
   );
 }
 
-export default async function CatalogSidebar({
+export default function CatalogSidebar({
   categoryParam,
   brandParam,
   tipoParam,
@@ -36,20 +44,9 @@ export default async function CatalogSidebar({
   searchQuery,
   sortParam,
 }) {
-  let brands = [];
-  try {
-    brands = await prisma.brand.findMany({ 
-      where: { slug: { notIn: ['vanssoil', 'loctite'] } },
-      orderBy: { name: "asc" } 
-    });
+  const brands = getFallbackBrands();
 
-    if (brands.length === 0) brands = getFallbackBrands();
-  } catch (err) {
-    brands = getFallbackBrands();
-  }
-
-  const sharedFilters = { brand: brandParam, line: lineParam, vehicle: vehicleParam, part: partParam, search: searchQuery, sort: sortParam };
-  const categoryHref = (category, tipo) => buildCatalogHref({ ...sharedFilters, category, tipo });
+  const categoryHref = (category, tipo) => buildCatalogHref({ category, tipo, search: searchQuery, sort: sortParam });
 
   const hasActiveFilters = !!(categoryParam || brandParam || searchQuery || tipoParam || lineParam || vehicleParam || partParam);
   const backHref = hasActiveFilters ? "/catalogo" : "/";
@@ -73,7 +70,14 @@ export default async function CatalogSidebar({
           <h2 className="catalog-sidebar__title">Categorías</h2>
           <nav aria-label="Categorías de productos">
             <ul className="catalog-menu">
-              <li><CatalogLink href="/catalogo" active={!categoryParam && !brandParam}>Todas las categorías</CatalogLink></li>
+              <li>
+                <CatalogLink
+                  href={buildCatalogHref({ search: searchQuery, sort: sortParam })}
+                  active={!categoryParam && !brandParam && !lineParam && !vehicleParam && !partParam}
+                >
+                  Todas las categorías
+                </CatalogLink>
+              </li>
               <li>
                 <CatalogLink href={categoryHref("filtros")} active={categoryParam === "filtros" && !tipoParam}>Filtros</CatalogLink>
                 <ul className="catalog-menu catalog-menu--nested">
@@ -104,17 +108,12 @@ export default async function CatalogSidebar({
               {inventoryLineSummary
                 .filter((line) => line.name !== "SIN LINEA")
                 .map((line) => {
+                  const active = lineParam === line.name;
                   const href = buildCatalogHref({
-                    category: categoryParam,
-                    brand: brandParam,
-                    tipo: tipoParam,
-                    line: line.name,
-                    vehicle: vehicleParam,
-                    part: partParam,
+                    line: active ? undefined : line.name,
                     search: searchQuery,
                     sort: sortParam,
                   });
-                  const active = lineParam === line.name;
                   return (
                     <li key={line.name}>
                       <Link href={href} className={`catalog-brand-link ${active ? "is-active" : ""}`} aria-current={active ? "page" : undefined}>
@@ -131,13 +130,18 @@ export default async function CatalogSidebar({
           <h2 className="catalog-sidebar__title">Marca</h2>
           <ul className="catalog-brand-list">
             {brands.map((brand) => {
-              const href = buildCatalogHref({ category: categoryParam, brand: brand.slug, tipo: tipoParam, line: lineParam, vehicle: vehicleParam, part: partParam, search: searchQuery, sort: sortParam });
               const active = brandParam === brand.slug;
+              const href = buildCatalogHref({
+                brand: active ? undefined : brand.slug,
+                search: searchQuery,
+                sort: sortParam,
+              });
               return (
                 <li key={brand.id}>
                   <Link href={href} className={`catalog-brand-link ${active ? "is-active" : ""}`} aria-current={active ? "page" : undefined}>
                     <span className="catalog-brand-link__marker" aria-hidden="true" />
-                    {brand.name}
+                    <span>{brand.name}</span>
+                    {brand.count > 0 && <small aria-label={`${brand.count} referencias`}>{brand.count}</small>}
                   </Link>
                 </li>
               );

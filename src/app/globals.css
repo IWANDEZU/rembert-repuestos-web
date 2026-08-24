@@ -211,7 +211,8 @@ h1, h2, h3, h4 {
 
 /* Componentes de Layout */
 .main-container {
-  max-width: 1300px;
+  max-width: 1680px;
+  width: 100%;
   margin: 0 auto;
   padding: 0 var(--spacing-lg);
 }
@@ -592,6 +593,19 @@ h1, h2, h3, h4 {
 
 .navbar__search-suggestion-text {
   font-weight: 600;
+  flex: 1;
+}
+
+.navbar__search-suggestion-tag {
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 0.18rem 0.5rem;
+  background-color: #F1F3F5;
+  color: #495057;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  white-space: nowrap;
 }
 
 .navbar__actions {
@@ -701,13 +715,11 @@ h1, h2, h3, h4 {
   flex-wrap: nowrap !important;
   list-style: none;
   margin: 0 calc(-1 * var(--spacing-lg));
-  padding: 0.2rem var(--spacing-lg);
-  overflow-x: auto;
-  overflow-y: hidden;
+  overflow: visible;
   scrollbar-width: none;
   -ms-overflow-style: none;
   position: relative;
-  z-index: 1;
+  z-index: 1000;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -923,26 +935,134 @@ h1, h2, h3, h4 {
 /* Catálogo y Sidebar (20% Gris + 40% Blanco) */
 .catalog-layout {
   display: grid;
-  grid-template-columns: minmax(240px, 280px) minmax(0, 1fr);
-  gap: 2rem;
+  grid-template-columns: 245px minmax(0, 1fr);
+  gap: 1.5rem;
+}
+
+@media (min-width: 1440px) {
+  .catalog-layout {
+    grid-template-columns: 260px minmax(0, 1fr);
+    gap: 1.75rem;
+  }
 }
 
 .catalog-content {
   min-width: 0;
 }
 
+.catalog-priority-showcase,
+.catalog-secondary-showcase,
+.brake-application-showcase {
+  min-width: 0;
+}
+
+.catalog-secondary-showcase {
+  margin-top: 2rem;
+}
+
+#productos {
+  scroll-margin-top: 1rem;
+}
+
 .catalog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1.25rem;
   align-items: stretch;
   min-width: 0;
+}
+
+@media (min-width: 1400px) {
+  .catalog-grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.35rem;
+  }
+}
+
+@media (min-width: 1680px) {
+  .catalog-grid {
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .catalog-layout {
+    grid-template-columns: 1fr;
+  }
+  .catalog-grid {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .catalog-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.65rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .catalog-grid {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
 }
 
 .catalog-grid__item {
   display: flex;
   min-width: 0;
+  content-visibility: auto;
+  contain-intrinsic-size: auto 520px;
 }
 
 .catalog-grid__item > .product-card {
   width: 100%;
+}
+
+.product-card {
+  background: #141414;
+  border: 1px solid #262626;
+  border-radius: 12px;
+  padding: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  position: relative;
+}
+
+.product-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(255, 215, 0, 0.55);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+}
+
+.product-card__media {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 145px;
+  min-height: 145px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 6px;
+}
+
+@media (max-width: 640px) {
+  .product-card {
+    padding: 0.55rem;
+    border-radius: 10px;
+  }
+  .product-card__media {
+    height: 125px;
+    min-height: 125px;
+    border-radius: 6px;
+  }
 }
 
 .catalog-sidebar__panel {
@@ -1132,6 +1252,20 @@ h1, h2, h3, h4 {
 .hover-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.product-card {
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease !important;
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(255, 215, 0, 0.45) !important;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6), 0 0 16px rgba(255, 215, 0, 0.12) !important;
+}
+
+.product-card h3 a:hover {
+  color: var(--primary-color) !important;
 }
 
 /* Cenefa Móvil de Marcas (Carrusel Infinito Continuo) */

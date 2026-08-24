@@ -1,9 +1,20 @@
 import { prisma } from "@/lib/prisma";
 import { NextResponse } from "next/server";
 import { normalizePosProduct, POS_PROVIDERS } from "@/lib/posIntegrations";
+import { enforceRateLimit } from "@/lib/security/rateLimit";
+import { createHash, timingSafeEqual } from "node:crypto";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
+
+const MAX_BODY_BYTES = 2 * 1024 * 1024;
+const MAX_ITEMS = 500;
+const secretsMatch = (provided, expected) => {
+  if (!provided || !expected) return false;
+  const left = createHash("sha256").update(provided).digest();
+  const right = createHash("sha256").update(expected).digest();
+  return timingSafeEqual(left, right);
+};
 
 /**
  * Webhook Receptor para POS e Inventarios Colombianos
@@ -13,14 +24,15 @@ export const dynamic = "force-dynamic";
  * o cualquier software POS con webhook / cron de sincronización.
  */
 export async function POST(request) {
+  const limited = await enforceRateLimit(request, { scope: "pos-webhook", limit: 20, windowMs: 60_000 });
+  if (limited) return limited;
   try {
     const authHeader = request.headers.get("authorization");
     const posApiKey = request.headers.get("x-pos-key");
     const { searchParams } = new URL(request.url);
-    const secretQuery = searchParams.get("secret");
 
     const expectedSecret = process.env.POS_SYNC_SECRET;
-    const providedSecret = posApiKey || secretQuery || authHeader?.replace("Bearer ", "");
+    const providedSecret = posApiKey || authHeader?.replace(/^Bearer\s+/i, "");
 
     if (!expectedSecret) {
       return NextResponse.json(
@@ -29,11 +41,16 @@ export async function POST(request) {
       );
     }
 
-    if (providedSecret !== expectedSecret) {
+    if (!secretsMatch(providedSecret, expectedSecret)) {
       return NextResponse.json(
         { error: "No autorizado. Clave de POS inválida o faltante en encabezado 'x-pos-key'." },
         { status: 401 }
       );
+    }
+
+    const contentLength = Number(request.headers.get("content-length") || 0);
+    if (contentLength > MAX_BODY_BYTES) {
+      return NextResponse.json({ error: "Payload demasiado grande" }, { status: 413 });
     }
 
     const payload = await request.json();
@@ -45,6 +62,10 @@ export async function POST(request) {
       : Array.isArray(payload.items || payload.products || payload.data) 
         ? (payload.items || payload.products || payload.data) 
         : [payload];
+
+    if (rawItems.length > MAX_ITEMS) {
+      return NextResponse.json({ error: `Máximo ${MAX_ITEMS} productos por solicitud` }, { status: 413 });
+    }
 
     const results = {
       totalReceived: rawItems.length,
@@ -140,7 +161,7 @@ export async function POST(request) {
   } catch (error) {
     console.error("Error en Webhook POS:", error);
     return NextResponse.json(
-      { error: "Error procesando sincronización de inventario POS", details: error.message },
+      { error: "Error procesando sincronización de inventario POS" },
       { status: 500 }
     );
   }
@@ -155,7 +176,7 @@ export async function GET(request) {
     status: "online",
     service: "Rembert Repuestos BCA - POS & Inventory Webhook",
     compatibleSystems: ["Siigo Nube", "Zoe POS", "Alegra", "Helisa", "World Office", "PosCloud", "Excel / CSV / JSON"],
-    authRequired: "Header 'x-pos-key' o parámetro '?secret=TU_CLAVE'",
+    authRequired: "Header 'x-pos-key' o Authorization Bearer",
     samplePayload: {
       items: [
         {

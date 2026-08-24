@@ -1,0 +1,31 @@
+[
+  {
+    "sku": "MARCA-REFERENCIA-EXACTA",
+    "nombre_repuesto": "Nombre comercial completo en Colombia",
+    "numero_parte_oem": "OEM-O-REFERENCIA-FABRICANTE",
+    "marca": "Marca oficial",
+    "categoria": { "name": "Frenos y Suspensión", "slug": "frenos-y-suspension" },
+    "precio_cop": null,
+    "compatibilidad": [
+      {
+        "make": "Marca del vehículo",
+        "model": "Modelo y generación",
+        "engine": "Motor verificable",
+        "years": "2018–2022",
+        "position": "Eje y posición"
+      }
+    ],
+    "fitment_requirements": ["VIN", "año", "motor", "referencia OEM"],
+    "especificaciones_tecnicas": {
+      "material": "Material comprobado o null",
+      "peso_aprox": null
+    },
+    "descripcion_seo": "Descripción breve, verificable y comercial.",
+    "image_source": "C:/ruta/a/foto-real.jpg",
+    "brand_logo_source": "C:/ruta/al/logo-oficial.png",
+    "sources": [
+      "https://fuente-oficial.example/ficha",
+      "https://catalogo-tecnico.example/aplicacion"
+    ]
+  }
+]

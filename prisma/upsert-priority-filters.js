@@ -1,7 +1,6 @@
 const { createPrismaClient } = require("./create-client");
 
 const prioridadDiesel = require("../src/data/catalogo-prioridad-diesel.json");
-const catalogoPartmo = require("../src/data/catalogo-filtros-diesel.json");
 
 let prisma;
 
@@ -17,17 +16,6 @@ const MANN_REFERENCES = [
   "C 22 024",
   "HU 7002 z",
   "PU 9008 z",
-];
-
-const PARTMO_REFERENCES = [
-  "AS-R90TSP",
-  "AS-1441SP",
-  "A-1345",
-  "A-5813",
-  "AS-4654SP",
-  "A-7674SP",
-  "AS-3202SP",
-  "AS-7301SP",
 ];
 
 const SPEC_LABELS = {
@@ -92,33 +80,8 @@ function mannProducts() {
   }));
 }
 
-function partmoProducts() {
-  const source = catalogoPartmo.filter((item) =>
-    PARTMO_REFERENCES.includes(item.reference),
-  );
-
-  return source.map((item) => ({
-    name: item.name,
-    slug: `partmo-${slugify(item.reference)}`,
-    sku: `PARTMO-${item.reference.replace(/[^a-z0-9]/gi, "").toUpperCase()}`,
-    brandSlug: "partmo",
-    description: `${item.description}. Equivalencia de catálogo: ${item.equivalentReference || "consultar"}. Confirmar aplicación por motor, año y referencia instalada antes de vender o instalar.`,
-    shortDesc: `${item.reference} · Separador agua/combustible`,
-    image: item.image,
-    alt: item.alt,
-    attributes: [
-      { name: "Referencia", value: item.reference },
-      { name: "Tipo", value: "Separador agua/combustible" },
-      { name: "Aplicación", value: item.description.replace(/^Filtro Separador Agua\/?Combustible\s*/i, "") },
-      { name: "Equivalencia", value: item.equivalentReference || "Consultar" },
-      { name: "Disponibilidad", value: "Consultar antes de comprar" },
-      { name: "Validación", value: "Confirmar por motor, año y referencia instalada." },
-    ],
-  }));
-}
-
 function validateSource(products) {
-  const expected = MANN_REFERENCES.length + PARTMO_REFERENCES.length;
+  const expected = MANN_REFERENCES.length;
   if (products.length !== expected) {
     throw new Error(`Se esperaban ${expected} productos y se encontraron ${products.length}.`);
   }
@@ -155,17 +118,7 @@ async function ensureCatalogEntities() {
     },
   });
 
-  const partmo = await prisma.brand.upsert({
-    where: { slug: "partmo" },
-    update: { logo: "/logos/partmo-real.png" },
-    create: {
-      name: "Partmo",
-      slug: "partmo",
-      logo: "/logos/partmo-real.png",
-    },
-  });
-
-  return { category, brands: { "mann-filter": mann, partmo } };
+  return { category, brands: { "mann-filter": mann } };
 }
 
 async function dryRun(products) {
@@ -232,7 +185,7 @@ async function apply(products) {
 }
 
 async function main() {
-  const products = [...mannProducts(), ...partmoProducts()];
+  const products = [...mannProducts()];
   validateSource(products);
 
   if (process.argv.includes("--build-sync")) {

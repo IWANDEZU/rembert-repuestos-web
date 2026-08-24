@@ -62,7 +62,7 @@ async function main() {
     data: { name: 'Lubricantes Diésel', slug: 'lubricantes-diesel', description: 'Aceites para motor diésel' }
   })
   const catMaquinaria = await prisma.category.create({
-    data: { name: 'Maquinaria Pesada y Diésel', slug: 'maquinaria-pesada', description: 'Aceites, filtros y lubricantes para camiones, tractomulas y maquinaria de línea amarilla', image: '/maquinaria.png' }
+    data: { name: 'Maquinaria Pesada y Diésel', slug: 'maquinaria-pesada', description: 'Aceites, filtros y lubricantes para camiones, tractomulas y maquinaria de línea amarilla', image: '/maquinaria.webp' }
   })
   const catGasolina = await prisma.category.create({
     data: { name: 'Lubricantes Gasolina', slug: 'lubricantes-gasolina', description: 'Aceites para motor a gasolina' }
@@ -101,7 +101,6 @@ async function main() {
   const brandLiquiMoly = await prisma.brand.create({ data: { name: 'Liqui Moly', slug: 'liqui-moly' } })
   const brandBosch = await prisma.brand.create({ data: { name: 'Bosch', slug: 'bosch' } })
   const brandBlueTec = await prisma.brand.create({ data: { name: 'BlueTec', slug: 'bluetec' } })
-  const brandPartmo = await prisma.brand.create({ data: { name: 'Partmo', slug: 'partmo' } })
   const brandWix = await prisma.brand.create({ data: { name: 'WIX Filters', slug: 'wix' } })
   const brandMazda = await prisma.brand.create({ data: { name: 'Mazda Original', slug: 'mazda' } })
   const brandCoexito = await prisma.brand.create({ data: { name: 'Coéxito', slug: 'coexito' } })
@@ -134,7 +133,7 @@ async function main() {
       brandId: brandShell.id,
       images: {
         create: [
-          { url: '/14_shell_rimula_r4x_15w40.png', isMain: true }
+          { url: '/14_shell_rimula_r4x_15w40.webp', isMain: true }
         ]
       },
       attributes: {
@@ -167,7 +166,7 @@ async function main() {
       brandId: brandMobil.id,
       images: {
         create: [
-          { url: '/16_mobil_delvac_1300_super_15w40.png', isMain: true }
+          { url: '/16_mobil_delvac_1300_super_15w40.webp', isMain: true }
         ]
       },
       attributes: {
@@ -203,7 +202,7 @@ async function main() {
       brandId: brandMobil.id,
       images: {
         create: [
-          { url: '/16_mobil_delvac_1300_super_15w40.png', isMain: true }
+          { url: '/16_mobil_delvac_1300_super_15w40.webp', isMain: true }
         ]
       },
       attributes: {
@@ -239,7 +238,7 @@ async function main() {
       brandId: brandMobil.id,
       images: {
         create: [
-          { url: '/16_mobil_delvac_1300_super_15w40.png', isMain: true }
+          { url: '/16_mobil_delvac_1300_super_15w40.webp', isMain: true }
         ]
       },
       attributes: {
@@ -274,7 +273,7 @@ async function main() {
       brandId: brandMobil.id,
       images: {
         create: [
-          { url: '/16_mobil_delvac_1300_super_15w40.png', isMain: true }
+          { url: '/16_mobil_delvac_1300_super_15w40.webp', isMain: true }
         ]
       },
       attributes: {
@@ -309,7 +308,7 @@ async function main() {
       brandId: brandMobil.id,
       images: {
         create: [
-          { url: '/16_mobil_delvac_1300_super_15w40.png', isMain: true }
+          { url: '/16_mobil_delvac_1300_super_15w40.webp', isMain: true }
         ]
       },
       attributes: {
@@ -344,7 +343,7 @@ async function main() {
       brandId: brandMobil.id,
       images: {
         create: [
-          { url: '/16_mobil_delvac_1300_super_15w40.png', isMain: true }
+          { url: '/16_mobil_delvac_1300_super_15w40.webp', isMain: true }
         ]
       },
       attributes: {
@@ -380,7 +379,7 @@ async function main() {
       brandId: brandMobil.id,
       images: {
         create: [
-          { url: '/16_mobil_delvac_1300_super_15w40.png', isMain: true }
+          { url: '/16_mobil_delvac_1300_super_15w40.webp', isMain: true }
         ]
       },
       attributes: {
@@ -416,7 +415,7 @@ async function main() {
       brandId: brandMobil.id,
       images: {
         create: [
-          { url: '/16_mobil_delvac_1300_super_15w40.png', isMain: true }
+          { url: '/16_mobil_delvac_1300_super_15w40.webp', isMain: true }
         ]
       },
       attributes: {
@@ -449,7 +448,7 @@ async function main() {
       brandId: brandTerpel.id,
       images: {
         create: [
-          { url: '/11_terpel_ultrek_15w40_multigrado.png', isMain: true }
+          { url: '/11_terpel_ultrek_15w40_multigrado.webp', isMain: true }
         ]
       },
       variants: {
@@ -475,7 +474,7 @@ async function main() {
       brandId: brandCastrol.id,
       images: {
         create: [
-          { url: '/castrol.png', isMain: true }
+          { url: '/castrol.webp', isMain: true }
         ]
       },
       variants: {
@@ -499,7 +498,7 @@ async function main() {
       brandId: brandLiquiMoly.id,
       images: {
         create: [
-          { url: '/liquimoly.png', isMain: true }
+          { url: '/liquimoly.webp', isMain: true }
         ]
       },
       variants: {
@@ -526,7 +525,7 @@ async function main() {
       brandId: brandChevron.id,
       images: {
         create: [
-          { url: '/chevron.png', isMain: true }
+          { url: '/chevron.webp', isMain: true }
         ]
       },
       attributes: {
@@ -562,7 +561,7 @@ async function main() {
       brandId: brandChevron.id,
       images: {
         create: [
-          { url: '/chevron.png', isMain: true }
+          { url: '/chevron.webp', isMain: true }
         ]
       },
       attributes: {
@@ -597,7 +596,7 @@ async function main() {
       brandId: brandChevron.id,
       images: {
         create: [
-          { url: '/chevron.png', isMain: true }
+          { url: '/chevron.webp', isMain: true }
         ]
       },
       attributes: {
@@ -632,7 +631,7 @@ async function main() {
       brandId: brandChevron.id,
       images: {
         create: [
-          { url: '/chevron.png', isMain: true }
+          { url: '/chevron.webp', isMain: true }
         ]
       },
       attributes: {
@@ -668,7 +667,7 @@ async function main() {
       brandId: brandValvoline.id,
       images: {
         create: [
-          { url: '/valvoline-premium-blue.png', isMain: true }
+          { url: '/valvoline-premium-blue.webp', isMain: true }
         ]
       },
       attributes: {
@@ -707,7 +706,7 @@ async function main() {
       brandId: brandValvoline.id,
       images: {
         create: [
-          { url: '/valvoline-premium-blue.png', isMain: true }
+          { url: '/valvoline-premium-blue.webp', isMain: true }
         ]
       },
       attributes: {
@@ -743,7 +742,7 @@ async function main() {
       brandId: brandValvoline.id,
       images: {
         create: [
-          { url: '/valvoline-premium-blue.png', isMain: true }
+          { url: '/valvoline-premium-blue.webp', isMain: true }
         ]
       },
       attributes: {
@@ -778,7 +777,7 @@ async function main() {
       brandId: brandValvoline.id,
       images: {
         create: [
-          { url: '/valvoline-premium-blue.png', isMain: true }
+          { url: '/valvoline-premium-blue.webp', isMain: true }
         ]
       },
       attributes: {
@@ -815,7 +814,7 @@ async function main() {
       brandId: brandValvoline.id,
       images: {
         create: [
-          { url: '/valvoline-25w60.png', isMain: true }
+          { url: '/valvoline-25w60.webp', isMain: true }
         ]
       },
       attributes: {
@@ -854,7 +853,7 @@ async function main() {
       brandId: brandMotorcraft.id,
       images: {
         create: [
-          { url: '/motorcraft-diesel-15w40.png', isMain: true }
+          { url: '/motorcraft-diesel-15w40.webp', isMain: true }
         ]
       },
       attributes: {
@@ -891,7 +890,7 @@ async function main() {
       brandId: brandMotorcraft.id,
       images: {
         create: [
-          { url: '/motorcraft-diesel-15w40.png', isMain: true }
+          { url: '/motorcraft-diesel-15w40.webp', isMain: true }
         ]
       },
       attributes: {
@@ -928,7 +927,7 @@ async function main() {
       brandId: brandCaterpillar.id,
       images: {
         create: [
-          { url: '/cat-deo-15w40.png', isMain: true }
+          { url: '/cat-deo-15w40.webp', isMain: true }
         ]
       },
       attributes: {
@@ -966,7 +965,7 @@ async function main() {
       brandId: brandCaterpillar.id,
       images: {
         create: [
-          { url: '/cat-deo-15w40.png', isMain: true }
+          { url: '/cat-deo-15w40.webp', isMain: true }
         ]
       },
       attributes: {
@@ -1000,7 +999,7 @@ async function main() {
       brandId: brandCaterpillar.id,
       images: {
         create: [
-          { url: '/cat-deo-15w40.png', isMain: true }
+          { url: '/cat-deo-15w40.webp', isMain: true }
         ]
       },
       attributes: {
@@ -1028,7 +1027,7 @@ async function main() {
       price: 135000,
       categoryId: catTransmision.id,
       brandId: brandMobil.id,
-      images: { create: [{ url: '/transmision.png', isMain: true }] },
+      images: { create: [{ url: '/transmision.webp', isMain: true }] },
       variants: { create: [{ name: 'Galón', price: 135000, stock: 30 }] }
     }
   })
@@ -1042,7 +1041,7 @@ async function main() {
       price: 45000,
       categoryId: catCoolant.id,
       brandId: brandTerpel.id,
-      images: { create: [{ url: '/coolant.png', isMain: true }] },
+      images: { create: [{ url: '/coolant.webp', isMain: true }] },
       variants: { create: [{ name: 'Galón', price: 45000, stock: 100 }] }
     }
   })
@@ -1070,7 +1069,7 @@ async function main() {
       price: 350000,
       categoryId: catHidraulico.id,
       brandId: brandShell.id,
-      images: { create: [{ url: '/shell-balde-negro.png', isMain: true }] },
+      images: { create: [{ url: '/shell-balde-negro.webp', isMain: true }] },
       variants: { create: [{ name: 'Caneca (5 Gal)', price: 350000, stock: 20 }, { name: 'Tambor (55 Gal)', price: 3100000, stock: 5 }] }
     }
   })
@@ -1084,165 +1083,59 @@ async function main() {
       price: 60000,
       categoryId: catUrea.id,
       brandId: brandBlueTec.id,
-      images: { create: [{ url: '/urea.png', isMain: true }] },
+      images: { create: [{ url: '/urea.webp', isMain: true }] },
       variants: { create: [{ name: 'Garrafa (2.5 Gal)', price: 60000, stock: 150 }] }
     }
   })
 
-  const f1 = await prisma.product.create({
-    data: {
-      name: 'Filtro Aceite Partmo A-14616', slug: 'partmo-a14616', description: 'Filtro de aceite para Chevrolet Spark GT 1.2L.', shortDesc: 'Spark GT (Aceite)', price: 15000, categoryId: catFiltros.id, brandId: brandPartmo.id,
-      images: { create: [{ url: '/filtro-aceite.jpg', isMain: true }] }, variants: { create: [{ name: 'Unidad', price: 15000, stock: 40 }] }
-    }
-  })
-  const f2 = await prisma.product.create({
-    data: {
-      name: 'Filtro Aire Partmo AP-3146', slug: 'partmo-ap3146', description: 'Filtro de aire para Chevrolet Spark GT 1.2L.', shortDesc: 'Spark GT (Aire)', price: 18000, categoryId: catFiltros.id, brandId: brandPartmo.id,
-      images: { create: [{ url: '/filtro-aire.png', isMain: true }] }, variants: { create: [{ name: 'Unidad', price: 18000, stock: 35 }] }
-    }
-  })
-  const f3 = await prisma.product.create({
-    data: {
-      name: 'Filtro Cabina Partmo AP-31019', slug: 'partmo-ap31019', description: 'Filtro de cabina para Chevrolet Spark GT 1.2L.', shortDesc: 'Spark GT (Cabina)', price: 22000, categoryId: catFiltros.id, brandId: brandPartmo.id,
-      images: { create: [{ url: '/filtro-aire.png', isMain: true }] }, variants: { create: [{ name: 'Unidad', price: 22000, stock: 20 }] }
-    }
-  })
 
-  const f4 = await prisma.product.create({
-    data: {
-      name: 'Filtro Aceite Partmo A-1402', slug: 'partmo-a1402', description: 'Filtro de aceite para Kia Picanto ION.', shortDesc: 'Picanto ION (Aceite)', price: 16000, categoryId: catFiltros.id, brandId: brandPartmo.id,
-      images: { create: [{ url: '/filtro-aceite.jpg', isMain: true }] }, variants: { create: [{ name: 'Unidad', price: 16000, stock: 50 }] }
-    }
-  })
-  const f5 = await prisma.product.create({
-    data: {
-      name: 'Filtro Aire Partmo AP-31820', slug: 'partmo-ap31820', description: 'Filtro de aire para Kia Picanto ION 1.0L/1.25L.', shortDesc: 'Picanto ION (Aire)', price: 20000, categoryId: catFiltros.id, brandId: brandPartmo.id,
-      images: { create: [{ url: '/filtro-aire.png', isMain: true }] }, variants: { create: [{ name: 'Unidad', price: 20000, stock: 45 }] }
-    }
-  })
-  const f6 = await prisma.product.create({
-    data: {
-      name: 'Filtro Cabina Partmo AP-3102', slug: 'partmo-ap3102', description: 'Filtro de cabina para Kia Picanto ION.', shortDesc: 'Picanto ION (Cabina)', price: 24000, categoryId: catFiltros.id, brandId: brandPartmo.id,
-      images: { create: [{ url: '/filtro-aire.png', isMain: true }] }, variants: { create: [{ name: 'Unidad', price: 24000, stock: 25 }] }
-    }
-  })
-
-  const f7 = await prisma.product.create({
-    data: {
-      name: 'Filtro Aceite Partmo A-3603PLUS', slug: 'partmo-a3603plus', description: 'Filtro de aceite para Renault Duster, Logan, Sandero.', shortDesc: 'Renault (Aceite)', price: 18000, categoryId: catFiltros.id, brandId: brandPartmo.id,
-      images: { create: [{ url: '/filtro-aceite.jpg', isMain: true }] }, variants: { create: [{ name: 'Unidad', price: 18000, stock: 60 }] }
-    }
-  })
-  const f8 = await prisma.product.create({
-    data: {
-      name: 'Filtro Aire Partmo AP-3554', slug: 'partmo-ap3554', description: 'Filtro de aire para Renault Duster 1.6L/2.0L.', shortDesc: 'Duster (Aire)', price: 25000, categoryId: catFiltros.id, brandId: brandPartmo.id,
-      images: { create: [{ url: '/filtro-aire.png', isMain: true }] }, variants: { create: [{ name: 'Unidad', price: 25000, stock: 30 }] }
-    }
-  })
-  const f9 = await prisma.product.create({
-    data: {
-      name: 'Filtro Cabina Partmo AP-31068', slug: 'partmo-ap31068', description: 'Filtro de cabina para Renault Duster.', shortDesc: 'Duster (Cabina)', price: 28000, categoryId: catFiltros.id, brandId: brandPartmo.id,
-      images: { create: [{ url: '/filtro-aire.png', isMain: true }] }, variants: { create: [{ name: 'Unidad', price: 28000, stock: 15 }] }
-    }
-  })
-
-  const f10 = await prisma.product.create({
-    data: {
-      name: 'Filtro Aire Partmo ACP-090', slug: 'partmo-acp090', description: 'Filtro de aire para Renault Logan y Sandero.', shortDesc: 'Logan/Sandero (Aire)', price: 22000, categoryId: catFiltros.id, brandId: brandPartmo.id,
-      images: { create: [{ url: '/filtro-aire.png', isMain: true }] }, variants: { create: [{ name: 'Unidad', price: 22000, stock: 40 }] }
-    }
-  })
-  const f11 = await prisma.product.create({
-    data: {
-      name: 'Filtro Cabina Partmo AP-31064', slug: 'partmo-ap31064', description: 'Filtro de cabina para Renault Logan y Sandero.', shortDesc: 'Logan/Sandero (Cabina)', price: 25000, categoryId: catFiltros.id, brandId: brandPartmo.id,
-      images: { create: [{ url: '/filtro-aire.png', isMain: true }] }, variants: { create: [{ name: 'Unidad', price: 25000, stock: 25 }] }
-    }
-  })
-
-  const f12 = await prisma.product.create({
-    data: {
-      name: 'Filtro Aceite Partmo A-58', slug: 'partmo-a58', description: 'Filtro de aceite para Mazda 2.', shortDesc: 'Mazda 2 (Aceite)', price: 19000, categoryId: catFiltros.id, brandId: brandPartmo.id,
-      images: { create: [{ url: '/filtro-aceite.jpg', isMain: true }] }, variants: { create: [{ name: 'Unidad', price: 19000, stock: 35 }] }
-    }
-  })
-  const f13 = await prisma.product.create({
-    data: {
-      name: 'Filtro Aire Partmo AP-31962', slug: 'partmo-ap31962', description: 'Filtro de aire para Mazda 2 Skyactiv.', shortDesc: 'Mazda 2 (Aire)', price: 28000, categoryId: catFiltros.id, brandId: brandPartmo.id,
-      images: { create: [{ url: '/filtro-aire.png', isMain: true }] }, variants: { create: [{ name: 'Unidad', price: 28000, stock: 20 }] }
-    }
-  })
-  const f14 = await prisma.product.create({
-    data: {
-      name: 'Filtro Cabina Partmo AP-31096', slug: 'partmo-ap31096', description: 'Filtro de cabina para Mazda 2, 3, 6, CX-5.', shortDesc: 'Mazda (Cabina)', price: 32000, categoryId: catFiltros.id, brandId: brandPartmo.id,
-      images: { create: [{ url: '/filtro-aire.png', isMain: true }] }, variants: { create: [{ name: 'Unidad', price: 32000, stock: 15 }] }
-    }
-  })
-
-  const f15 = await prisma.product.create({
-    data: {
-      name: 'Filtro Combustible Partmo PP-7355', slug: 'partmo-pp7355', description: 'Elemento de combustible para Toyota Hilux Diésel.', shortDesc: 'Hilux (Combustible)', price: 45000, categoryId: catFiltros.id, brandId: brandPartmo.id,
-      images: { create: [{ url: '/filtro-aceite.jpg', isMain: true }] }, variants: { create: [{ name: 'Unidad', price: 45000, stock: 25 }] }
-    }
-  })
-  const f16 = await prisma.product.create({
-    data: {
-      name: 'Filtro Separador Partmo A-7533SP', slug: 'partmo-a7533sp', description: 'Filtro separador agua-combustible para Toyota Hilux / Prado Diésel.', shortDesc: 'Hilux (Separador)', price: 55000, categoryId: catFiltros.id, brandId: brandPartmo.id,
-      images: { create: [{ url: '/filtro-aceite.jpg', isMain: true }] }, variants: { create: [{ name: 'Unidad', price: 55000, stock: 15 }] }
-    }
-  })
-  const f17 = await prisma.product.create({
-    data: {
-      name: 'Filtro Cabina Partmo AP-31081', slug: 'partmo-ap31081', description: 'Filtro de cabina para Toyota Hilux (2001-2010).', shortDesc: 'Hilux (Cabina)', price: 28000, categoryId: catFiltros.id, brandId: brandPartmo.id,
-      images: { create: [{ url: '/filtro-aire.png', isMain: true }] }, variants: { create: [{ name: 'Unidad', price: 28000, stock: 20 }] }
-    }
-  })
 
   const n1 = await prisma.product.create({
     data: {
       name: 'Filtro de Aceite WIX WL7570', slug: 'wix-wl7570', description: 'Filtro de aceite original WIX.', shortDesc: 'WIX Aceite', price: 21000, categoryId: catFiltros.id, brandId: brandWix.id,
-      images: { create: [{ url: '/01_wix_wl7570_filtro_aceite.png', isMain: true }] }, variants: { create: [{ name: 'Unidad', price: 21000, stock: 40 }] }
+      images: { create: [{ url: '/01_wix_wl7570_filtro_aceite.webp', isMain: true }] }, variants: { create: [{ name: 'Unidad', price: 21000, stock: 40 }] }
     }
   })
   const n2 = await prisma.product.create({
     data: {
       name: 'Filtro de Aire WIX WA9906', slug: 'wix-wa9906', description: 'Filtro de aire de alto rendimiento WIX.', shortDesc: 'WIX Aire', price: 28000, categoryId: catFiltros.id, brandId: brandWix.id,
-      images: { create: [{ url: '/02_wix_wa9906_filtro_aire.png', isMain: true }] }, variants: { create: [{ name: 'Unidad', price: 28000, stock: 30 }] }
+      images: { create: [{ url: '/02_wix_wa9906_filtro_aire.webp', isMain: true }] }, variants: { create: [{ name: 'Unidad', price: 28000, stock: 30 }] }
     }
   })
   const n3 = await prisma.product.create({
     data: {
       name: 'Filtro de Aceite WIX WL7070', slug: 'wix-wl7070', description: 'Filtro de aceite compacto WIX.', shortDesc: 'WIX Aceite', price: 19000, categoryId: catFiltros.id, brandId: brandWix.id,
-      images: { create: [{ url: '/03_wix_wl7070_filtro_aceite.png', isMain: true }] }, variants: { create: [{ name: 'Unidad', price: 19000, stock: 35 }] }
+      images: { create: [{ url: '/03_wix_wl7070_filtro_aceite.webp', isMain: true }] }, variants: { create: [{ name: 'Unidad', price: 19000, stock: 35 }] }
     }
   })
   const n4 = await prisma.product.create({
     data: {
       name: 'Filtro de Aceite WIX WL7506', slug: 'wix-wl7506', description: 'Filtro de aceite estándar WIX.', shortDesc: 'WIX Aceite', price: 20000, categoryId: catFiltros.id, brandId: brandWix.id,
-      images: { create: [{ url: '/04_wix_wl7506_filtro_aceite.png', isMain: true }] }, variants: { create: [{ name: 'Unidad', price: 20000, stock: 25 }] }
+      images: { create: [{ url: '/04_wix_wl7506_filtro_aceite.webp', isMain: true }] }, variants: { create: [{ name: 'Unidad', price: 20000, stock: 25 }] }
     }
   })
   const n5 = await prisma.product.create({
     data: {
       name: 'Filtro Aceite Pesado WIX 51820', slug: 'wix-51820', description: 'Filtro de aceite para línea pesada WIX.', shortDesc: 'WIX Pesado', price: 45000, categoryId: catFiltros.id, brandId: brandWix.id,
-      images: { create: [{ url: '/05_wix_51820_filtro_aceite_pesado.png', isMain: true }] }, variants: { create: [{ name: 'Unidad', price: 45000, stock: 15 }] }
+      images: { create: [{ url: '/05_wix_51820_filtro_aceite_pesado.webp', isMain: true }] }, variants: { create: [{ name: 'Unidad', price: 45000, stock: 15 }] }
     }
   })
   const n6 = await prisma.product.create({
     data: {
       name: 'Filtro Aire Mazda P53N-13-3A0', slug: 'mazda-p53n-13-3a0', description: 'Filtro de aire genuino Mazda.', shortDesc: 'Mazda Original', price: 65000, categoryId: catFiltros.id, brandId: brandMazda.id,
-      images: { create: [{ url: '/06_mazda_p53n_13_3a0_filtro_aire.png', isMain: true }] }, variants: { create: [{ name: 'Unidad', price: 65000, stock: 10 }] }
+      images: { create: [{ url: '/06_mazda_p53n_13_3a0_filtro_aire.webp', isMain: true }] }, variants: { create: [{ name: 'Unidad', price: 65000, stock: 10 }] }
     }
   })
   const n7 = await prisma.product.create({
     data: {
       name: 'Filtro Cabina Coéxito COAC-305', slug: 'coexito-coac-305', description: 'Filtro de cabina Coéxito para mantener el interior libre de polen.', shortDesc: 'Coéxito Cabina', price: 22000, categoryId: catFiltros.id, brandId: brandCoexito.id,
-      images: { create: [{ url: '/07_auto_coexito_coac_305_filtro_cabina.png', isMain: true }] }, variants: { create: [{ name: 'Unidad', price: 22000, stock: 40 }] }
+      images: { create: [{ url: '/07_auto_coexito_coac_305_filtro_cabina.webp', isMain: true }] }, variants: { create: [{ name: 'Unidad', price: 22000, stock: 40 }] }
     }
   })
   const n8 = await prisma.product.create({
     data: {
       name: 'Filtro Cabina Coéxito COAC-095', slug: 'coexito-coac-095', description: 'Filtro de cabina de alta calidad.', shortDesc: 'Coéxito Cabina', price: 23000, categoryId: catFiltros.id, brandId: brandCoexito.id,
-      images: { create: [{ url: '/08_auto_coexito_coac_095_filtro_cabina.png', isMain: true }] }, variants: { create: [{ name: 'Unidad', price: 23000, stock: 35 }] }
+      images: { create: [{ url: '/08_auto_coexito_coac_095_filtro_cabina.webp', isMain: true }] }, variants: { create: [{ name: 'Unidad', price: 23000, stock: 35 }] }
     }
   })
 
@@ -1250,19 +1143,19 @@ async function main() {
   const n9 = await prisma.product.create({
     data: {
       name: 'Terpel Ultrek Pro 15W-40 CK-4', slug: 'terpel-ultrek-pro-ck4', description: 'Aceite de tecnología sintética para los motores diésel más exigentes y maquinaria pesada.', shortDesc: 'Terpel Ultrek Pro', price: 135000, categoryId: catMaquinaria.id, brandId: brandTerpel.id,
-      images: { create: [{ url: '/09_terpel_ultrek_15w40_pro_ck4.png', isMain: true }] }, variants: { create: [{ name: 'Galón', price: 135000, stock: 30 }] }
+      images: { create: [{ url: '/09_terpel_ultrek_15w40_pro_ck4.webp', isMain: true }] }, variants: { create: [{ name: 'Galón', price: 135000, stock: 30 }] }
     }
   })
   const n10 = await prisma.product.create({
     data: {
       name: 'Terpel Ultrek Plus 15W-40', slug: 'terpel-ultrek-plus', description: 'Protección superior para flotas mixtas y camiones de carga.', shortDesc: 'Terpel Ultrek Plus', price: 125000, categoryId: catMaquinaria.id, brandId: brandTerpel.id,
-      images: { create: [{ url: '/10_terpel_ultrek_15w40_plus.png', isMain: true }] }, variants: { create: [{ name: 'Galón', price: 125000, stock: 40 }] }
+      images: { create: [{ url: '/10_terpel_ultrek_15w40_plus.webp', isMain: true }] }, variants: { create: [{ name: 'Galón', price: 125000, stock: 40 }] }
     }
   })
   const n11 = await prisma.product.create({
     data: {
       name: 'Terpel Ultrek Multigrado 15W-40', slug: 'terpel-ultrek-multigrado', description: 'Aceite mineral confiable para trabajo pesado en maquinaria.', shortDesc: 'Terpel Ultrek', price: 115000, categoryId: catMaquinaria.id, brandId: brandTerpel.id,
-      images: { create: [{ url: '/11_terpel_ultrek_15w40_multigrado.png', isMain: true }] }, variants: { create: [{ name: 'Galón', price: 115000, stock: 50 }] }
+      images: { create: [{ url: '/11_terpel_ultrek_15w40_multigrado.webp', isMain: true }] }, variants: { create: [{ name: 'Galón', price: 115000, stock: 50 }] }
     }
   })
 
@@ -1270,13 +1163,13 @@ async function main() {
   const n12 = await prisma.product.create({
     data: {
       name: 'Terpel Oiltec Titanio 10W-40', slug: 'terpel-oiltec-titanio-10w40', description: 'Aceite con titanio líquido para máxima protección en motores a gasolina.', shortDesc: 'Oiltec Titanio', price: 105000, categoryId: catGasolina.id, brandId: brandTerpel.id,
-      images: { create: [{ url: '/12_terpel_oiltec_10w40_titanio.png', isMain: true }] }, variants: { create: [{ name: 'Galón', price: 105000, stock: 35 }] }
+      images: { create: [{ url: '/12_terpel_oiltec_10w40_titanio.webp', isMain: true }] }, variants: { create: [{ name: 'Galón', price: 105000, stock: 35 }] }
     }
   })
   const n13 = await prisma.product.create({
     data: {
       name: 'Terpel Oiltec Titanio 10W-30', slug: 'terpel-oiltec-titanio-10w30', description: 'Aceite liviano con titanio para mejor ahorro de combustible.', shortDesc: 'Oiltec Titanio', price: 105000, categoryId: catGasolina.id, brandId: brandTerpel.id,
-      images: { create: [{ url: '/13_terpel_oiltec_10w30_titanio.png', isMain: true }] }, variants: { create: [{ name: 'Galón', price: 105000, stock: 25 }] }
+      images: { create: [{ url: '/13_terpel_oiltec_10w30_titanio.webp', isMain: true }] }, variants: { create: [{ name: 'Galón', price: 105000, stock: 25 }] }
     }
   })
 
@@ -1284,7 +1177,7 @@ async function main() {
   const n14 = await prisma.product.create({
     data: {
       name: 'Castrol CRB Multi 15W-40 CK-4', slug: 'castrol-crb-multi-15w40', description: 'Aceite diésel multipropósito de alto rendimiento y vida útil prolongada.', shortDesc: 'Castrol CRB Multi', price: 130000, categoryId: catDiesel.id, brandId: brandCastrol.id,
-      images: { create: [{ url: '/15_castrol_crb_multi_15w40_ck4.png', isMain: true }] }, variants: { create: [{ name: 'Galón', price: 130000, stock: 30 }] }
+      images: { create: [{ url: '/15_castrol_crb_multi_15w40_ck4.webp', isMain: true }] }, variants: { create: [{ name: 'Galón', price: 130000, stock: 30 }] }
     }
   })
 
@@ -1292,31 +1185,31 @@ async function main() {
   const n15 = await prisma.product.create({
     data: {
       name: 'Global Oil Max 20W-50', slug: 'global-oil-max-20w50', description: 'Aceite de motor de alta calidad fabricado en Colombia.', shortDesc: 'Global Oil 20W-50', price: 95000, categoryId: catGasolina.id, brandId: brandGlobalOil.id,
-      images: { create: [{ url: '/prod_global_oil_max.png', isMain: true }] }, variants: { create: [{ name: 'Galón', price: 95000, stock: 40 }] }
+      images: { create: [{ url: '/prod_global_oil_max.webp', isMain: true }] }, variants: { create: [{ name: 'Galón', price: 95000, stock: 40 }] }
     }
   })
   const n16 = await prisma.product.create({
     data: {
       name: 'Max Power Heavy Duty 15W-40', slug: 'max-power-hd-15w40', description: 'Lubricante para trabajo pesado con especificaciones técnicas rigurosas.', shortDesc: 'Max Power 15W-40', price: 110000, categoryId: catMaquinaria.id, brandId: brandMaxPower.id,
-      images: { create: [{ url: '/prod_max_power_hd.png', isMain: true }] }, variants: { create: [{ name: 'Galón', price: 110000, stock: 30 }] }
+      images: { create: [{ url: '/prod_max_power_hd.webp', isMain: true }] }, variants: { create: [{ name: 'Galón', price: 110000, stock: 30 }] }
     }
   })
   const n17 = await prisma.product.create({
     data: {
       name: 'Petroil Diésel SAE 40', slug: 'petroil-diesel-sae40', description: 'Aceite monogrado para motores diésel tradicionales y tractores.', shortDesc: 'Petroil SAE 40', price: 85000, categoryId: catMaquinaria.id, brandId: brandPetroil.id,
-      images: { create: [{ url: '/prod_petroil_diesel.png', isMain: true }] }, variants: { create: [{ name: 'Galón', price: 85000, stock: 50 }] }
+      images: { create: [{ url: '/prod_petroil_diesel.webp', isMain: true }] }, variants: { create: [{ name: 'Galón', price: 85000, stock: 50 }] }
     }
   })
   const n18 = await prisma.product.create({
     data: {
       name: 'Vanssoil Industrial Gear 220', slug: 'vanssoil-industrial-gear-220', description: 'Aceite industrial para engranajes fabricado nacionalmente.', shortDesc: 'Vanssoil Engranajes', price: 125000, categoryId: catTransmision.id, brandId: brandVanssoil.id,
-      images: { create: [{ url: '/prod_vanssoil_gear.png', isMain: true }] }, variants: { create: [{ name: 'Caneca (5 Gal)', price: 600000, stock: 10 }] }
+      images: { create: [{ url: '/prod_vanssoil_gear.webp', isMain: true }] }, variants: { create: [{ name: 'Caneca (5 Gal)', price: 600000, stock: 10 }] }
     }
   })
   const n19 = await prisma.product.create({
     data: {
       name: 'Lubrisol Heavy Duty Diésel 15W-40', slug: 'lubrisol-heavy-duty-diesel-15w40', description: 'Aceite de alta protección y resistencia térmica para motores diésel de trabajo pesado, camiones y maquinaria.', shortDesc: 'Lubrisol Diésel 15W-40', price: 105000, categoryId: catMaquinaria.id, brandId: brandLubrisol.id,
-      images: { create: [{ url: '/prod_lubrisol_moto.png', isMain: true }] }, variants: { create: [{ name: 'Galón', price: 105000, stock: 40 }] }
+      images: { create: [{ url: '/prod_lubrisol_moto.webp', isMain: true }] }, variants: { create: [{ name: 'Galón', price: 105000, stock: 40 }] }
     }
   })
 
@@ -1437,7 +1330,7 @@ async function main() {
       sku: 'DON-LFP7070',
       categoryId: catFiltros.id,
       brandId: brandDonsson.id,
-      images: { create: [{ url: '/filtro-aceite.jpg', isMain: true }] },
+      images: { create: [{ url: '/filtro-aceite.webp', isMain: true }] },
       attributes: {
         create: [
           { name: 'Tipo de Filtro', value: 'Aceite Sellado' },
@@ -1463,7 +1356,7 @@ async function main() {
       sku: 'DON-LFP3603',
       categoryId: catFiltros.id,
       brandId: brandDonsson.id,
-      images: { create: [{ url: '/filtro-aceite.jpg', isMain: true }] },
+      images: { create: [{ url: '/filtro-aceite.webp', isMain: true }] },
       attributes: {
         create: [
           { name: 'Tipo de Filtro', value: 'Aceite Sellado' },
@@ -1489,7 +1382,7 @@ async function main() {
       sku: 'DON-LFP1402',
       categoryId: catFiltros.id,
       brandId: brandDonsson.id,
-      images: { create: [{ url: '/filtro-aceite.jpg', isMain: true }] },
+      images: { create: [{ url: '/filtro-aceite.webp', isMain: true }] },
       attributes: {
         create: [
           { name: 'Tipo de Filtro', value: 'Aceite' },
@@ -1514,7 +1407,7 @@ async function main() {
       sku: 'DON-LFP58',
       categoryId: catFiltros.id,
       brandId: brandDonsson.id,
-      images: { create: [{ url: '/filtro-aceite.jpg', isMain: true }] },
+      images: { create: [{ url: '/filtro-aceite.webp', isMain: true }] },
       attributes: {
         create: [
           { name: 'Tipo de Filtro', value: 'Aceite' },
@@ -1539,7 +1432,7 @@ async function main() {
       sku: 'DON-AFP3146',
       categoryId: catFiltros.id,
       brandId: brandDonsson.id,
-      images: { create: [{ url: '/filtro-aire.png', isMain: true }] },
+      images: { create: [{ url: '/filtro-aire.webp', isMain: true }] },
       variants: {
         create: [
           { name: 'Unidad', price: 20000, stock: 35, sku: 'DON-AFP3146-UN' }
@@ -1558,7 +1451,7 @@ async function main() {
       sku: 'DON-AFP3554',
       categoryId: catFiltros.id,
       brandId: brandDonsson.id,
-      images: { create: [{ url: '/filtro-aire.png', isMain: true }] },
+      images: { create: [{ url: '/filtro-aire.webp', isMain: true }] },
       variants: {
         create: [
           { name: 'Unidad', price: 26000, stock: 30, sku: 'DON-AFP3554-UN' }
@@ -1577,7 +1470,7 @@ async function main() {
       sku: 'DON-FFP7355',
       categoryId: catFiltros.id,
       brandId: brandDonsson.id,
-      images: { create: [{ url: '/filtro-aceite.jpg', isMain: true }] },
+      images: { create: [{ url: '/filtro-aceite.webp', isMain: true }] },
       attributes: {
         create: [
           { name: 'Tipo de Filtro', value: 'Combustible Diésel' },
@@ -1602,7 +1495,7 @@ async function main() {
       sku: 'DON-CFP31068',
       categoryId: catFiltros.id,
       brandId: brandDonsson.id,
-      images: { create: [{ url: '/filtro-aire.png', isMain: true }] },
+      images: { create: [{ url: '/filtro-aire.webp', isMain: true }] },
       variants: {
         create: [
           { name: 'Unidad', price: 27000, stock: 20, sku: 'DON-CFP31068-UN' }
@@ -1621,7 +1514,7 @@ async function main() {
       sku: 'DON-LFP3000',
       categoryId: catMaquinaria.id,
       brandId: brandDonsson.id,
-      images: { create: [{ url: '/05_wix_51820_filtro_aceite_pesado.png', isMain: true }] },
+      images: { create: [{ url: '/05_wix_51820_filtro_aceite_pesado.webp', isMain: true }] },
       attributes: {
         create: [
           { name: 'Aplicación', value: 'Motores Cummins N14, ISM, ISX' },
@@ -1647,7 +1540,7 @@ async function main() {
       sku: 'DON-LFP9009',
       categoryId: catMaquinaria.id,
       brandId: brandDonsson.id,
-      images: { create: [{ url: '/05_wix_51820_filtro_aceite_pesado.png', isMain: true }] },
+      images: { create: [{ url: '/05_wix_51820_filtro_aceite_pesado.webp', isMain: true }] },
       attributes: {
         create: [
           { name: 'Tecnología', value: 'Combinado Flujo Total / By-pass Venturi' },
@@ -1673,7 +1566,7 @@ async function main() {
       sku: 'DON-FSP1280',
       categoryId: catMaquinaria.id,
       brandId: brandDonsson.id,
-      images: { create: [{ url: '/catalogo-filtros-donsson/donsson-fsp1280-separador.jpg', isMain: true }] },
+      images: { create: [{ url: '/catalogo-filtros-donsson/donsson-fsp1280-separador.webp', isMain: true }] },
       variants: {
         create: [
           { name: 'Unidad', price: 45000, stock: 35, sku: 'DON-FSP1280-UN' }
@@ -1692,7 +1585,7 @@ async function main() {
       sku: 'DON-FSP19727',
       categoryId: catMaquinaria.id,
       brandId: brandDonsson.id,
-      images: { create: [{ url: '/catalogo-filtros-donsson/donsson-fsp19727-separador.jpg', isMain: true }] },
+      images: { create: [{ url: '/catalogo-filtros-donsson/donsson-fsp19727-separador.webp', isMain: true }] },
       variants: {
         create: [
           { name: 'Unidad', price: 65000, stock: 20, sku: 'DON-FSP19727-UN' }
@@ -1711,7 +1604,7 @@ async function main() {
       sku: 'DON-AFP25544',
       categoryId: catMaquinaria.id,
       brandId: brandDonsson.id,
-      images: { create: [{ url: '/catalogo-filtros-donsson/donsson-afp25544-aire.jpg', isMain: true }] },
+      images: { create: [{ url: '/catalogo-filtros-donsson/donsson-afp25544-aire.webp', isMain: true }] },
       variants: {
         create: [
           { name: 'Unidad', price: 145000, stock: 15, sku: 'DON-AFP25544-UN' }
@@ -1730,7 +1623,7 @@ async function main() {
       sku: 'DON-AFP25708',
       categoryId: catMaquinaria.id,
       brandId: brandDonsson.id,
-      images: { create: [{ url: '/catalogo-filtros-donsson/donsson-afp25708-aire.jpg', isMain: true }] },
+      images: { create: [{ url: '/catalogo-filtros-donsson/donsson-afp25708-aire.webp', isMain: true }] },
       variants: {
         create: [
           { name: 'Unidad', price: 185000, stock: 12, sku: 'DON-AFP25708-UN' }
@@ -1749,7 +1642,7 @@ async function main() {
       sku: 'DON-HFP6510',
       categoryId: catMaquinaria.id,
       brandId: brandDonsson.id,
-      images: { create: [{ url: '/catalogo-filtros-donsson/donsson-hfp6510-hidraulico.png', isMain: true }] },
+      images: { create: [{ url: '/catalogo-filtros-donsson/donsson-hfp6510-hidraulico.webp', isMain: true }] },
       variants: {
         create: [
           { name: 'Unidad', price: 98000, stock: 18, sku: 'DON-HFP6510-UN' }
@@ -1768,7 +1661,7 @@ async function main() {
       sku: 'DON-WFP2075',
       categoryId: catMaquinaria.id,
       brandId: brandDonsson.id,
-      images: { create: [{ url: '/catalogo-filtros-donsson/donsson-wfp2075-coolant.png', isMain: true }] },
+      images: { create: [{ url: '/catalogo-filtros-donsson/donsson-wfp2075-coolant.webp', isMain: true }] },
       variants: {
         create: [
           { name: 'Unidad', price: 38000, stock: 25, sku: 'DON-WFP2075-UN' }
@@ -1789,7 +1682,7 @@ async function main() {
       sku: 'KIXX-G1-10W40',
       categoryId: catGasolina.id,
       brandId: brandKixx.id,
-      images: { create: [{ url: '/cuarto.png', isMain: true }] },
+      images: { create: [{ url: '/cuarto.webp', isMain: true }] },
       variants: {
         create: [
           { name: 'Cuarto', price: 0, stock: 10, sku: 'KIXX-G1-10W40-CTO' },
@@ -1809,7 +1702,7 @@ async function main() {
       sku: 'KIXX-HD1-15W40',
       categoryId: catDiesel.id,
       brandId: brandKixx.id,
-      images: { create: [{ url: '/balde-negro.png', isMain: true }] },
+      images: { create: [{ url: '/balde-negro.webp', isMain: true }] },
       variants: {
         create: [
           { name: 'Balde', price: 0, stock: 8, sku: 'KIXX-HD1-15W40-BALDE' },
@@ -1829,7 +1722,7 @@ async function main() {
       sku: 'LOC-SI593-BLK-70ML',
       categoryId: catSiliconas.id,
       brandId: brandLoctite.id,
-      images: { create: [{ url: '/catalogo-siliconas-automotrices/loctite-si-593-negra-70ml.png', isMain: true }] },
+      images: { create: [{ url: '/catalogo-siliconas-automotrices/loctite-si-593-negra-70ml.webp', isMain: true }] },
       attributes: {
         create: [
           { name: 'Color', value: 'Negro' },
@@ -1855,7 +1748,7 @@ async function main() {
       sku: 'LOC-SI596-RED-70ML',
       categoryId: catSiliconas.id,
       brandId: brandLoctite.id,
-      images: { create: [{ url: '/catalogo-siliconas-automotrices/loctite-si-596-roja-70ml.png', isMain: true }] },
+      images: { create: [{ url: '/catalogo-siliconas-automotrices/loctite-si-596-roja-70ml.webp', isMain: true }] },
       attributes: {
         create: [
           { name: 'Color', value: 'Rojo' },
@@ -1883,7 +1776,7 @@ async function main() {
       sku: 'ACD-DEXCOOL-88863336-4L',
       categoryId: catCoolant.id,
       brandId: brandACDelco.id,
-      images: { create: [{ url: '/acdelco-dex-cool-50-50-galon.png', isMain: true }] },
+      images: { create: [{ url: '/acdelco-dex-cool-50-50-galon.webp', isMain: true }] },
       attributes: {
         create: [
           { name: 'Color', value: 'Naranja' },

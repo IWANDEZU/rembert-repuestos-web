@@ -12,7 +12,7 @@ export const DESTINATION_EMAIL = "repuestosrembertsa@gmail.com";
 const configuredSiteOrigin = process.env.NEXT_PUBLIC_SITE_URL;
 export const SITE_ORIGIN = /^https?:\/\/[^\s/$.?#].[^\s]*$/i.test(configuredSiteOrigin || "")
   ? configuredSiteOrigin.replace(/\/$/, "")
-  : "https://rembert-repuestos-web.vercel.app";
+  : "https://rembert.iwandesu2018.workers.dev";
 
 /**
  * Convierte una ruta de imagen o producto en una URL pública absoluta.

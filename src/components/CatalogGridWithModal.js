@@ -1,12 +1,31 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import dynamic from "next/dynamic";
 import Link from "next/link";
 import ProductCard from "./ProductCard";
-import CategoryProductModal from "./CategoryProductModal";
+import { useSession } from "@/components/AuthProvider";
+
+const CategoryProductModal = dynamic(() => import("./CategoryProductModal"));
 
 export default function CatalogGridWithModal({ products, favoriteProductIds = [] }) {
   const [modalIndex, setModalIndex] = useState(null);
+  const [favoriteIds, setFavoriteIds] = useState(favoriteProductIds);
+  const { status } = useSession();
+  const visibleFavoriteIds = status === "authenticated" ? favoriteIds : [];
+
+  useEffect(() => {
+    if (status !== "authenticated") return;
+
+    const controller = new AbortController();
+    fetch("/api/favorites", { signal: controller.signal, cache: "no-store" })
+      .then((response) => (response.ok ? response.json() : { productIds: [] }))
+      .then((payload) => setFavoriteIds(Array.isArray(payload.productIds) ? payload.productIds : []))
+      .catch((error) => {
+        if (error.name !== "AbortError") console.error("No fue posible cargar favoritos", error);
+      });
+    return () => controller.abort();
+  }, [status]);
 
   const handleOpenModal = (index) => {
     setModalIndex(index);
@@ -47,20 +66,15 @@ export default function CatalogGridWithModal({ products, favoriteProductIds = []
   return (
     <>
       {/* Grid de Productos con Opción de Ampliación / Ficha Técnica */}
-      <div
-        className="catalog-grid"
-        style={{
-          display: "grid",
-          gridTemplateColumns: "repeat(auto-fill, minmax(230px, 1fr))",
-          gap: "1.5rem",
-        }}
-      >
+      <div className="catalog-grid">
         {products.map((product, idx) => (
           <div key={product.id} className="catalog-grid__item">
             <ProductCard 
               product={product} 
               onExpand={() => handleOpenModal(idx)} 
-              isFavorite={favoriteProductIds.includes(product.id)}
+              key={`${product.id}:${visibleFavoriteIds.includes(product.id)}`}
+              isFavorite={visibleFavoriteIds.includes(product.id)}
+              imagePriority={idx < 2}
             />
           </div>
         ))}

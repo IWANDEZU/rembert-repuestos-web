@@ -11,7 +11,6 @@ import CartDrawer from "@/components/CartDrawer";
 import SearchBar from "@/components/SearchBar";
 import CookieConsent from "@/components/CookieConsent";
 import BrandLogo from "@/components/BrandLogo";
-import CatalogMenu from "@/components/CatalogMenu";
 import { siteUrl } from "@/lib/site";
 import { Analytics } from '@vercel/analytics/next';
 
@@ -116,11 +115,11 @@ const jsonLdGraph = {
       "url": baseUrl,
       "logo": `${baseUrl}/logo.png`,
       "image": `${baseUrl}/logo.png`,
-      "telephone": "+573108737354",
+      "telephone": "+573102420490",
       "email": "repuestosrembertsa@gmail.com",
       "sameAs": [
         "https://www.facebook.com/profile.php?id=61557618591007",
-        "https://wa.me/573108737354"
+        "https://wa.me/573102420490"
       ],
       "hasMap": "https://maps.app.goo.gl/FmmwX9PivNVnurEL7",
       "address": {
@@ -268,7 +267,7 @@ export default function RootLayout({ children }) {
               {/* Bottom Menu */}
               <ul className="navbar__menu">
                 <li style={{ whiteSpace: 'nowrap', flexShrink: 0 }}><Link href="/" className="navbar__link" style={{ whiteSpace: 'nowrap' }}>INICIO</Link></li>
-                <CatalogMenu />
+                <li style={{ whiteSpace: 'nowrap', flexShrink: 0 }}><Link href="/catalogo" className="navbar__link" style={{ whiteSpace: 'nowrap' }}>CATÁLOGO</Link></li>
                 <li style={{ whiteSpace: 'nowrap', flexShrink: 0 }}><Link href="/catalogo?category=electrico-y-encendido" className="navbar__link" style={{ whiteSpace: 'nowrap' }}>{"PARTES\u00A0ELÉCTRICAS"}</Link></li>
                 <li style={{ whiteSpace: 'nowrap', flexShrink: 0 }}><Link href="/servicio-tecnico" className="navbar__link" style={{ whiteSpace: 'nowrap' }}>{"SERVICIO\u00A0TÉCNICO"}</Link></li>
                 <li style={{ whiteSpace: 'nowrap', flexShrink: 0 }}><Link href="/marcas" className="navbar__link" style={{ whiteSpace: 'nowrap' }}>MARCAS</Link></li>
@@ -344,7 +343,7 @@ export default function RootLayout({ children }) {
             <Analytics />
           </CartProvider>
         </AuthProvider>
-      </body >
-    </html >
+      </body>
+    </html>
   );
 }

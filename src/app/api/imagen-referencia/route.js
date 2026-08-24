@@ -5,7 +5,6 @@ export const dynamic = "force-dynamic";
 
 const allowedBrands = {
   donsson: "DONSSON",
-  partmo: "PARTMO",
 };
 
 const allowedTypes = new Set(["aceite", "aire", "cabina", "combustible", "separador", "hidraulico", "refrigerante"]);

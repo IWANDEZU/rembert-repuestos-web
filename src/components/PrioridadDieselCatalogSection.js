@@ -220,13 +220,7 @@ export default function PrioridadDieselCatalogSection({ activeCategory }) {
           </button>
         </div>
       ) : (
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))",
-            gap: "1.5rem",
-          }}
-        >
+        <div className="catalog-grid">
           {filteredProducts.map((product, idx) => (
             <PrioridadDieselCard
               key={product.id}

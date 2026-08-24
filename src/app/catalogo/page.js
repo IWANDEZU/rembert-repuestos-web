@@ -1,5 +1,3 @@
-import { getServerSession } from "@/lib/auth";
-import { prisma } from "@/lib/prisma";
 import Image from "next/image";
 import Link from "next/link";
 import { redirect } from "next/navigation";
@@ -11,8 +9,11 @@ import { buildCatalogHref } from "@/lib/catalogUtils";
 import { siteUrl } from "@/lib/site";
 import { products as fallbackCatalogProducts } from "@/lib/products";
 import { inventoryLineSummary } from "@/data/inventoryProducts";
+import { searchAndRankProducts, cleanText } from "@/lib/searchEngine";
 
-export const dynamic = "force-dynamic";
+// El catálogo es público. La autenticación de favoritos se resuelve en el
+// cliente para no ejecutar Supabase + Prisma durante cada visita anónima.
+export const revalidate = 300;
 const PAGE_SIZE = 24;
 const PART_FILTERS = {
   pastillas: ["pastilla"],
@@ -58,7 +59,9 @@ function normalizeCatalogText(value = "") {
 
 export async function generateMetadata({ searchParams }) {
   const resolvedParams = await searchParams;
-  const categoryParam = resolvedParams?.category;
+  const categoryParam = resolvedParams?.category === "partes-electricas"
+    ? "electrico-y-encendido"
+    : resolvedParams?.category;
   const brandParam = resolvedParams?.brand;
   const tipoParam = resolvedParams?.tipo;
   const vehicleParam = resolvedParams?.vehicle;
@@ -247,10 +250,10 @@ const gasolineBrakeApplications = [
 }));
 
 const filterVisualImgs = [
-  "/filtro-aceite-gasolina-catalogo.png",
-  "/filtro-aire-gasolina-catalogo.png",
-  "/filtro-cabina-gasolina-catalogo.png",
-  "/filtro-combustible-gasolina-catalogo.png",
+  "/filtro-aceite-gasolina-catalogo.webp",
+  "/filtro-aire-gasolina-catalogo.webp",
+  "/filtro-cabina-gasolina-catalogo.webp",
+  "/filtro-combustible-gasolina-catalogo.webp",
 ];
 const gasolineFilterBrandVisuals = Object.fromEntries([
   ["Chevrolet", 0], ["Renault", 1], ["Toyota", 2], ["Kia", 3],
@@ -314,7 +317,19 @@ function filterFallbackCatalog({ categoryParam, brandParam, tipoParam, lineParam
   }
 
   if (brandParam) {
-    filtered = filtered.filter((product) => product.brand?.slug === brandParam);
+    const brandClean = cleanText(brandParam);
+    filtered = filtered.filter((product) => {
+      const pBrandSlug = cleanText(product.brand?.slug);
+      const pBrandName = cleanText(product.brand?.name);
+      const pName = cleanText(product.name);
+      const pLine = cleanText(product.inventoryLine);
+
+      if (pBrandSlug === brandClean || pBrandName === brandClean || pBrandName.includes(brandClean)) {
+        return true;
+      }
+      const regex = new RegExp(`(?:^|[^a-z0-9])${brandClean}(?:[^a-z0-9]|$)`, "i");
+      return regex.test(pName) || regex.test(pLine);
+    });
   }
 
   if (lineParam) {
@@ -338,20 +353,58 @@ function filterFallbackCatalog({ categoryParam, brandParam, tipoParam, lineParam
   }
 
   if (searchQuery) {
-    const query = searchQuery.toLowerCase();
-    filtered = filtered.filter((product) =>
-      `${product.name} ${product.description || ""} ${product.shortDesc || ""} ${product.sku || ""}`
-        .toLowerCase()
-        .includes(query)
-    );
+    filtered = searchAndRankProducts(filtered, searchQuery);
   }
 
   return filtered;
 }
 
+// Índices inmutables calculados una vez por instancia del Worker. Antes se
+// recorría el inventario completo 18 veces en cada solicitud del catálogo.
+const fallbackCatalogBrands = Array.from(
+  new Map(
+    fallbackCatalogProducts
+      .filter((product) => product.brand?.slug)
+      .map((product) => [product.brand.slug, product.brand])
+  ).values()
+).sort((a, b) => a.name.localeCompare(b.name, "es"));
+
+const brakeVehicleAvailability = (() => {
+  const applications = gasolineBrakeApplications.map(({ brand }) => ({
+    brand,
+    normalizedBrand: normalizeCatalogText(brand),
+    count: 0,
+  }));
+  const brakeProducts = filterFallbackCatalog({
+    categoryParam: "frenos-y-suspension",
+    brandParam: "",
+    tipoParam: "",
+    lineParam: "",
+    vehicleParam: "",
+    partParam: "",
+    searchQuery: "",
+  });
+
+  for (const product of brakeProducts) {
+    const attributes = (product.attributes || [])
+      .map((attribute) => `${attribute.name || ""} ${attribute.value || ""}`)
+      .join(" ");
+    const searchable = normalizeCatalogText(
+      `${product.name} ${product.shortDesc || ""} ${product.description || ""} ${attributes}`
+    );
+    for (const application of applications) {
+      if (searchable.includes(application.normalizedBrand)) application.count += 1;
+    }
+  }
+
+  return new Map(applications.map(({ brand, count }) => [brand, count]));
+})();
+
 export default async function Catalogo({ searchParams }) {
   const resolvedParams = await searchParams;
-  const categoryParam = resolvedParams?.category;
+  const categoryParam = resolvedParams?.category === "partes-electricas"
+    ? "electrico-y-encendido"
+    : resolvedParams?.category;
   const brandParam = resolvedParams?.brand;
   const tipoParam = resolvedParams?.tipo;
   const lineParam = resolvedParams?.line;
@@ -363,292 +416,11 @@ export default async function Catalogo({ searchParams }) {
     ? resolvedParams.sort
     : "recent";
 
-  const conditions = [];
-
-  if (categoryParam === "mantenimiento") {
-    conditions.push({
-      OR: [
-        { category: { slug: { in: ["siliconas", "coolant", "grasas-y-aditivos", "transmision"] } } },
-        { name: { contains: "Refrigerante" } },
-        { name: { contains: "Valvulina" } },
-      ],
-    });
-  } else if (categoryParam === "lubricantes") {
-    conditions.push({
-      OR: [
-        { category: { slug: { in: categorySlugs } } },
-        { name: { contains: "Aceite" } },
-        { name: { contains: "Lubricante" } },
-        { name: { contains: "Grasa" } },
-      ],
-    });
-    conditions.push({
-      NOT: [
-        { name: { contains: "Filtro" } },
-        { category: { slug: "filtros" } },
-        { category: { slug: "frenos-y-suspension" } },
-      ],
-    });
-  } else if (categoryParam === "lubricantes-gasolina") {
-    conditions.push({
-      OR: [
-        { category: { slug: "lubricantes-gasolina" } },
-        { name: { contains: "Gasolina" } },
-        { name: { contains: "Edge" } },
-        { name: { contains: "Magnatec" } },
-        { name: { contains: "Molygen" } },
-      ],
-    });
-    conditions.push({
-      NOT: [{ name: { contains: "Filtro" } }, { category: { slug: "filtros" } }],
-    });
-  } else if (categoryParam === "transmision") {
-    conditions.push({
-      OR: [
-        { category: { slug: "transmision" } },
-        { name: { contains: "Caja" } },
-        { name: { contains: "Transmisión" } },
-        { name: { contains: "Transmision" } },
-        { name: { contains: "Automática" } },
-        { name: { contains: "Automatica" } },
-        { name: { contains: "CVT" } },
-        { name: { contains: "Manual" } },
-      ],
-    });
-  } else if (categoryParam === "hidraulico") {
-    conditions.push({
-      OR: [
-        { category: { slug: "hidraulico" } },
-        { name: { contains: "Hidráulico" } },
-        { name: { contains: "Hidraulico" } },
-        { name: { contains: "HYDO" } },
-        { name: { contains: "Tellus" } },
-      ],
-    });
-  } else if (categoryParam === "coolant") {
-    conditions.push({
-      OR: [
-        { category: { slug: "coolant" } },
-        { name: { contains: "Coolant" } },
-        { name: { contains: "Refrigerante" } },
-        { name: { contains: "ELC" } },
-      ],
-    });
-  } else if (categoryParam === "grasas-y-aditivos") {
-    conditions.push({
-      OR: [
-        { category: { slug: "grasas-y-aditivos" } },
-        { name: { contains: "Grasa" } },
-        { name: { contains: "Grease" } },
-        { name: { contains: "Aditivo" } },
-      ],
-    });
-  } else if (categoryParam === "filtros") {
-    const baseFilter = {
-      OR: [
-        { category: { slug: "filtros" } },
-        { name: { contains: "Filtro" } },
-        { shortDesc: { contains: "Filtro" } },
-      ],
-    };
-    const typeTerms = {
-      aceite: ["Aceite"],
-      aire: ["Aire"],
-      combustible: ["Combustible", "Separador"],
-      cabina: ["Cabina"],
-    };
-    conditions.push(baseFilter);
-    if (typeTerms[tipoParam]) {
-      conditions.push({
-        OR: typeTerms[tipoParam].flatMap((term) => [
-          { name: { contains: term } },
-          { shortDesc: { contains: term } },
-        ]),
-      });
-    }
-  } else if (categoryParam === "frenos-y-suspension") {
-    conditions.push({
-      OR: [
-        { category: { slug: { in: ["frenos-y-suspension", "liquido-frenos"] } } },
-        { name: { contains: "Pastilla" } },
-        { name: { contains: "Disco" } },
-      ],
-    });
-  } else if (categoryParam === "hidraulico") {
-    conditions.push({
-      OR: [
-        { category: { slug: "hidraulico" } },
-        { name: { contains: "Hidráulico" } },
-        { name: { contains: "Hidraulico" } },
-        { name: { contains: "HYDO" } },
-        { name: { contains: "Tellus" } },
-      ],
-    });
-  } else if (categoryParam === "coolant") {
-    conditions.push({
-      OR: [
-        { category: { slug: "coolant" } },
-        { name: { contains: "Coolant" } },
-        { name: { contains: "Refrigerante" } },
-        { name: { contains: "ELC" } },
-      ],
-    });
-  } else if (categoryParam === "grasas-y-aditivos") {
-    conditions.push({
-      OR: [
-        { category: { slug: "grasas-y-aditivos" } },
-        { name: { contains: "Grasa" } },
-        { name: { contains: "Grease" } },
-        { name: { contains: "Aditivo" } },
-      ],
-    });
-  } else if (categoryParam === "filtros") {
-    const baseFilter = {
-      OR: [
-        { category: { slug: "filtros" } },
-        { name: { contains: "Filtro" } },
-        { shortDesc: { contains: "Filtro" } },
-      ],
-    };
-    const typeTerms = {
-      aceite: ["Aceite"],
-      aire: ["Aire"],
-      combustible: ["Combustible", "Separador"],
-      cabina: ["Cabina"],
-    };
-    conditions.push(baseFilter);
-    if (typeTerms[tipoParam]) {
-      conditions.push({
-        OR: typeTerms[tipoParam].flatMap((term) => [
-          { name: { contains: term } },
-          { shortDesc: { contains: term } },
-        ]),
-      });
-    }
-  } else if (categoryParam === "frenos-y-suspension") {
-    conditions.push({
-      OR: [
-        { category: { slug: { in: ["frenos-y-suspension", "liquido-frenos"] } } },
-        { name: { contains: "Pastilla" } },
-        { name: { contains: "Disco" } },
-        { name: { contains: "Amortiguador" } },
-        { name: { contains: "Freno" } },
-        { name: { contains: "Strut" } },
-      ],
-    });
-  } else if (categoryParam === "maquinaria-pesada") {
-    conditions.push({
-      OR: [
-        { category: { slug: "maquinaria-pesada" } },
-        { brand: { slug: "caterpillar" } },
-        { name: { contains: "Delvac" } },
-        { name: { contains: "Delo" } },
-        { name: { contains: "Rimula" } },
-        { name: { contains: "Premium Blue" } },
-        { description: { contains: "maquinaria" } },
-      ],
-    });
-  } else if (categoryParam === "urea") {
-    conditions.push({
-      OR: [
-        { category: { slug: "urea" } },
-        { name: { contains: "Urea" } },
-        { name: { contains: "AdBlue" } },
-        { name: { contains: "DEF" } },
-      ],
-    });
-  } else if (categoryParam === "radiadores") {
-    conditions.push({
-      OR: [
-        { category: { slug: { in: ["radiadores", "coolant"] } } },
-        { name: { contains: "Radiador" } },
-        { name: { contains: "Intercooler" } },
-        { name: { contains: "Enfriador" } },
-        { name: { contains: "Tapa" } },
-        { name: { contains: "Termostato" } },
-        { description: { contains: "radiador" } },
-      ],
-    });
-  } else if (categoryParam === "siliconas") {
-    conditions.push({
-      OR: [
-        { brand: { slug: "victor-reinz" } },
-        { name: { contains: "Reinzosil" } },
-      ],
-    });
-  } else if (categoryParam) {
-    conditions.push({ category: { slug: categoryParam } });
-  }
-
-  if (brandParam) {
-    conditions.push({ brand: { slug: brandParam } });
-  }
-
-
-  if (vehicleParam) {
-    conditions.push({
-      OR: [
-        { name: { contains: vehicleParam } },
-        { description: { contains: vehicleParam } },
-        { shortDesc: { contains: vehicleParam } },
-        { attributes: { some: { value: { contains: vehicleParam } } } },
-      ],
-    });
-  }
-
-  if (partParam && PART_FILTERS[partParam]) {
-    conditions.push({
-      OR: PART_FILTERS[partParam].flatMap((term) => [
-        { name: { contains: term } },
-        { description: { contains: term } },
-        { shortDesc: { contains: term } },
-        { attributes: { some: { value: { contains: term } } } },
-      ]),
-    });
-  }
-
-  if (searchQuery) {
-    conditions.push({
-      OR: [
-        { name: { contains: searchQuery } },
-        { description: { contains: searchQuery } },
-        { shortDesc: { contains: searchQuery } },
-        { sku: { contains: searchQuery } },
-      ],
-    });
-  }
-
-  // Excluir únicamente artículos diésel; refrigerantes, grasas y valvulinas
-  // forman parte del catálogo de mantenimiento solicitado.
-  conditions.push({
-    NOT: [
-      { name: { contains: "Diesel" } },
-      { name: { contains: "Diésel" } },
-      { name: { contains: "diesel" } },
-      { name: { contains: "diésel" } },
-      { brand: { slug: "loctite" } },
-    ],
-  });
-
-  const where = {
-    isActive: true,
-    ...(conditions.length > 0 ? { AND: conditions } : {}),
-  };
-
-  const orderBy =
-    sortParam === "price-asc"
-      ? { price: "asc" }
-      : sortParam === "price-desc"
-        ? { price: "desc" }
-        : { createdAt: "desc" };
-
-  const productInclude = { category: true, brand: true, images: true, variants: true, attributes: true };
   const requiresPriceSort = sortParam.startsWith("price");
 
   let fetchedProducts = [];
   let totalProducts = 0;
   let brands = [];
-  let session = null;
 
   const applyFallbackCatalog = () => {
     const filtered = filterFallbackCatalog({ categoryParam, brandParam, tipoParam, lineParam, vehicleParam, partParam, searchQuery });
@@ -656,24 +428,13 @@ export default async function Catalogo({ searchParams }) {
     fetchedProducts = requiresPriceSort
       ? filtered
       : filtered.slice((requestedPage - 1) * PAGE_SIZE, requestedPage * PAGE_SIZE);
-    brands = Array.from(
-      new Map(
-        fallbackCatalogProducts
-          .filter((product) => product.brand?.slug)
-          .map((product) => [product.brand.slug, product.brand])
-      ).values()
-    ).sort((a, b) => a.name.localeCompare(b.name, "es"));
+    brands = fallbackCatalogBrands;
   };
 
   // INVENTARIO GENERAL es la única fuente de publicación pública. La base de
   // datos conserva usuarios, pedidos y favoritos, pero no puede reintroducir
   // productos ausentes del documento autorizado.
   applyFallbackCatalog();
-  try {
-    session = await getServerSession();
-  } catch (err) {
-    session = null;
-  }
 
   const currentPage = requestedPage;
   const totalPages = Math.max(1, Math.ceil(totalProducts / PAGE_SIZE));
@@ -691,18 +452,9 @@ export default async function Catalogo({ searchParams }) {
     }));
   }
 
-  let favoriteProductIds = [];
-  if (session?.user?.id) {
-    try {
-      const favorites = await prisma.favorite.findMany({
-        where: { userId: session.user.id },
-        select: { productId: true },
-      });
-      favoriteProductIds = favorites.map(f => f.productId);
-    } catch (err) {
-      favoriteProductIds = [];
-    }
-  }
+  // Los favoritos se hidratan desde el navegador solo para usuarios autenticados.
+  // Así la tienda pública no depende de una llamada remota para poder renderizar.
+  const favoriteProductIds = [];
 
   // Los productos sin precio se cotizan, no se venden desde la web. Por eso
   // deben permanecer detrás de las referencias con precio al ordenar.
@@ -857,7 +609,7 @@ export default async function Catalogo({ searchParams }) {
               src="/catalogo-electricos-neon-rembert.webp"
               alt="Bujías, bobinas, cables y sensores automotrices sobre fondo neón amarillo REMBERT"
               fill
-              priority
+              preload
               sizes="(max-width: 900px) 100vw, 75vw"
               style={{ objectFit: "cover" }}
             />
@@ -917,92 +669,12 @@ export default async function Catalogo({ searchParams }) {
           </section>
         )}
 
-        {categoryParam === "frenos-y-suspension" && !brandParam && !searchQuery && !vehicleParam && !partParam && (!lineParam || lineParam === "AMORTIGUADORES") && (
-          <>
+        {categoryParam === "frenos-y-suspension" && !brandParam && !searchQuery && !vehicleParam && !partParam && !lineParam && (
+          <div className="catalog-priority-showcase">
             <VerkePriorityShowcase
               inventoryCount={inventoryLineSummary.find((entry) => entry.name === "AMORTIGUADORES")?.count || 0}
             />
-            <RowenPriorityShowcase />
-          </>
-        )}
-
-        {categoryParam === "frenos-y-suspension" && !brandParam && !searchQuery && !vehicleParam && !partParam && (
-          <section className="filter-showcase" aria-labelledby="brake-applications-title">
-            <div className="filter-showcase__heading">
-              <div>
-                <p className="filter-showcase__eyebrow">Catálogo para automóviles y pickups a gasolina</p>
-                <h2 id="brake-applications-title">Encuentra frenos y suspensión por vehículo</h2>
-              </div>
-              <p>Explora la cobertura por marca y solicita la referencia exacta con los datos de tu vehículo. Confirmamos aplicación antes del despacho.</p>
-            </div>
-            <div className="vehicle-catalog-summary" aria-label="Cobertura del catálogo">
-              <div><strong>{gasolineBrakeApplications.length}</strong><span>marcas cubiertas</span></div>
-              <div><strong>5+</strong><span>familias por vehículo</span></div>
-              <div><strong>VIN</strong><span>validación antes de compra</span></div>
-              <div><strong>Colombia</strong><span>envíos nacionales</span></div>
-            </div>
-            <nav className="smart-parts-menu" aria-label="Buscar frenos, dirección y suspensión por tipo de repuesto">
-              <strong>Buscar por repuesto:</strong>
-              <div>
-                {SMART_BRAKE_FAMILIES.map(([part, label]) => (
-                  <Link
-                    key={part}
-                    href={`${buildCatalogHref({ category: "frenos-y-suspension", part })}#productos`}
-                    className={partParam === part ? "is-active" : ""}
-                    aria-current={partParam === part ? "page" : undefined}
-                  >
-                    {label}
-                  </Link>
-                ))}
-              </div>
-            </nav>
-            <div className="filter-showcase__grid filter-showcase__grid--vehicles">
-              {gasolineBrakeApplications.map(({ brand, logo, models, systems }) => (
-                <article key={brand} className="filter-showcase__card filter-showcase__card--application vehicle-application-card">
-                  <div className="vehicle-application-card__header">
-                    <div className="vehicle-application-card__logo">
-                      <Image src={logo} alt={`Logo ${brand}`} width={92} height={52} />
-                    </div>
-                    <span>Gasolina</span>
-                  </div>
-                  <div className="filter-showcase__copy">
-                    <h3>{brand}</h3>
-                    <p><strong>Modelos:</strong> {models}</p>
-                    <div className="vehicle-part-links" aria-label={`Repuestos disponibles para ${brand}`}>
-                      <strong>Encuentra:</strong>
-                      {systems.split(" · ").map((partName) => (
-                        <Link
-                          key={partName}
-                          href={`${buildCatalogHref({ category: "frenos-y-suspension", vehicle: brand, part: filterSlug(partName) })}#productos`}
-                        >
-                          {partName}
-                        </Link>
-                      ))}
-                    </div>
-                    <Link href={`${buildCatalogHref({ category: "frenos-y-suspension", vehicle: brand })}#productos`}>
-                      Ver productos compatibles <span aria-hidden="true">→</span>
-                    </Link>
-                  </div>
-                </article>
-              ))}
-            </div>
-            <aside className="vehicle-fitment-cta" aria-label="Ayuda para confirmar compatibilidad">
-              <div>
-                <p className="filter-showcase__eyebrow">Compra segura</p>
-                <h3>¿No encuentras tu modelo o no conoces la referencia?</h3>
-                <p>Envíanos marca, modelo, año, motorización, versión y VIN. Para frenos también confirma eje delantero o trasero y si utiliza ABS.</p>
-              </div>
-              <a
-                href="https://wa.me/573508299233?text=Hola%20Rembert%2C%20necesito%20confirmar%20un%20repuesto%20de%20frenos%20o%20suspensi%C3%B3n.%20Marca%3A%20___%20Modelo%3A%20___%20A%C3%B1o%3A%20___%20Motor%3A%20___%20VIN%3A%20___"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="vehicle-fitment-cta__button"
-              >
-                Confirmar por WhatsApp
-              </a>
-            </aside>
-            <p className="vehicle-fitment-note">Las aplicaciones publicadas son una guía de búsqueda. La referencia final depende de VIN, año, motor, versión, eje, medidas y configuración ABS.</p>
-          </section>
+          </div>
         )}
 
         <div id="productos" className="catalog-toolbar">
@@ -1032,6 +704,105 @@ export default async function Catalogo({ searchParams }) {
             <span aria-current="page">Página {currentPage} de {totalPages}</span>
             {currentPage < totalPages && <Link href={pageHref(currentPage + 1)} rel="next" className="btn btn--outline">Siguiente</Link>}
           </nav>
+        )}
+
+        {categoryParam === "frenos-y-suspension" && !brandParam && !searchQuery && !vehicleParam && !partParam && !lineParam && (
+          <div className="catalog-secondary-showcase">
+            <RowenPriorityShowcase />
+          </div>
+        )}
+
+        {categoryParam === "frenos-y-suspension" && !brandParam && !searchQuery && !vehicleParam && !partParam && (
+          <section className="filter-showcase brake-application-showcase" aria-labelledby="brake-applications-title">
+            <div className="filter-showcase__heading">
+              <div>
+                <p className="filter-showcase__eyebrow">Catálogo para automóviles y pickups a gasolina</p>
+                <h2 id="brake-applications-title">Encuentra frenos y suspensión por vehículo</h2>
+              </div>
+              <p>Explora la cobertura por marca y solicita la referencia exacta con los datos de tu vehículo. Confirmamos aplicación antes del despacho.</p>
+            </div>
+            <div className="vehicle-catalog-summary" aria-label="Cobertura del catálogo">
+              <div><strong>{gasolineBrakeApplications.length}</strong><span>marcas cubiertas</span></div>
+              <div><strong>5+</strong><span>familias por vehículo</span></div>
+              <div><strong>VIN</strong><span>validación antes de compra</span></div>
+              <div><strong>Colombia</strong><span>envíos nacionales</span></div>
+            </div>
+            <nav className="smart-parts-menu" aria-label="Buscar frenos, dirección y suspensión por tipo de repuesto">
+              <strong>Buscar por repuesto:</strong>
+              <div>
+                {SMART_BRAKE_FAMILIES.map(([part, label]) => (
+                  <Link
+                    key={part}
+                    href={`${buildCatalogHref({ category: "frenos-y-suspension", part })}#productos`}
+                    className={partParam === part ? "is-active" : ""}
+                    aria-current={partParam === part ? "page" : undefined}
+                  >
+                    {label}
+                  </Link>
+                ))}
+              </div>
+            </nav>
+            <div className="filter-showcase__grid filter-showcase__grid--vehicles">
+              {gasolineBrakeApplications.map(({ brand, logo, models, systems }) => {
+                const availableCount = brakeVehicleAvailability.get(brand) || 0;
+                const compatibilityQuery = `Hola Rembert, necesito confirmar un repuesto de frenos o suspensión para ${brand}. Modelo: ___ Año: ___ Motor: ___ VIN: ___`;
+                return (
+                <article key={brand} className="filter-showcase__card filter-showcase__card--application vehicle-application-card">
+                  <div className="vehicle-application-card__header">
+                    <div className="vehicle-application-card__logo">
+                      <Image src={logo} alt={`Logo ${brand}`} width={92} height={52} />
+                    </div>
+                    <span>Gasolina</span>
+                  </div>
+                  <div className="filter-showcase__copy">
+                    <h3>{brand}</h3>
+                    <p><strong>Modelos:</strong> {models}</p>
+                    <div className="vehicle-part-links" aria-label={`Repuestos disponibles para ${brand}`}>
+                      <strong>Encuentra:</strong>
+                      {systems.split(" · ").map((partName) => (
+                        <Link
+                          key={partName}
+                          href={`${buildCatalogHref({ category: "frenos-y-suspension", vehicle: brand, part: filterSlug(partName) })}#productos`}
+                        >
+                          {partName}
+                        </Link>
+                      ))}
+                    </div>
+                    {availableCount > 0 ? (
+                      <Link href={`${buildCatalogHref({ category: "frenos-y-suspension", vehicle: brand })}#productos`}>
+                        Ver {availableCount} referencias disponibles <span aria-hidden="true">→</span>
+                      </Link>
+                    ) : (
+                      <a
+                        href={`https://wa.me/573508299233?text=${encodeURIComponent(compatibilityQuery)}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Solicitar compatibilidad <span aria-hidden="true">→</span>
+                      </a>
+                    )}
+                  </div>
+                </article>
+                );
+              })}
+            </div>
+            <aside className="vehicle-fitment-cta" aria-label="Ayuda para confirmar compatibilidad">
+              <div>
+                <p className="filter-showcase__eyebrow">Compra segura</p>
+                <h3>¿No encuentras tu modelo o no conoces la referencia?</h3>
+                <p>Envíanos marca, modelo, año, motorización, versión y VIN. Para frenos también confirma eje delantero o trasero y si utiliza ABS.</p>
+              </div>
+              <a
+                href="https://wa.me/573508299233?text=Hola%20Rembert%2C%20necesito%20confirmar%20un%20repuesto%20de%20frenos%20o%20suspensi%C3%B3n.%20Marca%3A%20___%20Modelo%3A%20___%20A%C3%B1o%3A%20___%20Motor%3A%20___%20VIN%3A%20___"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="vehicle-fitment-cta__button"
+              >
+                Confirmar por WhatsApp
+              </a>
+            </aside>
+            <p className="vehicle-fitment-note">Las aplicaciones publicadas son una guía de búsqueda. La referencia final depende de VIN, año, motor, versión, eje, medidas y configuración ABS.</p>
+          </section>
         )}
       </div>
     </main>

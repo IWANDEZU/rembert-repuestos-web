@@ -4,20 +4,21 @@ import Image from "next/image";
 export const metadata = {
   title: "Servicio Técnico Automotriz | REMBERT",
   description:
-    "Servicio técnico especializado de REMBERT en Barrancabermeja: Diagnóstico por escáner, cambio de aceite y filtros, mantenimiento de frenos, suspensión y radiadores.",
+    "Servicio técnico especializado de REMBERT en Barrancabermeja: Cambio de aceite y filtros, mantenimiento de frenos, suspensión, baterías y radiadores.",
   alternates: {
     canonical: "/servicio-tecnico",
   },
   openGraph: {
     title: "Servicio Técnico Automotriz | REMBERT",
     description:
-      "Mantenimiento preventivo, diagnóstico y montaje de repuestos con garantía en Barrancabermeja.",
+      "Mantenimiento preventivo y montaje de repuestos con garantía en Barrancabermeja.",
     url: "https://www.rembertrepuestos.com/servicio-tecnico",
   },
 };
 
 export default function ServicioTecnicoPage() {
   const services = [
+    /* Temporalmente desactivado: Diagnóstico Computarizado y Escáner
     {
       title: "Diagnóstico Computarizado y Escáner",
       icon: "💻",
@@ -25,11 +26,12 @@ export default function ServicioTecnicoPage() {
         "Lectura de códigos de falla, diagnóstico electrónico de motor, ABS, Airbag y sistemas de inyección con equipos de última tecnología.",
       badge: "Precisión Total",
     },
+    */
     {
       title: "Cambio de Aceite y Filtros",
       icon: "🛢️",
       description:
-        "Mantenimiento rápido de fluidos con las mejores marcas del mercado (Shell, Mobil, Castrol, Terpel, Chevron). Filtros de aceite, aire y cabina WIX y Partmo.",
+        "Mantenimiento rápido de fluidos con las mejores marcas del mercado (Shell, Mobil, Castrol, Terpel, Chevron). Filtros de aceite, aire y cabina WIX y MANN-FILTER.",
       badge: "Entrega Rápida",
     },
     {

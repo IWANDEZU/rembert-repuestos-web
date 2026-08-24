@@ -20,7 +20,10 @@ function toSession(user) {
 
 export default function AuthProvider({ children }) {
   const [data, setData] = useState(null);
-  const [status, setStatus] = useState("loading");
+  // Start safely as signed out. The async Supabase check below promotes the
+  // session to authenticated when it is available, without a synchronous
+  // state update during the effect setup.
+  const [status, setStatus] = useState("unauthenticated");
 
   useEffect(() => {
     let active = true;
@@ -28,7 +31,6 @@ export default function AuthProvider({ children }) {
     try {
       supabase = createClient();
     } catch {
-      setStatus("unauthenticated");
       return () => {
         active = false;
       };

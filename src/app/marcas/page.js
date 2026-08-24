@@ -1,9 +1,8 @@
-import { prisma } from "@/lib/prisma";
 import Link from "next/link";
 import CatalogSidebar from "@/components/CatalogSidebar";
 import Image from "next/image";
 
-export const dynamic = "force-dynamic";
+export const revalidate = false;
 
 export const metadata = {
   title: "Marcas Oficiales | REMBERT",
@@ -22,19 +21,22 @@ export const metadata = {
 
 const fallbackBrands = [
   { name: "Shell", slug: "shell", logo: "/05_shell_logo_oficial.png", count: 12 },
-  { name: "Mobil", slug: "mobil", logo: "/07_mobil_logo_oficial.png", count: 10 },
+  { name: "Mobil", slug: "mobil", logo: "/07_mobil_logo_oficial.webp", count: 10 },
   { name: "Castrol", slug: "castrol", logo: "/06_castrol_logo_oficial.png", count: 14 },
   { name: "Terpel", slug: "terpel", logo: "/04_terpel_logo_oficial.png", count: 8 },
   { name: "Chevron", slug: "chevron", logo: "/14_chevron_lubricants_logo_oficial.png", count: 9 },
   { name: "WIX Filters", slug: "wix", logo: "/logos/wix-filters.svg", count: 16 },
   { name: "Coéxito", slug: "coexito", logo: "/03_coexito_logo_oficial.png", count: 7 },
-  { name: "Partmo", slug: "partmo", logo: "/logos/partmo-real.png", count: 11 },
   { name: "Liqui Moly", slug: "liqui-moly", logo: "/logos/liqui-moly.svg", count: 6 },
   { name: "Bosch", slug: "bosch", logo: "/logos/bosch.svg", count: 15 },
   { name: "Valvoline", slug: "valvoline", logo: "/logos/valvoline.svg", count: 8 },
+  { name: "Verke Shock Absorber", slug: "verke", logo: "/logos/verke.svg", count: 8 },
+  { name: "TNK Suspensión y Dirección", slug: "tnk", logo: "/logos/tnk-oficial.png", count: 11 },
+  { name: "GTI Autoparts", slug: "gti", logo: "/catalogo-gti/gti-linea-homocinetica-rembert.webp", count: 47 },
   { name: "Incolbest", slug: "incolbest", logo: "/logos/incolbest-real.png", count: 12 },
+  { name: "Safety Auto Parts", slug: "safety", logo: "/logos/safety-auto-parts.png", count: 8 },
   { name: "Gabriel", slug: "gabriel", logo: "/logos/gabriel-real.png", count: 10 },
-  { name: "Victor Reinz", slug: "victor-reinz", logo: "/catalogo-siliconas-automotrices/victor-reinz-reinzosil-70ml-original.png", count: 1 },
+  { name: "Victor Reinz", slug: "victor-reinz", logo: "/catalogo-siliconas-automotrices/victor-reinz-reinzosil-70ml-original.webp", count: 1 },
   { name: "Global Oil", slug: "global-oil", logo: "/logos/global-oil.svg", count: 5 },
   { name: "Max Power", slug: "max-power", logo: "/logos/max-power.png", count: 6 },
   { name: "Petroil", slug: "petroil", logo: "/logos/petroil.png", count: 4 },
@@ -43,7 +45,7 @@ const fallbackBrands = [
   { name: "NGK", slug: "ngk", logo: "/catalogo-marcas-panel/ngk-encendido-caja.webp", count: 1 },
   { name: "Dayco", slug: "dayco", logo: "/catalogo-marcas-panel/dayco-kit-distribucion-caja.webp", count: 1 },
   { name: "INA", slug: "ina", logo: "/catalogo-marcas-panel/ina-tensores-caja.webp", count: 1 },
-  { name: "Monroe", slug: "monroe", logo: "/catalogo-marcas-panel/monroe-amortiguadores-caja.webp", count: 1 },
+  { name: "Monroe", slug: "monroe", logo: "/catalogo-marcas-panel/monroe-amortiguadores-caja.webp", count: 2 },
 ];
 
 const lubricantBrandSlugs = new Set([
@@ -73,31 +75,11 @@ const automotiveBrands = [
   { name: "Peugeot", slug: "peugeot", logo: "/logos/autos/peugeot.svg", count: 0 },
 ];
 
-export default async function MarcasPage() {
-  let displayBrands = [];
-
-  try {
-    const dbBrands = await prisma.brand.findMany({
-      where: { slug: { not: "vanssoil" } },
-      include: { _count: { select: { products: true } } },
-    });
-
-    if (dbBrands && dbBrands.length > 0) {
-      displayBrands = dbBrands.filter((b) => !lubricantBrandSlugs.has(b.slug) && b.slug !== "loctite").map((b) => ({
-        id: b.id,
-        name: b.name,
-        slug: b.slug,
-        count: b._count?.products || 0,
-        logo: fallbackBrands.find((fb) => fb.slug === b.slug)?.logo || "/05_shell_logo_oficial.png",
-      }));
-      const existing = new Set(displayBrands.map((b) => b.slug));
-      displayBrands = [...displayBrands, ...automotiveBrands.filter((b) => !existing.has(b.slug))];
-    } else {
-      displayBrands = [...fallbackBrands.filter((b) => !lubricantBrandSlugs.has(b.slug)), ...automotiveBrands];
-    }
-  } catch (_err) {
-    displayBrands = [...fallbackBrands.filter((b) => !lubricantBrandSlugs.has(b.slug)), ...automotiveBrands];
-  }
+export default function MarcasPage() {
+  const displayBrands = [
+    ...fallbackBrands.filter((brand) => !lubricantBrandSlugs.has(brand.slug)),
+    ...automotiveBrands,
+  ];
 
   return (
     <main className="main-container section catalog-layout">

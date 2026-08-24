@@ -1,7 +1,7 @@
 generator client {
   provider        = "prisma-client-js"
   engineType      = "client"
-  previewFeatures = ["queryCompiler"]
+  previewFeatures = ["driverAdapters", "queryCompiler"]
 }
 
 datasource db {
@@ -46,6 +46,7 @@ model Account {
 
   user User @relation(fields: [userId], references: [id], onDelete: Cascade)
   @@unique([provider, providerAccountId])
+  @@index([userId])
 }
 
 model Session {
@@ -54,6 +55,7 @@ model Session {
   userId       String
   expires      DateTime
   user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  @@index([userId])
 }
 
 model Address {
@@ -69,6 +71,7 @@ model Address {
   zipCode    String?
   country    String   @default("Colombia")
   isDefault  Boolean  @default(false)
+  @@index([userId])
 }
 
 model Category {
@@ -81,6 +84,7 @@ model Category {
   parent      Category? @relation("CategoryHierarchy", fields: [parentId], references: [id])
   children    Category[] @relation("CategoryHierarchy")
   products    Product[]
+  @@index([parentId])
 }
 
 model Brand {
@@ -122,6 +126,8 @@ model Product {
   isFeatured    Boolean   @default(false)
   createdAt     DateTime  @default(now())
   updatedAt     DateTime  @updatedAt
+  @@index([categoryId])
+  @@index([brandId])
 }
 
 model ProductImage {
@@ -131,6 +137,7 @@ model ProductImage {
   isMain    Boolean  @default(false)
   productId String
   product   Product  @relation(fields: [productId], references: [id], onDelete: Cascade)
+  @@index([productId])
 }
 
 model Variant {
@@ -144,6 +151,7 @@ model Variant {
   attributes  String?  // JSON string
   cartItems   CartItem[]
   orderItems  OrderItem[]
+  @@index([productId])
 }
 
 model ProductAttribute {
@@ -152,6 +160,7 @@ model ProductAttribute {
   product   Product  @relation(fields: [productId], references: [id], onDelete: Cascade)
   name      String   // Ej: "Viscosidad", "API"
   value     String   // Ej: "15W-40", "CI-4"
+  @@index([productId])
 }
 
 model Favorite {
@@ -161,6 +170,7 @@ model Favorite {
   productId String
   product   Product  @relation(fields: [productId], references: [id], onDelete: Cascade)
   @@unique([userId, productId])
+  @@index([productId])
 }
 
 model Review {
@@ -173,6 +183,8 @@ model Review {
   comment   String?
   isApproved Boolean @default(false)
   createdAt DateTime @default(now())
+  @@index([userId])
+  @@index([productId])
 }
 
 model Cart {
@@ -193,6 +205,9 @@ model CartItem {
   variantId String?
   variant   Variant? @relation(fields: [variantId], references: [id])
   quantity  Int
+  @@index([cartId])
+  @@index([productId])
+  @@index([variantId])
 }
 
 model Coupon {
@@ -241,6 +256,7 @@ model Order {
   @@index([createdAt])
   @@index([status])
   @@index([customerEmail])
+  @@index([couponId])
 }
 
 model OrderItem {
@@ -258,4 +274,5 @@ model OrderItem {
 
   @@index([orderId])
   @@index([productId])
+  @@index([variantId])
 }

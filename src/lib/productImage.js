@@ -1,65 +1,72 @@
 import dieselImages from "@/data/diesel-images.json";
 
-const REFERENCE_FILTER_BRANDS = new Set(["donsson", "partmo"]);
+const REFERENCE_FILTER_BRANDS = new Set(["donsson"]);
 
 // Fotografías verificadas de la referencia o línea del fabricante.
 const PRODUCT_IMAGE_OVERRIDES = {
-  "donsson-wfp2075": "/catalogo-filtros-donsson/donsson-wfp2075-coolant.png",
-  "donsson-wfp-2075": "/catalogo-filtros-donsson/donsson-wfp2075-coolant.png",
-  "donssonwfp2075": "/catalogo-filtros-donsson/donsson-wfp2075-coolant.png",
-  "don-wfp2075": "/catalogo-filtros-donsson/donsson-wfp2075-coolant.png",
-  "wfp2075": "/catalogo-filtros-donsson/donsson-wfp2075-coolant.png",
-  "wfp-2075": "/catalogo-filtros-donsson/donsson-wfp2075-coolant.png",
+  "1241": "/catalogo-varios/abrazadera-plastica-ancha-380x7-6-rembert.webp",
 
-  "donsson-hfp6510": "/catalogo-filtros-donsson/donsson-hfp6510-hidraulico.png",
-  "donsson-hfp-6510": "/catalogo-filtros-donsson/donsson-hfp6510-hidraulico.png",
-  "donssonhfp6510": "/catalogo-filtros-donsson/donsson-hfp6510-hidraulico.png",
-  "don-hfp6510": "/catalogo-filtros-donsson/donsson-hfp6510-hidraulico.png",
-  "hfp6510": "/catalogo-filtros-donsson/donsson-hfp6510-hidraulico.png",
-  "hfp-6510": "/catalogo-filtros-donsson/donsson-hfp6510-hidraulico.png",
+  "donsson-wfp2075": "/catalogo-filtros-donsson/donsson-wfp2075-coolant.webp",
+  "donsson-wfp-2075": "/catalogo-filtros-donsson/donsson-wfp2075-coolant.webp",
+  "donssonwfp2075": "/catalogo-filtros-donsson/donsson-wfp2075-coolant.webp",
+  "don-wfp2075": "/catalogo-filtros-donsson/donsson-wfp2075-coolant.webp",
+  "wfp2075": "/catalogo-filtros-donsson/donsson-wfp2075-coolant.webp",
+  "wfp-2075": "/catalogo-filtros-donsson/donsson-wfp2075-coolant.webp",
 
-  "donsson-fsp1280": "/catalogo-filtros-donsson/donsson-fsp1280-separador.jpg",
-  "donsson-fsp-1280": "/catalogo-filtros-donsson/donsson-fsp1280-separador.jpg",
-  "donssonfsp1280": "/catalogo-filtros-donsson/donsson-fsp1280-separador.jpg",
-  "don-fsp1280": "/catalogo-filtros-donsson/donsson-fsp1280-separador.jpg",
-  "fsp1280": "/catalogo-filtros-donsson/donsson-fsp1280-separador.jpg",
-  "fsp-1280": "/catalogo-filtros-donsson/donsson-fsp1280-separador.jpg",
+  "donsson-hfp6510": "/catalogo-filtros-donsson/donsson-hfp6510-hidraulico.webp",
+  "donsson-hfp-6510": "/catalogo-filtros-donsson/donsson-hfp6510-hidraulico.webp",
+  "donssonhfp6510": "/catalogo-filtros-donsson/donsson-hfp6510-hidraulico.webp",
+  "don-hfp6510": "/catalogo-filtros-donsson/donsson-hfp6510-hidraulico.webp",
+  "hfp6510": "/catalogo-filtros-donsson/donsson-hfp6510-hidraulico.webp",
+  "hfp-6510": "/catalogo-filtros-donsson/donsson-hfp6510-hidraulico.webp",
 
-  "donsson-fsp19727": "/catalogo-filtros-donsson/donsson-fsp19727-separador.jpg",
-  "donsson-fsp-19727": "/catalogo-filtros-donsson/donsson-fsp19727-separador.jpg",
-  "donssonfsp19727": "/catalogo-filtros-donsson/donsson-fsp19727-separador.jpg",
-  "don-fsp19727": "/catalogo-filtros-donsson/donsson-fsp19727-separador.jpg",
-  "fsp19727": "/catalogo-filtros-donsson/donsson-fsp19727-separador.jpg",
-  "fsp-19727": "/catalogo-filtros-donsson/donsson-fsp19727-separador.jpg",
+  "donsson-fsp1280": "/catalogo-filtros-donsson/donsson-fsp1280-separador.webp",
+  "donsson-fsp-1280": "/catalogo-filtros-donsson/donsson-fsp1280-separador.webp",
+  "donssonfsp1280": "/catalogo-filtros-donsson/donsson-fsp1280-separador.webp",
+  "don-fsp1280": "/catalogo-filtros-donsson/donsson-fsp1280-separador.webp",
+  "fsp1280": "/catalogo-filtros-donsson/donsson-fsp1280-separador.webp",
+  "fsp-1280": "/catalogo-filtros-donsson/donsson-fsp1280-separador.webp",
 
-  "donsson-afp25544": "/catalogo-filtros-donsson/donsson-afp25544-aire.jpg",
-  "donsson-afp-25544": "/catalogo-filtros-donsson/donsson-afp25544-aire.jpg",
-  "donssonafp25544": "/catalogo-filtros-donsson/donsson-afp25544-aire.jpg",
-  "don-afp25544": "/catalogo-filtros-donsson/donsson-afp25544-aire.jpg",
-  "afp25544": "/catalogo-filtros-donsson/donsson-afp25544-aire.jpg",
-  "afp-25544": "/catalogo-filtros-donsson/donsson-afp25544-aire.jpg",
+  "donsson-fsp19727": "/catalogo-filtros-donsson/donsson-fsp19727-separador.webp",
+  "donsson-fsp-19727": "/catalogo-filtros-donsson/donsson-fsp19727-separador.webp",
+  "donssonfsp19727": "/catalogo-filtros-donsson/donsson-fsp19727-separador.webp",
+  "don-fsp19727": "/catalogo-filtros-donsson/donsson-fsp19727-separador.webp",
+  "fsp19727": "/catalogo-filtros-donsson/donsson-fsp19727-separador.webp",
+  "fsp-19727": "/catalogo-filtros-donsson/donsson-fsp19727-separador.webp",
 
-  "donsson-afp25708": "/catalogo-filtros-donsson/donsson-afp25708-aire.jpg",
-  "donsson-afp-25708": "/catalogo-filtros-donsson/donsson-afp25708-aire.jpg",
-  "donssonafp25708": "/catalogo-filtros-donsson/donsson-afp25708-aire.jpg",
-  "don-afp25708": "/catalogo-filtros-donsson/donsson-afp25708-aire.jpg",
-  "afp25708": "/catalogo-filtros-donsson/donsson-afp25708-aire.jpg",
-  "afp-25708": "/catalogo-filtros-donsson/donsson-afp25708-aire.jpg",
+  "donsson-afp25544": "/catalogo-filtros-donsson/donsson-afp25544-aire.webp",
+  "donsson-afp-25544": "/catalogo-filtros-donsson/donsson-afp25544-aire.webp",
+  "donssonafp25544": "/catalogo-filtros-donsson/donsson-afp25544-aire.webp",
+  "don-afp25544": "/catalogo-filtros-donsson/donsson-afp25544-aire.webp",
+  "afp25544": "/catalogo-filtros-donsson/donsson-afp25544-aire.webp",
+  "afp-25544": "/catalogo-filtros-donsson/donsson-afp25544-aire.webp",
 
-  "partmo-a1402": "/catalogo-filtros-web/partmo-linea-tradicional-a58-a1402-a14616.jpg",
-  "partmo-a-1402": "/catalogo-filtros-web/partmo-linea-tradicional-a58-a1402-a14616.jpg",
-  "partmo-a14616": "/catalogo-filtros-web/partmo-linea-tradicional-a58-a1402-a14616.jpg",
-  "partmo-a-14616": "/catalogo-filtros-web/partmo-linea-tradicional-a58-a1402-a14616.jpg",
-  "partmo-a58": "/catalogo-filtros-web/partmo-linea-tradicional-a58-a1402-a14616.jpg",
-  "partmo-a-58": "/catalogo-filtros-web/partmo-linea-tradicional-a58-a1402-a14616.jpg",
+  "donsson-afp25708": "/catalogo-filtros-donsson/donsson-afp25708-aire.webp",
+  "donsson-afp-25708": "/catalogo-filtros-donsson/donsson-afp25708-aire.webp",
+  "donssonafp25708": "/catalogo-filtros-donsson/donsson-afp25708-aire.webp",
+  "don-afp25708": "/catalogo-filtros-donsson/donsson-afp25708-aire.webp",
+  "afp25708": "/catalogo-filtros-donsson/donsson-afp25708-aire.webp",
+  "afp-25708": "/catalogo-filtros-donsson/donsson-afp25708-aire.webp",
+
+  "amortiguador-delantero-derecho-hyundai-tucson-ix35-kia-sportage-revolution": "/catalogo-frenos-suspension/amortiguador-delantero-derecho-hyundai-tucson-ix35-kia-sportage-revolution.webp",
+  "546612s000": "/catalogo-frenos-suspension/amortiguador-delantero-derecho-hyundai-tucson-ix35-kia-sportage-revolution.webp",
+  "54661-2s000": "/catalogo-frenos-suspension/amortiguador-delantero-derecho-hyundai-tucson-ix35-kia-sportage-revolution.webp",
+
+  "rodamiento-clutch-chevrolet-sail-n200-n300": "/catalogo-embrague/rodamiento-clutch-chevrolet-sail-n200-n300.webp",
+  "balinera-clutch-sail-n200-n300": "/catalogo-embrague/rodamiento-clutch-chevrolet-sail-n200-n300.webp",
+  "24512523": "/catalogo-embrague/rodamiento-clutch-chevrolet-sail-n200-n300.webp",
+  "24521039a": "/catalogo-embrague/rodamiento-clutch-chevrolet-sail-n200-n300.webp",
+  "24521039-a": "/catalogo-embrague/rodamiento-clutch-chevrolet-sail-n200-n300.webp",
+  "9023914": "/catalogo-embrague/rodamiento-clutch-chevrolet-sail-n200-n300.webp",
+  "24525897": "/catalogo-embrague/rodamiento-clutch-chevrolet-sail-n200-n300.webp",
 };
 
 // Índice de imágenes verificadas del catálogo técnico diésel
 const DIESEL_CATALOG_IMAGES = new Map(Object.entries(dieselImages || {}));
 
 const GENERIC_PLACEHOLDER_IMAGES = new Set([
-  "/filtro-aceite.jpg",
-  "/filtro-aire.png",
+  "/filtro-aceite.webp",
+  "/filtro-aire.webp",
   "/logo.png",
 ]);
 
@@ -79,6 +86,13 @@ function normalize(value = "") {
 
 export function getFilterType(name = "") {
   const normalizedName = normalize(name);
+
+  // This fallback is exclusively for filters. Previously every unknown
+  // product defaulted to an oil-filter image, which produced false photos
+  // for clamps, bearings and other inventory families.
+  if (!normalizedName.includes("filtro") && !normalizedName.includes("filter")) {
+    return null;
+  }
 
   if (normalizedName.includes("cabina")) return "cabina";
   if (normalizedName.includes("refrigerante") || normalizedName.includes("coolant")) return "refrigerante";

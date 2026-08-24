@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback, useRef } from "react";
 import { useCart } from "@/components/CartContext";
 import Image from "next/image";
 import { getProductDisplayImage } from "@/lib/productImage";
@@ -19,6 +19,7 @@ export default function CategoryProductModal({ products, initialIndex = 0, onClo
   const [quantity, setQuantity] = useState(1);
   const [added, setAdded] = useState(false);
   const [isZoom, setIsZoom] = useState(false);
+  const closeButtonRef = useRef(null);
 
   const { addToCart } = useCart();
 
@@ -50,6 +51,7 @@ export default function CategoryProductModal({ products, initialIndex = 0, onClo
 
   // Escuchar Teclado (←, →, ESC), Bloqueo de Scroll y Retroceso en Móvil (Botón Atrás del Navegador)
   useEffect(() => {
+    const previouslyFocused = document.activeElement;
     // 1. Manejo de botón 'Atrás' nativo en celular (Android / iOS)
     window.history.pushState({ modalOpen: true }, "");
     const handlePopState = () => {
@@ -60,6 +62,7 @@ export default function CategoryProductModal({ products, initialIndex = 0, onClo
     // 2. Bloquear scroll del fondo mientras el modal está abierto
     const originalOverflow = document.body.style.overflow;
     document.body.style.overflow = "hidden";
+    closeButtonRef.current?.focus();
 
     // 3. Atajos de Teclado
     const handleKeyDown = (e) => {
@@ -73,13 +76,14 @@ export default function CategoryProductModal({ products, initialIndex = 0, onClo
       window.removeEventListener("popstate", handlePopState);
       window.removeEventListener("keydown", handleKeyDown);
       document.body.style.overflow = originalOverflow;
+      previouslyFocused?.focus?.();
     };
   }, [handleNext, handlePrev, onClose]);
 
   if (!currentProduct) return null;
 
   const currentPrice = selectedVariant ? (selectedVariant.price || currentProduct.price) : currentProduct.price;
-  const currentStock = selectedVariant ? (selectedVariant.stock ?? 20) : (currentProduct.stock ?? 20);
+  const currentStock = selectedVariant ? (selectedVariant.stock ?? 0) : (currentProduct.stock ?? 0);
   const canBuy = currentProduct.inStock && currentStock > 0 && currentPrice > 0;
   const brandName = currentProduct.brand?.name || currentProduct.brand || "REMBERT";
   const categoryName = currentProduct.category?.name || currentProduct.category || "Repuestos";
@@ -97,6 +101,7 @@ export default function CategoryProductModal({ products, initialIndex = 0, onClo
         sku: selectedVariant?.sku || currentProduct.sku || "",
         slug: currentProduct.slug || currentProduct.id,
         variantId: selectedVariant?.id || null,
+        stock: currentStock,
       },
       quantity
     );
@@ -135,10 +140,14 @@ export default function CategoryProductModal({ products, initialIndex = 0, onClo
         overscrollBehavior: "contain",
       }}
       onClick={onClose}
+      role="presentation"
     >
       {/* Contenedor Modal de Ampliación */}
       <div
         onClick={(e) => e.stopPropagation()}
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="product-modal-title"
         style={{
           position: "relative",
           width: "100%",
@@ -168,7 +177,10 @@ export default function CategoryProductModal({ products, initialIndex = 0, onClo
         >
           {/* Botón Volver / Cerrar Rápido */}
           <button
+            ref={closeButtonRef}
+            type="button"
             onClick={onClose}
+            aria-label="Volver al catálogo"
             style={{
               background: "#E52421",
               color: "#FFFFFF",
@@ -209,8 +221,10 @@ export default function CategoryProductModal({ products, initialIndex = 0, onClo
           {/* Botones Centrales de Avanzar / Retroceder */}
           <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
             <button
+              type="button"
               onClick={handlePrev}
               title="Producto Anterior (Flecha Izquierda)"
+              aria-label="Producto anterior"
               style={{
                 background: "#222",
                 color: "#fff",
@@ -228,8 +242,10 @@ export default function CategoryProductModal({ products, initialIndex = 0, onClo
               ◄
             </button>
             <button
+              type="button"
               onClick={handleNext}
               title="Producto Siguiente (Flecha Derecha)"
+              aria-label="Producto siguiente"
               style={{
                 background: "var(--primary-color)",
                 color: "#000",
@@ -249,8 +265,10 @@ export default function CategoryProductModal({ products, initialIndex = 0, onClo
 
             {/* Cerrar X */}
             <button
+              type="button"
               onClick={onClose}
               title="Cerrar (Esc)"
+              aria-label="Cerrar ficha ampliada"
               style={{
                 background: "#2a2a2a",
                 color: "#fff",
@@ -352,7 +370,7 @@ export default function CategoryProductModal({ products, initialIndex = 0, onClo
                 {brandName} • <span className="product-reference">{referenceLabel}: {currentProduct.sku || currentProduct.id.slice(-8)}</span>
               </div>
 
-              <h2 style={{ fontSize: "1.6rem", color: "#fff", lineHeight: "1.2" }}>{currentProduct.name}</h2>
+              <h2 id="product-modal-title" style={{ fontSize: "1.6rem", color: "#fff", lineHeight: "1.2" }}>{currentProduct.name}</h2>
 
               <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
                 <span style={{ fontSize: "1.8rem", fontWeight: "bold", color: "var(--primary-color)" }}>
@@ -415,6 +433,8 @@ export default function CategoryProductModal({ products, initialIndex = 0, onClo
                 <div style={{ display: "flex", border: "1px solid #333", borderRadius: "8px", overflow: "hidden", background: "#111" }}>
                   <button
                     onClick={() => setQuantity(Math.max(1, quantity - 1))}
+                    type="button"
+                    aria-label="Reducir cantidad"
                     style={{ background: "transparent", color: "#fff", border: "none", padding: "8px 12px", cursor: "pointer" }}
                   >
                     -
@@ -423,7 +443,10 @@ export default function CategoryProductModal({ products, initialIndex = 0, onClo
                     {quantity}
                   </span>
                   <button
-                    onClick={() => setQuantity(quantity + 1)}
+                    onClick={() => setQuantity(Math.min(currentStock, quantity + 1))}
+                    type="button"
+                    aria-label="Aumentar cantidad"
+                    disabled={quantity >= currentStock}
                     style={{ background: "transparent", color: "#fff", border: "none", padding: "8px 12px", cursor: "pointer" }}
                   >
                     +
@@ -483,7 +506,7 @@ export default function CategoryProductModal({ products, initialIndex = 0, onClo
                 }}
               >
                 <WhatsAppIcon size={18} color="#25D366" />
-                <span>Comprar por WhatsApp (+57 310 873 7354)</span>
+                <span>Cotizar por WhatsApp (310 242 0490)</span>
               </a>
             </div>
           </div>

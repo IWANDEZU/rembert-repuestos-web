@@ -4,6 +4,12 @@ const ORIENTATIVE_ATTRIBUTE_NAMES = [
   "modelos orientativos", "marcas orientativas", "familia de vehículos", "familia de vehiculos",
 ];
 
+const VERIFIED_STATUSES = new Set([
+  "verified",
+  "verified-by-oe",
+  "cross-reference-verified",
+]);
+
 const normalize = (value) => String(value || "").trim();
 const normalizeName = (value) => normalize(value).toLowerCase();
 
@@ -44,9 +50,17 @@ export function getProductFitment(product) {
 
   let status = "conditional";
   if (internalQuote || explicitStatus === "family") status = "family";
-  else if (explicitStatus === "verified" && fitments.length > 0) status = "verified";
+  else if (
+    VERIFIED_STATUSES.has(explicitStatus) &&
+    product?.referenceType === "manufacturer" &&
+    fitments.length > 0
+  ) status = "verified";
   else if (explicitStatus === "conditional") status = "conditional";
-  else if (fitments.length > 0 && !internalQuote) status = "verified";
+  else if (
+    !explicitStatus &&
+    product?.referenceType === "manufacturer" &&
+    fitments.length > 0
+  ) status = "verified";
 
   const labels = {
     verified: "Aplicación verificada por referencia",

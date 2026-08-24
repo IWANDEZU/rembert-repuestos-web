@@ -187,7 +187,7 @@ export default function ContactoPage() {
 
         <div style={{ position: "relative", borderRadius: "14px", overflow: "hidden", boxShadow: "0 10px 30px rgba(0,0,0,0.12)", border: "2px solid #e0e0e0" }}>
           <iframe
-            src="https://maps.google.com/maps?q=Rembeat,+Tv.+29,+Barrancabermeja,+Santander&t=&z=16&ie=UTF8&iwloc=&output=embed"
+            src="https://maps.google.com/maps?q=Rembert,+Tv.+29,+Barrancabermeja,+Santander&t=&z=16&ie=UTF8&iwloc=&output=embed"
             width="100%"
             height="450"
             style={{ border: 0, display: "block" }}

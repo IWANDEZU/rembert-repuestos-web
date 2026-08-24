@@ -25,12 +25,16 @@ const contentSecurityPolicy = [
 const nextConfig = {
   compress: true,
   poweredByHeader: false,
+  serverExternalPackages: ["@prisma/client", ".prisma/client"],
   outputFileTracingIncludes: {
     "/*": ["./node_modules/pg-cloudflare/dist/**/*", "./node_modules/pg-cloudflare/esm/**/*"],
   },
   images: {
     formats: ["image/avif", "image/webp"],
-    qualities: [60, 70, 75],
+    qualities: [60, 70, 75, 80],
+    deviceSizes: [480, 640, 750, 828, 1080, 1440, 1920],
+    imageSizes: [48, 64, 96, 160, 256, 320],
+    minimumCacheTTL: 604800,
     // Las fichas de filtros sin foto verificada se generan internamente con
     // referencia, marca y tipo sanitizados en esta única ruta.
     localPatterns: [

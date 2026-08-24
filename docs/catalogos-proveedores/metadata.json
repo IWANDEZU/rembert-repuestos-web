@@ -76,8 +76,8 @@
     },
     {
       "brand": "Safeti",
-      "reason": "No se localizó una ficha de autoparte liviana trazable con referencia y aplicación. Se requiere catálogo del proveedor antes de publicar un producto.",
-      "source": "Proveedor pendiente"
+      "reason": "La marca aparece registrada por un distribuidor colombiano sin productos publicados. Solo se localizó el SKU comercial 44521075 para un disco de 280 mm anunciado para Great Wall Wingle 5 2.2, sin stock, sin número de parte del fabricante, sin ficha dimensional y sin logotipo oficial verificable. No publicar hasta recibir catálogo o etiqueta del proveedor.",
+      "source": "docs/catalogos-safeti/referencias.json"
     }
   ]
 }

@@ -75,6 +75,47 @@ function verifiedProduct({ id, name, sku, image, description, fitments, position
 }
 
 export const frenosSuspensionProducts = [
+  {
+    id: "amortiguador-delantero-derecho-hyundai-tucson-ix35-kia-sportage-revolution",
+    name: "Amortiguador Delantero Derecho (RH) — Hyundai Tucson ix35 / Kia Sportage Revolution",
+    slug: "amortiguador-delantero-derecho-hyundai-tucson-ix35-kia-sportage-revolution",
+    category,
+    brand: { name: "Mando / Equipo Original Corea", slug: "mando" },
+    price: 295000,
+    sku: "54661-2S000",
+    referenceType: "manufacturer",
+    fitmentStatus: "verified",
+    fitments: [
+      { make: "Hyundai", model: "Tucson ix35", years: "2010–2015", position: "Delantero derecho (RH)", engine: "2.0L / 2.4L Gasolina y 2.0L CRDi Turbo" },
+      { make: "Kia", model: "Sportage Revolution", years: "2010–2016", position: "Delantero derecho (RH)", engine: "2.0L / 2.4L Gasolina y 2.0L CRDi Turbo" },
+    ],
+    fitmentSummary: "54661-2S000 / 54661-2Y000: Hyundai Tucson ix35 (2010–2015) y Kia Sportage Revolution (2010–2016) · Delantero Derecho (RH).",
+    fitmentRequirements: ["VIN", "año de fabricación", "lado derecho (RH)", "tracción 4x2 / 4x4", "referencia OE"],
+    fitmentSource: "Catálogo Técnico Equipo Original Corea / Hyundai Mobis / Mando — OE 54661-2S000 / 54661-2Y000 / 54661-3W050",
+    shortDesc: "Amortiguador delantero derecho tipo McPherson a gas presurizado para Hyundai Tucson ix35 y Kia Sportage Revolution.",
+    description: "Amortiguador delantero derecho (lado acompañante / RH) tipo McPherson presurizado a gas de alto rendimiento para Hyundai Tucson ix35 (modelos 2010 al 2015) y Kia Sportage Revolution (modelos 2010 al 2016). Fabricado con especificaciones de Equipo Original Corea (Made in Korea) con sello holográfico de autenticidad, garantizando óptima absorción de impactos, estabilidad en curvas y confort de marcha.",
+    image: "/catalogo-frenos-suspension/amortiguador-delantero-derecho-hyundai-tucson-ix35-kia-sportage-revolution.webp",
+    images: [
+      {
+        url: "/catalogo-frenos-suspension/amortiguador-delantero-derecho-hyundai-tucson-ix35-kia-sportage-revolution.webp",
+        alt: "Amortiguador Delantero Derecho Hyundai Tucson ix35 / Kia Sportage Revolution Made in Korea",
+        isMain: true,
+      },
+    ],
+    imageStatus: "authentic-product-photo",
+    attributes: [
+      { id: "amort-ref", name: "Referencia OE", value: "54661-2S000 / 54661-2Y000 / 54661-3W050" },
+      { id: "amort-origin", name: "Origen / Calidad", value: "Made in Korea (Calidad Equipo Original con holograma de seguridad)" },
+      { id: "amort-system", name: "Tipo de Componente", value: "Puntal / Strut McPherson a Gas Presurizado" },
+      { id: "amort-position", name: "Posición y Lado", value: "Eje Delantero · Lado Derecho (RH / Copiloto)" },
+      { id: "amort-fitment", name: "Vehículos Compatibles", value: "Hyundai Tucson ix35 (2010–2015) · Kia Sportage Revolution (2010–2016)" },
+      { id: "amort-engine", name: "Motorizaciones", value: "2.0L / 2.4L DOHC Gasolina y 2.0L CRDi Turbo (Tracción 4x2 y 4x4)" },
+      { id: "amort-pair", name: "Lado Izquierdo Complementario (LH)", value: "54651-2S000 / 54651-2Y000 (disponible bajo pedido)" },
+      { id: "amort-status", name: "Estado de compatibilidad", value: "Aplicación técnica verificada por referencia de fabricante" },
+    ],
+    inStock: true,
+    stock: 8,
+  },
   verifiedProduct({
     id: "moog-kit-rotulas-super-duty-f250-f350-4x4-1999-2019",
     name: "Kit MOOG de Rótulas Delanteras Superiores e Inferiores — Ford F-250 / F-350 Super Duty 4x4 1999–2019",

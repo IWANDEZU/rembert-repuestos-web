@@ -35,7 +35,7 @@ async function main() {
       sku: 'KIXX-G1-10W40',
       categoryId: catGasolina.id,
       brandId: brandKixx.id,
-      images: { create: [{ url: '/cuarto.png', isMain: true }] },
+      images: { create: [{ url: '/cuarto.webp', isMain: true }] },
       variants: {
         create: [
           { name: 'Cuarto', price: 0, stock: 10, sku: 'KIXX-G1-10W40-CTO' },
@@ -58,7 +58,7 @@ async function main() {
       sku: 'KIXX-HD1-15W40',
       categoryId: catDiesel.id,
       brandId: brandKixx.id,
-      images: { create: [{ url: '/balde-negro.png', isMain: true }] },
+      images: { create: [{ url: '/balde-negro.webp', isMain: true }] },
       variants: {
         create: [
           { name: 'Balde', price: 0, stock: 8, sku: 'KIXX-HD1-15W40-BALDE' },
