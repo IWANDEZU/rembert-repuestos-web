@@ -3,58 +3,30 @@ import { PrismaPg } from "@prisma/adapter-pg";
 
 const globalForPrisma = globalThis;
 
-const dbUrl = process.env.DATABASE_URL || "";
-const isValidPostgresUrl =
-  (dbUrl.startsWith("postgresql://") || dbUrl.startsWith("postgres://")) &&
-  !dbUrl.includes("[SENSITIVE]");
+function getPrismaClient() {
+  if (globalForPrisma.__prisma) return globalForPrisma.__prisma;
+  const dbUrl = globalForPrisma.__rembertDatabaseUrl || process.env.DATABASE_URL || "";
+  const isValidPostgresUrl = /^(postgresql|postgres):\/\//i.test(dbUrl) && !dbUrl.includes("[SENSITIVE]");
+  if (!isValidPostgresUrl) throw new Error("DATABASE_URL no configurada o inválida.");
 
-let prismaInstance;
-
-if (isValidPostgresUrl) {
-  try {
-    const adapter = new PrismaPg({
-      connectionString: dbUrl,
-      max: 5,
-      idleTimeoutMillis: 10_000,
-      connectionTimeoutMillis: 10_000,
-    });
-    prismaInstance =
-      globalForPrisma.__prisma ??
-      new PrismaClient({
-        adapter,
-        log: process.env.NODE_ENV === "development" ? ["error", "warn"] : ["error"],
-      });
-  } catch (err) {
-    console.warn("No se pudo instanciar PrismaClient con la URL actual:", err.message);
-  }
+  const adapter = new PrismaPg({
+    connectionString: dbUrl,
+    max: 2,
+    idleTimeoutMillis: 5_000,
+    connectionTimeoutMillis: 10_000,
+  });
+  const client = new PrismaClient({
+    adapter,
+    log: process.env.NODE_ENV === "development" ? ["error", "warn"] : ["error"],
+  });
+  globalForPrisma.__prisma = client;
+  return client;
 }
 
-if (!prismaInstance) {
-  // Proxy seguro para desarrollo local sin conexión remota configurada
-  prismaInstance = new Proxy(
-    {},
-    {
-      get(_target, prop) {
-        if (prop === "$connect" || prop === "$disconnect") {
-          return async () => {};
-        }
-        return new Proxy(
-          {},
-          {
-            get(_mTarget, _method) {
-              return async () => {
-                throw new Error("DATABASE_URL no configurada o inválida. Usando datos locales de respaldo.");
-              };
-            },
-          }
-        );
-      },
-    }
-  );
-}
-
-export const prisma = prismaInstance;
-
-if (process.env.NODE_ENV !== "production" && isValidPostgresUrl) {
-  globalForPrisma.__prisma = prisma;
-}
+export const prisma = new Proxy({}, {
+  get(_target, property) {
+    const client = getPrismaClient();
+    const value = client[property];
+    return typeof value === "function" ? value.bind(client) : value;
+  },
+});

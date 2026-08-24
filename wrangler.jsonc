@@ -23,6 +23,12 @@
       "service": "rembert"
     }
   ],
+  "hyperdrive": [
+    {
+      "binding": "HYPERDRIVE",
+      "id": "cc282eb5e6ee4757ac10a091a7a8f7be"
+    }
+  ],
   "ratelimits": [
     {
       "name": "API_RATE_LIMITER",

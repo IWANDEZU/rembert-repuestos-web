@@ -34,6 +34,7 @@ jobs:
       - name: Construir Worker
         run: npm run build:cloudflare
         env:
+          CLOUDFLARE_HYPERDRIVE_LOCAL_CONNECTION_STRING_HYPERDRIVE: postgresql://local:local@127.0.0.1:5432/local
           DATABASE_URL: ${{ secrets.DATABASE_URL }}
           DATABASE_POSTGRES_URL: ${{ secrets.DATABASE_POSTGRES_URL }}
           NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}
