@@ -350,6 +350,62 @@ const VERIFIED_SKU_OVERRIDES = {
 // shared by unrelated applications. Those cases must be keyed by the audited
 // report row, never by SKU, so one fitment cannot leak into another product.
 const VERIFIED_ROW_OVERRIDES = {
+  "1116": {
+    name: "Rótula de suspensión ADS 54503-22A00 — Hyundai / Kia / JAC",
+    brand: "ADS",
+    image: "/catalogo-ads/ads-54503-22a00-rotula-hyundai-principal.webp",
+    images: [
+      {
+        url: "/catalogo-ads/ads-54503-22a00-rotula-hyundai-principal.webp",
+        alt: "Rótula de suspensión ADS 54503-22A00, recreación de catálogo basada en la pieza real",
+        isMain: true,
+      },
+      {
+        url: "/catalogo-ads/ads-54503-22a00-rotula-hyundai-detalle.webp",
+        alt: "Vista superior de la rótula de suspensión ADS 54503-22A00, recreación de catálogo basada en la pieza real",
+        isMain: false,
+      },
+    ],
+    imageAlt: "Rótula de suspensión ADS 54503-22A00, recreación de catálogo basada en la pieza real",
+    shortDesc: "Rótula de suspensión ADS 54503-22A00 · aplicación registrada para Hyundai, Kia y JAC; confirmar VIN y muestra.",
+    description: "Rótula o esférica de suspensión ADS, referencia 54503-22A00. La etiqueta física suministrada por REMBERT declara Accent, Verna, Gyro y JAC J3; el inventario también registra i20 y Kia Cerato. Estas aplicaciones se publican únicamente como orientación: antes de vender o instalar se deben cotejar VIN, año, versión, lado/eje, diámetro del alojamiento, cono, rosca y la pieza desmontada.",
+    fitmentSummary: "54503-22A00 · Hyundai Accent / Verna, JAC J3 y aplicaciones adicionales registradas en inventario; confirmar VIN, año, eje y medidas.",
+    fitmentPosition: "Suspensión · posición por confirmar con la pieza desmontada",
+    fitmentRequirements: ["VIN", "año", "motor y versión", "lado y eje", "diámetro del alojamiento", "cono y rosca", "muestra o referencia desmontada"],
+    fitmentSource: "Etiqueta física ADS suministrada por REMBERT: 54503-22A00 · ‘ROTULA HYUNDAI ACCENT-VERNA-GYRO-JAC J3 ADS’. El INVENTARIO GENERAL agrega i20 y Kia Cerato; ningún año, eje ni equivalencia OE se da por confirmado sin cotejo",
+    fitments: [
+      {
+        make: "Hyundai",
+        model: "Accent / Verna; i20 solo como aplicación registrada en inventario",
+        years: "Confirmar por VIN y pieza desmontada",
+        position: "Suspensión · posición por confirmar",
+      },
+      {
+        make: "JAC",
+        model: "J3",
+        years: "Confirmar por VIN y pieza desmontada",
+        position: "Suspensión · posición por confirmar",
+      },
+      {
+        make: "Kia",
+        model: "Cerato, aplicación registrada en inventario",
+        years: "Confirmar por VIN y pieza desmontada",
+        position: "Suspensión · posición por confirmar",
+      },
+    ],
+    attributes: [
+      { name: "Tipo de componente", value: "Rótula / esférica de suspensión" },
+      { name: "Referencia en etiqueta", value: "ADS 54503-22A00" },
+      { name: "Evidencia de marca", value: "ADS visible en la etiqueta física suministrada por REMBERT" },
+      { name: "Aplicación declarada en etiqueta", value: "Hyundai Accent / Verna · Gyro · JAC J3" },
+      { name: "Aplicación adicional de inventario", value: "Hyundai i20 · Kia Cerato; validar antes de la venta" },
+      { name: "Imagen", value: "Dos recreaciones de catálogo basadas en fotografías reales de la pieza y marcadas con REMBERT" },
+    ],
+    fitmentStatus: "conditional",
+    imageStatus: "studio-reference-derived-watermarked",
+    brandProof: "ADS · marca y referencia 54503-22A00 confirmadas en la etiqueta física suministrada por REMBERT",
+    marketBenchmark: "Precio REMBERT $86.394 COP; precio y existencia provienen del INVENTARIO GENERAL y deben reconfirmarse al cotizar",
+  },
   "3": {
     name: "Abrazadera plástica ancha 380 × 7,6 mm",
     brand: "Marca según empaque",
@@ -608,7 +664,7 @@ export const inventoryProducts = inventoryRows.map((row) => {
     shortDesc: verifiedOverride?.shortDesc || `Referencia ${row.c} · ${stock} unidad${stock === 1 ? "" : "es"} registrada${stock === 1 ? "" : "s"} en inventario.`,
     description: verifiedOverride?.description || `${displayName}. Referencia interna o fabricante ${row.c}. La aplicación vehicular se conserva exactamente como aparece en el inventario y debe confirmarse por VIN, año, motor, versión y muestra antes del despacho.`,
     image: verifiedOverride?.image || category.image,
-    images: [{
+    images: verifiedOverride?.images?.length ? verifiedOverride.images : [{
       url: verifiedOverride?.image || category.image,
       alt: verifiedOverride?.imageAlt || `Imagen referencial de la línea ${category.name} para ${displayName}`,
       isMain: true,
@@ -650,6 +706,8 @@ export const inventoryProducts = inventoryRows.map((row) => {
         name: "Imagen",
         value: verifiedOverride?.imageStatus === "real-product-photo"
           ? "Fotografía real del producto suministrada por REMBERT; confirmar la referencia grabada antes del despacho"
+          : verifiedOverride?.imageStatus === "studio-reference-derived-watermarked"
+          ? "Recreación de catálogo basada en fotografías reales suministradas por REMBERT; confirmar referencia y medidas antes del despacho"
           : "Referencia visual de la línea; el producto se identifica por código y descripción",
       },
     ],
