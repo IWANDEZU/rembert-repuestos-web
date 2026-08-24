@@ -512,9 +512,14 @@ export default async function Catalogo({ searchParams }) {
   if (brandParam) {
     const brandName = brands.find((brand) => brand.slug === brandParam)?.name || brandParam;
     bannerTitle = `Productos ${brandName}`;
-    bannerSubtitle = brandParam === "caterpillar"
-      ? "Lubricantes y fluidos CAT seleccionados por relevancia técnica y presencia en el mercado colombiano."
-      : `Productos disponibles de la marca ${brandName}.`;
+    if (brandParam === "caterpillar") {
+      bannerSubtitle = "Lubricantes y fluidos CAT seleccionados por relevancia técnica y presencia en el mercado colombiano.";
+    } else if (brandParam === "gti") {
+      bannerTitle = "Repuestos GTI Autoparts";
+      bannerSubtitle = "47 referencias GTI del inventario REMBERT: puntas de eje y tulipas con aplicación documentada. Confirma VIN, transmisión, lado, estrías y ABS antes del despacho.";
+    } else {
+      bannerSubtitle = `Productos disponibles de la marca ${brandName}.`;
+    }
   }
 
   if (lineParam) {

@@ -1,6 +1,6 @@
 # Catálogo GTI integrado en REMBERT
 
-Fecha de revisión: 22 de agosto de 2026.
+Fecha de revisión: 24 de agosto de 2026.
 
 ## Alcance publicado
 
@@ -9,6 +9,8 @@ Fecha de revisión: 22 de agosto de 2026.
 - Marcas de vehículo cubiertas por las referencias del inventario: Renault, Chevrolet, Daewoo, Kia, Hyundai y Mazda.
 - Cada ficha muestra posición, aplicación orientativa, estrías/configuración conocida y controles obligatorios de compatibilidad.
 - El precio, existencia y habilitación pública siguen viniendo del inventario; la ficha editorial no puede alterar esos valores.
+- La marca dispone de una ruta canónica propia en `/marcas/gti`, enlazada desde el directorio de marcas y el sitemap.
+- `npm run catalog:check:gti` comprueba que las 47 referencias publicadas coinciden uno a uno con el inventario, tienen fuentes, aplicación, control por VIN e imagen existente.
 
 ## Política de compatibilidad
 
@@ -23,6 +25,8 @@ Una punta de eje o tulipa no se asigna solo por apariencia. Antes del despacho s
 7. Referencia legible en la etiqueta GTI o cruce OE vigente.
 
 Las fichas `verified` cuentan con una coincidencia documental explícita de referencia y aplicación. Las fichas `conditional` conservan la aplicación registrada en inventario, pero exigen validación de todos los datos anteriores.
+
+La revisión del catálogo histórico permitió elevar a `verified` 22 referencias adicionales con coincidencia explícita de código y aplicación. Las referencias modernas o con diferencias entre ediciones permanecen `conditional`; no se incorporaron cruces OEM no demostrados.
 
 ## Imágenes comerciales optimizadas
 

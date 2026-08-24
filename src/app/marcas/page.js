@@ -158,7 +158,7 @@ export default function MarcasPage() {
                 </p>
 
                 <Link
-                  href={`/catalogo?brand=${brand.slug}`}
+                  href={brand.slug === "gti" ? "/marcas/gti" : `/catalogo?brand=${brand.slug}`}
                   className="btn btn--primary"
                   style={{
                     width: "100%",

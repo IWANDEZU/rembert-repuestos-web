@@ -27,8 +27,9 @@
     "check:fitments": "node scripts/validate-fitments.mjs",
     "catalog:import": "node scripts/import-product-batch.mjs",
     "catalog:check": "node scripts/validate-automated-catalog.mjs",
+    "catalog:check:gti": "node scripts/validate-gti-catalog.mjs",
     "check:images": "node scripts/validate-public-image-references.mjs",
-    "verify:release": "npm run catalog:check && npm run check:fitments && npm run check:images && npm run lint",
+    "verify:release": "npm run catalog:check && npm run catalog:check:gti && npm run check:fitments && npm run check:images && npm run lint",
     "optimize:images": "node scripts/optimize-public-images.mjs"
   },
   "dependencies": {

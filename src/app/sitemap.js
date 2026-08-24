@@ -28,6 +28,12 @@ export default async function sitemap() {
       priority: 0.85,
     },
     {
+      url: `${baseUrl}/marcas/gti`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+    {
       url: `${baseUrl}/nosotros`,
       lastModified: now,
       changeFrequency: "monthly",
