@@ -1,0 +1,42 @@
+[
+  {
+    "sku": "GTI01-018",
+    "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-source-previews\\GTI01-018.png",
+    "sources": ["https://www.imotriz.com/producto/3/GTI01-018-/"],
+    "exact_reference_confirmed": true,
+    "usage_authorized": true,
+    "reference_evidence": "La ficha Product JSON-LD declara marca GTI y SKU GTI01-018; la imagen muestra una punta lado rueda completa con kit GTI y no está reutilizada por otra referencia inspeccionada.",
+    "source_type": "authorized-distributor",
+    "source_image_clean": true
+  },
+  {
+    "sku": "GTI01-019",
+    "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-source-previews\\GTI01-019.png",
+    "sources": ["https://www.imotriz.com/producto/3/GTI01-019-/"],
+    "exact_reference_confirmed": true,
+    "usage_authorized": true,
+    "reference_evidence": "La ficha Product JSON-LD declara marca GTI y SKU GTI01-019; la fotografía es exclusiva de la ficha y muestra la punta lado rueda completa con su kit.",
+    "source_type": "authorized-distributor",
+    "source_image_clean": true
+  },
+  {
+    "sku": "GTI01-023",
+    "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-source-previews\\GTI01-023.png",
+    "sources": ["https://www.imotriz.com/producto/3/GTI01-023-/"],
+    "exact_reference_confirmed": true,
+    "usage_authorized": true,
+    "reference_evidence": "La ficha Product JSON-LD declara marca GTI y SKU GTI01-023; el cuerpo metálico fotografiado tiene grabado GTI01-023 y corresponde a una tulipa lado caja.",
+    "source_type": "authorized-distributor",
+    "source_image_clean": true
+  },
+  {
+    "sku": "GTI01-026",
+    "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-source-previews\\GTI01-026.png",
+    "sources": ["https://www.imotriz.com/producto/3/GTI01-026-/"],
+    "exact_reference_confirmed": true,
+    "usage_authorized": true,
+    "reference_evidence": "La ficha Product JSON-LD declara marca GTI y SKU GTI01-026; la fotografía muestra un eje homocinético izquierdo completo y es distinta de las puntas sueltas.",
+    "source_type": "authorized-distributor",
+    "source_image_clean": true
+  }
+]

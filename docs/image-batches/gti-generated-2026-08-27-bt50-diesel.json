@@ -1,0 +1,12 @@
+[
+  {
+    "sku": "GTI03-051",
+    "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-generated-sources\\GTI03-051-generated.png",
+    "generation_prompt": "Photorealistic catalog reference for GTI03-051: complete left front CV axle assembly for Mazda BT-50 2.5 diesel 2010 onward with documented 28 x 28 spline configuration; closed transmission-side plunge housing, inner and outer boots, connecting shaft and threaded wheel-side spline; transmission connection is oriented away because the exact source does not specify male or female, and no ABS ring, support bearing or length is asserted; specifications contrasted against the exact Imotriz GTI SKU page and historical GTI catalog; pure white background, no text, logo or watermark."
+  },
+  {
+    "sku": "GTI03-055",
+    "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-generated-sources\\GTI03-055-generated.png",
+    "generation_prompt": "Photorealistic catalog reference for GTI03-055: wheel-side outer CV joint kit for Mazda BT-50 diesel 2010 onward with documented 28 x 36 spline configuration; joint, boot, axle nut, clamps, grease and circlip; no ABS ring or retention type is asserted because the exact source does not specify them; specifications contrasted against the exact Imotriz GTI SKU page and historical GTI catalog; pure white background, no text, logo or watermark."
+  }
+]

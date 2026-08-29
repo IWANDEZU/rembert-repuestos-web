@@ -1,0 +1,42 @@
+[
+  {
+    "sku": "GTI04-103",
+    "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-generated-sources\\GTI04-103-generated-final.png",
+    "generation_prompt": "Fotografía de catálogo de eje homocinético completo derecho para Chevrolet Tracker automática, semieje largo con juntas, fuelles y estrías, fondo blanco puro, sin texto ni marcas."
+  },
+  {
+    "sku": "GTI04-104",
+    "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-generated-sources\\GTI04-104-generated-final.png",
+    "generation_prompt": "Fotografía de catálogo de eje homocinético completo izquierdo para Chevrolet Tracker automática, geometría corta y distinta al derecho, fondo blanco puro, sin texto ni marcas."
+  },
+  {
+    "sku": "GTI04-105",
+    "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-generated-sources\\GTI04-105-generated-final.png",
+    "generation_prompt": "Fotografía de catálogo de eje homocinético completo derecho para Chevrolet Tracker mecánica, tulipa interior de transmisión manual y punta exterior, fondo blanco, sin logos."
+  },
+  {
+    "sku": "GTI04-106",
+    "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-generated-sources\\GTI04-106-generated-final.png",
+    "generation_prompt": "Fotografía de catálogo de eje homocinético completo izquierdo para Chevrolet Tracker mecánica, geometría corta y carcasa interior manual, fondo blanco, sin logos."
+  },
+  {
+    "sku": "GTI06-010",
+    "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-generated-sources\\GTI06-010-generated-final.png",
+    "generation_prompt": "Fotografía de catálogo de eje homocinético completo izquierdo para Hyundai Accent, semieje nuevo con juntas y fuelles, fondo blanco puro, sin texto ni logotipos."
+  },
+  {
+    "sku": "GTI06-018",
+    "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-generated-sources\\GTI06-018-generated-final.png",
+    "generation_prompt": "Fotografía de catálogo de kit de punta homocinética lado rueda Hyundai Tucson 4x2 mecánica, 23x27 estrías sin anillo ABS, fuelle y accesorios, fondo blanco."
+  },
+  {
+    "sku": "GTI06-036",
+    "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-generated-sources\\GTI06-036-generated-final.png",
+    "generation_prompt": "Fotografía de catálogo de eje homocinético completo izquierdo para Hyundai Verna o Gyro, juntas, fuelles y anillo ABS, fondo blanco puro, sin marcas."
+  },
+  {
+    "sku": "GTI06-045",
+    "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-generated-sources\\GTI06-045-generated-final.png",
+    "generation_prompt": "Fotografía de catálogo de eje homocinético completo derecho para Hyundai Tucson 4x2 automática, semieje robusto de SUV, fondo blanco puro, sin texto ni marcas."
+  }
+]

@@ -1,0 +1,17 @@
+[
+  {
+    "sku": "GTI03-031",
+    "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-generated-sources\\GTI03-031-generated.png",
+    "generation_prompt": "Photorealistic catalog reference for GTI03-031: wheel-side outer CV joint kit for Mazda 626 Millennium / Allegro 1.8, documented 28 external x 30 internal spline configuration, pin interno and 44-tooth ABS tone ring, outer boot, axle nut, clamps, grease and internal circlip; specifications contrasted against the exact MercadoLibre GTI SKU listing and historical GTI catalog; pure white background, no text, logo or watermark."
+  },
+  {
+    "sku": "GTI03-032",
+    "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-generated-sources\\GTI03-032-generated.png",
+    "generation_prompt": "Photorealistic catalog reference for GTI03-032: wheel-side outer CV joint kit for Mazda 626 Millennium / Mazda 3, documented 28 external x 23 internal spline configuration; ABS and retention type intentionally not asserted because the exact source does not specify them; outer boot, axle nut, clamps and grease; specification contrasted against the exact Imotriz SKU page and historical GTI catalog; pure white background, no text, logo or watermark."
+  },
+  {
+    "sku": "GTI03-033",
+    "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-generated-sources\\GTI03-033-generated.png",
+    "generation_prompt": "Photorealistic catalog reference for GTI03-033: transmission-side inner CV joint kit for Ecuadorian-market Mazda 323, documented 24 external x 21 internal spline configuration, without asserting left/right or male/female variant; compact plunge housing, tripod bearing, inner boot, clamps, grease and circlip; specification contrasted against the exact Imotriz SKU page and historical GTI catalog; pure white background, no text, logo or watermark."
+  }
+]

@@ -4,20 +4,21 @@ import Image from "next/image";
 export const metadata = {
   title: "Servicio Técnico Automotriz | REMBERT",
   description:
-    "Servicio técnico especializado de REMBERT en Barrancabermeja: Diagnóstico por escáner, cambio de aceite y filtros, mantenimiento de frenos, suspensión y radiadores.",
+    "Servicio técnico especializado de REMBERT en Barrancabermeja: Cambio de aceite y filtros, mantenimiento de frenos, suspensión, baterías y radiadores.",
   alternates: {
     canonical: "/servicio-tecnico",
   },
   openGraph: {
     title: "Servicio Técnico Automotriz | REMBERT",
     description:
-      "Mantenimiento preventivo, diagnóstico y montaje de repuestos con garantía en Barrancabermeja.",
+      "Mantenimiento preventivo y montaje de repuestos con garantía en Barrancabermeja.",
     url: "https://www.rembertrepuestos.com/servicio-tecnico",
   },
 };
 
 export default function ServicioTecnicoPage() {
   const services = [
+    /* Temporalmente desactivado: Diagnóstico Computarizado y Escáner
     {
       title: "Diagnóstico Computarizado y Escáner",
       icon: "💻",
@@ -25,11 +26,12 @@ export default function ServicioTecnicoPage() {
         "Lectura de códigos de falla, diagnóstico electrónico de motor, ABS, Airbag y sistemas de inyección con equipos de última tecnología.",
       badge: "Precisión Total",
     },
+    */
     {
       title: "Cambio de Aceite y Filtros",
       icon: "🛢️",
       description:
-        "Mantenimiento rápido de fluidos con las mejores marcas del mercado (Shell, Mobil, Castrol, Terpel, Chevron). Filtros de aceite, aire y cabina WIX y Partmo.",
+        "Mantenimiento rápido de fluidos con las mejores marcas del mercado (Shell, Mobil, Castrol, Terpel, Chevron). Filtros de aceite, aire y cabina WIX y MANN-FILTER.",
       badge: "Entrega Rápida",
     },
     {
@@ -63,26 +65,26 @@ export default function ServicioTecnicoPage() {
   ];
 
   return (
-    <div className="main-container section" style={{ minHeight: "75vh", padding: "3rem 1rem" }}>
+    <div className="main-container section" style={{ minHeight: "75vh", padding: "clamp(1.5rem, 4vw, 3rem) clamp(0.5rem, 2.5vw, 1rem)" }}>
       {/* Header */}
-      <div style={{ textAlign: "center", marginBottom: "3.5rem" }}>
+      <div style={{ textAlign: "center", marginBottom: "2.5rem" }}>
         <span className="badge-yellow" style={{ marginBottom: "0.75rem", fontSize: "0.85rem", padding: "0.35rem 1rem" }}>
           🛠️ Taller y Diagnóstico Especializado
         </span>
-        <h1 style={{ fontSize: "2.6rem", marginTop: "0.5rem", marginBottom: "0.75rem", color: "#111" }}>
+        <h1 style={{ fontSize: "clamp(1.8rem, 5vw, 2.6rem)", marginTop: "0.5rem", marginBottom: "0.75rem", color: "#111" }}>
           Servicio Técnico <span style={{ color: "var(--primary-dark)" }}>en Barrancabermeja</span>
         </h1>
-        <p style={{ color: "#5A6A80", fontSize: "1.15rem", maxWidth: "750px", margin: "0 auto 1.5rem" }}>
+        <p style={{ color: "#5A6A80", fontSize: "clamp(0.95rem, 2.5vw, 1.15rem)", maxWidth: "750px", margin: "0 auto 1.5rem" }}>
           En <strong>Rembert Repuestos BCA</strong> no solo te suministramos los repuestos originales y alternativos; también contamos con personal calificado para el mantenimiento y diagnóstico de tu vehículo.
         </p>
 
-        <div style={{ display: "flex", justifyContent: "center", gap: "1rem", flexWrap: "wrap" }}>
+        <div style={{ display: "flex", justifyContent: "center", gap: "0.75rem", flexWrap: "wrap" }}>
           <a
             href="https://wa.me/573102420490?text=Hola%2C%20quisiera%20agendar%20un%20servicio%20t%C3%A9cnico%20en%20Punto%20Principal."
             target="_blank"
             rel="noopener noreferrer"
             className="btn btn--primary"
-            style={{ padding: "0.85rem 1.75rem", fontSize: "0.95rem" }}
+            style={{ padding: "0.85rem 1.6rem", fontSize: "0.92rem" }}
           >
             💬 Agendar en Punto Principal
           </a>
@@ -91,7 +93,7 @@ export default function ServicioTecnicoPage() {
             target="_blank"
             rel="noopener noreferrer"
             className="btn"
-            style={{ background: "#111", color: "#fff", padding: "0.85rem 1.75rem", fontSize: "0.95rem", textDecoration: "none" }}
+            style={{ background: "#111", color: "#fff", padding: "0.85rem 1.6rem", fontSize: "0.92rem", textDecoration: "none" }}
           >
             💬 Agendar en Punto El Cerro
           </a>
@@ -102,8 +104,8 @@ export default function ServicioTecnicoPage() {
       <div
         style={{
           display: "grid",
-          gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))",
-          gap: "2rem",
+          gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 280px), 1fr))",
+          gap: "1.5rem",
           marginBottom: "4rem",
         }}
       >
@@ -113,7 +115,7 @@ export default function ServicioTecnicoPage() {
             style={{
               background: "#FFFFFF",
               borderRadius: "14px",
-              padding: "2rem 1.75rem",
+              padding: "clamp(1.25rem, 3vw, 2rem) clamp(1rem, 2.5vw, 1.75rem)",
               border: "1px solid #E2E8F0",
               boxShadow: "0 4px 12px rgba(0,0,0,0.03)",
               display: "flex",

@@ -1,0 +1,44 @@
+[
+  {
+    "sku": "GTI04-026", "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI04-026-imotriz.JPG",
+    "sources": ["https://www.imotriz.com/producto/3/GTI04-026-/", "https://app.pedbox.co:7777/imagenes_catalogo/15/04I09032.JPG"],
+    "exact_reference_confirmed": true, "usage_authorized": true, "source_type": "authorized-distributor", "source_image_clean": true,
+    "reference_evidence": "Product JSON-LD exacto GTI04-026: punta lado caja izquierda Swift 1.6, 26X22; imagen 04I09032. Revisión visual 2026-08-28: copa macho y kit real único sobre fondo blanco."
+  },
+  {
+    "sku": "GTI04-027", "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI04-027-imotriz.JPG",
+    "sources": ["https://www.imotriz.com/producto/3/GTI04-027-/", "https://app.pedbox.co:7777/imagenes_catalogo/15/04I09033.JPG"],
+    "exact_reference_confirmed": true, "usage_authorized": true, "source_type": "authorized-distributor", "source_image_clean": true,
+    "reference_evidence": "Product JSON-LD exacto GTI04-027: punta lado caja derecha Swift 1.6, 26X22; imagen 04I09033. La referencia GTI04-027 se observa grabada; copa hembra, triceta y kit reales sobre blanco."
+  },
+  {
+    "sku": "GTI04-030", "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI04-030-imotriz.png",
+    "sources": ["https://www.imotriz.com/producto/3/GTI04-030-/", "https://app.pedbox.co:7777/imagenes_catalogo/15/04I09038.png"],
+    "exact_reference_confirmed": true, "usage_authorized": true, "source_type": "authorized-distributor", "source_image_clean": true,
+    "reference_evidence": "Product JSON-LD exacto GTI04-030: eje homocinético izquierdo Sprint nuevo diseño, 23X22; imagen 04I09038. Revisión visual 2026-08-28: semieje completo real sobre blanco."
+  },
+  {
+    "sku": "GTI04-031", "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI04-031-imotriz.png",
+    "sources": ["https://www.imotriz.com/producto/3/GTI04-031-/", "https://app.pedbox.co:7777/imagenes_catalogo/15/04I09039.png"],
+    "exact_reference_confirmed": true, "usage_authorized": true, "source_type": "authorized-distributor", "source_image_clean": true,
+    "reference_evidence": "Product JSON-LD exacto GTI04-031: eje homocinético derecho Sprint nuevo diseño, 23X22; imagen 04I09039. Revisión visual 2026-08-28: semieje completo real distinto del izquierdo, sobre blanco."
+  },
+  {
+    "sku": "GTI04-032", "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI04-032-imotriz.png",
+    "sources": ["https://www.imotriz.com/producto/3/GTI04-032-/", "https://app.pedbox.co:7777/imagenes_catalogo/15/04I09036.png"],
+    "exact_reference_confirmed": true, "usage_authorized": true, "source_type": "authorized-distributor", "source_image_clean": true,
+    "reference_evidence": "Product JSON-LD exacto GTI04-032: punta lado caja Sprint nuevo diseño macho, 22X22; imagen 04I09036. Revisión visual 2026-08-28: copa macho y kit real sobre blanco."
+  },
+  {
+    "sku": "GTI04-033", "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI04-033-imotriz.png",
+    "sources": ["https://www.imotriz.com/producto/3/GTI04-033-/", "https://app.pedbox.co:7777/imagenes_catalogo/15/04I09037.png"],
+    "exact_reference_confirmed": true, "usage_authorized": true, "source_type": "authorized-distributor", "source_image_clean": true,
+    "reference_evidence": "Product JSON-LD exacto GTI04-033: punta lado caja derecha Swift 1.3 nuevo diseño hembra, 22X22; imagen 04I09037. Revisión visual 2026-08-28: copa hembra y kit real sobre blanco."
+  },
+  {
+    "sku": "GTI04-034", "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI04-034-imotriz.JPG",
+    "sources": ["https://www.imotriz.com/producto/3/GTI04-034-/", "https://app.pedbox.co:7777/imagenes_catalogo/15/04I09034.JPG"],
+    "exact_reference_confirmed": true, "usage_authorized": true, "source_type": "authorized-distributor", "source_image_clean": true,
+    "reference_evidence": "Product JSON-LD exacto GTI04-034: punta lado rueda Corsa Evolution/Daewoo Lanos tipo Korea, 22X22; imagen 04I09034. Revisión visual 2026-08-28: kit real individual sobre blanco."
+  }
+]

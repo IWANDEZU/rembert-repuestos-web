@@ -1,0 +1,42 @@
+[
+  {
+    "sku": "GTI03-072",
+    "image_source": "https://image.imotriz.com/uploads/products/R-MAZDA-2-2008-2015.webp",
+    "sources": ["https://www.imotriz.com/producto/3/GTI03-072-/"],
+    "exact_reference_confirmed": true,
+    "usage_authorized": false,
+    "source_type": "",
+    "source_image_clean": false,
+    "reference_evidence": "Ficha pública que declara SKU y marca GTI. Pendiente de revisión visual."
+  },
+  {
+    "sku": "GTI04-089",
+    "image_source": "https://image.imotriz.com/uploads/products/20230227151457-GTI04-089+-PUNTA-DE-EJE-LR-COBALT-TRACKER-1800-CC-(23X25).webp.webp",
+    "sources": ["https://www.imotriz.com/producto/3/GTI04-089-/"],
+    "exact_reference_confirmed": true,
+    "usage_authorized": false,
+    "source_type": "",
+    "source_image_clean": false,
+    "reference_evidence": "Ficha pública que declara SKU y marca GTI. Pendiente de revisión visual."
+  },
+  {
+    "sku": "GTI06-037",
+    "image_source": "https://image.imotriz.com/uploads/products/6a42da9b4774d-20260629205035292700-PUNTA-DE-EJE-L-C-RIO-XCITE-CERATO-FORTE-1-6-I25-MARCA-GTI.webp",
+    "sources": ["https://www.imotriz.com/producto/3/GTI06-037-/"],
+    "exact_reference_confirmed": true,
+    "usage_authorized": false,
+    "source_type": "",
+    "source_image_clean": false,
+    "reference_evidence": "Ficha pública que declara SKU y marca GTI. Pendiente de revisión visual."
+  },
+  {
+    "sku": "GTI06-081",
+    "image_source": "https://image.imotriz.com/uploads/products/6a42da9103a59-20260629205025015000-PUNTA-DE-EJE-L-R-EON.webp",
+    "sources": ["https://www.imotriz.com/producto/3/GTI06-081-/"],
+    "exact_reference_confirmed": true,
+    "usage_authorized": false,
+    "source_type": "",
+    "source_image_clean": false,
+    "reference_evidence": "Ficha pública que declara SKU y marca GTI. Pendiente de revisión visual."
+  }
+]

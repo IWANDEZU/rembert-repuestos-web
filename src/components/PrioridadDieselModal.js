@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState, useCallback } from "react";
+import Image from "next/image";
 import { useCart } from "@/components/CartContext";
 import { generateWhatsAppProductText, getWhatsAppUrl } from "@/lib/orderFormatter";
 import WhatsAppIcon from "@/components/WhatsAppIcon";
@@ -35,6 +36,15 @@ export default function PrioridadDieselModal({ products, initialIndex, onClose }
     setCurrentIndex((prev) => (prev < products.length - 1 ? prev + 1 : 0));
   }, [products.length]);
 
+  const handleClose = useCallback(() => {
+    if (typeof window !== "undefined" && window.history.state?.modalOpen) {
+      window.history.back();
+    } else {
+      onClose();
+    }
+  }, [onClose]);
+
+  // Escuchar Teclado (←, →, ESC), Bloqueo de Scroll y Retroceso en Móvil (Botón Atrás del Navegador)
   useEffect(() => {
     // 1. Manejo de botón 'Atrás' nativo en celular (Android / iOS)
     window.history.pushState({ modalOpen: true }, "");
@@ -50,7 +60,7 @@ export default function PrioridadDieselModal({ products, initialIndex, onClose }
     // 3. Atajos de Teclado
     const handleKeyDown = (e) => {
       if (e.key === "Escape") {
-        onClose();
+        handleClose();
       } else if (e.key === "ArrowLeft") {
         handlePrev();
       } else if (e.key === "ArrowRight") {
@@ -64,7 +74,7 @@ export default function PrioridadDieselModal({ products, initialIndex, onClose }
       window.removeEventListener("keydown", handleKeyDown);
       document.body.style.overflow = originalOverflow;
     };
-  }, [onClose, handlePrev, handleNext]);
+  }, [handleClose, onClose, handlePrev, handleNext]);
 
   if (!product) return null;
 
@@ -103,7 +113,7 @@ export default function PrioridadDieselModal({ products, initialIndex, onClose }
           price: product.price_cop,
           priceValidUntil: "2026-12-31",
           itemCondition: "https://schema.org/NewCondition",
-          availability: "https://schema.org/PreOrder", // No declara inventario directo sin cotización
+          availability: "https://schema.org/PreOrder",
         },
       }
     : null;
@@ -125,7 +135,7 @@ export default function PrioridadDieselModal({ products, initialIndex, onClose }
         padding: "clamp(6px, 2vw, 16px)",
         overscrollBehavior: "contain",
       }}
-      onClick={onClose}
+      onClick={handleClose}
       role="dialog"
       aria-modal="true"
       aria-labelledby="modal-title"
@@ -159,7 +169,7 @@ export default function PrioridadDieselModal({ products, initialIndex, onClose }
         {/* Header Modal con Botón Volver */}
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", gap: "8px", flexWrap: "wrap" }}>
           <button
-            onClick={onClose}
+            onClick={handleClose}
             style={{
               background: "#E52421",
               color: "#FFFFFF",
@@ -182,13 +192,13 @@ export default function PrioridadDieselModal({ products, initialIndex, onClose }
             <div style={{ fontSize: "0.78rem", color: "var(--primary-color)", fontWeight: "bold", textTransform: "uppercase" }}>
               {product.brandName} • {product.categoryName} • {product.subtype}
             </div>
-            <h2 id="modal-title" style={{ fontSize: "1.3rem", color: "#fff", margin: 0 }}>
+            <h2 id="modal-title" style={{ fontSize: "clamp(1.1rem, 3.5vw, 1.3rem)", color: "#fff", margin: 0 }}>
               <span className="product-reference">Ref: {product.reference}</span>
             </h2>
           </div>
 
           <button
-            onClick={onClose}
+            onClick={handleClose}
             style={{
               background: "#2a2a2a",
               border: "1px solid #444",
@@ -238,7 +248,7 @@ export default function PrioridadDieselModal({ products, initialIndex, onClose }
           </button>
 
           <span style={{ color: "#aaa" }}>
-            Referencia <strong style={{ color: "#fff" }}>{currentIndex + 1}</strong> de <strong style={{ color: "#fff" }}>{products.length}</strong>
+            Producto <strong style={{ color: "#fff" }}>{currentIndex + 1}</strong> de <strong style={{ color: "#fff" }}>{products.length}</strong>
           </span>
 
           <button
@@ -258,27 +268,29 @@ export default function PrioridadDieselModal({ products, initialIndex, onClose }
         </div>
 
         {/* Body Contenido Principal: Imagen + Ficha */}
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "1.5rem" }}>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 260px), 1fr))", gap: "1.25rem" }}>
           {/* Columna Izquierda: Imagen o Badge de Foto Pendiente */}
           <div
             style={{
-              background: "#0a0a0a",
+              background: "#FFFFFF",
               borderRadius: "10px",
-              border: "1px solid #222",
+              border: "1px solid #E2E8F0",
               padding: "1rem",
               display: "flex",
               flexDirection: "column",
               alignItems: "center",
               justifyContent: "center",
-              minHeight: "240px",
+              minHeight: "220px",
             }}
           >
             {product.has_photo ? (
-              <img
+              <Image
                 src={product.web_image}
-                alt={product.altText}
+                alt={product.altText || product.reference}
+                width={360}
+                height={260}
                 loading="lazy"
-                style={{ maxWidth: "100%", maxHeight: "260px", objectFit: "contain" }}
+                style={{ maxWidth: "100%", height: "auto", maxHeight: "260px", objectFit: "contain" }}
               />
             ) : (
               <div style={{ textAlign: "center", padding: "1.5rem" }}>

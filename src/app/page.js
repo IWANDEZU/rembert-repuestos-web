@@ -83,24 +83,23 @@ export default async function Home() {
           style={{ objectFit: 'cover', objectPosition: 'center 35%', zIndex: 0 }}
         />
         <div aria-hidden="true" style={{ position: 'absolute', inset: 0, zIndex: 1, background: 'linear-gradient(90deg, rgba(10,10,10,0.92) 0%, rgba(10,10,10,0.72) 55%, rgba(10,10,10,0.45) 100%)' }} />
-        
-        <div className="main-container" style={{ width: '100%', display: 'flex', flexDirection: 'column', gap: '1.5rem', position: 'relative', zIndex: 2 }}>
+        <div className="main-container" style={{ width: '100%', display: 'flex', flexDirection: 'column', gap: '1.25rem', position: 'relative', zIndex: 2 }}>
           <div>
-            <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', background: '#E52421', color: '#FFFFFF', padding: '0.4rem 1.1rem', borderRadius: '30px', fontWeight: '900', fontSize: '0.9rem', marginBottom: '1rem', letterSpacing: '0.5px', boxShadow: '0 4px 15px rgba(229, 36, 33, 0.45)' }}>
+            <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', background: '#E52421', color: '#FFFFFF', padding: '0.35rem 0.95rem', borderRadius: '30px', fontWeight: '900', fontSize: 'clamp(0.75rem, 2.5vw, 0.9rem)', marginBottom: '1rem', letterSpacing: '0.5px', boxShadow: '0 4px 15px rgba(229, 36, 33, 0.45)', flexWrap: 'wrap' }}>
               ⭐ 38 AÑOS DE EXPERIENCIA EN EL SECTOR AUTOMOTRIZ
             </div>
-            <h1 style={{ fontSize: 'clamp(2.4rem, 7.5vw, 3.8rem)', maxWidth: '850px', lineHeight: 1.1, marginBottom: '1rem', textTransform: 'uppercase', color: '#ffffff' }}>
+            <h1 style={{ fontSize: 'clamp(2rem, 7vw, 3.8rem)', maxWidth: '850px', lineHeight: 1.1, marginBottom: '1rem', textTransform: 'uppercase', color: '#ffffff' }}>
               Repuestos confiables <br/>
               <span className="text-primary">de la mejor calidad</span>
             </h1>
-            <p style={{ color: '#E2E8F0', fontSize: '1.1rem', maxWidth: '650px', lineHeight: '1.5', margin: '0 0 1.5rem 0' }}>
+            <p style={{ color: '#E2E8F0', fontSize: 'clamp(0.95rem, 2.5vw, 1.1rem)', maxWidth: '650px', lineHeight: '1.5', margin: '0 0 1.5rem 0' }}>
               Originales y alternativos para todas las marcas. Precios al por mayor y detal con envíos rápidos a todo el país.
             </p>
           </div>
           
-          <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', marginBottom: '2.5rem' }}>
-            <Link href="/catalogo" className="btn btn--primary" style={{ padding: '0.95rem 2rem', fontSize: '0.95rem' }}>VER PRODUCTOS</Link>
-            <a href="https://wa.me/573102420490?text=Hola%2C%20quisiera%20cotizar%20un%20repuesto." target="_blank" rel="noopener noreferrer" className="btn btn--outline" style={{ padding: '0.95rem 2rem', color: '#fff', borderColor: '#fff', fontSize: '0.95rem' }}>
+          <div style={{ display: 'flex', gap: '0.85rem', flexWrap: 'wrap', marginBottom: '2rem' }}>
+            <Link href="/catalogo" className="btn btn--primary" style={{ padding: '0.85rem 1.8rem', fontSize: '0.95rem' }}>VER PRODUCTOS</Link>
+            <a href="https://wa.me/573102420490?text=Hola%2C%20quisiera%20cotizar%20un%20repuesto." target="_blank" rel="noopener noreferrer" className="btn btn--outline" style={{ padding: '0.85rem 1.8rem', color: '#fff', borderColor: '#fff', fontSize: '0.95rem' }}>
               <span style={{ color: '#25D366' }}>💬</span> COMPRAR POR WHATSAPP
             </a>
           </div>
@@ -131,15 +130,15 @@ export default async function Home() {
       {/* Categorías Principales (Claro) */}
       <section className="section section--light">
         <div className="main-container">
-          <h2 style={{ marginBottom: '2rem', textTransform: 'uppercase' }}>Categorías Principales</h2>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '1.5rem' }}>
+          <h2 style={{ marginBottom: '2rem', textTransform: 'uppercase', fontSize: 'clamp(1.75rem, 5vw, 2.4rem)' }}>Categorías Principales</h2>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 240px), 1fr))', gap: '1.25rem' }}>
             
             {/* Categoría 1: Mantenimiento automotriz */}
             <Link href="/catalogo?category=mantenimiento" style={{ textDecoration: 'none', color: 'inherit' }}>
               <div style={{ 
                 background: '#fff', 
                 borderRadius: 'var(--border-radius)', 
-                padding: '1.5rem', 
+                padding: '1.25rem', 
                 textAlign: 'center',
                 boxShadow: 'var(--box-shadow-light)',
                 cursor: 'pointer',
@@ -149,7 +148,7 @@ export default async function Home() {
                 <div style={{ height: '180px', borderRadius: '8px', marginBottom: '1rem', overflow: 'hidden', position: 'relative', background: '#f8f8f8', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                   <Image src="/catalogo-siliconas-automotrices/victor-reinz-reinzosil-70ml-original.png" alt="Mantenimiento automotriz con sellante Victor Reinz" fill sizes="(max-width: 700px) 100vw, 25vw" quality={85} style={{ objectFit: 'contain', padding: '6px' }} />
                 </div>
-                <strong style={{ fontSize: '1.15rem', display: 'block' }}>Mantenimiento automotriz</strong>
+                <strong style={{ fontSize: '1.1rem', display: 'block' }}>Mantenimiento automotriz</strong>
               </div>
             </Link>
 
@@ -158,7 +157,7 @@ export default async function Home() {
               <div style={{ 
                 background: '#fff', 
                 borderRadius: 'var(--border-radius)', 
-                padding: '1.5rem', 
+                padding: '1.25rem', 
                 textAlign: 'center',
                 boxShadow: 'var(--box-shadow-light)',
                 cursor: 'pointer',
@@ -168,7 +167,7 @@ export default async function Home() {
                 <div style={{ height: '180px', borderRadius: '8px', marginBottom: '1rem', overflow: 'hidden', position: 'relative' }}>
                   <Image src="/filtro-aceite.jpg" alt="Filtros de Motor" fill sizes="(max-width: 700px) 100vw, 25vw" quality={75} style={{ objectFit: 'cover' }} />
                 </div>
-                <strong style={{ fontSize: '1.15rem', whiteSpace: 'nowrap', display: 'block' }}>Filtros</strong>
+                <strong style={{ fontSize: '1.1rem', display: 'block' }}>Filtros de Motor y Cabina</strong>
               </div>
             </Link>
 
@@ -177,7 +176,7 @@ export default async function Home() {
               <div style={{ 
                 background: '#fff', 
                 borderRadius: 'var(--border-radius)', 
-                padding: '1.5rem', 
+                padding: '1.25rem', 
                 textAlign: 'center',
                 boxShadow: 'var(--box-shadow-light)',
                 cursor: 'pointer',
@@ -187,7 +186,7 @@ export default async function Home() {
                 <div style={{ height: '180px', borderRadius: '8px', marginBottom: '1rem', overflow: 'hidden', position: 'relative' }}>
                   <Image src="/catalogo-suspensiones/suspensiones-camionetas-referencias-populares.webp" alt="Suspensiones para camionetas de referencias populares" fill sizes="(max-width: 700px) 100vw, 25vw" quality={82} style={{ objectFit: 'cover' }} />
                 </div>
-                <strong style={{ fontSize: '1.15rem', whiteSpace: 'nowrap', display: 'block' }}>Frenos y Suspensión</strong>
+                <strong style={{ fontSize: '1.1rem', display: 'block' }}>Frenos y Suspensión</strong>
               </div>
             </Link>
 
@@ -196,7 +195,7 @@ export default async function Home() {
               <div style={{ 
                 background: '#fff', 
                 borderRadius: 'var(--border-radius)', 
-                padding: '1.5rem', 
+                padding: '1.25rem', 
                 textAlign: 'center', 
                 boxShadow: 'var(--box-shadow-light)',
                 cursor: 'pointer',
@@ -206,7 +205,7 @@ export default async function Home() {
                 <div style={{ height: '180px', borderRadius: '8px', marginBottom: '1rem', overflow: 'hidden', position: 'relative' }}>
                   <Image src="/radiador-auto.jpg" alt="Radiadores y Sistema de Enfriamiento" fill sizes="(max-width: 700px) 100vw, 25vw" quality={80} style={{ objectFit: 'cover' }} />
                 </div>
-                <strong style={{ fontSize: '1.15rem', color: 'var(--primary-dark)', whiteSpace: 'nowrap', display: 'block' }}>Radiadores</strong>
+                <strong style={{ fontSize: '1.1rem', color: 'var(--primary-dark)', display: 'block' }}>Radiadores y Refrigeración</strong>
               </div>
             </Link>
 
@@ -215,17 +214,17 @@ export default async function Home() {
               <div style={{ 
                 background: '#fff', 
                 borderRadius: 'var(--border-radius)', 
-                padding: '1.5rem', 
+                padding: '1.25rem', 
                 textAlign: 'center', 
                 boxShadow: 'var(--box-shadow-light)',
                 cursor: 'pointer',
                 border: '1px solid transparent',
                 transition: 'var(--transition)'
               }} className="hover-card">
-                <div style={{ height: '180px', borderRadius: '8px', marginBottom: '1rem', overflow: 'hidden', background: '#e0e0e0', display: 'flex', alignItems: 'center', justifyContent: 'center', position: 'relative' }}>
+                <div style={{ height: '180px', borderRadius: '8px', marginBottom: '1rem', overflow: 'hidden', background: '#f8f8f8', display: 'flex', alignItems: 'center', justifyContent: 'center', position: 'relative' }}>
                   <Image src="/transmision.png" alt="Cajas y transmisiones automotrices" fill sizes="(max-width: 700px) 100vw, 25vw" quality={70} style={{ objectFit: 'contain', padding: '5%' }} />
                 </div>
-                <strong style={{ fontSize: '1.15rem', whiteSpace: 'nowrap', display: 'block' }}>Transmisiones</strong>
+                <strong style={{ fontSize: '1.1rem', display: 'block' }}>Transmisiones y Cajas</strong>
               </div>
             </Link>
 
@@ -234,7 +233,7 @@ export default async function Home() {
               <div style={{ 
                 background: '#fff', 
                 borderRadius: 'var(--border-radius)', 
-                padding: '1.5rem', 
+                padding: '1.25rem', 
                 textAlign: 'center', 
                 boxShadow: 'var(--box-shadow-light)',
                 cursor: 'pointer',
@@ -242,52 +241,17 @@ export default async function Home() {
                 transition: 'var(--transition)'
               }} className="hover-card">
                 <div style={{ height: '180px', borderRadius: '8px', marginBottom: '1rem', overflow: 'hidden', background: '#111', display: 'flex', alignItems: 'center', justifyContent: 'center', position: 'relative' }}>
-                  <span style={{ fontSize: '4rem' }}>🛠️</span>
+                  <span style={{ fontSize: '3.5rem' }}>🛠️</span>
                 </div>
-                <strong style={{ fontSize: '1.15rem', color: 'var(--primary-dark)', whiteSpace: 'nowrap', display: 'block' }}>Servicio Técnico</strong>
-              </div>
-            </Link>
-
-            <Link href="/catalogo?category=electrico-y-encendido" style={{ textDecoration: 'none', color: 'inherit' }}>
-              <div className="hover-card" style={{ background: '#fff', borderRadius: 'var(--border-radius)', padding: '1.5rem', textAlign: 'center', boxShadow: 'var(--box-shadow-light)', border: '1px solid transparent', transition: 'var(--transition)' }}>
-                <div style={{ height: '180px', borderRadius: '8px', marginBottom: '1rem', overflow: 'hidden', position: 'relative', background: '#f8f8f8' }}>
-                <Image src="/catalogo-kia/kmx-kia-bobina-encendido-referencia-vin.jpg" alt="PARTES ELÉCTRICAS KMX" fill sizes="(max-width: 700px) 100vw, 25vw" quality={80} style={{ objectFit: 'contain', padding: '6px' }} />
-                </div>
-                <strong style={{ fontSize: '1.15rem', display: 'block' }}>PARTES ELÉCTRICAS</strong>
-              </div>
-            </Link>
-
-            <Link href="/catalogo?category=motor-y-distribucion" style={{ textDecoration: 'none', color: 'inherit' }}>
-              <div className="hover-card" style={{ background: '#fff', borderRadius: 'var(--border-radius)', padding: '1.5rem', textAlign: 'center', boxShadow: 'var(--box-shadow-light)', border: '1px solid transparent', transition: 'var(--transition)' }}>
-                <div style={{ height: '180px', borderRadius: '8px', marginBottom: '1rem', overflow: 'hidden', position: 'relative', background: '#f8f8f8' }}>
-                  <Image src="/catalogo-nuevas-lineas/gates-kit-distribucion-bomba-agua-catalogo.png" alt="Kit de distribución Gates PowerGrip" fill sizes="(max-width: 700px) 100vw, 25vw" quality={80} style={{ objectFit: 'contain', padding: '6px' }} />
-                </div>
-                <strong style={{ fontSize: '1.15rem', display: 'block' }}>Motor y distribución</strong>
-              </div>
-            </Link>
-
-            <Link href="/catalogo?category=embrague" style={{ textDecoration: 'none', color: 'inherit' }}>
-              <div className="hover-card" style={{ background: '#fff', borderRadius: 'var(--border-radius)', padding: '1.5rem', textAlign: 'center', boxShadow: 'var(--box-shadow-light)', border: '1px solid transparent', transition: 'var(--transition)' }}>
-                <div style={{ height: '180px', borderRadius: '8px', marginBottom: '1rem', overflow: 'hidden', position: 'relative', background: '#f8f8f8' }}>
-                  <Image src="/catalogo-nuevas-lineas/luk-repset-kit-embrague-catalogo.png" alt="Kit de embrague LuK RepSet" fill sizes="(max-width: 700px) 100vw, 25vw" quality={80} style={{ objectFit: 'contain', padding: '6px' }} />
-                </div>
-                <strong style={{ fontSize: '1.15rem', display: 'block' }}>Embragues y clutch</strong>
-              </div>
-            </Link>
-
-            <Link href="/catalogo?category=rodamientos-y-traccion" style={{ textDecoration: 'none', color: 'inherit' }}>
-              <div className="hover-card" style={{ background: '#fff', borderRadius: 'var(--border-radius)', padding: '1.5rem', textAlign: 'center', boxShadow: 'var(--box-shadow-light)', border: '1px solid transparent', transition: 'var(--transition)' }}>
-                <div style={{ height: '180px', borderRadius: '8px', marginBottom: '1rem', overflow: 'hidden', position: 'relative', background: '#f8f8f8' }}>
-                  <Image src="/catalogo-nuevas-lineas/skf-kit-rodamiento-catalogo.png" alt="Kit de rodamiento de rueda SKF" fill sizes="(max-width: 700px) 100vw, 25vw" quality={80} style={{ objectFit: 'contain', padding: '6px' }} />
-                </div>
-                <strong style={{ fontSize: '1.15rem', display: 'block' }}>Rodamientos y tracción</strong>
+                <strong style={{ fontSize: '1.1rem', color: 'var(--primary-dark)', display: 'block' }}>Servicio Técnico Especializado</strong>
               </div>
             </Link>
 
           </div>
+
           <div style={{ textAlign: 'center', marginTop: '3rem' }}>
-            <Link href="/catalogo" className="btn btn--outline" style={{ color: 'var(--primary-color)', borderColor: 'var(--primary-color)', whiteSpace: 'nowrap' }}>
-              VER TODAS LAS CATEGORÍAS
+            <Link href="/catalogo" className="btn btn--outline" style={{ color: '#111', borderColor: '#111', fontWeight: 'bold', padding: '0.85rem 2rem' }}>
+              VER TODAS LAS CATEGORÍAS EN CATÁLOGO →
             </Link>
           </div>
         </div>
@@ -296,25 +260,33 @@ export default async function Home() {
       {/* Servicios */}
       <section className="section" style={{ background: '#111111', color: 'white', borderTop: '3px solid var(--primary-color)', borderBottom: '3px solid var(--primary-color)' }}>
         <div className="main-container">
-          <h2 style={{ textTransform: 'uppercase', marginBottom: '2rem', textAlign: 'center', color: '#ffffff', letterSpacing: '1px', whiteSpace: 'nowrap' }}>
+          <h2 style={{ textTransform: 'uppercase', marginBottom: '2rem', textAlign: 'center', color: '#ffffff', letterSpacing: '1px', fontSize: 'clamp(1.5rem, 4vw, 2.2rem)' }}>
             Nuestros Servicios Automotrices
           </h2>
-          <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '1rem', fontWeight: 'bold', fontSize: '1.05rem' }}>
-            {['CAMBIO DE ACEITE', 'FRENOS', 'RADIADORES', 'BATERÍAS', 'SUSPENSIÓN'].map((servicio, idx) => (
+          <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '0.75rem', fontWeight: 'bold', fontSize: 'clamp(0.8rem, 2.5vw, 1rem)' }}>
+            {[
+              { name: 'CAMBIO DE ACEITE & FILTROS', icon: '🛢️' },
+              { name: 'MANTENIMIENTO DE FRENOS', icon: '🛑' },
+              { name: 'RADIADORES & REFRIGERACIÓN', icon: '❄️' },
+              { name: 'BATERÍAS & SISTEMA ELÉCTRICO', icon: '🔋' },
+              { name: 'SUSPENSIÓN & DIRECCIÓN', icon: '⚙️' },
+            ].map((servicio, idx) => (
               <div 
                 key={idx} 
                 style={{ 
-                  background: '#E52421', 
-                  color: '#FFFFFF', 
-                  padding: '0.85rem 2rem', 
+                  background: 'rgba(255,255,255,0.08)', 
+                  border: '1px solid rgba(255, 215, 0, 0.3)',
+                  color: '#ffffff', 
+                  padding: '0.75rem 1.35rem', 
                   borderRadius: '30px', 
-                  boxShadow: '0 4px 14px rgba(229, 36, 33, 0.45)',
-                  whiteSpace: 'nowrap',
-                  fontWeight: '800',
-                  letterSpacing: '0.5px'
+                  letterSpacing: '0.5px',
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: '0.5rem',
                 }}
               >
-                {servicio}
+                <span>{servicio.icon}</span>
+                <span>{servicio.name}</span>
               </div>
             ))}
           </div>
@@ -325,19 +297,7 @@ export default async function Home() {
       <section className="section" style={{ background: '#ffffff', color: '#111111' }}>
         <div className="main-container">
           <div style={{ textAlign: 'center', marginBottom: '2.5rem' }}>
-            <span style={{ 
-              background: 'rgba(255, 215, 0, 0.2)', 
-              color: '#997300', 
-              padding: '0.35rem 1rem', 
-              borderRadius: '20px', 
-              fontSize: '0.85rem', 
-              fontWeight: '800', 
-              letterSpacing: '1px',
-              textTransform: 'uppercase'
-            }}>
-              Compatibilidad Garantizada
-            </span>
-            <h2 style={{ fontSize: 'clamp(1.8rem, 4vw, 2.6rem)', marginTop: '0.75rem', marginBottom: '0.5rem', textTransform: 'uppercase', color: '#111111' }}>
+            <h2 style={{ fontSize: 'clamp(1.8rem, 4vw, 2.6rem)', marginTop: '0.5rem', marginBottom: '0.5rem', textTransform: 'uppercase' }}>
               Repuestos por Marca de Vehículo
             </h2>
             <p style={{ color: '#666666', fontSize: '1.05rem', maxWidth: '700px', margin: '0 auto' }}>
@@ -347,8 +307,8 @@ export default async function Home() {
 
           <div style={{ 
             display: 'grid', 
-            gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', 
-            gap: '1.5rem' 
+            gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 160px), 1fr))', 
+            gap: '1.15rem' 
           }}>
             {popularCarBrands.map((brand) => (
               <div 
@@ -357,7 +317,7 @@ export default async function Home() {
                   background: '#fcfcfc',
                   border: '1px solid #e8e8e8',
                   borderRadius: '12px',
-                  padding: '1.75rem 1.25rem',
+                  padding: '1.25rem 1rem',
                   display: 'flex',
                   flexDirection: 'column',
                   alignItems: 'center',
@@ -374,50 +334,51 @@ export default async function Home() {
                   right: '10px',
                   background: '#111111',
                   color: 'var(--primary-color)',
-                  fontSize: '0.7rem',
+                  fontSize: '0.68rem',
                   fontWeight: '700',
-                  padding: '0.2rem 0.55rem',
+                  padding: '0.18rem 0.5rem',
                   borderRadius: '10px',
                 }}>
                   {brand.badge}
                 </span>
 
                 <div style={{ 
-                  height: '70px', 
+                  height: '60px', 
                   width: '100%', 
                   position: 'relative', 
                   display: 'flex', 
                   alignItems: 'center', 
                   justifyContent: 'center',
-                  marginBottom: '1rem' 
+                  marginBottom: '0.75rem',
+                  marginTop: '0.5rem',
                 }}>
                   <Image 
                     src={brand.logo} 
                     alt={`Logo oficial ${brand.name}`} 
-                    width={110} 
-                    height={55} 
-                    style={{ objectFit: 'contain', maxHeight: '55px' }} 
+                    width={100} 
+                    height={50} 
+                    style={{ objectFit: 'contain', maxHeight: '50px' }} 
                   />
                 </div>
 
-                <h3 style={{ fontSize: '1.25rem', fontWeight: '800', marginBottom: '0.4rem', color: '#111111' }}>
+                <h3 style={{ fontSize: '1.15rem', fontWeight: '800', marginBottom: '0.35rem', color: '#111111' }}>
                   {brand.name}
                 </h3>
 
-                <p style={{ fontSize: '0.82rem', color: '#666666', marginBottom: '1.25rem', minHeight: '38px', lineHeight: '1.4' }}>
+                <p style={{ fontSize: '0.80rem', color: '#666666', marginBottom: '1rem', minHeight: '34px', lineHeight: '1.35' }}>
                   <strong style={{ color: '#333333' }}>Modelos:</strong> {brand.popularModels}
                 </p>
 
-                <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', width: '100%', marginTop: 'auto' }}>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '0.45rem', width: '100%', marginTop: 'auto' }}>
                   <Link 
                     href={`/catalogo?search=${brand.query}`} 
                     style={{
                       background: 'var(--primary-color)',
                       color: '#111111',
-                      padding: '0.6rem 1rem',
+                      padding: '0.55rem 0.85rem',
                       borderRadius: '6px',
                       fontWeight: '700',
-                      fontSize: '0.88rem',
+                      fontSize: '0.82rem',
                       textAlign: 'center',
                       textDecoration: 'none',
                       transition: 'background 0.2s ease'
@@ -433,10 +394,10 @@ export default async function Home() {
                       background: 'transparent',
                       color: '#2e7d32',
                       border: '1px solid #a5d6a7',
-                      padding: '0.45rem 1rem',
+                      padding: '0.45rem 0.75rem',
                       borderRadius: '6px',
                       fontWeight: '600',
-                      fontSize: '0.8rem',
+                      fontSize: '0.78rem',
                       textAlign: 'center',
                       textDecoration: 'none'
                     }}
@@ -466,9 +427,9 @@ export default async function Home() {
       </section>
 
       {/* Sección Destacada de Radiadores y Sistema Térmico */}
-      <section className="section" style={{ background: 'linear-gradient(135deg, #0d0d0d 0%, #171717 100%)', color: '#ffffff', borderTop: '3px solid var(--primary-color)', borderBottom: '3px solid var(--primary-color)', padding: '4.5rem 0' }}>
+      <section className="section" style={{ background: 'linear-gradient(135deg, #0d0d0d 0%, #171717 100%)', color: '#ffffff', borderTop: '3px solid var(--primary-color)', borderBottom: '3px solid var(--primary-color)', padding: 'clamp(2.5rem, 6vw, 4.5rem) 0' }}>
         <div className="main-container">
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '3rem', alignItems: 'center' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 290px), 1fr))', gap: '2.5rem', alignItems: 'center' }}>
             <div>
               <span style={{ 
                 background: 'var(--primary-color)', 
@@ -484,14 +445,14 @@ export default async function Home() {
               }}>
                 ❄️ Línea Especializada
               </span>
-              <h2 style={{ fontSize: 'clamp(2rem, 4vw, 2.8rem)', color: '#ffffff', marginBottom: '1rem', lineHeight: '1.2', textTransform: 'uppercase' }}>
+              <h2 style={{ fontSize: 'clamp(1.8rem, 4.5vw, 2.8rem)', color: '#ffffff', marginBottom: '1rem', lineHeight: '1.2', textTransform: 'uppercase' }}>
                 Radiadores & Refrigeración <span style={{ color: 'var(--primary-color)' }}>Automotriz</span>
               </h2>
               <p style={{ color: '#d1d5db', fontSize: '1.05rem', lineHeight: '1.6', marginBottom: '1.5rem' }}>
                 Evita recalentamientos y daños en el motor. Contamos con radiadores en <strong>aluminio soldado</strong>, tanques de polímero térmico reforzado y núcleos de <strong>cobre para trabajo pesado</strong> (Isuzu NPR, Hino, Foton, maquinaria).
               </p>
 
-              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))', gap: '1rem', marginBottom: '2rem' }}>
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 150px), 1fr))', gap: '0.75rem', marginBottom: '2rem' }}>
                 <div style={{ background: '#222', padding: '0.85rem 1rem', borderRadius: '8px', borderLeft: '3px solid var(--primary-color)' }}>
                   <strong style={{ color: '#fff', fontSize: '0.92rem', display: 'block' }}>✓ Ensamble OEM</strong>
                   <span style={{ color: '#aaa', fontSize: '0.8rem' }}>Ajuste 100% exacto</span>
@@ -502,8 +463,8 @@ export default async function Home() {
                 </div>
               </div>
 
-              <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
-                <Link href="/radiadores" className="btn btn--primary" style={{ padding: '0.9rem 1.8rem', fontSize: '0.95rem', fontWeight: '800' }}>
+              <div style={{ display: 'flex', gap: '0.85rem', flexWrap: 'wrap' }}>
+                <Link href="/radiadores" className="btn btn--primary" style={{ padding: '0.85rem 1.6rem', fontSize: '0.92rem', fontWeight: '800' }}>
                   CONOCER SECCIÓN RADIADORES
                 </Link>
                 <a 
@@ -511,14 +472,14 @@ export default async function Home() {
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="btn btn--outline"
-                  style={{ padding: '0.9rem 1.8rem', color: '#fff', borderColor: '#fff', fontSize: '0.95rem' }}
+                  style={{ padding: '0.85rem 1.6rem', color: '#fff', borderColor: '#fff', fontSize: '0.92rem' }}
                 >
                   💬 Cotizar por WhatsApp
                 </a>
               </div>
             </div>
 
-            <div style={{ position: 'relative', borderRadius: '16px', overflow: 'hidden', border: '2px solid #333', boxShadow: '0 12px 35px rgba(0,0,0,0.6)', height: '360px' }}>
+            <div style={{ position: 'relative', borderRadius: '16px', overflow: 'hidden', border: '2px solid #333', boxShadow: '0 12px 35px rgba(0,0,0,0.6)', height: 'clamp(240px, 40vw, 360px)' }}>
               <Image 
                 src="/radiador-banner.jpg" 
                 alt="Radiadores automotrices de alta eficiencia térmica" 
@@ -534,12 +495,12 @@ export default async function Home() {
       {/* Productos Destacados (Oscuro) */}
       <section className="section">
         <div className="main-container">
-          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '2rem' }}>
-            <h2 style={{ textTransform: 'uppercase', margin: 0 }}>Productos Destacados</h2>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '2rem', flexWrap: 'wrap', gap: '1rem' }}>
+            <h2 style={{ textTransform: 'uppercase', margin: 0, fontSize: 'clamp(1.4rem, 4vw, 2rem)' }}>Productos Destacados</h2>
             <Link href="/catalogo" className="text-primary" style={{ fontWeight: 'bold' }}>VER TODOS →</Link>
           </div>
           
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(220px, 1fr))', gap: '1.5rem' }}>
+          <div className="catalog-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(220px, 1fr))', gap: '1.5rem' }}>
             {featuredProducts.map((p) => (
               <ProductCard key={p.id} product={p} />
             ))}
@@ -548,9 +509,9 @@ export default async function Home() {
       </section>
 
       {/* Sección de Ubicación y Almacén en Barrancabermeja */}
-      <section className="section" style={{ background: '#0e0e0e', borderTop: '3px solid var(--primary-color)', padding: '4rem 0' }}>
+      <section className="section" style={{ background: '#0e0e0e', borderTop: '3px solid var(--primary-color)', padding: 'clamp(2.5rem, 6vw, 4rem) 0' }}>
         <div className="main-container">
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '3rem', alignItems: 'center' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 300px), 1fr))', gap: '2.5rem', alignItems: 'center' }}>
             {/* Información del Almacén */}
             <div>
               <span style={{ 
@@ -567,26 +528,28 @@ export default async function Home() {
               }}>
                 📍 Punto de Venta Físico
               </span>
-              <h2 style={{ fontSize: '2.2rem', color: '#ffffff', marginBottom: '1rem', lineHeight: '1.2' }}>
+              <h2 style={{ fontSize: 'clamp(1.8rem, 4.5vw, 2.2rem)', color: '#ffffff', marginBottom: '1rem', lineHeight: '1.2' }}>
                 Visítanos en <span style={{ color: 'var(--primary-color)' }}>Barrancabermeja</span>
               </h2>
               <p style={{ color: '#cccccc', fontSize: '1.05rem', lineHeight: '1.6', marginBottom: '1.5rem' }}>
                 Atención experta y entrega inmediata en nuestro punto de venta en <strong>Santander</strong>. También despachamos a talleres, empresas y clientes particulares en todo el territorio nacional.
               </p>
 
-              <div style={{ background: '#181818', padding: '1.5rem', borderRadius: '12px', border: '1px solid #282828', marginBottom: '2rem' }}>
+              <div style={{ background: '#181818', padding: '1.25rem', borderRadius: '12px', border: '1px solid #282828', marginBottom: '2rem' }}>
                 {/* Sede Principal */}
                 <div style={{ display: 'flex', alignItems: 'flex-start', gap: '0.75rem', marginBottom: '1rem', borderBottom: '1px solid #252525', paddingBottom: '0.75rem' }}>
                   <span style={{ fontSize: '1.3rem' }}>🏢</span>
                   <div>
                     <strong style={{ color: 'var(--primary-color)', display: 'block', fontSize: '0.98rem' }}>Punto Principal (Barrancabermeja):</strong>
                     <span style={{ color: '#bbb', fontSize: '0.88rem', display: 'block', marginBottom: '0.3rem' }}>Tv. 29, Barrancabermeja, Santander</span>
-                    <a href="https://wa.me/573102420490" target="_blank" rel="noopener noreferrer" style={{ color: '#25D366', fontWeight: 'bold', fontSize: '0.9rem', marginRight: '1rem' }}>
-                      📱 310 242 0490
-                    </a>
-                    <a href="https://wa.me/573125022555" target="_blank" rel="noopener noreferrer" style={{ color: '#25D366', fontWeight: 'bold', fontSize: '0.9rem' }}>
-                      📱 312 502 2555
-                    </a>
+                    <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
+                      <a href="https://wa.me/573102420490" target="_blank" rel="noopener noreferrer" style={{ color: '#25D366', fontWeight: 'bold', fontSize: '0.9rem' }}>
+                        📱 310 242 0490
+                      </a>
+                      <a href="https://wa.me/573125022555" target="_blank" rel="noopener noreferrer" style={{ color: '#25D366', fontWeight: 'bold', fontSize: '0.9rem' }}>
+                        📱 312 502 2555
+                      </a>
+                    </div>
                   </div>
                 </div>
 
@@ -615,13 +578,13 @@ export default async function Home() {
                 </div>
               </div>
 
-              <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
+              <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
                 <a 
                   href="https://maps.app.goo.gl/FmmwX9PivNVnurEL7" 
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="btn btn--primary"
-                  style={{ padding: '0.85rem 1.75rem', display: 'inline-flex', alignItems: 'center', gap: '0.5rem' }}
+                  style={{ padding: '0.85rem 1.5rem', display: 'inline-flex', alignItems: 'center', gap: '0.5rem', fontSize: '0.92rem' }}
                 >
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 0C7.589 0 4 3.589 4 8c0 4.274 7.219 15.184 7.633 15.82a.498.498 0 00.734 0C12.781 23.184 20 12.274 20 8c0-4.411-3.589-8-8-8zm0 11.5a3.5 3.5 0 110-7 3.5 3.5 0 010 7z"/></svg>
                   Cómo Llegar (Google Maps)
@@ -631,7 +594,7 @@ export default async function Home() {
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="btn"
-                  style={{ background: '#25D366', color: '#fff', border: 'none', padding: '0.85rem 1.5rem', display: 'inline-flex', alignItems: 'center', gap: '0.5rem' }}
+                  style={{ background: '#25D366', color: '#fff', border: 'none', padding: '0.85rem 1.5rem', display: 'inline-flex', alignItems: 'center', gap: '0.5rem', fontSize: '0.92rem' }}
                 >
                   💬 WhatsApp Principal
                 </a>
@@ -639,7 +602,7 @@ export default async function Home() {
             </div>
 
             {/* Mapa Interactivo Google Maps */}
-            <div style={{ borderRadius: '16px', overflow: 'hidden', border: '2px solid #333', boxShadow: '0 12px 35px rgba(0,0,0,0.5)', height: '420px', minHeight: '380px' }}>
+            <div style={{ borderRadius: '16px', overflow: 'hidden', border: '2px solid #333', boxShadow: '0 12px 35px rgba(0,0,0,0.5)', height: 'clamp(280px, 45vw, 420px)', minHeight: '260px' }}>
               <iframe 
                 src="https://maps.google.com/maps?q=Rembeat,+Tv.+29,+Barrancabermeja,+Santander&t=&z=16&ie=UTF8&iwloc=&output=embed" 
                 width="100%" 

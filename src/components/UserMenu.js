@@ -3,9 +3,27 @@
 import { useSession, signOut } from "@/components/AuthProvider";
 import Link from "next/link";
 import CartIcon from "@/components/CartIcon";
+import { useEffect, useRef, useState } from "react";
 
 export default function UserMenu() {
   const { data: session, status } = useSession();
+  const [isOpen, setIsOpen] = useState(false);
+  const menuRef = useRef(null);
+
+  useEffect(() => {
+    const closeOnOutsideClick = (event) => {
+      if (menuRef.current && !menuRef.current.contains(event.target)) setIsOpen(false);
+    };
+    const closeOnEscape = (event) => {
+      if (event.key === "Escape") setIsOpen(false);
+    };
+    document.addEventListener("mousedown", closeOnOutsideClick);
+    document.addEventListener("keydown", closeOnEscape);
+    return () => {
+      document.removeEventListener("mousedown", closeOnOutsideClick);
+      document.removeEventListener("keydown", closeOnEscape);
+    };
+  }, []);
 
   return (
     <div className="navbar__actions">
@@ -15,18 +33,26 @@ export default function UserMenu() {
           <span className="navbar__action-text">Cargando...</span>
         </div>
       ) : session ? (
-        <div className="navbar__action-btn user-dropdown">
-          <span className="navbar__action-icon">👤</span>
-          <span className="navbar__action-text">{session.user?.name?.split(' ')[0] || 'Mi cuenta'}</span>
-          <div className="dropdown-content">
-            <Link href="/perfil">Mi Perfil</Link>
-            <Link href="/pedidos">Mis Pedidos</Link>
+        <div ref={menuRef} className="navbar__action-btn user-dropdown">
+          <button
+            type="button"
+            className="user-dropdown__trigger"
+            onClick={() => setIsOpen((open) => !open)}
+            aria-expanded={isOpen}
+            aria-haspopup="menu"
+          >
+            <span className="navbar__action-icon">👤</span>
+            <span className="navbar__action-text">{session.user?.name?.split(' ')[0] || 'Mi cuenta'}</span>
+          </button>
+          <div className={`dropdown-content ${isOpen ? "is-open" : ""}`} role="menu">
+            <Link href="/perfil" role="menuitem" onClick={() => setIsOpen(false)}>Mi Perfil</Link>
+            <Link href="/pedidos" role="menuitem" onClick={() => setIsOpen(false)}>Mis Pedidos</Link>
             {session.user?.role === "ADMIN" && (
-              <Link href="/admin/dashboard" style={{ color: '#FFD700', fontWeight: 800 }}>
+              <Link href="/admin/dashboard" role="menuitem" onClick={() => setIsOpen(false)} style={{ color: '#FFD700', fontWeight: 800 }}>
                 ⚙️ Admin CRM
               </Link>
             )}
-            <button onClick={() => signOut()} style={{ background: 'none', border: 'none', color: '#ff4d4f', cursor: 'pointer', textAlign: 'left', padding: '10px 15px', width: '100%', fontWeight: 700 }}>
+            <button type="button" role="menuitem" onClick={() => signOut()} style={{ background: 'none', border: 'none', color: '#ff4d4f', cursor: 'pointer', textAlign: 'left', padding: '10px 15px', width: '100%', fontWeight: 700 }}>
               Cerrar Sesión
             </button>
           </div>
@@ -44,6 +70,18 @@ export default function UserMenu() {
       <style jsx>{`
         .user-dropdown {
           position: relative;
+        }
+        .user-dropdown__trigger {
+          appearance: none;
+          border: 0;
+          background: transparent;
+          color: inherit;
+          display: inline-flex;
+          align-items: center;
+          gap: 0.35rem;
+          cursor: pointer;
+          font: inherit;
+          padding: 0;
         }
         .dropdown-content {
           display: none;
@@ -72,7 +110,7 @@ export default function UserMenu() {
           background-color: rgba(255, 215, 0, 0.15);
           color: #FFD700;
         }
-        .user-dropdown:hover .dropdown-content {
+        .dropdown-content.is-open {
           display: block;
         }
       `}</style>

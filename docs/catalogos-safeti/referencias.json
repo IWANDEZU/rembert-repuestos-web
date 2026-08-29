@@ -1,0 +1,52 @@
+{
+  "schemaVersion": "1.0",
+  "reviewedAt": "2026-08-22",
+  "brand": "SAFETI",
+  "publicationStatus": "blocked_pending_supplier_evidence",
+  "officialManufacturer": null,
+  "officialWebsite": null,
+  "officialLogo": null,
+  "inventoryMatch": false,
+  "brandAliasesAreEquivalent": false,
+  "warnings": [
+    "No confundir SAFETI con SAFETY, SAFETY-TW, SAFEBETI, SAFEBETY ni SAFE-Ti de accesorios de motocicleta.",
+    "No existe referencia de fabricante ni ficha dimensional oficial disponible.",
+    "No publicar compatibilidad definitiva sin número de parte, OE o verificación dimensional."
+  ],
+  "researchCandidates": [
+    {
+      "sellerSku": "44521075",
+      "manufacturerPartNumber": null,
+      "product": "Disco de freno",
+      "marketedFitment": {
+        "make": "Great Wall",
+        "model": "Wingle 5",
+        "engine": "2.2",
+        "years": null,
+        "axle": null,
+        "side": null,
+        "drive": null
+      },
+      "marketedDimensions": {
+        "outerDiameterMm": 280,
+        "newThicknessMm": null,
+        "minimumThicknessMm": null,
+        "overallHeightMm": null,
+        "centerBoreMm": null,
+        "boltCount": null,
+        "pcdMm": null,
+        "ventilation": null
+      },
+      "observedPrice": {
+        "amount": 39900,
+        "currency": "CLP",
+        "country": "Chile",
+        "usableAsColombiaPrice": false
+      },
+      "availability": "out_of_stock",
+      "fitmentStatus": "conditional_unverified",
+      "imageStatus": "seller_page_has_no_product_image",
+      "source": "https://www.boliche.cl/tienda/disco-freno-wingle-5-2-2-280m-safeti/"
+    }
+  ]
+}

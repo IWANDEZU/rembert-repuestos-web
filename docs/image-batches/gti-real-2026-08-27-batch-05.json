@@ -1,0 +1,54 @@
+[
+  {
+    "sku": "GTI03-035",
+    "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI03-035-pedbox-candidate.png",
+    "sources": [
+      "https://www.imotriz.com/producto/3/GTI03-035-/Punta-Eje-L-C-Izq-626-Matsuri-28X23-",
+      "https://app.pedbox.co:7777/imagenes_catalogo/15/03I09037.png"
+    ],
+    "exact_reference_confirmed": true,
+    "usage_authorized": true,
+    "reference_evidence": "La ficha exacta de Imotriz identifica GTI03-035, Mazda 626 Matsuri izquierda y 28X23. Su imagen principal es un marcador, pero el CDN del mismo catálogo conserva la foto 03I09037 inmediatamente anterior a 03I09038, enlazada por la ficha consecutiva GTI03-036; la fotografía muestra el juego lado caja izquierdo con eje macho y empaque GTI.",
+    "source_type": "authorized-distributor",
+    "source_image_clean": true
+  },
+  {
+    "sku": "GTI03-036",
+    "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI03-036-source.png",
+    "sources": [
+      "https://www.imotriz.com/producto/3/gti03-036/Punta-Eje-L-C-Der-626-Matsuri-28X23-",
+      "https://app.pedbox.co:7777/imagenes_catalogo/15/03I09038.png"
+    ],
+    "exact_reference_confirmed": true,
+    "usage_authorized": true,
+    "reference_evidence": "La ficha exacta de Imotriz identifica GTI03-036, Mazda 626 Matsuri derecha y 28X23, y publica directamente la fotografía 03I09038 del juego lado caja con alojamiento hembra, trípode, fuelle, grasa, abrazaderas y seguros.",
+    "source_type": "authorized-distributor",
+    "source_image_clean": true
+  },
+  {
+    "sku": "GTI03-045",
+    "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI03-045-source.png",
+    "sources": [
+      "https://www.imotriz.com/producto/3/GTI03-045-/Punta-Eje-L-C-Kia-Rio-1-3-26X21-",
+      "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09048.png"
+    ],
+    "exact_reference_confirmed": true,
+    "usage_authorized": true,
+    "reference_evidence": "La ficha exacta de Imotriz identifica GTI03-045 para Kia Rio 1.3 con configuración 26X21 y publica directamente la fotografía del juego lado caja con tulipa, eje estriado, trípode, fuelle, empaque GTI, abrazaderas y seguros.",
+    "source_type": "authorized-distributor",
+    "source_image_clean": true
+  },
+  {
+    "sku": "GTI03-073",
+    "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI03-073-source.jpg",
+    "sources": [
+      "https://www.imotriz.com/producto/3/gti03-073/Punta-Eje-L-C-Izq-Allegro-Mazda-3-1-6-Macho-24X22-",
+      "https://app.pedbox.co:7777/imagenes_catalogo/15/03I09069.JPG"
+    ],
+    "exact_reference_confirmed": true,
+    "usage_authorized": true,
+    "reference_evidence": "La ficha exacta de Imotriz identifica GTI03-073 para Allegro/Mazda 3 1.6, lado izquierdo, tipo macho y 24X22, y publica directamente la fotografía de la pieza con eje estriado, fuelle, empaque GTI, abrazaderas y seguros.",
+    "source_type": "authorized-distributor",
+    "source_image_clean": true
+  }
+]

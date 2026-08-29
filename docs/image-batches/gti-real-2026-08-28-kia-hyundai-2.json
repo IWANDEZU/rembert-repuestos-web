@@ -1,0 +1,52 @@
+[
+  {
+    "sku": "GTI06-025",
+    "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI06-025-imotriz.png",
+    "sources": ["https://www.imotriz.com/producto/3/GTI06-025-/", "https://app.pedbox.co:7777/imagenes_catalogo/15/06I09034.png"],
+    "exact_reference_confirmed": true,
+    "usage_authorized": true,
+    "source_type": "authorized-distributor",
+    "source_image_clean": true,
+    "reference_evidence": "Ficha exacta GTI06-025: eje homocinético derecho Kia Rio Stylus 24X26. Semieje completo real, aislado sobre blanco y sin marca de agua."
+  },
+  {
+    "sku": "GTI06-026",
+    "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI06-026-imotriz.png",
+    "sources": ["https://www.imotriz.com/producto/3/GTI06-026-/", "https://app.pedbox.co:7777/imagenes_catalogo/15/06I09035.png"],
+    "exact_reference_confirmed": true,
+    "usage_authorized": true,
+    "source_type": "authorized-distributor",
+    "source_image_clean": true,
+    "reference_evidence": "Ficha exacta GTI06-026: eje homocinético izquierdo Kia Picanto Ion mecánico 24X25. Semieje real sobre fondo blanco."
+  },
+  {
+    "sku": "GTI06-027",
+    "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI06-027-imotriz.png",
+    "sources": ["https://www.imotriz.com/producto/3/GTI06-027-/", "https://app.pedbox.co:7777/imagenes_catalogo/15/06I09036.png"],
+    "exact_reference_confirmed": true,
+    "usage_authorized": true,
+    "source_type": "authorized-distributor",
+    "source_image_clean": true,
+    "reference_evidence": "Ficha exacta GTI06-027: eje homocinético derecho Kia Picanto Ion mecánico 24X25. Semieje real de geometría distinta al izquierdo."
+  },
+  {
+    "sku": "GTI06-028",
+    "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI06-028-imotriz.png",
+    "sources": ["https://www.imotriz.com/producto/3/GTI06-028-/", "https://app.pedbox.co:7777/imagenes_catalogo/15/06I09037.png"],
+    "exact_reference_confirmed": true,
+    "usage_authorized": true,
+    "source_type": "authorized-distributor",
+    "source_image_clean": true,
+    "reference_evidence": "Ficha exacta GTI06-028: eje homocinético izquierdo Hyundai i10 24X25. Semieje completo real sobre blanco."
+  },
+  {
+    "sku": "GTI06-039",
+    "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI06-039-imotriz.png",
+    "sources": ["https://www.imotriz.com/producto/3/GTI06-039-/", "https://app.pedbox.co:7777/imagenes_catalogo/15/06I09061.png"],
+    "exact_reference_confirmed": true,
+    "usage_authorized": true,
+    "source_type": "authorized-distributor",
+    "source_image_clean": true,
+    "reference_evidence": "Ficha exacta GTI06-039: punta lado caja Hyundai Tucson manual 35X27. Junta y kit reales con empaque auténtico GTI, fondo blanco y sin marca de agua externa."
+  }
+]

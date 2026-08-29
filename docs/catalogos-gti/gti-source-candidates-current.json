@@ -1,0 +1,3204 @@
+{
+  "generatedAt": "2026-08-28T04:44:29.879Z",
+  "source": {
+    "sitemap": "https://www.imotriz.com/products-sitemap.xml",
+    "discovery": "Consulta directa de ficha por cada SKU GTI pendiente.",
+    "note": "Las URLs son candidatas de fichas públicas. La imagen no se descarga ni se publica hasta contar con autorización de uso y validación visual."
+  },
+  "totals": {
+    "pendingGtiCards": 325,
+    "sitemapPagesRequested": 0,
+    "sitemapPagesRead": 0,
+    "sitemapUrlsRead": 0,
+    "referenceCandidates": 325,
+    "pagesInspected": 19,
+    "retryableVerificationErrors": 1,
+    "metadataExactCandidates": 0,
+    "publicationApproved": 0,
+    "verificationStoppedAt": "GTI03-084"
+  },
+  "sitemapErrors": [],
+  "references": [
+    {
+      "sku": "GTI01-007",
+      "name": "EJE HOMOCINETICO R4/6 — GTI01-007",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI01-007-/"
+      ],
+      "candidate": {
+        "page": "https://www.imotriz.com/producto/3/GTI01-007-/",
+        "metadataExact": false,
+        "publicationApproved": false,
+        "name": "Eje Homocinetico R4/6 (23X22) gti01-007, gti01007",
+        "brand": "GTI",
+        "identifiers": [
+          "GTI01007",
+          "GTI01007",
+          "GTI01007"
+        ],
+        "image": "https://www.imotriz.com/uploads/ormos-(ventas-por-encargo).ormos-(ventas-por-encargo)/76c623939494f9d36a95f7c2145f5fe4.webp",
+        "reason": "La ficha usa una imagen de marcador o reutilizada; no es una foto exacta publicable."
+      }
+    },
+    {
+      "sku": "GTI01-012",
+      "name": "PUNTA EJE L/C. DER. KANGOO — GTI01-012",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI01-012-/"
+      ],
+      "candidate": {
+        "page": "https://www.imotriz.com/producto/3/GTI01-012-/",
+        "metadataExact": false,
+        "publicationApproved": false,
+        "reason": "La ficha no expone Product JSON-LD"
+      }
+    },
+    {
+      "sku": "GTI01-014",
+      "name": "EJE HOMOCINETICO R18 GTX 4 PERNOS — GTI01-014",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI01-014-/"
+      ],
+      "candidate": {
+        "page": "https://www.imotriz.com/producto/3/GTI01-014-/",
+        "metadataExact": false,
+        "publicationApproved": false,
+        "name": "Eje Homocinetico R18 Gtx 4 Pernos (23X23) gti01-014, gti01014",
+        "brand": "GTI",
+        "identifiers": [
+          "GTI01014",
+          "GTI01014",
+          "GTI01014"
+        ],
+        "image": "https://www.imotriz.com/uploads/ormos-(ventas-por-encargo).ormos-(ventas-por-encargo)/76c623939494f9d36a95f7c2145f5fe4.webp",
+        "reason": "La ficha usa una imagen de marcador o reutilizada; no es una foto exacta publicable."
+      }
+    },
+    {
+      "sku": "GTI01-036",
+      "name": "EJE HOMOCINETICO DER. LOGAN 2011/ — GTI01-036",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI01-036-/"
+      ],
+      "candidate": {
+        "page": "https://www.imotriz.com/producto/3/GTI01-036-/",
+        "metadataExact": false,
+        "publicationApproved": false,
+        "name": "Eje Homocinetico Der. Logan 2011/ (23X23) gti01-036, gti01036",
+        "brand": "GTI",
+        "identifiers": [
+          "GTI01036",
+          "GTI01036",
+          "GTI01036"
+        ],
+        "image": "https://www.imotriz.com/uploads/ormos-(ventas-por-encargo).ormos-(ventas-por-encargo)/76c623939494f9d36a95f7c2145f5fe4.webp",
+        "reason": "La ficha usa una imagen de marcador o reutilizada; no es una foto exacta publicable."
+      }
+    },
+    {
+      "sku": "GTI01-040",
+      "name": "EJE HOMOCINETICO DER. MEGANE CON ABS — GTI01-040",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI01-040-/"
+      ],
+      "candidate": {
+        "page": "https://www.imotriz.com/producto/3/GTI01-040-/",
+        "metadataExact": false,
+        "publicationApproved": false,
+        "reason": "La ficha no expone Product JSON-LD"
+      }
+    },
+    {
+      "sku": "GTI01-046",
+      "name": "EJE HOMOCINETICO IZQ. CLIO CAMPUS — GTI01-046",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI01-046-/"
+      ],
+      "candidate": {
+        "page": "https://www.imotriz.com/producto/3/GTI01-046-/",
+        "metadataExact": false,
+        "publicationApproved": false,
+        "name": "Eje Homocinetico Izq. Clio Campus (21) gti01-046, gti01046",
+        "brand": "GTI",
+        "identifiers": [
+          "GTI01046",
+          "GTI01046",
+          "GTI01046"
+        ],
+        "image": "https://www.imotriz.com/uploads/ormos-(ventas-por-encargo).ormos-(ventas-por-encargo)/76c623939494f9d36a95f7c2145f5fe4.webp",
+        "reason": "La ficha usa una imagen de marcador o reutilizada; no es una foto exacta publicable."
+      }
+    },
+    {
+      "sku": "GTI01-066",
+      "name": "EJE HOMOCINETICO IZQ. CLIO I — GTI01-066",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI01-066-/"
+      ],
+      "candidate": {
+        "page": "https://www.imotriz.com/producto/3/GTI01-066-/",
+        "metadataExact": false,
+        "publicationApproved": false,
+        "name": "Eje Homocinetico Izq. Clio I (21) gti01-066, gti01066",
+        "brand": "GTI",
+        "identifiers": [
+          "GTI01066",
+          "GTI01066",
+          "GTI01066"
+        ],
+        "image": "https://www.imotriz.com/uploads/ormos-(ventas-por-encargo).ormos-(ventas-por-encargo)/76c623939494f9d36a95f7c2145f5fe4.webp",
+        "reason": "La ficha usa una imagen de marcador o reutilizada; no es una foto exacta publicable."
+      }
+    },
+    {
+      "sku": "GTI01-070",
+      "name": "EJE HOMOCINETICO IZQ. TRAFIC 1.9 2013/2014 — GTI01-070",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI01-070-/"
+      ],
+      "candidate": {
+        "page": "https://www.imotriz.com/producto/3/GTI01-070-/",
+        "metadataExact": false,
+        "publicationApproved": false,
+        "name": "Eje Homocinetico Izq. Trafic 1.9 (27) gti01-070, gti01070",
+        "brand": "GTI",
+        "identifiers": [
+          "GTI01070",
+          "GTI01070",
+          "GTI01070"
+        ],
+        "image": "https://www.imotriz.com/uploads/ormos-(ventas-por-encargo).ormos-(ventas-por-encargo)/76c623939494f9d36a95f7c2145f5fe4.webp",
+        "reason": "La ficha usa una imagen de marcador o reutilizada; no es una foto exacta publicable."
+      }
+    },
+    {
+      "sku": "GTI03-026",
+      "name": "EJE HOMOCINETICO IZQ. M323 — GTI03-026",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI03-026-/"
+      ],
+      "candidate": {
+        "page": "https://www.imotriz.com/producto/3/GTI03-026-/",
+        "metadataExact": false,
+        "publicationApproved": false,
+        "name": "Eje Homocinetico Izq. M323 (24X24) gti03-026, gti03026",
+        "brand": "GTI",
+        "identifiers": [
+          "GTI03026",
+          "GTI03026",
+          "GTI03026"
+        ],
+        "image": "https://www.imotriz.com/uploads/ormos-(ventas-por-encargo).ormos-(ventas-por-encargo)/76c623939494f9d36a95f7c2145f5fe4.webp",
+        "reason": "La ficha usa una imagen de marcador o reutilizada; no es una foto exacta publicable."
+      }
+    },
+    {
+      "sku": "GTI03-047",
+      "name": "EJE HOMOCINETICO IZQ. MAZDA BT-50 GAS. (HEMBRA) — GTI03-047",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI03-047-/"
+      ],
+      "candidate": {
+        "page": "https://www.imotriz.com/producto/3/GTI03-047-/",
+        "metadataExact": false,
+        "publicationApproved": false,
+        "name": "Eje Homocinetico Izq. Mazda Bt-50 Gas. (Hembra) (26X26) gti03-047, gti03047",
+        "brand": "GTI",
+        "identifiers": [
+          "GTI03047",
+          "GTI03047",
+          "GTI03047"
+        ],
+        "image": "https://www.imotriz.com/uploads/ormos-(ventas-por-encargo).ormos-(ventas-por-encargo)/76c623939494f9d36a95f7c2145f5fe4.webp",
+        "reason": "La ficha usa una imagen de marcador o reutilizada; no es una foto exacta publicable."
+      }
+    },
+    {
+      "sku": "GTI03-052",
+      "name": "EJE HOMOCINETICO DER. MAZDA BT-50 DIESEL 2010/ — GTI03-052",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI03-052-/"
+      ],
+      "candidate": {
+        "page": "https://www.imotriz.com/producto/3/GTI03-052-/",
+        "metadataExact": false,
+        "publicationApproved": false,
+        "name": "Eje Homocinetico Der. Mazda Bt-50 2.5 Diesel 2010/ (28X30) gti03-052, gti03052",
+        "brand": "GTI",
+        "identifiers": [
+          "GTI03052",
+          "GTI03052",
+          "GTI03052"
+        ],
+        "image": "https://www.imotriz.com/uploads/ormos-(ventas-por-encargo).ormos-(ventas-por-encargo)/76c623939494f9d36a95f7c2145f5fe4.webp",
+        "reason": "La ficha usa una imagen de marcador o reutilizada; no es una foto exacta publicable."
+      }
+    },
+    {
+      "sku": "GTI03-057",
+      "name": "EJE INTERCONECCION MB2600/BT-50 GASOLINA — GTI03-057",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI03-057-/"
+      ],
+      "candidate": {
+        "page": "https://www.imotriz.com/producto/3/GTI03-057-/",
+        "metadataExact": false,
+        "publicationApproved": false,
+        "name": "Eje Interconeccion Mb2600/Bt-50 Gas. gti03-057, gti03057",
+        "brand": "GTI",
+        "identifiers": [
+          "GTI03057",
+          "GTI03057",
+          "GTI03057"
+        ],
+        "image": "https://www.imotriz.com/uploads/ormos-(ventas-por-encargo).ormos-(ventas-por-encargo)/76c623939494f9d36a95f7c2145f5fe4.webp",
+        "reason": "La ficha usa una imagen de marcador o reutilizada; no es una foto exacta publicable."
+      }
+    },
+    {
+      "sku": "GTI03-059",
+      "name": "PUNTA EJE L/R. MAZDA 6/FORD FUSION 33 DTS. PIN EXT. — GTI03-059",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI03-059-/"
+      ],
+      "candidate": {
+        "page": "https://www.imotriz.com/producto/3/GTI03-059-/",
+        "metadataExact": false,
+        "publicationApproved": false,
+        "name": "Punta Eje L/R. Mazda 6/Ford Fusion Pin Int. (28X33) gti03-059, gti03059",
+        "brand": "GTI",
+        "identifiers": [
+          "GTI03059",
+          "GTI03059",
+          "GTI03059"
+        ],
+        "image": "https://www.imotriz.com/uploads/ormos-(ventas-por-encargo).ormos-(ventas-por-encargo)/76c623939494f9d36a95f7c2145f5fe4.webp",
+        "reason": "La ficha usa una imagen de marcador o reutilizada; no es una foto exacta publicable."
+      }
+    },
+    {
+      "sku": "GTI03-063",
+      "name": "EJE INTERCONECCION MAZDA BT-50 DIESEL — GTI03-063",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI03-063-/"
+      ],
+      "candidate": {
+        "page": "https://www.imotriz.com/producto/3/GTI03-063-/",
+        "metadataExact": false,
+        "publicationApproved": false,
+        "name": "Eje Interconeccion Mazda Bt-50 Diesel gti03-063, gti03063",
+        "brand": "GTI",
+        "identifiers": [
+          "GTI03063",
+          "GTI03063",
+          "GTI03063"
+        ],
+        "image": "https://www.imotriz.com/uploads/ormos-(ventas-por-encargo).ormos-(ventas-por-encargo)/76c623939494f9d36a95f7c2145f5fe4.webp",
+        "reason": "La ficha usa una imagen de marcador o reutilizada; no es una foto exacta publicable."
+      }
+    },
+    {
+      "sku": "GTI03-067",
+      "name": "EJE HOMOCINETICO IZQ. MAZDA 3 MANUAL — GTI03-067",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI03-067-/"
+      ],
+      "candidate": {
+        "page": "https://www.imotriz.com/producto/3/GTI03-067-/",
+        "metadataExact": false,
+        "publicationApproved": false,
+        "name": "Eje Homocinetico Izq. Mazda 3 Manual (28X26) gti03-067, gti03067",
+        "brand": "GTI",
+        "identifiers": [
+          "GTI03067",
+          "GTI03067",
+          "GTI03067"
+        ],
+        "image": "https://www.imotriz.com/uploads/ormos-(ventas-por-encargo).ormos-(ventas-por-encargo)/76c623939494f9d36a95f7c2145f5fe4.webp",
+        "reason": "La ficha usa una imagen de marcador o reutilizada; no es una foto exacta publicable."
+      }
+    },
+    {
+      "sku": "GTI03-076",
+      "name": "EJE HOMOCINETICO DER. MAZDA 626 ASAHI 2.0 — GTI03-076",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI03-076-/"
+      ],
+      "candidate": {
+        "page": "https://www.imotriz.com/producto/3/GTI03-076-/",
+        "metadataExact": false,
+        "publicationApproved": false,
+        "name": "Eje Homocinetico Der. M626 Asahi 2.0 (26X26) gti03-076, gti03076",
+        "brand": "GTI",
+        "identifiers": [
+          "GTI03076",
+          "GTI03076",
+          "GTI03076"
+        ],
+        "image": "https://www.imotriz.com/uploads/ormos-(ventas-por-encargo).ormos-(ventas-por-encargo)/76c623939494f9d36a95f7c2145f5fe4.webp",
+        "reason": "La ficha usa una imagen de marcador o reutilizada; no es una foto exacta publicable."
+      }
+    },
+    {
+      "sku": "GTI03-077",
+      "name": "EJE HOMOCINETICO IZQ. MAZDA 626 ASAHI 2.0 — GTI03-077",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI03-077-/"
+      ],
+      "candidate": {
+        "page": "https://www.imotriz.com/producto/3/GTI03-077-/",
+        "metadataExact": false,
+        "publicationApproved": false,
+        "name": "Eje Homocinetico Izq. M626 Asahi 2.0 (26X26) gti03-077, gti03077",
+        "brand": "GTI",
+        "identifiers": [
+          "GTI03077",
+          "GTI03077",
+          "GTI03077"
+        ],
+        "image": "https://www.imotriz.com/uploads/ormos-(ventas-por-encargo).ormos-(ventas-por-encargo)/76c623939494f9d36a95f7c2145f5fe4.webp",
+        "reason": "La ficha usa una imagen de marcador o reutilizada; no es una foto exacta publicable."
+      }
+    },
+    {
+      "sku": "GTI03-081",
+      "name": "PUNTA EJE L/R. MAZDA 3 1.6 — GTI03-081",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI03-081-/"
+      ],
+      "candidate": {
+        "page": "https://www.imotriz.com/producto/3/GTI03-081-/",
+        "metadataExact": false,
+        "publicationApproved": false,
+        "name": "Punta Eje L/C. Ford Escape Dr 06/09 gti03-081, gti03081",
+        "brand": "GTI",
+        "identifiers": [
+          "GTI03081",
+          "GTI03081",
+          "GTI03081"
+        ],
+        "image": "https://www.imotriz.com/uploads/ormos-(ventas-por-encargo).ormos-(ventas-por-encargo)/76c623939494f9d36a95f7c2145f5fe4.webp",
+        "reason": "La ficha usa una imagen de marcador o reutilizada; no es una foto exacta publicable."
+      }
+    },
+    {
+      "sku": "GTI03-083",
+      "name": "EJE HOMOCINETICO IZQ. MAZDA BT-50/FORD RANGER 2.5 DIESEL 4X4 — GTI03-083",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI03-083-/"
+      ],
+      "candidate": {
+        "page": "https://www.imotriz.com/producto/3/GTI03-083-/",
+        "metadataExact": false,
+        "publicationApproved": false,
+        "name": "Eje Homocinetico Der. Mazda Bt-50 3.2/Ford Ranger 2.5 Diesel 4X4 (28X29) gti03-083, gti03083",
+        "brand": "GTI",
+        "identifiers": [
+          "GTI03083",
+          "GTI03083",
+          "GTI03083"
+        ],
+        "image": "https://www.imotriz.com/uploads/ormos-(ventas-por-encargo).ormos-(ventas-por-encargo)/76c623939494f9d36a95f7c2145f5fe4.webp",
+        "reason": "La ficha usa una imagen de marcador o reutilizada; no es una foto exacta publicable."
+      }
+    },
+    {
+      "sku": "GTI03-084",
+      "name": "EJE HOMOCINETICO DER. MAZDA BT-50/FORD RANGER 2.5 DIESEL 4X4 — GTI03-084",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI03-084-/"
+      ],
+      "candidate": {
+        "page": "https://www.imotriz.com/producto/3/GTI03-084-/",
+        "metadataExact": false,
+        "publicationApproved": false,
+        "reason": "Verificación no completada: 429 al leer https://www.imotriz.com/producto/3/GTI03-084-/"
+      }
+    },
+    {
+      "sku": "GTI03-087",
+      "name": "PUNTA EJE L/C. DER. MAZDA BT-50/FORD RANGER 2.5 DIESEL 4X4 (MACHO) — GTI03-087",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI03-087-/"
+      ]
+    },
+    {
+      "sku": "GTI04-003",
+      "name": "PUNTA EJE L/R. MONZA 1.8/2.0 25 DTS. — GTI04-003",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI04-003-/"
+      ]
+    },
+    {
+      "sku": "GTI04-004",
+      "name": "PUNTA EJE L/R. SPRINT T. NTN PIN INT. 19 DTS. — GTI04-004",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI04-004-/"
+      ]
+    },
+    {
+      "sku": "GTI04-005",
+      "name": "PUNTA EJE L/R. SPRINT T. TH. PIN EXT. 20 DTS. — GTI04-005",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI04-005-/"
+      ]
+    },
+    {
+      "sku": "GTI04-006",
+      "name": "PUNTA EJE L/R. SWIFT 1.3 T. NTN PIN INT. 19 DTS. — GTI04-006",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI04-006-/"
+      ]
+    },
+    {
+      "sku": "GTI04-007",
+      "name": "PUNTA EJE L/R. SWIFT 1.3 T. TH. PIN EXT. 20 DTS. — GTI04-007",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI04-007-/"
+      ]
+    },
+    {
+      "sku": "GTI04-008",
+      "name": "PUNTA EJE L/R. SWIFT 1.6 22 DTS. — GTI04-008",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI04-008-/"
+      ]
+    },
+    {
+      "sku": "GTI04-009",
+      "name": "PUNTA EJE L/R. STEEM 1.3 19 DTS. — GTI04-009",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI04-009-/"
+      ]
+    },
+    {
+      "sku": "GTI04-010",
+      "name": "PUNTA EJE L/R. STEEM 1.6 21 DTS. — GTI04-010",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI04-010-/"
+      ]
+    },
+    {
+      "sku": "GTI04-011",
+      "name": "PUNTA EJE L/R. STEEM 1.6 20 DTS. — GTI04-011",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI04-011-/"
+      ]
+    },
+    {
+      "sku": "GTI04-012",
+      "name": "PUNTA EJE L/R. TROOPER 26 DTS. — GTI04-012",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI04-012-/"
+      ]
+    },
+    {
+      "sku": "GTI04-013",
+      "name": "PUNTA EJE L/R. LUV 2.3 23 DTS. — GTI04-013",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI04-013-/"
+      ]
+    },
+    {
+      "sku": "GTI04-014",
+      "name": "PUNTA EJE L/C. DER. SWIFT 1.3 HEMBRA T. NTN — GTI04-014",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI04-014-/"
+      ]
+    },
+    {
+      "sku": "GTI04-015",
+      "name": "PUNTA EJE L/C. IZQ. SWIFT 1.3 MACHO T. NTN — GTI04-015",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI04-015-/"
+      ]
+    },
+    {
+      "sku": "GTI04-016",
+      "name": "PUNTA EJE L/C. SPRINT (CON TRICETA) (19 DTS) — GTI04-016",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI04-016-/"
+      ]
+    },
+    {
+      "sku": "GTI04-017",
+      "name": "PUNTA EJE L/R. LUV 1.6 23 DTS. — GTI04-017",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI04-017-/"
+      ]
+    },
+    {
+      "sku": "GTI04-018",
+      "name": "EJE HOMOCINETICO DER. SWIFT 1.3 — GTI04-018",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI04-018-/"
+      ]
+    },
+    {
+      "sku": "GTI04-019",
+      "name": "EJE HOMOCINETICO IZQ. SWIFT 1.3 — GTI04-019",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI04-019-/"
+      ]
+    },
+    {
+      "sku": "GTI04-020",
+      "name": "PUNTA EJE L/R. CHEV. ALTO/WAGON R 19 DTS. — GTI04-020",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI04-020-/"
+      ]
+    },
+    {
+      "sku": "GTI04-021",
+      "name": "PUNTA EJE L/R. SWIFT 1.6 VENEZOLANO 22 DTS. — GTI04-021",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI04-021-/"
+      ]
+    },
+    {
+      "sku": "GTI04-022",
+      "name": "TRICETA EJE SPRINT 19 ESTRIAS AGUJAS — GTI04-022",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI04-022-/"
+      ]
+    },
+    {
+      "sku": "GTI04-023",
+      "name": "PUNTA EJE L/R. VITARA 22 DTS. — GTI04-023",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI04-023-/"
+      ]
+    },
+    {
+      "sku": "GTI04-026",
+      "name": "PUNTA EJE L/C. IZQ. SWIFT 1.6 — GTI04-026",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI04-026-/"
+      ]
+    },
+    {
+      "sku": "GTI04-027",
+      "name": "PUNTA EJE L/C. DER. SWIFT 1.6 — GTI04-027",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI04-027-/"
+      ]
+    },
+    {
+      "sku": "GTI04-028",
+      "name": "PUNTA EJE L/R. SPARK/CRONOS/DW. MATIZ/TICO 19 DTS. — GTI04-028",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI04-028-/"
+      ]
+    },
+    {
+      "sku": "GTI04-030",
+      "name": "EJE HOMOCINETICO IZQ. SPRINT N. DISENO — GTI04-030",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI04-030-/"
+      ]
+    },
+    {
+      "sku": "GTI04-031",
+      "name": "EJE HOMOCINETICO DER. SPRINT N. DISEÑO — GTI04-031",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI04-031-/"
+      ]
+    },
+    {
+      "sku": "GTI04-032",
+      "name": "PUNTA EJE L/C. SPRINT NUEVO DISEÑO MACHO — GTI04-032",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI04-032-/"
+      ]
+    },
+    {
+      "sku": "GTI04-033",
+      "name": "PUNTA EJE L/C. DER. SWIFT 1.3 NUEVO DISEÑO (HEMBRA) — GTI04-033",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI04-033-/"
+      ]
+    },
+    {
+      "sku": "GTI04-034",
+      "name": "PUNTA EJE L/R. CORSA EVOLUTION/DW. LANOS 22 DTS. T. KOREA — GTI04-034",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI04-034-/"
+      ]
+    },
+    {
+      "sku": "GTI04-036",
+      "name": "EJE HOMOCINETICO DER. SWIFT 1.3 N. DISENO — GTI04-036",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI04-036-/"
+      ]
+    },
+    {
+      "sku": "GTI04-037",
+      "name": "EJE HOMOCINETICO IZQ. SWIFT 1.3 N. DISEÑO — GTI04-037",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI04-037-/"
+      ]
+    },
+    {
+      "sku": "GTI04-038",
+      "name": "PUNTA EJE L/R. AVEO/SAIL SIN ABS 23 DTS. — GTI04-038",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI04-038-/"
+      ]
+    },
+    {
+      "sku": "GTI04-039",
+      "name": "PUNTA EJE L/R. AVEO/SAIL CON ABS 23 DTS. — GTI04-039",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI04-039-/"
+      ]
+    },
+    {
+      "sku": "GTI04-040",
+      "name": "EJE HOMOCINETICO IZQ. SPARK/CRONOS — GTI04-040",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI04-040-/"
+      ]
+    },
+    {
+      "sku": "GTI04-041",
+      "name": "EJE HOMOCINETICO DER. SPARK/CRONOS — GTI04-041",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI04-041-/"
+      ]
+    },
+    {
+      "sku": "GTI04-043",
+      "name": "PUNTA EJE L/C. AVEO/OPTRA 1.4 MEC. Y AUT. — GTI04-043",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI04-043-/"
+      ]
+    },
+    {
+      "sku": "GTI04-044",
+      "name": "PUNTA EJE L/C. CORSA EVOLUTION — GTI04-044",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI04-044-/"
+      ]
+    },
+    {
+      "sku": "GTI04-045",
+      "name": "PUNTA EJE L/R. GRAND VITARA 29 DTS. — GTI04-045",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI04-045-/"
+      ]
+    },
+    {
+      "sku": "GTI04-047",
+      "name": "PUNTA EJE L/R. OPTRA 1.8/VIVANT 29 DTS. — GTI04-047",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI04-047-/"
+      ]
+    },
+    {
+      "sku": "GTI04-048",
+      "name": "PUNTA EJE L/R. GRAND VITARA 06/ 24 DTS. — GTI04-048",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI04-048-/"
+      ]
+    },
+    {
+      "sku": "GTI04-049",
+      "name": "PUNTA EJE L/C. DER. LUV 1.6/2.3 LARGA — GTI04-049",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI04-049-/"
+      ]
+    },
+    {
+      "sku": "GTI04-050",
+      "name": "PUNTA EJE L/C. IZQ. LUV 1.6/2.3 CORTA — GTI04-050",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI04-050-/"
+      ]
+    },
+    {
+      "sku": "GTI04-051",
+      "name": "EJE HOMOCINETICO LUV 2.3 DER. (LARGO) — GTI04-051",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI04-051-/"
+      ]
+    },
+    {
+      "sku": "GTI04-052",
+      "name": "EJE HOMOCINETICO LUV 2.3 IZQ. (CORTO) — GTI04-052",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI04-052-/"
+      ]
+    },
+    {
+      "sku": "GTI04-053",
+      "name": "PUNTA EJE L/R. OPTRA 22 DTS. PIN EXT. — GTI04-053",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI04-053-/"
+      ]
+    },
+    {
+      "sku": "GTI04-054",
+      "name": "PUNTA EJE L/R. CRONOS 21 DTS. — GTI04-054",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI04-054-/"
+      ]
+    },
+    {
+      "sku": "GTI04-056",
+      "name": "EJE HOMOCINETICO LUV 1.6 (LARGO) — GTI04-056",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI04-056-/"
+      ]
+    },
+    {
+      "sku": "GTI04-057",
+      "name": "EJE HOMOCINETICO LUV 1.6 (CORTO) — GTI04-057",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI04-057-/"
+      ]
+    },
+    {
+      "sku": "GTI04-058",
+      "name": "EJE HOMOCINETICO D-MAX 2010/ SIN TETA — GTI04-058",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI04-058-/"
+      ]
+    },
+    {
+      "sku": "GTI04-059",
+      "name": "PUNTA EJE L/R. D-MAX 2010/ SIN TETA — GTI04-059",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI04-059-/"
+      ]
+    },
+    {
+      "sku": "GTI04-060",
+      "name": "PUNTA EJE L/C. STEEM AUTOMATICO — GTI04-060",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI04-060-/"
+      ]
+    },
+    {
+      "sku": "GTI04-061",
+      "name": "PUNTA EJE L/C. DER. STEEM 1.3/1.6 21 DIENTES (HEMBRA) — GTI04-061",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI04-061-/"
+      ]
+    },
+    {
+      "sku": "GTI04-062",
+      "name": "PUNTA EJE L/C. IZQ. STEEM 1.3/1.6 21 DIENTES (MACHO) — GTI04-062",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI04-062-/"
+      ]
+    },
+    {
+      "sku": "GTI04-063",
+      "name": "EJE HOMOCINETICO DER. SPARK GT — GTI04-063",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI04-063-/"
+      ]
+    },
+    {
+      "sku": "GTI04-064",
+      "name": "EJE HOMOCINETICO IZQ. SPARK GT — GTI04-064",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI04-064-/"
+      ]
+    },
+    {
+      "sku": "GTI04-065",
+      "name": "PUNTA EJE L/R. SPARK GT — GTI04-065",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI04-065-/"
+      ]
+    },
+    {
+      "sku": "GTI04-067",
+      "name": "EJE HOMOCINETICO IZQ. CAPTIVA 2.4 AUTOMATICA — GTI04-067",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI04-067-/"
+      ]
+    },
+    {
+      "sku": "GTI04-068",
+      "name": "EJE HOMOCINETICO CAPTIVA 2.4 MECANICA — GTI04-068",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI04-068-/"
+      ]
+    },
+    {
+      "sku": "GTI04-069",
+      "name": "PUNTA EJE L/R. CAPTIVA 24 DTS — GTI04-069",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI04-069-/"
+      ]
+    },
+    {
+      "sku": "GTI04-070",
+      "name": "PUNTA EJE L/C. DER. CAPTIVA 2.4 AUTOMATICA (MACHO) — GTI04-070",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI04-070-/"
+      ]
+    },
+    {
+      "sku": "GTI04-071",
+      "name": "PUNTA EJE L/C. IZQ. CAPTIVA 2.4 AUTOMATICA (HEMBRA) — GTI04-071",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI04-071-/"
+      ]
+    },
+    {
+      "sku": "GTI04-073",
+      "name": "PUNTA EJE L/C. CAPTIVA MECANICA — GTI04-073",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI04-073-/"
+      ]
+    },
+    {
+      "sku": "GTI04-074",
+      "name": "EJE HOMOCINETICO DER. CORSA — GTI04-074",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI04-074-/"
+      ]
+    },
+    {
+      "sku": "GTI04-075",
+      "name": "EJE HOMOCINETICO IZQ. CORSA — GTI04-075",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI04-075-/"
+      ]
+    },
+    {
+      "sku": "GTI04-076",
+      "name": "EJE HOMOCINETICO IZQ. OPTRA 1.4 SIN ABS — GTI04-076",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI04-076-/"
+      ]
+    },
+    {
+      "sku": "GTI04-077",
+      "name": "EJE HOMOCINETICO DER. OPTRA 1.4 SIN ABS — GTI04-077",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI04-077-/"
+      ]
+    },
+    {
+      "sku": "GTI04-078",
+      "name": "EJE HOMOCINETICO TRAS. GRAND VITARA SZ 2.7 4X4 MT/AT 2007/ (6 HUECOS) — GTI04-078",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI04-078-/"
+      ]
+    },
+    {
+      "sku": "GTI04-079",
+      "name": "PUNTA EJE L/R. TRAS. GRAND VITARA SZ — GTI04-079",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI04-079-/"
+      ]
+    },
+    {
+      "sku": "GTI04-080",
+      "name": "PUNTA EJE L/C. TRAS. GRAND VITARA SZ — GTI04-080",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI04-080-/"
+      ]
+    },
+    {
+      "sku": "GTI04-081",
+      "name": "PUNTA EJE L/R. EPICA — GTI04-081",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI04-081-/"
+      ]
+    },
+    {
+      "sku": "GTI04-082",
+      "name": "PUNTA EJE L/R. EPICA — GTI04-082",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI04-082-/"
+      ]
+    },
+    {
+      "sku": "GTI04-083",
+      "name": "EJE HOMOCINETICO IZQ. SAIL — GTI04-083",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI04-083-/"
+      ]
+    },
+    {
+      "sku": "GTI04-084",
+      "name": "EJE HOMOCINETICO DER. SAIL — GTI04-084",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI04-084-/"
+      ]
+    },
+    {
+      "sku": "GTI04-085",
+      "name": "EJE HOMOCINETICO IZQ. COBALT — GTI04-085",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI04-085-/"
+      ]
+    },
+    {
+      "sku": "GTI04-086",
+      "name": "EJE HOMOCINETICO DER. COBALT — GTI04-086",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI04-086-/"
+      ]
+    },
+    {
+      "sku": "GTI04-087",
+      "name": "PUNTA EJE L/R. SAIL 23 DTS CON ABS — GTI04-087",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI04-087-/"
+      ]
+    },
+    {
+      "sku": "GTI04-091",
+      "name": "EJE HOMOCINETICO DEL. DER. GRAND VITARA SZ 2.7 08/2011 — GTI04-091",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI04-091-/"
+      ]
+    },
+    {
+      "sku": "GTI04-092",
+      "name": "PUNTA EJE L/C. GRAND VITARA SZ 2.7 08/2011 — GTI04-092",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI04-092-/"
+      ]
+    },
+    {
+      "sku": "GTI04-093",
+      "name": "PUNTA EJE L/R. GRAND VITARA SZ 2.7 08/2011 — GTI04-093",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI04-093-/"
+      ]
+    },
+    {
+      "sku": "GTI04-094",
+      "name": "PUNTA EJE L/R. CAPTIVA 3.0 / 34 DTS — GTI04-094",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI04-094-/"
+      ]
+    },
+    {
+      "sku": "GTI04-095",
+      "name": "EJE HOMOCINETICO IZQ. AVEO — GTI04-095",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI04-095-/"
+      ]
+    },
+    {
+      "sku": "GTI04-096",
+      "name": "EJE HOMOCINETICO DER. AVEO — GTI04-096",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI04-096-/"
+      ]
+    },
+    {
+      "sku": "GTI04-097",
+      "name": "PUNTA EJE L/R. ZAFIRA/ASTRA — GTI04-097",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI04-097-/"
+      ]
+    },
+    {
+      "sku": "GTI04-098",
+      "name": "PUNTA EJE L/R. GRAND VITARA SZ 22 DTS. — GTI04-098",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI04-098-/"
+      ]
+    },
+    {
+      "sku": "GTI04-099",
+      "name": "PUNTA EJE L/C. OPTRA 1.8 MEC. — GTI04-099",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI04-099-/"
+      ]
+    },
+    {
+      "sku": "GTI04-100",
+      "name": "PUNTA EJE L/R. ALTO MN. 20 DTS — GTI04-100",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI04-100-/"
+      ]
+    },
+    {
+      "sku": "GTI04-103",
+      "name": "EJE HOMOCINETICO DER. TRACKER AUTOMATICA — GTI04-103",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI04-103-/"
+      ]
+    },
+    {
+      "sku": "GTI04-104",
+      "name": "EJE HOMOCINETICO IZQ. TRACKER AUTOMATICA — GTI04-104",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI04-104-/"
+      ]
+    },
+    {
+      "sku": "GTI04-105",
+      "name": "EJE HOMOCINETICO DER. TRACKER MECANICA — GTI04-105",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI04-105-/"
+      ]
+    },
+    {
+      "sku": "GTI04-106",
+      "name": "EJE HOMOCINETICO IZQ. TRACKER MECANICA — GTI04-106",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI04-106-/"
+      ]
+    },
+    {
+      "sku": "GTI05-001",
+      "name": "PUNTA EJE L/R. DW. ESPERO 29 DTS. — GTI05-001",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI05-001-/"
+      ]
+    },
+    {
+      "sku": "GTI05-002",
+      "name": "PUNTA EJE L/R. DW. RACER/CIELO T. KOREA 29 DTS. VZLA. — GTI05-002",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI05-002-/"
+      ]
+    },
+    {
+      "sku": "GTI05-004",
+      "name": "PUNTA EJE L/C. DW. TICO/MATIZ/CHERY QQ — GTI05-004",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI05-004-/"
+      ]
+    },
+    {
+      "sku": "GTI05-006",
+      "name": "PUNTA EJE L/C. DW. RACER/CIELO 22 DTS. — GTI05-006",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI05-006-/"
+      ]
+    },
+    {
+      "sku": "GTI05-007",
+      "name": "EJE HOMOCINETICO IZQ. DW. RACER/CIELO — GTI05-007",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI05-007-/"
+      ]
+    },
+    {
+      "sku": "GTI05-010",
+      "name": "PUNTA EJE L/R. DW. NUBIRA 22 DTS. — GTI05-010",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI05-010-/"
+      ]
+    },
+    {
+      "sku": "GTI06-002",
+      "name": "PUNTA EJE L/R. HD. ATOS /02 19 DTS. — GTI06-002",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI06-002-/"
+      ]
+    },
+    {
+      "sku": "GTI06-004",
+      "name": "PUNTA EJE L/R. HD. NEW ELANTRA/SONATA 25 DTS. — GTI06-004",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI06-004-/"
+      ]
+    },
+    {
+      "sku": "GTI06-005",
+      "name": "PUNTA EJE L/R. HD. ELANTRA 23 DTS. — GTI06-005",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI06-005-/"
+      ]
+    },
+    {
+      "sku": "GTI06-007",
+      "name": "EJE INTERCONECCION HD. TUCSON IX-35 DIESEL — GTI06-007",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI06-007-/"
+      ]
+    },
+    {
+      "sku": "GTI06-008",
+      "name": "PUNTA EJE L/C. HD. ACCENT/VERNA/GYRO/EXCEL/MITSUBISHI LANCER — GTI06-008",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI06-008-/"
+      ]
+    },
+    {
+      "sku": "GTI06-009",
+      "name": "EJE HOMOCINETICO DER. HD. ACCENT/VERNA INDU — GTI06-009",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI06-009-/"
+      ]
+    },
+    {
+      "sku": "GTI06-010",
+      "name": "EJE HOMOCINETICO IZQ. HD. ACCENT — GTI06-010",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI06-010-/"
+      ]
+    },
+    {
+      "sku": "GTI06-011",
+      "name": "PUNTA EJE L/R. HD. ACCENT/VERNA/GYRO/VISION 30 DTS. (PIN EXT.) — GTI06-011",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI06-011-/"
+      ]
+    },
+    {
+      "sku": "GTI06-013",
+      "name": "PUNTA EJE L/C. HD. ATOS 19 DTS. SPARK/CRONOS 19 DTS. (CUERPO LARGO) — GTI06-013",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI06-013-/"
+      ]
+    },
+    {
+      "sku": "GTI06-015",
+      "name": "EJE HOMOCINETICO IZQ. HD. ATOS — GTI06-015",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI06-015-/"
+      ]
+    },
+    {
+      "sku": "GTI06-016",
+      "name": "EJE HOMOCINETICO DER. HD. ATOS — GTI06-016",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI06-016-/"
+      ]
+    },
+    {
+      "sku": "GTI06-017",
+      "name": "PUNTA EJE L/R. HD. TUCSON 4X2 25x27 DTS. (AUTOMATICO) — GTI06-017",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI06-017-/"
+      ]
+    },
+    {
+      "sku": "GTI06-018",
+      "name": "PUNTA EJE L/R. HD. TUCSON 4X2 23X27 DTS. SIN ABS (MECANICO) — GTI06-018",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI06-018-/"
+      ]
+    },
+    {
+      "sku": "GTI06-020",
+      "name": "PUNTA EJE L/R. HD. TUCSON 4X4 25X27 (CON ABS) — GTI06-020",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI06-020-/"
+      ]
+    },
+    {
+      "sku": "GTI06-021",
+      "name": "PUNTA EJE L/R. HD. SANTAFE 27X26 — GTI06-021",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI06-021-/"
+      ]
+    },
+    {
+      "sku": "GTI06-022",
+      "name": "EJE HOMOCINETICO IZQ. HD. VISION/KIA RIO E-XITE/SEPHIA — GTI06-022",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI06-022-/"
+      ]
+    },
+    {
+      "sku": "GTI06-023",
+      "name": "EJE HOMOCINETICO DER. HD. VISION/KIA RIO E-XITE/SEPHIA — GTI06-023",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI06-023-/"
+      ]
+    },
+    {
+      "sku": "GTI06-024",
+      "name": "EJE HOMOCINETICO IZQ. KIA RIO STYLUS — GTI06-024",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI06-024-/"
+      ]
+    },
+    {
+      "sku": "GTI06-025",
+      "name": "EJE HOMOCINETICO DER. KIA RIO STYLUS — GTI06-025",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI06-025-/"
+      ]
+    },
+    {
+      "sku": "GTI06-026",
+      "name": "EJE HOMOCINETICO IZQ. KIA PICANTO ION — GTI06-026",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI06-026-/"
+      ]
+    },
+    {
+      "sku": "GTI06-027",
+      "name": "EJE HOMOCINETICO DER. KIA PICANTO ION — GTI06-027",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI06-027-/"
+      ]
+    },
+    {
+      "sku": "GTI06-028",
+      "name": "EJE HOMOCINETICO IZQ. HD. I-10 — GTI06-028",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI06-028-/"
+      ]
+    },
+    {
+      "sku": "GTI06-029",
+      "name": "EJE HOMOCINETICO DER. HD. I-10 — GTI06-029",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI06-029-/"
+      ]
+    },
+    {
+      "sku": "GTI06-035",
+      "name": "PUNTA EJE L/R. HD. SANTAFE 10/12 36x30 — GTI06-035",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI06-035-/"
+      ]
+    },
+    {
+      "sku": "GTI06-036",
+      "name": "EJE HOMOCINETICO IZQ. HD. VERNA/GYRO — GTI06-036",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI06-036-/"
+      ]
+    },
+    {
+      "sku": "GTI06-039",
+      "name": "PUNTA EJE L/C. HD. TUCSON (MANUAL) 35x27 — GTI06-039",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI06-039-/"
+      ]
+    },
+    {
+      "sku": "GTI06-040",
+      "name": "PUNTA EJE L/C. HD. TUCSON (AUTOMATICO) — GTI06-040",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI06-040-/"
+      ]
+    },
+    {
+      "sku": "GTI06-041",
+      "name": "EJE HOMOCINETICO LARGO KIA REVOLUTION GAS. — GTI06-041",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI06-041-/"
+      ]
+    },
+    {
+      "sku": "GTI06-042",
+      "name": "PUNTA EJE L/R. KIA REVOLUTION/HD. TUCSON IX-35 4X4/4X2 MECANICA — GTI06-042",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI06-042-/"
+      ]
+    },
+    {
+      "sku": "GTI06-043",
+      "name": "PUNTA EJE L/C. HD TUCSON IX-35/KIA REVOLUTION GAS. (24 INT) (27 EXT) — GTI06-043",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI06-043-/"
+      ]
+    },
+    {
+      "sku": "GTI06-044",
+      "name": "EJE HOMOCINETICO IZQ. HD. TUCSON 4X2 (AUTOMATICO) — GTI06-044",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI06-044-/"
+      ]
+    },
+    {
+      "sku": "GTI06-045",
+      "name": "EJE HOMOCINETICO DER. HD. TUCSON 4X2 (AUTOMATICO) — GTI06-045",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI06-045-/"
+      ]
+    },
+    {
+      "sku": "GTI06-046",
+      "name": "EJE HOMOCINETICO IZQ. KIA SORENTO — GTI06-046",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI06-046-/"
+      ]
+    },
+    {
+      "sku": "GTI06-047",
+      "name": "EJE HOMOCINETICO DER. KIA SORENTO — GTI06-047",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI06-047-/"
+      ]
+    },
+    {
+      "sku": "GTI06-048",
+      "name": "PUNTA EJE L/R. KIA SORENTO (25x28) — GTI06-048",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI06-048-/"
+      ]
+    },
+    {
+      "sku": "GTI06-049",
+      "name": "PUNTA EJE L/C. DER. KIA SORENTO (HEMBRA) — GTI06-049",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI06-049-/"
+      ]
+    },
+    {
+      "sku": "GTI06-050",
+      "name": "PUNTA EJE L/C. IZQ. KIA SORENTO (MACHO) — GTI06-050",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI06-050-/"
+      ]
+    },
+    {
+      "sku": "GTI06-051",
+      "name": "EJE HOMOCINETICO DER. KIA PICANTO I/II — GTI06-051",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI06-051-/"
+      ]
+    },
+    {
+      "sku": "GTI06-053",
+      "name": "PUNTA EJE L/R. KIA GRAN CARNIVAL SEDONA 26X31 DTS — GTI06-053",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI06-053-/"
+      ]
+    },
+    {
+      "sku": "GTI06-055",
+      "name": "PUNTA EJE L/C. KIA CARNIVAL 2.5 (MACHO) — GTI06-055",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI06-055-/"
+      ]
+    },
+    {
+      "sku": "GTI06-056",
+      "name": "EJE HOMOCINETICO IZQ. HD. SANTAFE — GTI06-056",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI06-056-/"
+      ]
+    },
+    {
+      "sku": "GTI06-057",
+      "name": "EJE HOMOCINETICO DER. HD. SANTAFE — GTI06-057",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI06-057-/"
+      ]
+    },
+    {
+      "sku": "GTI06-059",
+      "name": "PUNTA EJE L/C. DER. HD. SANTAFE (HEMBRA) — GTI06-059",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI06-059-/"
+      ]
+    },
+    {
+      "sku": "GTI06-060",
+      "name": "EJE HOMOCINETICO DER. KIA SPORTAGE SQ — GTI06-060",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI06-060-/"
+      ]
+    },
+    {
+      "sku": "GTI06-062",
+      "name": "PUNTA EJE L/R. HD. TUCSON IX-35 DIESEL 4X2/4X4 (MECANICA) — GTI06-062",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI06-062-/"
+      ]
+    },
+    {
+      "sku": "GTI06-063",
+      "name": "EJE HOMOCINETICO DER. HD. I-25 — GTI06-063",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI06-063-/"
+      ]
+    },
+    {
+      "sku": "GTI06-064",
+      "name": "EJE HOMOCINETICO IZQ. HD. I-25 — GTI06-064",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI06-064-/"
+      ]
+    },
+    {
+      "sku": "GTI06-065",
+      "name": "PUNTA EJE L/R. HD. TUCSON 26x27 DTS. — GTI06-065",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI06-065-/"
+      ]
+    },
+    {
+      "sku": "GTI06-066",
+      "name": "EJE HOMOCINETICO IZQ. HD. GRAND I-10 — GTI06-066",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI06-066-/"
+      ]
+    },
+    {
+      "sku": "GTI06-067",
+      "name": "EJE HOMOCINETICO DER. HD. GRAND I-10 — GTI06-067",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI06-067-/"
+      ]
+    },
+    {
+      "sku": "GTI06-068",
+      "name": "PUNTA EJE L/R. HD. GRAND I-10 — GTI06-068",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI06-068-/"
+      ]
+    },
+    {
+      "sku": "GTI07-001",
+      "name": "PUNTA EJE L/R. SKODA FELICIA/FAVORIT/FORMAN 22 DTS — GTI07-001",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-001-/"
+      ]
+    },
+    {
+      "sku": "GTI07-002",
+      "name": "PUNTA EJE L/R. FIAT UNO/PREMIO/FIORINO/TUCAN 20 DTS. — GTI07-002",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-002-/"
+      ]
+    },
+    {
+      "sku": "GTI07-003",
+      "name": "PUNTA EJE L/R. NISSAN SENTRA TSURU 2 B14 24 DTS. — GTI07-003",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-003-/"
+      ]
+    },
+    {
+      "sku": "GTI07-004",
+      "name": "PUNTA EJE L/R. VOLKSWAGEN GOL 1.8 EXTERNA 30 DTS. — GTI07-004",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-004-/"
+      ]
+    },
+    {
+      "sku": "GTI07-005",
+      "name": "PUNTA EJE L/R. FIAT PALIO 1.3 20 DTS. — GTI07-005",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-005-/"
+      ]
+    },
+    {
+      "sku": "GTI07-006",
+      "name": "PUNTA EJE L/R. FIAT 147/ZASTAVA 20 DTS. — GTI07-006",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-006-/"
+      ]
+    },
+    {
+      "sku": "GTI07-007",
+      "name": "PUNTA EJE L/R. VOLKSWAGEN GOLF 30 DTS. — GTI07-007",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-007-/"
+      ]
+    },
+    {
+      "sku": "GTI07-008",
+      "name": "PUNTA EJE L/C. FORD FESTIVA 20 DTS — GTI07-008",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-008-/"
+      ]
+    },
+    {
+      "sku": "GTI07-011",
+      "name": "PUNTA EJE L/R. SUBARU 80/90 23 DTS. — GTI07-011",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-011-/"
+      ]
+    },
+    {
+      "sku": "GTI07-012",
+      "name": "PUNTA EJE L/R. TOYOTA TERCEL 23 DTS — GTI07-012",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-012-/"
+      ]
+    },
+    {
+      "sku": "GTI07-013",
+      "name": "PUNTA EJE L/R. TOYOTA COROLLA 1.8 /01 24 DTS — GTI07-013",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-013-/"
+      ]
+    },
+    {
+      "sku": "GTI07-014",
+      "name": "PUNTA EJE L/R. TOYOTA COROLLA 1.8/1.6 AT/MT 02/24D — GTI07-014",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-014-/"
+      ]
+    },
+    {
+      "sku": "GTI07-015",
+      "name": "PUNTA EJE L/R. TOYOTA HILUX 4X4 T. TH 34 DTS. — GTI07-015",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-015-/"
+      ]
+    },
+    {
+      "sku": "GTI07-016",
+      "name": "PUNTA EJE L/R. TOYOTA TERCEL 94/ 22 DTS. — GTI07-016",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-016-/"
+      ]
+    },
+    {
+      "sku": "GTI07-017",
+      "name": "PUNTA EJE L/C. NISSAN SENTRA — GTI07-017",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-017-/"
+      ]
+    },
+    {
+      "sku": "GTI07-018",
+      "name": "PUNTA EJE L/R. TOYOTA HILUX 4X4 T. JAPON 27 DTS. — GTI07-018",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-018-/"
+      ]
+    },
+    {
+      "sku": "GTI07-020",
+      "name": "PUNTA EJE L/R. KIA PICANTO I-II-ION/FORD FEST. 1.3 GLX MEC. 20 DTS. PIN INT. — GTI07-020",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-020-/"
+      ]
+    },
+    {
+      "sku": "GTI07-022",
+      "name": "PUNTA EJE L/R. FORD FIESTA 1.3 20 DTS. — GTI07-022",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-022-/"
+      ]
+    },
+    {
+      "sku": "GTI07-023",
+      "name": "PUNTA EJE L/R. FORD FIESTA 1.6 21 DTS./FIESTA MN. — GTI07-023",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-023-/"
+      ]
+    },
+    {
+      "sku": "GTI07-024",
+      "name": "PUNTA EJE L/R. KIA CARNIVAL /06 26 DTS. — GTI07-024",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-024-/"
+      ]
+    },
+    {
+      "sku": "GTI07-025",
+      "name": "PUNTA EJE L/R. KIA SEPHIA 97/99 23 DTS. — GTI07-025",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-025-/"
+      ]
+    },
+    {
+      "sku": "GTI07-026",
+      "name": "PUNTA EJE L/R. KIA SEPHIA 99/ 22 DTS. — GTI07-026",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-026-/"
+      ]
+    },
+    {
+      "sku": "GTI07-029",
+      "name": "JGO. 2 ABRAZADERAS G/POLVO EJES (METALICAS) — GTI07-029",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-029-/"
+      ]
+    },
+    {
+      "sku": "GTI07-030",
+      "name": "PUNTA EJE L/R. NISSAN SENTRA B13/B14 T/JP. P. INT. 32 DTS. — GTI07-030",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-030-/"
+      ]
+    },
+    {
+      "sku": "GTI07-031",
+      "name": "PUNTA EJE L/R. TOYOTA PRADO VX 34 DTS. — GTI07-031",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-031-/"
+      ]
+    },
+    {
+      "sku": "GTI07-032",
+      "name": "PUNTA EJE L/C. KIA PICANTO I-II/PICANTO ION — GTI07-032",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-032-/"
+      ]
+    },
+    {
+      "sku": "GTI07-033",
+      "name": "G/POLVO EJE L/R. HD. ACCENT/VERNA/VISION/SWIFT/STYLUS/323/AVEO/SAIL — GTI07-033",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-033-/"
+      ]
+    },
+    {
+      "sku": "GTI07-035",
+      "name": "G/POLVO EJE L/R. HD. ATOS/SPARK/CRONOS/SPRINT/MATIZ/STEEM 1.6/SWIFT/121 — GTI07-035",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-035-/"
+      ]
+    },
+    {
+      "sku": "GTI07-037",
+      "name": "G/POLVO EJE L/R M323/R9/TWINGO/CLIO/SYMBOL/MEGANE/CORSA/VITARA/GRAN VITARA GTI — GTI07-037",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-037-/"
+      ]
+    },
+    {
+      "sku": "GTI07-043",
+      "name": "G/POLVO EJE L/R. M323/R9/TWINGO/CLIO/SYMBOL/MEGANE/CORSA/VITARA/GRAN VITARA GTI — GTI07-043",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-043-/"
+      ]
+    },
+    {
+      "sku": "GTI07-045",
+      "name": "PUNTA EJE L/R. TOYOTA PRADO VX 27 DTS. — GTI07-045",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-045-/"
+      ]
+    },
+    {
+      "sku": "GTI07-046",
+      "name": "PUNTA EJE L/R. CHERY QQ 19 DTS. PIN EXT. — GTI07-046",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-046-/"
+      ]
+    },
+    {
+      "sku": "GTI07-047",
+      "name": "PUNTA EJE L/R. PEUGEOT 3.5/405 34 DTS. — GTI07-047",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-047-/"
+      ]
+    },
+    {
+      "sku": "GTI07-048",
+      "name": "PUNTA EJE L/R. DAIHATSU TERIUS 19 DTS. — GTI07-048",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-048-/"
+      ]
+    },
+    {
+      "sku": "GTI07-049",
+      "name": "PUNTA EJE L/R. NISSAN PATHFINDER 27 DTS. — GTI07-049",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-049-/"
+      ]
+    },
+    {
+      "sku": "GTI07-050",
+      "name": "PUNTA EJE L/R. CITROEN XANTIA ZX/PEUGEOT 306 1.6/1.8/2.0 (48T) — GTI07-050",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-050-/"
+      ]
+    },
+    {
+      "sku": "GTI07-051",
+      "name": "PUNTA EJE L/R. PEUGEOT 405 1.6 (90T) — GTI07-051",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-051-/"
+      ]
+    },
+    {
+      "sku": "GTI07-052",
+      "name": "PUNTA EJE L/R. CITROEN BX/CX/PEUGEOT 305/405 — GTI07-052",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-052-/"
+      ]
+    },
+    {
+      "sku": "GTI07-053",
+      "name": "EJE HOMOCINETICO DER. PEUGEOT 306/406 — GTI07-053",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-053-/"
+      ]
+    },
+    {
+      "sku": "GTI07-054",
+      "name": "EJE HOMOCINETICO IZQ. PEUGEOT 306/405 — GTI07-054",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-054-/"
+      ]
+    },
+    {
+      "sku": "GTI07-055",
+      "name": "PUNTA EJE L/R. TOYOTA LAND CRUISER/CARE VACA 27 DTS. — GTI07-055",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-055-/"
+      ]
+    },
+    {
+      "sku": "GTI07-056",
+      "name": "PUNTA EJE L/R. KIA SPECTRA — GTI07-056",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-056-/"
+      ]
+    },
+    {
+      "sku": "GTI07-057",
+      "name": "PUNTA EJE L/R. KIA CARENS 01/08 24 DTES — GTI07-057",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-057-/"
+      ]
+    },
+    {
+      "sku": "GTI07-059",
+      "name": "PUNTA EJE L/R. TOYOTA HILUX VIGO — GTI07-059",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-059-/"
+      ]
+    },
+    {
+      "sku": "GTI07-060",
+      "name": "EJE HOMOCINETICO TOYOTA HILUX VIGO — GTI07-060",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-060-/"
+      ]
+    },
+    {
+      "sku": "GTI07-062",
+      "name": "PUNTA EJE L/C. AVEO 1.6 EMOTION AUT. — GTI07-062",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-062-/"
+      ]
+    },
+    {
+      "sku": "GTI07-064",
+      "name": "PUNTA EJE L/R. VOLKSWAGEN PANEL/TRANSPORTER 27 DTS — GTI07-064",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-064-/"
+      ]
+    },
+    {
+      "sku": "GTI07-065",
+      "name": "PUNTA EJE L/C. DER. KIA GRAND CARNIVAL (HEMBRA) — GTI07-065",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-065-/"
+      ]
+    },
+    {
+      "sku": "GTI07-066",
+      "name": "PUNTA EJE L/C. IZQ. KIA GRAND CARNIVAL (MACHO) — GTI07-066",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-066-/"
+      ]
+    },
+    {
+      "sku": "GTI07-067",
+      "name": "EJE HOMOCINETICO DER. KIA GRAND CARNIVAL — GTI07-067",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-067-/"
+      ]
+    },
+    {
+      "sku": "GTI07-068",
+      "name": "EJE HOMOCINETICO IZQ. KIA GRAND CARNIVAL — GTI07-068",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-068-/"
+      ]
+    },
+    {
+      "sku": "GTI07-069",
+      "name": "PUNTA EJE L/R. TOYOTA LAND CRUISER VENEZOLANA/BURBUJA 05/09 — GTI07-069",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-069-/"
+      ]
+    },
+    {
+      "sku": "GTI07-070",
+      "name": "PUNTA EJE L/R. FORD ECO SPORT 4X2 — GTI07-070",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-070-/"
+      ]
+    },
+    {
+      "sku": "GTI07-071",
+      "name": "PUNTA EJE L/R. FORD ECO SPORT 4X4 — GTI07-071",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-071-/"
+      ]
+    },
+    {
+      "sku": "GTI07-072",
+      "name": "PUNTA EJE L/R. CHERY QQ 19 DTS. PIN INT. — GTI07-072",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-072-/"
+      ]
+    },
+    {
+      "sku": "GTI07-074",
+      "name": "PUNTA EJE L/C. IZQ. PEUGEOT 306 — GTI07-074",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-074-/"
+      ]
+    },
+    {
+      "sku": "GTI07-076",
+      "name": "PUNTA EJE L/C. VOLKSWAGEN GOL BRASIL/GOLF 1.5/1.6/PASSAT/SEAT CORDOBA — GTI07-076",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-076-/"
+      ]
+    },
+    {
+      "sku": "GTI07-077",
+      "name": "PUNTA EJE L/R. VOLKSWAGEN GOLF/JETTA 1.6/JETTA 2.0 — GTI07-077",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-077-/"
+      ]
+    },
+    {
+      "sku": "GTI07-078",
+      "name": "PUNTA EJE L/R. NISSAN FRONTIER — GTI07-078",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-078-/"
+      ]
+    },
+    {
+      "sku": "GTI07-079",
+      "name": "PUNTA EJE L/R. NISSAN SENTRA B14 JAPON/ALMERA 23DTS — GTI07-079",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-079-/"
+      ]
+    },
+    {
+      "sku": "GTI07-080",
+      "name": "PUNTA EJE L/R. HONDA CIVIC AMERICANO 1.8 — GTI07-080",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-080-/"
+      ]
+    },
+    {
+      "sku": "GTI07-081",
+      "name": "PUNTA EJE L/R. HONDA ACCORD/CRV — GTI07-081",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-081-/"
+      ]
+    },
+    {
+      "sku": "GTI07-083",
+      "name": "PUNTA EJE L/R. NISSAN PATHFINDER M/N. — GTI07-083",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-083-/"
+      ]
+    },
+    {
+      "sku": "GTI07-084",
+      "name": "EJE INTERCONECCION KIA GRAND CARNIVAL — GTI07-084",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-084-/"
+      ]
+    },
+    {
+      "sku": "GTI07-085",
+      "name": "PUNTA EJE L/R. NISSAN SENTRA B13 8V. — GTI07-085",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-085-/"
+      ]
+    },
+    {
+      "sku": "GTI07-087",
+      "name": "PUNTA EJE L/R. MITSUBISHI PAJERO — GTI07-087",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-087-/"
+      ]
+    },
+    {
+      "sku": "GTI07-088",
+      "name": "PUNTA EJE L/C. DAIHATSU TERIUS — GTI07-088",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-088-/"
+      ]
+    },
+    {
+      "sku": "GTI07-089",
+      "name": "PUNTA EJE L/R. JAC TAXI STAR 1.3 (29 DTS.) — GTI07-089",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-089-/"
+      ]
+    },
+    {
+      "sku": "GTI07-090",
+      "name": "PUNTA EJE L/C. TOYOTA PRADO — GTI07-090",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-090-/"
+      ]
+    },
+    {
+      "sku": "GTI07-091",
+      "name": "PUNTA EJE L/C. TOYOTA HILUX 92/06 — GTI07-091",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-091-/"
+      ]
+    },
+    {
+      "sku": "GTI07-092",
+      "name": "PUNTA EJE L/C. TOYOTA HILUX HI-RIDER — GTI07-092",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-092-/"
+      ]
+    },
+    {
+      "sku": "GTI07-093",
+      "name": "PUNTA EJE L/R. TOYOTA COROLLA 1.6/1.8 2001/ — GTI07-093",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-093-/"
+      ]
+    },
+    {
+      "sku": "GTI07-094",
+      "name": "PUNTA EJE L/R. NISSAN TIDA 1.8/SENTRA MN. — GTI07-094",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-094-/"
+      ]
+    },
+    {
+      "sku": "GTI07-097",
+      "name": "PUNTA EJE L/R. SUBARU VIVIO — GTI07-097",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-097-/"
+      ]
+    },
+    {
+      "sku": "GTI07-098",
+      "name": "PUNTA EJE L/R. CITROEN JUMPER — GTI07-098",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-098-/"
+      ]
+    },
+    {
+      "sku": "GTI07-099",
+      "name": "PUNTA EJE L/R. HONDA FIT — GTI07-099",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-099-/"
+      ]
+    },
+    {
+      "sku": "GTI07-100",
+      "name": "PUNTA EJE L/R. HONDA 22 DTS. — GTI07-100",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-100-/"
+      ]
+    },
+    {
+      "sku": "GTI07-101",
+      "name": "PUNTA EJE L/C. VOLKSWAGEN GOL/GOLF 1.5/1.6/PASSAT/SEAT CORDOBA — GTI07-101",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-101-/"
+      ]
+    },
+    {
+      "sku": "GTI07-102",
+      "name": "PUNTA EJE L/R. FORD EXPLORER — GTI07-102",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-102-/"
+      ]
+    },
+    {
+      "sku": "GTI07-103",
+      "name": "PUNTA EJE L/R. FORD FORTALEZA/150 EXPEDITION — GTI07-103",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-103-/"
+      ]
+    },
+    {
+      "sku": "GTI07-104",
+      "name": "PUNTA EJE L/C. FORD ECO SPORT 4X2 89/02 — GTI07-104",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-104-/"
+      ]
+    },
+    {
+      "sku": "GTI07-105",
+      "name": "PUNTA EJE L/R. GEELY 1.3 — GTI07-105",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-105-/"
+      ]
+    },
+    {
+      "sku": "GTI07-106",
+      "name": "PUNTA EJE L/R. VOLKSWAGEN AMAROK 4X4 (TORNILLO) — GTI07-106",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-106-/"
+      ]
+    },
+    {
+      "sku": "GTI07-107",
+      "name": "EJE HOMOCINETICO DER. CHERY VAN — GTI07-107",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-107-/"
+      ]
+    },
+    {
+      "sku": "GTI07-108",
+      "name": "PUNTA EJE L/R. CHERY VAN — GTI07-108",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-108-/"
+      ]
+    },
+    {
+      "sku": "GTI07-109",
+      "name": "PUNTA EJE L/C. CHERY VAN — GTI07-109",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-109-/"
+      ]
+    },
+    {
+      "sku": "GTI07-110",
+      "name": "PUNTA EJE L/R. VOLKSWAGEN BORA 2.5 AUTOMATICO — GTI07-110",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-110-/"
+      ]
+    },
+    {
+      "sku": "GTI07-111",
+      "name": "PUNTA EJE L/R. NISSAN X-TRAIL 25 DTS. — GTI07-111",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-111-/"
+      ]
+    },
+    {
+      "sku": "GTI07-112",
+      "name": "PUNTA EJE L/C. IZQ. FORD FIESTA/CHARGER — GTI07-112",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-112-/"
+      ]
+    },
+    {
+      "sku": "GTI07-113",
+      "name": "PUNTA EJE L/C. DER. FORD FIESTA/CHARGER — GTI07-113",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-113-/"
+      ]
+    },
+    {
+      "sku": "GTI07-114",
+      "name": "PUNTA EJE L/R. CITROEN JUMPER MN. 29 DTS — GTI07-114",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-114-/"
+      ]
+    },
+    {
+      "sku": "GTI07-115",
+      "name": "PUNTA EJE L/R. VOLKSWAGEN BORA/GOLF IV/JETTA GLI 1.8 TURBO — GTI07-115",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-115-/"
+      ]
+    },
+    {
+      "sku": "GTI07-116",
+      "name": "EJE HOMOCINETICO IZQ. CHERY VAN — GTI07-116",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-116-/"
+      ]
+    },
+    {
+      "sku": "GTI07-117",
+      "name": "EJE HOMOCINETICO DER. VOLKSWAGEN PANEL T5 /2010 — GTI07-117",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-117-/"
+      ]
+    },
+    {
+      "sku": "GTI07-118",
+      "name": "EJE HOMOCINETICO NISSAN PATHFINDER MN. — GTI07-118",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-118-/"
+      ]
+    },
+    {
+      "sku": "GTI07-119",
+      "name": "PUNTA EJE L/C. VOLKSWAGEN GOLF III 1.8/AUDI A3 1.6/1.8 — GTI07-119",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-119-/"
+      ]
+    },
+    {
+      "sku": "GTI07-120",
+      "name": "EJE HOMOCINETICO TOYOTA HILUX MV./HI-RIDER — GTI07-120",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-120-/"
+      ]
+    },
+    {
+      "sku": "GTI07-121",
+      "name": "EJE HOMOCINETICO TOYOTA PRADO — GTI07-121",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-121-/"
+      ]
+    },
+    {
+      "sku": "GTI07-122",
+      "name": "EJE HOMOCINETICO IZQ. VOLKSWAGEN PANEL T5 TODAS — GTI07-122",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-122-/"
+      ]
+    },
+    {
+      "sku": "GTI07-123",
+      "name": "PUNTA EJE L/C. IZQ. VOLKSWAGEN PANEL T5 TODAS — GTI07-123",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-123-/"
+      ]
+    },
+    {
+      "sku": "GTI07-124",
+      "name": "EJE HOMOCINETICO VOLKSWAGEN AMAROK — GTI07-124",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-124-/"
+      ]
+    },
+    {
+      "sku": "GTI07-125",
+      "name": "PUNTA EJE L/C. NISSAN PATHFINDER MN. — GTI07-125",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-125-/"
+      ]
+    },
+    {
+      "sku": "GTI07-126",
+      "name": "PUNTA EJE L/C. VOLKSWAGEN AMAROK — GTI07-126",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-126-/"
+      ]
+    },
+    {
+      "sku": "GTI07-127",
+      "name": "PUNTA EJE L/C. VOLKSWAGEN GOL D. E. 100MM. — GTI07-127",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-127-/"
+      ]
+    },
+    {
+      "sku": "GTI07-128",
+      "name": "PUNTA EJE L/R. VOLKSWAGEN PANEL/TRANSPORTER 28 DTS — GTI07-128",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-128-/"
+      ]
+    },
+    {
+      "sku": "GTI07-129",
+      "name": "PUNTA EJE L/R. DAIHATSU FEROZA — GTI07-129",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-129-/"
+      ]
+    },
+    {
+      "sku": "GTI07-130",
+      "name": "PUNTA EJE L/C. DER. VOLKSWAGEN PANEL T5 /2010 (HEMBRA CORTA) — GTI07-130",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-130-/"
+      ]
+    },
+    {
+      "sku": "GTI07-131",
+      "name": "PUNTA EJE L/R. DAIHATSU TERIUS MN. (22 DTS.) — GTI07-131",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-131-/"
+      ]
+    },
+    {
+      "sku": "GTI07-132",
+      "name": "EJE HOMOCINETICO DER. VOLKSWAGEN BORA 05/2011/JETTA 06/2010 /NUEVO ESCARABAJO GTI — GTI07-132",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-132-/"
+      ]
+    },
+    {
+      "sku": "GTI07-139",
+      "name": "PUNTA EJE L/C. NISSAN PATHFINDER/FRONTIER 98/04 — GTI07-139",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-139-/"
+      ]
+    },
+    {
+      "sku": "GTI07-140",
+      "name": "PUNTA EJE L/R. SAMURAI/SJ 410/413 — GTI07-140",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-140-/"
+      ]
+    },
+    {
+      "sku": "GTI07-141",
+      "name": "PUNTA EJE L/R. PEUGEOT 306 — GTI07-141",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-141-/"
+      ]
+    },
+    {
+      "sku": "GTI07-142",
+      "name": "PUNTA EJE L/C. VOLKSWAGEN GOLF 1.0/1.1/1.3/POLO 1.6/SEAT CORDOBA/IBIZA/SKODA GTIFAB — GTI07-142",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-142-/"
+      ]
+    },
+    {
+      "sku": "GTI07-143",
+      "name": "PUNTA EJE L/C. VOLKSWAGEN JETTA/GOLF 1.8/2.0/POLO/PASSAT/AUDI A3/A4/SEAT CORDOBA GTI — GTI07-143",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-143-/"
+      ]
+    },
+    {
+      "sku": "GTI07-145",
+      "name": "EJE HOMOCINETICO IZQ. JAC — GTI07-145",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-145-/"
+      ]
+    },
+    {
+      "sku": "GTI07-146",
+      "name": "EJE HOMOCINETICO DER. JAC — GTI07-146",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-146-/"
+      ]
+    },
+    {
+      "sku": "GTI07-147",
+      "name": "PUNTA EJE L/R. TOYOTA LAND CRUISER VENEZOLANA/BURBUJA 2010/ — GTI07-147",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-147-/"
+      ]
+    },
+    {
+      "sku": "GTI07-148",
+      "name": "EJE HOMOCINETICO DER. VOLKSWAGEN PANEL T5 2011/ — GTI07-148",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-148-/"
+      ]
+    },
+    {
+      "sku": "GTI07-149",
+      "name": "PUNTA EJE L/C. VOLKSWAGEN PANEL T5 2011/ (HEMBRA LARGA) — GTI07-149",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-149-/"
+      ]
+    },
+    {
+      "sku": "GTI07-150",
+      "name": "G/POLVO EJE L/R. VOLKSWAGEN PANEL T5 — GTI07-150",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-150-/"
+      ]
+    },
+    {
+      "sku": "GTI07-151",
+      "name": "PUNTA EJE L/R. TOYOTA COROLLA SENSACION — GTI07-151",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-151-/"
+      ]
+    },
+    {
+      "sku": "GTI07-152",
+      "name": "PUNTA EJE L/R. JAC TAXI VVT 1.5 21x25 DTS. — GTI07-152",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-152-/"
+      ]
+    },
+    {
+      "sku": "GTI07-153",
+      "name": "PUNTA EJE L/R. NISSAN X-TRAIL — GTI07-153",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-153-/"
+      ]
+    },
+    {
+      "sku": "GTI07-154",
+      "name": "EJE HOMOCINETICO DER. MITSUBISHI SPORTERO — GTI07-154",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-154-/"
+      ]
+    },
+    {
+      "sku": "GTI07-155",
+      "name": "EJE HOMOCINETICO IZQ. MITSUBISHI SPORTERO — GTI07-155",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-155-/"
+      ]
+    },
+    {
+      "sku": "GTI07-156",
+      "name": "PUNTA EJE L/R. MITSUBISHI SPORTERO 33 DTS — GTI07-156",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-156-/"
+      ]
+    },
+    {
+      "sku": "GTI07-157",
+      "name": "PUNTA EJE L/C. DER. MITSUBISHI SPORTERO — GTI07-157",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-157-/"
+      ]
+    },
+    {
+      "sku": "GTI07-158",
+      "name": "PUNTA EJE L/C. IZQ. MITSUBISHI SPORTERO — GTI07-158",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-158-/"
+      ]
+    },
+    {
+      "sku": "GTI07-159",
+      "name": "PUNTA EJE L/R. FORD FESTIVA/JAC J2 PIN EXT. — GTI07-159",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-159-/"
+      ]
+    },
+    {
+      "sku": "GTI07-160",
+      "name": "PUNTA EJE L/R. NISSAN ALMERA — GTI07-160",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-160-/"
+      ]
+    },
+    {
+      "sku": "GTI07-161",
+      "name": "PUNTA EJE L/R. PEUGEOT 306 — GTI07-161",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-161-/"
+      ]
+    },
+    {
+      "sku": "GTI07-162",
+      "name": "PUNTA EJE L/R. MERCEDES BENZ — GTI07-162",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-162-/"
+      ]
+    },
+    {
+      "sku": "GTI07-163",
+      "name": "PUNTA EJE L/R. SUBARU LEONE — GTI07-163",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-163-/"
+      ]
+    },
+    {
+      "sku": "GTI07-164",
+      "name": "PUNTA EJE L/R. FIAT PALIO 1.6 — GTI07-164",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-164-/"
+      ]
+    },
+    {
+      "sku": "GTI07-165",
+      "name": "PUNTA EJE L/R. VOLKSWAGEN GOL NEW 1.6 09/ — GTI07-165",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-165-/"
+      ]
+    },
+    {
+      "sku": "GTI07-166",
+      "name": "PUNTA EJE L/R. NISSAN TERRANO 2.4/3.0 4X4 — GTI07-166",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-166-/"
+      ]
+    },
+    {
+      "sku": "GTI07-167",
+      "name": "PUNTA EJE L/C. IZQ. JAC (MACHO) — GTI07-167",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-167-/"
+      ]
+    },
+    {
+      "sku": "GTI07-168",
+      "name": "PUNTA EJE L/C. DER. JAC (HEMBRA) — GTI07-168",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-168-/"
+      ]
+    },
+    {
+      "sku": "GTI07-169",
+      "name": "PUNTA EJE L/R. GEELY — GTI07-169",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-169-/"
+      ]
+    },
+    {
+      "sku": "GTI07-171",
+      "name": "PUNTA EJE L/R. TOYOTA PRADO TX/TXL — GTI07-171",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-171-/"
+      ]
+    },
+    {
+      "sku": "GTI07-173",
+      "name": "EJE HOMOCINETICO DER. CHERY VAN II/YOYA — GTI07-173",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-173-/"
+      ]
+    },
+    {
+      "sku": "GTI07-174",
+      "name": "EJE HOMOCINETICO IZQ. CHERY VAN II/YOYA — GTI07-174",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-174-/"
+      ]
+    },
+    {
+      "sku": "GTI07-175",
+      "name": "PUNTA EJE L/R. CHERY VAN II/YOYA — GTI07-175",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-175-/"
+      ]
+    },
+    {
+      "sku": "GTI07-176",
+      "name": "EJE HOMOCINETICO IZQ. MITSUBISHI SPORTERO 2.5 DIESEL 4X4 — GTI07-176",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-176-/"
+      ]
+    },
+    {
+      "sku": "GTI07-177",
+      "name": "EJE HOMOCINETICO DER. MITSUBISHI SPORTERO 2.5 DIESEL 4X4 — GTI07-177",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-177-/"
+      ]
+    },
+    {
+      "sku": "GTI07-178",
+      "name": "PUNTA EJE L/C. CHEVY — GTI07-178",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-178-/"
+      ]
+    },
+    {
+      "sku": "GTI07-179",
+      "name": "PUNTA EJE L/R. CHEVY — GTI07-179",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-179-/"
+      ]
+    },
+    {
+      "sku": "GTI07-180",
+      "name": "PUNTA EJE L/R. TOYOTA SAHARA 2012/ — GTI07-180",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-180-/"
+      ]
+    },
+    {
+      "sku": "GTI07-181",
+      "name": "PUNTA EJE L/R. TOYOTA SAHARA /2012 — GTI07-181",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-181-/"
+      ]
+    },
+    {
+      "sku": "GTI07-182",
+      "name": "PUNTA EJE L/R. TIGO — GTI07-182",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-182-/"
+      ]
+    },
+    {
+      "sku": "GTI07-184",
+      "name": "EJE HOMOCINETICO DER. FAW V5 — GTI07-184",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-184-/"
+      ]
+    },
+    {
+      "sku": "GTI07-185",
+      "name": "EJE HOMOCINETICO IZQ. FAW V6 — GTI07-185",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-185-/"
+      ]
+    },
+    {
+      "sku": "GTI07-186",
+      "name": "PUNTA EJE L/R. FAW — GTI07-186",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-186-/"
+      ]
+    },
+    {
+      "sku": "GTI07-187",
+      "name": "PUNTA EJE L/C. FAW — GTI07-187",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-187-/"
+      ]
+    },
+    {
+      "sku": "GTI07-189",
+      "name": "PUNTA EJE L/R. CHERY TIGGO 1.6 — GTI07-189",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-189-/"
+      ]
+    },
+    {
+      "sku": "GTI07-191",
+      "name": "PUNTA EJE L/C. CHERY VAN II — GTI07-191",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-191-/"
+      ]
+    },
+    {
+      "sku": "GTI07-192",
+      "name": "PUNTA EJE L/R. SUBARU — GTI07-192",
+      "stock": 0,
+      "inStock": false,
+      "pages": [
+        "https://www.imotriz.com/producto/3/GTI07-192-/"
+      ]
+    }
+  ]
+}

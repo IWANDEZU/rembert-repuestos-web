@@ -1,0 +1,3266 @@
+{
+  "version": 1,
+  "images": {
+    "THX049": {
+      "sku": "THX049",
+      "name": "Axial TNK THX049 — Kia Picanto Ion / Eko Taxi",
+      "outputImage": "/catalogo-real/thx049-tnk-thx049-axial-kia-picanto-ion-eko-taxi.webp",
+      "sourceImage": "https://tnk.com.co/wp-content/uploads/2025/03/TNK-THX049.jpg",
+      "sources": [
+        "https://tnk.com.co/producto/axial-thx049/"
+      ],
+      "sha256": "b54a7a43906669df65a60f1d0ac4c4c5ff3f031df62efa9f5be373c313982698",
+      "updatedAt": "2026-08-27T20:36:08.001Z"
+    },
+    "GTI01004": {
+      "sku": "GTI01-004",
+      "name": "Punta lado caja GTI — Renault R9 / R12 / R18 / Twingo 8V",
+      "outputImage": "/catalogo-real/gti01-004-gti01-004-punta-lado-caja-gti-renault-r9-r12-r18-twingo-8v.webp",
+      "sourceImage": "https://app.pedbox.co:7777/imagenes_catalogo/15/01I09006.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI01-004-/"
+      ],
+      "sha256": "343d1a991bad361a883bb3feb377da4d1f1fa0244a00eca46a299154521caace",
+      "updatedAt": "2026-08-27T22:35:53.039Z"
+    },
+    "GTI01016": {
+      "sku": "GTI01-016",
+      "name": "Punta lado rueda GTI — Renault Clio II / Symbol",
+      "outputImage": "/catalogo-real/gti01-016-gti01-016-punta-lado-rueda-gti-renault-clio-ii-symbol.webp",
+      "sourceImage": "https://app.pedbox.co:7777/imagenes_catalogo/15/01I09020.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI01-016-/"
+      ],
+      "sha256": "40125f474360ff1596fc22323e35d70207af180015bcf121b56fe3bc2f2ebb83",
+      "updatedAt": "2026-08-27T22:35:53.039Z"
+    },
+    "GTI01017": {
+      "sku": "GTI01-017",
+      "name": "Punta lado rueda GTI — Renault Mégane / Clio II",
+      "outputImage": "/catalogo-real/gti01-017-gti01-017-punta-lado-rueda-gti-renault-megane-clio-ii.webp",
+      "sourceImage": "https://app.pedbox.co:7777/imagenes_catalogo/15/01I09021.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI01-017-/"
+      ],
+      "sha256": "721e21367e4fab768477800361716bb3641dd4a9136422bdbc0ce0d5b768e828",
+      "updatedAt": "2026-08-27T22:35:53.039Z"
+    },
+    "GTI01093": {
+      "sku": "GTI01-093",
+      "name": "Tulipa lado caja GTI — Renault Kwid",
+      "outputImage": "/catalogo-real/gti01-093-gti01-093-tulipa-lado-caja-gti-renault-kwid.webp",
+      "sourceImage": "https://app.pedbox.co:7777/imagenes_catalogo/15/01I09135.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI01-093-/"
+      ],
+      "sha256": "38ef2dd974add7b6843f02433f93608e8f8b756e5b6e8520abab7c6186bfdfe5",
+      "updatedAt": "2026-08-27T22:35:53.039Z"
+    },
+    "GTI06012": {
+      "sku": "GTI06-012",
+      "name": "Punta lado rueda GTI — Kia Cerato / Forte",
+      "outputImage": "/catalogo-real/gti06-012-gti06-012-punta-lado-rueda-gti-kia-cerato-forte.webp",
+      "sourceImage": "https://app.pedbox.co:7777/imagenes_catalogo/15/06I09089.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI06-012-/"
+      ],
+      "sha256": "25321e891d3414d509bb1df42632b2843ebd54a3e8efd04bf03e4b9d8a354632",
+      "updatedAt": "2026-08-27T22:35:53.039Z"
+    },
+    "GTI06082": {
+      "sku": "GTI06-082",
+      "name": "Tulipa lado caja GTI — Hyundai Eon",
+      "outputImage": "/catalogo-real/gti06-082-gti06-082-tulipa-lado-caja-gti-hyundai-eon.webp",
+      "sourceImage": "https://app.pedbox.co:7777/imagenes_catalogo/15/06I09123.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI06-082-/"
+      ],
+      "sha256": "0b21298c386d9e9b8d18d3bfecebcbbe0f53638e7c4e63de70d02fedda3cd517",
+      "updatedAt": "2026-08-27T22:35:53.039Z"
+    },
+    "GTI01001": {
+      "sku": "GTI01-001",
+      "name": "PUNTA EJE L/R. R12/18 GTL T. TH 30 DTS. — GTI01-001",
+      "outputImage": "/catalogo-real/gti01-001-gti-gti01-001-punta-eje-l-r-r12-18-gtl-t-th-30-dts.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-source-previews\\GTI01-001.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI01-001-/"
+      ],
+      "sha256": "c7b2984af7fec4a1dbcd649b104851b44460f0b14a765db9f005d0f616866a1e",
+      "updatedAt": "2026-08-28T00:18:06.844Z"
+    },
+    "GTI01003": {
+      "sku": "GTI01-003",
+      "name": "PUNTA EJE L/R. R9/TWINGO 8V./21 RS 30 DTS. — GTI01-003",
+      "outputImage": "/catalogo-real/gti01-003-gti-gti01-003-punta-eje-l-r-r9-twingo-8v-21-rs-30-dts.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-source-previews\\GTI01-003.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI01-003-/"
+      ],
+      "sha256": "c623b927b89b2103db54665655e9e0123f15e4f69beb42dc749aba76f979c788",
+      "updatedAt": "2026-08-28T00:18:06.845Z"
+    },
+    "GTI01005": {
+      "sku": "GTI01-005",
+      "name": "EJE HOMOCINETICO IZQ. KANGOO 07/ — GTI01-005",
+      "outputImage": "/catalogo-real/gti01-005-gti-gti01-005-eje-homocinetico-izq-kangoo-07.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-source-previews\\GTI01-005.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI01-005-/"
+      ],
+      "sha256": "12104148ddcb0184aeb34517363e204a54ce751bfa711b3b2fb6ed6d5655e3e7",
+      "updatedAt": "2026-08-28T00:18:06.845Z"
+    },
+    "GTI01018": {
+      "sku": "GTI01-018",
+      "name": "PUNTA EJE L/R. SYMBOL/CITIUS 30 DTS. — GTI01-018",
+      "outputImage": "/catalogo-real/gti01-018-gti-gti01-018-punta-eje-l-r-symbol-citius-30-dts.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-source-previews\\GTI01-018.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI01-018-/"
+      ],
+      "sha256": "965d7ffda5eb87c074a8203b46bb370acccd49435dc9f2a0c4ffb559dd717f39",
+      "updatedAt": "2026-08-28T00:22:18.070Z"
+    },
+    "GTI01019": {
+      "sku": "GTI01-019",
+      "name": "PUNTA EJE L/R. R4/6 30 DTS. — GTI01-019",
+      "outputImage": "/catalogo-real/gti01-019-gti-gti01-019-punta-eje-l-r-r4-6-30-dts.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-source-previews\\GTI01-019.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI01-019-/"
+      ],
+      "sha256": "216aed86fffe86e844c7e7a5ea3e30b8e17326bf0b8f5c91d74415813efd688c",
+      "updatedAt": "2026-08-28T00:22:18.070Z"
+    },
+    "GTI01023": {
+      "sku": "GTI01-023",
+      "name": "PUNTA EJE L/C. CLIO II/SYMBOL/MEGANE NUEVO DISEÑO — GTI01-023",
+      "outputImage": "/catalogo-real/gti01-023-gti-gti01-023-punta-eje-l-c-clio-ii-symbol-megane-nuevo-diseno.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-source-previews\\GTI01-023.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI01-023-/"
+      ],
+      "sha256": "8ac72e76d85f548c2e5f5b60d169197788d2006a4443f3207b6cc6ebfdfbc660",
+      "updatedAt": "2026-08-28T00:22:18.070Z"
+    },
+    "GTI01026": {
+      "sku": "GTI01-026",
+      "name": "EJE HOMOCINETICO IZQ. LOGAN /2010 T. ORIGINAL — GTI01-026",
+      "outputImage": "/catalogo-real/gti01-026-gti-gti01-026-eje-homocinetico-izq-logan-2010-t-original.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-source-previews\\GTI01-026.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI01-026-/"
+      ],
+      "sha256": "e7ca32426bd3c7bd2014509f351ba7b1b5c20cc883651c4a78b683b77199ed2b",
+      "updatedAt": "2026-08-28T00:22:18.070Z"
+    },
+    "GTI01034": {
+      "sku": "GTI01-034",
+      "name": "PUNTA EJE L/R. SCENIC 1.6 CON ABS 35 DTS — GTI01-034",
+      "outputImage": "/catalogo-real/gti01-034-gti-gti01-034-punta-eje-l-r-scenic-1-6-con-abs-35-dts.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-source-previews\\GTI01-034.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI01-034-/"
+      ],
+      "sha256": "6101a2000674381c589f5c70e89839c3b55a17634334d865621da37f7c83498e",
+      "updatedAt": "2026-08-28T00:24:21.219Z"
+    },
+    "GTI01061": {
+      "sku": "GTI01-061",
+      "name": "PUNTA EJE L/R. KOLEOS/QASHQAI — GTI01-061",
+      "outputImage": "/catalogo-real/gti01-061-gti-gti01-061-punta-eje-l-r-koleos-qashqai.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-source-previews\\GTI01-061.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI01-061-/"
+      ],
+      "sha256": "e3b22ecefc4ec44a912a8aafc0eb4b3083ce0d8583456e1f139fe06bbb6240d9",
+      "updatedAt": "2026-08-28T00:24:21.220Z"
+    },
+    "GTI01068": {
+      "sku": "GTI01-068",
+      "name": "G/POLVO EJE L/C. IZQ. R9/TWINGO/CLIO/MEGANE — GTI01-068",
+      "outputImage": "/catalogo-real/gti01-068-gti-gti01-068-g-polvo-eje-l-c-izq-r9-twingo-clio-megane.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-source-previews\\GTI01-068.jpg",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI01-068-/"
+      ],
+      "sha256": "f95ba159158ff595ca74ade5c8c7c4bb9ac24f94c04d479367c3bdfc18ca06c9",
+      "updatedAt": "2026-08-28T00:30:47.004Z"
+    },
+    "GTI01069": {
+      "sku": "GTI01-069",
+      "name": "G/POLVO EJE L/C IZQ. LOGAN/SANDERO/STEPWAY (CON PLATINA) — GTI01-069",
+      "outputImage": "/catalogo-real/gti01-069-gti-gti01-069-g-polvo-eje-l-c-izq-logan-sandero-stepway-con-platina.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-source-previews\\GTI01-069.jpg",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI01-069-/"
+      ],
+      "sha256": "3eb2ad4cd4bfdf6ed2b00d34f0839e17253f54510a4a5cbb4dbeb508ca104b7c",
+      "updatedAt": "2026-08-28T00:30:47.005Z"
+    },
+    "GTI03035": {
+      "sku": "GTI03-035",
+      "name": "PUNTA EJE L/C. IZQ. 626 MATSURI (28X23) — GTI03-035",
+      "outputImage": "/catalogo-real/gti03-035-gti-gti03-035-punta-eje-l-c-izq-626-matsuri-28x23.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI03-035-pedbox-candidate.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI03-035-/Punta-Eje-L-C-Izq-626-Matsuri-28X23-",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/03I09037.png"
+      ],
+      "sha256": "8beb491575206b12a6fdfb9d75498bbb9cc753bbd67eef8881356f1ceb86982a",
+      "updatedAt": "2026-08-28T02:55:32.315Z"
+    },
+    "GTI03036": {
+      "sku": "GTI03-036",
+      "name": "PUNTA EJE L/C. DER. 626 MATSURI (28X23) — GTI03-036",
+      "outputImage": "/catalogo-real/gti03-036-gti-gti03-036-punta-eje-l-c-der-626-matsuri-28x23.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI03-036-source.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/gti03-036/Punta-Eje-L-C-Der-626-Matsuri-28X23-",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/03I09038.png"
+      ],
+      "sha256": "8fef8093afa6f80e5c1074c8f7ff5a36e2f3a4bcc5ca45f6b4505b9e91a75c0c",
+      "updatedAt": "2026-08-28T02:55:32.316Z"
+    },
+    "GTI03045": {
+      "sku": "GTI03-045",
+      "name": "PUNTA EJE L/C. KIA RIO 1.3 (26X21) — GTI03-045",
+      "outputImage": "/catalogo-real/gti03-045-gti-gti03-045-punta-eje-l-c-kia-rio-1-3-26x21.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI03-045-source.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI03-045-/Punta-Eje-L-C-Kia-Rio-1-3-26X21-",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09048.png"
+      ],
+      "sha256": "63a6ab9c01972a436fb04b16c0fe086bdd06855e861321afcadd2537d6cfe185",
+      "updatedAt": "2026-08-28T02:55:32.316Z"
+    },
+    "GTI03073": {
+      "sku": "GTI03-073",
+      "name": "PUNTA EJE L/C. IZQ. ALLEGRO/MAZDA 3 1.6 (MACHO) (24X22) — GTI03-073",
+      "outputImage": "/catalogo-real/gti03-073-gti-gti03-073-punta-eje-l-c-izq-allegro-mazda-3-1-6-macho-24x22.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI03-073-source.jpg",
+      "sources": [
+        "https://www.imotriz.com/producto/3/gti03-073/Punta-Eje-L-C-Izq-Allegro-Mazda-3-1-6-Macho-24X22-",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/03I09069.JPG"
+      ],
+      "sha256": "8d0ebe69ec064302638ac833f562c6790dae8f1263a87b045e1837d5e3ff9e07",
+      "updatedAt": "2026-08-28T02:55:32.316Z"
+    },
+    "GTI03053": {
+      "sku": "GTI03-053",
+      "name": "PUNTA EJE L/C. IZQ. MAZDA BT-50 DIESEL 2010/ (HEMBRA) (28X36) — GTI03-053",
+      "outputImage": "/catalogo-real/gti03-053-gti-gti03-053-punta-eje-l-c-izq-mazda-bt-50-diesel-2010-hembra-28x36.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI03-053-source.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/gti03-053/Punta-Eje-L-C-Izq-Mazda-Bt-50-Diesel-2010-Hembra-28X36-",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/03I09049.png"
+      ],
+      "sha256": "8a254fa0d5dfd9a538d22360f9d4304e6f9347035b367be7b9f7b2502d0d4926",
+      "updatedAt": "2026-08-28T03:13:07.833Z"
+    },
+    "GTI01038": {
+      "sku": "GTI01-038",
+      "name": "Punta lado rueda GTI — Renault Logan / Sandero / Stepway",
+      "outputImage": "/catalogo-real/gti01-038-gti01-038-punta-lado-rueda-gti-renault-logan-sandero-stepway.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI01-038-vtex-2.jpg",
+      "sources": [
+        "https://www.importadorasasociadas.com/punta-eje-lado-rueda-renault-logan-2006-2015-sandero-2009-2015-stepway-2009-2015-7850-gti01-038/p",
+        "https://www.imotriz.com/producto/3/GTI01038/PUNTA-EJE-L-R-LOGAN-2011-SANDERO-STEPWAY-23x21-",
+        "https://www.mercadolibre.com.co/punta-eje-lado-rueda-renault-logan-2011-sandero-stepway23x21/up/MCOU3072571717"
+      ],
+      "sha256": "1d5ae376620f7e10295d35fde5c0ec3774507b9b85ab3ff2aba8b37692d47ebe",
+      "updatedAt": "2026-08-28T04:41:02.395Z"
+    },
+    "GTI04046": {
+      "sku": "GTI04-046",
+      "name": "Punta lado rueda GTI — Chevrolet Aveo Korea con ABS",
+      "outputImage": "/catalogo-real/gti04-046-gti04-046-punta-lado-rueda-gti-chevrolet-aveo-korea-con-abs.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\public\\catalogo-gti\\gti04-046-punta-eje-aveo-abs-real-v1.webp",
+      "sources": [
+        "https://www.mercadolibre.com.co/punta-eje-lado-rueda-chevrolet-aveo-22x22-con-abs/up/MCOU3075790046",
+        "https://dokument.pub/repuestos-puntas-y-ejes-flipbook-pdf.html"
+      ],
+      "sha256": "99b4966820a91fbfcc83f3651417722caffe873721a9fbf3c45dd366b0481b3d",
+      "updatedAt": "2026-08-28T04:41:02.395Z"
+    },
+    "GTI06052": {
+      "sku": "GTI06-052",
+      "name": "Eje homocinético izquierdo GTI — Kia Picanto I/II",
+      "outputImage": "/catalogo-real/gti06-052-gti06-052-eje-homocinetico-izquierdo-gti-kia-picanto-i-ii.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI06-052-pedbox.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI06-052-/Eje-Homocinetico-Izq-Kia-Picanto-I-Ii-24X25-",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/06I09077.png",
+        "https://dokument.pub/repuestos-puntas-y-ejes-flipbook-pdf.html"
+      ],
+      "sha256": "f1069ff98cb32b34240c95ac98ad5759c405f5a45710c71a2579ba327783188c",
+      "updatedAt": "2026-08-28T04:41:02.395Z"
+    },
+    "GTI06100": {
+      "sku": "GTI06-100",
+      "name": "Punta lado rueda GTI — Hyundai i25 / Kia Rio Spice con ABS",
+      "outputImage": "/catalogo-real/gti06-100-gti06-100-punta-lado-rueda-gti-hyundai-i25-kia-rio-spice-con-abs.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\public\\catalogo-gti\\gti06-100-punta-eje-i25-rio-spice-abs-real-v1.webp",
+      "sources": [
+        "https://www.mercadolibre.com.co/punta-eje-lado-rueda-para-hyundai-i25-kia-rio-spice-25x22/up/MCOU3077402082",
+        "https://www.mercadolibre.com.co/punta-eje-lado-rueda-kia-soluto-rio-spice-hyundai-i25-abs-44/up/MCOU3230948640",
+        "https://dokument.pub/repuestos-puntas-y-ejes-flipbook-pdf.html"
+      ],
+      "sha256": "de11d733bb98477cb9a7c5626843eeec1463151fc96fddc4f5d4a737074eb7fa",
+      "updatedAt": "2026-08-28T04:41:02.395Z"
+    },
+    "GTI04003": {
+      "sku": "GTI04-003",
+      "name": "PUNTA EJE L/R. MONZA 1.8/2.0 33X25. — GTI04-003",
+      "outputImage": "/catalogo-real/gti04-003-gti-gti04-003-punta-eje-l-r-monza-1-8-2-0-33x25.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI04-003-pedbox.JPG",
+      "sources": [
+        "https://www.imotriz.com/producto/3a2057194426f3f82688e441b9b66930/gti04-003/punta-eje-l-r-monza-1-8-2-0-33x25",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/04I09005.JPG"
+      ],
+      "sha256": "1b0c3f48aa646b968c83db7758b9a0cc8ef611500cfea8d2e76343f5d9c666f2",
+      "updatedAt": "2026-08-28T04:55:51.473Z"
+    },
+    "GTI04004": {
+      "sku": "GTI04-004",
+      "name": "PUNTA EJE L/R. SPRINT T. NTN PIN INT. 23X19. — GTI04-004",
+      "outputImage": "/catalogo-real/gti04-004-gti-gti04-004-punta-eje-l-r-sprint-t-ntn-pin-int-23x19.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI04-004-pedbox.png",
+      "sources": [
+        "https://www.imotriz.com/producto/7609cf26141b185ee0984edded459bb5/gti04-004/punta-eje-l-r-sprint-t-ntn-pin-int-23x19",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/04I09006.png"
+      ],
+      "sha256": "1beb07b338b9d3075013ab0bb532c43d576ee58ed7867fce25f615ccaeac3775",
+      "updatedAt": "2026-08-28T04:55:51.474Z"
+    },
+    "GTI04005": {
+      "sku": "GTI04-005",
+      "name": "PUNTA EJE L/R. SPRINT T. TH. PIN EXT. 23X20. — GTI04-005",
+      "outputImage": "/catalogo-real/gti04-005-gti-gti04-005-punta-eje-l-r-sprint-t-th-pin-ext-23x20.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI04-005-pedbox.png",
+      "sources": [
+        "https://www.imotriz.com/producto/639bf7b689918bf3e10e7777282a8494/gti04-005/punta-eje-l-r-sprint-t-th-pin-ext-23x20",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/04I09001.png"
+      ],
+      "sha256": "6686d5316c6db6a73574d85c6d5f1186f93331276de179148187f94e9e503ba4",
+      "updatedAt": "2026-08-28T04:55:51.474Z"
+    },
+    "GTI04006": {
+      "sku": "GTI04-006",
+      "name": "PUNTA EJE L/R. SWIFT 1.3 T. NTN PIN INT. 23X19. — GTI04-006",
+      "outputImage": "/catalogo-real/gti04-006-gti-gti04-006-punta-eje-l-r-swift-1-3-t-ntn-pin-int-23x19.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI04-006-pedbox.png",
+      "sources": [
+        "https://www.imotriz.com/producto/c82a8ba4dc18b375e81a5892106bc6e4/gti04-006/punta-eje-l-r-swift-1-3-t-ntn-pin-int-23x19",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/04I09007.png"
+      ],
+      "sha256": "c4db70db5628f7e39ede0fd8cc866c38c015cb59ec6a4f1fb96dc164463205ea",
+      "updatedAt": "2026-08-28T05:02:49.167Z"
+    },
+    "GTI04007": {
+      "sku": "GTI04-007",
+      "name": "PUNTA EJE L/R. SWIFT 1.3 T. TH. PIN EXT. 23X20. — GTI04-007",
+      "outputImage": "/catalogo-real/gti04-007-gti-gti04-007-punta-eje-l-r-swift-1-3-t-th-pin-ext-23x20.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI04-007-pedbox.png",
+      "sources": [
+        "https://www.imotriz.com/producto/4419e57f6804c0fef1a8b2dbfc3e1040/gti04-007/punta-eje-l-r-swift-1-3-t-th-pin-ext-23x20",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/04I09008.png"
+      ],
+      "sha256": "6c92d3ef987430b099709b60d86e1b4915d76693c0991b38a6d0e306aff02984",
+      "updatedAt": "2026-08-28T05:02:49.168Z"
+    },
+    "GTI04008": {
+      "sku": "GTI04-008",
+      "name": "PUNTA EJE L/R. SWIFT 1.6 25X22. — GTI04-008",
+      "outputImage": "/catalogo-real/gti04-008-gti-gti04-008-punta-eje-l-r-swift-1-6-25x22.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI04-008-pedbox.png",
+      "sources": [
+        "https://www.imotriz.com/producto/e9d72018e7b52366eea8eac63387578f/gti04-008/punta-eje-l-r-swift-1-6-25x22",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/04I09009.png"
+      ],
+      "sha256": "4b8568c0de988f65a5f2acc86b49e0fb0a365bffe44cdf23421ebd2a53542f83",
+      "updatedAt": "2026-08-28T05:02:49.168Z"
+    },
+    "GTI04009": {
+      "sku": "GTI04-009",
+      "name": "PUNTA EJE L/R. STEEM 1.3 25X19. — GTI04-009",
+      "outputImage": "/catalogo-real/gti04-009-gti-gti04-009-punta-eje-l-r-steem-1-3-25x19.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI04-009-pedbox.png",
+      "sources": [
+        "https://www.imotriz.com/producto/4ef701d783523bd2461ce8a65d02d8b0/gti04-009/punta-eje-l-r-steem-1-3-25x19",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/04I09010.png"
+      ],
+      "sha256": "244529bed8baa7b064d78df6745405fb8695ad392018406703bf0a3d037dbdb4",
+      "updatedAt": "2026-08-28T05:02:49.168Z"
+    },
+    "GTI04010": {
+      "sku": "GTI04-010",
+      "name": "PUNTA EJE L/R. STEEM 1.6 25X21. — GTI04-010",
+      "outputImage": "/catalogo-real/gti04-010-gti-gti04-010-punta-eje-l-r-steem-1-6-25x21.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI04-010-pedbox.png",
+      "sources": [
+        "https://www.imotriz.com/producto/2a0657e65d3bcef8487d00b5545f88e9/gti04-010/punta-eje-l-r-steem-1-6-25x21",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/04I09011.png"
+      ],
+      "sha256": "9df47890626bf194498e7f2ae7b3978a21d8dc835d4e03ae993b5cb23a26cc85",
+      "updatedAt": "2026-08-28T05:02:49.168Z"
+    },
+    "GTI04011": {
+      "sku": "GTI04-011",
+      "name": "PUNTA EJE L/R. STEEM 1.6 25X20. — GTI04-011",
+      "outputImage": "/catalogo-real/gti04-011-gti-gti04-011-punta-eje-l-r-steem-1-6-25x20.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI04-011-pedbox.JPG",
+      "sources": [
+        "https://www.imotriz.com/producto/5053a8a7001ee8cf78452ca509e2c92d/gti04-011/punta-eje-l-r-steem-1-6-25x20",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/04I09012.JPG"
+      ],
+      "sha256": "ce6b56f6bf0800afbe7354e0936316fe154e5af4fef2119c9f2f3637be4e3116",
+      "updatedAt": "2026-08-28T05:02:49.168Z"
+    },
+    "GTI04012": {
+      "sku": "GTI04-012",
+      "name": "PUNTA EJE L/R. TROOPER 17X26. — GTI04-012",
+      "outputImage": "/catalogo-real/gti04-012-gti-gti04-012-punta-eje-l-r-trooper-17x26.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI04-012-pedbox.JPG",
+      "sources": [
+        "https://www.imotriz.com/producto/62bad16c590da356d6dd546679b746eb/gti04-012/punta-eje-l-r-trooper-17x26",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/04I09013.JPG"
+      ],
+      "sha256": "491f468ea7929db10a21f2f6fee460c18b18ca9af34d0de7fe23749fcf24da31",
+      "updatedAt": "2026-08-28T05:02:49.168Z"
+    },
+    "GTI04013": {
+      "sku": "GTI04-013",
+      "name": "PUNTA EJE L/R. LUV 2.3 17X23. — GTI04-013",
+      "outputImage": "/catalogo-real/gti04-013-gti-gti04-013-punta-eje-l-r-luv-2-3-17x23.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI04-013-pedbox.png",
+      "sources": [
+        "https://www.imotriz.com/producto/4fd105ed28d07920501a083a54f25059/gti04-013/punta-eje-l-r-luv-2-3-17x23",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/04I09014.png"
+      ],
+      "sha256": "857d0aafbcf550617f4a6234d2f8a61169a81c4cf35818143d154635f3bd6fb4",
+      "updatedAt": "2026-08-28T05:02:49.168Z"
+    },
+    "GTI04014": {
+      "sku": "GTI04-014",
+      "name": "PUNTA EJE L/C. DER. SWIFT 1.3 HEMBRA T. NTN 22X19. — GTI04-014",
+      "outputImage": "/catalogo-real/gti04-014-gti-gti04-014-punta-eje-l-c-der-swift-1-3-hembra-t-ntn-22x19.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI04-014-pedbox.png",
+      "sources": [
+        "https://www.imotriz.com/producto/682cb7121f1becab9beb5903b55b1a29/gti04-014/punta-eje-l-c-der-swift-1-3-hembra-t-ntn-22x19",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/04I09015.png"
+      ],
+      "sha256": "f6a86d722f6ec839551c3087965dae2c278e94d2cd36c0e375fae99752bfb1c4",
+      "updatedAt": "2026-08-28T05:02:49.168Z"
+    },
+    "GTI04015": {
+      "sku": "GTI04-015",
+      "name": "PUNTA EJE L/C. IZQ. SWIFT 1.3 MACHO T. NTN 22X19. — GTI04-015",
+      "outputImage": "/catalogo-real/gti04-015-gti-gti04-015-punta-eje-l-c-izq-swift-1-3-macho-t-ntn-22x19.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI04-015-pedbox.JPG",
+      "sources": [
+        "https://www.imotriz.com/producto/8b8d126fa4195df1c818d46ffb763720/gti04-015/punta-eje-l-c-izq-swift-1-3-macho-t-ntn-22x19",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/04I09016.JPG"
+      ],
+      "sha256": "b77330bca5ed1afbae2c8656c3cff9b85f383da384ba0c5346684a4df0598c70",
+      "updatedAt": "2026-08-28T05:02:49.168Z"
+    },
+    "GTI04016": {
+      "sku": "GTI04-016",
+      "name": "PUNTA EJE L/C. SPRINT CON TRICETA 22X19. — GTI04-016",
+      "outputImage": "/catalogo-real/gti04-016-gti-gti04-016-punta-eje-l-c-sprint-con-triceta-22x19.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI04-016-pedbox.png",
+      "sources": [
+        "https://www.imotriz.com/producto/c4e8f8d635996d0322fc116438a4ebd3/gti04-016/punta-eje-l-c-sprint-con-triceta-22x19",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/04I09018.png"
+      ],
+      "sha256": "b06da1ce49120944d8a10f45e04c6b40a59eab10d78fe2e32b055973b81487e4",
+      "updatedAt": "2026-08-28T05:04:47.865Z"
+    },
+    "GTI04017": {
+      "sku": "GTI04-017",
+      "name": "PUNTA EJE L/R. LUV 1.6 24X23. — GTI04-017",
+      "outputImage": "/catalogo-real/gti04-017-gti-gti04-017-punta-eje-l-r-luv-1-6-24x23.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI04-017-pedbox.png",
+      "sources": [
+        "https://www.imotriz.com/producto/8381ebb6a4b34f05e888a568a7b9e6eb/gti04-017/punta-eje-l-r-luv-1-6-24x23",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/04I09017.png"
+      ],
+      "sha256": "1c26ba19802c35b4ca6cdd56a796d80517983511144693fc44ef48fbc4b9efe5",
+      "updatedAt": "2026-08-28T05:04:47.866Z"
+    },
+    "GTI04020": {
+      "sku": "GTI04-020",
+      "name": "PUNTA EJE L/R. CHEV. ALTO/WAGON R 23X19. — GTI04-020",
+      "outputImage": "/catalogo-real/gti04-020-gti-gti04-020-punta-eje-l-r-chev-alto-wagon-r-23x19.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI04-020-pedbox.png",
+      "sources": [
+        "https://www.imotriz.com/producto/979e3889054d18b2c0e5732dca84cdcc/gti04-020/punta-eje-l-r-chev-alto-wagon-r-23x19",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/04I09021.png"
+      ],
+      "sha256": "69b145663f91db0fc7b4632de1aeb9f408ed89bcd55d9ce713ed8f732b918801",
+      "updatedAt": "2026-08-28T05:04:47.866Z"
+    },
+    "GTI04021": {
+      "sku": "GTI04-021",
+      "name": "PUNTA EJE L/R. SWIFT 1.6 VENEZOLANO 23X22. — GTI04-021",
+      "outputImage": "/catalogo-real/gti04-021-gti-gti04-021-punta-eje-l-r-swift-1-6-venezolano-23x22.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI04-021-pedbox.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3be0dea70bd389935bdbd95a5f9b72b6/gti04-021/punta-eje-l-r-swift-1-6-venezolano-23x22",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/04I09022.png"
+      ],
+      "sha256": "ffc4b55a46e7f3614e2decf4ac6fc308457bda24a38ee2baecae9015aa0685e3",
+      "updatedAt": "2026-08-28T05:04:47.866Z"
+    },
+    "GTI04022": {
+      "sku": "GTI04-022",
+      "name": "TRICETA EJE SPRINT AGUJAS 19 ESTRIAS. — GTI04-022",
+      "outputImage": "/catalogo-real/gti04-022-gti-gti04-022-triceta-eje-sprint-agujas-19-estrias.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI04-022-pedbox.png",
+      "sources": [
+        "https://www.imotriz.com/producto/491a0866c672d4e75a991a8c24bae0d1/gti04-022/triceta-eje-sprint-agujas-19",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/04I09025.png"
+      ],
+      "sha256": "01ae09e079cbe98d07c2d2a9ec94d636fe33d4567509e071f19f8755fdb6a379",
+      "updatedAt": "2026-08-28T05:04:47.866Z"
+    },
+    "GTI04023": {
+      "sku": "GTI04-023",
+      "name": "PUNTA EJE L/R. VITARA 26X22. — GTI04-023",
+      "outputImage": "/catalogo-real/gti04-023-gti-gti04-023-punta-eje-l-r-vitara-26x22.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI04-023-pedbox.png",
+      "sources": [
+        "https://www.imotriz.com/producto/b5ec6726ff69fe4e8dd56e88728f0464/gti04-023/punta-eje-l-r-vitara-26x22",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/04I09029.png"
+      ],
+      "sha256": "0e644c6e15c4df30bd84ce14697f89d2c1d3c59ba99c4a867e7a2e75039407d3",
+      "updatedAt": "2026-08-28T05:04:47.866Z"
+    },
+    "GTI04026": {
+      "sku": "GTI04-026",
+      "name": "PUNTA EJE L/C. IZQ. SWIFT 1.6 26X22. — GTI04-026",
+      "outputImage": "/catalogo-real/gti04-026-gti-gti04-026-punta-eje-l-c-izq-swift-1-6-26x22.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI04-026-imotriz.JPG",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI04-026-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/04I09032.JPG"
+      ],
+      "sha256": "15ce9c0eb6bbbadb669ce695fc5786a4ddd0723ebaff8250df7ed7c67e45e617",
+      "updatedAt": "2026-08-28T05:12:34.240Z"
+    },
+    "GTI04027": {
+      "sku": "GTI04-027",
+      "name": "PUNTA EJE L/C. DER. SWIFT 1.6 26X22. — GTI04-027",
+      "outputImage": "/catalogo-real/gti04-027-gti-gti04-027-punta-eje-l-c-der-swift-1-6-26x22.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI04-027-imotriz.JPG",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI04-027-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/04I09033.JPG"
+      ],
+      "sha256": "f568b883665cbe4b098d465817c8fb2c7d42955804dba3467719a206fea10b7c",
+      "updatedAt": "2026-08-28T05:12:34.241Z"
+    },
+    "GTI04030": {
+      "sku": "GTI04-030",
+      "name": "EJE HOMOCINETICO IZQ. SPRINT N. DISEÑO 23X22. — GTI04-030",
+      "outputImage": "/catalogo-real/gti04-030-gti-gti04-030-eje-homocinetico-izq-sprint-n-diseno-23x22.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI04-030-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI04-030-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/04I09038.png"
+      ],
+      "sha256": "eb0dc03e5ffaa2bbed13367fbe489416bb3f2a22529420efa610697cae8cb011",
+      "updatedAt": "2026-08-28T05:12:34.241Z"
+    },
+    "GTI04031": {
+      "sku": "GTI04-031",
+      "name": "EJE HOMOCINETICO DER. SPRINT N. DISEÑO 23X22. — GTI04-031",
+      "outputImage": "/catalogo-real/gti04-031-gti-gti04-031-eje-homocinetico-der-sprint-n-diseno-23x22.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI04-031-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI04-031-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/04I09039.png"
+      ],
+      "sha256": "1e878d7bda106cdb7dbeab20e7125a59cb70962b409fb7aadf62a6e6dd238e7a",
+      "updatedAt": "2026-08-28T05:12:34.241Z"
+    },
+    "GTI04032": {
+      "sku": "GTI04-032",
+      "name": "PUNTA EJE L/C. SPRINT NUEVO DISEÑO MACHO 22X22. — GTI04-032",
+      "outputImage": "/catalogo-real/gti04-032-gti-gti04-032-punta-eje-l-c-sprint-nuevo-diseno-macho-22x22.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI04-032-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI04-032-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/04I09036.png"
+      ],
+      "sha256": "007663bac361fef9cfdf72378fab042cc191c7016c06e0fecbaa90272b835622",
+      "updatedAt": "2026-08-28T05:12:34.241Z"
+    },
+    "GTI04033": {
+      "sku": "GTI04-033",
+      "name": "PUNTA EJE L/C. DER. SWIFT 1.3 NUEVO DISEÑO HEMBRA 22X22. — GTI04-033",
+      "outputImage": "/catalogo-real/gti04-033-gti-gti04-033-punta-eje-l-c-der-swift-1-3-nuevo-diseno-hembra-22x22.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI04-033-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI04-033-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/04I09037.png"
+      ],
+      "sha256": "331f9333efb1ebce85ddd9b0b4bc3e6e1d87dfb5c5e4b38ffa13ec5ecef68ffa",
+      "updatedAt": "2026-08-28T05:12:34.241Z"
+    },
+    "GTI04034": {
+      "sku": "GTI04-034",
+      "name": "PUNTA EJE L/R. CORSA EVOLUTION/DW. LANOS T. KOREA 22X22. — GTI04-034",
+      "outputImage": "/catalogo-real/gti04-034-gti-gti04-034-punta-eje-l-r-corsa-evolution-dw-lanos-t-korea-22x22.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI04-034-imotriz.JPG",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI04-034-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/04I09034.JPG"
+      ],
+      "sha256": "a4a28c6ddc39591f2c0b1c220985b630ad42daad7e22fca02650e12036f68280",
+      "updatedAt": "2026-08-28T05:12:34.241Z"
+    },
+    "GTI04036": {
+      "sku": "GTI04-036",
+      "name": "EJE HOMOCINETICO DER. SWIFT 1.3 N. DISEÑO 23X22. — GTI04-036",
+      "outputImage": "/catalogo-real/gti04-036-gti-gti04-036-eje-homocinetico-der-swift-1-3-n-diseno-23x22.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI04-036-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI04-036-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/04I09040.png"
+      ],
+      "sha256": "acf67ec519d40d1d04efd27c9a1b14ce00b02e26180f515548960a96ebb9c153",
+      "updatedAt": "2026-08-28T05:17:43.313Z"
+    },
+    "GTI04037": {
+      "sku": "GTI04-037",
+      "name": "EJE HOMOCINETICO IZQ. SWIFT 1.3 N. DISEÑO 23X22. — GTI04-037",
+      "outputImage": "/catalogo-real/gti04-037-gti-gti04-037-eje-homocinetico-izq-swift-1-3-n-diseno-23x22.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI04-037-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI04-037-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/04I09041.png"
+      ],
+      "sha256": "15e0777028c4cb31d5646a12280e91fa9d4ecb7681f0890314babe8d227e0057",
+      "updatedAt": "2026-08-28T05:17:43.313Z"
+    },
+    "GTI04038": {
+      "sku": "GTI04-038",
+      "name": "PUNTA EJE L/R. AVEO/SAIL SIN ABS 22X23. — GTI04-038",
+      "outputImage": "/catalogo-real/gti04-038-gti-gti04-038-punta-eje-l-r-aveo-sail-sin-abs-22x23.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI04-038-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI04-038-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/04I09048.png"
+      ],
+      "sha256": "e3f17c59a0558f18dad7ad9f4f2ae40cb0dd30f5ae108da0d7e8263edb3000bb",
+      "updatedAt": "2026-08-28T05:17:43.313Z"
+    },
+    "GTI04039": {
+      "sku": "GTI04-039",
+      "name": "PUNTA EJE L/R. AVEO/SAIL CON ABS 22X23. — GTI04-039",
+      "outputImage": "/catalogo-real/gti04-039-gti-gti04-039-punta-eje-l-r-aveo-sail-con-abs-22x23.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI04-039-imotriz.jpg",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI04-039-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/04I09049.jpg"
+      ],
+      "sha256": "1e540812d152f1eba39e63098b414447ecaf062a6479e5c83083b59c2d9d012a",
+      "updatedAt": "2026-08-28T05:17:43.313Z"
+    },
+    "GTI04040": {
+      "sku": "GTI04-040",
+      "name": "EJE HOMOCINETICO IZQ. SPARK/CRONOS 23X22. — GTI04-040",
+      "outputImage": "/catalogo-real/gti04-040-gti-gti04-040-eje-homocinetico-izq-spark-cronos-23x22.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI04-040-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI04-040-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/04I09026.png"
+      ],
+      "sha256": "75792356cf116f114b42e68afe85a33ec18c42b5a5429be73fccc7456d635d96",
+      "updatedAt": "2026-08-28T05:17:43.313Z"
+    },
+    "GTI04041": {
+      "sku": "GTI04-041",
+      "name": "EJE HOMOCINETICO DER. SPARK/CRONOS 23X22. — GTI04-041",
+      "outputImage": "/catalogo-real/gti04-041-gti-gti04-041-eje-homocinetico-der-spark-cronos-23x22.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI04-041-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI04-041-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/04I09027.png"
+      ],
+      "sha256": "5133427aaf6b6ad8b519824182fc8e882a5bf0ef77a82473a5879461a4874092",
+      "updatedAt": "2026-08-28T05:17:43.313Z"
+    },
+    "GTI04043": {
+      "sku": "GTI04-043",
+      "name": "PUNTA EJE L/C. AVEO/OPTRA 1.4 MEC. Y AUT. 34X22. — GTI04-043",
+      "outputImage": "/catalogo-real/gti04-043-gti-gti04-043-punta-eje-l-c-aveo-optra-1-4-mec-y-aut-34x22.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI04-043-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI04-043-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/04I09042.png"
+      ],
+      "sha256": "d9b8f0d0822bf471f3e1c0ad5986dc9bc2431a9e0bc668e688b7f633d6501786",
+      "updatedAt": "2026-08-28T05:17:43.313Z"
+    },
+    "GTI04044": {
+      "sku": "GTI04-044",
+      "name": "PUNTA EJE L/C. CORSA EVOLUTION 22X22. — GTI04-044",
+      "outputImage": "/catalogo-real/gti04-044-gti-gti04-044-punta-eje-l-c-corsa-evolution-22x22.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI04-044-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI04-044-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/04I09051.png"
+      ],
+      "sha256": "b92212d6fbcff18acb2bd6878944f1166d1d812f0057e84c7d852c404169cdaf",
+      "updatedAt": "2026-08-28T05:17:43.313Z"
+    },
+    "GTI04045": {
+      "sku": "GTI04-045",
+      "name": "PUNTA EJE L/R. GRAND VITARA 26X29. — GTI04-045",
+      "outputImage": "/catalogo-real/gti04-045-gti-gti04-045-punta-eje-l-r-grand-vitara-26x29.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI04-045-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI04-045-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/04I09053.png"
+      ],
+      "sha256": "83213b1240d290682a9b86becc956fc58e60b1d6771be3619b6b8aa813abdcd4",
+      "updatedAt": "2026-08-28T05:17:43.313Z"
+    },
+    "GTI04047": {
+      "sku": "GTI04-047",
+      "name": "PUNTA EJE L/R. OPTRA 1.8/VIVANT 33X29. — GTI04-047",
+      "outputImage": "/catalogo-real/gti04-047-gti-gti04-047-punta-eje-l-r-optra-1-8-vivant-33x29.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI04-047-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI04-047-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/04I09047.png"
+      ],
+      "sha256": "1440eb5884d95cfbb90d3a04dc0f4fd2c62531a2dd41d55f1aad1424071c0959",
+      "updatedAt": "2026-08-28T05:17:43.313Z"
+    },
+    "GTI04048": {
+      "sku": "GTI04-048",
+      "name": "PUNTA EJE L/R. GRAND VITARA 06/ 26X24. — GTI04-048",
+      "outputImage": "/catalogo-real/gti04-048-gti-gti04-048-punta-eje-l-r-grand-vitara-06-26x24.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI04-048-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI04-048-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/04I09054.png"
+      ],
+      "sha256": "8debe1c721ed9ee9f99f895d01179b56508d355fa2ac15c8b2ab1d277073bcee",
+      "updatedAt": "2026-08-28T05:21:02.997Z"
+    },
+    "GTI04049": {
+      "sku": "GTI04-049",
+      "name": "PUNTA EJE L/C. DER. LUV 1.6/2.3 LARGA 23X23. — GTI04-049",
+      "outputImage": "/catalogo-real/gti04-049-gti-gti04-049-punta-eje-l-c-der-luv-1-6-2-3-larga-23x23.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI04-049-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI04-049-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/04I09050.png"
+      ],
+      "sha256": "eeefc44ad1a94c6fb2bf4d8d8cc86c1e83aede40dabf4b6c9e53d7b5916a5feb",
+      "updatedAt": "2026-08-28T05:21:02.998Z"
+    },
+    "GTI04050": {
+      "sku": "GTI04-050",
+      "name": "PUNTA EJE L/C. IZQ. LUV 1.6/2.3 CORTA 23X23. — GTI04-050",
+      "outputImage": "/catalogo-real/gti04-050-gti-gti04-050-punta-eje-l-c-izq-luv-1-6-2-3-corta-23x23.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI04-050-imotriz.JPG",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI04-050-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/04I09055.JPG"
+      ],
+      "sha256": "e4187653f0ab529cd8841f49b17b517bc846f98e92174dbf15a27273a1ea7538",
+      "updatedAt": "2026-08-28T05:21:02.998Z"
+    },
+    "GTI04051": {
+      "sku": "GTI04-051",
+      "name": "EJE HOMOCINETICO LUV 2.3 DER. (LARGO) 17X23. — GTI04-051",
+      "outputImage": "/catalogo-real/gti04-051-gti-gti04-051-eje-homocinetico-luv-2-3-der-largo-17x23.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI04-051-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI04-051-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/04I09056.png"
+      ],
+      "sha256": "9c69c38e5b29208e1f1e109792f1ef26f2f4904395869b78004e33a6d40ae618",
+      "updatedAt": "2026-08-28T05:21:02.998Z"
+    },
+    "GTI04052": {
+      "sku": "GTI04-052",
+      "name": "EJE HOMOCINETICO LUV 2.3 IZQ. (CORTO) 17X23. — GTI04-052",
+      "outputImage": "/catalogo-real/gti04-052-gti-gti04-052-eje-homocinetico-luv-2-3-izq-corto-17x23.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI04-052-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI04-052-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/04I09057.png"
+      ],
+      "sha256": "783d86de216c731fbc9cba85b4d349720209c4e0ad6c96e56644cef480cc2e4f",
+      "updatedAt": "2026-08-28T05:21:02.998Z"
+    },
+    "GTI04053": {
+      "sku": "GTI04-053",
+      "name": "PUNTA EJE L/R. OPTRA 33X22. PIN EXT. — GTI04-053",
+      "outputImage": "/catalogo-real/gti04-053-gti-gti04-053-punta-eje-l-r-optra-33x22-pin-ext.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI04-053-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI04-053-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/04I09058.png"
+      ],
+      "sha256": "120561664ff758ebe783fe981b8f2b7915f3b4717e305f7d61be5661b505c592",
+      "updatedAt": "2026-08-28T05:21:02.998Z"
+    },
+    "GTI04056": {
+      "sku": "GTI04-056",
+      "name": "EJE HOMOCINETICO LUV 1.6 (LARGO) 24X23. — GTI04-056",
+      "outputImage": "/catalogo-real/gti04-056-gti-gti04-056-eje-homocinetico-luv-1-6-largo-24x23.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI04-056-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI04-056-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/04I09061.png"
+      ],
+      "sha256": "1ecfb995d1c0aa75c36f53f220223be464cc8ca8eb0c45f768259b7bbb9948aa",
+      "updatedAt": "2026-08-28T05:21:02.998Z"
+    },
+    "GTI04057": {
+      "sku": "GTI04-057",
+      "name": "EJE HOMOCINETICO LUV 1.6 (CORTO) 24X23. — GTI04-057",
+      "outputImage": "/catalogo-real/gti04-057-gti-gti04-057-eje-homocinetico-luv-1-6-corto-24x23.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI04-057-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI04-057-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/04I09062.png"
+      ],
+      "sha256": "90ed7a6d811b9593ca5e2a3c1bc61ca243559db0d5aebe6e59350ed8c8eb8651",
+      "updatedAt": "2026-08-28T05:21:02.998Z"
+    },
+    "GTI04060": {
+      "sku": "GTI04-060",
+      "name": "PUNTA EJE L/C. STEEM AUTOMATICO 22X20. — GTI04-060",
+      "outputImage": "/catalogo-real/gti04-060-gti-gti04-060-punta-eje-l-c-steem-automatico-22x20.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI04-060-imotriz.JPG",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI04-060-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/04I09063.JPG"
+      ],
+      "sha256": "459043bbb67aab4a9bfaacab9b9a3a553d48150fe7317942c856c858377a8471",
+      "updatedAt": "2026-08-28T14:38:50.113Z"
+    },
+    "GTI04061": {
+      "sku": "GTI04-061",
+      "name": "PUNTA EJE L/C. DER. STEEM 1.3/1.6 (HEMBRA) 22X21. — GTI04-061",
+      "outputImage": "/catalogo-real/gti04-061-gti-gti04-061-punta-eje-l-c-der-steem-1-3-1-6-hembra-22x21.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI04-061-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI04-061-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/04I09068.png"
+      ],
+      "sha256": "d0dd42377111894c0a080d87a2af5d827f503d130371488710d2fe0fd6c96269",
+      "updatedAt": "2026-08-28T14:38:50.114Z"
+    },
+    "GTI04062": {
+      "sku": "GTI04-062",
+      "name": "PUNTA EJE L/C. IZQ. STEEM 1.3/1.6 (MACHO) 22X21. — GTI04-062",
+      "outputImage": "/catalogo-real/gti04-062-gti-gti04-062-punta-eje-l-c-izq-steem-1-3-1-6-macho-22x21.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI04-062-imotriz.JPG",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI04-062-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/04I09069.JPG"
+      ],
+      "sha256": "d7e92f77babe9e02407153d16254d92b15210cceb70df02860dc899c515fcfac",
+      "updatedAt": "2026-08-28T14:38:50.114Z"
+    },
+    "GTI04067": {
+      "sku": "GTI04-067",
+      "name": "EJE HOMOCINETICO IZQ. CAPTIVA 2.4 2011/ 30X34. — GTI04-067",
+      "outputImage": "/catalogo-real/gti04-067-gti-gti04-067-eje-homocinetico-izq-captiva-2-4-2011-30x34.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI04-067-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI04-067-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/04I09076.png"
+      ],
+      "sha256": "6b05fc615967471ea4b3d8fe3fdc81d1679cae502b49951131b7036cc531a881",
+      "updatedAt": "2026-08-28T14:38:50.114Z"
+    },
+    "GTI04070": {
+      "sku": "GTI04-070",
+      "name": "PUNTA EJE L/C. DER. CAPTIVA 2.4 AUTOMATICA (MACHO) 34X24. — GTI04-070",
+      "outputImage": "/catalogo-real/gti04-070-gti-gti04-070-punta-eje-l-c-der-captiva-2-4-automatica-macho-34x24.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI04-070-imotriz.JPG",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI04-070-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/04I09079.JPG"
+      ],
+      "sha256": "8e23a720e71784586a146a144af5f573cf23eb43f0dd80a217d5ecd422ff145a",
+      "updatedAt": "2026-08-28T14:38:50.114Z"
+    },
+    "GTI04071": {
+      "sku": "GTI04-071",
+      "name": "PUNTA EJE L/C. IZQ. CAPTIVA 2.4 AUTOMATICA (HEMBRA) 34X24. — GTI04-071",
+      "outputImage": "/catalogo-real/gti04-071-gti-gti04-071-punta-eje-l-c-izq-captiva-2-4-automatica-hembra-34x24.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI04-071-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI04-071-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/04I09080.png"
+      ],
+      "sha256": "05d1f365fd87573736b7268f82fa862b801cdccb7b658aea6146d0a99f99579c",
+      "updatedAt": "2026-08-28T14:38:50.114Z"
+    },
+    "GTI04075": {
+      "sku": "GTI04-075",
+      "name": "EJE HOMOCINETICO IZQ. CORSA 22X22. — GTI04-075",
+      "outputImage": "/catalogo-real/gti04-075-gti-gti04-075-eje-homocinetico-izq-corsa-22x22.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI04-075-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI04-075-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/04I09084.png"
+      ],
+      "sha256": "72c260ccb43124836cf67b4caa7824c10236365b510cac024154684824a6134d",
+      "updatedAt": "2026-08-28T14:45:02.409Z"
+    },
+    "GTI04076": {
+      "sku": "GTI04-076",
+      "name": "EJE HOMOCINETICO IZQ. OPTRA 1.4 SIN ABS 33X34. — GTI04-076",
+      "outputImage": "/catalogo-real/gti04-076-gti-gti04-076-eje-homocinetico-izq-optra-1-4-sin-abs-33x34.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI04-076-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI04-076-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/04I09085.png"
+      ],
+      "sha256": "96c4b900f8071657da999cffe0ef77e318db8e32d94c51c54146042b510a2b60",
+      "updatedAt": "2026-08-28T14:45:02.409Z"
+    },
+    "GTI04077": {
+      "sku": "GTI04-077",
+      "name": "EJE HOMOCINETICO DER. OPTRA 1.4 SIN ABS 33X34. — GTI04-077",
+      "outputImage": "/catalogo-real/gti04-077-gti-gti04-077-eje-homocinetico-der-optra-1-4-sin-abs-33x34.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI04-077-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI04-077-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/04I09086.png"
+      ],
+      "sha256": "4af404b71fe342b97378b69a36259166ec4d1571d49205edc1e38e9c76baab1c",
+      "updatedAt": "2026-08-28T14:45:02.409Z"
+    },
+    "GTI04079": {
+      "sku": "GTI04-079",
+      "name": "PUNTA EJE L/R. TRAS. GRAND VITARA SZ 28X26. — GTI04-079",
+      "outputImage": "/catalogo-real/gti04-079-gti-gti04-079-punta-eje-l-r-tras-grand-vitara-sz-28x26.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI04-079-imotriz.JPG",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI04-079-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/04I09088.JPG"
+      ],
+      "sha256": "2083ac710c100c74365f62ba8bea55e2c3e3e0b1b368dd372d3b81663db22123",
+      "updatedAt": "2026-08-28T14:45:02.409Z"
+    },
+    "GTI04080": {
+      "sku": "GTI04-080",
+      "name": "PUNTA EJE L/C. TRAS. GRAND VITARA SZ FLANCHE 26. — GTI04-080",
+      "outputImage": "/catalogo-real/gti04-080-gti-gti04-080-punta-eje-l-c-tras-grand-vitara-sz-flanche-26.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI04-080-imotriz.JPG",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI04-080-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/04I09089.JPG"
+      ],
+      "sha256": "a9d05de5d5210b85c23d17c3c9702fa3f41ab1e5990d2c641182d1d9937d615a",
+      "updatedAt": "2026-08-28T14:45:02.409Z"
+    },
+    "GTI04081": {
+      "sku": "GTI04-081",
+      "name": "PUNTA EJE L/R. EPICA 28X24. — GTI04-081",
+      "outputImage": "/catalogo-real/gti04-081-gti-gti04-081-punta-eje-l-r-epica-28x24.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI04-081-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI04-081-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/04I09090.png"
+      ],
+      "sha256": "d76225d8a4178900e3ab9de22e39dde9d4ba254eb8b5dcd6642edf9fe5ecd374",
+      "updatedAt": "2026-08-28T14:45:02.409Z"
+    },
+    "GTI04082": {
+      "sku": "GTI04-082",
+      "name": "PUNTA EJE L/R. EPICA 28X32. — GTI04-082",
+      "outputImage": "/catalogo-real/gti04-082-gti-gti04-082-punta-eje-l-r-epica-28x32.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI04-082-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI04-082-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/04I09092.png"
+      ],
+      "sha256": "db99d98b3a5c6c6a11034cc5b5268c325298b3db73fc68867b294612fb76e0a4",
+      "updatedAt": "2026-08-28T14:45:02.409Z"
+    },
+    "GTI04083": {
+      "sku": "GTI04-083",
+      "name": "EJE HOMOCINETICO IZQ. SAIL 22X22. — GTI04-083",
+      "outputImage": "/catalogo-real/gti04-083-gti-gti04-083-eje-homocinetico-izq-sail-22x22.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI04-083-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI04-083-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/04I09093.png"
+      ],
+      "sha256": "9831be3be6b143d14f0bbbb5a35c6f81905c1b04beb33044f49fb3e4b284f0aa",
+      "updatedAt": "2026-08-28T14:45:02.409Z"
+    },
+    "GTI04084": {
+      "sku": "GTI04-084",
+      "name": "EJE HOMOCINETICO DER. SAIL 22X22. — GTI04-084",
+      "outputImage": "/catalogo-real/gti04-084-gti-gti04-084-eje-homocinetico-der-sail-22x22.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI04-084-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI04-084-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/04I09094.png"
+      ],
+      "sha256": "f73ee3467c9f219ab36825cae6a847337c61bbaeb8fe5b5d9587064d73f76b3c",
+      "updatedAt": "2026-08-28T14:50:20.845Z"
+    },
+    "GTI04085": {
+      "sku": "GTI04-085",
+      "name": "EJE HOMOCINETICO IZQ. COBALT 25X22. — GTI04-085",
+      "outputImage": "/catalogo-real/gti04-085-gti-gti04-085-eje-homocinetico-izq-cobalt-25x22.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI04-085-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI04-085-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/04I09095.png"
+      ],
+      "sha256": "eb98de2e1fff3a4c1bbe9de4fa21c1bec938172e4d1c2c5d2a6436f4b19e526d",
+      "updatedAt": "2026-08-28T14:50:20.845Z"
+    },
+    "GTI04086": {
+      "sku": "GTI04-086",
+      "name": "EJE HOMOCINETICO DER. COBALT 25X22. — GTI04-086",
+      "outputImage": "/catalogo-real/gti04-086-gti-gti04-086-eje-homocinetico-der-cobalt-25x22.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI04-086-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI04-086-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/04I09096.png"
+      ],
+      "sha256": "d5bf0768b565a78d6b697425feffa630e56002a99674952d30c83c73b0800df5",
+      "updatedAt": "2026-08-28T14:50:20.845Z"
+    },
+    "GTI04087": {
+      "sku": "GTI04-087",
+      "name": "PUNTA EJE L/R. AVEO/SAIL CON ABS 22X23. — GTI04-087",
+      "outputImage": "/catalogo-real/gti04-087-gti-gti04-087-punta-eje-l-r-aveo-sail-con-abs-22x23.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI04-087-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI04-087-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/04I09097.png"
+      ],
+      "sha256": "5f27a4a03b3fcdf381fb5e3646989456d25f06d98d3fdfcf6b96e5c82e504fbc",
+      "updatedAt": "2026-08-28T14:50:20.845Z"
+    },
+    "GTI04091": {
+      "sku": "GTI04-091",
+      "name": "EJE HOMOCINETICO DEL. DER. GRAND VITARA SZ 2.7 08/2011 28X26. — GTI04-091",
+      "outputImage": "/catalogo-real/gti04-091-gti-gti04-091-eje-homocinetico-del-der-grand-vitara-sz-2-7-08-2011-28x26.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI04-091-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI04-091-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/04I09101.png"
+      ],
+      "sha256": "dfebaa4f2601e8fbc7b38739ece49d68dde537c032a3d9c3763c265953a0fe22",
+      "updatedAt": "2026-08-28T14:50:20.845Z"
+    },
+    "GTI04092": {
+      "sku": "GTI04-092",
+      "name": "PUNTA EJE L/C. GRAND VITARA SZ 2.7 08/2011 26X24. — GTI04-092",
+      "outputImage": "/catalogo-real/gti04-092-gti-gti04-092-punta-eje-l-c-grand-vitara-sz-2-7-08-2011-26x24.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI04-092-imotriz.JPG",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI04-092-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/04I09102.JPG"
+      ],
+      "sha256": "905cff59fdfb4e63aea4955b5e1daa007c82227595f617ee36834eaec4bb3078",
+      "updatedAt": "2026-08-28T14:50:20.845Z"
+    },
+    "GTI04093": {
+      "sku": "GTI04-093",
+      "name": "PUNTA EJE L/R. GRAND VITARA SZ 2.7 08/2011 28X24. — GTI04-093",
+      "outputImage": "/catalogo-real/gti04-093-gti-gti04-093-punta-eje-l-r-grand-vitara-sz-2-7-08-2011-28x24.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI04-093-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI04-093-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/04I09103.png"
+      ],
+      "sha256": "401556f9da0623078b5f7e7485535c0293021705620364012263b473c5d16a0c",
+      "updatedAt": "2026-08-28T14:50:20.845Z"
+    },
+    "GTI04097": {
+      "sku": "GTI04-097",
+      "name": "PUNTA EJE L/R. ZAFIRA/ASTRA 33X25. — GTI04-097",
+      "outputImage": "/catalogo-real/gti04-097-gti-gti04-097-punta-eje-l-r-zafira-astra-33x25.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI04-097-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI04-097-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/04I09107.png"
+      ],
+      "sha256": "17f0413f565476c11a3d52d899e629e9c779f48f212ef48fc516723e176c2fcc",
+      "updatedAt": "2026-08-28T14:50:20.845Z"
+    },
+    "GTI04098": {
+      "sku": "GTI04-098",
+      "name": "PUNTA EJE L/R. GRAND VITARA SZ 28X22. — GTI04-098",
+      "outputImage": "/catalogo-real/gti04-098-gti-gti04-098-punta-eje-l-r-grand-vitara-sz-28x22.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI04-098-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI04-098-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/04I09108.png"
+      ],
+      "sha256": "1295004ecaefb0d1baa168a056ecc846abf20d8f329cfd1f9f9bebee6284c469",
+      "updatedAt": "2026-08-28T14:50:20.845Z"
+    },
+    "GTI04099": {
+      "sku": "GTI04-099",
+      "name": "PUNTA EJE L/C. OPTRA 1.8 MEC. 34X24. — GTI04-099",
+      "outputImage": "/catalogo-real/gti04-099-gti-gti04-099-punta-eje-l-c-optra-1-8-mec-34x24.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI04-099-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI04-099-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/04I09109.png"
+      ],
+      "sha256": "4c5d6817253d7357372f1e76e19ea06d5a88af9452508c98aebeafbfa296feec",
+      "updatedAt": "2026-08-28T14:50:20.845Z"
+    },
+    "GTI05002": {
+      "sku": "GTI05-002",
+      "name": "PUNTA EJE L/R. DW. RACER/CIELO T. KOREA VZLA. 22X29. — GTI05-002",
+      "outputImage": "/catalogo-real/gti05-002-gti-gti05-002-punta-eje-l-r-dw-racer-cielo-t-korea-vzla-22x29.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI05-002-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI05-002-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/05I09001.png"
+      ],
+      "sha256": "5e9cab4aab292cb019bed6f6115c2b780749f206ead130368b3a40e1eeb0bcc5",
+      "updatedAt": "2026-08-28T14:56:33.797Z"
+    },
+    "GTI05004": {
+      "sku": "GTI05-004",
+      "name": "PUNTA EJE L/C. DW. TICO/MATIZ/CHERY QQ/ALTO IZQ. 22X19. — GTI05-004",
+      "outputImage": "/catalogo-real/gti05-004-gti-gti05-004-punta-eje-l-c-dw-tico-matiz-chery-qq-alto-izq-22x19.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI05-004-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI05-004-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/05I09003.png"
+      ],
+      "sha256": "c70f5b608e75d2a8b0ff07b86565075357758d90ad21ac7b71629accce2ccce9",
+      "updatedAt": "2026-08-28T14:56:33.798Z"
+    },
+    "GTI05006": {
+      "sku": "GTI05-006",
+      "name": "PUNTA EJE L/C. DW. RACER/CIELO 34X22. — GTI05-006",
+      "outputImage": "/catalogo-real/gti05-006-gti-gti05-006-punta-eje-l-c-dw-racer-cielo-34x22.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI05-006-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI05-006-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/05I09004.png"
+      ],
+      "sha256": "b1f39ad72445172a07a3b0222daa13c165b160458f6b2493950615a63e91979f",
+      "updatedAt": "2026-08-28T14:56:33.798Z"
+    },
+    "GTI05007": {
+      "sku": "GTI05-007",
+      "name": "EJE HOMOCINETICO IZQ. DW. RACER/CIELO 22X34. — GTI05-007",
+      "outputImage": "/catalogo-real/gti05-007-gti-gti05-007-eje-homocinetico-izq-dw-racer-cielo-22x34.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI05-007-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI05-007-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/05I09006.png"
+      ],
+      "sha256": "ce1605c8282b985e7fc1ed6e6b0c57d680a682b4bbff864fbca522497aa42565",
+      "updatedAt": "2026-08-28T14:56:33.798Z"
+    },
+    "GTI05010": {
+      "sku": "GTI05-010",
+      "name": "PUNTA EJE L/R. DW. NUBIRA 33X22. — GTI05-010",
+      "outputImage": "/catalogo-real/gti05-010-gti-gti05-010-punta-eje-l-r-dw-nubira-33x22.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI05-010-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI05-010-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/05I09011.png"
+      ],
+      "sha256": "551d103a7c3473d5a25295d62ee292f3afc00dee940a56598ad3da691a280da3",
+      "updatedAt": "2026-08-28T14:56:33.798Z"
+    },
+    "GTI06002": {
+      "sku": "GTI06-002",
+      "name": "PUNTA EJE L/R. HD. ATOS /02 25X19. — GTI06-002",
+      "outputImage": "/catalogo-real/gti06-002-gti-gti06-002-punta-eje-l-r-hd-atos-02-25x19.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI06-002-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI06-002-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/06I09005.png"
+      ],
+      "sha256": "11bf0943fec0690a2c52979e228ec535cacadb9eea0e31af22124d1ff4ab9ff0",
+      "updatedAt": "2026-08-28T14:56:33.798Z"
+    },
+    "GTI06004": {
+      "sku": "GTI06-004",
+      "name": "PUNTA EJE L/R. HD. NEW ELANTRA/SONATA 25X25. — GTI06-004",
+      "outputImage": "/catalogo-real/gti06-004-gti-gti06-004-punta-eje-l-r-hd-new-elantra-sonata-25x25.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI06-004-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI06-004-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/06I09007.png"
+      ],
+      "sha256": "caabb7dbbb473841e300aa3a40df4993bc89ec4c2ba6ea052f91d7399da08658",
+      "updatedAt": "2026-08-28T14:56:33.798Z"
+    },
+    "GTI06005": {
+      "sku": "GTI06-005",
+      "name": "PUNTA EJE L/R. HD. ELANTRA 25X23. — GTI06-005",
+      "outputImage": "/catalogo-real/gti06-005-gti-gti06-005-punta-eje-l-r-hd-elantra-25x23.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI06-005-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI06-005-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/06I09008.png"
+      ],
+      "sha256": "a07588f7f674598eb7f4e300557b2c8fc7851eaa7af4472bf44a2717399f3822",
+      "updatedAt": "2026-08-28T14:56:33.798Z"
+    },
+    "GTI06007": {
+      "sku": "GTI06-007",
+      "name": "EJE INTERCONECCION HD. TUCSON IX-35 DIESEL 4X2 MANUAL 28X28. — GTI06-007",
+      "outputImage": "/catalogo-real/gti06-007-gti-gti06-007-eje-interconeccion-hd-tucson-ix-35-diesel-4x2-manual-28x28.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI06-007-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI06-007-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/06I09088.png"
+      ],
+      "sha256": "4d95d800436df45c089a19afff7960da01f9c9704c5968896082c6d9f53bd403",
+      "updatedAt": "2026-08-28T14:56:33.798Z"
+    },
+    "GTI04100": {
+      "sku": "GTI04-100",
+      "name": "PUNTA EJE L/R. SUZUKI ALTO MN K10 1.0 2013/ 20 DTS — GTI04-100",
+      "outputImage": "/catalogo-real/gti04-100-gti-gti04-100-punta-eje-l-r-suzuki-alto-mn-k10-1-0-2013-20-dts.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI04-100-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI04-100-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/04I09110.png"
+      ],
+      "sha256": "b2c25d613ff001f3eafcaaae8f37f7de088cafb9b12eb851fd49f90d20d2eb73",
+      "updatedAt": "2026-08-28T15:05:00.197Z"
+    },
+    "GTI06008": {
+      "sku": "GTI06-008",
+      "name": "PUNTA EJE L/C. HD. ACCENT/VERNA/GYRO/EXCEL/MITSUBISHI LANCER 25X22 — GTI06-008",
+      "outputImage": "/catalogo-real/gti06-008-gti-gti06-008-punta-eje-l-c-hd-accent-verna-gyro-excel-mitsubishi-lancer-25x22.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI06-008-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI06-008-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/06I09003.png"
+      ],
+      "sha256": "b56fc5a36707fb385354fcac2e0428219b710a727a1c3c60537c8eb88015eb71",
+      "updatedAt": "2026-08-28T15:05:00.197Z"
+    },
+    "GTI06013": {
+      "sku": "GTI06-013",
+      "name": "PUNTA EJE L/C. HD. ATOS/SPARK/CRONOS 22X19 (CUERPO LARGO) — GTI06-013",
+      "outputImage": "/catalogo-real/gti06-013-gti-gti06-013-punta-eje-l-c-hd-atos-spark-cronos-22x19-cuerpo-largo.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI06-013-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI06-013-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/06I09018.png"
+      ],
+      "sha256": "ca95ce8e97800fd246b0bb1edfb0ba8bba9d123c180649428210db98de2b7603",
+      "updatedAt": "2026-08-28T15:05:00.197Z"
+    },
+    "GTI06015": {
+      "sku": "GTI06-015",
+      "name": "EJE HOMOCINETICO IZQ. HD. ATOS 25X22 — GTI06-015",
+      "outputImage": "/catalogo-real/gti06-015-gti-gti06-015-eje-homocinetico-izq-hd-atos-25x22.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI06-015-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI06-015-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/06I09001.png"
+      ],
+      "sha256": "99053d01765aaac50f23ebd9c4d47942cd49559f5fd9720e04d3175517be46d6",
+      "updatedAt": "2026-08-28T15:05:00.197Z"
+    },
+    "GTI06016": {
+      "sku": "GTI06-016",
+      "name": "EJE HOMOCINETICO DER. HD. ATOS 25X22 — GTI06-016",
+      "outputImage": "/catalogo-real/gti06-016-gti-gti06-016-eje-homocinetico-der-hd-atos-25x22.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI06-016-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI06-016-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/06I09009.png"
+      ],
+      "sha256": "032525e650328612c2bbd0ee39662e1b804ba05f7e505869b2aa742c04e47064",
+      "updatedAt": "2026-08-28T15:05:00.197Z"
+    },
+    "GTI06017": {
+      "sku": "GTI06-017",
+      "name": "PUNTA EJE L/R. HD. TUCSON 4X2 27X25 (AUTOMATICO) — GTI06-017",
+      "outputImage": "/catalogo-real/gti06-017-gti-gti06-017-punta-eje-l-r-hd-tucson-4x2-27x25-automatico.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI06-017-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI06-017-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/06I09020.png"
+      ],
+      "sha256": "6c60fa7b14fa71faa147637973f9c74428748daaf1b99f97815a272ed7ef4bbd",
+      "updatedAt": "2026-08-28T15:05:00.197Z"
+    },
+    "GTI06020": {
+      "sku": "GTI06-020",
+      "name": "PUNTA EJE L/R. HD. TUCSON 4X4 27X25 (CON ABS) — GTI06-020",
+      "outputImage": "/catalogo-real/gti06-020-gti-gti06-020-punta-eje-l-r-hd-tucson-4x4-27x25-con-abs.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI06-020-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI06-020-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/06I09023.png"
+      ],
+      "sha256": "7c4bbfa9c56a1e68756d2e1f7b2607e5dccfca8862ba91d8d38711bb7708a532",
+      "updatedAt": "2026-08-28T15:05:00.197Z"
+    },
+    "GTI06021": {
+      "sku": "GTI06-021",
+      "name": "PUNTA EJE L/R. HD. SANTA FE 2.7 2002/2010 27X26 — GTI06-021",
+      "outputImage": "/catalogo-real/gti06-021-gti-gti06-021-punta-eje-l-r-hd-santa-fe-2-7-2002-2010-27x26.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI06-021-imotriz.JPG",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI06-021-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/06I09026.JPG"
+      ],
+      "sha256": "0bd2862a4caf7fd12cde2ad59212daf367508074c9e3ee09b3949cc8febb3e1b",
+      "updatedAt": "2026-08-28T15:05:00.197Z"
+    },
+    "GTI06025": {
+      "sku": "GTI06-025",
+      "name": "EJE HOMOCINETICO DER. KIA RIO STYLUS 24X26 — GTI06-025",
+      "outputImage": "/catalogo-real/gti06-025-gti-gti06-025-eje-homocinetico-der-kia-rio-stylus-24x26.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI06-025-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI06-025-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/06I09034.png"
+      ],
+      "sha256": "6419421beea52ad5283c0340d8a0facf46919cda98342dcd074e0c05f0f10601",
+      "updatedAt": "2026-08-28T15:13:14.007Z"
+    },
+    "GTI06026": {
+      "sku": "GTI06-026",
+      "name": "EJE HOMOCINETICO IZQ. KIA PICANTO ION MECANICO 24X25 — GTI06-026",
+      "outputImage": "/catalogo-real/gti06-026-gti-gti06-026-eje-homocinetico-izq-kia-picanto-ion-mecanico-24x25.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI06-026-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI06-026-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/06I09035.png"
+      ],
+      "sha256": "a1ffed65adb901323b3e563ea131de2df8b962b1a05e8b823b868712edf569dd",
+      "updatedAt": "2026-08-28T15:13:14.008Z"
+    },
+    "GTI06027": {
+      "sku": "GTI06-027",
+      "name": "EJE HOMOCINETICO DER. KIA PICANTO ION MECANICO 24X25 — GTI06-027",
+      "outputImage": "/catalogo-real/gti06-027-gti-gti06-027-eje-homocinetico-der-kia-picanto-ion-mecanico-24x25.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI06-027-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI06-027-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/06I09036.png"
+      ],
+      "sha256": "c4afe6eb8ede7be141c4cec786acc470e8d835359abdcad0686c78579cb6cd2b",
+      "updatedAt": "2026-08-28T15:13:14.008Z"
+    },
+    "GTI06028": {
+      "sku": "GTI06-028",
+      "name": "EJE HOMOCINETICO IZQ. HD. I-10 24X25 — GTI06-028",
+      "outputImage": "/catalogo-real/gti06-028-gti-gti06-028-eje-homocinetico-izq-hd-i-10-24x25.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI06-028-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI06-028-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/06I09037.png"
+      ],
+      "sha256": "9f95ccb0db5878b64709c7774b1b0967b4fa62314688b60b2441e82acd3fa3e7",
+      "updatedAt": "2026-08-28T15:13:14.008Z"
+    },
+    "GTI06039": {
+      "sku": "GTI06-039",
+      "name": "PUNTA EJE L/C. HD. TUCSON (MANUAL) 35X27 — GTI06-039",
+      "outputImage": "/catalogo-real/gti06-039-gti-gti06-039-punta-eje-l-c-hd-tucson-manual-35x27.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI06-039-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI06-039-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/06I09061.png"
+      ],
+      "sha256": "e7da648e83bbfc52b02f6e6ad15ce429fb34084f19319eeb83a111808e323d26",
+      "updatedAt": "2026-08-28T15:13:14.008Z"
+    },
+    "GTI06040": {
+      "sku": "GTI06-040",
+      "name": "PUNTA EJE L/C. HD. TUCSON (AUTOMATICO) — GTI06-040",
+      "outputImage": "/catalogo-real/gti06-040-gti-gti06-040-punta-eje-l-c-hd-tucson-automatico.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI06-040-imotriz.jpg",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI06-040-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/06I09062.JPG"
+      ],
+      "sha256": "6cf1ac0208fcdfdb68662ed16bc67d148b81fbb41c2002660a9d8f01e1c5cd6f",
+      "updatedAt": "2026-08-28T15:22:20.670Z"
+    },
+    "GTI06041": {
+      "sku": "GTI06-041",
+      "name": "EJE HOMOCINETICO DER. LARGO KIA SPORTAGE REVOLUTION GAS. 30X27 — GTI06-041",
+      "outputImage": "/catalogo-real/gti06-041-gti-gti06-041-eje-homocinetico-der-largo-kia-sportage-revolution-gas-30x27.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI06-041-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI06-041-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/06I09066.png"
+      ],
+      "sha256": "bd995b8bce691224592e0680c8a867e3a6f2b08183838ca1cb6857362d9f92e6",
+      "updatedAt": "2026-08-28T15:22:20.671Z"
+    },
+    "GTI06043": {
+      "sku": "GTI06-043",
+      "name": "PUNTA EJE L/C. HD. TUCSON IX-35/KIA SPORTAGE REVOLUTION GAS. 27X24 — GTI06-043",
+      "outputImage": "/catalogo-real/gti06-043-gti-gti06-043-punta-eje-l-c-hd-tucson-ix-35-kia-sportage-revolution-gas-27x24.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI06-043-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI06-043-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/06I09068.png"
+      ],
+      "sha256": "532bf40227723e9be0ad92416e5ba351af1562a54005415d4e1fad541836bd40",
+      "updatedAt": "2026-08-28T15:22:20.671Z"
+    },
+    "GTI06044": {
+      "sku": "GTI06-044",
+      "name": "EJE HOMOCINETICO IZQ. HD. TUCSON 4X2 (AUTOMATICO) 27X27 — GTI06-044",
+      "outputImage": "/catalogo-real/gti06-044-gti-gti06-044-eje-homocinetico-izq-hd-tucson-4x2-automatico-27x27.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI06-044-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI06-044-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/06I09069.png"
+      ],
+      "sha256": "69264487da616400eb9e09ec3a82a3b2e4bc2673c48108aa4843eb42a9f4ba28",
+      "updatedAt": "2026-08-28T15:22:20.671Z"
+    },
+    "GTI06046": {
+      "sku": "GTI06-046",
+      "name": "EJE HOMOCINETICO DER. KIA SORENTO 28X28 — GTI06-046",
+      "outputImage": "/catalogo-real/gti06-046-gti-gti06-046-eje-homocinetico-der-kia-sorento-28x28.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI06-046-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI06-046-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/06I09071.png"
+      ],
+      "sha256": "02abe9ed5455dcdb91a5a6bf58eac8c6eadeebe953e5af38a8525bf347ac6bc6",
+      "updatedAt": "2026-08-28T15:22:20.671Z"
+    },
+    "GTI06048": {
+      "sku": "GTI06-048",
+      "name": "PUNTA EJE L/R. KIA SORENTO 28X25 — GTI06-048",
+      "outputImage": "/catalogo-real/gti06-048-gti-gti06-048-punta-eje-l-r-kia-sorento-28x25.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI06-048-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI06-048-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/06I09073.png"
+      ],
+      "sha256": "31fc838ed30f134a0d69edaf6e227a22481dc021774e04a95e44140f294b1069",
+      "updatedAt": "2026-08-28T15:22:20.671Z"
+    },
+    "GTI06049": {
+      "sku": "GTI06-049",
+      "name": "PUNTA EJE L/C. DER. KIA SORENTO (HEMBRA) 28X25 — GTI06-049",
+      "outputImage": "/catalogo-real/gti06-049-gti-gti06-049-punta-eje-l-c-der-kia-sorento-hembra-28x25.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI06-049-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI06-049-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/06I09074.png"
+      ],
+      "sha256": "812256bfcee41eb5e9e36581602c96b8eb801dedb15cbce6ecd08f010f3bd06a",
+      "updatedAt": "2026-08-28T15:22:20.671Z"
+    },
+    "GTI06050": {
+      "sku": "GTI06-050",
+      "name": "PUNTA EJE L/C. IZQ. KIA SORENTO (MACHO) 30X25 — GTI06-050",
+      "outputImage": "/catalogo-real/gti06-050-gti-gti06-050-punta-eje-l-c-izq-kia-sorento-macho-30x25.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI06-050-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI06-050-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/06I09075.png"
+      ],
+      "sha256": "b3087a72330336717207ca57bb0f5f874cdbc06ab7d1e2471659c2ea9d1027d6",
+      "updatedAt": "2026-08-28T15:22:20.671Z"
+    },
+    "GTI06051": {
+      "sku": "GTI06-051",
+      "name": "EJE HOMOCINETICO DER. KIA PICANTO I/II 24X25 — GTI06-051",
+      "outputImage": "/catalogo-real/gti06-051-gti-gti06-051-eje-homocinetico-der-kia-picanto-i-ii-24x25.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI06-051-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI06-051-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/06I09076.png"
+      ],
+      "sha256": "5a10f067677f95a6d87c6c35b7e30ac937268403a5be8028df0cb11bf77a89aa",
+      "updatedAt": "2026-08-28T15:28:24.324Z"
+    },
+    "GTI06053": {
+      "sku": "GTI06-053",
+      "name": "PUNTA EJE L/R. KIA GRAND CARNIVAL/SEDONA 31X26 — GTI06-053",
+      "outputImage": "/catalogo-real/gti06-053-gti-gti06-053-punta-eje-l-r-kia-grand-carnival-sedona-31x26.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI06-053-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI06-053-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/06I09083.png"
+      ],
+      "sha256": "553c0cf5207e1c7b5bed626ad698b247b4889cb9a827851a300eed4925ad8237",
+      "updatedAt": "2026-08-28T15:28:24.325Z"
+    },
+    "GTI06055": {
+      "sku": "GTI06-055",
+      "name": "PUNTA EJE L/C. KIA CARNIVAL 2.5 (MACHO) 28X26 — GTI06-055",
+      "outputImage": "/catalogo-real/gti06-055-gti-gti06-055-punta-eje-l-c-kia-carnival-2-5-macho-28x26.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI06-055-imotriz.jpg",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI06-055-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/06I09086.JPG"
+      ],
+      "sha256": "74af1d782c0ac4b7cb05391a29f0619d0f27f033096ac71b3ef5068673fe71b6",
+      "updatedAt": "2026-08-28T15:28:24.325Z"
+    },
+    "GTI06056": {
+      "sku": "GTI06-056",
+      "name": "EJE HOMOCINETICO IZQ. HD. SANTA FE 30X27 — GTI06-056",
+      "outputImage": "/catalogo-real/gti06-056-gti-gti06-056-eje-homocinetico-izq-hd-santa-fe-30x27.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI06-056-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI06-056-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/06I09090.png"
+      ],
+      "sha256": "5d8c08064a4f5df201d9e5ff80fc564967b7f41a5f3a32e6aff395fca5d3b6de",
+      "updatedAt": "2026-08-28T15:28:24.325Z"
+    },
+    "GTI06057": {
+      "sku": "GTI06-057",
+      "name": "EJE HOMOCINETICO DER. HD. SANTA FE 30X28 — GTI06-057",
+      "outputImage": "/catalogo-real/gti06-057-gti-gti06-057-eje-homocinetico-der-hd-santa-fe-30x28.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI06-057-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI06-057-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/06I09091.png"
+      ],
+      "sha256": "a9e660cc7be57f11da5babed6e17b9cfbd533803be8f604e07d9447e3482e299",
+      "updatedAt": "2026-08-28T15:28:24.325Z"
+    },
+    "GTI06059": {
+      "sku": "GTI06-059",
+      "name": "PUNTA EJE L/C. DER. HD. SANTA FE (HEMBRA) 28X35 — GTI06-059",
+      "outputImage": "/catalogo-real/gti06-059-gti-gti06-059-punta-eje-l-c-der-hd-santa-fe-hembra-28x35.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI06-059-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI06-059-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/06I09093.png"
+      ],
+      "sha256": "4348f3e71d69b1b60f071648a0d41c5f000b61dd91eb884ac5aaa484b7724892",
+      "updatedAt": "2026-08-28T15:28:24.325Z"
+    },
+    "GTI06060": {
+      "sku": "GTI06-060",
+      "name": "EJE HOMOCINETICO DER. KIA SPORTAGE SQ/HD. IX-35 2.4 27X26 — GTI06-060",
+      "outputImage": "/catalogo-real/gti06-060-gti-gti06-060-eje-homocinetico-der-kia-sportage-sq-hd-ix-35-2-4-27x26.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI06-060-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI06-060-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/06I09096.png"
+      ],
+      "sha256": "d99f6d73406a3a65c94c1433a1b52abd76e59edff20adf7875fb92fcfdb16aab",
+      "updatedAt": "2026-08-28T15:28:24.325Z"
+    },
+    "GTI06063": {
+      "sku": "GTI06-063",
+      "name": "EJE HOMOCINETICO DER. HD. I-25 25X25 — GTI06-063",
+      "outputImage": "/catalogo-real/gti06-063-gti-gti06-063-eje-homocinetico-der-hd-i-25-25x25.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI06-063-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI06-063-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/06I09100.png"
+      ],
+      "sha256": "908130efd23587b389bd61af79ccd4838b0620d9dfe71c48ac9fc5353a74ba9c",
+      "updatedAt": "2026-08-28T15:28:24.325Z"
+    },
+    "GTI06067": {
+      "sku": "GTI06-067",
+      "name": "EJE HOMOCINETICO COMPLETO DERECHO HYUNDAI GRAND I-10, 25x25 ESTRIAS. — GTI06-067",
+      "outputImage": "/catalogo-real/gti06-067-gti-gti06-067-eje-homocinetico-completo-derecho-hyundai-grand-i-10-25x25-estrias.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI06-067-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI06-067-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/06I09106.png"
+      ],
+      "sha256": "7e4401270a9d4c2d3a08590f60f37ef994517bc1634089015c84bb45a44d93fb",
+      "updatedAt": "2026-08-28T15:38:27.842Z"
+    },
+    "GTI06068": {
+      "sku": "GTI06-068",
+      "name": "PUNTA EJE LADO RUEDA L/R HYUNDAI GRAND I-10, 25x21 ESTRIAS. — GTI06-068",
+      "outputImage": "/catalogo-real/gti06-068-gti-gti06-068-punta-eje-lado-rueda-l-r-hyundai-grand-i-10-25x21-estrias.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI06-068-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI06-068-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/06I09107.png"
+      ],
+      "sha256": "3b9f92c9d35832d9c4bde4cc5fd92aa2bc53a2cc5c09662a5a8bcdeacd28998c",
+      "updatedAt": "2026-08-28T15:38:27.842Z"
+    },
+    "GTI07001": {
+      "sku": "GTI07-001",
+      "name": "PUNTA EJE LADO RUEDA L/R SKODA FELICIA/FAVORIT/FORMAN, 22x22 ESTRIAS. — GTI07-001",
+      "outputImage": "/catalogo-real/gti07-001-gti-gti07-001-punta-eje-lado-rueda-l-r-skoda-felicia-favorit-forman-22x22-estrias.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-001-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-001-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09001.png"
+      ],
+      "sha256": "ff373ab14f0864910045ba39a18018f8bfb917e27262c9b97f4afd49c26f6aba",
+      "updatedAt": "2026-08-28T15:38:27.842Z"
+    },
+    "GTI07002": {
+      "sku": "GTI07-002",
+      "name": "PUNTA EJE LADO RUEDA L/R FIAT UNO/PREMIO/FIORINO/TUCAN, 22x20 ESTRIAS. — GTI07-002",
+      "outputImage": "/catalogo-real/gti07-002-gti-gti07-002-punta-eje-lado-rueda-l-r-fiat-uno-premio-fiorino-tucan-22x20-estrias.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-002-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-002-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09002.png"
+      ],
+      "sha256": "a0ea0c64b0c643ced8b7562391b8e2877d0a306ea3b8f047a78c5973939901da",
+      "updatedAt": "2026-08-28T15:38:27.842Z"
+    },
+    "GTI07003": {
+      "sku": "GTI07-003",
+      "name": "PUNTA EJE LADO RUEDA L/R NISSAN SENTRA/TSURU II/B14, 25x24 ESTRIAS. — GTI07-003",
+      "outputImage": "/catalogo-real/gti07-003-gti-gti07-003-punta-eje-lado-rueda-l-r-nissan-sentra-tsuru-ii-b14-25x24-estrias.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-003-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-003-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09003.png"
+      ],
+      "sha256": "f9e888319d2c52e03801c86ca2b1020d184b3e6172486735404045c6443844a0",
+      "updatedAt": "2026-08-28T15:38:27.842Z"
+    },
+    "GTI07004": {
+      "sku": "GTI07-004",
+      "name": "PUNTA EJE LADO RUEDA L/R VOLKSWAGEN GOL 1.8 EXTERNA, 22x30 ESTRIAS. — GTI07-004",
+      "outputImage": "/catalogo-real/gti07-004-gti-gti07-004-punta-eje-lado-rueda-l-r-volkswagen-gol-1-8-externa-22x30-estrias.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-004-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-004-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09004.png"
+      ],
+      "sha256": "4cf01a17bcc5a3a61d8f0a5cd7b0eeea0cd203f9278052ad9c9ee3758c5928ee",
+      "updatedAt": "2026-08-28T15:38:27.842Z"
+    },
+    "GTI07005": {
+      "sku": "GTI07-005",
+      "name": "PUNTA EJE LADO RUEDA L/R FIAT PALIO 1.3, 22x20 ESTRIAS. — GTI07-005",
+      "outputImage": "/catalogo-real/gti07-005-gti-gti07-005-punta-eje-lado-rueda-l-r-fiat-palio-1-3-22x20-estrias.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-005-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-005-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09005.png"
+      ],
+      "sha256": "8a6024b05991da325909c1ea91a6d5ea8b671f2eaa1bf5bd2580469f56b9a470",
+      "updatedAt": "2026-08-28T15:38:27.842Z"
+    },
+    "GTI07007": {
+      "sku": "GTI07-007",
+      "name": "PUNTA EJE LADO RUEDA L/R VOLKSWAGEN GOLF III, 22x30 ESTRIAS. — GTI07-007",
+      "outputImage": "/catalogo-real/gti07-007-gti-gti07-007-punta-eje-lado-rueda-l-r-volkswagen-golf-iii-22x30-estrias.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-007-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-007-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09007.png"
+      ],
+      "sha256": "122ebdae3a52bfdfa3dcab4cb60457a973bb26ce7aa19e3d8228fbc9518be8fb",
+      "updatedAt": "2026-08-28T15:38:27.842Z"
+    },
+    "GTI07008": {
+      "sku": "GTI07-008",
+      "name": "PUNTA EJE LADO CAJA FORD FESTIVA, 22x20 ESTRIAS. — GTI07-008",
+      "outputImage": "/catalogo-real/gti07-008-gti-gti07-008-punta-eje-lado-caja-ford-festiva-22x20-estrias.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-008-imotriz.jpg",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-008-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09028.JPG"
+      ],
+      "sha256": "9c0c27a467dd538ebcde9e7ff377d249012d308360458bdbe4ea9bc629336114",
+      "updatedAt": "2026-08-28T15:45:22.783Z"
+    },
+    "GTI07011": {
+      "sku": "GTI07-011",
+      "name": "PUNTA EJE LADO RUEDA L/R SUBARU 1980/1990, 30x23 ESTRIAS. — GTI07-011",
+      "outputImage": "/catalogo-real/gti07-011-gti-gti07-011-punta-eje-lado-rueda-l-r-subaru-1980-1990-30x23-estrias.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-011-imotriz.jpg",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-011-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09010.JPG"
+      ],
+      "sha256": "21a14442f97b8c2f829e9c3e0f83069fee1f60d1dfaa88cb27e9f1d5e779036a",
+      "updatedAt": "2026-08-28T15:45:22.784Z"
+    },
+    "GTI07012": {
+      "sku": "GTI07-012",
+      "name": "PUNTA EJE LADO RUEDA L/R TOYOTA COROLLA 1.6 1993/1999, 26x23 ESTRIAS. — GTI07-012",
+      "outputImage": "/catalogo-real/gti07-012-gti-gti07-012-punta-eje-lado-rueda-l-r-toyota-corolla-1-6-1993-1999-26x23-estrias.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-012-imotriz.jpg",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-012-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09011.JPG"
+      ],
+      "sha256": "e84aab13e68a20000dd780f1ea451e433abba0b3e05264916ef5188404a13238",
+      "updatedAt": "2026-08-28T15:45:22.784Z"
+    },
+    "GTI07013": {
+      "sku": "GTI07-013",
+      "name": "PUNTA EJE LADO RUEDA L/R TOYOTA COROLLA 1.8 HASTA 2001, 26x24 ESTRIAS. — GTI07-013",
+      "outputImage": "/catalogo-real/gti07-013-gti-gti07-013-punta-eje-lado-rueda-l-r-toyota-corolla-1-8-hasta-2001-26x24-estrias.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-013-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-013-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09012.png"
+      ],
+      "sha256": "810a37fa351e31e061bb69410afdcb8a20549dc2266cb8c5615a7e373022e5bd",
+      "updatedAt": "2026-08-28T15:45:22.784Z"
+    },
+    "GTI07015": {
+      "sku": "GTI07-015",
+      "name": "PUNTA EJE LADO RUEDA L/R TOYOTA HILUX HI RIDER 4X4 TIPO TH, 26x34 ESTRIAS. — GTI07-015",
+      "outputImage": "/catalogo-real/gti07-015-gti-gti07-015-punta-eje-lado-rueda-l-r-toyota-hilux-hi-rider-4x4-tipo-th-26x34-estrias.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-015-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-015-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09014.png"
+      ],
+      "sha256": "7bd78c423da8c75145bb73fb475b5fb9b1975a69bb9dde860d3ac9218c430281",
+      "updatedAt": "2026-08-28T15:45:22.784Z"
+    },
+    "GTI07016": {
+      "sku": "GTI07-016",
+      "name": "PUNTA EJE LADO RUEDA L/R TOYOTA TERCEL 1994 EN ADELANTE, 26x22 ESTRIAS. — GTI07-016",
+      "outputImage": "/catalogo-real/gti07-016-gti-gti07-016-punta-eje-lado-rueda-l-r-toyota-tercel-1994-en-adelante-26x22-estrias.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-016-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-016-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09015.png"
+      ],
+      "sha256": "21b7d56854fc3979a73c1945eeef553d03445435143f9f7c594f8334efeff061",
+      "updatedAt": "2026-08-28T15:45:22.784Z"
+    },
+    "GTI07017": {
+      "sku": "GTI07-017",
+      "name": "PUNTA EJE LADO CAJA NISSAN SENTRA, 25x24 ESTRIAS. — GTI07-017",
+      "outputImage": "/catalogo-real/gti07-017-gti-gti07-017-punta-eje-lado-caja-nissan-sentra-25x24-estrias.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-017-imotriz.jpg",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-017-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09017.JPG"
+      ],
+      "sha256": "69c6ee6d1688391edb9af609ada2421408b6b758ed2ec8845e041833b3ab036c",
+      "updatedAt": "2026-08-28T15:45:22.784Z"
+    },
+    "GTI07018": {
+      "sku": "GTI07-018",
+      "name": "PUNTA EJE LADO RUEDA L/R TOYOTA HILUX 4X4 TIPO JAPON, 26x27 ESTRIAS. — GTI07-018",
+      "outputImage": "/catalogo-real/gti07-018-gti-gti07-018-punta-eje-lado-rueda-l-r-toyota-hilux-4x4-tipo-japon-26x27-estrias.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-018-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-018-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09016.png"
+      ],
+      "sha256": "c108cbf6c21a2d9ac08d0d92d8b59ecf5f43bc76e218c8c4d2b8d83a59a73d0f",
+      "updatedAt": "2026-08-28T15:45:22.784Z"
+    },
+    "GTI07022": {
+      "sku": "GTI07-022",
+      "name": "PUNTA EJE LADO RUEDA L/R FORD FIESTA 1.3, 25x20 ESTRIAS. — GTI07-022",
+      "outputImage": "/catalogo-real/gti07-022-gti-gti07-022-punta-eje-lado-rueda-l-r-ford-fiesta-1-3-25x20-estrias.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-022-imotriz.jpg",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-022-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09023.JPG"
+      ],
+      "sha256": "00a3dd0d40b94c3f29646712a07a52899f5bdb61d77323e64c40d759d235f0f7",
+      "updatedAt": "2026-08-28T15:51:32.375Z"
+    },
+    "GTI07023": {
+      "sku": "GTI07-023",
+      "name": "PUNTA EJE LADO RUEDA L/R FORD FIESTA 1.6 Y FIESTA 2011 MEXICO, 25x21 ESTRIAS. — GTI07-023",
+      "outputImage": "/catalogo-real/gti07-023-gti-gti07-023-punta-eje-lado-rueda-l-r-ford-fiesta-1-6-y-fiesta-2011-mexico-25x21-estr.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-023-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-023-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09024.png"
+      ],
+      "sha256": "e6475e73c6c569aaae7e0c01ae35eabe52bdca5791b00ac9cf2fa7b9a5702230",
+      "updatedAt": "2026-08-28T15:51:32.376Z"
+    },
+    "GTI07024": {
+      "sku": "GTI07-024",
+      "name": "PUNTA EJE LADO RUEDA L/R KIA CARNIVAL HASTA 2006, 28x26 ESTRIAS. — GTI07-024",
+      "outputImage": "/catalogo-real/gti07-024-gti-gti07-024-punta-eje-lado-rueda-l-r-kia-carnival-hasta-2006-28x26-estrias.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-024-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-024-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09009.png"
+      ],
+      "sha256": "26fb03fbfc326593f2cbc5adbe000d68d2192acd4267c1c081a99e2895fcdef3",
+      "updatedAt": "2026-08-28T15:51:32.376Z"
+    },
+    "GTI07026": {
+      "sku": "GTI07-026",
+      "name": "PUNTA EJE LADO RUEDA L/R KIA SEPHIA 1999 EN ADELANTE, 26x22 ESTRIAS. — GTI07-026",
+      "outputImage": "/catalogo-real/gti07-026-gti-gti07-026-punta-eje-lado-rueda-l-r-kia-sephia-1999-en-adelante-26x22-estrias.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-026-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-026-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09026.png"
+      ],
+      "sha256": "2f2e9e75985a41526d6ef813ae319c758e0d37815a5b058e2e60d98edd99e250",
+      "updatedAt": "2026-08-28T15:51:32.376Z"
+    },
+    "GTI07029": {
+      "sku": "GTI07-029",
+      "name": "JUEGO DE 2 ABRAZADERAS METALICAS PARA GUARDAPOLVO DE EJE. — GTI07-029",
+      "outputImage": "/catalogo-real/gti07-029-gti-gti07-029-juego-de-2-abrazaderas-metalicas-para-guardapolvo-de-eje.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-029-imotriz.jpg",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-029-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I11094.JPG"
+      ],
+      "sha256": "1656aac321d78496e7208a46fee5e2c7797fdfcacdd499a01f989af4fdb44ee0",
+      "updatedAt": "2026-08-28T15:51:32.376Z"
+    },
+    "GTI07030": {
+      "sku": "GTI07-030",
+      "name": "PUNTA EJE LADO RUEDA L/R NISSAN SENTRA B13/B14 TIPO JAPON, PIN INTERNO, 25x32 ESTRIAS. — GTI07-030",
+      "outputImage": "/catalogo-real/gti07-030-gti-gti07-030-punta-eje-lado-rueda-l-r-nissan-sentra-b13-b14-tipo-japon-pin-interno-25.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-030-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-030-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09029.png"
+      ],
+      "sha256": "918af6f3de7b2c82d5efe20c4442112a12d4c0b9c91e99ce439e5af59f1fc97a",
+      "updatedAt": "2026-08-28T15:51:32.376Z"
+    },
+    "GTI07031": {
+      "sku": "GTI07-031",
+      "name": "PUNTA EJE LADO RUEDA L/R TOYOTA PRADO VX, 30x34 ESTRIAS. — GTI07-031",
+      "outputImage": "/catalogo-real/gti07-031-gti-gti07-031-punta-eje-lado-rueda-l-r-toyota-prado-vx-30x34-estrias.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-031-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-031-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09030.png"
+      ],
+      "sha256": "07659b3dcd1f1b3436e0ca00c5ff2bed6949ba3778ff8accd7c0aad7e49b81af",
+      "updatedAt": "2026-08-28T15:51:32.376Z"
+    },
+    "GTI07033": {
+      "sku": "GTI07-033",
+      "name": "GUARDAPOLVO EJE L/R MAZDA 323/ALLEGRO/MAZDA 3/SWIFT/STYLUS/AVEO/SAIL/CHERY/VITARA. — GTI07-033",
+      "outputImage": "/catalogo-real/gti07-033-gti-gti07-033-guardapolvo-eje-l-r-mazda-323-allegro-mazda-3-swift-stylus-aveo-sail-che.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-033-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-033-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/06I09022.png"
+      ],
+      "sha256": "2673604c83dd3d8614dda3b779fc37caea83774d10be499ebdd295d3bbd8b962",
+      "updatedAt": "2026-08-28T15:51:32.376Z"
+    },
+    "GTI07035": {
+      "sku": "GTI07-035",
+      "name": "GUARDAPOLVO EJE L/R HYUNDAI ATOS/KIA PICANTO/SPARK/CRONOS/SPARK GT/STEEM 1.6/CHERY QQ. — GTI07-035",
+      "outputImage": "/catalogo-real/gti07-035-gti-gti07-035-guardapolvo-eje-l-r-hyundai-atos-kia-picanto-spark-cronos-spark-gt-steem.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-035-imotriz.jpg",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-035-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/04I09044.jpg"
+      ],
+      "sha256": "182c6ba0e54aab1b5ec0fe09fda5342fb004e0237c98d5db2fd35a98c423ade6",
+      "updatedAt": "2026-08-28T15:51:32.376Z"
+    },
+    "GTI07037": {
+      "sku": "GTI07-037",
+      "name": "GUARDAPOLVO EJE L/R MAZDA 323/RENAULT 9/TWINGO/CLIO/SYMBOL/MEGANE/CORSA/VITARA/GRAND VITARA. — GTI07-037",
+      "outputImage": "/catalogo-real/gti07-037-gti-gti07-037-guardapolvo-eje-l-r-mazda-323-renault-9-twingo-clio-symbol-megane-corsa.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-037-imotriz.jpg",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-037-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/04I09045.jpg"
+      ],
+      "sha256": "a95097e1594110e0b1b3f51862b164a35e7a1de7c1e0714ea849fde4fcd73e08",
+      "updatedAt": "2026-08-28T15:57:14.717Z"
+    },
+    "GTI07043": {
+      "sku": "GTI07-043",
+      "name": "GUARDAPOLVO EJE L/R CLIO II/SYMBOL/MEGANE/KANGOO/SCENIC/GRAND CHEROKEE/WAGON R. — GTI07-043",
+      "outputImage": "/catalogo-real/gti07-043-gti-gti07-043-guardapolvo-eje-l-r-clio-ii-symbol-megane-kangoo-scenic-grand-cherokee-w.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-043-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-043-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/01I09030.png"
+      ],
+      "sha256": "0fc99ee773746f0e3ff7c46d1ec7ea82f226b947cd6ed25a514e9686b5a7a37c",
+      "updatedAt": "2026-08-28T15:57:14.718Z"
+    },
+    "GTI07045": {
+      "sku": "GTI07-045",
+      "name": "PUNTA EJE LADO RUEDA L/R TOYOTA PRADO VX, 30x27 ESTRIAS. — GTI07-045",
+      "outputImage": "/catalogo-real/gti07-045-gti-gti07-045-punta-eje-lado-rueda-l-r-toyota-prado-vx-30x27-estrias.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-045-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-045-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09031.png"
+      ],
+      "sha256": "e6d934310d1691297452024d10e3baa605c93ae910b73119eb474a3aacb64fc4",
+      "updatedAt": "2026-08-28T15:57:14.718Z"
+    },
+    "GTI07046": {
+      "sku": "GTI07-046",
+      "name": "PUNTA EJE LADO RUEDA L/R CHERY QQ, PIN EXTERNO, 22x19 ESTRIAS. — GTI07-046",
+      "outputImage": "/catalogo-real/gti07-046-gti-gti07-046-punta-eje-lado-rueda-l-r-chery-qq-pin-externo-22x19-estrias.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-046-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-046-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09032.png"
+      ],
+      "sha256": "b398a946217f33686e1d44c229341d21f1bd1af2f1478616277fe0ed75fce978",
+      "updatedAt": "2026-08-28T15:57:14.718Z"
+    },
+    "GTI07047": {
+      "sku": "GTI07-047",
+      "name": "PUNTA EJE LADO RUEDA L/R PEUGEOT 3.5/405, 25x34 ESTRIAS. — GTI07-047",
+      "outputImage": "/catalogo-real/gti07-047-gti-gti07-047-punta-eje-lado-rueda-l-r-peugeot-3-5-405-25x34-estrias.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-047-imotriz.jpg",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-047-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09033.JPG"
+      ],
+      "sha256": "92c31e466b5a9c1c5b7928ee7e88364fa94c9909b3d70c9b881cb7c1f6ccac79",
+      "updatedAt": "2026-08-28T15:57:14.718Z"
+    },
+    "GTI07048": {
+      "sku": "GTI07-048",
+      "name": "PUNTA EJE LADO RUEDA L/R DAIHATSU TERIOS, 24x19 ESTRIAS. — GTI07-048",
+      "outputImage": "/catalogo-real/gti07-048-gti-gti07-048-punta-eje-lado-rueda-l-r-daihatsu-terios-24x19-estrias.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-048-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-048-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09034.png"
+      ],
+      "sha256": "e89271f9149d129e9311cbadd56a4ebd0cf3ad5016b93eeaa3c340853ab5b598",
+      "updatedAt": "2026-08-28T15:57:14.718Z"
+    },
+    "GTI07049": {
+      "sku": "GTI07-049",
+      "name": "PUNTA EJE LADO RUEDA L/R NISSAN PATHFINDER, 27x27 ESTRIAS. — GTI07-049",
+      "outputImage": "/catalogo-real/gti07-049-gti-gti07-049-punta-eje-lado-rueda-l-r-nissan-pathfinder-27x27-estrias.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-049-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-049-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09035.png"
+      ],
+      "sha256": "3e1f06e629c19267f4d239a82fcccc1e6bd6d9e39b65ff29f194e82fde73d187",
+      "updatedAt": "2026-08-28T15:57:14.718Z"
+    },
+    "GTI07050": {
+      "sku": "GTI07-050",
+      "name": "PUNTA EJE LADO RUEDA L/R CITROEN XANTIA/ZX Y PEUGEOT 306 1.6/1.8/2.0, 25x23 ESTRIAS, ABS 48T. — GTI07-050",
+      "outputImage": "/catalogo-real/gti07-050-gti-gti07-050-punta-eje-lado-rueda-l-r-citroen-xantia-zx-y-peugeot-306-1-6-1-8-2-0-25x.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-050-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-050-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09039.png"
+      ],
+      "sha256": "a377bb4d52ac4dc7cf424e4fbc96ae67dadc46e98451eba4e5cd1dd454afc231",
+      "updatedAt": "2026-08-28T15:57:14.718Z"
+    },
+    "GTI07052": {
+      "sku": "GTI07-052",
+      "name": "PUNTA EJE LADO RUEDA L/R CITROEN BX/CX Y PEUGEOT 305/405, 25x22 ESTRIAS. — GTI07-052",
+      "outputImage": "/catalogo-real/gti07-052-gti-gti07-052-punta-eje-lado-rueda-l-r-citroen-bx-cx-y-peugeot-305-405-25x22-estrias.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-052-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-052-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09041.png"
+      ],
+      "sha256": "0cbc54d63c6721fd8f5eecae7625320b9bad327db1cdc85834e13ba39d318434",
+      "updatedAt": "2026-08-28T15:57:14.718Z"
+    },
+    "GTI07053": {
+      "sku": "GTI07-053",
+      "name": "EJE HOMOCINETICO COMPLETO DERECHO PEUGEOT 306/406, 25x24 ESTRIAS. — GTI07-053",
+      "outputImage": "/catalogo-real/gti07-053-gti-gti07-053-eje-homocinetico-completo-derecho-peugeot-306-406-25x24-estrias.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-053-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-053-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09037.png"
+      ],
+      "sha256": "1995a4aa3511ac5f96eedddec545687cc829bae576af44f953a606800624b326",
+      "updatedAt": "2026-08-28T15:57:14.718Z"
+    },
+    "GTI07055": {
+      "sku": "GTI07-055",
+      "name": "PUNTA EJE L/R. TOYOTA LAND CRUISER/CARE VACA 30X27 — GTI07-055",
+      "outputImage": "/catalogo-real/gti07-055-gti-gti07-055-punta-eje-l-r-toyota-land-cruiser-care-vaca-30x27.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-055-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-055-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09036.png"
+      ],
+      "sha256": "ed13db45cc55e53c30bd7cadcb1e9b9a8d12a78f244e857a005693ff593227f2",
+      "updatedAt": "2026-08-28T16:04:05.724Z"
+    },
+    "GTI07056": {
+      "sku": "GTI07-056",
+      "name": "PUNTA EJE L/R. KIA SPECTRA 28X22 — GTI07-056",
+      "outputImage": "/catalogo-real/gti07-056-gti-gti07-056-punta-eje-l-r-kia-spectra-28x22.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-056-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-056-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09042.png"
+      ],
+      "sha256": "292dd6d1a38dbc6c1678f4ef1d7b4d085bfff3fd7d440d931ca7b3bf64803321",
+      "updatedAt": "2026-08-28T16:04:05.725Z"
+    },
+    "GTI07057": {
+      "sku": "GTI07-057",
+      "name": "PUNTA EJE L/R. KIA CARENS 01/07 28X24 — GTI07-057",
+      "outputImage": "/catalogo-real/gti07-057-gti-gti07-057-punta-eje-l-r-kia-carens-01-07-28x24.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-057-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-057-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09043.png"
+      ],
+      "sha256": "4e27c74bf41b21f3e7884d756156ca70128325e16a95c10d0d64e8f2223e9679",
+      "updatedAt": "2026-08-28T16:04:05.725Z"
+    },
+    "GTI07059": {
+      "sku": "GTI07-059",
+      "name": "PUNTA EJE L/R. TOYOTA HILUX VIGO/HILUX 2.8 2016/FORTUNER 30X29 — GTI07-059",
+      "outputImage": "/catalogo-real/gti07-059-gti-gti07-059-punta-eje-l-r-toyota-hilux-vigo-hilux-2-8-2016-fortuner-30x29.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-059-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-059-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09045.png"
+      ],
+      "sha256": "7a9911872fec99c2049302191c589419d1faecb3f05934d0e3ea74ac5fb435ae",
+      "updatedAt": "2026-08-28T16:04:05.725Z"
+    },
+    "GTI07064": {
+      "sku": "GTI07-064",
+      "name": "PUNTA EJE L/R. VOLKSWAGEN PANEL/TRANSPORTER 38X27 — GTI07-064",
+      "outputImage": "/catalogo-real/gti07-064-gti-gti07-064-punta-eje-l-r-volkswagen-panel-transporter-38x27.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-064-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-064-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09050.png"
+      ],
+      "sha256": "8d6103cff31cc168f87bf554315c011213af2bd60b9aef8dd5b3b31aa93e2336",
+      "updatedAt": "2026-08-28T16:04:05.725Z"
+    },
+    "GTI07065": {
+      "sku": "GTI07-065",
+      "name": "PUNTA EJE L/C. DER. KIA GRAND CARNIVAL (HEMBRA) 28X26 — GTI07-065",
+      "outputImage": "/catalogo-real/gti07-065-gti-gti07-065-punta-eje-l-c-der-kia-grand-carnival-hembra-28x26.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-065-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-065-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09052.png"
+      ],
+      "sha256": "6b4cb9605bcb8e7623d089806e255808fc80fda5d71eed660975f919a8c1c34b",
+      "updatedAt": "2026-08-28T16:04:05.725Z"
+    },
+    "GTI07066": {
+      "sku": "GTI07-066",
+      "name": "PUNTA EJE L/C. IZQ. KIA GRAND CARNIVAL (MACHO) 28X26 — GTI07-066",
+      "outputImage": "/catalogo-real/gti07-066-gti-gti07-066-punta-eje-l-c-izq-kia-grand-carnival-macho-28x26.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-066-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-066-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09053.png"
+      ],
+      "sha256": "2d032ca1e8e2b753bed21177cb23a988aa55df8f9d62996283dc8edcd329319c",
+      "updatedAt": "2026-08-28T16:04:05.725Z"
+    },
+    "GTI07067": {
+      "sku": "GTI07-067",
+      "name": "EJE HOMOCINETICO DER. KIA GRAND CARNIVAL 31X28 — GTI07-067",
+      "outputImage": "/catalogo-real/gti07-067-gti-gti07-067-eje-homocinetico-der-kia-grand-carnival-31x28.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-067-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-067-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09054.png"
+      ],
+      "sha256": "06364ab9206dba0e76300a3d6185a232454d0674fae9aa62c74cdeb830d29629",
+      "updatedAt": "2026-08-28T16:04:05.725Z"
+    },
+    "GTI07068": {
+      "sku": "GTI07-068",
+      "name": "EJE HOMOCINETICO IZQ. KIA GRAND CARNIVAL 31X28 — GTI07-068",
+      "outputImage": "/catalogo-real/gti07-068-gti-gti07-068-eje-homocinetico-izq-kia-grand-carnival-31x28.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-068-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-068-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09055.png"
+      ],
+      "sha256": "9fe08eb5ca8e3b143b66fb25b9cd342a9e9d32eb40ac6cbccc965deb46a16d09",
+      "updatedAt": "2026-08-28T16:04:05.725Z"
+    },
+    "GTI07069": {
+      "sku": "GTI07-069",
+      "name": "PUNTA EJE L/R. TOYOTA LAND CRUISER VENEZOLANA/BURBUJA 05/09 30X24 — GTI07-069",
+      "outputImage": "/catalogo-real/gti07-069-gti-gti07-069-punta-eje-l-r-toyota-land-cruiser-venezolana-burbuja-05-09-30x24.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-069-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-069-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09056.png"
+      ],
+      "sha256": "bd08ace6f9ec3bba7df8945f4b39c92a0d8f73f802e6d08a743476e9c8b175f7",
+      "updatedAt": "2026-08-28T16:04:05.725Z"
+    },
+    "GTI07070": {
+      "sku": "GTI07-070",
+      "name": "PUNTA EJE L/R. FORD ECO SPORT 4X2 25X23 — GTI07-070",
+      "outputImage": "/catalogo-real/gti07-070-gti-gti07-070-punta-eje-l-r-ford-eco-sport-4x2-25x23.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-070-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-070-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09057.png"
+      ],
+      "sha256": "c5352f3355900a60e471d074ee0f25614e290207d6e71ee40479f5d9479113bb",
+      "updatedAt": "2026-08-28T16:09:43.035Z"
+    },
+    "GTI07071": {
+      "sku": "GTI07-071",
+      "name": "PUNTA EJE L/R. FORD ECO SPORT 4X4 — GTI07-071",
+      "outputImage": "/catalogo-real/gti07-071-gti-gti07-071-punta-eje-l-r-ford-eco-sport-4x4.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-071-imotriz.jpg",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-071-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09076.jpg"
+      ],
+      "sha256": "6ca6786ad237ab6353ad088122bc6f909a9b8cb9bd5f42ffcd32f011c7905d4f",
+      "updatedAt": "2026-08-28T16:09:43.037Z"
+    },
+    "GTI07072": {
+      "sku": "GTI07-072",
+      "name": "PUNTA EJE L/R. CHERY QQ PIN INT. 22X19 — GTI07-072",
+      "outputImage": "/catalogo-real/gti07-072-gti-gti07-072-punta-eje-l-r-chery-qq-pin-int-22x19.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-072-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-072-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09058.png"
+      ],
+      "sha256": "43f0749075cbafb1c75c349622f1fdc72c02bdf9e4d52ee7f01030e0f599fbca",
+      "updatedAt": "2026-08-28T16:09:43.037Z"
+    },
+    "GTI07074": {
+      "sku": "GTI07-074",
+      "name": "PUNTA EJE L/C. IZQ. PEUGEOT 306 24X34 — GTI07-074",
+      "outputImage": "/catalogo-real/gti07-074-gti-gti07-074-punta-eje-l-c-izq-peugeot-306-24x34.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-074-imotriz.jpg",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-074-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09060.JPG"
+      ],
+      "sha256": "12d8669560b71e95009f56a1183c6073b926eb235846c4b160a3b5e739a61b68",
+      "updatedAt": "2026-08-28T16:09:43.037Z"
+    },
+    "GTI07076": {
+      "sku": "GTI07-076",
+      "name": "PUNTA EJE L/C. VOLKSWAGEN GOL BRASIL/GOLF 1.5/1.6/PASSAT/SEAT CORDOBA 33 DTS. — GTI07-076",
+      "outputImage": "/catalogo-real/gti07-076-gti-gti07-076-punta-eje-l-c-volkswagen-gol-brasil-golf-1-5-1-6-passat-seat-cordoba-33.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-076-imotriz.jpg",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-076-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09063.JPG"
+      ],
+      "sha256": "ebebb6fc0bf03837a72b452887ac3634120b0fa1691774fe4570447376748aea",
+      "updatedAt": "2026-08-28T16:09:43.037Z"
+    },
+    "GTI07077": {
+      "sku": "GTI07-077",
+      "name": "PUNTA EJE L/R. VOLKSWAGEN GOLF IV/JETTA 2.0 36X30 — GTI07-077",
+      "outputImage": "/catalogo-real/gti07-077-gti-gti07-077-punta-eje-l-r-volkswagen-golf-iv-jetta-2-0-36x30.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-077-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-077-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09062.png"
+      ],
+      "sha256": "8ede70e451e7642e91440a36e4c77b049972be5744ebcb754e8b2beac6fa7eb7",
+      "updatedAt": "2026-08-28T16:09:43.037Z"
+    },
+    "GTI07078": {
+      "sku": "GTI07-078",
+      "name": "PUNTA EJE L/R. NISSAN FRONTIER 28X25 — GTI07-078",
+      "outputImage": "/catalogo-real/gti07-078-gti-gti07-078-punta-eje-l-r-nissan-frontier-28x25.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-078-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-078-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09069.png"
+      ],
+      "sha256": "dc763882143d4f48055e9048cba83e9b1f54b51408e7ff9ec9c39abfc4fae921",
+      "updatedAt": "2026-08-28T16:09:43.037Z"
+    },
+    "GTI07079": {
+      "sku": "GTI07-079",
+      "name": "PUNTA EJE L/R. NISSAN SENTRA B14 JAPON/ALMERA 25X23 — GTI07-079",
+      "outputImage": "/catalogo-real/gti07-079-gti-gti07-079-punta-eje-l-r-nissan-sentra-b14-japon-almera-25x23.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-079-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-079-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09065.png"
+      ],
+      "sha256": "d6280bb4a14055b131e1ff015540c5fb0d1658ec721d78be406704e2a31e3203",
+      "updatedAt": "2026-08-28T16:09:43.037Z"
+    },
+    "GTI07080": {
+      "sku": "GTI07-080",
+      "name": "PUNTA EJE L/R. HONDA CIVIC AMERICANO 1.8 26X30 — GTI07-080",
+      "outputImage": "/catalogo-real/gti07-080-gti-gti07-080-punta-eje-l-r-honda-civic-americano-1-8-26x30.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-080-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-080-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09064.png"
+      ],
+      "sha256": "70d3586d4ccff9a965459f08f4532a00e84df1e9743a6b47a95ea369768b699a",
+      "updatedAt": "2026-08-28T16:09:43.037Z"
+    },
+    "GTI07081": {
+      "sku": "GTI07-081",
+      "name": "PUNTA EJE L/R. HONDA ACCORD/CRV 28X32 — GTI07-081",
+      "outputImage": "/catalogo-real/gti07-081-gti-gti07-081-punta-eje-l-r-honda-accord-crv-28x32.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-081-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-081-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09067.png"
+      ],
+      "sha256": "3dc46a2fb0a096a4f066506c1945bfe29d33443c187a890921317d266987343c",
+      "updatedAt": "2026-08-28T16:09:43.037Z"
+    },
+    "GTI07083": {
+      "sku": "GTI07-083",
+      "name": "PUNTA EJE L/R. NISSAN PATHFINDER M/N. 28X27 — GTI07-083",
+      "outputImage": "/catalogo-real/gti07-083-gti-gti07-083-punta-eje-l-r-nissan-pathfinder-m-n-28x27.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-083-imotriz.jpg",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-083-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09068.jpg"
+      ],
+      "sha256": "d987afbbeac6c155f49531c0dc0e69ff965b4a559cd660695697f01a48d04962",
+      "updatedAt": "2026-08-28T16:15:34.111Z"
+    },
+    "GTI07084": {
+      "sku": "GTI07-084",
+      "name": "EJE INTERCONECCION KIA GRAND CARNIVAL 28X28 — GTI07-084",
+      "outputImage": "/catalogo-real/gti07-084-gti-gti07-084-eje-interconeccion-kia-grand-carnival-28x28.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-084-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-084-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09070.png"
+      ],
+      "sha256": "fef08fba5a0b4c6f279f0abffb38f6da3bf6af252e84a18077e7b907fc02ade2",
+      "updatedAt": "2026-08-28T16:15:34.112Z"
+    },
+    "GTI07085": {
+      "sku": "GTI07-085",
+      "name": "PUNTA EJE L/R. NISSAN SENTRA B13 8V. 25X24 — GTI07-085",
+      "outputImage": "/catalogo-real/gti07-085-gti-gti07-085-punta-eje-l-r-nissan-sentra-b13-8v-25x24.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-085-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-085-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09071.png"
+      ],
+      "sha256": "b4f177bb449b587f749742160402ab00fd693a660201515af968bd8aa96a263e",
+      "updatedAt": "2026-08-28T16:15:34.112Z"
+    },
+    "GTI07087": {
+      "sku": "GTI07-087",
+      "name": "PUNTA EJE L/R. MITSUBISHI PAJERO 28X25 — GTI07-087",
+      "outputImage": "/catalogo-real/gti07-087-gti-gti07-087-punta-eje-l-r-mitsubishi-pajero-28x25.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-087-imotriz.jpg",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-087-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09073.jpg"
+      ],
+      "sha256": "e11b172362e869c085aceee22beb53184a5c0d5f64bb88c9716928d1ffe1d994",
+      "updatedAt": "2026-08-28T16:15:34.112Z"
+    },
+    "GTI07088": {
+      "sku": "GTI07-088",
+      "name": "PUNTA EJE L/C. DAIHATSU TERIOS 23X19 — GTI07-088",
+      "outputImage": "/catalogo-real/gti07-088-gti-gti07-088-punta-eje-l-c-daihatsu-terios-23x19.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-088-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-088-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09074.png"
+      ],
+      "sha256": "877b8844f582a33946430fa09948f2dec1f9c603c89cd40a5c4dead132b4eaf5",
+      "updatedAt": "2026-08-28T16:15:34.112Z"
+    },
+    "GTI07089": {
+      "sku": "GTI07-089",
+      "name": "PUNTA EJE L/R. JAC TAXI STAR 1.3 25X29 — GTI07-089",
+      "outputImage": "/catalogo-real/gti07-089-gti-gti07-089-punta-eje-l-r-jac-taxi-star-1-3-25x29.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-089-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-089-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09075.png"
+      ],
+      "sha256": "3b9ab7b7fbcb8873dc7dfeab44f8bdf00bad933c77849dc179689d5299b11f34",
+      "updatedAt": "2026-08-28T16:15:34.112Z"
+    },
+    "GTI07090": {
+      "sku": "GTI07-090",
+      "name": "PUNTA EJE L/C. TOYOTA PRADO 27X34 — GTI07-090",
+      "outputImage": "/catalogo-real/gti07-090-gti-gti07-090-punta-eje-l-c-toyota-prado-27x34.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-090-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-090-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09077.png"
+      ],
+      "sha256": "c3fffbc3260fd5304d02ff6a4353540f847e8c3a791dfbaab6d4697aec8243a9",
+      "updatedAt": "2026-08-28T16:15:34.112Z"
+    },
+    "GTI07091": {
+      "sku": "GTI07-091",
+      "name": "PUNTA EJE L/C. TOYOTA HILUX 92/06 (FLANCHE) 24 DTS. — GTI07-091",
+      "outputImage": "/catalogo-real/gti07-091-gti-gti07-091-punta-eje-l-c-toyota-hilux-92-06-flanche-24-dts.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-091-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-091-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09078.png"
+      ],
+      "sha256": "f8a7527dd2e873fead94c532373180c96bb0538f6d8a85f71af27c0505d64162",
+      "updatedAt": "2026-08-28T16:15:34.112Z"
+    },
+    "GTI07092": {
+      "sku": "GTI07-092",
+      "name": "PUNTA EJE L/C. TOYOTA HILUX HI-RIDER (FLANCHE) 34 DTS. — GTI07-092",
+      "outputImage": "/catalogo-real/gti07-092-gti-gti07-092-punta-eje-l-c-toyota-hilux-hi-rider-flanche-34-dts.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-092-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-092-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09079.png"
+      ],
+      "sha256": "36518f2b9a0facfd640a468cea93d51e0ead1aeceaf035ca1ca5fca9d3c09f0f",
+      "updatedAt": "2026-08-28T16:15:34.112Z"
+    },
+    "GTI07093": {
+      "sku": "GTI07-093",
+      "name": "PUNTA EJE L/R. TOYOTA COROLLA 1.6/1.8 2001/ 26X23 — GTI07-093",
+      "outputImage": "/catalogo-real/gti07-093-gti-gti07-093-punta-eje-l-r-toyota-corolla-1-6-1-8-2001-26x23.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-093-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-093-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09080.png"
+      ],
+      "sha256": "e44c86fadcf978807cb6ab1f8786169d6501535248ce843ce0d38cebf17b31a4",
+      "updatedAt": "2026-08-28T16:15:34.112Z"
+    },
+    "GTI07094": {
+      "sku": "GTI07-094",
+      "name": "PUNTA EJE L/R. NISSAN TIIDA 1.6/SENTRA M/N. 25X23 — GTI07-094",
+      "outputImage": "/catalogo-real/gti07-094-gti-gti07-094-punta-eje-l-r-nissan-tiida-1-6-sentra-m-n-25x23.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-094-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-094-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09081.png"
+      ],
+      "sha256": "1a54d0f4e6820f027279d1334caa2dce5e2822c314b729b6fa0aef7d728669c5",
+      "updatedAt": "2026-08-28T16:21:45.932Z"
+    },
+    "GTI07097": {
+      "sku": "GTI07-097",
+      "name": "PUNTA EJE L/R. SUBARU VIVIO 24X18 — GTI07-097",
+      "outputImage": "/catalogo-real/gti07-097-gti-gti07-097-punta-eje-l-r-subaru-vivio-24x18.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-097-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-097-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09084.png"
+      ],
+      "sha256": "fea803ba0f07d03dbdd6bee0053f8cfb86966c1f0c9d09733f91d638fd018f69",
+      "updatedAt": "2026-08-28T16:21:45.932Z"
+    },
+    "GTI07098": {
+      "sku": "GTI07-098",
+      "name": "PUNTA EJE L/R. CITROEN JUMPER M/V. 35X45 — GTI07-098",
+      "outputImage": "/catalogo-real/gti07-098-gti-gti07-098-punta-eje-l-r-citroen-jumper-m-v-35x45.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-098-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-098-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09085.png"
+      ],
+      "sha256": "aa1f7a32e4c732d7dfdbf3ce5afcbdb04129aec87330cf593477487b4839b720",
+      "updatedAt": "2026-08-28T16:21:45.932Z"
+    },
+    "GTI07099": {
+      "sku": "GTI07-099",
+      "name": "PUNTA EJE L/R. HONDA FIT 26X22 — GTI07-099",
+      "outputImage": "/catalogo-real/gti07-099-gti-gti07-099-punta-eje-l-r-honda-fit-26x22.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-099-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-099-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09086.png"
+      ],
+      "sha256": "9d8ead52d537f921b83714a62e9db63f5ea0fdd8ba652ea2f5d01e8d5541289f",
+      "updatedAt": "2026-08-28T16:21:45.932Z"
+    },
+    "GTI07100": {
+      "sku": "GTI07-100",
+      "name": "PUNTA EJE L/R. HONDA 26X22 — GTI07-100",
+      "outputImage": "/catalogo-real/gti07-100-gti-gti07-100-punta-eje-l-r-honda-26x22.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-100-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-100-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09087.png"
+      ],
+      "sha256": "5f5fbee8facbe10a57fb2e696ccd6ebf374e12258fac68fbd24beb5ebd4a9a2c",
+      "updatedAt": "2026-08-28T16:21:45.932Z"
+    },
+    "GTI07101": {
+      "sku": "GTI07-101",
+      "name": "PUNTA EJE L/C. VOLKSWAGEN GOL/GOLF 1.5/1.6/PASSAT/SEAT CORDOBA 34 DTS. — GTI07-101",
+      "outputImage": "/catalogo-real/gti07-101-gti-gti07-101-punta-eje-l-c-volkswagen-gol-golf-1-5-1-6-passat-seat-cordoba-34-dts.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-101-imotriz.jpg",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-101-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09088.JPG"
+      ],
+      "sha256": "96e59bd65778b8e87ca3b4824361c384cf6746bb171ddf1269540707877d165a",
+      "updatedAt": "2026-08-28T16:21:45.932Z"
+    },
+    "GTI07102": {
+      "sku": "GTI07-102",
+      "name": "PUNTA EJE L/R. FORD EXPLORER 27X34 — GTI07-102",
+      "outputImage": "/catalogo-real/gti07-102-gti-gti07-102-punta-eje-l-r-ford-explorer-27x34.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-102-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-102-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09089.png"
+      ],
+      "sha256": "3bdee56db4c9b2e4571b94105a1a1c59f85401add0c36c40392a256023d71705",
+      "updatedAt": "2026-08-28T16:21:45.932Z"
+    },
+    "GTI07105": {
+      "sku": "GTI07-105",
+      "name": "PUNTA EJE L/R. GEELY 1.3 24X21 — GTI07-105",
+      "outputImage": "/catalogo-real/gti07-105-gti-gti07-105-punta-eje-l-r-geely-1-3-24x21.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-105-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-105-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09092.png"
+      ],
+      "sha256": "9b981d60d51171e497a06784cff8455afc76543fa258bc0cc217ff86a6158cda",
+      "updatedAt": "2026-08-28T16:21:45.932Z"
+    },
+    "GTI07106": {
+      "sku": "GTI07-106",
+      "name": "PUNTA EJE L/R. VOLKSWAGEN AMAROK 4X4 (TORNILLO) 28X27 — GTI07-106",
+      "outputImage": "/catalogo-real/gti07-106-gti-gti07-106-punta-eje-l-r-volkswagen-amarok-4x4-tornillo-28x27.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-106-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-106-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09093.png"
+      ],
+      "sha256": "a8d55150808ee0a22a35ad06e687bc3b60b1441a97353923af8816df06934055",
+      "updatedAt": "2026-08-28T16:28:42.726Z"
+    },
+    "GTI07107": {
+      "sku": "GTI07-107",
+      "name": "EJE HOMOCINETICO DER. CHERY VAN 23X25 — GTI07-107",
+      "outputImage": "/catalogo-real/gti07-107-gti-gti07-107-eje-homocinetico-der-chery-van-23x25.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-107-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-107-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09094.png"
+      ],
+      "sha256": "1168d6603b3248f2a1a2ebd7a757d3c27df679e0ba622f2af498ab2bda8b0026",
+      "updatedAt": "2026-08-28T16:28:42.727Z"
+    },
+    "GTI07108": {
+      "sku": "GTI07-108",
+      "name": "PUNTA EJE L/R. CHERY VAN 23X21 — GTI07-108",
+      "outputImage": "/catalogo-real/gti07-108-gti-gti07-108-punta-eje-l-r-chery-van-23x21.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-108-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-108-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09095.png"
+      ],
+      "sha256": "7f1bffadcae8fe8ff37e494a3cda82aea6010a165b5c3078e9aeae6efda5a9f0",
+      "updatedAt": "2026-08-28T16:28:42.727Z"
+    },
+    "GTI07109": {
+      "sku": "GTI07-109",
+      "name": "PUNTA EJE L/C. CHERY VAN 25X21 — GTI07-109",
+      "outputImage": "/catalogo-real/gti07-109-gti-gti07-109-punta-eje-l-c-chery-van-25x21.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-109-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-109-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09096.png"
+      ],
+      "sha256": "2c2d7088d6c06c2f98dfa2f1666f1c9be5ce68dc74d5413bb054710a3743e08b",
+      "updatedAt": "2026-08-28T16:28:42.727Z"
+    },
+    "GTI07110": {
+      "sku": "GTI07-110",
+      "name": "PUNTA EJE L/R. VOLKSWAGEN BORA 2.5 AUTOMATICO 36X27 — GTI07-110",
+      "outputImage": "/catalogo-real/gti07-110-gti-gti07-110-punta-eje-l-r-volkswagen-bora-2-5-automatico-36x27.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-110-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-110-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09097.png"
+      ],
+      "sha256": "3001f1f20413ca93feca90fcbe6cac6df86d1ab671d3ef7aa299a837f653df81",
+      "updatedAt": "2026-08-28T16:28:42.727Z"
+    },
+    "GTI07111": {
+      "sku": "GTI07-111",
+      "name": "PUNTA EJE L/R. NISSAN X-TRAIL ABS 44T 29X25 — GTI07-111",
+      "outputImage": "/catalogo-real/gti07-111-gti-gti07-111-punta-eje-l-r-nissan-x-trail-abs-44t-29x25.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-111-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-111-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09098.png"
+      ],
+      "sha256": "c3ae8e7423b4cb6ea41e8e37e908bc89856c0b32a8473e8ad291745762f193c0",
+      "updatedAt": "2026-08-28T16:28:42.727Z"
+    },
+    "GTI07113": {
+      "sku": "GTI07-113",
+      "name": "PUNTA EJE L/C. DER. FORD FIESTA/CHARRIER (MACIZO) 23X21 — GTI07-113",
+      "outputImage": "/catalogo-real/gti07-113-gti-gti07-113-punta-eje-l-c-der-ford-fiesta-charrier-macizo-23x21.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-113-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-113-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09100.png"
+      ],
+      "sha256": "a561f53188c8997ae3789a73379aa7cc479a4cfe102cafea547252bc9dd31d7e",
+      "updatedAt": "2026-08-28T16:28:42.727Z"
+    },
+    "GTI07114": {
+      "sku": "GTI07-114",
+      "name": "PUNTA EJE L/R. CITROEN JUMPER M/N. 35X29 — GTI07-114",
+      "outputImage": "/catalogo-real/gti07-114-gti-gti07-114-punta-eje-l-r-citroen-jumper-m-n-35x29.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-114-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-114-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09101.png"
+      ],
+      "sha256": "6a8c6e19dc259f7d7d0bf0c0cc79fcff2868f59ec08332090d680714e340c781",
+      "updatedAt": "2026-08-28T16:28:42.727Z"
+    },
+    "GTI07115": {
+      "sku": "GTI07-115",
+      "name": "PUNTA EJE L/R. VOLKSWAGEN BORA/GOLF IV/JETTA GLI 1.8 TURBO 36X27 — GTI07-115",
+      "outputImage": "/catalogo-real/gti07-115-gti-gti07-115-punta-eje-l-r-volkswagen-bora-golf-iv-jetta-gli-1-8-turbo-36x27.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-115-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-115-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09102.png"
+      ],
+      "sha256": "2e8105abf8a5f3f0859025ed0f85a9227eabf39467b808d4093480e6aef25f57",
+      "updatedAt": "2026-08-28T16:28:42.727Z"
+    },
+    "GTI07116": {
+      "sku": "GTI07-116",
+      "name": "EJE HOMOCINETICO IZQ. CHERY VAN 23X25 — GTI07-116",
+      "outputImage": "/catalogo-real/gti07-116-gti-gti07-116-eje-homocinetico-izq-chery-van-23x25.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-116-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-116-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09103.png"
+      ],
+      "sha256": "00d23acbf66393634c6aef4b32cace7c282c60299c0af95c3134d87ba81a75a3",
+      "updatedAt": "2026-08-28T16:34:28.894Z"
+    },
+    "GTI07117": {
+      "sku": "GTI07-117",
+      "name": "EJE HOMOCINETICO DER. VOLKSWAGEN PANEL T5 /2010 38X26 — GTI07-117",
+      "outputImage": "/catalogo-real/gti07-117-gti-gti07-117-eje-homocinetico-der-volkswagen-panel-t5-2010-38x26.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-117-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-117-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09104.png"
+      ],
+      "sha256": "f056a8d9a70e326d1ae8c48c7035dd5e96b9a5f593a76d292ea177dad710aba2",
+      "updatedAt": "2026-08-28T16:34:28.895Z"
+    },
+    "GTI07118": {
+      "sku": "GTI07-118",
+      "name": "EJE HOMOCINETICO NISSAN PATHFINDER M/N. 28 DTS. — GTI07-118",
+      "outputImage": "/catalogo-real/gti07-118-gti-gti07-118-eje-homocinetico-nissan-pathfinder-m-n-28-dts.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-118-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-118-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09105.png"
+      ],
+      "sha256": "67b91d0bc4112d127d9efbe10860f15e99c6f5270c097a5e172a5bb09542f72e",
+      "updatedAt": "2026-08-28T16:34:28.895Z"
+    },
+    "GTI07119": {
+      "sku": "GTI07-119",
+      "name": "PUNTA EJE L/C. VOLKSWAGEN GOLF III 1.8/GOL/VOYAGE/FOX/SAVEIRO 1.6/AUDI A3 33 DTS. — GTI07-119",
+      "outputImage": "/catalogo-real/gti07-119-gti-gti07-119-punta-eje-l-c-volkswagen-golf-iii-1-8-gol-voyage-fox-saveiro-1-6-audi-a3.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-119-imotriz.jpg",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-119-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09106.JPG"
+      ],
+      "sha256": "5a8cba07a96b28e799d84691ab2dc7afa595c639b43764affce398fde226def9",
+      "updatedAt": "2026-08-28T16:34:28.895Z"
+    },
+    "GTI07120": {
+      "sku": "GTI07-120",
+      "name": "EJE HOMOCINETICO TOYOTA HILUX M/V./HI-RIDER 26 DTS. — GTI07-120",
+      "outputImage": "/catalogo-real/gti07-120-gti-gti07-120-eje-homocinetico-toyota-hilux-m-v-hi-rider-26-dts.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-120-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-120-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09107.png"
+      ],
+      "sha256": "cbe236abdc1395f08da2b78bc4f3ad738fa27f1333ac2bf8ef9af4ff961a8ba4",
+      "updatedAt": "2026-08-28T16:34:28.895Z"
+    },
+    "GTI07121": {
+      "sku": "GTI07-121",
+      "name": "EJE HOMOCINETICO TOYOTA PRADO 30X27 — GTI07-121",
+      "outputImage": "/catalogo-real/gti07-121-gti-gti07-121-eje-homocinetico-toyota-prado-30x27.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-121-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-121-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09108.png"
+      ],
+      "sha256": "519341a449f31c949f9815f68d2a413db8120af525dfe1a0074f3dd06a161fc9",
+      "updatedAt": "2026-08-28T16:34:28.895Z"
+    },
+    "GTI07122": {
+      "sku": "GTI07-122",
+      "name": "EJE HOMOCINETICO IZQ. VOLKSWAGEN PANEL T5 TODAS 38 DTS. — GTI07-122",
+      "outputImage": "/catalogo-real/gti07-122-gti-gti07-122-eje-homocinetico-izq-volkswagen-panel-t5-todas-38-dts.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-122-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-122-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09109.png"
+      ],
+      "sha256": "6ebd03878d594601b984516e1e390e6c0f8fb325f84470e1056ccb67d616723d",
+      "updatedAt": "2026-08-28T16:34:28.895Z"
+    },
+    "GTI07123": {
+      "sku": "GTI07-123",
+      "name": "PUNTA EJE L/C. IZQ. VOLKSWAGEN PANEL T5 TODAS 28 DTS. — GTI07-123",
+      "outputImage": "/catalogo-real/gti07-123-gti-gti07-123-punta-eje-l-c-izq-volkswagen-panel-t5-todas-28-dts.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-123-imotriz.jpg",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-123-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09110.JPG"
+      ],
+      "sha256": "f1bf138d57b7a10cb93d8a44f29495fe2b55f13108f4f408fd532c59ac35404d",
+      "updatedAt": "2026-08-28T16:34:28.895Z"
+    },
+    "GTI07124": {
+      "sku": "GTI07-124",
+      "name": "EJE HOMOCINETICO VOLKSWAGEN AMAROK 28 DTS. — GTI07-124",
+      "outputImage": "/catalogo-real/gti07-124-gti-gti07-124-eje-homocinetico-volkswagen-amarok-28-dts.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-124-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-124-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09111.png"
+      ],
+      "sha256": "aac16929a8b9d332a34e01de43a826aa8c8cc816e1376970e68b9c0e6607c1e2",
+      "updatedAt": "2026-08-28T16:34:28.895Z"
+    },
+    "GTI07125": {
+      "sku": "GTI07-125",
+      "name": "PUNTA EJE L/C. NISSAN PATHFINDER M/N. 27 DTS. — GTI07-125",
+      "outputImage": "/catalogo-real/gti07-125-gti-gti07-125-punta-eje-l-c-nissan-pathfinder-m-n-27-dts.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-125-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-125-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09112.png"
+      ],
+      "sha256": "9fb33c778f71007ea0e64c0b622ebcd9c7f7c2afb81b9bbf76821832c2b50347",
+      "updatedAt": "2026-08-28T16:34:28.895Z"
+    },
+    "GTI07126": {
+      "sku": "GTI07-126",
+      "name": "PUNTA EJE L/C. VOLKSWAGEN AMAROK 28 DTS. — GTI07-126",
+      "outputImage": "/catalogo-real/gti07-126-gti-gti07-126-punta-eje-l-c-volkswagen-amarok-28-dts.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-126-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-126-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09113.png"
+      ],
+      "sha256": "302d4b75780c85c7e646440140912b7e2c099cfc2ac373335ecad35ed34dcc06",
+      "updatedAt": "2026-08-28T16:40:12.009Z"
+    },
+    "GTI07127": {
+      "sku": "GTI07-127",
+      "name": "PUNTA EJE L/C. SEAT IBIZA 1.4 16V 02/07/LEON 1.6 16V 00/06/SKODA FABIA I 1.4/COMBI 30 DTS. — GTI07-127",
+      "outputImage": "/catalogo-real/gti07-127-gti-gti07-127-punta-eje-l-c-seat-ibiza-1-4-16v-02-07-leon-1-6-16v-00-06-skoda-fabia-i.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-127-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-127-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09114.png"
+      ],
+      "sha256": "7c671190feb67376f4a2cdb9ad79de3421096bf95adc2c719497d1f191f5f7af",
+      "updatedAt": "2026-08-28T16:40:12.009Z"
+    },
+    "GTI07128": {
+      "sku": "GTI07-128",
+      "name": "PUNTA EJE L/R. VOLKSWAGEN PANEL/TRANSPORTER 38X28 — GTI07-128",
+      "outputImage": "/catalogo-real/gti07-128-gti-gti07-128-punta-eje-l-r-volkswagen-panel-transporter-38x28.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-128-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-128-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09116.png"
+      ],
+      "sha256": "f1a9dc8e1b821a2b5f8095e08441bb738088a5e209775023810a9b3244f78cc9",
+      "updatedAt": "2026-08-28T16:40:12.009Z"
+    },
+    "GTI07129": {
+      "sku": "GTI07-129",
+      "name": "PUNTA EJE L/R. DAIHATSU FEROZA 24X22 — GTI07-129",
+      "outputImage": "/catalogo-real/gti07-129-gti-gti07-129-punta-eje-l-r-daihatsu-feroza-24x22.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-129-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-129-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09117.png"
+      ],
+      "sha256": "229887d0aaaf7ff4677722eb187301b4b5934a39625c9a0d778bc4fec00d5521",
+      "updatedAt": "2026-08-28T16:40:12.009Z"
+    },
+    "GTI07130": {
+      "sku": "GTI07-130",
+      "name": "PUNTA EJE L/C. DER. VOLKSWAGEN PANEL T5 /2010 (HEMBRA CORTA) 26X28 — GTI07-130",
+      "outputImage": "/catalogo-real/gti07-130-gti-gti07-130-punta-eje-l-c-der-volkswagen-panel-t5-2010-hembra-corta-26x28.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-130-imotriz.jpg",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-130-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09115.JPG"
+      ],
+      "sha256": "e306b6f3615aae74bd3d8ada007b8db6ee9f3be8716cc770bbe7d2658caf7431",
+      "updatedAt": "2026-08-28T16:40:12.009Z"
+    },
+    "GTI07131": {
+      "sku": "GTI07-131",
+      "name": "PUNTA EJE L/R. DAIHATSU TERIOS M/N. 24X22 — GTI07-131",
+      "outputImage": "/catalogo-real/gti07-131-gti-gti07-131-punta-eje-l-r-daihatsu-terios-m-n-24x22.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-131-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-131-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09118.png"
+      ],
+      "sha256": "604bcd0c2bc2caecc1f850eefbab770e8e9de7a5b0de840df8d7bc1de461565f",
+      "updatedAt": "2026-08-28T16:40:12.009Z"
+    },
+    "GTI07132": {
+      "sku": "GTI07-132",
+      "name": "EJE HOMOCINETICO DER. VOLKSWAGEN BORA 05/2011/JETTA 06/2010/NUEVO ESCARABAJO 36 DTS. — GTI07-132",
+      "outputImage": "/catalogo-real/gti07-132-gti-gti07-132-eje-homocinetico-der-volkswagen-bora-05-2011-jetta-06-2010-nuevo-escarab.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-132-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-132-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09119.png"
+      ],
+      "sha256": "1a6ce3d5c52bbc2e6c3e32bb682d2d91c032896932cf7f0797abc42ebad1e192",
+      "updatedAt": "2026-08-28T16:40:12.009Z"
+    },
+    "GTI07139": {
+      "sku": "GTI07-139",
+      "name": "PUNTA EJE L/C. NISSAN PATHFINDER/FRONTIER 98/04 (FLANCHE) 27 DTS. — GTI07-139",
+      "outputImage": "/catalogo-real/gti07-139-gti-gti07-139-punta-eje-l-c-nissan-pathfinder-frontier-98-04-flanche-27-dts.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-139-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-139-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09126.png"
+      ],
+      "sha256": "110fcabeecd80e6b2287924e5f04d84bc6d8bfc273f6381623cf466c8bd06906",
+      "updatedAt": "2026-08-28T16:40:12.009Z"
+    },
+    "GTI07140": {
+      "sku": "GTI07-140",
+      "name": "PUNTA EJE L/R. SUZUKI SAMURAI/SJ 410/413 26X19 — GTI07-140",
+      "outputImage": "/catalogo-real/gti07-140-gti-gti07-140-punta-eje-l-r-suzuki-samurai-sj-410-413-26x19.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-140-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-140-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09127.png"
+      ],
+      "sha256": "25773d4b5a0cfe5b567d592f0d68f6ef5a81c2b3f48e30adac753f475aac3a7a",
+      "updatedAt": "2026-08-28T16:40:12.009Z"
+    },
+    "GTI07141": {
+      "sku": "GTI07-141",
+      "name": "PUNTA EJE L/R. PEUGEOT 206 21X22 — GTI07-141",
+      "outputImage": "/catalogo-real/gti07-141-gti-gti07-141-punta-eje-l-r-peugeot-206-21x22.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-141-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-141-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09128.png"
+      ],
+      "sha256": "b859cbde23d67f173f8c2a80d48970026d1332aa949507e925fffd6f32bcf22c",
+      "updatedAt": "2026-08-28T16:40:12.009Z"
+    },
+    "GTI07142": {
+      "sku": "GTI07-142",
+      "name": "PUNTA EJE L/C. VOLKSWAGEN GOLF 1.0/1.1/1.3/POLO 1.6/SEAT CORDOBA/IBIZA/SKODA FABIA 33 DTS. — GTI07-142",
+      "outputImage": "/catalogo-real/gti07-142-gti-gti07-142-punta-eje-l-c-volkswagen-golf-1-0-1-1-1-3-polo-1-6-seat-cordoba-ibiza-sk.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-142-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-142-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09129.png"
+      ],
+      "sha256": "f68c51e724480e091c336ae7203b7e060ceeb518d2a40c6b8b8cf6c92fb32730",
+      "updatedAt": "2026-08-28T16:46:17.149Z"
+    },
+    "GTI07143": {
+      "sku": "GTI07-143",
+      "name": "PUNTA EJE L/C. VOLKSWAGEN JETTA/GOLF 1.8/2.0/POLO/PASSAT/AUDI A3/A4/SEAT CORDOBA 33 DTS. — GTI07-143",
+      "outputImage": "/catalogo-real/gti07-143-gti-gti07-143-punta-eje-l-c-volkswagen-jetta-golf-1-8-2-0-polo-passat-audi-a3-a4-seat.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-143-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-143-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09130.png"
+      ],
+      "sha256": "346c8f76c9aacafaa2331fbb3434cf7bb8f0227a62a174f5618fe7911c1c5529",
+      "updatedAt": "2026-08-28T16:46:17.150Z"
+    },
+    "GTI07145": {
+      "sku": "GTI07-145",
+      "name": "EJE HOMOCINETICO IZQ. JAC 25X25 — GTI07-145",
+      "outputImage": "/catalogo-real/gti07-145-gti-gti07-145-eje-homocinetico-izq-jac-25x25.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-145-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-145-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09132.png"
+      ],
+      "sha256": "872bca89c7b00886b56a0ee163751fda1ef689f7cea43c52f5ef3c061e520723",
+      "updatedAt": "2026-08-28T16:46:17.150Z"
+    },
+    "GTI07146": {
+      "sku": "GTI07-146",
+      "name": "EJE HOMOCINETICO DER. JAC 25X28 — GTI07-146",
+      "outputImage": "/catalogo-real/gti07-146-gti-gti07-146-eje-homocinetico-der-jac-25x28.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-146-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-146-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09133.png"
+      ],
+      "sha256": "b924765049c95f9f1bceea252b7d0b890eab513766fbd6ea489f0ff208beaa69",
+      "updatedAt": "2026-08-28T16:46:17.150Z"
+    },
+    "GTI07147": {
+      "sku": "GTI07-147",
+      "name": "PUNTA EJE L/R. TOYOTA LAND CRUISER VENEZOLANA/BURBUJA 2010/ 30X24 — GTI07-147",
+      "outputImage": "/catalogo-real/gti07-147-gti-gti07-147-punta-eje-l-r-toyota-land-cruiser-venezolana-burbuja-2010-30x24.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-147-imotriz.jpg",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-147-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09134.JPG"
+      ],
+      "sha256": "771dafee1ef9ccac389d78825bc4eeedeb3c16e2337d65a28dd5ef26e0147649",
+      "updatedAt": "2026-08-28T16:46:17.150Z"
+    },
+    "GTI07148": {
+      "sku": "GTI07-148",
+      "name": "EJE HOMOCINETICO DER. VOLKSWAGEN PANEL T5 2011/ 38X26 — GTI07-148",
+      "outputImage": "/catalogo-real/gti07-148-gti-gti07-148-eje-homocinetico-der-volkswagen-panel-t5-2011-38x26.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-148-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-148-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09135.png"
+      ],
+      "sha256": "d52d3f2b58e1cb1dc462c904572824421e3a773c20c7f5e3f20cd4d1e5188df2",
+      "updatedAt": "2026-08-28T16:46:17.150Z"
+    },
+    "GTI07150": {
+      "sku": "GTI07-150",
+      "name": "G/POLVO EJE L/R. VOLKSWAGEN PANEL T5 — GTI07-150",
+      "outputImage": "/catalogo-real/gti07-150-gti-gti07-150-g-polvo-eje-l-r-volkswagen-panel-t5.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-150-imotriz.jpg",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-150-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09137.jpg"
+      ],
+      "sha256": "e9ae2e3e0fac9d37ea097c621cdd364331ab13068876eca093b8670589f9b0d2",
+      "updatedAt": "2026-08-28T16:46:17.150Z"
+    },
+    "GTI07151": {
+      "sku": "GTI07-151",
+      "name": "PUNTA EJE L/R. TOYOTA COROLLA SENSACION 26X23 — GTI07-151",
+      "outputImage": "/catalogo-real/gti07-151-gti-gti07-151-punta-eje-l-r-toyota-corolla-sensacion-26x23.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-151-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-151-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09138.png"
+      ],
+      "sha256": "8a8d884939e625d7148c9f121c908af964c2d35fec1297b21be9719dc1dc0923",
+      "updatedAt": "2026-08-28T16:46:17.150Z"
+    },
+    "GTI07152": {
+      "sku": "GTI07-152",
+      "name": "PUNTA EJE L/R. JAC TAXI VVT 1.5 25X21 — GTI07-152",
+      "outputImage": "/catalogo-real/gti07-152-gti-gti07-152-punta-eje-l-r-jac-taxi-vvt-1-5-25x21.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-152-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-152-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09139.png"
+      ],
+      "sha256": "fc3a3589386f43d16bbb1473089dd485a74cdc4fdc0f581392b76ef1a049ed57",
+      "updatedAt": "2026-08-28T16:46:17.150Z"
+    },
+    "GTI07157": {
+      "sku": "GTI07-157",
+      "name": "PUNTA EJE L/C. DER. MITSUBISHI SPORTERO (FLANCHE) 33 DTS. — GTI07-157",
+      "outputImage": "/catalogo-real/gti07-157-gti-gti07-157-punta-eje-l-c-der-mitsubishi-sportero-flanche-33-dts.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-157-imotriz.jpg",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-157-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09144.JPG"
+      ],
+      "sha256": "263d83334e1ce694708bb63f368739fc93c32910bbfbacb210b2cffa03e4587a",
+      "updatedAt": "2026-08-28T16:54:51.572Z"
+    },
+    "GTI07158": {
+      "sku": "GTI07-158",
+      "name": "PUNTA EJE L/C. IZQ. MITSUBISHI SPORTERO 28X33 — GTI07-158",
+      "outputImage": "/catalogo-real/gti07-158-gti-gti07-158-punta-eje-l-c-izq-mitsubishi-sportero-28x33.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-158-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-158-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09145.png"
+      ],
+      "sha256": "a942902eb6a70456bf1a64aea0cfc3c835bd9da453edab62dab17d916c118b28",
+      "updatedAt": "2026-08-28T16:54:51.572Z"
+    },
+    "GTI07159": {
+      "sku": "GTI07-159",
+      "name": "PUNTA EJE L/R. FORD FESTIVA/JAC J2 PIN EXT. 24X19 — GTI07-159",
+      "outputImage": "/catalogo-real/gti07-159-gti-gti07-159-punta-eje-l-r-ford-festiva-jac-j2-pin-ext-24x19.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-159-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-159-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09146.png"
+      ],
+      "sha256": "78cec1dcae54c2218bbd9a558bfa1d18d16588d39c36258409d29b44ed1c2c4e",
+      "updatedAt": "2026-08-28T16:54:51.572Z"
+    },
+    "GTI07161": {
+      "sku": "GTI07-161",
+      "name": "PUNTA EJE L/R. PEUGEOT 306 25X31 — GTI07-161",
+      "outputImage": "/catalogo-real/gti07-161-gti-gti07-161-punta-eje-l-r-peugeot-306-25x31.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-161-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-161-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09148.png"
+      ],
+      "sha256": "b7c19146e748eecc64455a9aa896158af7b2bfa0dfeee841b0be4dde6b06dcea",
+      "updatedAt": "2026-08-28T16:54:51.572Z"
+    },
+    "GTI07162": {
+      "sku": "GTI07-162",
+      "name": "PUNTA EJE L/R. MERCEDES BENZ 30X35 — GTI07-162",
+      "outputImage": "/catalogo-real/gti07-162-gti-gti07-162-punta-eje-l-r-mercedes-benz-30x35.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-162-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-162-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09149.png"
+      ],
+      "sha256": "e8e75709301760c7b1596054afce776d6a2599e6edb88d9195ed1a2d1082e52f",
+      "updatedAt": "2026-08-28T16:54:51.572Z"
+    },
+    "GTI07163": {
+      "sku": "GTI07-163",
+      "name": "PUNTA EJE L/R. SUBARU LEONE 30X22 — GTI07-163",
+      "outputImage": "/catalogo-real/gti07-163-gti-gti07-163-punta-eje-l-r-subaru-leone-30x22.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-163-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-163-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09150.png"
+      ],
+      "sha256": "7d61f70294060bcc9ca3b980a8f5d4f2975adc3f736568c28258731fc8349bf3",
+      "updatedAt": "2026-08-28T16:54:51.572Z"
+    },
+    "GTI07164": {
+      "sku": "GTI07-164",
+      "name": "PUNTA EJE L/R. FIAT PALIO 1.6 22X22 — GTI07-164",
+      "outputImage": "/catalogo-real/gti07-164-gti-gti07-164-punta-eje-l-r-fiat-palio-1-6-22x22.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-164-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-164-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09151.png"
+      ],
+      "sha256": "dcd889729362b34d044cd54d47c73a11283ab7315adf30ba92df1c7c7b5a9373",
+      "updatedAt": "2026-08-28T16:54:51.572Z"
+    },
+    "GTI07165": {
+      "sku": "GTI07-165",
+      "name": "PUNTA EJE L/R. VOLKSWAGEN GOL NEW 1.6 09/ 22X24 — GTI07-165",
+      "outputImage": "/catalogo-real/gti07-165-gti-gti07-165-punta-eje-l-r-volkswagen-gol-new-1-6-09-22x24.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-165-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-165-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09152.png"
+      ],
+      "sha256": "f0805e61b62ea2373039708e003dea8f811ea727e760b84c5b535d9c263ff976",
+      "updatedAt": "2026-08-28T16:54:51.572Z"
+    },
+    "GTI07166": {
+      "sku": "GTI07-166",
+      "name": "PUNTA EJE L/R. NISSAN TERRANO 2.4/3.0 4X4 27X32 — GTI07-166",
+      "outputImage": "/catalogo-real/gti07-166-gti-gti07-166-punta-eje-l-r-nissan-terrano-2-4-3-0-4x4-27x32.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-166-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-166-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09155.png"
+      ],
+      "sha256": "c51ac3f3c4097e36634c290b020dd3bdedd119410911aafd714e2ff1f73f52a7",
+      "updatedAt": "2026-08-28T17:00:51.745Z"
+    },
+    "GTI07167": {
+      "sku": "GTI07-167",
+      "name": "PUNTA EJE L/C. IZQ. JAC (MACHO) 25X29 — GTI07-167",
+      "outputImage": "/catalogo-real/gti07-167-gti-gti07-167-punta-eje-l-c-izq-jac-macho-25x29.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-167-imotriz.jpg",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-167-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09156.JPG"
+      ],
+      "sha256": "56771857eb4a486edddd977ded99c27161c325d8b7a20bb6af32f8e5a6780898",
+      "updatedAt": "2026-08-28T17:00:51.746Z"
+    },
+    "GTI07168": {
+      "sku": "GTI07-168",
+      "name": "PUNTA EJE L/C. DER. JAC (HEMBRA) 28X29 — GTI07-168",
+      "outputImage": "/catalogo-real/gti07-168-gti-gti07-168-punta-eje-l-c-der-jac-hembra-28x29.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-168-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-168-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09157.png"
+      ],
+      "sha256": "4e0cd1d89ef5452f5ce672ef21c6fdf8cbf409552246217d2af498e5d0a1b98a",
+      "updatedAt": "2026-08-28T17:00:51.746Z"
+    },
+    "GTI07169": {
+      "sku": "GTI07-169",
+      "name": "PUNTA EJE L/R. GEELY 24X23 — GTI07-169",
+      "outputImage": "/catalogo-real/gti07-169-gti-gti07-169-punta-eje-l-r-geely-24x23.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-169-imotriz.jpg",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-169-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09158.JPG"
+      ],
+      "sha256": "2d307dec0369787b0a09c9da284ff2368f6977d61bd1d1785d22f3da7824594e",
+      "updatedAt": "2026-08-28T17:00:51.746Z"
+    },
+    "GTI07171": {
+      "sku": "GTI07-171",
+      "name": "PUNTA EJE L/R. TOYOTA PRADO TX/TXL 30X30 — GTI07-171",
+      "outputImage": "/catalogo-real/gti07-171-gti-gti07-171-punta-eje-l-r-toyota-prado-tx-txl-30x30.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-171-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-171-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09160.png"
+      ],
+      "sha256": "1059e418f6ddb24c2c4998fa5d5799928376dd348c9923828e864ef1acb34219",
+      "updatedAt": "2026-08-28T17:00:51.746Z"
+    },
+    "GTI07173": {
+      "sku": "GTI07-173",
+      "name": "EJE HOMOCINETICO DER. CHERY VAN II/YOYA 23X25 — GTI07-173",
+      "outputImage": "/catalogo-real/gti07-173-gti-gti07-173-eje-homocinetico-der-chery-van-ii-yoya-23x25.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-173-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-173-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09162.png"
+      ],
+      "sha256": "77794bf7079937315d24c4b6b3d4983492c0431ef37565999000bfa6078772ca",
+      "updatedAt": "2026-08-28T17:00:51.746Z"
+    },
+    "GTI07174": {
+      "sku": "GTI07-174",
+      "name": "EJE HOMOCINETICO IZQ. CHERY VAN II/YOYA 23X25 — GTI07-174",
+      "outputImage": "/catalogo-real/gti07-174-gti-gti07-174-eje-homocinetico-izq-chery-van-ii-yoya-23x25.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-174-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-174-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09163.png"
+      ],
+      "sha256": "bea0831acdcda10126431fd9ce426d5f61d7ebf43bf48885762692b5f2aef81f",
+      "updatedAt": "2026-08-28T17:00:51.746Z"
+    },
+    "GTI07175": {
+      "sku": "GTI07-175",
+      "name": "PUNTA EJE L/R. CHERY VAN II/YOYA 23X29 — GTI07-175",
+      "outputImage": "/catalogo-real/gti07-175-gti-gti07-175-punta-eje-l-r-chery-van-ii-yoya-23x29.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-175-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-175-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09164.png"
+      ],
+      "sha256": "7775d79b411ea8f3cb731a930c53775e9ee4d0cd8ebd5d0428c830c572ff8ed3",
+      "updatedAt": "2026-08-28T17:00:51.746Z"
+    },
+    "GTI07176": {
+      "sku": "GTI07-176",
+      "name": "EJE HOMOCINETICO IZQ. MITSUBISHI SPORTERO 2.5 DIESEL 4X4 CINTA ABS ANCHA 30X28 — GTI07-176",
+      "outputImage": "/catalogo-real/gti07-176-gti-gti07-176-eje-homocinetico-izq-mitsubishi-sportero-2-5-diesel-4x4-cinta-abs-ancha.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-176-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-176-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09165.png"
+      ],
+      "sha256": "824e26ca6c44036f6f2bec1098847eb8e0559f913e900802db6391800d7994c2",
+      "updatedAt": "2026-08-28T17:00:51.746Z"
+    },
+    "GTI07177": {
+      "sku": "GTI07-177",
+      "name": "EJE HOMOCINETICO DER. MITSUBISHI SPORTERO 2.5 DIESEL 4X4 CINTA ABS ANCHA 30X28 — GTI07-177",
+      "outputImage": "/catalogo-real/gti07-177-gti-gti07-177-eje-homocinetico-der-mitsubishi-sportero-2-5-diesel-4x4-cinta-abs-ancha.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-177-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-177-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09153.png"
+      ],
+      "sha256": "b20fcafd563332754885dd9a2e2719a42c0fb29461b331780844c3a97110a34b",
+      "updatedAt": "2026-08-28T17:00:51.746Z"
+    },
+    "GTI07178": {
+      "sku": "GTI07-178",
+      "name": "PUNTA EJE L/C. CHEVROLET CHEVY 22X28 — GTI07-178",
+      "outputImage": "/catalogo-real/gti07-178-gti-gti07-178-punta-eje-l-c-chevrolet-chevy-22x28.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-178-imotriz.jpg",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-178-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09166.JPG"
+      ],
+      "sha256": "d612a628ae95448fa744ecfe788a081e45554aa3e71c2bbd2b20f0dbf963b56d",
+      "updatedAt": "2026-08-28T17:08:46.016Z"
+    },
+    "GTI07180": {
+      "sku": "GTI07-180",
+      "name": "PUNTA EJE L/R. TOYOTA SAHARA 2012/ (ROSCA) 36X30 — GTI07-180",
+      "outputImage": "/catalogo-real/gti07-180-gti-gti07-180-punta-eje-l-r-toyota-sahara-2012-rosca-36x30.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-180-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-180-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09168.png"
+      ],
+      "sha256": "9f81db4fac45c61472e61b9cdcaf7827c18c142f9a90885b7ca5117446c61d1d",
+      "updatedAt": "2026-08-28T17:08:46.017Z"
+    },
+    "GTI07181": {
+      "sku": "GTI07-181",
+      "name": "PUNTA EJE L/R. TOYOTA SAHARA /2012 30X30 — GTI07-181",
+      "outputImage": "/catalogo-real/gti07-181-gti-gti07-181-punta-eje-l-r-toyota-sahara-2012-30x30.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-181-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-181-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09169.png"
+      ],
+      "sha256": "b556113cd1403b5416a2f4748d9192544127a89d4012312065b8bca4419de643",
+      "updatedAt": "2026-08-28T17:08:46.017Z"
+    },
+    "GTI07182": {
+      "sku": "GTI07-182",
+      "name": "PUNTA EJE L/R. CHERY TIGGO 2.0 26X30 — GTI07-182",
+      "outputImage": "/catalogo-real/gti07-182-gti-gti07-182-punta-eje-l-r-chery-tiggo-2-0-26x30.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-182-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-182-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09170.png"
+      ],
+      "sha256": "e8f687d3b7eb8655ecdd1b313a083ee856e9ed08283449bbbd1e6fd8671ebbbd",
+      "updatedAt": "2026-08-28T17:08:46.017Z"
+    },
+    "GTI07184": {
+      "sku": "GTI07-184",
+      "name": "EJE HOMOCINETICO DER. FAW V5 24X25 — GTI07-184",
+      "outputImage": "/catalogo-real/gti07-184-gti-gti07-184-eje-homocinetico-der-faw-v5-24x25.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-184-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-184-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09172.png"
+      ],
+      "sha256": "c0fede30d56039f009cd0919f32663ca7ef9c5d7c3eb8bd6bbbabee1a9e37df2",
+      "updatedAt": "2026-08-28T17:08:46.017Z"
+    },
+    "GTI07185": {
+      "sku": "GTI07-185",
+      "name": "EJE HOMOCINETICO IZQ. FAW V6 24X25 — GTI07-185",
+      "outputImage": "/catalogo-real/gti07-185-gti-gti07-185-eje-homocinetico-izq-faw-v6-24x25.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-185-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-185-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09173.png"
+      ],
+      "sha256": "2b2c8353fd194d4c14f9aef7c822d4c7df92f75d908414d43c40c644c5d5180d",
+      "updatedAt": "2026-08-28T17:08:46.017Z"
+    },
+    "GTI07186": {
+      "sku": "GTI07-186",
+      "name": "PUNTA EJE L/R. FAW 24X21 — GTI07-186",
+      "outputImage": "/catalogo-real/gti07-186-gti-gti07-186-punta-eje-l-r-faw-24x21.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-186-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-186-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09174.png"
+      ],
+      "sha256": "73a99e1970bbf956fdc9210c6ffbe17405bbbb7ecf41cdeb1408c5d1c19fad67",
+      "updatedAt": "2026-08-28T17:08:46.017Z"
+    },
+    "GTI07187": {
+      "sku": "GTI07-187",
+      "name": "PUNTA EJE L/C. FAW 25X21 — GTI07-187",
+      "outputImage": "/catalogo-real/gti07-187-gti-gti07-187-punta-eje-l-c-faw-25x21.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-187-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-187-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09175.png"
+      ],
+      "sha256": "1a54ad8aab1897135d1531e829c3419a1db8b4e1ba130b60cef93473c4ce24ea",
+      "updatedAt": "2026-08-28T17:08:46.017Z"
+    },
+    "GTI07189": {
+      "sku": "GTI07-189",
+      "name": "PUNTA EJE L/R. CHERY TIGGO 1.6 26X31 — GTI07-189",
+      "outputImage": "/catalogo-real/gti07-189-gti-gti07-189-punta-eje-l-r-chery-tiggo-1-6-26x31.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-189-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-189-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09177.png"
+      ],
+      "sha256": "dc36d863e519918763b2eed1208fdd33cd53d593382e6bfd14974e9c04b929e7",
+      "updatedAt": "2026-08-28T17:08:46.017Z"
+    },
+    "GTI07191": {
+      "sku": "GTI07-191",
+      "name": "PUNTA EJE L/C. CHERY VAN PASS II 25X29 — GTI07-191",
+      "outputImage": "/catalogo-real/gti07-191-gti-gti07-191-punta-eje-l-c-chery-van-pass-ii-25x29.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-191-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-191-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09179.png"
+      ],
+      "sha256": "2ec7941fb2e1f1542406c6ea22b1db50ae2c6e605143366e32d08535ae9bf226",
+      "updatedAt": "2026-08-28T17:08:46.017Z"
+    },
+    "GTI07192": {
+      "sku": "GTI07-192",
+      "name": "PUNTA EJE L/R. SUBARU 27X30 — GTI07-192",
+      "outputImage": "/catalogo-real/gti07-192-gti-gti07-192-punta-eje-l-r-subaru-27x30.webp",
+      "sourceImage": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI07-192-imotriz.png",
+      "sources": [
+        "https://www.imotriz.com/producto/3/GTI07-192-/",
+        "https://app.pedbox.co:7777/imagenes_catalogo/15/07I09180.png"
+      ],
+      "sha256": "fc2fad65b6962c51a4215adcfc70915c70123be4468c7c8b245222dbae13eecc",
+      "updatedAt": "2026-08-28T17:12:40.723Z"
+    }
+  }
+}

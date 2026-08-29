@@ -1,0 +1,17 @@
+[
+  {
+    "sku": "GTI01-010",
+    "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-generated-sources\\GTI01-010-generated.png",
+    "generation_prompt": "Photorealistic catalog reference for GTI01-010: complete Renault 12 homokinetic front axle with documented 20 x 23 spline configuration; no bolt flange, side, ABS ring or retention type asserted because the exact source does not specify them; specifications contrasted against the exact Imotriz GTI SKU page and historical GTI catalog; pure white background, no text, logo or watermark."
+  },
+  {
+    "sku": "GTI03-005",
+    "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-generated-sources\\GTI03-005-generated.png",
+    "generation_prompt": "Photorealistic catalog reference for GTI03-005: wheel-side outer CV joint kit for Mazda B2600 2001 onward / BT-50 gasoline, documented 26 external x 25 internal spline configuration with threaded spindle; no ABS ring or retention type asserted because the exact source does not specify them; specifications contrasted against the exact Imotriz GTI SKU page and historical Mazda GTI catalog; pure white background, no text, logo or watermark."
+  },
+  {
+    "sku": "GTI03-049",
+    "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-generated-sources\\GTI03-049-generated.png",
+    "generation_prompt": "Photorealistic catalog reference for GTI03-049: heavy-duty wheel-side outer CV joint kit for Kia Grand Carnival / Sedona with manual transmission, documented 31 external x 28 internal spline configuration; no ABS ring, side or retention type asserted because the exact source does not specify them; specifications contrasted against two exact Imotriz SKU pages and historical GTI catalog; pure white background, no text, logo or watermark."
+  }
+]

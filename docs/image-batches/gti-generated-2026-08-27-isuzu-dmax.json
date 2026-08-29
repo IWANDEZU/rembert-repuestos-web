@@ -1,0 +1,12 @@
+[
+  {
+    "sku": "GTI02-001",
+    "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-generated-sources\\GTI02-001-generated.png",
+    "generation_prompt": "Photorealistic catalog reference for GTI02-001: wheel-side outer CV joint kit for Chevrolet / Isuzu D-Max 3.0 through 2010 and Isuzu Rodeo with documented internal retaining pin and 17 x 33 spline configuration; heavy-duty joint, boot, axle nut, clamps, grease and retaining circlip; no ABS ring because the exact sources do not specify ABS; specifications contrasted against the exact Imotriz GTI SKU page, exact Mercado Libre GTI listing and historical Isuzu catalog; pure white background, no text, logo or watermark."
+  },
+  {
+    "sku": "GTI02-002",
+    "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-generated-sources\\GTI02-002-generated.png",
+    "generation_prompt": "Photorealistic catalog reference for GTI02-002: complete front CV axle usable on right or left side for Chevrolet / Isuzu D-Max 3.0 4x4 from 2008 onward with documented 17 x 17 spline configuration and 609 mm overall length; compact closed inner joint with short unthreaded male spline, inner and outer boots, robust shaft and long unthreaded outer spline matching the exact real product photo; no ABS ring, support bearing or bracket; specifications and geometry contrasted against the exact Repuesto.co GTI SKU page and its watermarked real photo, used only as reference and not copied; pure white background, no text, logo or watermark."
+  }
+]

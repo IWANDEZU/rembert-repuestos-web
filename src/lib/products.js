@@ -1,13 +1,17 @@
 import { frenosSuspensionProducts } from "../data/frenosSuspensionProducts.js";
 import { brandPanelProducts } from "../data/brandPanelProducts.js";
 import { catalogoProveedoresProducts } from "../data/catalogoProveedoresProducts.js";
+import { automatedCatalogProducts } from "../data/automatedCatalogProducts.js";
 import { kiaProducts } from "../data/kiaProducts.js";
 import { electricalProducts } from "../data/electricalProducts.js";
 import { phcValeoProducts } from "../data/phcValeoProducts.js";
 import { inventoryLineProducts } from "../data/inventoryLineProducts.js";
 import { inventoryProducts } from "../data/inventoryProducts.js";
-import partmoCatalog from "../data/catalogo-filtros-diesel.json";
-import priorityCatalog from "../data/catalogo-prioridad-diesel.json";
+import { gtiProducts } from "../data/gtiProducts.js";
+import { gtiQuoteCatalogProducts } from "../data/gtiQuoteCatalogProducts.js";
+import { motorcraftProducts } from "../data/motorcraftProducts.js";
+import { productImageOverrides } from "../data/productImageOverrides.js";
+import priorityCatalog from "../data/catalogo-prioridad-diesel.json" with { type: "json" };
 
 const toCatalogSlug = (value) => String(value || "producto")
   .normalize("NFD")
@@ -21,43 +25,6 @@ const specificationsToAttributes = (product, id) => Object.entries(product.speci
     id: `${id}-spec-${index}`,
     name: key.replaceAll("_", " ").replace(/\b\w/g, (letter) => letter.toUpperCase()),
     value: typeof value === "boolean" ? (value ? "Sí" : "No") : String(value),
-  }));
-
-const partmoFilterProducts = partmoCatalog
-  .filter((product) => product.status === "ready" && product.image)
-  .map((product) => ({
-    id: `catalogo-${product.id}`,
-    name: product.name,
-    slug: `${toCatalogSlug(product.brand)}-${toCatalogSlug(product.reference)}-${toCatalogSlug(product.category)}`,
-    category: { name: "Filtros", slug: "filtros" },
-    brand: { name: product.brand, slug: toCatalogSlug(product.brand) },
-    price: 0,
-    sku: product.reference,
-    referenceType: "manufacturer",
-    fitmentStatus: "verified",
-    fitments: [{
-      make: "Aplicación de catálogo",
-      model: product.description,
-      years: "Confirmar según referencia OE/equivalente",
-      position: product.category,
-    }],
-    fitmentSummary: `${product.reference}: ${product.description}`,
-    fitmentRequirements: ["VIN", "año", "motor", "referencia OE o equivalente"],
-    fitmentSource: `${product.source} · página ${product.sourcePage}`,
-    shortDesc: `${product.category}. ${product.description}`,
-    description: `${product.description}. Referencia Partmo ${product.reference}${product.equivalentReference ? `; equivalencia ${product.equivalentReference}` : ""}. Verificar por VIN, motor y referencia desmontada antes del despacho.`,
-    image: product.image,
-    images: [{ url: product.image, alt: product.alt || product.name, isMain: true }],
-    imageStatus: "manufacturer-catalog",
-    attributes: [
-      { id: `${product.id}-ref`, name: "Referencia fabricante", value: product.reference },
-      ...(product.equivalentReference ? [{ id: `${product.id}-equiv`, name: "Equivalencia", value: product.equivalentReference }] : []),
-      { id: `${product.id}-application`, name: "Aplicación", value: product.description },
-      { id: `${product.id}-source`, name: "Fuente técnica", value: `${product.source} · página ${product.sourcePage}` },
-      { id: `${product.id}-validation`, name: "Validación de venta", value: "Confirmar VIN, motor y referencia OE/equivalente" },
-    ],
-    inStock: false,
-    stock: 0,
   }));
 
 const priorityCatalogProducts = (priorityCatalog.products || [])
@@ -420,6 +387,82 @@ const allProducts = [
     stock: 0,
   },
   {
+    id: "rodamiento-clutch-chevrolet-sail-n200-n300",
+    name: "Rodamiento de Embrague (Clutch / Balinera) — Chevrolet Sail / N200 / N300",
+    slug: "rodamiento-clutch-chevrolet-sail-n200-n300",
+    category: { name: "Embrague", slug: "embrague" },
+    brand: { name: "Chevrolet / Equipo Original", slug: "chevrolet" },
+    price: 60840,
+    sku: "24521039A",
+    shortDesc: "Balinera / rodamiento de desembrague para Chevrolet Sail 1.4/1.5, N200 1.2 y N300 1.2/1.5.",
+    description: "Rodamiento de desembrague (balinera de clutch / collarín) de alta precisión para Chevrolet Sail 1.4 / 1.5, Chevrolet N200 y Chevrolet N300 Max/Move. Fabricado bajo especificaciones de Equipo Original con pista tratada térmicamente, sellado de alta temperatura y clips de anclaje a la horquilla para un desembrague suave y libre de ruidos.",
+    image: "/catalogo-embrague/rodamiento-clutch-chevrolet-sail-n200-n300.png",
+    images: [{
+      url: "/catalogo-embrague/rodamiento-clutch-chevrolet-sail-n200-n300.png",
+      alt: "Rodamiento de embrague Chevrolet Sail N200 N300",
+      isMain: true,
+    }],
+    imageStatus: "exact-real-photo",
+    inStock: true,
+    stock: 6,
+    fitmentStatus: "verified",
+    fitmentSummary: "Chevrolet Sail 1.4 / 1.5 (2012–2020), Chevrolet N200 1.2 (2009–2014) y Chevrolet N300 1.2 / 1.5 (2012–2022).",
+    fitmentRequirements: ["VIN", "modelo", "año", "motor 1.2 / 1.4 / 1.5", "referencias OE 24521039A / 24512523 / 9023914"],
+    fitmentSource: "Equipo Original GM / SGMW — referencias OE 24521039A / 24512523 / 9023914 / 24525897 / LuK 500 1048 10.",
+    fitments: [
+      { make: "Chevrolet", model: "Sail 1.4L / 1.5L", years: "2012–2020", engine: "1.4L S-TEC III / 1.5L DVVT", position: "Transmisión manual · Rodamiento de embrague" },
+      { make: "Chevrolet", model: "N200 1.2L", years: "2009–2014", engine: "1.2L B12 Gasolina", position: "Transmisión manual · Balinera de clutch" },
+      { make: "Chevrolet", model: "N300 Max / Move / Pasajeros", years: "2012–2022", engine: "1.2L / 1.5L", position: "Transmisión manual · Collarín de desembrague" },
+    ],
+    attributes: [
+      { id: "rod-clutch-sail-1", name: "Tipo de Repuesto", value: "Rodamiento / Balinera de Desembrague (Release Bearing)" },
+      { id: "rod-clutch-sail-2", name: "Referencia Principal", value: "24521039A / 24512523" },
+      { id: "rod-clutch-sail-3", name: "Referencias Cruzadas OEM", value: "9023914, 24525897, 500104810, CT55-1, C514" },
+      { id: "rod-clutch-sail-4", name: "Vehículos Compatibles", value: "Chevrolet Sail 1.4/1.5, Chevrolet N200 1.2, Chevrolet N300 1.2/1.5" },
+      { id: "rod-clutch-sail-5", name: "Transmisión", value: "Caja manual de 5 velocidades" },
+      { id: "rod-clutch-sail-6", name: "Construcción", value: "Pista templada con clips de retención de horquilla" },
+      { id: "rod-clutch-sail-7", name: "Garantía", value: "100% de compatibilidad y ajuste exacto OEM" },
+    ],
+  },
+  {
+    id: "rodamiento-clutch-chevrolet-sail-n200-n300-oe",
+    name: "Rodamiento de Embrague (Clutch / Balinera) — Chevrolet Sail / N200 / N300",
+    slug: "rodamiento-clutch-chevrolet-sail-n200-n300",
+    category: { name: "Embrague", slug: "embrague" },
+    brand: { name: "Chevrolet / Equipo Original", slug: "chevrolet" },
+    price: 60840,
+    sku: "24512523",
+    shortDesc: "Balinera / rodamiento de desembrague para Chevrolet Sail 1.4/1.5, N200 1.2 y N300 1.2/1.5.",
+    description: "Rodamiento de desembrague (balinera de clutch / collarín) de alta precisión para Chevrolet Sail 1.4 / 1.5, Chevrolet N200 y Chevrolet N300 Max/Move. Fabricado bajo especificaciones de Equipo Original con pista tratada térmicamente, sellado de alta temperatura y clips de anclaje a la horquilla para un desembrague suave y libre de ruidos.",
+    image: "/catalogo-embrague/rodamiento-clutch-chevrolet-sail-n200-n300.png",
+    images: [{
+      url: "/catalogo-embrague/rodamiento-clutch-chevrolet-sail-n200-n300.png",
+      alt: "Rodamiento de embrague Chevrolet Sail N200 N300",
+      isMain: true,
+    }],
+    imageStatus: "exact-real-photo",
+    inStock: true,
+    stock: 6,
+    fitmentStatus: "verified",
+    fitmentSummary: "Chevrolet Sail 1.4 / 1.5 (2012–2020), Chevrolet N200 1.2 (2009–2014) y Chevrolet N300 1.2 / 1.5 (2012–2022).",
+    fitmentRequirements: ["VIN", "modelo", "año", "motor 1.2 / 1.4 / 1.5", "referencias OE 24521039A / 24512523 / 9023914"],
+    fitmentSource: "Equipo Original GM / SGMW — referencias OE 24521039A / 24512523 / 9023914 / 24525897 / LuK 500 1048 10.",
+    fitments: [
+      { make: "Chevrolet", model: "Sail 1.4L / 1.5L", years: "2012–2020", engine: "1.4L S-TEC III / 1.5L DVVT", position: "Transmisión manual · Rodamiento de embrague" },
+      { make: "Chevrolet", model: "N200 1.2L", years: "2009–2014", engine: "1.2L B12 Gasolina", position: "Transmisión manual · Balinera de clutch" },
+      { make: "Chevrolet", model: "N300 Max / Move / Pasajeros", years: "2012–2022", engine: "1.2L / 1.5L", position: "Transmisión manual · Collarín de desembrague" },
+    ],
+    attributes: [
+      { id: "rod-clutch-sail-oe-1", name: "Tipo de Repuesto", value: "Rodamiento / Balinera de Desembrague (Release Bearing)" },
+      { id: "rod-clutch-sail-oe-2", name: "Referencia Principal", value: "24512523 / 24521039A" },
+      { id: "rod-clutch-sail-oe-3", name: "Referencias Cruzadas OEM", value: "9023914, 24525897, 500104810, CT55-1, C514" },
+      { id: "rod-clutch-sail-oe-4", name: "Vehículos Compatibles", value: "Chevrolet Sail 1.4/1.5, Chevrolet N200 1.2, Chevrolet N300 1.2/1.5" },
+      { id: "rod-clutch-sail-oe-5", name: "Transmisión", value: "Caja manual de 5 velocidades" },
+      { id: "rod-clutch-sail-oe-6", name: "Construcción", value: "Pista templada con clips de retención de horquilla" },
+      { id: "rod-clutch-sail-oe-7", name: "Garantía", value: "100% de compatibilidad y ajuste exacto OEM" },
+    ],
+  },
+  {
     id: "skf-kit-rodamiento-rueda-familia",
     name: "Kit de Rodamiento de Rueda SKF — Referencia según Vehículo",
     slug: "kit-rodamiento-rueda-skf-referencia-vehiculo",
@@ -724,6 +767,7 @@ const allProducts = [
   // DIRECCIÓN, SUSPENSIÓN Y FRENO HIDRÁULICO — COTIZACIÓN VALIDADA POR VIN
   ...brandPanelProducts,
   ...frenosSuspensionProducts,
+  ...gtiProducts,
   ...catalogoProveedoresProducts,
   ...kiaProducts,
   ...electricalProducts,
@@ -1070,7 +1114,17 @@ const allProducts = [
 const curatedCatalog = [
   ...allProducts,
   ...priorityCatalogProducts,
-  ...partmoFilterProducts,
+  ...catalogoProveedoresProducts,
+  ...frenosSuspensionProducts,
+  ...brandPanelProducts,
+  ...kiaProducts,
+  ...electricalProducts,
+  ...phcValeoProducts,
+  ...inventoryLineProducts,
+  ...gtiProducts,
+  ...gtiQuoteCatalogProducts,
+  ...motorcraftProducts,
+  ...automatedCatalogProducts,
 ];
 
 const normalizeInventoryCode = (value) => String(value || "")
@@ -1088,12 +1142,13 @@ for (const product of curatedCatalog) {
   if (key && !curatedByCode.has(key)) curatedByCode.set(key, product);
 }
 
-export const products = inventoryProducts.map((inventoryProduct) => {
+const inventoryBackedProducts = inventoryProducts.map((inventoryProduct) => {
   const curated = curatedByCode.get(normalizeInventoryCode(inventoryProduct.sku));
   if (!curated) return inventoryProduct;
 
   return {
     ...inventoryProduct,
+    slug: curated.slug || inventoryProduct.slug,
     name: curated.name || inventoryProduct.name,
     brand: curated.brand || inventoryProduct.brand,
     shortDesc: curated.shortDesc || inventoryProduct.shortDesc,
@@ -1101,6 +1156,9 @@ export const products = inventoryProducts.map((inventoryProduct) => {
     image: curated.image || inventoryProduct.image,
     images: curated.images?.length ? curated.images : inventoryProduct.images,
     imageStatus: curated.imageStatus || "inventory-matched-editorial",
+    imageDisclosure: curated.imageDisclosure || inventoryProduct.imageDisclosure || "",
+    referenceType: curated.referenceType || inventoryProduct.referenceType,
+    fitmentStatus: curated.fitmentStatus || inventoryProduct.fitmentStatus,
     fitments: curated.fitments?.length ? curated.fitments : inventoryProduct.fitments,
     fitmentSummary: curated.fitmentSummary || inventoryProduct.fitmentSummary,
     fitmentRequirements: curated.fitmentRequirements || inventoryProduct.fitmentRequirements,
@@ -1113,6 +1171,135 @@ export const products = inventoryProducts.map((inventoryProduct) => {
   };
 });
 
+// El inventario sigue siendo la fuente general de publicación. Estas fichas
+// fueron solicitadas expresamente después del cierre del PDF y se publican
+// solo para cotización, sin inventar precio, existencia ni compatibilidad.
+const approvedPostInventoryCatalogIds = new Set([
+  "verke-amortiguadores-delanteros-honda-crv-2002-2006",
+  "verke-kit-amortiguadores-chevrolet-tracker-familia",
+  "tnk-nc050a-terminal-nissan-qashqai",
+  "tnk-vx9810-axial-volkswagen-gol-saveiro",
+  "tnk-va7021-rotula-superior-volkswagen-amarok",
+  "tnk-tol4882-link-toyota-hilux-fortuner",
+  "tnk-tol0030-link-trasero-toyota-4runner-prado-fj",
+  "tnk-cvl829-link-chevrolet-spark-gt",
+  "tnk-cvl8051-link-chevrolet-luv-dmax-isuzu-kb",
+  "tnk-cvl067-link-chevrolet-grand-vitara",
+  "tnk-tkx109-axial-kia-picanto-all-new",
+  "tnk-thx049-axial-kia-picanto-ion",
+  "tnk-thc074-terminal-derecho-kia-picanto-ion",
+  "skf-kit-cubo-rodamiento-abs-familia",
+  "skf-kit-distribucion-vkma-familia",
+  "skf-kit-distribucion-bomba-agua-vkmc-familia",
+  "skf-kit-homocinetica-vkjc-familia",
+  "skf-componentes-suspension-direccion-vkds-familia",
+  "skf-vkba3548-bocamaza-trasera-vw-new-gol-polo",
+    "skf-br3-rodamiento-rodillos-conicos",
+  "skf-32005-xq-rodamiento-conico",
+  "skf-vkms-04106-kit-distribucion",
+  "monroe-kit-amortiguadores-delanteros-chevrolet-spark-2008-2010",
+  ]);
+
+const approvedPostInventoryProducts = curatedCatalog.filter(
+  (product) => (approvedPostInventoryCatalogIds.has(product.id) || product.catalogApproval === "explicit-batch")
+    && !inventoryBackedProducts.some((inventoryProduct) => (
+      inventoryProduct.id === product.id
+      || inventoryProduct.slug === product.slug
+      || normalizeInventoryCode(inventoryProduct.sku) === normalizeInventoryCode(product.sku)
+    )),
+);
+
+// Una referencia comercial debe producir una sola tarjeta. El inventario
+// histórico contiene la misma referencia escrita con y sin guiones, espacios
+// o mayúsculas distintas; publicarlas por separado duplica productos y rompe
+// la navegación por slug. Conservamos la primera ficha (orden del inventario),
+// usamos el mayor stock informado para no duplicar existencias y unimos la
+// galería sin repetir imágenes.
+const consolidateCatalogProducts = (catalog) => {
+  const byReference = new Map();
+
+  for (const product of catalog) {
+    const normalizedSku = normalizeInventoryCode(product.sku);
+    const key = normalizedSku
+      ? `sku:${normalizedSku}`
+      : `record:${product.id || product.slug}`;
+    const existing = byReference.get(key);
+
+    if (!existing) {
+      byReference.set(key, { ...product });
+      continue;
+    }
+
+    const images = [...(existing.images || []), ...(product.images || [])]
+      .filter((image, index, list) => image?.url && list.findIndex((item) => item?.url === image.url) === index);
+    const stock = Math.max(Number(existing.stock) || 0, Number(product.stock) || 0);
+
+    byReference.set(key, {
+      ...existing,
+      images: images.length ? images : existing.images,
+      stock,
+      inStock: stock > 0,
+    });
+  }
+
+  const seenSlugs = new Set();
+  return [...byReference.values()].map((product) => {
+    const baseSlug = product.slug || product.id;
+    if (!seenSlugs.has(baseSlug)) {
+      seenSlugs.add(baseSlug);
+      return product;
+    }
+
+    const skuSuffix = normalizeInventoryCode(product.sku).toLowerCase();
+    let uniqueSlug = `${baseSlug}-${skuSuffix || "referencia"}`;
+    let counter = 2;
+    while (seenSlugs.has(uniqueSlug)) uniqueSlug = `${baseSlug}-${skuSuffix || "referencia"}-${counter++}`;
+    seenSlugs.add(uniqueSlug);
+    return { ...product, slug: uniqueSlug };
+  });
+};
+
+const applyRealImageOverride = (product) => {
+  const override = productImageOverrides[normalizeInventoryCode(product.sku)]
+    || productImageOverrides[normalizeInventoryCode(product.manufacturerReference)];
+  if (!override) return product;
+  const hasAuthenticPhotoOverride = ["real-source-photo", "real-source-watermarked", "authentic-product-photo", "exact-real-photo"]
+    .includes(override.imageStatus);
+  const description = hasAuthenticPhotoOverride
+    ? String(product.description || "")
+      .replace(
+        "La fotografía exacta permanece pendiente; no se muestra una pieza genérica ni una geometría inventada.",
+        "La ficha incluye una fotografía real de la referencia exacta, normalizada sobre fondo blanco y vinculada a su fuente trazable."
+      )
+      .replace(
+        "La foto real exacta continúa pendiente.",
+        "La ficha incluye una fotografía real de la referencia exacta, normalizada sobre fondo blanco y vinculada a su fuente trazable."
+      )
+      .replace(
+        "La fotografía real exacta sigue pendiente; no sustituirla por un eje genérico de Picanto.",
+        "La ficha incluye una fotografía real de la referencia exacta, normalizada sobre fondo blanco y vinculada a su fuente trazable."
+      )
+    : product.description;
+  const attributes = hasAuthenticPhotoOverride && Array.isArray(product.attributes)
+    ? product.attributes.map((attribute) => ["Imagen", "Estado de imagen"].includes(attribute.name)
+      ? { ...attribute, value: override.imageDisclosure || "Fotografía real de la referencia exacta" }
+      : attribute)
+    : product.attributes;
+  return {
+    ...product,
+    ...override,
+    description,
+    attributes,
+    images: override.images,
+  };
+};
+
+export const products = consolidateCatalogProducts([
+  ...inventoryBackedProducts,
+  ...approvedPostInventoryProducts,
+]).map(applyRealImageOverride);
+
 export function getProductById(id) {
-  return products.find(p => p.id === id || p.slug === id);
+  const norm = normalizeInventoryCode(id);
+  return products.find(p => p.id === id || p.slug === id || p.sku === id || (norm && normalizeInventoryCode(p.sku) === norm) || (norm && normalizeInventoryCode(p.id) === norm));
 }

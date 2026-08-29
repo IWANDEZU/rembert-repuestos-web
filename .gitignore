@@ -63,3 +63,7 @@ skills-lock.json
 .dev.vars*
 !.dev.vars.example
 !.env.example
+/.catalog-cache/
+/.tmp-*/
+/tmp/
+*.cpuprofile

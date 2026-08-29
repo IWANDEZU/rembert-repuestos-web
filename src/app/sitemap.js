@@ -1,5 +1,6 @@
 import { prisma } from "@/lib/prisma";
 import { siteUrl } from "@/lib/site";
+import { products as catalogProducts } from "@/lib/products";
 
 export const dynamic = "force-dynamic";
 
@@ -7,7 +8,7 @@ export default async function sitemap() {
   const baseUrl = siteUrl;
   const now = new Date();
 
-  // Rutas estáticas principales y páginas informativas / legales
+  // 1. Rutas estáticas principales y páginas informativas / legales
   const staticRoutes = [
     {
       url: baseUrl,
@@ -37,7 +38,7 @@ export default async function sitemap() {
       url: `${baseUrl}/contacto`,
       lastModified: now,
       changeFrequency: "monthly",
-      priority: 0.8,
+      priority: 0.85,
     },
     {
       url: `${baseUrl}/servicio-tecnico`,
@@ -83,8 +84,8 @@ export default async function sitemap() {
     },
   ];
 
-  // Landing pages de categorías principales
-  const categorySlugs = [
+  // 2. Landing pages de categorías automotrices
+  const knownCategorySlugs = new Set([
     "lubricantes",
     "filtros",
     "frenos-y-suspension",
@@ -94,47 +95,90 @@ export default async function sitemap() {
     "hidraulico",
     "coolant",
     "grasas-y-aditivos",
-  ];
+    "electrico-y-encendido",
+  ]);
 
-  const categoryRoutes = categorySlugs.map((slug) => ({
+  for (const product of catalogProducts) {
+    if (product.category?.slug) {
+      knownCategorySlugs.add(product.category.slug);
+    }
+  }
+
+  const categoryRoutes = Array.from(knownCategorySlugs).map((slug) => ({
     url: `${baseUrl}/catalogo?category=${slug}`,
     lastModified: now,
     changeFrequency: "daily",
-    priority: 0.85,
+    priority: 0.88,
   }));
 
-  // Rutas dinámicas de marcas y productos desde la base de datos
-  let brandRoutes = [];
-  let productRoutes = [];
+  // 3. Landing pages de marcas
+  const brandMap = new Map();
+  for (const product of catalogProducts) {
+    if (product.brand?.slug && product.brand.slug !== "vanssoil") {
+      brandMap.set(product.brand.slug, {
+        url: `${baseUrl}/catalogo?brand=${product.brand.slug}`,
+        lastModified: now,
+        changeFrequency: "weekly",
+        priority: 0.8,
+      });
+    }
+  }
 
+  // 4. Catálogo de productos completo (3.369 productos consolidados)
+  const productMap = new Map();
+  for (const product of catalogProducts) {
+    if (product.slug) {
+      const hasStock = Boolean(product.inStock && product.stock > 0);
+      productMap.set(product.slug, {
+        url: `${baseUrl}/producto/${product.slug}`,
+        lastModified: now,
+        changeFrequency: "weekly",
+        priority: hasStock ? 0.85 : 0.75,
+      });
+    }
+  }
+
+  // 5. Enriquecimiento / Unión con base de datos Prisma (si está disponible)
   try {
-    const [brands, products] = await Promise.all([
+    const [dbBrands, dbProducts] = await Promise.all([
       prisma.brand.findMany({
         where: { slug: { not: "vanssoil" } },
         select: { slug: true, updatedAt: true },
       }),
       prisma.product.findMany({
         where: { isActive: true },
-        select: { slug: true, updatedAt: true },
+        select: { slug: true, updatedAt: true, inStock: true, stock: true },
       }),
     ]);
 
-    brandRoutes = brands.map((b) => ({
-      url: `${baseUrl}/catalogo?brand=${b.slug}`,
-      lastModified: b.updatedAt || now,
-      changeFrequency: "weekly",
-      priority: 0.8,
-    }));
+    for (const b of dbBrands) {
+      if (b.slug) {
+        brandMap.set(b.slug, {
+          url: `${baseUrl}/catalogo?brand=${b.slug}`,
+          lastModified: b.updatedAt || now,
+          changeFrequency: "weekly",
+          priority: 0.8,
+        });
+      }
+    }
 
-    productRoutes = products.map((product) => ({
-      url: `${baseUrl}/producto/${product.slug}`,
-      lastModified: product.updatedAt || now,
-      changeFrequency: "weekly",
-      priority: 0.8,
-    }));
+    for (const p of dbProducts) {
+      if (p.slug) {
+        const hasStock = Boolean(p.inStock && (p.stock || 0) > 0);
+        productMap.set(p.slug, {
+          url: `${baseUrl}/producto/${p.slug}`,
+          lastModified: p.updatedAt || now,
+          changeFrequency: "weekly",
+          priority: hasStock ? 0.85 : 0.75,
+        });
+      }
+    }
   } catch (error) {
-    console.warn("Advertencia al consultar base de datos para sitemap:", error.message);
+    // Si Prisma no está disponible en este entorno, el sitemap sirve con total éxito el catálogo consolidado
   }
+
+  const brandRoutes = Array.from(brandMap.values());
+  const productRoutes = Array.from(productMap.values());
 
   return [...staticRoutes, ...categoryRoutes, ...brandRoutes, ...productRoutes];
 }

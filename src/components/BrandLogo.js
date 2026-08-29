@@ -9,7 +9,7 @@ export default function BrandLogo({ width = 285, height = 95, className = "" }) 
         width={width}
         height={height}
         priority
-        quality={95}
+        quality={75}
         style={{
           width: "auto",
           height: `${height}px`,

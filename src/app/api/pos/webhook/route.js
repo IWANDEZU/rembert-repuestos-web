@@ -1,9 +1,19 @@
+import crypto from "node:crypto";
+import { getServerSession } from "@/lib/auth";
 import { prisma } from "@/lib/prisma";
 import { NextResponse } from "next/server";
 import { normalizePosProduct, POS_PROVIDERS } from "@/lib/posIntegrations";
+import { enforceRateLimit } from "@/lib/security/rateLimit";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
+
+function secretsMatch(provided, expected) {
+  if (!provided || !expected) return false;
+  const providedBytes = Buffer.from(provided);
+  const expectedBytes = Buffer.from(expected);
+  return providedBytes.length === expectedBytes.length && crypto.timingSafeEqual(providedBytes, expectedBytes);
+}
 
 /**
  * Webhook Receptor para POS e Inventarios Colombianos
@@ -13,23 +23,27 @@ export const dynamic = "force-dynamic";
  * o cualquier software POS con webhook / cron de sincronización.
  */
 export async function POST(request) {
+  const limited = await enforceRateLimit(request, { scope: "pos-webhook", limit: 120, windowMs: 60_000 });
+  if (limited) return limited;
+
   try {
     const authHeader = request.headers.get("authorization");
     const posApiKey = request.headers.get("x-pos-key");
     const { searchParams } = new URL(request.url);
-    const secretQuery = searchParams.get("secret");
 
     const expectedSecret = process.env.POS_SYNC_SECRET;
-    const providedSecret = posApiKey || secretQuery || authHeader?.replace("Bearer ", "");
+    const providedSecret = posApiKey || authHeader?.replace(/^Bearer\s+/i, "");
+    const session = await getServerSession();
+    const isAdmin = session?.user?.role === "ADMIN";
 
     if (!expectedSecret) {
       return NextResponse.json(
-        { error: "Webhook POS no configurado: Falta definir POS_SYNC_SECRET en variables de entorno." },
-        { status: 500 }
+        { error: "La integración POS no está configurada" },
+        { status: 503 }
       );
     }
 
-    if (providedSecret !== expectedSecret) {
+    if (!isAdmin && !secretsMatch(providedSecret, expectedSecret)) {
       return NextResponse.json(
         { error: "No autorizado. Clave de POS inválida o faltante en encabezado 'x-pos-key'." },
         { status: 401 }
@@ -45,6 +59,13 @@ export async function POST(request) {
       : Array.isArray(payload.items || payload.products || payload.data) 
         ? (payload.items || payload.products || payload.data) 
         : [payload];
+
+    if (rawItems.length < 1 || rawItems.length > 5000) {
+      return NextResponse.json(
+        { error: "El lote debe contener entre 1 y 5.000 productos." },
+        { status: 400 }
+      );
+    }
 
     const results = {
       totalReceived: rawItems.length,
@@ -140,7 +161,7 @@ export async function POST(request) {
   } catch (error) {
     console.error("Error en Webhook POS:", error);
     return NextResponse.json(
-      { error: "Error procesando sincronización de inventario POS", details: error.message },
+      { error: "Error procesando sincronización de inventario POS" },
       { status: 500 }
     );
   }
@@ -155,7 +176,7 @@ export async function GET(request) {
     status: "online",
     service: "Rembert Repuestos BCA - POS & Inventory Webhook",
     compatibleSystems: ["Siigo Nube", "Zoe POS", "Alegra", "Helisa", "World Office", "PosCloud", "Excel / CSV / JSON"],
-    authRequired: "Header 'x-pos-key' o parámetro '?secret=TU_CLAVE'",
+    authRequired: "Sesión de administrador o encabezado 'x-pos-key'. La clave nunca viaja en la URL.",
     samplePayload: {
       items: [
         {

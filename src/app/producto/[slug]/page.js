@@ -1,4 +1,3 @@
-import { prisma } from "@/lib/prisma";
 import { notFound } from "next/navigation";
 import { cache } from "react";
 import ProductVariantSelector from "@/components/ProductVariantSelector";
@@ -11,21 +10,29 @@ export const dynamic = "force-dynamic";
 
 const baseUrl = siteUrl;
 
+const databaseUrl = process.env.DATABASE_URL || "";
+const hasDirectPostgresConnection =
+  (databaseUrl.startsWith("postgresql://") || databaseUrl.startsWith("postgres://")) &&
+  !databaseUrl.includes("[SENSITIVE]");
+
 const getProduct = cache(async (slug) => {
   let product = null;
-  try {
-    product = await prisma.product.findUnique({
-      where: { slug },
-      include: {
-        category: true,
-        brand: true,
-        images: true,
-        variants: true,
-        attributes: true,
-      },
-    });
-  } catch (error) {
-    product = null;
+  if (hasDirectPostgresConnection) {
+    try {
+      const { prisma } = await import("@/lib/prisma");
+      product = await prisma.product.findUnique({
+        where: { slug },
+        include: {
+          category: true,
+          brand: true,
+          images: true,
+          variants: true,
+          attributes: true,
+        },
+      });
+    } catch {
+      product = null;
+    }
   }
 
   if (product) return product;
@@ -183,7 +190,7 @@ export default async function ProductPage({ params }) {
   const brandParam = product.brand ? product.brand.slug : undefined;
 
   return (
-    <main className="main-container section catalog-layout" style={{ padding: "40px 20px" }}>
+    <main className="main-container section catalog-layout">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{

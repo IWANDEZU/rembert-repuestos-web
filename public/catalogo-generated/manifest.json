@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "images": {
+    "94535475": {
+      "sku": "94535475",
+      "name": "RETEN CIG TICO MATIZ SPARK 7:24-KRONOS *143723*",
+      "outputImage": "/catalogo-generated/reten-cig-tico-matiz-spark-7-24-kronos-143723-94535475-generated-reference.webp",
+      "sourceSha256": "2385e6ed8dee4048c3598345e8ee80c4ec35cfd682ad1156a5bf89038c8422c5",
+      "generationPrompt": "Photorealistic studio reference of a rear crankshaft oil seal for Chevrolet Tico / Matiz / Spark, reference 94535475: one circular 60 × 80 × 8 mm Viton-and-metal seal with inner sealing lip. White background, no text or logo; application remains subject to VIN confirmation.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-27T22:23:32.696Z"
+    },
+    "95032440": {
+      "sku": "95032440",
+      "name": "ESFERICA SPARK GT IZQUIERDO M300 BEAT 1.2 M300 *284729*",
+      "outputImage": "/catalogo-generated/esferica-spark-gt-izquierdo-m300-beat-1-2-m300-284729-95032440-generated-reference.webp",
+      "sourceSha256": "d2cff377404be4dccd81abd61214e99c3ca66c3129ae12bbac13aa8ca80c5f06",
+      "generationPrompt": "Photorealistic studio reference of a left lower suspension ball joint for Chevrolet Spark GT / Beat 1.2 M300, reference 95032440: forged-steel joint, tapered threaded stud with hex nut, black rubber boot, circular mounting flange and one snap ring. White background, no text or logo; application remains subject to VIN confirmation.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-27T22:23:32.696Z"
+    },
+    "95227749": {
+      "sku": "95227749",
+      "name": "RADIADOR MOTOR AVEO GTI",
+      "outputImage": "/catalogo-generated/radiador-motor-aveo-gti-95227749-generated-reference.webp",
+      "sourceSha256": "0295791a769a7f96f0d6cb3ca768cd018bf3f806eeb9a50afc5d83a75e580993",
+      "generationPrompt": "Photorealistic studio reference of a Chevrolet Aveo engine cooling radiator, reference 95227749: approximately 600 × 420 mm aluminum fin core, black plastic side tanks, top inlet, lower outlet, sensor port, manual-transmission configuration, no oil cooler, fan, shroud, cap or packaging. White background, no text or logo; application remains subject to VIN confirmation.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-27T22:21:31.935Z"
+    },
+    "OP4611": {
+      "sku": "OP-4611",
+      "name": "TULIPA SPARK GTI 2012...",
+      "outputImage": "/catalogo-generated/tulipa-spark-gti-2012-op-4611-generated-reference.webp",
+      "sourceSha256": "50477fefcb68137b6d0f311b977cabbd17043c1bcdbf0ce93cbbe35da567f9eb",
+      "generationPrompt": "Photorealistic studio reference of one gearbox-side inner CV tulip for Chevrolet Spark GT 2012, reference OP-4611: compact steel open cup, subtle inner roller tracks, central splined bore and short stem, no boot, axle shaft, ABS ring, packaging, text or logo. White background; fitment and spline count remain subject to VIN confirmation.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-27T22:21:31.935Z"
+    }
+  }
+}

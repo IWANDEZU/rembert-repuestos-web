@@ -2,6 +2,12 @@ import { products } from "../src/lib/products.js";
 import { getProductFitment, isInternalQuoteReference } from "../src/lib/productCompatibility.js";
 
 const errors = [];
+const uniqueValues = {
+  id: new Map(),
+  slug: new Map(),
+  sku: new Map(),
+};
+const normalizeSku = (value) => String(value || "").toUpperCase().replace(/[^A-Z0-9]/g, "");
 
 for (const product of products) {
   const fitment = getProductFitment(product);
@@ -33,6 +39,20 @@ for (const product of products) {
 
   if (/todos los años/i.test(String(product.description || ""))) {
     errors.push(`${label}: "todos los años" es una afirmación de compatibilidad no permitida.`);
+  }
+
+  for (const [field, value] of [
+    ["id", product.id],
+    ["slug", product.slug],
+    ["sku", normalizeSku(product.sku)],
+  ]) {
+    if (!value) continue;
+    const previous = uniqueValues[field].get(value);
+    if (previous) {
+      errors.push(`${label}: ${field} duplicado con ${previous}.`);
+    } else {
+      uniqueValues[field].set(value, label);
+    }
   }
 }
 

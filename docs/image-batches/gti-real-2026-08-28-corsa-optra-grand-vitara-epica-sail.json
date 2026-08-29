@@ -1,0 +1,50 @@
+[
+  {
+    "sku": "GTI04-075", "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI04-075-imotriz.png",
+    "sources": ["https://www.imotriz.com/producto/3/GTI04-075-/", "https://app.pedbox.co:7777/imagenes_catalogo/15/04I09084.png"],
+    "exact_reference_confirmed": true, "usage_authorized": true, "source_type": "authorized-distributor", "source_image_clean": true,
+    "reference_evidence": "Product JSON-LD exacto GTI04-075: eje homocinético izquierdo Corsa, 22X22; imagen 04I09084. Revisión visual 2026-08-28: semieje completo real aislado, fondo blanco puro y sin marca de agua."
+  },
+  {
+    "sku": "GTI04-076", "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI04-076-imotriz.png",
+    "sources": ["https://www.imotriz.com/producto/3/GTI04-076-/", "https://app.pedbox.co:7777/imagenes_catalogo/15/04I09085.png"],
+    "exact_reference_confirmed": true, "usage_authorized": true, "source_type": "authorized-distributor", "source_image_clean": true,
+    "reference_evidence": "Product JSON-LD exacto GTI04-076: eje homocinético izquierdo Optra 1.4 sin ABS, 33X34; imagen 04I09085. Revisión visual 2026-08-28: semieje real corto, distinto del derecho, sobre fondo blanco."
+  },
+  {
+    "sku": "GTI04-077", "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI04-077-imotriz.png",
+    "sources": ["https://www.imotriz.com/producto/3/GTI04-077-/", "https://app.pedbox.co:7777/imagenes_catalogo/15/04I09086.png"],
+    "exact_reference_confirmed": true, "usage_authorized": true, "source_type": "authorized-distributor", "source_image_clean": true,
+    "reference_evidence": "Product JSON-LD exacto GTI04-077: eje homocinético derecho Optra 1.4 sin ABS, 33X34; imagen 04I09086. Revisión visual 2026-08-28: semieje real largo con masa central, distinto del izquierdo, sobre fondo blanco."
+  },
+  {
+    "sku": "GTI04-079", "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI04-079-imotriz.JPG",
+    "sources": ["https://www.imotriz.com/producto/3/GTI04-079-/", "https://app.pedbox.co:7777/imagenes_catalogo/15/04I09088.JPG"],
+    "exact_reference_confirmed": true, "usage_authorized": true, "source_type": "authorized-distributor", "source_image_clean": true,
+    "reference_evidence": "Product JSON-LD exacto GTI04-079: punta lado rueda trasera Grand Vitara SZ, 28X26; imagen 04I09088. Revisión visual 2026-08-28: junta exterior y kit GTI reales sobre fondo blanco."
+  },
+  {
+    "sku": "GTI04-080", "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI04-080-imotriz.JPG",
+    "sources": ["https://www.imotriz.com/producto/3/GTI04-080-/", "https://app.pedbox.co:7777/imagenes_catalogo/15/04I09089.JPG"],
+    "exact_reference_confirmed": true, "usage_authorized": true, "source_type": "authorized-distributor", "source_image_clean": true,
+    "reference_evidence": "Product JSON-LD exacto GTI04-080: punta lado caja trasera Grand Vitara SZ con flanche de 26, imagen 04I09089. Revisión visual 2026-08-28: copa con flanche de seis huecos, trípode y kit GTI reales sobre blanco."
+  },
+  {
+    "sku": "GTI04-081", "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI04-081-imotriz.png",
+    "sources": ["https://www.imotriz.com/producto/3/GTI04-081-/", "https://app.pedbox.co:7777/imagenes_catalogo/15/04I09090.png"],
+    "exact_reference_confirmed": true, "usage_authorized": true, "source_type": "authorized-distributor", "source_image_clean": true,
+    "reference_evidence": "Product JSON-LD exacto GTI04-081: punta lado rueda Epica, 28X24; imagen 04I09090. Revisión visual 2026-08-28: junta y kit GTI reales, únicos y sobre fondo blanco."
+  },
+  {
+    "sku": "GTI04-082", "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI04-082-imotriz.png",
+    "sources": ["https://www.imotriz.com/producto/3/GTI04-082-/", "https://app.pedbox.co:7777/imagenes_catalogo/15/04I09092.png"],
+    "exact_reference_confirmed": true, "usage_authorized": true, "source_type": "authorized-distributor", "source_image_clean": true,
+    "reference_evidence": "Product JSON-LD exacto GTI04-082: punta lado rueda Epica, 28X32; imagen 04I09092. Revisión visual 2026-08-28: junta y kit GTI reales, configuración distinta de GTI04-081 y sobre fondo blanco."
+  },
+  {
+    "sku": "GTI04-083", "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI04-083-imotriz.png",
+    "sources": ["https://www.imotriz.com/producto/3/GTI04-083-/", "https://app.pedbox.co:7777/imagenes_catalogo/15/04I09093.png"],
+    "exact_reference_confirmed": true, "usage_authorized": true, "source_type": "authorized-distributor", "source_image_clean": true,
+    "reference_evidence": "Product JSON-LD exacto GTI04-083: eje homocinético izquierdo Sail, 22X22; imagen 04I09093. Revisión visual 2026-08-28: semieje completo real con corona ABS visible, limpio y sobre fondo blanco."
+  }
+]

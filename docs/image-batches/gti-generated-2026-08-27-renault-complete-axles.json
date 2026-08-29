@@ -1,0 +1,22 @@
+[
+  {
+    "sku": "GTI01-009",
+    "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-generated-sources\\GTI01-009-generated.png",
+    "generation_prompt": "Photorealistic catalog reference for GTI01-009: complete right front CV axle for Renault 9 with documented 21 x 23 spline configuration; closed transmission-side plunge housing, inner and outer boots, connecting shaft and wheel-side spline; no ABS ring, support bearing, transmission gender or asserted length because the exact source does not specify them; specifications contrasted against the exact Imotriz GTI SKU page and historical GTI catalog; pure white background, no text, logo or watermark."
+  },
+  {
+    "sku": "GTI01-022",
+    "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-generated-sources\\GTI01-022-generated.png",
+    "generation_prompt": "Photorealistic catalog reference for GTI01-022: complete right front CV axle for Renault Symbol / Citius with documented 21 x 23 spline configuration and long replacement transmission-side housing; elongated closed plunge housing, inner and outer boots, connecting shaft and wheel-side spline; no ABS ring, support bearing, transmission gender or asserted overall length because the exact source does not specify them; specifications contrasted against the exact Imotriz GTI SKU page and historical GTI catalog; pure white background, no text, logo or watermark."
+  },
+  {
+    "sku": "GTI01-024",
+    "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-generated-sources\\GTI01-024-generated.png",
+    "generation_prompt": "Photorealistic catalog reference for GTI01-024: complete left front CV axle for Renault Symbol / Citius with documented 21 x 30 spline configuration; closed transmission-side plunge housing, inner and outer boots, connecting shaft and wheel-side spline; no ABS ring, support bearing, transmission gender or asserted length because the exact source does not specify them; specifications contrasted against the exact Imotriz GTI SKU page and historical GTI catalog; pure white background, no text, logo or watermark."
+  },
+  {
+    "sku": "GTI01-025",
+    "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-generated-sources\\GTI01-025-generated.png",
+    "generation_prompt": "Photorealistic catalog reference for GTI01-025: complete right front CV axle, original-type configuration, for Renault Logan through 2010 with documented 21 x 23 spline configuration; closed transmission-side plunge housing, inner and outer boots, connecting shaft and wheel-side spline; no ABS ring, support bearing, transmission gender or asserted length because the exact source does not specify them; specifications contrasted against the exact Imotriz GTI SKU page and historical GTI catalog; pure white background, no text, logo or watermark."
+  }
+]

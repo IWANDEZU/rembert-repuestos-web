@@ -1,0 +1,57 @@
+[
+  {
+    "sku": "GTI01-038",
+    "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI01-038-vtex-2.jpg",
+    "sources": [
+      "https://www.importadorasasociadas.com/punta-eje-lado-rueda-renault-logan-2006-2015-sandero-2009-2015-stepway-2009-2015-7850-gti01-038/p",
+      "https://www.imotriz.com/producto/3/GTI01038/PUNTA-EJE-L-R-LOGAN-2011-SANDERO-STEPWAY-23x21-",
+      "https://www.mercadolibre.com.co/punta-eje-lado-rueda-renault-logan-2011-sandero-stepway23x21/up/MCOU3072571717"
+    ],
+    "exact_reference_confirmed": true,
+    "usage_authorized": true,
+    "source_type": "authorized-distributor",
+    "source_image_clean": true,
+    "reference_evidence": "Las fichas exactas identifican marca GTI, referencia GTI01-038 y configuración 23X21 para Renault Logan 2011, Sandero y Stepway. La imagen original 203611 se sirve directamente desde la ficha de Importadoras Asociadas. Revisión visual 2026-08-27: foto real limpia del juego con junta, fuelle, empaque GTI, grasa, seguros y abrazaderas sobre fondo blanco."
+  },
+  {
+    "sku": "GTI04-046",
+    "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\public\\catalogo-gti\\gti04-046-punta-eje-aveo-abs-real-v1.webp",
+    "sources": [
+      "https://www.mercadolibre.com.co/punta-eje-lado-rueda-chevrolet-aveo-22x22-con-abs/up/MCOU3075790046",
+      "https://dokument.pub/repuestos-puntas-y-ejes-flipbook-pdf.html"
+    ],
+    "exact_reference_confirmed": true,
+    "usage_authorized": true,
+    "source_type": "authorized-distributor",
+    "source_image_clean": true,
+    "reference_evidence": "La publicación exacta declara GTI04-046+, Chevrolet Aveo Korea, pin externo, 22 estrías externas por 22 internas y corona ABS de 47 dientes. Revisión visual 2026-08-27: foto real frontal de la punta con corona ABS visible sobre fondo blanco."
+  },
+  {
+    "sku": "GTI06-052",
+    "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI06-052-pedbox.png",
+    "sources": [
+      "https://www.imotriz.com/producto/3/GTI06-052-/Eje-Homocinetico-Izq-Kia-Picanto-I-Ii-24X25-",
+      "https://app.pedbox.co:7777/imagenes_catalogo/15/06I09077.png",
+      "https://dokument.pub/repuestos-puntas-y-ejes-flipbook-pdf.html"
+    ],
+    "exact_reference_confirmed": true,
+    "usage_authorized": true,
+    "source_type": "authorized-distributor",
+    "source_image_clean": true,
+    "reference_evidence": "La ficha Product JSON-LD de Imotriz declara marca GTI, SKU GTI06-052, eje homocinético izquierdo Kia Picanto I/II y configuración 24X25; enlaza directamente la fotografía 06I09077 de 1980X1320. Revisión visual 2026-08-27: eje completo, ambos fuelles y terminales visibles, fondo blanco y sin marca de agua."
+  },
+  {
+    "sku": "GTI06-100",
+    "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\public\\catalogo-gti\\gti06-100-punta-eje-i25-rio-spice-abs-real-v1.webp",
+    "sources": [
+      "https://www.mercadolibre.com.co/punta-eje-lado-rueda-para-hyundai-i25-kia-rio-spice-25x22/up/MCOU3077402082",
+      "https://www.mercadolibre.com.co/punta-eje-lado-rueda-kia-soluto-rio-spice-hyundai-i25-abs-44/up/MCOU3230948640",
+      "https://dokument.pub/repuestos-puntas-y-ejes-flipbook-pdf.html"
+    ],
+    "exact_reference_confirmed": true,
+    "usage_authorized": true,
+    "source_type": "authorized-distributor",
+    "source_image_clean": true,
+    "reference_evidence": "Dos publicaciones exactas identifican marca GTI, referencia GTI06-100, Hyundai i25/Kia Rio Spice, pin interno, configuración 25X22 y corona ABS de 44 dientes. Revisión visual 2026-08-27: foto real de la punta con corona ABS visible sobre fondo blanco."
+  }
+]

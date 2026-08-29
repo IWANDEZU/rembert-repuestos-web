@@ -1,0 +1,38 @@
+[
+  {
+    "sku": "GTI04-060", "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI04-060-imotriz.JPG",
+    "sources": ["https://www.imotriz.com/producto/3/GTI04-060-/", "https://app.pedbox.co:7777/imagenes_catalogo/15/04I09063.JPG"],
+    "exact_reference_confirmed": true, "usage_authorized": true, "source_type": "authorized-distributor", "source_image_clean": true,
+    "reference_evidence": "Product JSON-LD exacto GTI04-060: punta lado caja Steem automático, 22X20; imagen 04I09063. Revisión visual 2026-08-28: copa estriada y kit GTI reales sobre fondo blanco, sin marca de agua."
+  },
+  {
+    "sku": "GTI04-061", "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI04-061-imotriz.png",
+    "sources": ["https://www.imotriz.com/producto/3/GTI04-061-/", "https://app.pedbox.co:7777/imagenes_catalogo/15/04I09068.png"],
+    "exact_reference_confirmed": true, "usage_authorized": true, "source_type": "authorized-distributor", "source_image_clean": true,
+    "reference_evidence": "Product JSON-LD exacto GTI04-061: punta lado caja derecha Steem 1.3/1.6 hembra, 22X21; imagen 04I09068. Revisión visual 2026-08-28: copa hembra y kit GTI reales, únicos y sobre fondo blanco."
+  },
+  {
+    "sku": "GTI04-062", "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI04-062-imotriz.JPG",
+    "sources": ["https://www.imotriz.com/producto/3/GTI04-062-/", "https://app.pedbox.co:7777/imagenes_catalogo/15/04I09069.JPG"],
+    "exact_reference_confirmed": true, "usage_authorized": true, "source_type": "authorized-distributor", "source_image_clean": true,
+    "reference_evidence": "Product JSON-LD exacto GTI04-062: punta lado caja izquierda Steem 1.3/1.6 macho, 22X21; imagen 04I09069. Revisión visual 2026-08-28: punta macho con trípode y kit GTI reales, distinta de la hembra y sobre blanco."
+  },
+  {
+    "sku": "GTI04-067", "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI04-067-imotriz.png",
+    "sources": ["https://www.imotriz.com/producto/3/GTI04-067-/", "https://app.pedbox.co:7777/imagenes_catalogo/15/04I09076.png"],
+    "exact_reference_confirmed": true, "usage_authorized": true, "source_type": "authorized-distributor", "source_image_clean": true,
+    "reference_evidence": "Product JSON-LD exacto GTI04-067: eje homocinético izquierdo Captiva 2.4 2011 en adelante, 30X34; imagen 04I09076. Revisión visual 2026-08-28: semieje completo real aislado sobre blanco."
+  },
+  {
+    "sku": "GTI04-070", "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI04-070-imotriz.JPG",
+    "sources": ["https://www.imotriz.com/producto/3/GTI04-070-/", "https://app.pedbox.co:7777/imagenes_catalogo/15/04I09079.JPG"],
+    "exact_reference_confirmed": true, "usage_authorized": true, "source_type": "authorized-distributor", "source_image_clean": true,
+    "reference_evidence": "Product JSON-LD exacto GTI04-070: punta lado caja derecha Captiva 2.4 automática macho, 34X24; imagen 04I09079. Revisión visual 2026-08-28: punta macho y kit GTI reales sobre fondo blanco."
+  },
+  {
+    "sku": "GTI04-071", "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI04-071-imotriz.png",
+    "sources": ["https://www.imotriz.com/producto/3/GTI04-071-/", "https://app.pedbox.co:7777/imagenes_catalogo/15/04I09080.png"],
+    "exact_reference_confirmed": true, "usage_authorized": true, "source_type": "authorized-distributor", "source_image_clean": true,
+    "reference_evidence": "Product JSON-LD exacto GTI04-071: punta lado caja izquierda Captiva 2.4 automática hembra, 34X24; imagen 04I09080. Revisión visual 2026-08-28: copa hembra y kit GTI reales, distintos del macho y sobre fondo blanco."
+  }
+]

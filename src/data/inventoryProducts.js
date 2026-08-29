@@ -1,4 +1,4 @@
-import inventoryRows from "./inventory-stock.json";
+import inventoryRows from "./inventory-stock.json" with { type: "json" };
 
 const CATEGORY_RULES = [
   {
@@ -69,7 +69,7 @@ const CATEGORY_RULES = [
   {
     slug: "rodamientos-y-traccion",
     name: "Rodamientos y Tracción",
-    image: "/catalogo-nuevas-lineas/skf-kit-rodamiento-catalogo.png",
+    image: "/catalogo-frenos-suspension/soportes-bujes-suspension-familia.webp",
     terms: [
       "RODAM", "BALINERA", "BOCIN", "CUBO RUEDA", "PUNTA EJE", "PUNTA L/C",
       "PUNTA L/R", "PUNTA KIA", "EJE RUEDA", "EJE IZQ", "CRUCETA CARDAN",
@@ -211,7 +211,7 @@ const LINE_PRESENTATION = {
   },
   RODAMIENTOS: {
     slug: "rodamientos-y-traccion", name: "Rodamientos y Tracción",
-    image: "/catalogo-marcas-watermarked/skf-kit-rodamiento-catalogo.webp",
+    image: "/catalogo-frenos-suspension/soportes-bujes-suspension-familia.webp",
   },
   SOPORTES: {
     slug: "soportes-retenedores-y-guayas", name: "Soportes, Retenedores y Guayas",
@@ -228,14 +228,159 @@ const LINE_PRESENTATION = {
 };
 
 const EXPLICIT_MANUFACTURERS = [
-  "ACDELCO", "BOSCH", "CORTeco", "DAYCO", "GATES", "INA", "KOREASTAR",
-  "MOBIS", "ROWEN", "SKF", "VALEO", "VERKE", "VICTOR REINZ", "WIX",
+  "PHC VALEO",
+  "VICTOR REINZ",
+  "CHEVROLET / EQUIPO ORIGINAL",
+  "MANDO / EQUIPO ORIGINAL COREA",
+  "ACDELCO",
+  "ADS",
+  "BOSCH",
+  "CASTROL",
+  "CHEVRON",
+  "COFRE",
+  "CORTECO",
+  "CTR",
+  "DAYCO",
+  "DONSSON",
+  "GABRIEL",
+  "GATES",
+  "GLOBAL OIL",
+  "GTI",
+  "INA",
+  "INCOLBEST",
+  "KOREASTAR",
+  "LIQUI MOLY",
+  "LUK",
+  "MANDO",
+  "MAX POWER",
+  "MOBIL",
+  "MOBIS",
+  "MONROE",
+  "MOTUL",
+  "NGK",
+  "OSRAM",
+  "PARTMO",
+  "PETROIL",
+  "ROWEN",
+  "SAFETY",
+  "SHELL",
+  "SKF",
+  "TERPEL",
+  "TNK",
+  "VALEO",
+  "VALVOLINE",
+  "VERKE",
+  "WIX",
+  "VAZLO",
+  "555",
 ];
 
 // Brand and application overrides are deliberately limited to inventory codes
 // that were cross-checked against public Colombian catalogs or import records.
 // A visual resemblance is never enough to assign a manufacturer or fitment.
+const GTI06052_OVERRIDE = {
+  manufacturerReference: "GTI06-052",
+  name: "Eje homocinético izquierdo GTI — Kia Picanto I/II",
+  brand: "GTI",
+  image: "/catalogo-gti/gti-foto-real-pendiente-v1.webp",
+  images: [
+    {
+      url: "/catalogo-gti/gti-foto-real-pendiente-v1.webp",
+      alt: "Foto real pendiente del eje homocinético izquierdo GTI06-052 para Kia Picanto I/II",
+      isMain: true,
+    },
+  ],
+  imageAlt: "Foto real pendiente del eje homocinético izquierdo GTI06-052 para Kia Picanto I/II",
+  shortDesc: "Eje homocinético izquierdo GTI06-052 · Kia Picanto I/II · inventario 24 × 25.",
+  description: "Eje homocinético delantero izquierdo GTI06-052 para Kia Picanto I/II. El inventario REMBERT registra 24 × 25 y código interno 24110-02200. Confirmar VIN, generación, transmisión, estrías de ambos extremos, largo total y presencia de ABS antes del despacho. La foto real exacta continúa pendiente.",
+  fitmentSummary: "GTI06-052: Kia Picanto I/II · eje delantero izquierdo · inventario 24 × 25; validar VIN, generación y medidas.",
+  fitmentPosition: "Eje delantero izquierdo (LH)",
+  fitmentRequirements: ["VIN", "generación y año", "transmisión", "estrías de ambos extremos", "largo total", "ABS", "etiqueta GTI06-052"],
+  fitmentSource: "INVENTARIO GENERAL POR LINEAS, página 74, renglón 940 · GTI06-052 confirmada como marca GTI y eje homocinético izquierdo Kia Picanto I/II en catálogos colombianos",
+  fitments: [
+    {
+      make: "Kia",
+      model: "Picanto I / Picanto II",
+      engine: "Confirmar por VIN",
+      years: "Confirmar generación y año por VIN",
+      position: "Eje delantero izquierdo (LH)",
+    },
+  ],
+  attributes: [
+    { name: "Referencia GTI", value: "GTI06-052" },
+    { name: "Código interno REMBERT", value: "24110-02200" },
+    { name: "Configuración de inventario", value: "24 × 25" },
+    { name: "Estado de imagen", value: "Foto real exacta pendiente" },
+  ],
+  fitmentStatus: "conditional",
+  imageStatus: "photo-pending",
+  brandProof: "GTI · referencia exacta GTI06-052+ confirmada en catálogos colombianos de ejes homocinéticos",
+};
+
 const VERIFIED_SKU_OVERRIDES = {
+  "2411002200": GTI06052_OVERRIDE,
+  "5768": {
+    name: "Base de Amortiguador Delantero VAZLO 5768 — Chevrolet Tracker (RH/LH)",
+    brand: "VAZLO",
+    image: "/catalogo-frenos-suspension/vazlo-5768-base-amortiguador-delantero-chevrolet-tracker-catalogo-blanco.webp",
+    images: [
+      {
+        url: "/catalogo-frenos-suspension/vazlo-5768-base-amortiguador-delantero-chevrolet-tracker-catalogo-blanco.webp",
+        alt: "Fotografía real de base de amortiguador delantera VAZLO 5768 para Chevrolet Tracker; código físico 407-YZH-5768",
+        isMain: true,
+      },
+      {
+        url: "/catalogo-frenos-suspension/vazlo-5768-base-amortiguador-delantero-chevrolet-tracker-reverso-catalogo-blanco.webp",
+        alt: "Reverso de caucho y buje central de la base de amortiguador VAZLO 5768 para Chevrolet Tracker",
+        isMain: false,
+      },
+    ],
+    imageAlt: "Fotografía real de base de amortiguador delantera VAZLO 5768 para Chevrolet Tracker; código físico 407-YZH-5768",
+    shortDesc: "Base / soporte de amortiguador delantero VAZLO 5768 · Chevrolet Tracker (RH/LH) · código físico 407-YZH-5768.",
+    description: "Base o soporte superior de amortiguador delantero (strut mount / copela) marca VAZLO con código físico 407-YZH-5768 para Chevrolet Tracker (1.8L Ecotec y Turbo). Fabricada con caucho vulcanizado y copela de acero estampado con garantía de 1 año o 20.000 km. Diseñada para aislar vibraciones, ruidos de rodadura y brindar sujeción estructural a la suspensión McPherson. Aplica indistintamente para lado derecho (RH) e izquierdo (LH).",
+    fitmentSummary: "407-YZH-5768 / 5768: Chevrolet Tracker (2013–2019 / 2020+) · Eje delantero (RH/LH) · Cruces OE 95227628 / 95015324 / 26298703.",
+    fitmentPosition: "Eje delantero · Lado derecho (RH) e izquierdo (LH)",
+    fitmentRequirements: ["VIN", "año de fabricación", "motorización (1.8L / Turbo)", "lado bilateral RH/LH", "referencia OE o muestra física"],
+    fitmentSource: "Marca VAZLO confirmada por REMBERT; código físico 407-YZH-5768 en la pieza suministrada; descripción del INVENTARIO GENERAL renglón 284; cruces técnicos de suspensión",
+    fitments: [
+      {
+        make: "Chevrolet",
+        model: "Tracker / Trax (1ra Generación)",
+        engine: "1.8L Ecotec Gasolina FWD / AWD",
+        years: "2013–2019",
+        position: "Eje delantero · Derecho (RH) e Izquierdo (LH)",
+      },
+      {
+        make: "Chevrolet",
+        model: "Tracker Turbo (2da Generación)",
+        engine: "1.2L Turbo Ecotec",
+        years: "2020–2024",
+        position: "Eje delantero · Derecho (RH) e Izquierdo (LH)",
+      },
+      {
+        make: "Chevrolet",
+        model: "Sonic / Spin / Cobalt",
+        engine: "1.6L / 1.8L Gasolina",
+        years: "2012–2018",
+        position: "Eje delantero · Bilateral (confirmar OE)",
+      },
+    ],
+    attributes: [
+      { name: "Tipo de producto", value: "Base / soporte superior de amortiguador delantero (Strut Mount / Copela)" },
+      { name: "Código grabado en pieza", value: "407-YZH-5768" },
+      { name: "Código de inventario", value: "5768 (código interno / proveedor *804210*)" },
+      { name: "Marca comercial", value: "VAZLO (confirmada por REMBERT)" },
+      { name: "Garantía de fabricante", value: "1 año o 20.000 km (especificada en empaque original)" },
+      { name: "Posición y montaje", value: "Eje delantero · Compatible lado derecho (RH) y lado izquierdo (LH)" },
+      { name: "Cruces OE de referencia", value: "95227628 · 95015324 · 95943131 · 26298703 · 13502180 · 95142646" },
+      { name: "Vehículos compatibles", value: "Chevrolet Tracker 1.8L (2013–2019) y Tracker Turbo (2020+)" },
+    ],
+    marketBenchmark: "Precio REMBERT $130.989 COP; mercado colombiano observado: $95.000–$145.000 COP por unidad",
+    fitmentStatus: "verified",
+    imageStatus: "real-product-photo",
+    imagePresentation: "catalog-white-background",
+    brandProof: "VAZLO · marca confirmada por REMBERT; la pieza real conserva el código físico 407-YZH-5768",
+  },
   "96586886": {
     brand: "ROWEN",
     image: "/catalogo-rowen/rowen-amortiguadores-macpherson-empaque-real.webp",
@@ -308,6 +453,185 @@ const VERIFIED_SKU_OVERRIDES = {
 // shared by unrelated applications. Those cases must be keyed by the audited
 // report row, never by SKU, so one fitment cannot leak into another product.
 const VERIFIED_ROW_OVERRIDES = {
+  "284": {
+    name: "Base de Amortiguador Delantero VAZLO 5768 — Chevrolet Tracker (RH/LH)",
+    brand: "VAZLO",
+    image: "/catalogo-frenos-suspension/vazlo-5768-base-amortiguador-delantero-chevrolet-tracker-catalogo-blanco.webp",
+    images: [
+      {
+        url: "/catalogo-frenos-suspension/vazlo-5768-base-amortiguador-delantero-chevrolet-tracker-catalogo-blanco.webp",
+        alt: "Fotografía real de base de amortiguador delantera VAZLO 5768 para Chevrolet Tracker; código físico 407-YZH-5768",
+        isMain: true,
+      },
+      {
+        url: "/catalogo-frenos-suspension/vazlo-5768-base-amortiguador-delantero-chevrolet-tracker-reverso-catalogo-blanco.webp",
+        alt: "Reverso de caucho y buje central de la base de amortiguador VAZLO 5768 para Chevrolet Tracker",
+        isMain: false,
+      },
+    ],
+    imageAlt: "Fotografía real de base de amortiguador delantera VAZLO 5768 para Chevrolet Tracker; código físico 407-YZH-5768",
+    shortDesc: "Base / soporte de amortiguador delantero VAZLO 5768 · Chevrolet Tracker (RH/LH) · código físico 407-YZH-5768.",
+    description: "Base o soporte superior de amortiguador delantero (strut mount / copela) marca VAZLO con código físico 407-YZH-5768 para Chevrolet Tracker (1.8L Ecotec y Turbo). Fabricada con caucho vulcanizado y copela de acero estampado con garantía de 1 año o 20.000 km. Diseñada para aislar vibraciones, ruidos de rodadura y brindar sujeción estructural a la suspensión McPherson. Aplica indistintamente para lado derecho (RH) e izquierdo (LH).",
+    fitmentSummary: "407-YZH-5768 / 5768: Chevrolet Tracker (2013–2019 / 2020+) · Eje delantero (RH/LH) · Cruces OE 95227628 / 95015324 / 26298703.",
+    fitmentPosition: "Eje delantero · Lado derecho (RH) e izquierdo (LH)",
+    fitmentRequirements: ["VIN", "año de fabricación", "motorización (1.8L / Turbo)", "lado bilateral RH/LH", "referencia OE o muestra física"],
+    fitmentSource: "Marca VAZLO confirmada por REMBERT; código físico 407-YZH-5768 en la pieza suministrada; descripción del INVENTARIO GENERAL renglón 284; cruces técnicos de suspensión",
+    fitments: [
+      {
+        make: "Chevrolet",
+        model: "Tracker / Trax (1ra Generación)",
+        engine: "1.8L Ecotec Gasolina FWD / AWD",
+        years: "2013–2019",
+        position: "Eje delantero · Derecho (RH) e Izquierdo (LH)",
+      },
+      {
+        make: "Chevrolet",
+        model: "Tracker Turbo (2da Generación)",
+        engine: "1.2L Turbo Ecotec",
+        years: "2020–2024",
+        position: "Eje delantero · Derecho (RH) e Izquierdo (LH)",
+      },
+      {
+        make: "Chevrolet",
+        model: "Sonic / Spin / Cobalt",
+        engine: "1.6L / 1.8L Gasolina",
+        years: "2012–2018",
+        position: "Eje delantero · Bilateral (confirmar OE)",
+      },
+    ],
+    attributes: [
+      { name: "Tipo de producto", value: "Base / soporte superior de amortiguador delantero (Strut Mount / Copela)" },
+      { name: "Código grabado en pieza", value: "407-YZH-5768" },
+      { name: "Código de inventario", value: "5768 (código interno / proveedor *804210*)" },
+      { name: "Marca comercial", value: "VAZLO (confirmada por REMBERT)" },
+      { name: "Garantía de fabricante", value: "1 año o 20.000 km (especificada en empaque original)" },
+      { name: "Posición y montaje", value: "Eje delantero · Compatible lado derecho (RH) y lado izquierdo (LH)" },
+      { name: "Cruces OE de referencia", value: "95227628 · 95015324 · 95943131 · 26298703 · 13502180 · 95142646" },
+      { name: "Vehículos compatibles", value: "Chevrolet Tracker 1.8L (2013–2019) y Tracker Turbo (2020+)" },
+    ],
+    marketBenchmark: "Precio REMBERT $130.989 COP; mercado colombiano observado: $95.000–$145.000 COP por unidad",
+    fitmentStatus: "verified",
+    imageStatus: "real-product-photo",
+    imagePresentation: "catalog-white-background",
+    brandProof: "VAZLO · marca confirmada por REMBERT; la pieza real conserva el código físico 407-YZH-5768",
+  },
+  "3": {
+    name: "Abrazadera plástica ancha 380 × 7,6 mm",
+    brand: "Marca según empaque",
+    image: "/catalogo-varios/abrazadera-plastica-ancha-380x7-6-rembert.webp",
+    imageAlt: "Abrazaderas plásticas anchas negras de aproximadamente 380 por 7,6 milímetros con marca REMBERT",
+    shortDesc: "Brida plástica ancha de uso universal · medida aproximada 380 × 7,6 mm · para organizar y sujetar cableado o mangueras livianas.",
+    description: "Abrazadera o brida plástica ancha de uso universal, registrada en inventario como 38 × 7,6. Se representa como una correa dentada con cabezal de cierre, destinada a organizar y sujetar mazos de cables, fundas y mangueras livianas. No es un filtro, una abrazadera metálica de manguera ni una pieza con compatibilidad exclusiva para un modelo de vehículo. Antes de vender se deben confirmar la longitud física, el ancho, el diámetro máximo de cierre y las condiciones de temperatura del punto de instalación.",
+    fitmentSummary: "Uso universal en automóviles y camionetas, condicionado a la medida requerida y al entorno de instalación.",
+    fitmentPosition: "Sujeción auxiliar de cableado, fundas o mangueras livianas",
+    fitmentRequirements: ["longitud física", "ancho de 7,6 mm", "diámetro del mazo", "temperatura y exposición del montaje"],
+    fitmentSource: "Descripción literal del INVENTARIO GENERAL; aplicación universal determinada por dimensión, no por marca o modelo de vehículo",
+    fitments: [
+      {
+        make: "Universal",
+        model: "Automóviles y camionetas",
+        years: "Todos, según medida y condiciones de montaje",
+        position: "Sujeción auxiliar; no usar como abrazadera presurizada",
+      },
+    ],
+    attributes: [
+      { name: "Tipo de producto", value: "Abrazadera / brida plástica ancha" },
+      { name: "Medida de inventario", value: "38 × 7,6; confirmar si corresponde a 380 × 7,6 mm" },
+      { name: "Aplicación", value: "Organización y sujeción auxiliar de cableado, fundas o mangueras livianas" },
+      { name: "Restricción", value: "No sustituye abrazaderas metálicas en circuitos presurizados o de alta temperatura" },
+    ],
+    marketBenchmark: "Precio REMBERT $290 COP por unidad; presentación y cantidad por empaque pendientes de confirmación",
+    fitmentStatus: "universal-by-dimension",
+    imageStatus: "generated-product-reference",
+    brandProof: "Marca por confirmar en empaque; imagen de referencia identificada con sello REMBERT",
+  },
+  "5": {
+    name: "Actuador IAC ADS — Kia Rio Space / Hyundai i25",
+    brand: "ADS",
+    image: "/catalogo-ads/ads-l0301622-actuador-iac-foto-real-v1.webp",
+    imageAlt: "Fotografía real del actuador IAC ADS L0301622 completo con etiqueta ADS visible",
+    shortDesc: "Actuador IAC ADS para control de ralentí · aplicación registrada Kia Rio Space / Hyundai i25 · validar OEM y conector.",
+    description: "Actuador o válvula IAC ADS encargado de dosificar el aire de bypass del cuerpo de aceleración para estabilizar las RPM en ralentí, especialmente durante el arranque en frío y los cambios de carga. La aplicación figura en el inventario REMBERT para Kia Rio Space / Hyundai i25, pero debe confrontarse la referencia OEM, la forma y el pinout del conector, la separación de los dos pernos y el cuerpo de aceleración antes de instalar. No sustituye un cuerpo de aceleración electrónico con control de ralentí integrado.",
+    fitmentSummary: "Kia Rio Space / Hyundai i25 gasolina · aplicación condicionada a OEM, cuerpo de aceleración y conector multipin.",
+    fitmentPosition: "Cuerpo de aceleración / control de ralentí",
+    fitmentRequirements: ["VIN", "año", "motor y cilindraje", "referencia OEM grabada", "forma y pinout del conector", "separación de los dos pernos"],
+    fitmentSource: "Marca ADS visible en la fotografía real suministrada por REMBERT; aplicación Kia Rio Space / Hyundai i25 declarada únicamente por el inventario. El cruce 35150-22600 consultado corresponde a otras aplicaciones Hyundai/Kia y no se publica como equivalencia de esta unidad",
+    fitments: [
+      {
+        make: "Kia",
+        model: "Rio Space / Rio Spice (denominación comercial por confirmar)",
+        engine: "Gasolina · cilindraje por confirmar",
+        years: "Confirmar por VIN y OEM",
+        position: "Cuerpo de aceleración / control de ralentí",
+      },
+      {
+        make: "Hyundai",
+        model: "i25 / Accent (aplicación indicada en inventario)",
+        engine: "Gasolina · sistema por confirmar",
+        years: "Confirmar por VIN y OEM",
+        position: "Cuerpo de aceleración / control de ralentí",
+      },
+    ],
+    attributes: [
+      { name: "Tipo de componente", value: "Actuador / válvula de control de aire en ralentí (IAC)" },
+      { name: "Función", value: "Estabiliza las RPM regulando el aire de bypass en ralentí" },
+      { name: "Montaje visible", value: "Brida de dos pernos y conector eléctrico multipin" },
+      { name: "Código adicional del inventario", value: "1121224 · código interno, no confirmado como OEM" },
+      { name: "Cruce OEM", value: "No establecido; confrontar el código grabado, el conector y el cuerpo de aceleración" },
+    ],
+    marketBenchmark: "Precio REMBERT $176.185 COP; referencias IAC Kia/Hyundai observadas en Colombia aproximadamente entre $152.999 y $179.999, comparables solo después de confirmar OEM y conector",
+    fitmentStatus: "conditional",
+    imageStatus: "real-source-photo",
+    imageDisclosure: "Foto real ADS",
+    brandProof: "ADS · marca confirmada directamente en la etiqueta de la fotografía real suministrada por REMBERT",
+  },
+  "606": {
+    name: "Caja de dirección ADS 56500-07000 — Kia Picanto I (SA)",
+    brand: "ADS",
+    image: "/catalogo-ads/ads-56500-07000-caja-direccion-web-v2.webp",
+    imageAlt: "Cremallera de dirección mecánica o asistida eléctricamente 56500-07000 completa para Kia Picanto I, sin tuberías hidráulicas",
+    shortDesc: "Cremallera de dirección ADS 56500-07000 · tipo mecánico/EPS, sin tuberías hidráulicas · Kia Picanto I 2004–2011.",
+    description: "Caja o cremallera de dirección ADS con cruce OE 56500-07000 para Kia Picanto I plataforma SA. Las fuentes técnicas muestran una cremallera mecánica o asistida por columna eléctrica, con torre de piñón y sin tuberías hidráulicas; la imagen hidráulica anterior era incorrecta. No se publicita para Hyundai i10 porque ese cruce no quedó respaldado. Confirmar VIN, guía izquierda, tipo de asistencia, longitud y anclajes antes del despacho.",
+    fitmentSummary: "Kia Picanto I (SA) 1.0 / 1.1, 2004–2011 · cremallera mecánica/EPS sin tuberías hidráulicas · OE 56500-07000.",
+    fitmentPosition: "Sistema de dirección · cremallera / caja",
+    fitmentRequirements: ["VIN", "año", "motor", "plataforma SA", "guía izquierda", "dirección mecánica/EPS", "longitud", "anclajes"],
+    fitmentSource: "HG Auto Part, LongWind/TCNR, MaxCar y IMFRISA cruzan OE 56500-07000 con Kia Picanto/Morning SA 2004–2011 y muestran configuración mecánica, sin circuito hidráulico",
+    fitments: [{ make: "Kia", model: "Picanto I / Morning (SA)", engine: "1.0 / 1.1 según versión", years: "2004–2011", position: "Dirección · cremallera mecánica/EPS" }],
+    attributes: [
+      { name: "Referencia OE", value: "56500-07000" },
+      { name: "Aplicación respaldada", value: "Kia Picanto I / Morning (SA) 2004–2011" },
+      { name: "Configuración", value: "Mecánica/EPS · sin tuberías hidráulicas" },
+      { name: "Restricción", value: "No ofrecer para Hyundai i10 sin cruce de catálogo o VIN" },
+      { name: "Imagen", value: "Versión web fiel a fotografía de la referencia OE exacta; cremallera completa sobre fondo blanco" },
+    ],
+    fitmentStatus: "verified-by-oe",
+    imageStatus: "source-grounded-web-image",
+    imageDisclosure: "Versión web fiel a foto OE exacta",
+    brandProof: "ADS · marca declarada en inventario REMBERT; geometría y aplicación verificadas por la referencia OE exacta en fuentes técnicas independientes",
+  },
+  "776": {
+    name: "Brazo axial ADS 56540-1S000 — Hyundai HB20",
+    brand: "ADS",
+    image: "/catalogo-ads/ads-56540-1s000-brazo-axial-web-v2.webp",
+    imageAlt: "Brazo axial 56540-1S000 completo para Hyundai HB20 con vástago negro, carcasa plateada y capuchón rojo",
+    shortDesc: "Articulación axial interior ADS 56540-1S000 · Hyundai HB20 2012–2019 · ambos lados.",
+    description: "Brazo axial interior ADS 56540-1S000 para Hyundai HB20. El catálogo técnico ZF/TRW cruza el OE 56540-1S000 con HB20 2012–2019 y posición derecha/izquierda; el producto se debe vender por esta referencia, no por el nombre incompleto 'colombina'. Confirmar VIN, versión de dirección, longitud y roscas antes del despacho.",
+    fitmentSummary: "Hyundai HB20 2012–2019 · brazo axial interior derecho o izquierdo · OE 56540-1S000.",
+    fitmentPosition: "Dirección · articulación axial interior · ambos lados",
+    fitmentRequirements: ["VIN", "año", "motor 1.0 o 1.6", "tipo de dirección", "longitud", "roscas", "OE 56540-1S000"],
+    fitmentSource: "iMotriz confirma marca ADS y referencia 56540-1S000 para HB20; ZF/TRW cruza OE 56540-1S000 con JAR1638 para HB20 2012–2019 en ambos lados; la fotografía OE exacta confirma la geometría",
+    fitments: [{ make: "Hyundai", model: "HB20", engine: "1.0 / 1.6 según versión", years: "2012–2019", position: "Dirección · axial interior · derecho o izquierdo" }],
+    attributes: [
+      { name: "Referencia ADS / OE", value: "56540-1S000" },
+      { name: "Cruces técnicos", value: "TRW JAR1638 · Viemar 680539 / 680539K" },
+      { name: "Posición", value: "Derecha o izquierda" },
+      { name: "Imagen", value: "Versión web fiel a fotografía de la referencia OE exacta; producto completo y sin empaque" },
+    ],
+    fitmentStatus: "verified-by-oe",
+    imageStatus: "source-grounded-web-image",
+    imageDisclosure: "Versión web fiel a foto OE exacta",
+    brandProof: "ADS · marca confirmada en publicación comercial; OE, aplicación y geometría contrastados con catálogo técnico y fotografía real de la referencia exacta",
+  },
   "1883": {
     brand: "ROWEN",
     image: "/catalogo-rowen/rowen-pastillas-ceramicas-referencia-familia.webp",
@@ -336,12 +660,19 @@ const VERIFIED_ROW_OVERRIDES = {
     imageStatus: "inventory-brand-family-reference",
     brandProof: "ROWEN · marca declarada en el renglón de inventario; referencia fabricante por confirmar",
   },
+  "940": GTI06052_OVERRIDE,
 };
 
 const normalize = (value = "") => String(value)
   .normalize("NFD")
   .replace(/[\u0300-\u036f]/g, "")
   .toUpperCase();
+
+const MANUFACTURER_VERIFIED_STATUSES = new Set([
+  "verified",
+  "verified-by-oe",
+  "cross-reference-verified",
+]);
 
 const slugify = (value = "") => normalize(value)
   .toLowerCase()
@@ -379,8 +710,8 @@ function expandInventoryName(value = "") {
     .replace(/\bKIWD\b/g, "KWID")
     .replace(/^CIL(?=\s+(?:FRENO|MATIZ|SPARK))\b/i, "CILINDRO")
     .replace(/\b(\d+)\s+CIL\b/g, "$1 CILINDROS")
-    .replace(/\bMULT\s+ADMS?\b/g, "MÚLTIPLE DE ADMISIÓN")
-    .replace(/\bMULT\s+ESC\b/g, "MÚLTIPLE DE ESCAPE")
+    .replace(/\bCLUCTH\b/gi, "CLUTCH")
+    .replace(/\bBALINERA CLUTCH SAIL\b/gi, "RODAMIENTO CLUTCH CHEVROLET SAIL / N200 / N300")
     .replace(/\s{2,}/g, " ")
     .trim();
 }
@@ -400,11 +731,22 @@ function categoryFor(name, inventoryLine) {
   };
 }
 
-function manufacturerFor(name) {
-  const searchable = normalize(name);
-  const manufacturer = EXPLICIT_MANUFACTURERS.find((candidate) => (
-    searchable.includes(normalize(candidate))
-  ));
+// "GTI" is also a vehicle trim (for example Aveo GTI or Racer GTI).  A brand
+// must not be inferred from that text alone: GTI's actual stock references in
+// this inventory use the GTI01/03/04/06/106 families (with or without hyphens).
+function isGtiManufacturerReference(sku = "") {
+  const normalizedSku = normalize(sku).replace(/[^A-Z0-9]/g, "");
+  return /^GTI(?:0[1-9]|1[0-9])/.test(normalizedSku);
+}
+
+function manufacturerFor(name, sku = "") {
+  const normText = `${normalize(name)} ${normalize(sku)}`;
+  const manufacturer = EXPLICIT_MANUFACTURERS.find((candidate) => {
+    if (candidate === "GTI") return isGtiManufacturerReference(sku);
+    const normCandidate = normalize(candidate);
+    const regex = new RegExp(`(?:^|[^A-Z0-9])${normCandidate}(?:[^A-Z]|$)`, "i");
+    return regex.test(normText);
+  });
   const label = manufacturer || "Marca según empaque";
   return { name: label, slug: slugify(label) };
 }
@@ -419,19 +761,49 @@ export const inventoryProducts = inventoryRows.map((row) => {
   const verifiedOverride = VERIFIED_ROW_OVERRIDES[String(row.i)] || VERIFIED_SKU_OVERRIDES[normalizedSku];
   const brand = verifiedOverride
     ? { name: verifiedOverride.brand, slug: slugify(verifiedOverride.brand) }
-    : manufacturerFor(row.n);
-  const displayName = expandInventoryName(row.n);
+    : manufacturerFor(row.n, row.c);
+  const displayName = verifiedOverride?.name || expandInventoryName(row.n);
   const id = `inventario-${row.i}-${slugify(row.c)}`;
   const stock = stockValue(row.s);
   const sourceLabel = `INVENTARIO GENERAL · página ${row.g} · renglón ${row.i} · línea ${row.l || "SIN LINEA"} verificada en página ${row.h || "—"} del informe por líneas`;
+
+  const normName = normalize(row.n);
+  const normSku = normalize(row.c);
+
+  let productImage = verifiedOverride?.image;
+  if (!productImage) {
+    if (brand.slug === "skf" || normName.includes("SKF") || normSku.includes("SKF")) {
+      productImage = "/catalogo-marcas-watermarked/skf-kit-rodamiento-catalogo.webp";
+    } else if (brand.slug === "gti" && isGtiManufacturerReference(row.c)) {
+      productImage = "/catalogo-gti/gti-foto-real-pendiente-v1.webp";
+    } else if (brand.slug === "tnk" || normName.includes("TNK") || normSku.startsWith("TNK")) {
+      productImage = "/catalogo-tnk/tnk-tol4882-link-toyota-hilux-fortuner.webp";
+    } else if (brand.slug === "verke" || normName.includes("VERKE")) {
+      productImage = "/catalogo-verke/verke-amortiguador-con-empaque-real.webp";
+    } else if (brand.slug === "rowen" || normName.includes("ROWEN")) {
+      productImage = "/catalogo-rowen/rowen-pastillas-ceramicas-referencia-familia.webp";
+    } else if (brand.slug === "gabriel" || normName.includes("GABRIEL")) {
+      productImage = "/catalogo-prioridad-diesel/suspension--gabriel--usa79356-a--toyota-hilux-2-7-2-8-rwd-y-4wd.jpg";
+    } else if (brand.slug === "wix" || normName.includes("WIX")) {
+      productImage = "/catalogo-filtros-tipos/filtro-aceite.webp";
+    } else if (brand.slug === "mann-filter" || normName.includes("MANN")) {
+      productImage = "/catalogo-prioridad-diesel/filtros--mann-filter--w-712-83--toyota-hilux-fortuner-2-8-diesel-1gd-ftv.jpg";
+    } else {
+      productImage = category.image;
+    }
+  }
 
   return {
     id,
     slug: `${slugify(displayName).slice(0, 72)}-${slugify(row.c)}`,
     name: displayName,
     sourceName: row.n,
-    sku: row.c,
-    referenceType: "inventory",
+    sku: verifiedOverride?.manufacturerReference || row.c,
+    referenceType: verifiedOverride?.manufacturerReference
+      ? "manufacturer"
+      : MANUFACTURER_VERIFIED_STATUSES.has(verifiedOverride?.fitmentStatus)
+      ? "manufacturer"
+      : "inventory",
     inventoryLine: row.l || "SIN LINEA",
     category: { name: category.name, slug: category.slug },
     brand,
@@ -440,22 +812,29 @@ export const inventoryProducts = inventoryRows.map((row) => {
     inStock: stock > 0,
     shortDesc: verifiedOverride?.shortDesc || `Referencia ${row.c} · ${stock} unidad${stock === 1 ? "" : "es"} registrada${stock === 1 ? "" : "s"} en inventario.`,
     description: verifiedOverride?.description || `${displayName}. Referencia interna o fabricante ${row.c}. La aplicación vehicular se conserva exactamente como aparece en el inventario y debe confirmarse por VIN, año, motor, versión y muestra antes del despacho.`,
-    image: verifiedOverride?.image || category.image,
-    images: [{
-      url: verifiedOverride?.image || category.image,
-      alt: verifiedOverride?.imageAlt || `Imagen referencial de la línea ${category.name} para ${displayName}`,
-      isMain: true,
-    }],
+    image: productImage,
+    images: verifiedOverride?.images?.length
+      ? verifiedOverride.images
+      : [{
+        url: productImage,
+        alt: verifiedOverride?.imageAlt || (brand.slug === "gti" && isGtiManufacturerReference(row.c)
+          ? `Foto exacta pendiente para la referencia GTI ${row.c}; no se muestra una pieza genérica`
+          : `Imagen referencial de la línea ${category.name} para ${displayName}`),
+        isMain: true,
+      }],
     imageStatus: verifiedOverride
       ? verifiedOverride.imageStatus || "verified-brand-family-reference"
-      : row.l && row.l !== "SIN LINEA"
-      ? "inventory-line-real-reference"
+      : brand.slug === "gti" && isGtiManufacturerReference(row.c)
+      ? "photo-pending"
       : "inventory-family-reference",
+    imageDisclosure: verifiedOverride?.imageDisclosure || (brand.slug === "gti" && isGtiManufacturerReference(row.c)
+      ? "Foto exacta pendiente · sin imagen genérica"
+      : ""),
     fitmentStatus: verifiedOverride?.fitmentStatus || (verifiedOverride ? "cross-reference-verified" : "inventory-listed"),
     fitmentSummary: verifiedOverride?.fitmentSummary || `Aplicación registrada: ${displayName}`,
-    fitmentRequirements: ["VIN", "año", "motor", "versión", "muestra o referencia desmontada"],
+    fitmentRequirements: verifiedOverride?.fitmentRequirements || ["VIN", "año", "motor", "versión", "muestra o referencia desmontada"],
     fitmentSource: verifiedOverride ? `${sourceLabel} · ${verifiedOverride.fitmentSource}` : sourceLabel,
-    fitments: [{
+    fitments: verifiedOverride?.fitments?.length ? verifiedOverride.fitments : [{
       make: "Aplicación indicada en inventario",
       model: displayName,
       years: "Confirmar por VIN",
@@ -472,8 +851,21 @@ export const inventoryProducts = inventoryRows.map((row) => {
         { id: `${id}-brand-proof`, name: "Marca verificada", value: verifiedOverride.brandProof || `${verifiedOverride.brand} · cruce exacto por referencia ${row.c}` },
         { id: `${id}-market`, name: "Referencia de mercado", value: verifiedOverride.marketBenchmark },
       ] : []),
+      ...(verifiedOverride?.attributes || []).map((attribute, index) => ({
+        id: `${id}-verified-${index + 1}`,
+        name: attribute.name,
+        value: attribute.value,
+      })),
       { id: `${id}-validation`, name: "Validación obligatoria", value: "Confirmar VIN, año, motor, versión y muestra antes del despacho" },
-      { id: `${id}-image`, name: "Imagen", value: "Referencia visual de la línea; el producto se identifica por código y descripción" },
+      {
+        id: `${id}-image`,
+        name: "Imagen",
+        value: verifiedOverride?.imageStatus === "real-product-photo"
+          ? "Fotografía real del producto suministrada por REMBERT; confirmar la referencia grabada antes del despacho"
+          : brand.slug === "gti" && isGtiManufacturerReference(row.c)
+          ? "Foto exacta pendiente; no se publica una pieza parecida, genérica o generada sin fuente trazable"
+          : "Referencia visual de la línea; el producto se identifica por código y descripción",
+      },
     ],
   };
 });

@@ -1,0 +1,22 @@
+[
+  {
+    "sku": "GTI01-068",
+    "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-source-previews\\GTI01-068.jpg",
+    "sources": ["https://www.imotriz.com/producto/3/GTI01-068-/"],
+    "exact_reference_confirmed": true,
+    "usage_authorized": true,
+    "reference_evidence": "La ficha Product JSON-LD declara marca GTI y SKU GTI01-068; la fotografía limpia muestra el guardapolvo lado caja izquierdo con platina, abrazadera y aro de apoyo.",
+    "source_type": "authorized-distributor",
+    "source_image_clean": true
+  },
+  {
+    "sku": "GTI01-069",
+    "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-source-previews\\GTI01-069.jpg",
+    "sources": ["https://www.imotriz.com/producto/3/GTI01-069-/"],
+    "exact_reference_confirmed": true,
+    "usage_authorized": true,
+    "reference_evidence": "La ficha Product JSON-LD declara marca GTI y SKU GTI01-069; la fotografía de alta resolución muestra el guardapolvo lado caja izquierdo con platina, abrazadera, aro plástico y empaque GTI.",
+    "source_type": "authorized-distributor",
+    "source_image_clean": true
+  }
+]

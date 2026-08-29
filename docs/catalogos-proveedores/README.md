@@ -21,6 +21,6 @@ Este directorio documenta las imágenes de catálogo en `public/catalogo-proveed
 | Rowen | Condicionada | Amortiguador | Hyundai i10; Kia Picanto Eko / Morning |
 | CTR | Verificada | GY1628G | Hyundai i10 (PA), 2008–2013, trasero |
 | Verke | Pendiente para autos | — | La evidencia localizada es de vehículo comercial; no se publicó como repuesto para automóvil |
-| Safeti | Pendiente | — | Hace falta ficha de proveedor y referencia automotriz trazable |
+| Safeti | Pendiente | Pista comercial: SKU vendedor 44521075 | Disco 280 mm anunciado para Great Wall Wingle 5 2.2; sin stock y sin número de parte del fabricante. Ver `docs/catalogos-safeti/` |
 
 Las fuentes detalladas, campos técnicos, identificadores y restricciones están en `metadata.json`.

@@ -50,9 +50,11 @@ export async function POST(request) {
 
   const account = await prisma.account.findUnique({
     where: { provider_providerAccountId: { provider: "facebook", providerAccountId: payload.user_id } },
-    select: { userId: true },
+    select: { userId: true, user: { select: { supabaseAuthId: true } } },
   });
-  if (account) await deleteUserData(account.userId);
+  if (account) {
+    await deleteUserData(account.userId, { supabaseAuthId: account.user.supabaseAuthId });
+  }
 
   const code = confirmationCode(payload.user_id, secret);
   return NextResponse.json({

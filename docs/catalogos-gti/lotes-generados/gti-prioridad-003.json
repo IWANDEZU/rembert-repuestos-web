@@ -1,0 +1,12 @@
+[
+  {
+    "sku": "GTI01-093",
+    "image_source": "C:\\Users\\iwand\\.codex\\generated_images\\01a0406c-6bd0-7e61-8e9b-bc2f85d5a022\\exec-923bfa2a-4e5a-4546-b09a-bf551ea9965a.png",
+    "generation_prompt": "Photorealistic studio product reference of an inner CV tulip / gearbox-side joint for Renault Kwid, 23 × 27 splines: steel cup with visible internal tracks and a splined stem; pure white background, no text, no logo, no packaging. Fitment remains subject to VIN confirmation."
+  },
+  {
+    "sku": "GTI01-016",
+    "image_source": "C:\\Users\\iwand\\.codex\\generated_images\\01a0406c-6bd0-7e61-8e9b-bc2f85d5a022\\exec-ef9468ac-d099-4a90-85c4-110607404821.png",
+    "generation_prompt": "Photorealistic studio product reference of a front wheel-side outer CV joint for Renault Clio II / Symbol: steel outer joint, black boot, metal bands, splined shaft and threaded wheel-end tip; pure white background, no ABS ring, no text, no logo, no packaging. Fitment remains subject to VIN confirmation."
+  }
+]

@@ -1,7 +1,11 @@
 import { prisma } from "@/lib/prisma";
 
-export async function deleteUserData(userId) {
+export async function deleteUserData(userId, { supabaseAuthId = null } = {}) {
   await prisma.$transaction(async (tx) => {
+    if (supabaseAuthId) {
+      await tx.$executeRaw`DELETE FROM auth.users WHERE id = ${supabaseAuthId}::uuid`;
+    }
+
     // Explicitly remove authentication sessions and linked OAuth accounts first.
     await tx.session.deleteMany({ where: { userId } });
     await tx.account.deleteMany({ where: { userId } });

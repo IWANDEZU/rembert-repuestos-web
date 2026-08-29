@@ -3,7 +3,6 @@ import { NextResponse } from "next/server";
 import { prisma } from "@/lib/prisma";
 import { deleteUserData } from "@/lib/deleteUserData";
 import { enforceRateLimit } from "@/lib/security/rateLimit";
-import { createAdminClient } from "@/lib/supabase/admin";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -38,16 +37,6 @@ export async function DELETE(request) {
   const user = await prisma.user.findUnique({ where: { id: userId }, select: { id: true } });
   if (!user) return NextResponse.json({ message: "Cuenta no encontrada" }, { status: 404 });
 
-  if (session.user.authId) {
-    const { error } = await createAdminClient().auth.admin.deleteUser(session.user.authId);
-    if (error) {
-      console.error("No fue posible eliminar la identidad Supabase:", error.message);
-      return NextResponse.json(
-        { message: "No fue posible validar la eliminación completa de la cuenta." },
-        { status: 502 },
-      );
-    }
-  }
-  await deleteUserData(user.id);
+  await deleteUserData(user.id, { supabaseAuthId: session.user.authId });
   return NextResponse.json({ message: "Cuenta y datos personales eliminados" });
 }

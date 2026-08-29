@@ -15,20 +15,14 @@ export async function POST(request) {
   if (limited) return limited;
   try {
     const session = await getServerSession();
-    const authHeader = request.headers.get("authorization");
-    const secretQuery = new URL(request.url).searchParams.get("secret");
     const expectedSecret = process.env.POS_SYNC_SECRET;
 
-    if (!expectedSecret && session?.user?.role !== "ADMIN") {
-      return NextResponse.json({ error: "Sincronización deshabilitada: POS_SYNC_SECRET no configurado en el servidor" }, { status: 500 });
+    if (session?.user?.role !== "ADMIN") {
+      return NextResponse.json({ error: "No autorizado para sincronizar con POS" }, { status: 401 });
     }
 
-    const isAuthorized = 
-      session?.user?.role === "ADMIN" || 
-      (expectedSecret && (secretQuery === expectedSecret || authHeader === `Bearer ${expectedSecret}`));
-
-    if (!isAuthorized) {
-      return NextResponse.json({ error: "No autorizado para sincronizar con POS" }, { status: 401 });
+    if (!expectedSecret) {
+      return NextResponse.json({ error: "La integración POS no está configurada" }, { status: 503 });
     }
 
     const { searchParams } = new URL(request.url);
@@ -47,9 +41,12 @@ export async function POST(request) {
     }
 
     // Reenviar al webhook interno para procesar y persistir en la BD
-    const webhookRes = await fetch(`${new URL(request.url).origin}/api/pos/webhook?secret=${expectedSecret}`, {
+    const webhookRes = await fetch(`${new URL(request.url).origin}/api/pos/webhook`, {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
+      headers: {
+        "Content-Type": "application/json",
+        "x-pos-key": expectedSecret,
+      },
       body: JSON.stringify({ items: syncedItems, provider }),
     });
 
@@ -58,7 +55,7 @@ export async function POST(request) {
   } catch (error) {
     console.error("Error disparando sincronización POS:", error);
     return NextResponse.json(
-      { error: "Error en sincronización con POS", message: error.message },
+      { error: "Error en sincronización con POS" },
       { status: 500 }
     );
   }

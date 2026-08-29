@@ -1,0 +1,12 @@
+[
+  {
+    "sku": "GTI01-004",
+    "image_source": "C:\\Users\\iwand\\.codex\\generated_images\\01a0406c-6bd0-7e61-8e9b-bc2f85d5a022\\exec-f66a8fd7-1251-4ec9-81e8-2ba59c599a90.png",
+    "generation_prompt": "Photorealistic studio product reference of a manual gearbox-side inner CV tulip for Renault R9 / R12 / R18 / Twingo 8V, 23 external × 22 internal splines and tripoid system: steel open cup, central splined bore, internal tripoid tracks and stem; white background, no text, no logo, no packaging. Fitment remains subject to VIN confirmation."
+  },
+  {
+    "sku": "GTI-038",
+    "image_source": "C:\\Users\\iwand\\.codex\\generated_images\\01a0406c-6bd0-7e61-8e9b-bc2f85d5a022\\exec-7656fd56-48c0-4a0a-aa98-ff7a5bda966a.png",
+    "generation_prompt": "Photorealistic studio product reference of a gearbox-side inner CV tulip for Hyundai Accent Vision / Kia Sephia, open steel cup with internal roller tracks, splined bore and stem; white background, no text, no logo, no packaging. Fitment remains subject to VIN and physical spline-count confirmation."
+  }
+]

@@ -188,7 +188,7 @@ export default function ProductVariantSelector({ product }) {
 
           <div 
             onClick={(e) => e.stopPropagation()}
-            style={{ position: 'relative', maxWidth: '92vw', maxHeight: '80vh', marginTop: '40px' }}
+            style={{ position: 'relative', maxWidth: '92vw', maxHeight: '80vh', marginTop: '40px', background: '#FFFFFF', padding: '16px', borderRadius: '12px' }}
           >
             <Image
               src={selectedImage} 
@@ -223,30 +223,30 @@ export default function ProductVariantSelector({ product }) {
       {/* Grid Principal de Producto */}
       <div style={{ 
         display: 'grid', 
-        gridTemplateColumns: 'repeat(auto-fit, minmax(290px, 1fr))', 
-        gap: '30px', 
+        gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 280px), 1fr))', 
+        gap: '24px', 
         background: 'var(--card-dark)', 
-        padding: 'clamp(16px, 3vw, 30px)', 
+        padding: 'clamp(14px, 3vw, 28px)', 
         borderRadius: '16px', 
         border: '1px solid var(--border-color)',
         color: '#F8FAFC'
       }}>
         
         {/* Galería e Imagen Ampliada */}
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '15px' }}>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
           
           {/* Contenedor Principal de la Foto */}
           <div 
             onClick={() => setIsZoomOpen(true)}
             style={{ 
-              background: '#0d0d0d', 
+              background: '#FFFFFF', 
               borderRadius: '12px', 
-              padding: '25px', 
+              padding: 'clamp(12px, 3vw, 25px)', 
               display: 'flex', 
               alignItems: 'center', 
               justifyContent: 'center', 
-              height: '380px',
-              border: '1px solid #222',
+              height: 'clamp(260px, 45vw, 380px)',
+              border: '1px solid #E2E8F0',
               position: 'relative',
               cursor: 'zoom-in',
               overflow: 'hidden'
@@ -262,40 +262,41 @@ export default function ProductVariantSelector({ product }) {
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
               style={{ maxWidth: '100%', maxHeight: '330px', objectFit: 'contain', transition: 'transform 0.3s ease' }} 
             />
+
             
             {/* Badge de Zoom */}
             <span style={{
               position: 'absolute',
-              bottom: '12px',
-              right: '12px',
+              bottom: '10px',
+              right: '10px',
               background: 'rgba(0,0,0,0.75)',
               color: '#fff',
-              padding: '6px 12px',
+              padding: '5px 10px',
               borderRadius: '20px',
-              fontSize: '0.8rem',
+              fontSize: '0.75rem',
               border: '1px solid #444',
               display: 'flex',
               alignItems: 'center',
-              gap: '6px'
+              gap: '5px'
             }}>
-              🔍 Ampliar Imagen
+              🔍 Ampliar
             </span>
           </div>
 
           {/* Miniaturas / Thumbnails (solo si el producto tiene más de 1 foto auténtica) */}
           {galleryImages.length > 1 && (
-            <div style={{ display: 'flex', gap: '12px', overflowX: 'auto', paddingBottom: '5px' }}>
+            <div style={{ display: 'flex', gap: '10px', overflowX: 'auto', paddingBottom: '5px' }}>
               {galleryImages.map((imgUrl, idx) => (
                 <div 
                   key={idx}
                   onClick={() => setSelectedImage(imgUrl)}
                   style={{
-                    width: '75px',
-                    height: '75px',
+                    width: '68px',
+                    height: '68px',
                     borderRadius: '8px',
-                    background: '#0f0f0f',
-                    border: selectedImage === imgUrl ? '2px solid var(--primary-color)' : '1px solid #333',
-                    padding: '5px',
+                    background: '#FFFFFF',
+                    border: selectedImage === imgUrl ? '2px solid var(--primary-color)' : '1px solid #CBD5E1',
+                    padding: '4px',
                     cursor: 'pointer',
                     display: 'flex',
                     alignItems: 'center',
@@ -304,7 +305,7 @@ export default function ProductVariantSelector({ product }) {
                     transition: 'background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease'
                   }}
                 >
-                  <Image src={imgUrl} alt={`Vista ${idx + 1} de ${product.name}`} width={72} height={72} unoptimized={imgUrl.startsWith('/api/imagen-referencia')} style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+                  <Image src={imgUrl} alt={`Vista ${idx + 1} de ${product.name}`} width={68} height={68} unoptimized={imgUrl.startsWith('/api/imagen-referencia')} style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
                 </div>
               ))}
             </div>
@@ -315,49 +316,55 @@ export default function ProductVariantSelector({ product }) {
         {/* Información Detallada del Producto */}
         <div style={{ display: 'flex', flexDirection: 'column', minWidth: 0, color: '#F8FAFC' }}>
           
-          <div style={{ color: 'var(--primary-color)', fontWeight: 'bold', textTransform: 'uppercase', fontSize: '0.85rem', marginBottom: '8px', letterSpacing: '1px' }}>
+          <div style={{ color: 'var(--primary-color)', fontWeight: 'bold', textTransform: 'uppercase', fontSize: '0.82rem', marginBottom: '6px', letterSpacing: '1px' }}>
             {brandName} • {categoryName}
           </div>
           
-          <h1 style={{ color: '#FFFFFF', fontSize: '2.2rem', marginBottom: '12px', lineHeight: '1.2', overflowWrap: 'anywhere', textWrap: 'balance' }}>{product.name}</h1>
+          <h1 style={{ color: '#FFFFFF', fontSize: 'clamp(1.4rem, 4vw, 2.2rem)', marginBottom: '10px', lineHeight: '1.2', overflowWrap: 'anywhere', textWrap: 'balance' }}>{product.name}</h1>
 
           {product.sku && <p className="product-reference product-reference--detail">{referenceLabel}: {product.sku}</p>}
+
+          {product.imageStatus === "generated-reference-image" && (
+            <p style={{ margin: '0 0 16px', color: '#FDE68A', border: '1px solid rgba(246, 200, 0, 0.55)', background: 'rgba(146, 64, 14, 0.18)', borderRadius: '8px', padding: '10px 12px', fontSize: '0.88rem', lineHeight: 1.45 }}>
+              Imagen generada de referencia, no fotografía original. Confirmar referencia, medidas y aplicación antes de vender o instalar.
+            </p>
+          )}
           
           {/* Precio y Disponibilidad */}
-          <div style={{ display: 'flex', alignItems: 'center', gap: '15px', marginBottom: '20px', paddingBottom: '15px', borderBottom: '1px solid var(--border-color)' }}>
-            <span style={{ fontSize: '2.2rem', fontWeight: 'bold', color: 'var(--primary-color)' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '18px', paddingBottom: '14px', borderBottom: '1px solid var(--border-color)', flexWrap: 'wrap' }}>
+            <span style={{ fontSize: 'clamp(1.4rem, 4vw, 2.2rem)', fontWeight: 'bold', color: 'var(--primary-color)' }}>
               {currentPrice > 0
                 ? new Intl.NumberFormat('es-CO', { style: 'currency', currency: 'COP', maximumFractionDigits: 0 }).format(currentPrice)
                 : 'Precio bajo cotización'}
             </span>
             <span style={{ 
-              padding: '6px 14px', 
+              padding: '5px 12px', 
               background: canBuy ? 'rgba(76, 175, 80, 0.15)' : 'rgba(255, 107, 0, 0.12)',
               color: canBuy ? '#4caf50' : 'var(--primary-color)',
               border: `1px solid ${canBuy ? '#2e7d32' : 'var(--primary-color)'}`,
               borderRadius: '20px', 
-              fontSize: '0.85rem',
+              fontSize: '0.82rem',
               fontWeight: '600'
             }}>
-              {canBuy ? `✓ En stock (${currentStock} disponibles)` : 'Disponibilidad por confirmar'}
+              {canBuy ? `✓ En stock (${currentStock} disp.)` : 'Disponibilidad por confirmar'}
             </span>
           </div>
 
-          <p style={{ color: '#CBD5E1', lineHeight: '1.6', marginBottom: '24px', fontSize: '1rem' }}>
+          <p style={{ color: '#CBD5E1', lineHeight: '1.6', marginBottom: '20px', fontSize: '0.96rem' }}>
             {product.description || 'Lubricante formulado con tecnología avanzada para brindar máxima protección contra el desgaste y extender la vida útil del motor.'}
           </p>
 
-          <div style={{ marginBottom: '24px' }}>
+          <div style={{ marginBottom: '20px' }}>
             <ProductCompatibilityPanel product={product} />
           </div>
 
           {/* Selector de Variantes / Presentación */}
           {product.variants && product.variants.length > 0 && (
-            <div style={{ marginBottom: '25px' }}>
-              <h3 style={{ fontSize: '0.95rem', textTransform: 'uppercase', marginBottom: '10px', color: '#aaa', letterSpacing: '0.5px' }}>
+            <div style={{ marginBottom: '20px' }}>
+              <h3 style={{ fontSize: '0.90rem', textTransform: 'uppercase', marginBottom: '8px', color: '#aaa', letterSpacing: '0.5px' }}>
                 Selecciona la Presentación:
               </h3>
-              <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px' }}>
+              <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
                 {product.variants.map(variant => (
                   <button
                     key={variant.id}
@@ -366,11 +373,11 @@ export default function ProductVariantSelector({ product }) {
                       background: selectedVariant?.id === variant.id ? 'var(--primary-color)' : '#1a1a1a',
                       color: selectedVariant?.id === variant.id ? '#000' : '#fff',
                       border: `1px solid ${selectedVariant?.id === variant.id ? 'var(--primary-color)' : '#333'}`,
-                      padding: '10px 18px',
+                      padding: '8px 14px',
                       borderRadius: '8px',
                       cursor: 'pointer',
                       fontWeight: 'bold',
-                      fontSize: '0.9rem',
+                      fontSize: '0.85rem',
                       transition: 'background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease'
                     }}
                   >
@@ -382,24 +389,24 @@ export default function ProductVariantSelector({ product }) {
           )}
 
           {/* Selector de Cantidad y Botones de Compra */}
-          <div style={{ marginTop: 'auto', display: 'flex', flexDirection: 'column', gap: '15px' }}>
+          <div style={{ marginTop: 'auto', display: 'flex', flexDirection: 'column', gap: '12px' }}>
             
-            <div style={{ display: 'flex', gap: '15px', alignItems: 'center' }}>
+            <div style={{ display: 'flex', gap: '10px', alignItems: 'center', flexWrap: 'wrap' }}>
               
               {/* Controls de Cantidad */}
               <div style={{ display: 'flex', border: '1px solid #333', borderRadius: '8px', overflow: 'hidden', background: '#111' }}>
                 <button 
                   onClick={() => setQuantity(Math.max(1, quantity - 1))}
-                  style={{ background: 'transparent', color: '#fff', border: 'none', padding: '12px 16px', cursor: 'pointer', fontSize: '1rem', fontWeight: 'bold' }}
+                  style={{ background: 'transparent', color: '#fff', border: 'none', padding: '10px 14px', cursor: 'pointer', fontSize: '1rem', fontWeight: 'bold' }}
                 >
                   -
                 </button>
-                <span style={{ padding: '12px 16px', color: '#fff', fontWeight: 'bold', display: 'flex', alignItems: 'center', minWidth: '40px', justifyContent: 'center' }}>
+                <span style={{ padding: '10px 14px', color: '#fff', fontWeight: 'bold', display: 'flex', alignItems: 'center', minWidth: '36px', justifyContent: 'center' }}>
                   {quantity}
                 </span>
                 <button 
                   onClick={() => setQuantity(quantity + 1)}
-                  style={{ background: 'transparent', color: '#fff', border: 'none', padding: '12px 16px', cursor: 'pointer', fontSize: '1rem', fontWeight: 'bold' }}
+                  style={{ background: 'transparent', color: '#fff', border: 'none', padding: '10px 14px', cursor: 'pointer', fontSize: '1rem', fontWeight: 'bold' }}
                 >
                   +
                 </button>
@@ -407,7 +414,7 @@ export default function ProductVariantSelector({ product }) {
 
               {/* Botón Agregar al Carrito */}
               {canBuy && (
-                <div style={{ flex: 1 }}>
+                <div style={{ flex: 1, minWidth: '160px' }}>
                   <AddToCartButton
                     product={{
                       id: product.id,
@@ -436,19 +443,19 @@ export default function ProductVariantSelector({ product }) {
                 display: 'flex', 
                 alignItems: 'center', 
                 justifyContent: 'center', 
-                gap: '10px', 
-                padding: '12px', 
+                gap: '8px', 
+                padding: '11px 14px', 
                 borderRadius: '8px', 
                 background: 'rgba(37, 211, 102, 0.08)',
                 border: '1.5px solid #25D366', 
                 color: '#25D366',
                 textDecoration: 'none',
                 fontWeight: 'bold',
-                fontSize: '0.95rem'
+                fontSize: 'clamp(0.82rem, 2.5vw, 0.95rem)'
               }}
             >
-              <WhatsAppIcon size={20} color="#25D366" />
-              <span>Cotizar por WhatsApp (+57 310 873 7354)</span>
+              <WhatsAppIcon size={18} color="#25D366" />
+              <span>Cotizar por WhatsApp</span>
             </a>
 
           </div>
@@ -460,19 +467,28 @@ export default function ProductVariantSelector({ product }) {
       {/* Sección Inferior de Pestañas de Información Técnica */}
       <div style={{ background: 'var(--card-dark)', borderRadius: '16px', border: '1px solid var(--border-color)', overflow: 'hidden' }}>
         
-        {/* Encabezado de Pestañas */}
-        <div style={{ display: 'flex', borderBottom: '1px solid var(--border-color)', background: '#111' }}>
+        {/* Encabezado de Pestañas con Desplazamiento Horizontal en Móvil */}
+        <div style={{ 
+          display: 'flex', 
+          borderBottom: '1px solid var(--border-color)', 
+          background: '#111',
+          overflowX: 'auto',
+          WebkitOverflowScrolling: 'touch',
+          scrollbarWidth: 'none',
+        }}>
           <button 
             onClick={() => setActiveTab("desc")}
             style={{
-              padding: '16px 24px',
+              padding: 'clamp(12px, 2vw, 16px) clamp(12px, 2.5vw, 24px)',
               background: activeTab === "desc" ? 'var(--card-dark)' : 'transparent',
               color: activeTab === "desc" ? 'var(--primary-color)' : '#888',
               border: 'none',
               borderBottom: activeTab === "desc" ? '3px solid var(--primary-color)' : 'none',
               cursor: 'pointer',
               fontWeight: 'bold',
-              fontSize: '0.95rem'
+              fontSize: 'clamp(0.82rem, 2.5vw, 0.95rem)',
+              whiteSpace: 'nowrap',
+              flexShrink: 0,
             }}
           >
             📋 Descripción & Aplicación
@@ -480,14 +496,16 @@ export default function ProductVariantSelector({ product }) {
           <button 
             onClick={() => setActiveTab("specs")}
             style={{
-              padding: '16px 24px',
+              padding: 'clamp(12px, 2vw, 16px) clamp(12px, 2.5vw, 24px)',
               background: activeTab === "specs" ? 'var(--card-dark)' : 'transparent',
               color: activeTab === "specs" ? 'var(--primary-color)' : '#888',
               border: 'none',
               borderBottom: activeTab === "specs" ? '3px solid var(--primary-color)' : 'none',
               cursor: 'pointer',
               fontWeight: 'bold',
-              fontSize: '0.95rem'
+              fontSize: 'clamp(0.82rem, 2.5vw, 0.95rem)',
+              whiteSpace: 'nowrap',
+              flexShrink: 0,
             }}
           >
             ⚙️ Especificaciones Técnicas
@@ -495,14 +513,16 @@ export default function ProductVariantSelector({ product }) {
           <button 
             onClick={() => setActiveTab("shipping")}
             style={{
-              padding: '16px 24px',
+              padding: 'clamp(12px, 2vw, 16px) clamp(12px, 2.5vw, 24px)',
               background: activeTab === "shipping" ? 'var(--card-dark)' : 'transparent',
               color: activeTab === "shipping" ? 'var(--primary-color)' : '#888',
               border: 'none',
               borderBottom: activeTab === "shipping" ? '3px solid var(--primary-color)' : 'none',
               cursor: 'pointer',
               fontWeight: 'bold',
-              fontSize: '0.95rem'
+              fontSize: 'clamp(0.82rem, 2.5vw, 0.95rem)',
+              whiteSpace: 'nowrap',
+              flexShrink: 0,
             }}
           >
             🚚 Envío & Garantía
@@ -510,7 +530,7 @@ export default function ProductVariantSelector({ product }) {
         </div>
 
         {/* Contenido de las Pestañas */}
-        <div style={{ padding: '30px' }}>
+        <div style={{ padding: 'clamp(16px, 3vw, 30px)' }}>
           
           {activeTab === "desc" && (
             <div style={{ color: '#ccc', lineHeight: '1.7', display: 'flex', flexDirection: 'column', gap: '15px' }}>

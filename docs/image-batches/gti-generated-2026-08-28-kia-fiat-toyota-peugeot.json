@@ -1,0 +1,42 @@
+[
+  {
+    "sku": "GTI06-047",
+    "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-generated-sources\\GTI06-047-generated-final.png",
+    "generation_prompt": "Fotografía de catálogo de eje homocinético completo derecho para Kia Sorento, semieje robusto de SUV con juntas y fuelles, fondo blanco, sin texto ni marcas."
+  },
+  {
+    "sku": "GTI06-064",
+    "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-generated-sources\\GTI06-064-generated-final.png",
+    "generation_prompt": "Fotografía de catálogo de eje homocinético completo izquierdo para Hyundai i25, semieje compacto con juntas y fuelles, fondo blanco, sin texto ni marcas."
+  },
+  {
+    "sku": "GTI07-006",
+    "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-generated-sources\\GTI07-006-generated-final.png",
+    "generation_prompt": "Fotografía de catálogo de kit de punta homocinética lado rueda para Fiat 147 o Zastava, configuración de 20 estrías, fuelle y accesorios, fondo blanco."
+  },
+  {
+    "sku": "GTI07-014",
+    "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-generated-sources\\GTI07-014-generated-final.png",
+    "generation_prompt": "Fotografía de catálogo de kit de punta homocinética lado rueda para Toyota Corolla 1.6/1.8 2002+, configuración de 24 estrías, fondo blanco."
+  },
+  {
+    "sku": "GTI07-025",
+    "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-generated-sources\\GTI07-025-generated-final.png",
+    "generation_prompt": "Fotografía de catálogo de kit de punta homocinética lado rueda para Kia Sephia 1997-1999, 23 estrías, fuelle y accesorios, fondo blanco."
+  },
+  {
+    "sku": "GTI07-051",
+    "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-generated-sources\\GTI07-051-generated-final.png",
+    "generation_prompt": "Fotografía de catálogo de kit de punta homocinética lado rueda para Peugeot 405 1.6 con anillo ABS de 90 dientes, fuelle y accesorios, fondo blanco."
+  },
+  {
+    "sku": "GTI07-054",
+    "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-generated-sources\\GTI07-054-generated-final.png",
+    "generation_prompt": "Fotografía de catálogo de eje homocinético completo izquierdo para Peugeot 306 o 405, junta exterior y tulipa interior cerrada sin cruceta, fondo blanco."
+  },
+  {
+    "sku": "GTI07-060",
+    "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-generated-sources\\GTI07-060-generated-final.png",
+    "generation_prompt": "Fotografía de catálogo de eje homocinético completo para Toyota Hilux Vigo, semieje robusto de camioneta con juntas y fuelles, fondo blanco."
+  }
+]

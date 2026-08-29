@@ -1,0 +1,16 @@
+[
+  {
+    "sku": "REFERENCIA-EXACTA-DEL-CATALOGO",
+    "image_source": "C:/ruta/a/fotografia-real-del-producto.jpg",
+    "brand_logo_source": "C:/ruta/a/logo-oficial-de-la-marca.png",
+    "exact_reference_confirmed": true,
+    "usage_authorized": true,
+    "source_type": "manufacturer",
+    "source_image_clean": true,
+    "reference_evidence": "Foto propia del empaque GTI06-082; etiqueta y geometría revisadas el 2026-08-27.",
+    "sources": [
+      "https://fabricante.example/ficha-tecnica-de-la-referencia",
+      "https://distribuidor-autorizado.example/referencia"
+    ]
+  }
+]

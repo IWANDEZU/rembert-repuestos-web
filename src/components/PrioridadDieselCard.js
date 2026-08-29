@@ -2,6 +2,7 @@
 
 import { useCart } from "@/components/CartContext";
 import { useState } from "react";
+import Image from "next/image";
 import { generateWhatsAppProductText, getWhatsAppUrl } from "@/lib/orderFormatter";
 import WhatsAppIcon from "@/components/WhatsAppIcon";
 
@@ -41,11 +42,12 @@ export default function PrioridadDieselCard({ product, onSelect }) {
 
   return (
     <div
+      className="product-card hover-card"
       style={{
         background: "var(--card-dark)",
         border: "1px solid var(--border-color)",
-        borderRadius: "var(--border-radius)",
-        padding: "1.2rem",
+        borderRadius: "14px",
+        padding: "0.85rem",
         display: "flex",
         flexDirection: "column",
         height: "100%",
@@ -55,10 +57,10 @@ export default function PrioridadDieselCard({ product, onSelect }) {
       }}
     >
       {/* Indicador de Estado de Fotografía */}
-      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "0.8rem" }}>
+      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "0.6rem" }}>
         <span
           style={{
-            fontSize: "0.75rem",
+            fontSize: "0.72rem",
             fontWeight: "bold",
             color: "var(--primary-color)",
             textTransform: "uppercase",
@@ -74,9 +76,9 @@ export default function PrioridadDieselCard({ product, onSelect }) {
               background: "rgba(40, 167, 69, 0.15)",
               color: "#28a745",
               border: "1px solid #28a745",
-              padding: "2px 8px",
+              padding: "2px 7px",
               borderRadius: "12px",
-              fontSize: "0.7rem",
+              fontSize: "0.68rem",
               fontWeight: "600",
             }}
           >
@@ -88,9 +90,9 @@ export default function PrioridadDieselCard({ product, onSelect }) {
               background: "rgba(255, 193, 7, 0.15)",
               color: "#ffc107",
               border: "1px solid #ffc107",
-              padding: "2px 8px",
+              padding: "2px 7px",
               borderRadius: "12px",
-              fontSize: "0.7rem",
+              fontSize: "0.68rem",
               fontWeight: "600",
             }}
           >
@@ -103,26 +105,26 @@ export default function PrioridadDieselCard({ product, onSelect }) {
       <div
         style={{
           width: "100%",
-          height: "180px",
-          background: "#0d0d0d",
+          height: "155px",
+          background: "#FFFFFF",
           borderRadius: "8px",
           overflow: "hidden",
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          marginBottom: "1rem",
-          border: "1px solid #222",
+          marginBottom: "0.75rem",
+          border: product.has_photo ? "1px solid #E2E8F0" : "1px solid #222",
           position: "relative",
         }}
       >
         {product.has_photo ? (
-          <img
+          <Image
             src={product.web_image}
-            alt={product.altText}
+            alt={product.altText || product.reference}
+            fill
+            sizes="(max-width: 640px) 100vw, 300px"
             loading="lazy"
             style={{
-              width: "100%",
-              height: "100%",
               objectFit: "contain",
               padding: "10px",
             }}
@@ -251,8 +253,8 @@ export default function PrioridadDieselCard({ product, onSelect }) {
             onClick={handleAddToCart}
             className="btn-add-to-cart"
             style={{
-              padding: "0.65rem 0.8rem",
-              fontSize: "0.85rem",
+              padding: "0.55rem 0.75rem",
+              fontSize: "0.82rem",
               fontWeight: "800",
               width: "100%",
               borderRadius: "6px",
@@ -262,40 +264,23 @@ export default function PrioridadDieselCard({ product, onSelect }) {
               display: "inline-flex",
               alignItems: "center",
               justifyContent: "center",
-              gap: "0.45rem",
+              gap: "0.4rem",
               cursor: "pointer",
               boxShadow: added ? "0 0 10px rgba(22, 163, 74, 0.5)" : "0 2px 8px rgba(0, 0, 0, 0.4)",
-              transition: "all 0.22s ease",
+              transition: "all 0.2s ease",
             }}
           >
             {added ? (
               <>
                 <span>✓</span>
-                <span>¡Agregado al carrito!</span>
+                <span>¡Agregado!</span>
               </>
             ) : (
               <>
-                <span style={{ color: "#FFD700", fontSize: "1rem" }}>🛒</span>
+                <span style={{ color: "#FFD700", fontSize: "0.95rem" }}>🛒</span>
                 <span>Añadir al carrito</span>
               </>
             )}
-          </button>
-
-          <button
-            onClick={onSelect}
-            style={{
-              padding: "0.5rem",
-              fontSize: "0.82rem",
-              fontWeight: "bold",
-              background: "#222",
-              color: "#fff",
-              border: "1px solid #444",
-              borderRadius: "6px",
-              cursor: "pointer",
-              transition: "all 0.2s ease",
-            }}
-          >
-            📋 Ver Ficha y Especificaciones
           </button>
 
           <a
@@ -303,8 +288,8 @@ export default function PrioridadDieselCard({ product, onSelect }) {
             target="_blank"
             rel="noopener noreferrer"
             style={{
-              padding: "0.55rem",
-              fontSize: "0.82rem",
+              padding: "0.48rem 0.75rem",
+              fontSize: "0.78rem",
               fontWeight: "bold",
               background: "#25D366",
               color: "#FFFFFF",
@@ -320,8 +305,8 @@ export default function PrioridadDieselCard({ product, onSelect }) {
               transition: "opacity 0.2s ease",
             }}
           >
-            <WhatsAppIcon size={16} color="#FFFFFF" />
-            <span>Confirmar Compatibilidad por VIN</span>
+            <WhatsAppIcon size={15} color="#FFFFFF" />
+            <span>Confirmar por VIN en WhatsApp</span>
           </a>
         </div>
       </div>

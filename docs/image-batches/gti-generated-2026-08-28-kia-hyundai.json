@@ -1,0 +1,27 @@
+[
+  {
+    "sku": "GTI06-022",
+    "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-generated-sources\\GTI06-022-generated-final.png",
+    "generation_prompt": "Referencia fotorrealista única basada en la ficha exacta https://www.imotriz.com/producto/3/GTI06-022-/: eje homocinético completo izquierdo Hyundai Vision/Kia Rio Xcite/Sephia 25X25, eje compacto con dos juntas, dos fuelles y extremos estriados, sin ABS. La foto exacta encontrada se descartó por marca de agua. Fondo blanco puro, sin textos ni logos."
+  },
+  {
+    "sku": "GTI06-023",
+    "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-generated-sources\\GTI06-023-generated-final.png",
+    "generation_prompt": "Referencia fotorrealista única basada en la ficha exacta https://www.imotriz.com/producto/3/GTI06-023-/: eje homocinético completo derecho Hyundai Vision/Kia Rio Xcite/Sephia 25X25, más largo que el izquierdo, con amortiguador central y anillo ABS exterior. La foto exacta se descartó por marca de agua. Fondo blanco puro, sin textos ni logos."
+  },
+  {
+    "sku": "GTI06-024",
+    "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-generated-sources\\GTI06-024-generated-final.png",
+    "generation_prompt": "Referencia fotorrealista única basada en la ficha exacta https://www.imotriz.com/producto/3/GTI06-024-/: eje homocinético completo izquierdo Kia Rio Stylus 24X26, dos juntas, dos fuelles, extremos estriados y anillo ABS exterior. La foto exacta se descartó por marca de agua. Fondo blanco puro, sin textos ni logos."
+  },
+  {
+    "sku": "GTI06-029",
+    "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-generated-sources\\GTI06-029-generated-final.png",
+    "generation_prompt": "Referencia fotorrealista única basada en la ficha exacta https://www.imotriz.com/producto/3/GTI06-029-/: eje homocinético completo derecho Hyundai i10 1.1 24X25, eje largo con dos fuelles y amortiguador central, sin anillo ABS visible. La foto exacta se descartó por marca de agua. Fondo blanco puro, sin textos ni logos."
+  },
+  {
+    "sku": "GTI06-035",
+    "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-generated-sources\\GTI06-035-generated-final.png",
+    "generation_prompt": "Referencia fotorrealista única basada en la ficha exacta https://www.imotriz.com/producto/3/GTI06-035-/: kit de punta de eje exterior Hyundai Santa Fe 2010-2012 36X30, junta robusta con anillo ABS, fuelle, abrazaderas, seguro, tuerca y pasador. La foto exacta se descartó por marca de agua. Fondo blanco puro, sin textos ni logos."
+  }
+]

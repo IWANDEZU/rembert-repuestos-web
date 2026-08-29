@@ -1,0 +1,17 @@
+[
+  {
+    "sku": "GTI03-012",
+    "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-generated-sources\\GTI03-012-generated.png",
+    "generation_prompt": "Photorealistic catalog reference for GTI03-012: wheel-side outer CV joint kit for Mazda Allegro 1.3 model year 2000 onward, with verified 26 x 21 spline configuration, 56 mm documented body dimension and internal retaining-pin/circlip configuration; joint, boot, clamps, axle nut, circlip and grease sachet; no ABS ring because the exact source does not specify ABS; specifications contrasted against the exact Imotriz product page and the historical GTI catalog; pure white background, no text, logo, packaging or watermark."
+  },
+  {
+    "sku": "GTI03-022",
+    "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-generated-sources\\GTI03-022-generated.png",
+    "generation_prompt": "Photorealistic catalog reference for GTI03-022: wheel-side outer CV joint kit for Ford Fiesta 1.3, with verified 25 x 20 spline configuration, 57 mm documented body dimension and external retaining-pin/circlip style; conventional joint, boot, clamps, axle nut, external clip and grease sachet; no ABS ring because the exact source does not specify ABS; specifications contrasted against the exact Imotriz product page and the historical GTI catalog; pure white background, no text, logo, packaging or watermark."
+  },
+  {
+    "sku": "GTI03-039",
+    "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-generated-sources\\GTI03-039-generated.png",
+    "generation_prompt": "Photorealistic catalog reference for GTI03-039: wheel-side outer CV joint kit for Mazda 6 2.0/2.3 model years 2002 through 2008, with verified 28 x 32 spline configuration, 62 mm documented body dimension, stop-style retention and one 44-tooth ABS tone ring; corrected conventional continuous 32-spline wheel stub with threaded tip, plus boot, clamps, axle nut, circlip and grease sachet; specifications contrasted against the exact Imotriz product page and historical GTI catalog; pure white background, no text, logo, packaging or watermark."
+  }
+]

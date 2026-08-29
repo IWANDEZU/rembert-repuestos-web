@@ -11,8 +11,8 @@ export default function VerkePriorityShowcase({ inventoryCount = 0 }) {
         <div className={styles.gallery} aria-label="Fotografías reales de amortiguación Verke">
           <div className={styles.mainImage}>
             <Image
-              src="/catalogo-verke/verke-amortiguador-con-empaque-real.webp"
-              alt="Amortiguador Verke junto a su empaque original"
+              src="/catalogo-verke/verke-kit-amortiguadores-chevrolet-tracker-delanteros-traseros.webp"
+              alt="Kit Verke con amortiguadores delanteros y traseros para Chevrolet Tracker bajo validación"
               fill
               priority
               sizes="(max-width: 900px) 100vw, 58vw"
@@ -21,16 +21,24 @@ export default function VerkePriorityShowcase({ inventoryCount = 0 }) {
           </div>
           <div className={styles.sideImages} aria-hidden="true">
             <div className={styles.sideImage}>
-              <Image src="/catalogo-verke/verke-amortiguador-delantero-vista-frontal.webp" alt="" fill sizes="24vw" className={styles.image} />
+              <Image src="/catalogo-verke/verke-amortiguadores-delanteros-honda-crv-2002-2006-v2.webp" alt="" fill sizes="24vw" className={styles.image} />
             </div>
             <div className={styles.sideImage}>
-              <Image src="/catalogo-verke/verke-amortiguador-delantero-vista-lateral.webp" alt="" fill sizes="24vw" className={styles.image} />
+              <Image src="/catalogo-verke/verke-kit-amortiguadores-chevrolet-tracker-delanteros-traseros.webp" alt="" fill sizes="24vw" className={styles.image} />
             </div>
+          </div>
+          <div className={styles.macroImage}>
+            <Image
+              src="/catalogo-verke/verke-amortiguador-detalle-macro-acabado.webp"
+              alt="Detalle macro del acabado, vástago cromado y soporte de un amortiguador Verke"
+              fill
+              sizes="(max-width: 900px) 100vw, 58vw"
+              className={styles.image}
+            />
           </div>
         </div>
 
         <div className={styles.copy}>
-          <span className={styles.badge}>Marca prioritaria · fotografía real</span>
           <h2 id="verke-priority-title">Verke: amortiguación para automóviles</h2>
           <p className={styles.lead}>
             Consulta amortiguadores delanteros, traseros, puntales y componentes afines. La referencia se valida por vehículo, posición, lado, motorización y VIN antes del despacho.

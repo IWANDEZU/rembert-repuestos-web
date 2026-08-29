@@ -17,16 +17,37 @@ export default async function ProfilePage() {
   }
 
   // Obtener la información completa del usuario desde la BD
-  const user = await prisma.user.findUnique({
-    where: { email: session.user.email },
-    include: {
-      addresses: true,
-      orders: {
-        orderBy: { createdAt: 'desc' },
-        take: 5
-      }
-    }
-  });
+  let user = {
+    id: session.user.id,
+    name: session.user.name,
+    email: session.user.email,
+    image: session.user.image,
+    role: session.user.role || "USER",
+    addresses: [],
+    orders: [],
+  };
+
+  try {
+    const storedUser = await prisma.user.findFirst({
+      where: {
+        OR: [
+          { supabaseAuthId: session.user.authId },
+          { email: session.user.email },
+        ],
+      },
+      include: {
+        addresses: true,
+        orders: {
+          orderBy: { createdAt: "desc" },
+          take: 5,
+        },
+      },
+    });
+
+    if (storedUser) user = storedUser;
+  } catch (error) {
+    console.error("No se pudo cargar el historial del perfil:", error);
+  }
 
   return (
     <div className="main-container section" style={{ padding: '40px 20px', minHeight: '60vh' }}>

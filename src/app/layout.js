@@ -11,7 +11,6 @@ import CartDrawer from "@/components/CartDrawer";
 import SearchBar from "@/components/SearchBar";
 import CookieConsent from "@/components/CookieConsent";
 import BrandLogo from "@/components/BrandLogo";
-import CatalogMenu from "@/components/CatalogMenu";
 import { siteUrl } from "@/lib/site";
 import { Analytics } from '@vercel/analytics/next';
 
@@ -63,9 +62,14 @@ export const metadata = {
     canonical: "/",
   },
   icons: {
-    icon: "/icon.png",
-    shortcut: "/icon.png",
-    apple: "/icon.png",
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/icon.png", type: "image/png", sizes: "512x512" },
+    ],
+    shortcut: "/favicon.ico",
+    apple: [
+      { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
+    ],
   },
   openGraph: {
     title: "Repuestos para Automóviles de Todas las Marcas | REMBERT",
@@ -112,28 +116,33 @@ const jsonLdGraph = {
     {
       "@type": "AutoPartsStore",
       "@id": `${baseUrl}/#store`,
-      "name": "REMBERT",
+      "name": "REMBERT Repuestos BCA",
+      "alternateName": "Rembert Repuestos",
       "url": baseUrl,
       "logo": `${baseUrl}/logo.png`,
       "image": `${baseUrl}/logo.png`,
-      "telephone": "+573108737354",
+      "telephone": "+573102420490",
       "email": "repuestosrembertsa@gmail.com",
+      "description": "Venta especializada de repuestos automotrices, filtros, lubricantes, frenos, radiadores y suspensión en Barrancabermeja, Santander. Envíos a toda Colombia.",
       "sameAs": [
         "https://www.facebook.com/profile.php?id=61557618591007",
-        "https://wa.me/573108737354"
+        "https://wa.me/573102420490",
+        "https://wa.me/573125022555",
+        "https://wa.me/573102707375",
+        "https://wa.me/573508299233"
       ],
       "hasMap": "https://maps.app.goo.gl/FmmwX9PivNVnurEL7",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "Tv. 29, Barrancabermeja",
+        "streetAddress": "Transversal 29",
         "addressLocality": "Barrancabermeja",
         "addressRegion": "Santander",
         "addressCountry": "CO",
       },
       "geo": {
         "@type": "GeoCoordinates",
-        "latitude": 7.0653,
-        "longitude": -73.8547,
+        "latitude": 7.0385664,
+        "longitude": -73.8328576,
       },
       "openingHoursSpecification": [
         {
@@ -249,12 +258,12 @@ export default function RootLayout({ children }) {
               </div>
               <div className="navbar__main">
                 {/* Brand / Logo + 38 Años de Experiencia Debajo */}
-                <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: '0.35rem' }}>
+                <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: '0.45rem' }}>
                   <Link href="/" className="navbar__brand" style={{ display: 'flex', alignItems: 'center', textDecoration: 'none' }}>
                     <BrandLogo width={285} height={95} />
                   </Link>
-                  <span className="experience-badge" style={{ fontSize: '0.74rem', padding: '0.2rem 0.8rem', letterSpacing: '0.5px' }}>
-                    ⭐ <strong>38 AÑOS</strong> DE EXPERIENCIA
+                  <span className="experience-badge">
+                    <span className="experience-badge__star">⭐</span> <strong>38 AÑOS</strong> DE EXPERIENCIA
                   </span>
                 </div>
 
@@ -268,7 +277,7 @@ export default function RootLayout({ children }) {
               {/* Bottom Menu */}
               <ul className="navbar__menu">
                 <li style={{ whiteSpace: 'nowrap', flexShrink: 0 }}><Link href="/" className="navbar__link" style={{ whiteSpace: 'nowrap' }}>INICIO</Link></li>
-                <CatalogMenu />
+                <li style={{ whiteSpace: 'nowrap', flexShrink: 0 }}><Link href="/catalogo" className="navbar__link" style={{ whiteSpace: 'nowrap' }}>CATÁLOGO</Link></li>
                 <li style={{ whiteSpace: 'nowrap', flexShrink: 0 }}><Link href="/catalogo?category=electrico-y-encendido" className="navbar__link" style={{ whiteSpace: 'nowrap' }}>{"PARTES\u00A0ELÉCTRICAS"}</Link></li>
                 <li style={{ whiteSpace: 'nowrap', flexShrink: 0 }}><Link href="/servicio-tecnico" className="navbar__link" style={{ whiteSpace: 'nowrap' }}>{"SERVICIO\u00A0TÉCNICO"}</Link></li>
                 <li style={{ whiteSpace: 'nowrap', flexShrink: 0 }}><Link href="/marcas" className="navbar__link" style={{ whiteSpace: 'nowrap' }}>MARCAS</Link></li>
@@ -344,7 +353,7 @@ export default function RootLayout({ children }) {
             <Analytics />
           </CartProvider>
         </AuthProvider>
-      </body >
-    </html >
+      </body>
+    </html>
   );
 }

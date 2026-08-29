@@ -1,0 +1,17 @@
+[
+  {
+    "sku": "GTI01-007",
+    "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-generated-sources\\GTI01-007-generated-final.png",
+    "generation_prompt": "Photorealistic catalog reference of one complete Renault 4 / Renault 6 front CV axle, GTI01-007: approximately 665–680 mm, 23 gearbox-side splines and 22 wheel-side splines, two rubber boots, threaded wheel spindle and nut, no ABS ring, no flange. Pure white background; no text, logo, package or extra parts. Geometry contrasted with exact Imotriz GTI01-007 listing, GTI/FJMB catalog, HB e Hijos SE6000 and Mecatechnic RT40422."
+  },
+  {
+    "sku": "GTI01-014",
+    "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-generated-sources\\GTI01-014-generated-final.png",
+    "generation_prompt": "Photorealistic catalog reference of one complete Renault 18 GTX / TS front CV axle, GTI01-014: 23x23 configuration, outer threaded wheel spindle with nut, no ABS ring, two rubber boots, and one inner round flange with exactly four bolt holes for the four-bolt mounting. Pure white background; no text, logo, package or extra parts. Geometry contrasted with exact Imotriz GTI01-014 listing, GTI/FJMB catalog and Colombian four-bolt Renault 18 listing."
+  },
+  {
+    "sku": "GTI01-036",
+    "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-generated-sources\\GTI01-036-generated-final.png",
+    "generation_prompt": "Photorealistic catalog reference of one complete long right-side Renault Logan 2011+ / Sandero front CV axle, GTI01-036: 23x23 configuration, outer threaded wheel spindle and nut, inner male transmission spline, two rubber boots, no flange, no support bearing and no ABS ring. Pure white background; no text, logo, package or extra parts. Geometry contrasted with exact Imotriz GTI01-036 listing, GTI/FJMB catalog and independent right-side Logan/Sandero axle catalogs."
+  }
+]

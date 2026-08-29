@@ -1,0 +1,17 @@
+[
+  {
+    "sku": "GTI03-006",
+    "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-generated-sources\\GTI03-006-generated.png",
+    "generation_prompt": "Photorealistic catalog reference for GTI03-006: wheel-side outer CV joint kit for Mazda 626 Matsuri, documented 28 external x 23 internal spline configuration; retention type intentionally not asserted because the exact source does not specify it; outer boot, axle nut, clamps and grease; specification contrasted against the exact Imotriz SKU page and historical GTI catalog; pure white background, no text, logo or watermark."
+  },
+  {
+    "sku": "GTI03-007",
+    "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-generated-sources\\GTI03-007-generated.png",
+    "generation_prompt": "Photorealistic catalog reference for GTI03-007: wheel-side outer CV joint kit for Mazda 626 Asahi 2.0, documented 26 external x 25 internal spline configuration and pin interno retention, outer boot, axle nut, clamps, grease and internal circlip; specification contrasted against the exact Imotriz SKU page and historical GTI catalog; pure white background, no text, logo or watermark."
+  },
+  {
+    "sku": "GTI03-029",
+    "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-generated-sources\\GTI03-029-generated.png",
+    "generation_prompt": "Photorealistic catalog reference for GTI03-029: wheel-side outer CV joint kit for Mazda 626 1984-1989, documented 26 external x 25 internal spline configuration and pin externo retention, outer boot, axle nut, clamps, grease and external circlip; specification contrasted against the exact Imotriz SKU page and historical GTI catalog; pure white background, no text, logo or watermark."
+  }
+]

@@ -1,0 +1,17 @@
+[
+  {
+    "sku": "GTI01-030",
+    "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-generated-sources\\GTI01-030-generated.png",
+    "generation_prompt": "Photorealistic catalog reference for GTI01-030: wheel-side outer CV joint kit for Renault Megane II, documented 23 external x 32 internal spline configuration and pin externo; outer boot, axle nut, clamps, grease and retaining pin; specifications contrasted against the exact MercadoLibre GTI SKU listing and historical GTI catalog; pure white background, no text, logo or watermark."
+  },
+  {
+    "sku": "GTI01-031",
+    "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-generated-sources\\GTI01-031-generated.png",
+    "generation_prompt": "Photorealistic catalog reference for GTI01-031: wheel-side outer CV joint kit for Renault Megane II, documented 23 external x 33 internal spline configuration and pin externo; smooth housing with no ABS ring because the exact source does not specify ABS; outer boot, axle nut, clamps, grease and retaining pin; specifications contrasted against the exact MercadoLibre and Imotriz GTI SKU listings and historical GTI catalog; pure white background, no text, logo or watermark."
+  },
+  {
+    "sku": "GTI01-033",
+    "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-generated-sources\\GTI01-033-generated.png",
+    "generation_prompt": "Photorealistic catalog reference for GTI01-033: wheel-side outer CV joint kit for Renault Kangoo 2007 onward, documented 23 external x 23 internal spline configuration and pin interno; no ABS ring because the exact source does not specify ABS; outer boot, axle nut, clamps, grease and internal retaining clip; specifications contrasted against the exact Imotriz and Importadoras Asociadas GTI SKU listings and historical GTI catalog; pure white background, no text, logo or watermark."
+  }
+]

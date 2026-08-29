@@ -1,0 +1,12 @@
+[
+  {
+    "sku": "GTI04-063",
+    "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-generated-sources\\GTI04-063-white-catalog.png",
+    "generation_prompt": "Edición generativa controlada de la fotografía real exacta GTI04-063 obtenida de la ficha https://www.imotriz.com/producto/3/GTI04-063-/ y de http://api.pedbox.co:4590/files/items/04I09072.JPG. Se conservó el eje homocinético derecho Spark GT sin ABS hasta 2017, configuración 22X22, con su geometría, longitud, extremos, guardapolvos y masas diferenciadas; solo se sustituyó la tela gris arrugada por fondo blanco puro de catálogo. Imagen única, sin texto, logos ni marca de agua."
+  },
+  {
+    "sku": "GTI04-064",
+    "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-generated-sources\\GTI04-064-white-catalog.png",
+    "generation_prompt": "Edición generativa controlada de la fotografía real exacta GTI04-064 obtenida de la ficha https://www.imotriz.com/producto/3/GTI04-064-/ y de http://api.pedbox.co:4590/files/items/04I09073.jpg. Se conservó el eje homocinético izquierdo Spark GT sin ABS hasta 2017, configuración 22X22, más corto y distinto del derecho, con su geometría, extremos, guardapolvos, masas y tuerca; solo se sustituyó la tela gris arrugada por fondo blanco puro de catálogo. Imagen única, sin texto, logos ni marca de agua."
+  }
+]

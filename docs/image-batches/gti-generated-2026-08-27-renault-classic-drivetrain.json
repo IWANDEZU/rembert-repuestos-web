@@ -1,0 +1,17 @@
+[
+  {
+    "sku": "GTI01-002",
+    "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-generated-sources\\GTI01-002-generated.png",
+    "generation_prompt": "Photorealistic catalog reference for GTI01-002: wheel-side outer CV joint kit for Renault 18 GTX / Renault 21 RX 2.0, documented 23 external x 25 internal spline configuration and pin externo; no ABS ring because the source does not specify ABS; boot, nut, clamps, grease and retaining pin; specifications contrasted against the exact MercadoLibre GTI SKU listing and historical GTI catalog; pure white background, no text, logo or watermark."
+  },
+  {
+    "sku": "GTI01-006",
+    "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-generated-sources\\GTI01-006-generated.png",
+    "generation_prompt": "Photorealistic catalog reference for GTI01-006 / TP3305: three-arm tripod CV joint spider for Renault 9, 12 and 18 with three needle-roller trunnions and documented 22-spline central bore; specifications contrasted against the exact Imotriz SKU page, import record and historical GTI catalog; pure white background, no text, logo or watermark."
+  },
+  {
+    "sku": "GTI01-015",
+    "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-generated-sources\\GTI01-015-generated.png",
+    "generation_prompt": "Photorealistic catalog reference for GTI01-015: complete Renault 18 GTL homokinetic front axle, documented 20 x 23 spline configuration and transmission-side triangular flange with exactly three bolt holes; no ABS ring because the source does not specify ABS; specifications contrasted against the exact Imotriz GTI SKU page and historical GTI catalog; pure white background, no text, logo or watermark."
+  }
+]

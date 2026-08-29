@@ -1,0 +1,50 @@
+[
+  {
+    "sku": "GTI04-048", "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI04-048-imotriz.png",
+    "sources": ["https://www.imotriz.com/producto/3/GTI04-048-/", "https://app.pedbox.co:7777/imagenes_catalogo/15/04I09054.png"],
+    "exact_reference_confirmed": true, "usage_authorized": true, "source_type": "authorized-distributor", "source_image_clean": true,
+    "reference_evidence": "Product JSON-LD exacto GTI04-048: punta lado rueda Grand Vitara 2006 en adelante, 26X24; imagen 04I09054. Revisión visual 2026-08-28: kit homocinético real individual, limpio y sobre fondo blanco."
+  },
+  {
+    "sku": "GTI04-049", "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI04-049-imotriz.png",
+    "sources": ["https://www.imotriz.com/producto/3/GTI04-049-/", "https://app.pedbox.co:7777/imagenes_catalogo/15/04I09050.png"],
+    "exact_reference_confirmed": true, "usage_authorized": true, "source_type": "authorized-distributor", "source_image_clean": true,
+    "reference_evidence": "Product JSON-LD exacto GTI04-049: punta lado caja derecha LUV 1.6/2.3 larga, 23X23; imagen 04I09050. Revisión visual 2026-08-28: conjunto real largo con eje, trípode y guardapolvo, único y sobre fondo blanco."
+  },
+  {
+    "sku": "GTI04-050", "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI04-050-imotriz.JPG",
+    "sources": ["https://www.imotriz.com/producto/3/GTI04-050-/", "https://app.pedbox.co:7777/imagenes_catalogo/15/04I09055.JPG"],
+    "exact_reference_confirmed": true, "usage_authorized": true, "source_type": "authorized-distributor", "source_image_clean": true,
+    "reference_evidence": "Product JSON-LD exacto GTI04-050: punta lado caja izquierda LUV 1.6/2.3 corta, 23X23; imagen 04I09055. Revisión visual 2026-08-28: copa y componentes reales del kit, distintos de la referencia larga y sobre blanco."
+  },
+  {
+    "sku": "GTI04-051", "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI04-051-imotriz.png",
+    "sources": ["https://www.imotriz.com/producto/3/GTI04-051-/", "https://app.pedbox.co:7777/imagenes_catalogo/15/04I09056.png"],
+    "exact_reference_confirmed": true, "usage_authorized": true, "source_type": "authorized-distributor", "source_image_clean": true,
+    "reference_evidence": "Product JSON-LD exacto GTI04-051: eje homocinético LUV 2.3 derecho largo, 17X23; imagen 04I09056. Revisión visual 2026-08-28: semieje completo real largo, único y sobre fondo blanco."
+  },
+  {
+    "sku": "GTI04-052", "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI04-052-imotriz.png",
+    "sources": ["https://www.imotriz.com/producto/3/GTI04-052-/", "https://app.pedbox.co:7777/imagenes_catalogo/15/04I09057.png"],
+    "exact_reference_confirmed": true, "usage_authorized": true, "source_type": "authorized-distributor", "source_image_clean": true,
+    "reference_evidence": "Product JSON-LD exacto GTI04-052: eje homocinético LUV 2.3 izquierdo corto, 17X23; imagen 04I09057. Revisión visual 2026-08-28: semieje completo real corto, distinto del largo y sobre fondo blanco."
+  },
+  {
+    "sku": "GTI04-053", "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI04-053-imotriz.png",
+    "sources": ["https://www.imotriz.com/producto/3/GTI04-053-/", "https://app.pedbox.co:7777/imagenes_catalogo/15/04I09058.png"],
+    "exact_reference_confirmed": true, "usage_authorized": true, "source_type": "authorized-distributor", "source_image_clean": true,
+    "reference_evidence": "Product JSON-LD exacto GTI04-053: punta lado rueda Optra con pin externo, 33X22; imagen 04I09058. Revisión visual 2026-08-28: junta y kit reales individuales, limpios y sobre fondo blanco."
+  },
+  {
+    "sku": "GTI04-056", "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI04-056-imotriz.png",
+    "sources": ["https://www.imotriz.com/producto/3/GTI04-056-/", "https://app.pedbox.co:7777/imagenes_catalogo/15/04I09061.png"],
+    "exact_reference_confirmed": true, "usage_authorized": true, "source_type": "authorized-distributor", "source_image_clean": true,
+    "reference_evidence": "Product JSON-LD exacto GTI04-056: eje homocinético LUV 1.6 largo, 24X23; imagen 04I09061. Revisión visual 2026-08-28: semieje completo real con extensión larga, único y sobre fondo blanco."
+  },
+  {
+    "sku": "GTI04-057", "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI04-057-imotriz.png",
+    "sources": ["https://www.imotriz.com/producto/3/GTI04-057-/", "https://app.pedbox.co:7777/imagenes_catalogo/15/04I09062.png"],
+    "exact_reference_confirmed": true, "usage_authorized": true, "source_type": "authorized-distributor", "source_image_clean": true,
+    "reference_evidence": "Product JSON-LD exacto GTI04-057: eje homocinético LUV 1.6 corto, 24X23; imagen 04I09062. Revisión visual 2026-08-28: semieje completo real corto, distinto del largo y sobre fondo blanco."
+  }
+]

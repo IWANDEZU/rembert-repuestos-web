@@ -1,9 +1,11 @@
 import dieselImages from "@/data/diesel-images.json";
 
-const REFERENCE_FILTER_BRANDS = new Set(["donsson", "partmo"]);
+const REFERENCE_FILTER_BRANDS = new Set(["donsson"]);
 
 // Fotografías verificadas de la referencia o línea del fabricante.
 const PRODUCT_IMAGE_OVERRIDES = {
+  "1241": "/catalogo-varios/abrazadera-plastica-ancha-380x7-6-rembert.webp",
+
   "donsson-wfp2075": "/catalogo-filtros-donsson/donsson-wfp2075-coolant.png",
   "donsson-wfp-2075": "/catalogo-filtros-donsson/donsson-wfp2075-coolant.png",
   "donssonwfp2075": "/catalogo-filtros-donsson/donsson-wfp2075-coolant.png",
@@ -46,12 +48,23 @@ const PRODUCT_IMAGE_OVERRIDES = {
   "afp25708": "/catalogo-filtros-donsson/donsson-afp25708-aire.jpg",
   "afp-25708": "/catalogo-filtros-donsson/donsson-afp25708-aire.jpg",
 
-  "partmo-a1402": "/catalogo-filtros-web/partmo-linea-tradicional-a58-a1402-a14616.jpg",
-  "partmo-a-1402": "/catalogo-filtros-web/partmo-linea-tradicional-a58-a1402-a14616.jpg",
-  "partmo-a14616": "/catalogo-filtros-web/partmo-linea-tradicional-a58-a1402-a14616.jpg",
-  "partmo-a-14616": "/catalogo-filtros-web/partmo-linea-tradicional-a58-a1402-a14616.jpg",
-  "partmo-a58": "/catalogo-filtros-web/partmo-linea-tradicional-a58-a1402-a14616.jpg",
-  "partmo-a-58": "/catalogo-filtros-web/partmo-linea-tradicional-a58-a1402-a14616.jpg",
+  "amortiguador-delantero-derecho-hyundai-tucson-ix35-kia-sportage-revolution": "/catalogo-frenos-suspension/amortiguador-delantero-derecho-hyundai-tucson-ix35-kia-sportage-revolution.png",
+  "546612s000": "/catalogo-frenos-suspension/amortiguador-delantero-derecho-hyundai-tucson-ix35-kia-sportage-revolution.png",
+  "54661-2s000": "/catalogo-frenos-suspension/amortiguador-delantero-derecho-hyundai-tucson-ix35-kia-sportage-revolution.png",
+
+  "rodamiento-clutch-chevrolet-sail-n200-n300": "/catalogo-embrague/rodamiento-clutch-chevrolet-sail-n200-n300.png",
+  "balinera-clutch-sail-n200-n300": "/catalogo-embrague/rodamiento-clutch-chevrolet-sail-n200-n300.png",
+  "24512523": "/catalogo-embrague/rodamiento-clutch-chevrolet-sail-n200-n300.png",
+  "24521039a": "/catalogo-embrague/rodamiento-clutch-chevrolet-sail-n200-n300.png",
+  "24521039-a": "/catalogo-embrague/rodamiento-clutch-chevrolet-sail-n200-n300.png",
+  "9023914": "/catalogo-embrague/rodamiento-clutch-chevrolet-sail-n200-n300.png",
+  "24525897": "/catalogo-embrague/rodamiento-clutch-chevrolet-sail-n200-n300.png",
+
+  "5768": "/catalogo-frenos-suspension/vazlo-5768-base-amortiguador-delantero-chevrolet-tracker-catalogo-blanco.webp",
+  "407yzh5768": "/catalogo-frenos-suspension/vazlo-5768-base-amortiguador-delantero-chevrolet-tracker-catalogo-blanco.webp",
+  "407-yzh-5768": "/catalogo-frenos-suspension/vazlo-5768-base-amortiguador-delantero-chevrolet-tracker-catalogo-blanco.webp",
+  "yzh-5768": "/catalogo-frenos-suspension/vazlo-5768-base-amortiguador-delantero-chevrolet-tracker-catalogo-blanco.webp",
+  "yzh-5768-base-amortiguador-delantero-chevrolet-tracker": "/catalogo-frenos-suspension/vazlo-5768-base-amortiguador-delantero-chevrolet-tracker-catalogo-blanco.webp",
 };
 
 // Índice de imágenes verificadas del catálogo técnico diésel
@@ -79,6 +92,13 @@ function normalize(value = "") {
 
 export function getFilterType(name = "") {
   const normalizedName = normalize(name);
+
+  // This fallback is exclusively for filters. Previously every unknown
+  // product defaulted to an oil-filter image, which produced false photos
+  // for clamps, bearings and other inventory families.
+  if (!normalizedName.includes("filtro") && !normalizedName.includes("filter")) {
+    return null;
+  }
 
   if (normalizedName.includes("cabina")) return "cabina";
   if (normalizedName.includes("refrigerante") || normalizedName.includes("coolant")) return "refrigerante";
@@ -119,9 +139,32 @@ export function getProductDisplayImage(product) {
     return dieselImage;
   }
 
-  // 3. Imagen propia almacenada en BD (si no es un placeholder genérico obsoleto)
+  // 3. Imagen propia almacenada en BD / Inventario
   const storedImage = product?.images?.[0]?.url || product?.image;
   if (storedImage && !GENERIC_PLACEHOLDER_IMAGES.has(storedImage)) {
+    const isSkfImage = storedImage.toLowerCase().includes("skf");
+    const isSkfProduct =
+      normalize(product.brand?.slug || product.brand?.name || product.brand).includes("skf") ||
+      normalize(product.name).includes("skf") ||
+      normalize(product.sku || "").includes("skf");
+
+    // Si la imagen tiene la marca SKF pero el producto no es SKF (ej: ejes GTI, rodamientos genéricos),
+    // asignamos la imagen correcta correspondiente a su tipo de componente.
+    if (isSkfImage && !isSkfProduct) {
+      const normName = normalize(product.name);
+      if (
+        normName.includes("eje") ||
+        normName.includes("homocinet") ||
+        normName.includes("triceta") ||
+        normName.includes("tulipa") ||
+        normName.includes("punta") ||
+        normName.includes("semieje")
+      ) {
+        return "/catalogo-gti/gti-linea-homocinetica-studio-v2.webp";
+      }
+      return "/catalogo-frenos-suspension/soportes-bujes-suspension-familia.webp";
+    }
+
     return storedImage;
   }
 
@@ -146,4 +189,3 @@ export function getProductDisplayImage(product) {
 
   return storedImage || "/logo.png";
 }
-

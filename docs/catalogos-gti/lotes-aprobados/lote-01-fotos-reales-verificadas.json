@@ -1,0 +1,62 @@
+[
+  {
+    "sku": "GTI01-004",
+    "image_source": "https://app.pedbox.co:7777/imagenes_catalogo/15/01I09006.png",
+    "sources": ["https://www.imotriz.com/producto/3/GTI01-004-/"],
+    "exact_reference_confirmed": true,
+    "usage_authorized": true,
+    "source_type": "authorized-distributor",
+    "source_image_clean": true,
+    "reference_evidence": "Ficha pública de distribuidor que identifica SKU GTI01-004 y marca GTI; revisión visual 2026-08-27: foto 2000×1333 sin marca de agua ajena, con kit GTI y código GTI01-004 visible en la pieza."
+  },
+  {
+    "sku": "GTI01-016",
+    "image_source": "https://app.pedbox.co:7777/imagenes_catalogo/15/01I09020.png",
+    "sources": ["https://www.imotriz.com/producto/3/GTI01-016-/"],
+    "exact_reference_confirmed": true,
+    "usage_authorized": true,
+    "source_type": "authorized-distributor",
+    "source_image_clean": true,
+    "reference_evidence": "Ficha pública de distribuidor que identifica SKU GTI01-016 y marca GTI; revisión visual 2026-08-27: foto 2000×1333 limpia, con kit y empaque GTI, geometría de punta lado rueda con ABS."
+  },
+  {
+    "sku": "GTI01-017",
+    "image_source": "https://app.pedbox.co:7777/imagenes_catalogo/15/01I09021.png",
+    "sources": ["https://www.imotriz.com/producto/3/GTI01-017-/"],
+    "exact_reference_confirmed": true,
+    "usage_authorized": true,
+    "source_type": "authorized-distributor",
+    "source_image_clean": true,
+    "reference_evidence": "Ficha pública de distribuidor que identifica SKU GTI01-017 y marca GTI; revisión visual 2026-08-27: foto 2000×1333 limpia, con kit y empaque GTI, geometría de punta lado rueda."
+  },
+  {
+    "sku": "GTI01-093",
+    "image_source": "https://app.pedbox.co:7777/imagenes_catalogo/15/01I09135.png",
+    "sources": ["https://www.imotriz.com/producto/3/GTI01-093-/"],
+    "exact_reference_confirmed": true,
+    "usage_authorized": true,
+    "source_type": "authorized-distributor",
+    "source_image_clean": true,
+    "reference_evidence": "Ficha pública de distribuidor que identifica SKU GTI01-093 y marca GTI; revisión visual 2026-08-27: foto 2000×1333 limpia, con kit y empaque GTI, geometría de componente de transmisión Renault Kwid."
+  },
+  {
+    "sku": "GTI06-012",
+    "image_source": "https://app.pedbox.co:7777/imagenes_catalogo/15/06I09089.png",
+    "sources": ["https://www.imotriz.com/producto/3/GTI06-012-/"],
+    "exact_reference_confirmed": true,
+    "usage_authorized": true,
+    "source_type": "authorized-distributor",
+    "source_image_clean": true,
+    "reference_evidence": "Ficha pública de distribuidor que identifica SKU GTI06-012 y marca GTI; revisión visual 2026-08-27: foto 2000×1333 limpia, con kit y empaque GTI, geometría de punta lado rueda Kia Cerato/Forte."
+  },
+  {
+    "sku": "GTI06-082",
+    "image_source": "https://app.pedbox.co:7777/imagenes_catalogo/15/06I09123.png",
+    "sources": ["https://www.imotriz.com/producto/3/GTI06-082-/"],
+    "exact_reference_confirmed": true,
+    "usage_authorized": true,
+    "source_type": "authorized-distributor",
+    "source_image_clean": true,
+    "reference_evidence": "Ficha pública de distribuidor que identifica SKU GTI06-082 y marca GTI; revisión visual 2026-08-27: foto 2000×1333 limpia, con kit y empaque GTI, geometría de tulipa lado caja Hyundai Eon."
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "sku": "GTI03-019",
+    "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-generated-sources\\GTI03-019-generated.png",
+    "generation_prompt": "Photorealistic catalog reference for GTI03-019: female transmission-side inner CV joint for Mazda 626 1.8 1984-1992, documented 26x23 spline configuration, deep recessed female splined bore, compact tulip housing, tripod bearing, inner boot, clamps and circlip; specifications contrasted against the exact GTI/Imotriz catalog metadata and historical catalog; pure white background, no text, logo or watermark."
+  },
+  {
+    "sku": "GTI03-020",
+    "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-generated-sources\\GTI03-020-generated.png",
+    "generation_prompt": "Photorealistic catalog reference for GTI03-020: male transmission-side inner CV joint for Mazda 626 1.8 1984-1992, documented 26x23 spline configuration, short protruding male splined shaft, compact tulip housing, tripod bearing, inner boot, clamps and circlip; specifications contrasted against the exact GTI/Imotriz catalog metadata and historical catalog; pure white background, no text, logo or watermark."
+  }
+]

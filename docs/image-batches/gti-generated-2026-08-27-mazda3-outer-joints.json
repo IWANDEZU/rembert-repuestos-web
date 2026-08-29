@@ -1,0 +1,17 @@
+[
+  {
+    "sku": "GTI03-040",
+    "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-generated-sources\\GTI03-040-generated.png",
+    "generation_prompt": "Photorealistic catalog reference for GTI03-040: wheel-side outer CV joint kit for Mazda 3 automatic transmission, documented bolt-retained design and 36 x 22 spline configuration; separate central retaining bolt and no ABS ring because the exact source does not specify ABS; specifications contrasted against the exact Imotriz GTI SKU page and historical Mazda GTI catalog; pure white background, no text, logo or watermark."
+  },
+  {
+    "sku": "GTI03-058",
+    "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-generated-sources\\GTI03-058-generated.png",
+    "generation_prompt": "Photorealistic catalog reference for GTI03-058: wheel-side outer CV joint kit for Mazda 3, documented 22-spline specification and ABS tone ring; the source does not state whether 22 refers to internal or external splines and does not state ABS ring tooth count, so neither is asserted; specifications contrasted against two historical Mazda GTI catalog sources; pure white background, no text, logo or watermark."
+  },
+  {
+    "sku": "GTI03-062",
+    "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-generated-sources\\GTI03-062-generated.png",
+    "generation_prompt": "Photorealistic catalog reference for GTI03-062: wheel-side outer CV joint kit for Mazda 3 with documented 24-tooth spline specification; the source does not state whether 24 refers to internal or external splines and does not specify ABS or retention type, so a plain housing without ABS ring is shown; specifications contrasted against the exact Imotriz GTI SKU page and historical Mazda GTI catalog; pure white background, no text, logo or watermark."
+  }
+]

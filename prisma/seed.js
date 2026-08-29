@@ -101,7 +101,6 @@ async function main() {
   const brandLiquiMoly = await prisma.brand.create({ data: { name: 'Liqui Moly', slug: 'liqui-moly' } })
   const brandBosch = await prisma.brand.create({ data: { name: 'Bosch', slug: 'bosch' } })
   const brandBlueTec = await prisma.brand.create({ data: { name: 'BlueTec', slug: 'bluetec' } })
-  const brandPartmo = await prisma.brand.create({ data: { name: 'Partmo', slug: 'partmo' } })
   const brandWix = await prisma.brand.create({ data: { name: 'WIX Filters', slug: 'wix' } })
   const brandMazda = await prisma.brand.create({ data: { name: 'Mazda Original', slug: 'mazda' } })
   const brandCoexito = await prisma.brand.create({ data: { name: 'Coéxito', slug: 'coexito' } })
@@ -1089,113 +1088,7 @@ async function main() {
     }
   })
 
-  const f1 = await prisma.product.create({
-    data: {
-      name: 'Filtro Aceite Partmo A-14616', slug: 'partmo-a14616', description: 'Filtro de aceite para Chevrolet Spark GT 1.2L.', shortDesc: 'Spark GT (Aceite)', price: 15000, categoryId: catFiltros.id, brandId: brandPartmo.id,
-      images: { create: [{ url: '/filtro-aceite.jpg', isMain: true }] }, variants: { create: [{ name: 'Unidad', price: 15000, stock: 40 }] }
-    }
-  })
-  const f2 = await prisma.product.create({
-    data: {
-      name: 'Filtro Aire Partmo AP-3146', slug: 'partmo-ap3146', description: 'Filtro de aire para Chevrolet Spark GT 1.2L.', shortDesc: 'Spark GT (Aire)', price: 18000, categoryId: catFiltros.id, brandId: brandPartmo.id,
-      images: { create: [{ url: '/filtro-aire.png', isMain: true }] }, variants: { create: [{ name: 'Unidad', price: 18000, stock: 35 }] }
-    }
-  })
-  const f3 = await prisma.product.create({
-    data: {
-      name: 'Filtro Cabina Partmo AP-31019', slug: 'partmo-ap31019', description: 'Filtro de cabina para Chevrolet Spark GT 1.2L.', shortDesc: 'Spark GT (Cabina)', price: 22000, categoryId: catFiltros.id, brandId: brandPartmo.id,
-      images: { create: [{ url: '/filtro-aire.png', isMain: true }] }, variants: { create: [{ name: 'Unidad', price: 22000, stock: 20 }] }
-    }
-  })
 
-  const f4 = await prisma.product.create({
-    data: {
-      name: 'Filtro Aceite Partmo A-1402', slug: 'partmo-a1402', description: 'Filtro de aceite para Kia Picanto ION.', shortDesc: 'Picanto ION (Aceite)', price: 16000, categoryId: catFiltros.id, brandId: brandPartmo.id,
-      images: { create: [{ url: '/filtro-aceite.jpg', isMain: true }] }, variants: { create: [{ name: 'Unidad', price: 16000, stock: 50 }] }
-    }
-  })
-  const f5 = await prisma.product.create({
-    data: {
-      name: 'Filtro Aire Partmo AP-31820', slug: 'partmo-ap31820', description: 'Filtro de aire para Kia Picanto ION 1.0L/1.25L.', shortDesc: 'Picanto ION (Aire)', price: 20000, categoryId: catFiltros.id, brandId: brandPartmo.id,
-      images: { create: [{ url: '/filtro-aire.png', isMain: true }] }, variants: { create: [{ name: 'Unidad', price: 20000, stock: 45 }] }
-    }
-  })
-  const f6 = await prisma.product.create({
-    data: {
-      name: 'Filtro Cabina Partmo AP-3102', slug: 'partmo-ap3102', description: 'Filtro de cabina para Kia Picanto ION.', shortDesc: 'Picanto ION (Cabina)', price: 24000, categoryId: catFiltros.id, brandId: brandPartmo.id,
-      images: { create: [{ url: '/filtro-aire.png', isMain: true }] }, variants: { create: [{ name: 'Unidad', price: 24000, stock: 25 }] }
-    }
-  })
-
-  const f7 = await prisma.product.create({
-    data: {
-      name: 'Filtro Aceite Partmo A-3603PLUS', slug: 'partmo-a3603plus', description: 'Filtro de aceite para Renault Duster, Logan, Sandero.', shortDesc: 'Renault (Aceite)', price: 18000, categoryId: catFiltros.id, brandId: brandPartmo.id,
-      images: { create: [{ url: '/filtro-aceite.jpg', isMain: true }] }, variants: { create: [{ name: 'Unidad', price: 18000, stock: 60 }] }
-    }
-  })
-  const f8 = await prisma.product.create({
-    data: {
-      name: 'Filtro Aire Partmo AP-3554', slug: 'partmo-ap3554', description: 'Filtro de aire para Renault Duster 1.6L/2.0L.', shortDesc: 'Duster (Aire)', price: 25000, categoryId: catFiltros.id, brandId: brandPartmo.id,
-      images: { create: [{ url: '/filtro-aire.png', isMain: true }] }, variants: { create: [{ name: 'Unidad', price: 25000, stock: 30 }] }
-    }
-  })
-  const f9 = await prisma.product.create({
-    data: {
-      name: 'Filtro Cabina Partmo AP-31068', slug: 'partmo-ap31068', description: 'Filtro de cabina para Renault Duster.', shortDesc: 'Duster (Cabina)', price: 28000, categoryId: catFiltros.id, brandId: brandPartmo.id,
-      images: { create: [{ url: '/filtro-aire.png', isMain: true }] }, variants: { create: [{ name: 'Unidad', price: 28000, stock: 15 }] }
-    }
-  })
-
-  const f10 = await prisma.product.create({
-    data: {
-      name: 'Filtro Aire Partmo ACP-090', slug: 'partmo-acp090', description: 'Filtro de aire para Renault Logan y Sandero.', shortDesc: 'Logan/Sandero (Aire)', price: 22000, categoryId: catFiltros.id, brandId: brandPartmo.id,
-      images: { create: [{ url: '/filtro-aire.png', isMain: true }] }, variants: { create: [{ name: 'Unidad', price: 22000, stock: 40 }] }
-    }
-  })
-  const f11 = await prisma.product.create({
-    data: {
-      name: 'Filtro Cabina Partmo AP-31064', slug: 'partmo-ap31064', description: 'Filtro de cabina para Renault Logan y Sandero.', shortDesc: 'Logan/Sandero (Cabina)', price: 25000, categoryId: catFiltros.id, brandId: brandPartmo.id,
-      images: { create: [{ url: '/filtro-aire.png', isMain: true }] }, variants: { create: [{ name: 'Unidad', price: 25000, stock: 25 }] }
-    }
-  })
-
-  const f12 = await prisma.product.create({
-    data: {
-      name: 'Filtro Aceite Partmo A-58', slug: 'partmo-a58', description: 'Filtro de aceite para Mazda 2.', shortDesc: 'Mazda 2 (Aceite)', price: 19000, categoryId: catFiltros.id, brandId: brandPartmo.id,
-      images: { create: [{ url: '/filtro-aceite.jpg', isMain: true }] }, variants: { create: [{ name: 'Unidad', price: 19000, stock: 35 }] }
-    }
-  })
-  const f13 = await prisma.product.create({
-    data: {
-      name: 'Filtro Aire Partmo AP-31962', slug: 'partmo-ap31962', description: 'Filtro de aire para Mazda 2 Skyactiv.', shortDesc: 'Mazda 2 (Aire)', price: 28000, categoryId: catFiltros.id, brandId: brandPartmo.id,
-      images: { create: [{ url: '/filtro-aire.png', isMain: true }] }, variants: { create: [{ name: 'Unidad', price: 28000, stock: 20 }] }
-    }
-  })
-  const f14 = await prisma.product.create({
-    data: {
-      name: 'Filtro Cabina Partmo AP-31096', slug: 'partmo-ap31096', description: 'Filtro de cabina para Mazda 2, 3, 6, CX-5.', shortDesc: 'Mazda (Cabina)', price: 32000, categoryId: catFiltros.id, brandId: brandPartmo.id,
-      images: { create: [{ url: '/filtro-aire.png', isMain: true }] }, variants: { create: [{ name: 'Unidad', price: 32000, stock: 15 }] }
-    }
-  })
-
-  const f15 = await prisma.product.create({
-    data: {
-      name: 'Filtro Combustible Partmo PP-7355', slug: 'partmo-pp7355', description: 'Elemento de combustible para Toyota Hilux Diésel.', shortDesc: 'Hilux (Combustible)', price: 45000, categoryId: catFiltros.id, brandId: brandPartmo.id,
-      images: { create: [{ url: '/filtro-aceite.jpg', isMain: true }] }, variants: { create: [{ name: 'Unidad', price: 45000, stock: 25 }] }
-    }
-  })
-  const f16 = await prisma.product.create({
-    data: {
-      name: 'Filtro Separador Partmo A-7533SP', slug: 'partmo-a7533sp', description: 'Filtro separador agua-combustible para Toyota Hilux / Prado Diésel.', shortDesc: 'Hilux (Separador)', price: 55000, categoryId: catFiltros.id, brandId: brandPartmo.id,
-      images: { create: [{ url: '/filtro-aceite.jpg', isMain: true }] }, variants: { create: [{ name: 'Unidad', price: 55000, stock: 15 }] }
-    }
-  })
-  const f17 = await prisma.product.create({
-    data: {
-      name: 'Filtro Cabina Partmo AP-31081', slug: 'partmo-ap31081', description: 'Filtro de cabina para Toyota Hilux (2001-2010).', shortDesc: 'Hilux (Cabina)', price: 28000, categoryId: catFiltros.id, brandId: brandPartmo.id,
-      images: { create: [{ url: '/filtro-aire.png', isMain: true }] }, variants: { create: [{ name: 'Unidad', price: 28000, stock: 20 }] }
-    }
-  })
 
   const n1 = await prisma.product.create({
     data: {

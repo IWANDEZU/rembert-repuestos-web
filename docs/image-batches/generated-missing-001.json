@@ -1,0 +1,12 @@
+[
+  {
+    "sku": "95227749",
+    "image_source": "C:\\Users\\iwand\\.codex\\generated_images\\01a0406c-6bd0-7e61-8e9b-bc2f85d5a022\\exec-f8f89a9d-6db2-4836-a33d-951c08b588b3.png",
+    "generation_prompt": "Photorealistic studio reference of a Chevrolet Aveo engine cooling radiator, reference 95227749: approximately 600 × 420 mm aluminum fin core, black plastic side tanks, top inlet, lower outlet, sensor port, manual-transmission configuration, no oil cooler, fan, shroud, cap or packaging. White background, no text or logo; application remains subject to VIN confirmation."
+  },
+  {
+    "sku": "OP-4611",
+    "image_source": "C:\\Users\\iwand\\.codex\\generated_images\\01a0406c-6bd0-7e61-8e9b-bc2f85d5a022\\exec-30b9a038-6a3e-4830-ad31-19dd125ce098.png",
+    "generation_prompt": "Photorealistic studio reference of one gearbox-side inner CV tulip for Chevrolet Spark GT 2012, reference OP-4611: compact steel open cup, subtle inner roller tracks, central splined bore and short stem, no boot, axle shaft, ABS ring, packaging, text or logo. White background; fitment and spline count remain subject to VIN confirmation."
+  }
+]

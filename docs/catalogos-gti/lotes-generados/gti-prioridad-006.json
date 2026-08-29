@@ -1,0 +1,17 @@
+[
+  {
+    "sku": "GTI03-003",
+    "image_source": "C:\\Users\\iwand\\.codex\\generated_images\\01a0406c-6bd0-7e61-8e9b-bc2f85d5a022\\exec-a4570fbe-d3c3-490b-920f-b19057593da7.png",
+    "generation_prompt": "Photorealistic studio product reference of a front wheel-side outer CV joint for Kia Rio Stylus 1.5, with a steel joint, black boot, metal bands, splined shaft, threaded wheel-end tip and internal retaining pin configuration; white background, no text, no logo, no packaging. Fitment remains subject to VIN confirmation."
+  },
+  {
+    "sku": "GTI01-092",
+    "image_source": "C:\\Users\\iwand\\.codex\\generated_images\\01a0406c-6bd0-7e61-8e9b-bc2f85d5a022\\exec-59d91590-648c-408c-9687-c13f9f9fb535.png",
+    "generation_prompt": "Photorealistic studio product reference of a compact front wheel-side outer CV joint for Renault Kwid, with steel housing, black boot, metal bands, splined shaft and threaded wheel-end tip; white background, no text, no logo, no packaging. Fitment remains subject to VIN confirmation."
+  },
+  {
+    "sku": "GTI03-072",
+    "image_source": "C:\\Users\\iwand\\.codex\\generated_images\\01a0406c-6bd0-7e61-8e9b-bc2f85d5a022\\exec-6f2be0bc-ef68-405e-98e2-e180f7f9f944.png",
+    "generation_prompt": "Photorealistic studio product reference of a front wheel-side outer CV joint for Mazda 2, with steel housing, black boot, metal bands, splined shaft and threaded wheel-end tip; white background, no text, no logo, no packaging. Fitment remains subject to VIN confirmation."
+  }
+]

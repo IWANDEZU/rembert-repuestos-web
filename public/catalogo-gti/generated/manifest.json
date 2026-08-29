@@ -1,0 +1,1535 @@
+{
+  "version": 1,
+  "images": {
+    "GTI04161": {
+      "sku": "GTI04-161",
+      "name": "Punta lado rueda GTI — Chevrolet Tracker Turbo / Onix Turbo",
+      "outputImage": "/catalogo-gti/generated/gti04-161-punta-lado-rueda-gti-chevrolet-tracker-turbo-onix-turbo-generated-reference.webp",
+      "sourceSha256": "742a35e9ab3d410670c03b7a707be644a2a4fb0d566b216579147a1e4cd1a390",
+      "generationPrompt": "Photorealistic studio product reference of a front wheel-side outer CV joint for Chevrolet Tracker 1.2 Turbo / Onix 1.0 Turbo manual transmission: single complete steel joint, splined shaft, threaded wheel-end tip and black boot; pure white background, no ABS ring, no text, no logo, no packaging. Fitment remains subject to VIN confirmation.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-27T21:20:20.495Z"
+    },
+    "GTI06082": {
+      "sku": "GTI06-082",
+      "name": "Tulipa lado caja GTI — Hyundai Eon",
+      "outputImage": "/catalogo-gti/generated/gti06-082-tulipa-lado-caja-gti-hyundai-eon-generated-reference.webp",
+      "sourceSha256": "d8d58f002f0ee8355d8bc7c4c959edfd682c75c3300375cb815f7033ea33c8bd",
+      "generationPrompt": "Photorealistic studio product reference of an inner CV tulip / gearbox-side joint for Hyundai Eon, 22 × 19 splines: one steel tulip cup with internal roller tracks and splined stem; pure white background, no boot, no text, no logo, no packaging. Fitment remains subject to VIN confirmation.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-27T21:20:22.192Z"
+    },
+    "GTI106092": {
+      "sku": "GTI106-092",
+      "name": "PUNTA L/C KIA PICANTO ALL NEW 1.2 (25*21)",
+      "outputImage": "/catalogo-gti/generated/punta-l-c-kia-picanto-all-new-1-2-25-21-gti106-092-generated-reference.webp",
+      "sourceSha256": "162d8b4e6cffbaa28ce6ed29ebc4207e5bfc8a0b576b3321d0394e3e06829a00",
+      "generationPrompt": "Photorealistic studio product reference of a gearbox-side inner CV joint for Kia Picanto All New 1.2, 25 × 21 splines: compact steel tulip housing, black boot, metal bands and splined stem; pure white background, no text, no logo, no packaging. Fitment remains subject to VIN confirmation.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-27T21:20:22.193Z"
+    },
+    "GTI01093": {
+      "sku": "GTI01-093",
+      "name": "Tulipa lado caja GTI — Renault Kwid",
+      "outputImage": "/catalogo-gti/generated/gti01-093-tulipa-lado-caja-gti-renault-kwid-generated-reference.webp",
+      "sourceSha256": "d199ab9225d8d3b7bb7cf7b8ade87686bc25580554d48a49692cf77068070e88",
+      "generationPrompt": "Photorealistic studio product reference of an inner CV tulip / gearbox-side joint for Renault Kwid, 23 × 27 splines: steel cup with visible internal tracks and a splined stem; pure white background, no text, no logo, no packaging. Fitment remains subject to VIN confirmation.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-27T21:35:23.620Z"
+    },
+    "GTI01016": {
+      "sku": "GTI01-016",
+      "name": "Punta lado rueda GTI — Renault Clio II / Symbol",
+      "outputImage": "/catalogo-gti/generated/gti01-016-punta-lado-rueda-gti-renault-clio-ii-symbol-generated-reference.webp",
+      "sourceSha256": "daf4f6e31d8236bd382cc5667cfa0f3cb70e84ead39841803aa206f2685cb98b",
+      "generationPrompt": "Photorealistic studio product reference of a front wheel-side outer CV joint for Renault Clio II / Symbol: steel outer joint, black boot, metal bands, splined shaft and threaded wheel-end tip; pure white background, no ABS ring, no text, no logo, no packaging. Fitment remains subject to VIN confirmation.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-27T21:35:23.621Z"
+    },
+    "GTI04089": {
+      "sku": "GTI04-089",
+      "name": "Punta lado rueda GTI — Chevrolet Cobalt / Taxi Elite",
+      "outputImage": "/catalogo-gti/generated/gti04-089-punta-lado-rueda-gti-chevrolet-cobalt-taxi-elite-generated-reference.webp",
+      "sourceSha256": "ebef7bc781a1a593c2ee5f7e8163eca068491eebf907dbf6c123bde469a1768c",
+      "generationPrompt": "Photorealistic studio product reference of a front wheel-side outer CV joint for Chevrolet Cobalt / Taxi Elite: steel outer joint, black boot, metal bands, splined shaft and threaded wheel-end tip; white background, no ABS ring, no text, no logo, no packaging. Fitment remains subject to VIN confirmation.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-27T21:37:30.863Z"
+    },
+    "GTI04D01": {
+      "sku": "GTI04-D01",
+      "name": "Punta lado rueda GTI — Chevrolet Corsa",
+      "outputImage": "/catalogo-gti/generated/gti04-d01-punta-lado-rueda-gti-chevrolet-corsa-generated-reference.webp",
+      "sourceSha256": "84b8db2cca316e0bc5a82bc92db940f6d8b5b9f611adb912f0024d4e5b31d8ad",
+      "generationPrompt": "Photorealistic studio product reference of a front wheel-side outer CV joint for Chevrolet Corsa: steel outer joint, black boot, metal bands, splined shaft and threaded wheel-end tip; white background, no ABS ring, no text, no logo, no packaging. Fitment remains subject to VIN confirmation.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-27T21:37:30.864Z"
+    },
+    "GTI06081": {
+      "sku": "GTI06-081",
+      "name": "Punta lado rueda GTI — Hyundai Eon",
+      "outputImage": "/catalogo-gti/generated/gti06-081-punta-lado-rueda-gti-hyundai-eon-generated-reference.webp",
+      "sourceSha256": "3aee6a94cf74a8a9102568bde71384e9a972d7c35fae0338f9299c271cfb1599",
+      "generationPrompt": "Photorealistic studio product reference of a front wheel-side outer CV joint for Hyundai Eon: compact steel joint, black boot, metal bands, splined shaft and threaded wheel-end tip; white background, no ABS ring, no text, no logo, no packaging. Fitment remains subject to VIN confirmation.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-27T21:39:02.756Z"
+    },
+    "GTI06012": {
+      "sku": "GTI06-012",
+      "name": "Punta lado rueda GTI — Kia Cerato / Forte",
+      "outputImage": "/catalogo-gti/generated/gti06-012-punta-lado-rueda-gti-kia-cerato-forte-generated-reference.webp",
+      "sourceSha256": "96ac3fd611bc2191d9c51eb30fb7336ea59c70577a2690f0fb91efd0a5fe71a6",
+      "generationPrompt": "Photorealistic studio product reference of a front wheel-side outer CV joint for Kia Cerato / Forte: steel joint, black boot, metal bands, splined shaft and threaded wheel-end tip; white background, no ABS ring, no text, no logo, no packaging. Fitment remains subject to VIN confirmation.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-27T21:39:02.757Z"
+    },
+    "GTI03003": {
+      "sku": "GTI03-003",
+      "name": "Punta lado rueda GTI — Kia Rio Stylus 1.5",
+      "outputImage": "/catalogo-gti/generated/gti03-003-punta-lado-rueda-gti-kia-rio-stylus-1-5-generated-reference.webp",
+      "sourceSha256": "45d2f645f0163a563316d825f9dca59f4e299fb5cda4d0e6d3ccb82ac9939654",
+      "generationPrompt": "Photorealistic studio product reference of a front wheel-side outer CV joint for Kia Rio Stylus 1.5, with a steel joint, black boot, metal bands, splined shaft, threaded wheel-end tip and internal retaining pin configuration; white background, no text, no logo, no packaging. Fitment remains subject to VIN confirmation.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-27T21:59:49.826Z"
+    },
+    "GTI01092": {
+      "sku": "GTI01-092",
+      "name": "Punta lado rueda GTI — Renault Kwid",
+      "outputImage": "/catalogo-gti/generated/gti01-092-punta-lado-rueda-gti-renault-kwid-generated-reference.webp",
+      "sourceSha256": "0865648c8043071fa10e1c43d4135db70de9d260552b0002a13d6fd8c273c597",
+      "generationPrompt": "Photorealistic studio product reference of a compact front wheel-side outer CV joint for Renault Kwid, with steel housing, black boot, metal bands, splined shaft and threaded wheel-end tip; white background, no text, no logo, no packaging. Fitment remains subject to VIN confirmation.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-27T21:59:49.827Z"
+    },
+    "GTI03072": {
+      "sku": "GTI03-072",
+      "name": "Punta lado rueda GTI — Mazda 2",
+      "outputImage": "/catalogo-gti/generated/gti03-072-punta-lado-rueda-gti-mazda-2-generated-reference.webp",
+      "sourceSha256": "a9aaf5e2740bb10b56814cdc44216140cbc0228fc5d4512c84f7894253dc1989",
+      "generationPrompt": "Photorealistic studio product reference of a front wheel-side outer CV joint for Mazda 2, with steel housing, black boot, metal bands, splined shaft and threaded wheel-end tip; white background, no text, no logo, no packaging. Fitment remains subject to VIN confirmation.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-27T21:59:49.827Z"
+    },
+    "GTI01017": {
+      "sku": "GTI01-017",
+      "name": "Punta lado rueda GTI — Renault Mégane / Clio II",
+      "outputImage": "/catalogo-gti/generated/gti01-017-punta-lado-rueda-gti-renault-megane-clio-ii-generated-reference.webp",
+      "sourceSha256": "fc7abf3f5c30d87c601bacf1aa5fdd2c37b4429378accdbd5be519f71cfe744e",
+      "generationPrompt": "Photorealistic studio product reference of a front wheel-side outer CV joint for Renault Mégane / Clio II with a 44-tooth ABS tone ring, steel housing, black boot, metal bands, splined shaft and threaded wheel-end tip; white background, no text, no logo, no packaging. Fitment remains subject to VIN confirmation.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-27T22:01:15.343Z"
+    },
+    "GTI06037": {
+      "sku": "GTI06-037",
+      "name": "Tulipa lado caja GTI — Kia Rio Xcite / Cerato / Forte / Hyundai i25",
+      "outputImage": "/catalogo-gti/generated/gti06-037-tulipa-lado-caja-gti-kia-rio-xcite-cerato-forte-hyundai-i25-generated-reference.webp",
+      "sourceSha256": "01a924b532d12c048402137acdb96734173d0db3828eacce6ae807647aaed49a",
+      "generationPrompt": "Photorealistic studio product reference of a gearbox-side inner CV tulip for Kia Rio Xcite / Cerato / Forte / Hyundai i25: open steel cup with internal roller tracks, splined bore and stem; white background, no boot, no text, no logo, no packaging. Fitment remains subject to VIN confirmation.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-27T22:01:15.344Z"
+    },
+    "GTI01004": {
+      "sku": "GTI01-004",
+      "name": "Punta lado caja GTI — Renault R9 / R12 / R18 / Twingo 8V",
+      "outputImage": "/catalogo-gti/generated/gti01-004-punta-lado-caja-gti-renault-r9-r12-r18-twingo-8v-generated-reference.webp",
+      "sourceSha256": "927a86ff64d31c4e7633650631704f1ddaf0002ec69ef3743aee6fce246f83ff",
+      "generationPrompt": "Photorealistic studio product reference of a manual gearbox-side inner CV tulip for Renault R9 / R12 / R18 / Twingo 8V, 23 external × 22 internal splines and tripoid system: steel open cup, central splined bore, internal tripoid tracks and stem; white background, no text, no logo, no packaging. Fitment remains subject to VIN confirmation.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-27T22:09:40.714Z"
+    },
+    "GTI038": {
+      "sku": "GTI-038",
+      "name": "Tulipa lado caja GTI — Hyundai Vision / Kia Sephia",
+      "outputImage": "/catalogo-gti/generated/gti-038-tulipa-lado-caja-gti-hyundai-vision-kia-sephia-generated-reference.webp",
+      "sourceSha256": "a70983101cd5c14932bdbd90fd62106f0320ec22ea7e7a1332b924663b0d5885",
+      "generationPrompt": "Photorealistic studio product reference of a gearbox-side inner CV tulip for Hyundai Accent Vision / Kia Sephia, open steel cup with internal roller tracks, splined bore and stem; white background, no text, no logo, no packaging. Fitment remains subject to VIN and physical spline-count confirmation.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-27T22:09:40.715Z"
+    },
+    "GTI01042": {
+      "sku": "GTI01-042",
+      "name": "PUNTA EJE L/R. MASTER II 2.5 2010/2013 (ABS 51T) — GTI01-042",
+      "outputImage": "/catalogo-gti/generated/gti-gti01-042-punta-eje-l-r-master-ii-2-5-2010-2013-abs-51t-generated-reference.webp",
+      "sourceSha256": "35961f951f6147e32b53487b4c4156d95ae459c1f5a485d1ca029bfb0e6274b3",
+      "generationPrompt": "Photorealistic catalog reference for GTI01-042: one Renault Master II 2.5 outer CV joint kit, 2010–2013, with 51-tooth ABS ring, threaded male splined shaft, nut, black boot, clamps and circlip; pure white background; geometry contrasted against the exact distributor listing; no text, logo or watermark.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T00:28:56.799Z"
+    },
+    "GTI01056": {
+      "sku": "GTI01-056",
+      "name": "EJE HOMOCINETICO IZQ. MASTER II 2.5 2010/2013 — GTI01-056",
+      "outputImage": "/catalogo-gti/generated/gti-gti01-056-eje-homocinetico-izq-master-ii-2-5-2010-2013-generated-reference.webp",
+      "sourceSha256": "59a98f6606fe54bf991146a9c1e19e325071d8d876128673413e766ca8775892",
+      "generationPrompt": "Photorealistic catalog reference for GTI01-056: one complete left front CV axle for Renault Master II 2.5 2010–2013, inner tripod housing, two black accordion boots, long steel shaft and outer splined threaded end; pure white background; silhouette contrasted against the exact distributor listing; no text, logo or watermark.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T00:28:56.800Z"
+    },
+    "GTI01057": {
+      "sku": "GTI01-057",
+      "name": "EJE HOMOCINETICO DER. MASTER II 2.5 2010/2013 — GTI01-057",
+      "outputImage": "/catalogo-gti/generated/gti-gti01-057-eje-homocinetico-der-master-ii-2-5-2010-2013-generated-reference.webp",
+      "sourceSha256": "18fa0be8b720dbfc60daa4b3cef199577aa4825206af7a3e5525f44cb7f1dd30",
+      "generationPrompt": "Photorealistic catalog reference for GTI01-057: one complete right front CV axle for Renault Master II 2.5 2010–2013, inner joint and mounting flange, long steel shaft, two black boots and outer splined threaded end; pure white background; proportions contrasted against the exact distributor listing; no text, logo or watermark.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T00:28:56.800Z"
+    },
+    "GTI01058": {
+      "sku": "GTI01-058",
+      "name": "PUNTA EJE L/C. DER. MASTER II 2.5 2010/2013 — GTI01-058",
+      "outputImage": "/catalogo-gti/generated/gti-gti01-058-punta-eje-l-c-der-master-ii-2-5-2010-2013-generated-reference.webp",
+      "sourceSha256": "2251754791edc81e34b9466eef00ce99abe087068beb675ba4f9bd8ae9be7b0f",
+      "generationPrompt": "Photorealistic catalog reference for GTI01-058: one smooth cylindrical right inner CV joint cup for Renault Master II 2.5 2010–2013 with visible female splines, black boot, two clamps and circlip; no ABS toothed ring; pure white background; geometry contrasted against the exact distributor listing; no text, logo or watermark.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T00:28:56.800Z"
+    },
+    "GTI01067": {
+      "sku": "GTI01-067",
+      "name": "PUNTA EJE L/R. TRAFIC 1.9 2013/2014 — GTI01-067",
+      "outputImage": "/catalogo-gti/generated/gti-gti01-067-punta-eje-l-r-trafic-1-9-2013-2014-generated-reference.webp",
+      "sourceSha256": "3b525e1d78006087786bfd8258e530f2aabad4e67fb33f3d1eb449048cf1cb70",
+      "generationPrompt": "Photorealistic catalog reference for GTI01-067: one smooth outer CV joint kit for Renault Trafic 1.9 2013–2014, no ABS ring, male splined threaded shaft, black boot and grease sachet; pure white background; geometry contrasted against the exact distributor listing; no text, logo or watermark.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T00:33:36.668Z"
+    },
+    "GTI01072": {
+      "sku": "GTI01-072",
+      "name": "EJE HOMOCINETICO DER. MASTER III/NEW MASTER 2.3 2014/2017 — GTI01-072",
+      "outputImage": "/catalogo-gti/generated/gti-gti01-072-eje-homocinetico-der-master-iii-new-master-2-3-2014-2017-generated-reference.webp",
+      "sourceSha256": "bd7a267fa93b128e2323e6eb5cbb56f3f7b2be1a8127c9ef68591dc8bd2b775d",
+      "generationPrompt": "Photorealistic catalog reference for GTI01-072: one complete right front CV axle for Renault Master III / New Master 2.3 2014–2017, inner mounting flange, long steel shaft, two boots and outer splined threaded end; pure white background; silhouette contrasted against the exact distributor listing; no text, logo or watermark.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T00:33:36.669Z"
+    },
+    "GTI01073": {
+      "sku": "GTI01-073",
+      "name": "PUNTA EJE L/R. TRAFIC II 2.0 2014/2015 — GTI01-073",
+      "outputImage": "/catalogo-gti/generated/gti-gti01-073-punta-eje-l-r-trafic-ii-2-0-2014-2015-generated-reference.webp",
+      "sourceSha256": "18ad112720d909c60d1bebb1316a7a23ddd8dc0e93354c2ad6c82054d0a3679d",
+      "generationPrompt": "Photorealistic catalog reference for GTI01-073: one smooth outer CV joint kit for Renault Trafic II 2.0 2014–2015, no ABS ring, male splined threaded shaft, boot, two clamps, circlip and grease sachet; pure white background; geometry contrasted against the exact distributor listing; no text, logo or watermark.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T00:33:36.669Z"
+    },
+    "GTI01051": {
+      "sku": "GTI01-051",
+      "name": "PUNTA EJE L/R. CLIO CAMPUS/TWINGO 16V. — GTI01-051",
+      "outputImage": "/catalogo-gti/generated/gti-gti01-051-punta-eje-l-r-clio-campus-twingo-16v-generated-reference.webp",
+      "sourceSha256": "1623f053bc44b448354d3112926e5ef393f9dd420778f4dc21bafa39a4790f03",
+      "generationPrompt": "Photorealistic catalog reference for GTI01-051: outer CV joint kit for Renault Clio Campus / Twingo 16V, 21x21 splines and internal retaining pin, smooth body without ABS ring, boot, clamps, circlip and grease; specifications contrasted against exact GTI marketplace listings; pure white background, no text, logo or watermark.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T00:43:28.165Z"
+    },
+    "GTI01062": {
+      "sku": "GTI01-062",
+      "name": "PUNTA EJE L/R. LAGUNA 25 DTS. — GTI01-062",
+      "outputImage": "/catalogo-gti/generated/gti-gti01-062-punta-eje-l-r-laguna-25-dts-generated-reference.webp",
+      "sourceSha256": "0df5e1e7217bea69952de463d85cfce0c20cd12ea1877d2aba071ba6d0733d87",
+      "generationPrompt": "Photorealistic catalog reference for GTI01-062: outer CV joint kit for Renault Laguna / Scenic II with 23x25 spline configuration, smooth body without ABS ring, boot, clamps, circlip and grease; specifications contrasted against the exact Imotriz GTI listing; pure white background, no text, logo or watermark.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T00:43:28.165Z"
+    },
+    "GTI01063": {
+      "sku": "GTI01-063",
+      "name": "PUNTA EJE L/R. SCENIC 30 DTS. — GTI01-063",
+      "outputImage": "/catalogo-gti/generated/gti-gti01-063-punta-eje-l-r-scenic-30-dts-generated-reference.webp",
+      "sourceSha256": "d09060ee8bc116100968e2de1d8fa9815a92b8165f511277d05e6a746f238b3a",
+      "generationPrompt": "Photorealistic catalog reference for GTI01-063: outer CV joint kit for Renault Scenic with 23x30 spline configuration and 44-tooth ABS ring, boot, clamps, circlip and grease; specifications contrasted against the exact Imotriz GTI listing and historical GTI catalog; pure white background, no text, logo or watermark.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T00:43:28.165Z"
+    },
+    "GTI03013": {
+      "sku": "GTI03-013",
+      "name": "PUNTA EJE L/R. ALLEGRO 2000/ 28 DTS. — GTI03-013",
+      "outputImage": "/catalogo-gti/generated/gti-gti03-013-punta-eje-l-r-allegro-2000-28-dts-generated-reference.webp",
+      "sourceSha256": "b4b6d1774e6eb0371543023ca1da20c54117727eacebd02b7b0395fe9b399af2",
+      "generationPrompt": "Photorealistic catalog reference for GTI03-013: outer CV joint kit for Mazda Allegro 2000 onward with verified 26x28 spline configuration, smooth body without ABS ring, boot, clamps, axle nut, circlip and grease; specifications contrasted against the exact Imotriz GTI listing and historical GTI catalog; pure white background, no text, logo or watermark.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T00:51:21.728Z"
+    },
+    "GTI03014": {
+      "sku": "GTI03-014",
+      "name": "PUNTA EJE L/R. ALLEGRO 95/99 AUT. 30 DTS. — GTI03-014",
+      "outputImage": "/catalogo-gti/generated/gti-gti03-014-punta-eje-l-r-allegro-95-99-aut-30-dts-generated-reference.webp",
+      "sourceSha256": "905f5973697280ff48f314c0837786eb26ac13c52d110d0d29030fdbdfe8fb64",
+      "generationPrompt": "Photorealistic catalog reference for GTI03-014: outer CV joint kit for Mazda Allegro 1995-1999 automatic with verified 26x30 spline configuration, smooth body without ABS ring, boot, clamps, axle nut, circlip and grease; specifications contrasted against the exact Imotriz GTI listing and historical GTI catalog; pure white background, no text, logo or watermark.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T00:51:21.729Z"
+    },
+    "GTI03015": {
+      "sku": "GTI03-015",
+      "name": "PUNTA EJE L/R. ALLEGRO 95/99 22 DTS. — GTI03-015",
+      "outputImage": "/catalogo-gti/generated/gti-gti03-015-punta-eje-l-r-allegro-95-99-22-dts-generated-reference.webp",
+      "sourceSha256": "2e5ed08126f2779e181f5d517e729fa79270e309f8047404026c3a438a51104d",
+      "generationPrompt": "Photorealistic catalog reference for GTI03-015: outer CV joint kit for Mazda Allegro 1995-1999 manual with verified 26x22 spline configuration, smooth body without ABS ring, boot, clamps, axle nut, circlip and grease; specifications contrasted against the exact Imotriz GTI listing and historical GTI catalog; pure white background, no text, logo or watermark.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T00:51:21.729Z"
+    },
+    "GTI03016": {
+      "sku": "GTI03-016",
+      "name": "PUNTA EJE L/C. M323 22.DTS — GTI03-016",
+      "outputImage": "/catalogo-gti/generated/gti-gti03-016-punta-eje-l-c-m323-22-dts-generated-reference.webp",
+      "sourceSha256": "5b69aeafc665398d34d7d92d69a9cc4e4aba7e6de6f2ea7e99b3cd7c1f2e1d2b",
+      "generationPrompt": "Photorealistic catalog reference for GTI03-016: transmission-side inner CV joint for Mazda 323, verified 24 external x 22 internal splines and supplied with separate tripod bearing, tulip housing, inner boot, clamps and circlip; specifications contrasted against the exact MercadoLibre GTI listing, exact Imotriz listing and historical catalog; pure white background, no text, logo or watermark.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T01:04:33.141Z"
+    },
+    "GTI03017": {
+      "sku": "GTI03-017",
+      "name": "PUNTA EJE L/C. M626 84/92 2.0 HEMBRA — GTI03-017",
+      "outputImage": "/catalogo-gti/generated/gti-gti03-017-punta-eje-l-c-m626-84-92-2-0-hembra-generated-reference.webp",
+      "sourceSha256": "544c41a7a69ca1c45d80d54ec09db7b86b87b36883ea66f7e3dfe339600d08f3",
+      "generationPrompt": "Photorealistic catalog reference for GTI03-017: female transmission-side inner CV joint for Mazda 626 2.0 1984-1992, verified 26x25 spline configuration, recessed female splined bore, tulip housing, tripod, inner boot, clamps and circlip; specifications contrasted against the exact Imotriz GTI listing and historical catalog; pure white background, no text, logo or watermark.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T01:04:33.142Z"
+    },
+    "GTI03018": {
+      "sku": "GTI03-018",
+      "name": "PUNTA EJE L/C. M626 84/92 2.0 MACHO — GTI03-018",
+      "outputImage": "/catalogo-gti/generated/gti-gti03-018-punta-eje-l-c-m626-84-92-2-0-macho-generated-reference.webp",
+      "sourceSha256": "1877d68749ba67c65fb20623d8fb272674781a4687799aa5f370f4f4869e670c",
+      "generationPrompt": "Photorealistic catalog reference for GTI03-018: male transmission-side inner CV joint for Mazda 626 2.0 1984-1992, verified 26x25 spline configuration, short protruding male splined shaft, tulip housing, tripod, inner boot, clamps and circlip; specifications contrasted against the exact Imotriz GTI listing and historical catalog; pure white background, no text, logo or watermark.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T01:04:33.142Z"
+    },
+    "GTI03019": {
+      "sku": "GTI03-019",
+      "name": "PUNTA EJE L/C. M626 84/92 1.8 HEMBRA — GTI03-019",
+      "outputImage": "/catalogo-gti/generated/gti-gti03-019-punta-eje-l-c-m626-84-92-1-8-hembra-generated-reference.webp",
+      "sourceSha256": "65472f3ca70a8891a4f6f368a2904aa7da3bd7e8ff35d7f3495160c4c00d4e8d",
+      "generationPrompt": "Photorealistic catalog reference for GTI03-019: female transmission-side inner CV joint for Mazda 626 1.8 1984-1992, documented 26x23 spline configuration, deep recessed female splined bore, compact tulip housing, tripod bearing, inner boot, clamps and circlip; specifications contrasted against the exact GTI/Imotriz catalog metadata and historical catalog; pure white background, no text, logo or watermark.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T01:10:14.704Z"
+    },
+    "GTI03020": {
+      "sku": "GTI03-020",
+      "name": "PUNTA EJE L/C. M626 84/92 1.8 MACHO — GTI03-020",
+      "outputImage": "/catalogo-gti/generated/gti-gti03-020-punta-eje-l-c-m626-84-92-1-8-macho-generated-reference.webp",
+      "sourceSha256": "f88817b000f89f19df57c908ad84d8ea5606a7d4e4cb630c3bb64dfcb3ff0dfd",
+      "generationPrompt": "Photorealistic catalog reference for GTI03-020: male transmission-side inner CV joint for Mazda 626 1.8 1984-1992, documented 26x23 spline configuration, short protruding male splined shaft, compact tulip housing, tripod bearing, inner boot, clamps and circlip; specifications contrasted against the exact GTI/Imotriz catalog metadata and historical catalog; pure white background, no text, logo or watermark.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T01:10:14.705Z"
+    },
+    "GTI03001": {
+      "sku": "GTI03-001",
+      "name": "PUNTA EJE L/C. MB2600 HEMBRA TODOS (26X25) — GTI03-001",
+      "outputImage": "/catalogo-gti/generated/gti-gti03-001-punta-eje-l-c-mb2600-hembra-todos-26x25-generated-reference.webp",
+      "sourceSha256": "dffdcbbd5741d34945a63c11dbe07b9920bee5cd1efd011ffcb6e13d40a95402",
+      "generationPrompt": "Photorealistic catalog reference for GTI03-001: female transmission-side inner CV joint kit for Mazda B2600, documented 26x25 configuration, recessed female splined bore, heavy-duty tulip housing, tripod bearing, inner boot, clamps and circlip; specification contrasted against the exact Imotriz SKU page and historical GTI catalog; pure white background, no text, logo or watermark.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T01:18:49.446Z"
+    },
+    "GTI03002": {
+      "sku": "GTI03-002",
+      "name": "PUNTA EJE L/C. MB2600 MACHO TODOS (26X25) — GTI03-002",
+      "outputImage": "/catalogo-gti/generated/gti-gti03-002-punta-eje-l-c-mb2600-macho-todos-26x25-generated-reference.webp",
+      "sourceSha256": "4770eeae5d592b3d945e5d483c321388feb4831c608281b88706bfa869aff570",
+      "generationPrompt": "Photorealistic catalog reference for GTI03-002: male transmission-side inner CV joint kit for Mazda B2600, documented 26x25 configuration, short protruding male splined shaft, heavy-duty tulip housing, tripod bearing, inner boot, clamps and circlip; specification contrasted against the exact Imotriz SKU page and historical GTI catalog; pure white background, no text, logo or watermark.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T01:18:49.447Z"
+    },
+    "GTI03024": {
+      "sku": "GTI03-024",
+      "name": "PUNTA EJE L/R. MB2600 /00 PIN INTERNO (26X25) — GTI03-024",
+      "outputImage": "/catalogo-gti/generated/gti-gti03-024-punta-eje-l-r-mb2600-00-pin-interno-26x25-generated-reference.webp",
+      "sourceSha256": "aea995afdea3333eb04fd5b82286022165a25cec539d52018e90d9e513b5ea10",
+      "generationPrompt": "Photorealistic catalog reference for GTI03-024: wheel-side outer CV joint kit for Mazda B2600 through 2000, pin interno, documented 26 external x 25 internal spline configuration, no ABS ring, outer boot, axle nut, clamps, grease sachet and circlip; specification contrasted against exact MercadoLibre and Imotriz SKU pages plus the historical GTI catalog; pure white background, no text, logo or watermark.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T01:18:49.447Z"
+    },
+    "GTI03004": {
+      "sku": "GTI03-004",
+      "name": "PUNTA EJE L/R. M323 T. TH. PIN EXTERNO (24X30) — GTI03-004",
+      "outputImage": "/catalogo-gti/generated/gti-gti03-004-punta-eje-l-r-m323-t-th-pin-externo-24x30-generated-reference.webp",
+      "sourceSha256": "a5443d6b86f4b316a1c57813c0ab285c13df2d0053af29b9ac02250bdf2ba928",
+      "generationPrompt": "Photorealistic catalog reference for GTI03-004: wheel-side outer CV joint kit for Mazda 323 TH, documented 24 external x 30 internal spline configuration and pin externo retention, outer boot, axle nut, clamps, grease and circlip; specification contrasted against two exact MercadoLibre GTI listings, exact Imotriz SKU metadata and historical catalog; pure white background, no text, logo or watermark.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T01:36:43.467Z"
+    },
+    "GTI03008": {
+      "sku": "GTI03-008",
+      "name": "PUNTA EJE L/R. M626 ASAHI 1.8 PIN INTERNO, CUELLO 30 MM (26X23) — GTI03-008",
+      "outputImage": "/catalogo-gti/generated/gti-gti03-008-punta-eje-l-r-m626-asahi-1-8-pin-interno-cuello-30-mm-26x23-generated-reference.webp",
+      "sourceSha256": "7d4fcc97f0f3f8e054c7486a4ed1fcd33be66818743ba1022c0b422aa95d39cf",
+      "generationPrompt": "Photorealistic catalog reference for GTI03-008: wheel-side outer CV joint kit for Mazda 626 Asahi 1.8, documented 26 external x 23 internal spline configuration, pin interno and 30 mm neck, outer boot, axle nut, clamps, grease and circlip; specification contrasted against the exact Imotriz SKU page and historical catalog; pure white background, no text, logo or watermark.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T01:36:43.467Z"
+    },
+    "GTI03010": {
+      "sku": "GTI03-010",
+      "name": "PUNTA EJE L/R. M626 1.8 84/88 PIN INTERNO, CUELLO 28 MM (26X23) — GTI03-010",
+      "outputImage": "/catalogo-gti/generated/gti-gti03-010-punta-eje-l-r-m626-1-8-84-88-pin-interno-cuello-28-mm-26x23-generated-reference.webp",
+      "sourceSha256": "e0b2653bde3493301740517e463a941260ae7cb0a04dd613d9ea8e8acad82a6a",
+      "generationPrompt": "Photorealistic catalog reference for GTI03-010: wheel-side outer CV joint kit for Mazda 626 1.8 1984-1988, documented 26 external x 23 internal spline configuration, pin interno and 28 mm neck, separate outer boot, axle nut, clamps, grease and circlip; specification contrasted against the exact Imotriz SKU page and historical catalog; pure white background, no text, logo or watermark.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T01:36:43.467Z"
+    },
+    "GTI03006": {
+      "sku": "GTI03-006",
+      "name": "PUNTA EJE L/R. M626 MATSURI (28X23) — GTI03-006",
+      "outputImage": "/catalogo-gti/generated/gti-gti03-006-punta-eje-l-r-m626-matsuri-28x23-generated-reference.webp",
+      "sourceSha256": "b41c13329957d4abebf58aa4d4d71063bf3a97c5a8a9bf1b47275a502d68c4dd",
+      "generationPrompt": "Photorealistic catalog reference for GTI03-006: wheel-side outer CV joint kit for Mazda 626 Matsuri, documented 28 external x 23 internal spline configuration; retention type intentionally not asserted because the exact source does not specify it; outer boot, axle nut, clamps and grease; specification contrasted against the exact Imotriz SKU page and historical GTI catalog; pure white background, no text, logo or watermark.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T01:45:14.592Z"
+    },
+    "GTI03007": {
+      "sku": "GTI03-007",
+      "name": "PUNTA EJE L/R. M626 ASAHI 2.0 PIN INTERNO (26X25) — GTI03-007",
+      "outputImage": "/catalogo-gti/generated/gti-gti03-007-punta-eje-l-r-m626-asahi-2-0-pin-interno-26x25-generated-reference.webp",
+      "sourceSha256": "33ae156921f602c662c6cb8abdc88c0c27a4139c2dff59df28a8f70de92434d7",
+      "generationPrompt": "Photorealistic catalog reference for GTI03-007: wheel-side outer CV joint kit for Mazda 626 Asahi 2.0, documented 26 external x 25 internal spline configuration and pin interno retention, outer boot, axle nut, clamps, grease and internal circlip; specification contrasted against the exact Imotriz SKU page and historical GTI catalog; pure white background, no text, logo or watermark.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T01:45:14.592Z"
+    },
+    "GTI03029": {
+      "sku": "GTI03-029",
+      "name": "PUNTA EJE L/R. M626 84/89 PIN EXTERNO (26X25) — GTI03-029",
+      "outputImage": "/catalogo-gti/generated/gti-gti03-029-punta-eje-l-r-m626-84-89-pin-externo-26x25-generated-reference.webp",
+      "sourceSha256": "b7841f6e533d9e5567de5c2619dfc063e80bf3f87c228e46e92bc5ac6312e4ed",
+      "generationPrompt": "Photorealistic catalog reference for GTI03-029: wheel-side outer CV joint kit for Mazda 626 1984-1989, documented 26 external x 25 internal spline configuration and pin externo retention, outer boot, axle nut, clamps, grease and external circlip; specification contrasted against the exact Imotriz SKU page and historical GTI catalog; pure white background, no text, logo or watermark.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T01:45:14.592Z"
+    },
+    "GTI03031": {
+      "sku": "GTI03-031",
+      "name": "PUNTA EJE L/R. M626 MILENIUM/ALLEGRO 1.8 PIN INTERNO, ABS 44 DTS. (28X30) — GTI03-031",
+      "outputImage": "/catalogo-gti/generated/gti-gti03-031-punta-eje-l-r-m626-milenium-allegro-1-8-pin-interno-abs-44-dts-28x30-generated-reference.webp",
+      "sourceSha256": "4fad38968491b687e08ba07ffd6d1641dd395676a2108c2edb6cf726b9182b8b",
+      "generationPrompt": "Photorealistic catalog reference for GTI03-031: wheel-side outer CV joint kit for Mazda 626 Millennium / Allegro 1.8, documented 28 external x 30 internal spline configuration, pin interno and 44-tooth ABS tone ring, outer boot, axle nut, clamps, grease and internal circlip; specifications contrasted against the exact MercadoLibre GTI SKU listing and historical GTI catalog; pure white background, no text, logo or watermark.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T01:53:18.743Z"
+    },
+    "GTI03032": {
+      "sku": "GTI03-032",
+      "name": "PUNTA EJE L/R. M626 MILENIUM/MAZDA 3 (28X23) — GTI03-032",
+      "outputImage": "/catalogo-gti/generated/gti-gti03-032-punta-eje-l-r-m626-milenium-mazda-3-28x23-generated-reference.webp",
+      "sourceSha256": "0435ada0422d2655b7db5871ad71368443c71ece6e6f1fa0f9cb4d37df035554",
+      "generationPrompt": "Photorealistic catalog reference for GTI03-032: wheel-side outer CV joint kit for Mazda 626 Millennium / Mazda 3, documented 28 external x 23 internal spline configuration; ABS and retention type intentionally not asserted because the exact source does not specify them; outer boot, axle nut, clamps and grease; specification contrasted against the exact Imotriz SKU page and historical GTI catalog; pure white background, no text, logo or watermark.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T01:53:18.744Z"
+    },
+    "GTI03033": {
+      "sku": "GTI03-033",
+      "name": "PUNTA EJE L/C. M323 ECUATORIANO (24X21) — GTI03-033",
+      "outputImage": "/catalogo-gti/generated/gti-gti03-033-punta-eje-l-c-m323-ecuatoriano-24x21-generated-reference.webp",
+      "sourceSha256": "a5bbd3416702675bf9a7f438a8a91724a39dc3930c61e92c620010dcbbb92455",
+      "generationPrompt": "Photorealistic catalog reference for GTI03-033: transmission-side inner CV joint kit for Ecuadorian-market Mazda 323, documented 24 external x 21 internal spline configuration, without asserting left/right or male/female variant; compact plunge housing, tripod bearing, inner boot, clamps, grease and circlip; specification contrasted against the exact Imotriz SKU page and historical GTI catalog; pure white background, no text, logo or watermark.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T01:53:18.744Z"
+    },
+    "GTI01030": {
+      "sku": "GTI01-030",
+      "name": "PUNTA EJE L/R. MEGANE II PIN EXTERNO (23X32) — GTI01-030",
+      "outputImage": "/catalogo-gti/generated/gti-gti01-030-punta-eje-l-r-megane-ii-pin-externo-23x32-generated-reference.webp",
+      "sourceSha256": "738861bc82a7c1b1594ef0fa7e5110ca94e1986cec6d9eb195868ea5ebec1899",
+      "generationPrompt": "Photorealistic catalog reference for GTI01-030: wheel-side outer CV joint kit for Renault Megane II, documented 23 external x 32 internal spline configuration and pin externo; outer boot, axle nut, clamps, grease and retaining pin; specifications contrasted against the exact MercadoLibre GTI SKU listing and historical GTI catalog; pure white background, no text, logo or watermark.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T02:02:10.857Z"
+    },
+    "GTI01031": {
+      "sku": "GTI01-031",
+      "name": "PUNTA EJE L/R. MEGANE II PIN EXTERNO (23X33) — GTI01-031",
+      "outputImage": "/catalogo-gti/generated/gti-gti01-031-punta-eje-l-r-megane-ii-pin-externo-23x33-generated-reference.webp",
+      "sourceSha256": "bc1ab1699013473dda277a8be579ecee665dccc248636ec7707c1b758d89f361",
+      "generationPrompt": "Photorealistic catalog reference for GTI01-031: wheel-side outer CV joint kit for Renault Megane II, documented 23 external x 33 internal spline configuration and pin externo; smooth housing with no ABS ring because the exact source does not specify ABS; outer boot, axle nut, clamps, grease and retaining pin; specifications contrasted against the exact MercadoLibre and Imotriz GTI SKU listings and historical GTI catalog; pure white background, no text, logo or watermark.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T02:02:10.858Z"
+    },
+    "GTI01033": {
+      "sku": "GTI01-033",
+      "name": "PUNTA EJE L/R. KANGOO 07/ PIN INTERNO (23X23) — GTI01-033",
+      "outputImage": "/catalogo-gti/generated/gti-gti01-033-punta-eje-l-r-kangoo-07-pin-interno-23x23-generated-reference.webp",
+      "sourceSha256": "1b959801031ce6a2b8804e8fe612d2a13f60f063ea28f921f4e7079ca40e578f",
+      "generationPrompt": "Photorealistic catalog reference for GTI01-033: wheel-side outer CV joint kit for Renault Kangoo 2007 onward, documented 23 external x 23 internal spline configuration and pin interno; no ABS ring because the exact source does not specify ABS; outer boot, axle nut, clamps, grease and internal retaining clip; specifications contrasted against the exact Imotriz and Importadoras Asociadas GTI SKU listings and historical GTI catalog; pure white background, no text, logo or watermark.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T02:02:10.858Z"
+    },
+    "GTI01002": {
+      "sku": "GTI01-002",
+      "name": "PUNTA EJE L/R. R18 GTX/21 RX 2.0 PIN EXTERNO (23X25) — GTI01-002",
+      "outputImage": "/catalogo-gti/generated/gti-gti01-002-punta-eje-l-r-r18-gtx-21-rx-2-0-pin-externo-23x25-generated-reference.webp",
+      "sourceSha256": "84685ad3e274d4dcf68a48928b560e582b467105cb558c85444a0b931b04d419",
+      "generationPrompt": "Photorealistic catalog reference for GTI01-002: wheel-side outer CV joint kit for Renault 18 GTX / Renault 21 RX 2.0, documented 23 external x 25 internal spline configuration and pin externo; no ABS ring because the source does not specify ABS; boot, nut, clamps, grease and retaining pin; specifications contrasted against the exact MercadoLibre GTI SKU listing and historical GTI catalog; pure white background, no text, logo or watermark.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T02:11:00.377Z"
+    },
+    "GTI01006": {
+      "sku": "GTI01-006",
+      "name": "TRICETA EJE R9/12/18 22 ESTRIAS AGUJAS — GTI01-006",
+      "outputImage": "/catalogo-gti/generated/gti-gti01-006-triceta-eje-r9-12-18-22-estrias-agujas-generated-reference.webp",
+      "sourceSha256": "fd2abd48851f253b2d4bad99a0301309d098bf775ac7cea1ad263e6bdc516858",
+      "generationPrompt": "Photorealistic catalog reference for GTI01-006 / TP3305: three-arm tripod CV joint spider for Renault 9, 12 and 18 with three needle-roller trunnions and documented 22-spline central bore; specifications contrasted against the exact Imotriz SKU page, import record and historical GTI catalog; pure white background, no text, logo or watermark.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T02:11:00.378Z"
+    },
+    "GTI01015": {
+      "sku": "GTI01-015",
+      "name": "EJE HOMOCINETICO R18 GTL 3 PERNOS (20X23) — GTI01-015",
+      "outputImage": "/catalogo-gti/generated/gti-gti01-015-eje-homocinetico-r18-gtl-3-pernos-20x23-generated-reference.webp",
+      "sourceSha256": "f13513571d0f3455105e392ebc4910aedc5b0169e79e0c34f51e38ab9a19ef22",
+      "generationPrompt": "Photorealistic catalog reference for GTI01-015: complete Renault 18 GTL homokinetic front axle, documented 20 x 23 spline configuration and transmission-side triangular flange with exactly three bolt holes; no ABS ring because the source does not specify ABS; specifications contrasted against the exact Imotriz GTI SKU page and historical GTI catalog; pure white background, no text, logo or watermark.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T02:11:00.378Z"
+    },
+    "GTI01010": {
+      "sku": "GTI01-010",
+      "name": "EJE HOMOCINETICO R12 (20X23) — GTI01-010",
+      "outputImage": "/catalogo-gti/generated/gti-gti01-010-eje-homocinetico-r12-20x23-generated-reference.webp",
+      "sourceSha256": "f9720c2678f6615716938793085a10f2775acc2494d9f729e36dbae8f16d38f8",
+      "generationPrompt": "Photorealistic catalog reference for GTI01-010: complete Renault 12 homokinetic front axle with documented 20 x 23 spline configuration; no bolt flange, side, ABS ring or retention type asserted because the exact source does not specify them; specifications contrasted against the exact Imotriz GTI SKU page and historical GTI catalog; pure white background, no text, logo or watermark.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T02:19:21.924Z"
+    },
+    "GTI03005": {
+      "sku": "GTI03-005",
+      "name": "PUNTA EJE L/R. MB2600 01/ BT-50 GAS. CON ROSCA (26X25) — GTI03-005",
+      "outputImage": "/catalogo-gti/generated/gti-gti03-005-punta-eje-l-r-mb2600-01-bt-50-gas-con-rosca-26x25-generated-reference.webp",
+      "sourceSha256": "dd97832d1595f251483e86372b1a7ee88503e3a6f5d094e1382e71aeb08a3e21",
+      "generationPrompt": "Photorealistic catalog reference for GTI03-005: wheel-side outer CV joint kit for Mazda B2600 2001 onward / BT-50 gasoline, documented 26 external x 25 internal spline configuration with threaded spindle; no ABS ring or retention type asserted because the exact source does not specify them; specifications contrasted against the exact Imotriz GTI SKU page and historical Mazda GTI catalog; pure white background, no text, logo or watermark.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T02:19:21.925Z"
+    },
+    "GTI03049": {
+      "sku": "GTI03-049",
+      "name": "PUNTA EJE L/R. KIA GRAND CARNIVAL MECANICA (31X28) — GTI03-049",
+      "outputImage": "/catalogo-gti/generated/gti-gti03-049-punta-eje-l-r-kia-grand-carnival-mecanica-31x28-generated-reference.webp",
+      "sourceSha256": "1ec1c1b87a6916f0e42e3cad878972f26147cba3f0c0b4d14baa8eaa7edfa998",
+      "generationPrompt": "Photorealistic catalog reference for GTI03-049: heavy-duty wheel-side outer CV joint kit for Kia Grand Carnival / Sedona with manual transmission, documented 31 external x 28 internal spline configuration; no ABS ring, side or retention type asserted because the exact source does not specify them; specifications contrasted against two exact Imotriz SKU pages and historical GTI catalog; pure white background, no text, logo or watermark.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T02:19:21.925Z"
+    },
+    "GTI03040": {
+      "sku": "GTI03-040",
+      "name": "PUNTA EJE L/R. MAZDA 3 AUTOMATICO DE TORNILLO (36X22) — GTI03-040",
+      "outputImage": "/catalogo-gti/generated/gti-gti03-040-punta-eje-l-r-mazda-3-automatico-de-tornillo-36x22-generated-reference.webp",
+      "sourceSha256": "3ef702031064047257de412daebf593a0d099a444a5f213b4da724e08ba83bed",
+      "generationPrompt": "Photorealistic catalog reference for GTI03-040: wheel-side outer CV joint kit for Mazda 3 automatic transmission, documented bolt-retained design and 36 x 22 spline configuration; separate central retaining bolt and no ABS ring because the exact source does not specify ABS; specifications contrasted against the exact Imotriz GTI SKU page and historical Mazda GTI catalog; pure white background, no text, logo or watermark.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T02:28:15.542Z"
+    },
+    "GTI03058": {
+      "sku": "GTI03-058",
+      "name": "PUNTA EJE L/R. MAZDA 3 22 DTS. CON ABS — GTI03-058",
+      "outputImage": "/catalogo-gti/generated/gti-gti03-058-punta-eje-l-r-mazda-3-22-dts-con-abs-generated-reference.webp",
+      "sourceSha256": "eea8cafd2ae64ef60b0738a12ac22f561f846454788b6f3d6f207b665bb6f390",
+      "generationPrompt": "Photorealistic catalog reference for GTI03-058: wheel-side outer CV joint kit for Mazda 3, documented 22-spline specification and ABS tone ring; the source does not state whether 22 refers to internal or external splines and does not state ABS ring tooth count, so neither is asserted; specifications contrasted against two historical Mazda GTI catalog sources; pure white background, no text, logo or watermark.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T02:28:15.542Z"
+    },
+    "GTI03062": {
+      "sku": "GTI03-062",
+      "name": "PUNTA EJE L/R. MAZDA 3 24 DTS. — GTI03-062",
+      "outputImage": "/catalogo-gti/generated/gti-gti03-062-punta-eje-l-r-mazda-3-24-dts-generated-reference.webp",
+      "sourceSha256": "fe3c41bca13b3cb1eb3300cd19a0c341be4a640bce317702f0be999be6af56d4",
+      "generationPrompt": "Photorealistic catalog reference for GTI03-062: wheel-side outer CV joint kit for Mazda 3 with documented 24-tooth spline specification; the source does not state whether 24 refers to internal or external splines and does not specify ABS or retention type, so a plain housing without ABS ring is shown; specifications contrasted against the exact Imotriz GTI SKU page and historical Mazda GTI catalog; pure white background, no text, logo or watermark.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T02:28:15.542Z"
+    },
+    "GTI03065": {
+      "sku": "GTI03-065",
+      "name": "PUNTA EJE L/C. IZQ. MAZDA 3 AUTOMATICO (MACHO) (26X23) — GTI03-065",
+      "outputImage": "/catalogo-gti/generated/gti-gti03-065-punta-eje-l-c-izq-mazda-3-automatico-macho-26x23-generated-reference.webp",
+      "sourceSha256": "febd24b9fe709208a1a46ef35924d1f871f19432f9b57e71ee0d93da2ed2e7de",
+      "generationPrompt": "Photorealistic catalog reference for GTI03-065: transmission-side inner tripod CV joint kit, left side, Mazda 3 automatic transmission, male type with protruding transmission spline, documented 26 x 23 configuration; includes separate boot, tripod spider, clamps, grease and circlip; specifications contrasted against the exact Imotriz GTI SKU page and historical GTI catalog; pure white background, no text, logo or watermark.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T02:37:55.028Z"
+    },
+    "GTI03079": {
+      "sku": "GTI03-079",
+      "name": "PUNTA EJE L/C. DER. MAZDA 3/MAZDA 5 MECANICO (HEMBRA) (28X24) — GTI03-079",
+      "outputImage": "/catalogo-gti/generated/gti-gti03-079-punta-eje-l-c-der-mazda-3-mazda-5-mecanico-hembra-28x24-generated-reference.webp",
+      "sourceSha256": "4ca3b7a80cc0b0c357e5dbd8b6e76a01b337e52ef8ad7672f2e8ad9b83b96275",
+      "generationPrompt": "Photorealistic catalog reference for GTI03-079: transmission-side inner tripod CV joint kit, right side, Mazda 3 and Mazda 5 manual transmission, female type with a centered internal splined socket and no protruding shaft, documented 28 x 24 configuration; includes separate boot, tripod spider, clamps, grease and circlip; specifications contrasted against the exact Imotriz GTI SKU page and historical GTI catalog; pure white background, no text, logo or watermark.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T02:37:55.029Z"
+    },
+    "GTI03080": {
+      "sku": "GTI03-080",
+      "name": "PUNTA EJE L/C. IZQ. MAZDA 3/MAZDA 5 MECANICO (MACHO) (28X24) — GTI03-080",
+      "outputImage": "/catalogo-gti/generated/gti-gti03-080-punta-eje-l-c-izq-mazda-3-mazda-5-mecanico-macho-28x24-generated-reference.webp",
+      "sourceSha256": "e3bbaefae9efcd7c8afd4de06f60b3ba084273f927799382eb67cf16efb4a467",
+      "generationPrompt": "Photorealistic catalog reference for GTI03-080: transmission-side inner tripod CV joint kit, left side, Mazda 3 and Mazda 5 manual transmission, male type with protruding transmission spline, documented 28 x 24 configuration; includes separate boot, tripod spider, clamps, grease and circlip; specifications contrasted against the exact Imotriz GTI SKU page and historical GTI catalog; pure white background, no text, logo or watermark.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T02:37:55.029Z"
+    },
+    "GTI03042": {
+      "sku": "GTI03-042",
+      "name": "PUNTA EJE L/C. DER. M626 MILENIUM MANUAL (HEMBRA) (28X30) — GTI03-042",
+      "outputImage": "/catalogo-gti/generated/gti-gti03-042-punta-eje-l-c-der-m626-milenium-manual-hembra-28x30-generated-reference.webp",
+      "sourceSha256": "058c19e1e33c1f1c4a8747c545762f6550df66302dab898afeb584b31b403342",
+      "generationPrompt": "Photorealistic catalog reference for GTI03-042: transmission-side inner tripod CV joint kit, right side, Mazda 626 Millennium manual transmission, female type with centered internal splined socket, documented 28 x 30 configuration; includes separate boot, tripod spider, clamps, grease and circlip; specifications contrasted against the exact Imotriz GTI SKU page and historical GTI catalog; pure white background, no text, logo or watermark.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T02:47:14.427Z"
+    },
+    "GTI03043": {
+      "sku": "GTI03-043",
+      "name": "PUNTA EJE L/C. DER. M626 MILENIUM AUT. (HEMBRA) (28X23) — GTI03-043",
+      "outputImage": "/catalogo-gti/generated/gti-gti03-043-punta-eje-l-c-der-m626-milenium-aut-hembra-28x23-generated-reference.webp",
+      "sourceSha256": "d58fe072b42cd21b0275b36ed5ddfa2d5a31e483caa40a83926d0bb490e4ec09",
+      "generationPrompt": "Photorealistic catalog reference for GTI03-043: transmission-side inner tripod CV joint kit, right side, Mazda 626 Millennium automatic transmission, female type with centered internal splined socket, documented 28 x 23 configuration; includes separate boot, tripod spider, clamps, grease and circlip; specifications contrasted against the exact Imotriz GTI SKU page and historical GTI catalog; pure white background, no text, logo or watermark.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T02:47:14.427Z"
+    },
+    "GTI03044": {
+      "sku": "GTI03-044",
+      "name": "PUNTA EJE L/C. IZQ. M626 MILENIUM AUT. (MACHO) (26X23) — GTI03-044",
+      "outputImage": "/catalogo-gti/generated/gti-gti03-044-punta-eje-l-c-izq-m626-milenium-aut-macho-26x23-generated-reference.webp",
+      "sourceSha256": "94b00a0c4b23d688b66c93a72300b416491b1b1b4954a5d9895194f4604f094b",
+      "generationPrompt": "Photorealistic catalog reference for GTI03-044: transmission-side inner tripod CV joint kit, left side, Mazda 626 Millennium automatic transmission, male type with protruding transmission spline, documented 26 x 23 configuration; includes separate boot, tripod spider, clamps, grease and circlip; specifications contrasted against the exact Imotriz GTI SKU page and historical GTI catalog; pure white background, no text, logo or watermark.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T02:47:14.427Z"
+    },
+    "GTI03025": {
+      "sku": "GTI03-025",
+      "name": "EJE HOMOCINETICO DER. M323 (24X24) — GTI03-025",
+      "outputImage": "/catalogo-gti/generated/gti-gti03-025-eje-homocinetico-der-m323-24x24-generated-reference.webp",
+      "sourceSha256": "d8d7092a4719a397a20ccb6e52ea8cd0e7ba67cc86ea60fa6503eb6c279fa0dd",
+      "generationPrompt": "Photorealistic catalog reference for GTI03-025: complete right front CV axle assembly for Mazda 323 with documented 24 x 24 spline configuration; fully assembled closed transmission-side plunge housing, inner and outer boots, connecting shaft and threaded wheel-side spline; no ABS ring because the exact source does not specify ABS, and no asserted length; specifications contrasted against the exact Imotriz GTI SKU page and historical GTI catalog; pure white background, no text, logo or watermark.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T03:04:21.710Z"
+    },
+    "GTI03027": {
+      "sku": "GTI03-027",
+      "name": "PUNTA EJE L/R. M626 ASAHI PIN EXTERNO (26X25) — GTI03-027",
+      "outputImage": "/catalogo-gti/generated/gti-gti03-027-punta-eje-l-r-m626-asahi-pin-externo-26x25-generated-reference.webp",
+      "sourceSha256": "6bf03491a1ffff9c8826debe9edc646186022d0eb23ae56e6eb5005aecad1d4c",
+      "generationPrompt": "Photorealistic catalog reference for GTI03-027: wheel-side outer CV joint kit for Mazda 626 Asahi with documented external retaining pin and 26 x 25 spline configuration; joint, boot, nut, clamps, grease and circlip; no ABS ring because the exact source does not specify ABS; specifications contrasted against the exact Imotriz GTI SKU page and historical GTI catalog; pure white background, no text, logo or watermark.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T03:04:21.711Z"
+    },
+    "GTI03048": {
+      "sku": "GTI03-048",
+      "name": "EJE HOMOCINETICO DER. MAZDA BT-50 GAS. (MACHO) (26X26) — GTI03-048",
+      "outputImage": "/catalogo-gti/generated/gti-gti03-048-eje-homocinetico-der-mazda-bt-50-gas-macho-26x26-generated-reference.webp",
+      "sourceSha256": "e4cba6125d877fcd0e2e0df3e7c4ca194a259e6f3e28b79d3866d0de581fd7e0",
+      "generationPrompt": "Photorealistic catalog reference for GTI03-048: complete right front CV axle assembly for Mazda BT-50 gasoline, male transmission connection and documented 26 x 26 spline configuration; closed transmission-side plunge housing with protruding male spline, inner and outer boots, connecting shaft and threaded wheel-side spline; no ABS ring, support bearing or asserted length because the exact source does not specify them; specifications contrasted against the exact Imotriz GTI SKU page and historical GTI catalog; pure white background, no text, logo or watermark.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T03:04:21.711Z"
+    },
+    "GTI03051": {
+      "sku": "GTI03-051",
+      "name": "EJE HOMOCINETICO IZQ. MAZDA BT-50 2.5 DIESEL 2010/ (28X28) — GTI03-051",
+      "outputImage": "/catalogo-gti/generated/gti-gti03-051-eje-homocinetico-izq-mazda-bt-50-2-5-diesel-2010-28x28-generated-reference.webp",
+      "sourceSha256": "1a4a62d30ae8e964e7dc0ef1c574727dbe332f82bb0ccdeb41a3b8a883a4bbea",
+      "generationPrompt": "Photorealistic catalog reference for GTI03-051: complete left front CV axle assembly for Mazda BT-50 2.5 diesel 2010 onward with documented 28 x 28 spline configuration; closed transmission-side plunge housing, inner and outer boots, connecting shaft and threaded wheel-side spline; transmission connection is oriented away because the exact source does not specify male or female, and no ABS ring, support bearing or length is asserted; specifications contrasted against the exact Imotriz GTI SKU page and historical GTI catalog; pure white background, no text, logo or watermark.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T03:13:10.192Z"
+    },
+    "GTI03055": {
+      "sku": "GTI03-055",
+      "name": "PUNTA EJE L/R. MAZDA BT-50 DIESEL 2010/ (28X36) — GTI03-055",
+      "outputImage": "/catalogo-gti/generated/gti-gti03-055-punta-eje-l-r-mazda-bt-50-diesel-2010-28x36-generated-reference.webp",
+      "sourceSha256": "405770e2b95541810266ade3b6f325d095859e4410c5564e44795a613265c758",
+      "generationPrompt": "Photorealistic catalog reference for GTI03-055: wheel-side outer CV joint kit for Mazda BT-50 diesel 2010 onward with documented 28 x 36 spline configuration; joint, boot, axle nut, clamps, grease and circlip; no ABS ring or retention type is asserted because the exact source does not specify them; specifications contrasted against the exact Imotriz GTI SKU page and historical GTI catalog; pure white background, no text, logo or watermark.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T03:13:10.193Z"
+    },
+    "GTI03068": {
+      "sku": "GTI03-068",
+      "name": "PUNTA EJE L/C. M121 (22X21) — GTI03-068",
+      "outputImage": "/catalogo-gti/generated/gti-gti03-068-punta-eje-l-c-m121-22x21-generated-reference.webp",
+      "sourceSha256": "ce865e9b0ceebe1e13b283de0088544f566bb58509f064fbd8bbcc141e0c9209",
+      "generationPrompt": "Photorealistic catalog reference for GTI03-068: transmission-side inner CV joint / tripod kit for Mazda 121 with documented 22 x 21 spline configuration; open tulip housing, separate tripod bearing, boot, clamps, grease and circlip; no male/female transmission connection, ABS ring or vehicle-side retention type is asserted because the exact source does not specify them; specifications contrasted against the exact Imotriz GTI SKU page; pure white background, no text, logo or watermark.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T03:21:57.957Z"
+    },
+    "GTI03070": {
+      "sku": "GTI03-070",
+      "name": "EJE HOMOCINETICO IZQ. MAZDA 3 DE TORNILLO AUTOMATICO (36X26) — GTI03-070",
+      "outputImage": "/catalogo-gti/generated/gti-gti03-070-eje-homocinetico-izq-mazda-3-de-tornillo-automatico-36x26-generated-reference.webp",
+      "sourceSha256": "82f98803dc4f06a71524c8ccd5a11672b70e331bb04aa645706c72c85451be27",
+      "generationPrompt": "Photorealistic catalog reference for GTI03-070: complete left front CV axle assembly for automatic Mazda 3 with documented bolt-retained wheel side and 36 x 26 spline configuration; outer wheel-side spline has a centered internally threaded bore and no external nut thread, with closed transmission-side plunge housing, inner and outer boots and connecting shaft; no ABS ring, support bearing, transmission gender or asserted length because the exact source does not specify them; specifications contrasted against the exact Imotriz GTI SKU page; pure white background, no text, logo or watermark.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T03:21:57.957Z"
+    },
+    "GTI03075": {
+      "sku": "GTI03-075",
+      "name": "EJE HOMOCINETICO IZQ. MAZDA 3/MAZDA 3 ALL NEW TRIPTONICO (28X28) — GTI03-075",
+      "outputImage": "/catalogo-gti/generated/gti-gti03-075-eje-homocinetico-izq-mazda-3-mazda-3-all-new-triptonico-28x28-generated-reference.webp",
+      "sourceSha256": "a03d60675e13f67d5b59a885e0a7ed36a6098d643252795189de9c5ee3a15503",
+      "generationPrompt": "Photorealistic catalog reference for GTI03-075: complete left front CV axle assembly for Mazda 3 and Mazda 3 All New Tiptronic with documented 28 x 28 spline configuration; closed transmission-side plunge housing, inner and outer boots, connecting shaft and threaded wheel-side spline; transmission connection is oriented away because the exact source does not specify male or female, and no ABS ring, support bearing, retention type or asserted length is added; specifications contrasted against the exact Imotriz GTI SKU page; pure white background, no text, logo or watermark.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T03:21:57.957Z"
+    },
+    "GTI03082": {
+      "sku": "GTI03-082",
+      "name": "EJE HOMOCINETICO DER. MAZDA 3 DE TORNILLO AUTOMATICO (36X28) — GTI03-082",
+      "outputImage": "/catalogo-gti/generated/gti-gti03-082-eje-homocinetico-der-mazda-3-de-tornillo-automatico-36x28-generated-reference.webp",
+      "sourceSha256": "03b20c75f4490fe9226317dad40173efa77fc0c609b1d59e22215721ada0be9b",
+      "generationPrompt": "Photorealistic catalog reference for GTI03-082: complete right front CV axle assembly for automatic Mazda 3 with documented bolt-retained wheel side and 36 x 28 spline configuration; outer wheel-side spline has a centered internally threaded bore and no external nut thread, with closed transmission-side plunge housing, inner and outer boots and connecting shaft; no ABS ring, support bearing, transmission gender or asserted length because the exact source does not specify them; specifications contrasted against the exact Imotriz GTI SKU page and the historical GTI catalog; pure white background, no text, logo or watermark.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T03:31:17.202Z"
+    },
+    "GTI01009": {
+      "sku": "GTI01-009",
+      "name": "EJE HOMOCINETICO DER. R9 (21X23) — GTI01-009",
+      "outputImage": "/catalogo-gti/generated/gti-gti01-009-eje-homocinetico-der-r9-21x23-generated-reference.webp",
+      "sourceSha256": "95d61a13fc9321d60f4667461bf287da4941789d1b45daf9fbf900d04a9c64c8",
+      "generationPrompt": "Photorealistic catalog reference for GTI01-009: complete right front CV axle for Renault 9 with documented 21 x 23 spline configuration; closed transmission-side plunge housing, inner and outer boots, connecting shaft and wheel-side spline; no ABS ring, support bearing, transmission gender or asserted length because the exact source does not specify them; specifications contrasted against the exact Imotriz GTI SKU page and historical GTI catalog; pure white background, no text, logo or watermark.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T03:40:04.844Z"
+    },
+    "GTI01022": {
+      "sku": "GTI01-022",
+      "name": "EJE HOMOCINETICO DER. SYMBOL/CITIUS REEMPLAZA CARCAZA LARGA (21X23) — GTI01-022",
+      "outputImage": "/catalogo-gti/generated/gti-gti01-022-eje-homocinetico-der-symbol-citius-reemplaza-carcaza-larga-21x23-generated-reference.webp",
+      "sourceSha256": "c05750d8619866d4fe111dd45ed4747fdd2c063be195443b584d54756b4eb13f",
+      "generationPrompt": "Photorealistic catalog reference for GTI01-022: complete right front CV axle for Renault Symbol / Citius with documented 21 x 23 spline configuration and long replacement transmission-side housing; elongated closed plunge housing, inner and outer boots, connecting shaft and wheel-side spline; no ABS ring, support bearing, transmission gender or asserted overall length because the exact source does not specify them; specifications contrasted against the exact Imotriz GTI SKU page and historical GTI catalog; pure white background, no text, logo or watermark.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T03:40:04.844Z"
+    },
+    "GTI01024": {
+      "sku": "GTI01-024",
+      "name": "EJE HOMOCINETICO IZQ. SYMBOL/CITIUS (21X30) — GTI01-024",
+      "outputImage": "/catalogo-gti/generated/gti-gti01-024-eje-homocinetico-izq-symbol-citius-21x30-generated-reference.webp",
+      "sourceSha256": "c4894073a1537b6648280afd3e5ae02c4159585b0887966eacc3ad8a22ec2f17",
+      "generationPrompt": "Photorealistic catalog reference for GTI01-024: complete left front CV axle for Renault Symbol / Citius with documented 21 x 30 spline configuration; closed transmission-side plunge housing, inner and outer boots, connecting shaft and wheel-side spline; no ABS ring, support bearing, transmission gender or asserted length because the exact source does not specify them; specifications contrasted against the exact Imotriz GTI SKU page and historical GTI catalog; pure white background, no text, logo or watermark.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T03:40:04.844Z"
+    },
+    "GTI01025": {
+      "sku": "GTI01-025",
+      "name": "EJE HOMOCINETICO DER. LOGAN /2010 T. ORIGINAL (21X23) — GTI01-025",
+      "outputImage": "/catalogo-gti/generated/gti-gti01-025-eje-homocinetico-der-logan-2010-t-original-21x23-generated-reference.webp",
+      "sourceSha256": "72afff78e0524f70d2ca36dcca6f3ed05da06bceaaba70a80683f6905df6a98c",
+      "generationPrompt": "Photorealistic catalog reference for GTI01-025: complete right front CV axle, original-type configuration, for Renault Logan through 2010 with documented 21 x 23 spline configuration; closed transmission-side plunge housing, inner and outer boots, connecting shaft and wheel-side spline; no ABS ring, support bearing, transmission gender or asserted length because the exact source does not specify them; specifications contrasted against the exact Imotriz GTI SKU page and historical GTI catalog; pure white background, no text, logo or watermark.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T03:40:04.844Z"
+    },
+    "GTI01039": {
+      "sku": "GTI01-039",
+      "name": "PUNTA EJE L/R. LAGUNA (23X29) — GTI01-039",
+      "outputImage": "/catalogo-gti/generated/gti-gti01-039-punta-eje-l-r-laguna-23x29-generated-reference.webp",
+      "sourceSha256": "7da7699143cd784d26890e60725661bbb0d2fd752a4713d8893f843f8f9767cd",
+      "generationPrompt": "Photorealistic catalog reference for GTI01-039: wheel-side outer CV joint kit for Renault Laguna with documented 23 x 29 spline configuration; joint, boot, axle nut, clamps, grease and circlip; no ABS ring because the exact source does not specify ABS; specifications contrasted against the exact Imotriz GTI SKU page and historical GTI catalog; pure white background, no text, logo or watermark.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T03:48:43.888Z"
+    },
+    "GTI01045": {
+      "sku": "GTI01-045",
+      "name": "EJE HOMOCINETICO DER. DUSTER/OROCH 4X4 2.0 AUT. (25X26) — GTI01-045",
+      "outputImage": "/catalogo-gti/generated/gti-gti01-045-eje-homocinetico-der-duster-oroch-4x4-2-0-aut-25x26-generated-reference.webp",
+      "sourceSha256": "2144aeaebb3824ea34df6a384ae061bb6b10dbd514502f6f322029b6d4ebd4b7",
+      "generationPrompt": "Photorealistic catalog reference for GTI01-045: complete right front CV axle for Renault Duster / Oroch 4x4 2.0 automatic with documented 25 x 26 spline configuration; closed transmission-side plunge housing, inner and outer boots, robust connecting shaft and wheel-side spline; no ABS ring, support bearing, transmission gender or asserted length because the exact source does not specify them; specifications contrasted against the exact Imotriz GTI SKU page and historical GTI catalog; pure white background, no text, logo or watermark.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T03:48:43.888Z"
+    },
+    "GTI01074": {
+      "sku": "GTI01-074",
+      "name": "PUNTA EJE L/R. LOGAN/SANDERO NEW AUTOMATICO (23X30) — GTI01-074",
+      "outputImage": "/catalogo-gti/generated/gti-gti01-074-punta-eje-l-r-logan-sandero-new-automatico-23x30-generated-reference.webp",
+      "sourceSha256": "c60d9da2db041d09cb0410d8c6b3eb4090492f7f6bcefcb3eb9f154353a60df1",
+      "generationPrompt": "Photorealistic catalog reference for GTI01-074: wheel-side outer CV joint kit for Renault Logan / Sandero New automatic with documented 23 x 30 spline configuration; joint, boot, axle nut, clamps, grease and circlip; no ABS ring because the exact source does not specify ABS; specifications contrasted against the exact Imotriz GTI SKU page and historical GTI catalog; pure white background, no text, logo or watermark.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T03:48:43.888Z"
+    },
+    "GTI02001": {
+      "sku": "GTI02-001",
+      "name": "PUNTA EJE L/R. D-MAX 3.0 /2010. RODEO PIN INTERNO (17X33) — GTI02-001",
+      "outputImage": "/catalogo-gti/generated/gti-gti02-001-punta-eje-l-r-d-max-3-0-2010-rodeo-pin-interno-17x33-generated-reference.webp",
+      "sourceSha256": "48e9fb3391830ecbfa9f8e44298be412be2d8ddef8ac52ffcff357f99e506eae",
+      "generationPrompt": "Photorealistic catalog reference for GTI02-001: wheel-side outer CV joint kit for Chevrolet / Isuzu D-Max 3.0 through 2010 and Isuzu Rodeo with documented internal retaining pin and 17 x 33 spline configuration; heavy-duty joint, boot, axle nut, clamps, grease and retaining circlip; no ABS ring because the exact sources do not specify ABS; specifications contrasted against the exact Imotriz GTI SKU page, exact Mercado Libre GTI listing and historical Isuzu catalog; pure white background, no text, logo or watermark.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T03:56:38.076Z"
+    },
+    "GTI02002": {
+      "sku": "GTI02-002",
+      "name": "EJE HOMOCINETICO D-MAX 3.0 4X4 08/ L/R (17X17) 609 MM — GTI02-002",
+      "outputImage": "/catalogo-gti/generated/gti-gti02-002-eje-homocinetico-d-max-3-0-4x4-08-l-r-17x17-609-mm-generated-reference.webp",
+      "sourceSha256": "9a8ede248df5b5f0a6a749f6c9a7e6589b9a1eceb5b813d8fb76144e74b3b977",
+      "generationPrompt": "Photorealistic catalog reference for GTI02-002: complete front CV axle usable on right or left side for Chevrolet / Isuzu D-Max 3.0 4x4 from 2008 onward with documented 17 x 17 spline configuration and 609 mm overall length; compact closed inner joint with short unthreaded male spline, inner and outer boots, robust shaft and long unthreaded outer spline matching the exact real product photo; no ABS ring, support bearing or bracket; specifications and geometry contrasted against the exact Repuesto.co GTI SKU page and its watermarked real photo, used only as reference and not copied; pure white background, no text, logo or watermark.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T03:56:38.077Z"
+    },
+    "GTI03012": {
+      "sku": "GTI03-012",
+      "name": "PUNTA EJE L/R. ALLEGRO 1.3 00/ (26X21X56) PIN INTERNO — GTI03-012",
+      "outputImage": "/catalogo-gti/generated/gti-gti03-012-punta-eje-l-r-allegro-1-3-00-26x21x56-pin-interno-generated-reference.webp",
+      "sourceSha256": "1f0b31c0b85579a6a9808fd367a96cbee854c1f3442989f05712bce1d27835c7",
+      "generationPrompt": "Photorealistic catalog reference for GTI03-012: wheel-side outer CV joint kit for Mazda Allegro 1.3 model year 2000 onward, with verified 26 x 21 spline configuration, 56 mm documented body dimension and internal retaining-pin/circlip configuration; joint, boot, clamps, axle nut, circlip and grease sachet; no ABS ring because the exact source does not specify ABS; specifications contrasted against the exact Imotriz product page and the historical GTI catalog; pure white background, no text, logo, packaging or watermark.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T04:09:22.151Z"
+    },
+    "GTI03022": {
+      "sku": "GTI03-022",
+      "name": "PUNTA EJE L/R. FORD FIESTA 1.3 (25X20X57) PIN EXTERNO — GTI03-022",
+      "outputImage": "/catalogo-gti/generated/gti-gti03-022-punta-eje-l-r-ford-fiesta-1-3-25x20x57-pin-externo-generated-reference.webp",
+      "sourceSha256": "2f5d17c17388d57ead0d91178b8c5e2b966f2ee717f9041837554f53a976d9cd",
+      "generationPrompt": "Photorealistic catalog reference for GTI03-022: wheel-side outer CV joint kit for Ford Fiesta 1.3, with verified 25 x 20 spline configuration, 57 mm documented body dimension and external retaining-pin/circlip style; conventional joint, boot, clamps, axle nut, external clip and grease sachet; no ABS ring because the exact source does not specify ABS; specifications contrasted against the exact Imotriz product page and the historical GTI catalog; pure white background, no text, logo, packaging or watermark.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T04:09:22.152Z"
+    },
+    "GTI03039": {
+      "sku": "GTI03-039",
+      "name": "PUNTA EJE L/R. MAZDA 6 2.0/2.3 2002/2008 (28X32X62) ABS 44 PULSOS, TOPE — GTI03-039",
+      "outputImage": "/catalogo-gti/generated/gti-gti03-039-punta-eje-l-r-mazda-6-2-0-2-3-2002-2008-28x32x62-abs-44-pulsos-tope-generated-reference.webp",
+      "sourceSha256": "62334ef33a269e63ba7ce00679f86b9dca62620d9d3ee7dc93cd6d83d2e1d9ed",
+      "generationPrompt": "Photorealistic catalog reference for GTI03-039: wheel-side outer CV joint kit for Mazda 6 2.0/2.3 model years 2002 through 2008, with verified 28 x 32 spline configuration, 62 mm documented body dimension, stop-style retention and one 44-tooth ABS tone ring; corrected conventional continuous 32-spline wheel stub with threaded tip, plus boot, clamps, axle nut, circlip and grease sachet; specifications contrasted against the exact Imotriz product page and historical GTI catalog; pure white background, no text, logo, packaging or watermark.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T04:09:22.152Z"
+    },
+    "GTI03041": {
+      "sku": "GTI03-041",
+      "name": "PUNTA EJE L/C. IZQ. M626 MILENIUM 00/ MANUAL (28X30X35) MACHO, TREBOL — GTI03-041",
+      "outputImage": "/catalogo-gti/generated/gti-gti03-041-punta-eje-l-c-izq-m626-milenium-00-manual-28x30x35-macho-trebol-generated-reference.webp",
+      "sourceSha256": "ef055930aa00d3ed42fce66a6585782b59f63eac137676c7c2a3bead6cb59c64",
+      "generationPrompt": "Photorealistic catalog reference for GTI03-041 / MZ-522: left gearbox-side inner CV joint for Mazda 626 Millennium 2000 onward, manual transmission, with verified 28 x 30 spline configuration, 35 mm documented dimension, male gearbox spline and trefoil geometry; compact cylindrical joint, boot, clamps, circlip and grease tube; specifications contrasted against the exact Imotriz MZ-522 page, the technical measurements catalog and a distributor product photo used only for geometry; pure white background, no text, logo, packaging or watermark.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T04:21:05.809Z"
+    },
+    "GTI03054": {
+      "sku": "GTI03-054",
+      "name": "PUNTA EJE L/C. DER. MAZDA BT-50 2.5 DIESEL 2006/2014, FORD RANGER 2.5 2008/2014 MEC. (30X36X38) MACHO, PIN INTERNO — GTI03-054",
+      "outputImage": "/catalogo-gti/generated/gti-gti03-054-punta-eje-l-c-der-mazda-bt-50-2-5-diesel-2006-2014-ford-ranger-2-5-2008-generated-reference.webp",
+      "sourceSha256": "f8b51d63fe5daea0816557ce868ba6b0faf8be28548fb7ff17eed73f2f75f57d",
+      "generationPrompt": "Photorealistic catalog reference for GTI03-054 / MZ-780: right gearbox-side inner CV joint for Mazda BT-50 2.5 diesel 2006–2014 and Ford Ranger 2.5 diesel manual 2008–2014, with verified 30 x 36 spline configuration, 38 mm documented dimension, male connection, internal retaining pin and tripod spider; no ABS ring; specifications contrasted against exact Imotriz pages, the IPS Colombia suspension catalog and a watermarked distributor photo used only for geometry; pure white background, no text, logo, packaging or watermark.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T04:21:05.810Z"
+    },
+    "GTI03060": {
+      "sku": "GTI03-060",
+      "name": "PUNTA EJE L/C. DER. MAZDA 6 2.3 (28X23X43) HEMBRA, TREBOL — GTI03-060",
+      "outputImage": "/catalogo-gti/generated/gti-gti03-060-punta-eje-l-c-der-mazda-6-2-3-28x23x43-hembra-trebol-generated-reference.webp",
+      "sourceSha256": "e352e28f399ec08c4c76113b3db233bf35d91a35a323f63f22eaeeb0a83569da",
+      "generationPrompt": "Photorealistic catalog reference for GTI03-060 / MZ-719: right gearbox-side female inner CV tulip for Mazda 6 2.3, with verified 28 x 23 spline configuration, 43 mm documented dimension and trefoil geometry; empty cup with exactly three roller tracks and central female splined bore, plus one separate tripod, boot, clamps, circlip and grease sachet; specifications contrasted against the exact Imotriz MZ-719 page, technical measurements catalog and exact marketplace listing used only as product reference; pure white background, no text, logo, packaging or watermark.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T04:21:05.810Z"
+    },
+    "GTI03064": {
+      "sku": "GTI03-064",
+      "name": "PUNTA EJE L/C. DER. MAZDA ALLEGRO 1.3/1.6 2002/2009 (28X29X43) HEMBRA — GTI03-064",
+      "outputImage": "/catalogo-gti/generated/gti-gti03-064-punta-eje-l-c-der-mazda-allegro-1-3-1-6-2002-2009-28x29x43-hembra-generated-reference.webp",
+      "sourceSha256": "b7852cace1d1956b7708b4f1a4b1eb0945c1dfab9380cccc8b6571a31f2ed4e5",
+      "generationPrompt": "Photorealistic catalog reference for GTI03-064: right gearbox-side female inner CV tulip for Mazda Allegro 1.3/1.6 2002–2009, with verified 28 x 29 spline configuration and 43 mm dimension; empty female cup with exactly three trefoil roller channels and central splined bore, plus one separate tripod, boot, clamps, circlip and grease sachet; specifications contrasted against the Imotriz 634090 page and the official Spicer 141-821 technical catalog; pure white background, no text, logo, packaging or watermark.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T04:30:59.090Z"
+    },
+    "GTI03069": {
+      "sku": "GTI03-069",
+      "name": "PUNTA EJE L/R. MAZDA DEMIO 96/ (24X19X52) CON ABS — GTI03-069",
+      "outputImage": "/catalogo-gti/generated/gti-gti03-069-punta-eje-l-r-mazda-demio-96-24x19x52-con-abs-generated-reference.webp",
+      "sourceSha256": "c4cb22042f42518e26d671a6f665022224e83d6c1f113939bb546c7a6bdad51c",
+      "generationPrompt": "Photorealistic catalog reference for GTI03-069: wheel-side outer CV joint for Mazda Demio 1996 onward, with verified 24 x 19 spline configuration, 52 mm joint dimension and one 44-tooth ABS tone ring; joint, boot, clamps, axle nut, circlip and grease sachet; no pin-style assertion because secondary catalogs disagree; specifications contrasted against the exact Imotriz GTI page, IPS Colombia catalog and technical measurements catalog; pure white background, no text, logo, packaging or watermark.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T04:30:59.091Z"
+    },
+    "GTI03085": {
+      "sku": "GTI03-085",
+      "name": "PUNTA EJE L/R. MAZDA BT-50 3.2/FORD RANGER 2.5 DIESEL 4X4 (28X26) PIN EXTERNO — GTI03-085",
+      "outputImage": "/catalogo-gti/generated/gti-gti03-085-punta-eje-l-r-mazda-bt-50-3-2-ford-ranger-2-5-diesel-4x4-28x26-pin-exter-generated-reference.webp",
+      "sourceSha256": "539848b8d1398c04f4ee7d46b1fda733990de3f41ab6c32c7e9fd6c1b27ba928",
+      "generationPrompt": "Photorealistic catalog reference for GTI03-085: heavy-duty wheel-side outer CV joint for Mazda BT-50 3.2 and Ford Ranger 2.5 diesel 4x4, with exact verified 28 external x 26 internal spline configuration and external retaining-pin/circlip style; joint, thick boot, clamps, axle nut, external snap ring and grease sachet; no ABS ring because exact sources do not specify ABS; specifications contrasted against exact Imotriz and Mercado Libre GTI03-085 pages, with marketplace photos used only as reference and not copied; pure white background, no text, logo, packaging or watermark.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T04:30:59.091Z"
+    },
+    "GTI01007": {
+      "sku": "GTI01-007",
+      "name": "EJE HOMOCINETICO R4/6 23X22 · SEMIEJE COMPLETO SIN ABS — GTI01-007",
+      "outputImage": "/catalogo-gti/generated/gti-gti01-007-eje-homocinetico-r4-6-23x22-semieje-completo-sin-abs-generated-reference.webp",
+      "sourceSha256": "75f6eeab66d50ee322cda46b110d7bf6237cfbcb06205c50c81bc43a9025fd80",
+      "generationPrompt": "Photorealistic catalog reference of one complete Renault 4 / Renault 6 front CV axle, GTI01-007: approximately 665–680 mm, 23 gearbox-side splines and 22 wheel-side splines, two rubber boots, threaded wheel spindle and nut, no ABS ring, no flange. Pure white background; no text, logo, package or extra parts. Geometry contrasted with exact Imotriz GTI01-007 listing, GTI/FJMB catalog, HB e Hijos SE6000 and Mecatechnic RT40422.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T04:49:21.345Z"
+    },
+    "GTI01014": {
+      "sku": "GTI01-014",
+      "name": "EJE HOMOCINETICO R18 GTX 4 PERNOS 23X23 — GTI01-014",
+      "outputImage": "/catalogo-gti/generated/gti-gti01-014-eje-homocinetico-r18-gtx-4-pernos-23x23-generated-reference.webp",
+      "sourceSha256": "02819b4511cf82d7b5e0c7691f8f279bd110bfd02633a564f5da230eefca0245",
+      "generationPrompt": "Photorealistic catalog reference of one complete Renault 18 GTX / TS front CV axle, GTI01-014: 23x23 configuration, outer threaded wheel spindle with nut, no ABS ring, two rubber boots, and one inner round flange with exactly four bolt holes for the four-bolt mounting. Pure white background; no text, logo, package or extra parts. Geometry contrasted with exact Imotriz GTI01-014 listing, GTI/FJMB catalog and Colombian four-bolt Renault 18 listing.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T04:49:21.346Z"
+    },
+    "GTI01036": {
+      "sku": "GTI01-036",
+      "name": "EJE HOMOCINETICO DER. LOGAN 2011/ 23X23 — GTI01-036",
+      "outputImage": "/catalogo-gti/generated/gti-gti01-036-eje-homocinetico-der-logan-2011-23x23-generated-reference.webp",
+      "sourceSha256": "a278e23d8cf34ce8edf480c559a539bd52acc108e688f3387a37abcf272e4132",
+      "generationPrompt": "Photorealistic catalog reference of one complete long right-side Renault Logan 2011+ / Sandero front CV axle, GTI01-036: 23x23 configuration, outer threaded wheel spindle and nut, inner male transmission spline, two rubber boots, no flange, no support bearing and no ABS ring. Pure white background; no text, logo, package or extra parts. Geometry contrasted with exact Imotriz GTI01-036 listing, GTI/FJMB catalog and independent right-side Logan/Sandero axle catalogs.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T04:49:21.346Z"
+    },
+    "GTI04028": {
+      "sku": "GTI04-028",
+      "name": "PUNTA EJE L/R. SPARK/CRONOS/DW. MATIZ/TICO 23X19. — GTI04-028",
+      "outputImage": "/catalogo-gti/generated/gti-gti04-028-punta-eje-l-r-spark-cronos-dw-matiz-tico-23x19-generated-reference.webp",
+      "sourceSha256": "87494ac6ff5cbbc586925e77c6d692becbcbd51fc53ee3fa9af49ccee8e70c40",
+      "generationPrompt": "Referencia de catálogo fotorrealista única para la punta de eje lado rueda GTI04-028, Chevrolet Spark/Cronos y Daewoo Matiz/Tico, configuración 23X19: junta homocinética exterior compacta de acero, espiga roscada con tuerca castillo, sin corona ABS, fuelle negro de cuatro pliegues, dos abrazaderas, seguro y bolsa de grasa sin marca. Fondo blanco puro, sin texto, logos ni marcas de agua. Geometría contrastada con la ficha Product JSON-LD exacta de Imotriz; la fotografía externa con marca de agua se rechazó y no se reutilizó.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T05:12:36.761Z"
+    },
+    "GTI04063": {
+      "sku": "GTI04-063",
+      "name": "EJE HOMOCINETICO DER. SPARK GT SIN ABS /2017 22X22. — GTI04-063",
+      "outputImage": "/catalogo-gti/generated/gti-gti04-063-eje-homocinetico-der-spark-gt-sin-abs-2017-22x22-generated-reference.webp",
+      "sourceSha256": "8b0bbd3c9f6d4fbde17326f679735079320e19cf67c9e1ffeb3d67badc36b6c6",
+      "generationPrompt": "Edición generativa controlada de la fotografía real exacta GTI04-063 obtenida de la ficha https://www.imotriz.com/producto/3/GTI04-063-/ y de http://api.pedbox.co:4590/files/items/04I09072.JPG. Se conservó el eje homocinético derecho Spark GT sin ABS hasta 2017, configuración 22X22, con su geometría, longitud, extremos, guardapolvos y masas diferenciadas; solo se sustituyó la tela gris arrugada por fondo blanco puro de catálogo. Imagen única, sin texto, logos ni marca de agua.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T14:38:54.821Z"
+    },
+    "GTI04064": {
+      "sku": "GTI04-064",
+      "name": "EJE HOMOCINETICO IZQ. SPARK GT SIN ABS /2017 22X22. — GTI04-064",
+      "outputImage": "/catalogo-gti/generated/gti-gti04-064-eje-homocinetico-izq-spark-gt-sin-abs-2017-22x22-generated-reference.webp",
+      "sourceSha256": "c4a4e1136f8519c4e75ff73711add83fa4073c739dc2ce823e66613f5722774e",
+      "generationPrompt": "Edición generativa controlada de la fotografía real exacta GTI04-064 obtenida de la ficha https://www.imotriz.com/producto/3/GTI04-064-/ y de http://api.pedbox.co:4590/files/items/04I09073.jpg. Se conservó el eje homocinético izquierdo Spark GT sin ABS hasta 2017, configuración 22X22, más corto y distinto del derecho, con su geometría, extremos, guardapolvos, masas y tuerca; solo se sustituyó la tela gris arrugada por fondo blanco puro de catálogo. Imagen única, sin texto, logos ni marca de agua.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T14:38:54.822Z"
+    },
+    "GTI05001": {
+      "sku": "GTI05-001",
+      "name": "PUNTA EJE L/R. DW. ESPERO/CIELO GLX/NUBIRA 33X29. — GTI05-001",
+      "outputImage": "/catalogo-gti/generated/gti-gti05-001-punta-eje-l-r-dw-espero-cielo-glx-nubira-33x29-generated-reference.webp",
+      "sourceSha256": "69513a5ed0ced492d54c321fe2f4f285314627dd649b6d5fd642654d9fa6a58b",
+      "generationPrompt": "Referencia fotorrealista única generada desde la ficha documental exacta https://www.imotriz.com/producto/3/GTI05-001-/: punta lado rueda Daewoo Espero/Cielo GLX/Nubira, 33X29. Junta exterior de acero con tres cavidades ovaladas, espiga estriada larga, rosca y tuerca castillo; fuelle negro separado y seguro circular. La foto externa se rechazó por marca de agua. Fondo blanco puro, sin texto, logos, empaque ni marcas de agua.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T14:56:37.604Z"
+    },
+    "GTI06009": {
+      "sku": "GTI06-009",
+      "name": "EJE HOMOCINETICO DER. HD. ACCENT/VERNA INDU 25X25 — GTI06-009",
+      "outputImage": "/catalogo-gti/generated/gti-gti06-009-eje-homocinetico-der-hd-accent-verna-indu-25x25-generated-reference.webp",
+      "sourceSha256": "12189ec03740b77b7c9dfe10bfc507beb4f6583f1e751e17868cfa1d9cd0d3b3",
+      "generationPrompt": "Referencia fotorrealista única generada a partir de la ficha exacta https://www.imotriz.com/producto/3/GTI06-009-/: eje homocinético completo derecho Hyundai Accent/Verna Indu, 25X25; semieje horizontal con juntas interior y exterior, dos fuelles negros, extremo roscado y tuerca, sin anillo ABS. La única foto externa encontrada se descartó por marca de agua y por mostrar sólo una junta. Fondo blanco puro, sin texto, logos, empaque ni marca de agua.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T15:05:01.718Z"
+    },
+    "GTI06011": {
+      "sku": "GTI06-011",
+      "name": "PUNTA EJE L/R. HD. ACCENT/VERNA/GYRO/VISION 25X30 (PIN EXT.) — GTI06-011",
+      "outputImage": "/catalogo-gti/generated/gti-gti06-011-punta-eje-l-r-hd-accent-verna-gyro-vision-25x30-pin-ext-generated-reference.webp",
+      "sourceSha256": "7ff933e953a3328de6e88891d1781dbf93f11ecf0d9ff587a881dfb73dd23ba3",
+      "generationPrompt": "Referencia fotorrealista única generada a partir de la ficha exacta https://www.imotriz.com/producto/3/GTI06-011-/: punta lado rueda Hyundai Accent/Verna/Gyro/Vision, 25X30, versión con pasador externo; junta, fuelle, abrazaderas, seguro, tuerca castillo y pasador, sin anillo ABS. La foto externa exacta se descartó por marca de agua. Fondo blanco puro, sin texto, logos ni empaque.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T15:05:01.719Z"
+    },
+    "GTI06022": {
+      "sku": "GTI06-022",
+      "name": "EJE HOMOCINETICO IZQ. HD. VISION/KIA RIO XCITE/SEPHIA 25X25 — GTI06-022",
+      "outputImage": "/catalogo-gti/generated/gti-gti06-022-eje-homocinetico-izq-hd-vision-kia-rio-xcite-sephia-25x25-generated-reference.webp",
+      "sourceSha256": "bf99643fa0770bc23339386888f7ceb6fd512689f142b3de783ca0eb21fdce90",
+      "generationPrompt": "Referencia fotorrealista única basada en la ficha exacta https://www.imotriz.com/producto/3/GTI06-022-/: eje homocinético completo izquierdo Hyundai Vision/Kia Rio Xcite/Sephia 25X25, eje compacto con dos juntas, dos fuelles y extremos estriados, sin ABS. La foto exacta encontrada se descartó por marca de agua. Fondo blanco puro, sin textos ni logos.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T15:13:16.168Z"
+    },
+    "GTI06023": {
+      "sku": "GTI06-023",
+      "name": "EJE HOMOCINETICO DER. HD. VISION/KIA RIO XCITE/SEPHIA 25X25 — GTI06-023",
+      "outputImage": "/catalogo-gti/generated/gti-gti06-023-eje-homocinetico-der-hd-vision-kia-rio-xcite-sephia-25x25-generated-reference.webp",
+      "sourceSha256": "81458d652b4259a8190d80ed12885d136277d83122ce130bc9a2f19cd0927e5b",
+      "generationPrompt": "Referencia fotorrealista única basada en la ficha exacta https://www.imotriz.com/producto/3/GTI06-023-/: eje homocinético completo derecho Hyundai Vision/Kia Rio Xcite/Sephia 25X25, más largo que el izquierdo, con amortiguador central y anillo ABS exterior. La foto exacta se descartó por marca de agua. Fondo blanco puro, sin textos ni logos.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T15:13:16.168Z"
+    },
+    "GTI06024": {
+      "sku": "GTI06-024",
+      "name": "EJE HOMOCINETICO IZQ. KIA RIO STYLUS 24X26 — GTI06-024",
+      "outputImage": "/catalogo-gti/generated/gti-gti06-024-eje-homocinetico-izq-kia-rio-stylus-24x26-generated-reference.webp",
+      "sourceSha256": "20e741b5081bd18569c6301bc7acae62266be228f1a4451e53350656fc857437",
+      "generationPrompt": "Referencia fotorrealista única basada en la ficha exacta https://www.imotriz.com/producto/3/GTI06-024-/: eje homocinético completo izquierdo Kia Rio Stylus 24X26, dos juntas, dos fuelles, extremos estriados y anillo ABS exterior. La foto exacta se descartó por marca de agua. Fondo blanco puro, sin textos ni logos.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T15:13:16.168Z"
+    },
+    "GTI06029": {
+      "sku": "GTI06-029",
+      "name": "EJE HOMOCINETICO DER. HD. I-10 24X25 — GTI06-029",
+      "outputImage": "/catalogo-gti/generated/gti-gti06-029-eje-homocinetico-der-hd-i-10-24x25-generated-reference.webp",
+      "sourceSha256": "fce722f41c147f2a7cf867c0a8fae8f18f5004a48687e82a8cf58cd30540f1de",
+      "generationPrompt": "Referencia fotorrealista única basada en la ficha exacta https://www.imotriz.com/producto/3/GTI06-029-/: eje homocinético completo derecho Hyundai i10 1.1 24X25, eje largo con dos fuelles y amortiguador central, sin anillo ABS visible. La foto exacta se descartó por marca de agua. Fondo blanco puro, sin textos ni logos.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T15:13:16.168Z"
+    },
+    "GTI06035": {
+      "sku": "GTI06-035",
+      "name": "PUNTA EJE L/R. HD. SANTA FE 2010/2012 36X30 — GTI06-035",
+      "outputImage": "/catalogo-gti/generated/gti-gti06-035-punta-eje-l-r-hd-santa-fe-2010-2012-36x30-generated-reference.webp",
+      "sourceSha256": "2265fc3a0ef08096b351ec9f20c66c11b5dc9a3e93f36cea6b83d99247865073",
+      "generationPrompt": "Referencia fotorrealista única basada en la ficha exacta https://www.imotriz.com/producto/3/GTI06-035-/: kit de punta de eje exterior Hyundai Santa Fe 2010-2012 36X30, junta robusta con anillo ABS, fuelle, abrazaderas, seguro, tuerca y pasador. La foto exacta se descartó por marca de agua. Fondo blanco puro, sin textos ni logos.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T15:13:16.168Z"
+    },
+    "GTI06042": {
+      "sku": "GTI06-042",
+      "name": "PUNTA EJE L/R. KIA SPORTAGE REVOLUTION/HD. TUCSON IX-35 4X4/4X2 MECANICA PIN INTERNO 24X27X62MM — GTI06-042",
+      "outputImage": "/catalogo-gti/generated/gti-gti06-042-punta-eje-l-r-kia-sportage-revolution-hd-tucson-ix-35-4x4-4x2-mecanica-p-generated-reference.webp",
+      "sourceSha256": "bfb8bd55c12f109aff481c760923e9bf3bbe75f33db1049a78a138e372d13402",
+      "generationPrompt": "Referencia fotorrealista única basada en la ficha exacta https://www.imotriz.com/producto/3/GTI06-042-/: kit de punta lado rueda Hyundai Tucson IX35/Kia Sportage Revolution 4X2/4X4 mecánica, pasador interno 24X27X62 mm; junta sin anillo ABS, fuelle, abrazaderas, seguro y grasa. La foto exacta encontrada se descartó por marca de agua y la búsqueda OEM no produjo alternativa limpia. Fondo blanco puro, sin textos, logos ni empaque.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T15:22:22.006Z"
+    },
+    "GTI06062": {
+      "sku": "GTI06-062",
+      "name": "PUNTA EJE L/R. HD. TUCSON IX-35 DIESEL 4X2/4X4 MECANICA/KIA SPORTAGE 2.0 30X25X62 PIN INTERNO ABS 48 — GTI06-062",
+      "outputImage": "/catalogo-gti/generated/gti-gti06-062-punta-eje-l-r-hd-tucson-ix-35-diesel-4x2-4x4-mecanica-kia-sportage-2-0-3-generated-reference.webp",
+      "sourceSha256": "188a601e08702025390a0192c2e8cd048d747e3dc10b981283b8a33226dec91c",
+      "generationPrompt": "Referencia fotorrealista única basada en la ficha exacta https://www.imotriz.com/producto/3/GTI06-062-/ y contraste web: punta lado rueda Hyundai Tucson IX35 diésel 4X2/4X4 mecánica/Kia Sportage 2.0, pasador interno 30X25X62 mm y anillo ABS de 48 dientes; junta, fuelle, abrazaderas, seguro y grasa. La única foto exacta encontrada tenía marca de agua. Fondo blanco puro, sin texto, logos ni empaque.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T15:28:25.623Z"
+    },
+    "GTI06065": {
+      "sku": "GTI06-065",
+      "name": "PUNTA EJE LADO RUEDA L/R HYUNDAI TUCSON / KIA NEW SPORTAGE GASOLINA 4X2/4X4, 26x27 ESTRIAS. — GTI06-065",
+      "outputImage": "/catalogo-gti/generated/gti-gti06-065-punta-eje-lado-rueda-l-r-hyundai-tucson-kia-new-sportage-gasolina-4x2-4x-generated-reference.webp",
+      "sourceSha256": "acb1d1929d94f30eb7db5485269beb8d4b7e04f5b1f64ac8390f14d26518ef9e",
+      "generationPrompt": "Referencia fotorrealista única basada en la ficha exacta https://www.imotriz.com/producto/29/GTI06-065-/ y su foto real: punta de eje lado rueda L/R Hyundai Tucson/Kia New Sportage gasolina 4X2/4X4, 26X27 estrías. Se preservó la geometría inusual de la pieza exacta; la única foto GTI encontrada tenía marca de agua dominante. Fondo blanco puro, sin texto, logos ni empaque.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T15:38:29.362Z"
+    },
+    "GTI06066": {
+      "sku": "GTI06-066",
+      "name": "EJE HOMOCINETICO COMPLETO IZQUIERDO HYUNDAI GRAND I-10 1.0/1.2, OEM 49500-B4100. — GTI06-066",
+      "outputImage": "/catalogo-gti/generated/gti-gti06-066-eje-homocinetico-completo-izquierdo-hyundai-grand-i-10-1-0-1-2-oem-49500-generated-reference.webp",
+      "sourceSha256": "9cd132df0229d56db2651d9ebae646b0f2a845c2a9a374b400427b4f8ab015a2",
+      "generationPrompt": "Referencia fotorrealista única basada en la ficha exacta https://www.imotriz.com/producto/29/49500-B4100/ y contraste OEM 49500-B4100: eje homocinético completo izquierdo Hyundai Grand i10 1.0/1.2, 25X25. Se preservaron la longitud corta, las dos juntas, fuelles y extremos estriados del semieje izquierdo; la foto GTI exacta tenía marca de agua dominante. Fondo blanco puro, sin texto, logos ni empaque.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T15:38:29.363Z"
+    },
+    "GTI07020": {
+      "sku": "GTI07-020",
+      "name": "PUNTA EJE LADO RUEDA L/R KIA PICANTO I/II/ION-MORNING Y FORD FESTIVA 1.3 GLX MECANICO, PIN INTERNO, 24x20 ESTRIAS, ABS 48 DIENTES. — GTI07-020",
+      "outputImage": "/catalogo-gti/generated/gti-gti07-020-punta-eje-lado-rueda-l-r-kia-picanto-i-ii-ion-morning-y-ford-festiva-1-3-generated-reference.webp",
+      "sourceSha256": "d2e22d607e035819a5a1d72e389be7c9c134ef1a0933115a9cd54bdc9ee5bf6e",
+      "generationPrompt": "Referencia fotorrealista única basada en la ficha exacta https://www.imotriz.com/producto/3/GTI07-020-/ y contraste web con la publicación GTI: punta lado rueda Kia Picanto I/II/Ion-Morning y Ford Festiva 1.3 GLX mecánico, pasador interno, 24 estrías externas, 20 internas y anillo ABS de 48 dientes; junta, fuelle, abrazaderas, seguro y grasa. La única foto GTI exacta encontrada tenía marca de agua dominante. Fondo blanco puro, sin texto, logos ni empaque.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T15:45:24.166Z"
+    },
+    "GTI07032": {
+      "sku": "GTI07-032",
+      "name": "PUNTA EJE LADO CAJA KIA PICANTO 1.1 I/II Y PICANTO ION HASTA 2018, 25x20 ESTRIAS, OEM 49592-07000. — GTI07-032",
+      "outputImage": "/catalogo-gti/generated/gti-gti07-032-punta-eje-lado-caja-kia-picanto-1-1-i-ii-y-picanto-ion-hasta-2018-25x20-generated-reference.webp",
+      "sourceSha256": "316675ee57fe68d817e1da927bc685b0cebbed2054f31c2dc8ab7f0819291bbf",
+      "generationPrompt": "Referencia fotorrealista única basada en la ficha exacta https://www.imotriz.com/producto/3/GTI07-032-/ y contraste web/OEM 49592-07000: punta lado caja Kia Picanto 1.1 I/II e Ion hasta 2018, 25X20 estrías; copa interior angular, trípode, fuelle y abrazaderas. La única foto GTI exacta encontrada tenía marca de agua dominante. Fondo blanco puro, sin texto, logos ni empaque.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T15:51:33.666Z"
+    },
+    "GTI01012": {
+      "sku": "GTI01-012",
+      "name": "PUNTA EJE L/C. DER. KANGOO — GTI01-012",
+      "outputImage": "/catalogo-gti/generated/gti-gti01-012-punta-eje-l-c-der-kangoo-generated-reference.webp",
+      "sourceSha256": "9298c6574e12c150cdd7d51b2abc2b5424744cf05bd39e6b52a1c46d8895bd0f",
+      "generationPrompt": "Referencia visual fotorrealista única: punta eje lado caja derecha Renault Kangoo, junta interior tipo tulipa/tripode con fuelle, abrazaderas, seguro y grasa neutra; fondo blanco puro, sin texto, logos ni marca de agua.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T17:17:02.868Z"
+    },
+    "GTI01040": {
+      "sku": "GTI01-040",
+      "name": "EJE HOMOCINETICO DER. MEGANE CON ABS — GTI01-040",
+      "outputImage": "/catalogo-gti/generated/gti-gti01-040-eje-homocinetico-der-megane-con-abs-generated-reference.webp",
+      "sourceSha256": "60b65204deb663dbaccff7f352343048dadba9f870bb65ad07f1e1e2133e9d5c",
+      "generationPrompt": "Referencia visual fotorrealista única: eje homocinetico completo derecho Renault Megane con ABS, semieje, junta exterior con anillo ABS, junta interior y dos fuelles; fondo blanco puro, sin texto, logos ni marca de agua.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T17:17:02.869Z"
+    },
+    "GTI01046": {
+      "sku": "GTI01-046",
+      "name": "EJE HOMOCINETICO IZQ. CLIO CAMPUS — GTI01-046",
+      "outputImage": "/catalogo-gti/generated/gti-gti01-046-eje-homocinetico-izq-clio-campus-generated-reference.webp",
+      "sourceSha256": "19d6cb5625f3250a30bf378b4a812e94521d025e89447950efcc05c53b8056f1",
+      "generationPrompt": "Referencia visual fotorrealista única: eje homocinetico completo izquierdo Renault Clio Campus, semieje corto con dos juntas homocineticas cerradas y dos fuelles; fondo blanco puro, sin texto, logos ni marca de agua. Segunda generacion corregida para excluir crucetas tipo cardan.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T17:17:02.869Z"
+    },
+    "GTI01066": {
+      "sku": "GTI01-066",
+      "name": "EJE HOMOCINETICO IZQ. CLIO I — GTI01-066",
+      "outputImage": "/catalogo-gti/generated/gti-gti01-066-eje-homocinetico-izq-clio-i-generated-reference.webp",
+      "sourceSha256": "b98db682f8d4a8d2299ab228eb13cbfa802345dd4d6c51f29986a4f0a7cd07d3",
+      "generationPrompt": "Referencia visual fotorrealista única: eje homocinetico completo izquierdo Renault Clio I, semieje de longitud media con junta exterior estriada, junta interior y fuelles; fondo blanco puro, sin texto, logos ni marca de agua.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T17:17:02.869Z"
+    },
+    "GTI01070": {
+      "sku": "GTI01-070",
+      "name": "EJE HOMOCINETICO IZQ. TRAFIC 1.9 2013/2014 — GTI01-070",
+      "outputImage": "/catalogo-gti/generated/gti-gti01-070-eje-homocinetico-izq-trafic-1-9-2013-2014-generated-reference.webp",
+      "sourceSha256": "dc7d4f30a60a2da120e15170f2ddf3fbbb0cd7b085334380445b846d56d27023",
+      "generationPrompt": "Referencia visual fotorrealista única: eje homocinetico izquierdo Renault Trafic 1.9 2013/2014, semieje largo y robusto con juntas, dos fuelles y anillo ABS; fondo blanco puro, sin texto, logos ni marca de agua.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T17:19:35.433Z"
+    },
+    "GTI03026": {
+      "sku": "GTI03-026",
+      "name": "EJE HOMOCINETICO IZQ. M323 — GTI03-026",
+      "outputImage": "/catalogo-gti/generated/gti-gti03-026-eje-homocinetico-izq-m323-generated-reference.webp",
+      "sourceSha256": "2430e48f36370c5a249c64b4ee6256f2219c2ef1c142c93fc8eae4e5bc51d9ea",
+      "generationPrompt": "Referencia visual fotorrealista única: eje homocinetico izquierdo Mazda 323, semieje compacto con junta exterior, junta interior y dos fuelles; fondo blanco puro, sin texto, logos ni marca de agua.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T17:19:35.434Z"
+    },
+    "GTI03047": {
+      "sku": "GTI03-047",
+      "name": "EJE HOMOCINETICO IZQ. MAZDA BT-50 GAS. (HEMBRA) — GTI03-047",
+      "outputImage": "/catalogo-gti/generated/gti-gti03-047-eje-homocinetico-izq-mazda-bt-50-gas-hembra-generated-reference.webp",
+      "sourceSha256": "d6b7e7f913210db5bfa43329e9584cae4adc4e8318c5462a00bd117f000b8a83",
+      "generationPrompt": "Referencia visual fotorrealista única: eje homocinetico izquierdo Mazda BT-50 gasolina con conexion interior hembra, semieje 4x4 robusto y anillo ABS; fondo blanco puro, sin texto, logos ni marca de agua.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T17:19:35.434Z"
+    },
+    "GTI03052": {
+      "sku": "GTI03-052",
+      "name": "EJE HOMOCINETICO DER. MAZDA BT-50 DIESEL 2010/ — GTI03-052",
+      "outputImage": "/catalogo-gti/generated/gti-gti03-052-eje-homocinetico-der-mazda-bt-50-diesel-2010-generated-reference.webp",
+      "sourceSha256": "6dae806350737db8db87258855db0841e143ca78ac1cbb4f89721280047de3d3",
+      "generationPrompt": "Referencia visual fotorrealista única: eje homocinetico derecho Mazda BT-50 diesel 2010 en adelante, semieje largo y robusto con dos juntas, fuelles y anillo ABS; fondo blanco puro, sin texto, logos ni marca de agua.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T17:19:35.434Z"
+    },
+    "GTI03057": {
+      "sku": "GTI03-057",
+      "name": "EJE INTERCONECCION MB2600/BT-50 GASOLINA — GTI03-057",
+      "outputImage": "/catalogo-gti/generated/gti-gti03-057-eje-interconeccion-mb2600-bt-50-gasolina-generated-reference.webp",
+      "sourceSha256": "e94d46be8614a49daeffe4251791d61660739bc2c3545ca606ad78e94966c685",
+      "generationPrompt": "Referencia visual fotorrealista única: eje de interconexion Mazda B2600/BT-50 gasolina, barra estriada con rodamiento y soporte central; fondo blanco, sin texto, logos ni marca de agua.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T17:23:32.126Z"
+    },
+    "GTI03059": {
+      "sku": "GTI03-059",
+      "name": "PUNTA EJE L/R. MAZDA 6/FORD FUSION 33 DTS. PIN EXT. — GTI03-059",
+      "outputImage": "/catalogo-gti/generated/gti-gti03-059-punta-eje-l-r-mazda-6-ford-fusion-33-dts-pin-ext-generated-reference.webp",
+      "sourceSha256": "6da11cac506586c3910f01a170f866848b4bf783e2557f3f3f022e7fe7334245",
+      "generationPrompt": "Referencia visual fotorrealista única: punta eje lado rueda Mazda 6/Ford Fusion 33 dientes pin exterior, junta con ABS, fuelle y kit; fondo blanco, sin texto, logos ni marca de agua.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T17:23:32.126Z"
+    },
+    "GTI03063": {
+      "sku": "GTI03-063",
+      "name": "EJE INTERCONECCION MAZDA BT-50 DIESEL — GTI03-063",
+      "outputImage": "/catalogo-gti/generated/gti-gti03-063-eje-interconeccion-mazda-bt-50-diesel-generated-reference.webp",
+      "sourceSha256": "bfcdce9957a71943eb8588d0fdda04c9c27519393c93eeb9ced63539858cd91f",
+      "generationPrompt": "Referencia visual fotorrealista única: eje de interconexion Mazda BT-50 diesel, barra robusta con estriado y soporte central; fondo blanco, sin texto, logos ni marca de agua.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T17:23:32.126Z"
+    },
+    "GTI03067": {
+      "sku": "GTI03-067",
+      "name": "EJE HOMOCINETICO IZQ. MAZDA 3 MANUAL — GTI03-067",
+      "outputImage": "/catalogo-gti/generated/gti-gti03-067-eje-homocinetico-izq-mazda-3-manual-generated-reference.webp",
+      "sourceSha256": "20894c9eadcee648e96213aae0b890df22288d1569d95f7293788ad49def0c84",
+      "generationPrompt": "Referencia visual fotorrealista única: eje homocinetico izquierdo Mazda 3 manual, semieje corto con ABS y dos juntas; fondo blanco, sin texto, logos ni marca de agua.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T17:23:32.126Z"
+    },
+    "GTI03076": {
+      "sku": "GTI03-076",
+      "name": "EJE HOMOCINETICO DER. MAZDA 626 ASAHI 2.0 — GTI03-076",
+      "outputImage": "/catalogo-gti/generated/gti-gti03-076-eje-homocinetico-der-mazda-626-asahi-2-0-generated-reference.webp",
+      "sourceSha256": "2c788247e731231579306cde4455558f6addae9aebdec08ee4df87a67f68baa7",
+      "generationPrompt": "Referencia visual fotorrealista única: eje homocinetico derecho Mazda 626 Asahi 2.0, semieje largo con ABS y dos fuelles; fondo blanco, sin texto, logos ni marca de agua.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T17:23:32.127Z"
+    },
+    "GTI03077": {
+      "sku": "GTI03-077",
+      "name": "EJE HOMOCINETICO IZQ. MAZDA 626 ASAHI 2.0 — GTI03-077",
+      "outputImage": "/catalogo-gti/generated/gti-gti03-077-eje-homocinetico-izq-mazda-626-asahi-2-0-generated-reference.webp",
+      "sourceSha256": "bed65015aca428d1dcc7dba5537dec26246e8f11f2e912ebf971298d57ac248c",
+      "generationPrompt": "Referencia visual fotorrealista única: eje homocinetico izquierdo Mazda 626 Asahi 2.0, semieje corto con geometria distinta al derecho; fondo blanco, sin texto, logos ni marca de agua.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T17:23:32.127Z"
+    },
+    "GTI03081": {
+      "sku": "GTI03-081",
+      "name": "PUNTA EJE L/R. MAZDA 3 1.6 — GTI03-081",
+      "outputImage": "/catalogo-gti/generated/gti-gti03-081-punta-eje-l-r-mazda-3-1-6-generated-reference.webp",
+      "sourceSha256": "31a3dd54de57afa0b3ca551f735a1792bd0104ff13222de84c79db4596ab163b",
+      "generationPrompt": "Referencia visual fotorrealista única: punta eje lado rueda Mazda 3 1.6, junta compacta con ABS, fuelle y accesorios; fondo blanco, sin texto, logos ni marca de agua.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T17:23:32.127Z"
+    },
+    "GTI03083": {
+      "sku": "GTI03-083",
+      "name": "EJE HOMOCINETICO IZQ. MAZDA BT-50/FORD RANGER 2.5 DIESEL 4X4 — GTI03-083",
+      "outputImage": "/catalogo-gti/generated/gti-gti03-083-eje-homocinetico-izq-mazda-bt-50-ford-ranger-2-5-diesel-4x4-generated-reference.webp",
+      "sourceSha256": "8e370845e810b2fff150042097b13df801bca45e9b631262617809fca4a7206d",
+      "generationPrompt": "Referencia visual fotorrealista única: eje homocinetico izquierdo Mazda BT-50/Ford Ranger 2.5 diesel 4x4, semieje robusto con ABS; fondo blanco, sin texto, logos ni marca de agua.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T17:23:32.127Z"
+    },
+    "GTI03084": {
+      "sku": "GTI03-084",
+      "name": "EJE HOMOCINETICO DER. MAZDA BT-50/FORD RANGER 2.5 DIESEL 4X4 — GTI03-084",
+      "outputImage": "/catalogo-gti/generated/gti-gti03-084-eje-homocinetico-der-mazda-bt-50-ford-ranger-2-5-diesel-4x4-generated-reference.webp",
+      "sourceSha256": "8b1807a8de45b758907fa1cc9271d5c53035e583d99630b65c2c20084e85d7e6",
+      "generationPrompt": "Referencia fotorrealista única: eje homocinetico derecho Mazda BT-50/Ford Ranger 2.5 diesel 4x4, semieje largo robusto; fondo blanco, sin texto ni logos.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T17:27:21.492Z"
+    },
+    "GTI03087": {
+      "sku": "GTI03-087",
+      "name": "PUNTA EJE L/C. DER. MAZDA BT-50/FORD RANGER 2.5 DIESEL 4X4 (MACHO) — GTI03-087",
+      "outputImage": "/catalogo-gti/generated/gti-gti03-087-punta-eje-l-c-der-mazda-bt-50-ford-ranger-2-5-diesel-4x4-macho-generated-reference.webp",
+      "sourceSha256": "6fd30d1bceaf1d8c4edde3d89c7e113ff204ed10d15e2d0e5080b69f40b20d25",
+      "generationPrompt": "Referencia fotorrealista única: punta eje lado caja derecha Mazda BT-50/Ford Ranger 2.5 diesel 4x4 macho, junta robusta y kit; fondo blanco, sin texto ni logos.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T17:27:21.493Z"
+    },
+    "GTI04018": {
+      "sku": "GTI04-018",
+      "name": "EJE HOMOCINETICO DER. SWIFT 1.3 — GTI04-018",
+      "outputImage": "/catalogo-gti/generated/gti-gti04-018-eje-homocinetico-der-swift-1-3-generated-reference.webp",
+      "sourceSha256": "29ffeaf3d1963f54be0f319a3aefbcb7018c56e9f4c62ca8cd45a3edbdb3daf7",
+      "generationPrompt": "Referencia fotorrealista única: eje homocinetico derecho Suzuki Swift 1.3, semieje compacto; fondo blanco, sin texto ni logos.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T17:27:21.493Z"
+    },
+    "GTI04019": {
+      "sku": "GTI04-019",
+      "name": "EJE HOMOCINETICO IZQ. SWIFT 1.3 — GTI04-019",
+      "outputImage": "/catalogo-gti/generated/gti-gti04-019-eje-homocinetico-izq-swift-1-3-generated-reference.webp",
+      "sourceSha256": "296a4bd5e325ed12581738e18fd31b44d608e906543f23996595954615f72c07",
+      "generationPrompt": "Referencia fotorrealista única: eje homocinetico izquierdo Suzuki Swift 1.3, geometria corta distinta del derecho; fondo blanco, sin texto ni logos.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T17:27:21.493Z"
+    },
+    "GTI04054": {
+      "sku": "GTI04-054",
+      "name": "PUNTA EJE L/R. CRONOS 21 DTS. — GTI04-054",
+      "outputImage": "/catalogo-gti/generated/gti-gti04-054-punta-eje-l-r-cronos-21-dts-generated-reference.webp",
+      "sourceSha256": "392329d5845d7fe49fc2d5a41f84e7e727b84c3d9428462970d114cb28214dfe",
+      "generationPrompt": "Referencia fotorrealista única: punta eje lado rueda Chevrolet Cronos 21 dientes con fuelle y kit; fondo blanco, sin texto ni logos.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T17:27:21.493Z"
+    },
+    "GTI04058": {
+      "sku": "GTI04-058",
+      "name": "EJE HOMOCINETICO D-MAX 2010/ SIN TETA — GTI04-058",
+      "outputImage": "/catalogo-gti/generated/gti-gti04-058-eje-homocinetico-d-max-2010-sin-teta-generated-reference.webp",
+      "sourceSha256": "7639f6da0a3ff1477ec406b3ec10c2d168ce73496d4d7de212b0ef68c6a35ac7",
+      "generationPrompt": "Referencia fotorrealista única: eje homocinetico Chevrolet D-Max 2010 en adelante sin teta, semieje robusto; fondo blanco, sin texto ni logos.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T17:27:21.493Z"
+    },
+    "GTI04059": {
+      "sku": "GTI04-059",
+      "name": "PUNTA EJE L/R. D-MAX 2010/ SIN TETA — GTI04-059",
+      "outputImage": "/catalogo-gti/generated/gti-gti04-059-punta-eje-l-r-d-max-2010-sin-teta-generated-reference.webp",
+      "sourceSha256": "9d1a4baedbc79269d1a79ed9e74e1ed298da5916eaf6190ad07cc07c66830011",
+      "generationPrompt": "Referencia fotorrealista única: punta eje lado rueda Chevrolet D-Max 2010 en adelante sin teta, junta con ABS y kit; fondo blanco, sin texto ni logos.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T17:27:21.493Z"
+    },
+    "GTI04065": {
+      "sku": "GTI04-065",
+      "name": "PUNTA EJE L/R. SPARK GT — GTI04-065",
+      "outputImage": "/catalogo-gti/generated/gti-gti04-065-punta-eje-l-r-spark-gt-generated-reference.webp",
+      "sourceSha256": "988c9660db272fb323bc56396d5fb2a3525f03b92fde819e8dad5493adae69be",
+      "generationPrompt": "Referencia fotorrealista única: punta eje lado rueda Chevrolet Spark GT, junta compacta con ABS y kit; fondo blanco, sin texto ni logos.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T17:27:21.493Z"
+    },
+    "GTI04068": {
+      "sku": "GTI04-068",
+      "name": "EJE HOMOCINETICO CAPTIVA 2.4 MECANICA — GTI04-068",
+      "outputImage": "/catalogo-gti/generated/gti-gti04-068-eje-homocinetico-captiva-2-4-mecanica-generated-reference.webp",
+      "sourceSha256": "ec7a58e3ed75be98afa314b576facce7cab6802b3ca3a08d2fcd32890d5d1b23",
+      "generationPrompt": "Fotografía de catálogo automotriz de un eje homocinético completo mecánico para Chevrolet Captiva 2.4, geometría fiel de semieje delantero, aislado sobre fondo blanco puro, iluminación de estudio, sin texto ni logotipos.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T17:31:55.200Z"
+    },
+    "GTI04069": {
+      "sku": "GTI04-069",
+      "name": "PUNTA EJE L/R. CAPTIVA 24 DTS — GTI04-069",
+      "outputImage": "/catalogo-gti/generated/gti-gti04-069-punta-eje-l-r-captiva-24-dts-generated-reference.webp",
+      "sourceSha256": "258b1cc7236462ef5aa98998f54ce7e6e42412f3719e27fbe2cacb1ca19fd001",
+      "generationPrompt": "Fotografía de catálogo de kit de punta homocinética lado rueda para Chevrolet Captiva, configuración de 24 estrías, junta, fuelle, abrazaderas y grasa, fondo blanco puro, sin texto ni logotipos.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T17:31:55.201Z"
+    },
+    "GTI04073": {
+      "sku": "GTI04-073",
+      "name": "PUNTA EJE L/C. CAPTIVA MECANICA — GTI04-073",
+      "outputImage": "/catalogo-gti/generated/gti-gti04-073-punta-eje-l-c-captiva-mecanica-generated-reference.webp",
+      "sourceSha256": "a8778f3d130744fa8c42fbc0a7870fa099ad0e6953b341a72f99959bc947222c",
+      "generationPrompt": "Fotografía de catálogo de kit de junta homocinética lado transmisión para Chevrolet Captiva, carcasa tipo tulipa, fuelle y accesorios, aislado en fondo blanco, sin texto ni marcas.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T17:31:55.201Z"
+    },
+    "GTI04074": {
+      "sku": "GTI04-074",
+      "name": "EJE HOMOCINETICO DER. CORSA — GTI04-074",
+      "outputImage": "/catalogo-gti/generated/gti-gti04-074-eje-homocinetico-der-corsa-generated-reference.webp",
+      "sourceSha256": "fd25294bb96c408173c831e140b488e512518a563ee4f1cca16163177d03ac36",
+      "generationPrompt": "Fotografía de catálogo de eje homocinético completo derecho para Chevrolet Corsa, semieje delantero con juntas y fuelles correctos, fondo blanco puro, sin texto ni logos.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T17:31:55.201Z"
+    },
+    "GTI04078": {
+      "sku": "GTI04-078",
+      "name": "EJE HOMOCINETICO TRAS. GRAND VITARA SZ 2.7 4X4 MT/AT 2007/ (6 HUECOS) — GTI04-078",
+      "outputImage": "/catalogo-gti/generated/gti-gti04-078-eje-homocinetico-tras-grand-vitara-sz-2-7-4x4-mt-at-2007-6-huecos-generated-reference.webp",
+      "sourceSha256": "73e297e9e972006d39cea6483c525ec6011704ce93059002ef034da90fd2b2dc",
+      "generationPrompt": "Fotografía de catálogo de eje homocinético trasero 4x4 de seis perforaciones para Chevrolet Grand Vitara, componente metálico fiel, aislado sobre blanco, sin texto ni logotipos.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T17:31:55.201Z"
+    },
+    "GTI04094": {
+      "sku": "GTI04-094",
+      "name": "PUNTA EJE L/R. CAPTIVA 3.0 / 34 DTS — GTI04-094",
+      "outputImage": "/catalogo-gti/generated/gti-gti04-094-punta-eje-l-r-captiva-3-0-34-dts-generated-reference.webp",
+      "sourceSha256": "d519c78dc38d1d22a12466e40866a29520eb3386be51524894b753e496613fb8",
+      "generationPrompt": "Fotografía de catálogo de kit de punta homocinética lado rueda de 34 estrías para Chevrolet Captiva 3.0, junta, fuelle y accesorios, fondo blanco puro, sin texto ni marcas.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T17:31:55.201Z"
+    },
+    "GTI04095": {
+      "sku": "GTI04-095",
+      "name": "EJE HOMOCINETICO IZQ. AVEO — GTI04-095",
+      "outputImage": "/catalogo-gti/generated/gti-gti04-095-eje-homocinetico-izq-aveo-generated-reference.webp",
+      "sourceSha256": "adc2f06e05ff83b0b4393b46b170a68dbd507c364153fed464ddb9e68c02a374",
+      "generationPrompt": "Fotografía de catálogo de eje homocinético completo izquierdo para Chevrolet Aveo, semieje delantero con proporciones y juntas fieles, fondo blanco puro, sin texto ni logotipos.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T17:31:55.201Z"
+    },
+    "GTI04096": {
+      "sku": "GTI04-096",
+      "name": "EJE HOMOCINETICO DER. AVEO — GTI04-096",
+      "outputImage": "/catalogo-gti/generated/gti-gti04-096-eje-homocinetico-der-aveo-generated-reference.webp",
+      "sourceSha256": "e5ac45dea03a02f8242d1cf14b407d6197a0481d8e64b5ed8549a7f3a84e5538",
+      "generationPrompt": "Fotografía de catálogo de eje homocinético completo derecho para Chevrolet Aveo, semieje delantero distinto al izquierdo, fondo blanco puro, sin texto ni logotipos.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T17:31:55.201Z"
+    },
+    "GTI04103": {
+      "sku": "GTI04-103",
+      "name": "EJE HOMOCINETICO DER. TRACKER AUTOMATICA — GTI04-103",
+      "outputImage": "/catalogo-gti/generated/gti-gti04-103-eje-homocinetico-der-tracker-automatica-generated-reference.webp",
+      "sourceSha256": "08cb99a16d425b35173c3f1adb95e56572130301d9cd41aa8b5468d30e2f594c",
+      "generationPrompt": "Fotografía de catálogo de eje homocinético completo derecho para Chevrolet Tracker automática, semieje largo con juntas, fuelles y estrías, fondo blanco puro, sin texto ni marcas.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T17:35:35.367Z"
+    },
+    "GTI04104": {
+      "sku": "GTI04-104",
+      "name": "EJE HOMOCINETICO IZQ. TRACKER AUTOMATICA — GTI04-104",
+      "outputImage": "/catalogo-gti/generated/gti-gti04-104-eje-homocinetico-izq-tracker-automatica-generated-reference.webp",
+      "sourceSha256": "2bf48cd8074d89ac460e2252fac62e6c3533d572cb1c4049b7d26c353eccd962",
+      "generationPrompt": "Fotografía de catálogo de eje homocinético completo izquierdo para Chevrolet Tracker automática, geometría corta y distinta al derecho, fondo blanco puro, sin texto ni marcas.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T17:35:35.368Z"
+    },
+    "GTI04105": {
+      "sku": "GTI04-105",
+      "name": "EJE HOMOCINETICO DER. TRACKER MECANICA — GTI04-105",
+      "outputImage": "/catalogo-gti/generated/gti-gti04-105-eje-homocinetico-der-tracker-mecanica-generated-reference.webp",
+      "sourceSha256": "833812979537dadaee4a1e4f7c0511a980a04efc95a397c0efbd1285bce46ec1",
+      "generationPrompt": "Fotografía de catálogo de eje homocinético completo derecho para Chevrolet Tracker mecánica, tulipa interior de transmisión manual y punta exterior, fondo blanco, sin logos.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T17:35:35.368Z"
+    },
+    "GTI04106": {
+      "sku": "GTI04-106",
+      "name": "EJE HOMOCINETICO IZQ. TRACKER MECANICA — GTI04-106",
+      "outputImage": "/catalogo-gti/generated/gti-gti04-106-eje-homocinetico-izq-tracker-mecanica-generated-reference.webp",
+      "sourceSha256": "53ab77e67c38c166ecf77624cc0199a8811bc4b971bf550e903fe16c63f60dab",
+      "generationPrompt": "Fotografía de catálogo de eje homocinético completo izquierdo para Chevrolet Tracker mecánica, geometría corta y carcasa interior manual, fondo blanco, sin logos.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T17:35:35.368Z"
+    },
+    "GTI06010": {
+      "sku": "GTI06-010",
+      "name": "EJE HOMOCINETICO IZQ. HD. ACCENT — GTI06-010",
+      "outputImage": "/catalogo-gti/generated/gti-gti06-010-eje-homocinetico-izq-hd-accent-generated-reference.webp",
+      "sourceSha256": "10737ae3c9b7289b0a4261144f41cccb07d8b56c14d2a71a3dd494227a98649b",
+      "generationPrompt": "Fotografía de catálogo de eje homocinético completo izquierdo para Hyundai Accent, semieje nuevo con juntas y fuelles, fondo blanco puro, sin texto ni logotipos.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T17:35:35.368Z"
+    },
+    "GTI06018": {
+      "sku": "GTI06-018",
+      "name": "PUNTA EJE L/R. HD. TUCSON 4X2 23X27 DTS. SIN ABS (MECANICO) — GTI06-018",
+      "outputImage": "/catalogo-gti/generated/gti-gti06-018-punta-eje-l-r-hd-tucson-4x2-23x27-dts-sin-abs-mecanico-generated-reference.webp",
+      "sourceSha256": "b6483c50b8144e26bb424e1718aa2e9a33b362d1b9f28ff92664fb34195c907a",
+      "generationPrompt": "Fotografía de catálogo de kit de punta homocinética lado rueda Hyundai Tucson 4x2 mecánica, 23x27 estrías sin anillo ABS, fuelle y accesorios, fondo blanco.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T17:35:35.368Z"
+    },
+    "GTI06036": {
+      "sku": "GTI06-036",
+      "name": "EJE HOMOCINETICO IZQ. HD. VERNA/GYRO — GTI06-036",
+      "outputImage": "/catalogo-gti/generated/gti-gti06-036-eje-homocinetico-izq-hd-verna-gyro-generated-reference.webp",
+      "sourceSha256": "88949101c88c83f841237a6f756cbddd5af00231cd772b9851129e6ba3fe436f",
+      "generationPrompt": "Fotografía de catálogo de eje homocinético completo izquierdo para Hyundai Verna o Gyro, juntas, fuelles y anillo ABS, fondo blanco puro, sin marcas.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T17:35:35.368Z"
+    },
+    "GTI06045": {
+      "sku": "GTI06-045",
+      "name": "EJE HOMOCINETICO DER. HD. TUCSON 4X2 (AUTOMATICO) — GTI06-045",
+      "outputImage": "/catalogo-gti/generated/gti-gti06-045-eje-homocinetico-der-hd-tucson-4x2-automatico-generated-reference.webp",
+      "sourceSha256": "28cf0b1096fb88440fa07dd8da6bfa1e2667d253a580771c15f1e74b6a9dbd85",
+      "generationPrompt": "Fotografía de catálogo de eje homocinético completo derecho para Hyundai Tucson 4x2 automática, semieje robusto de SUV, fondo blanco puro, sin texto ni marcas.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T17:35:35.368Z"
+    },
+    "GTI06047": {
+      "sku": "GTI06-047",
+      "name": "EJE HOMOCINETICO DER. KIA SORENTO — GTI06-047",
+      "outputImage": "/catalogo-gti/generated/gti-gti06-047-eje-homocinetico-der-kia-sorento-generated-reference.webp",
+      "sourceSha256": "89613000b7e81406f5f6daca3288a6fd5948722b6855f043bd85ef32a85ee9c4",
+      "generationPrompt": "Fotografía de catálogo de eje homocinético completo derecho para Kia Sorento, semieje robusto de SUV con juntas y fuelles, fondo blanco, sin texto ni marcas.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T17:41:32.394Z"
+    },
+    "GTI06064": {
+      "sku": "GTI06-064",
+      "name": "EJE HOMOCINETICO IZQ. HD. I-25 — GTI06-064",
+      "outputImage": "/catalogo-gti/generated/gti-gti06-064-eje-homocinetico-izq-hd-i-25-generated-reference.webp",
+      "sourceSha256": "5de0809605a3db963ad59ffb4a2e762032e435c7a2fdd48d3c82149f084fcc2a",
+      "generationPrompt": "Fotografía de catálogo de eje homocinético completo izquierdo para Hyundai i25, semieje compacto con juntas y fuelles, fondo blanco, sin texto ni marcas.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T17:41:32.395Z"
+    },
+    "GTI07006": {
+      "sku": "GTI07-006",
+      "name": "PUNTA EJE L/R. FIAT 147/ZASTAVA 20 DTS. — GTI07-006",
+      "outputImage": "/catalogo-gti/generated/gti-gti07-006-punta-eje-l-r-fiat-147-zastava-20-dts-generated-reference.webp",
+      "sourceSha256": "92e0e61f91b5580d53b50d986e37136d9504035eee331cf7f603553131d8c6cc",
+      "generationPrompt": "Fotografía de catálogo de kit de punta homocinética lado rueda para Fiat 147 o Zastava, configuración de 20 estrías, fuelle y accesorios, fondo blanco.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T17:41:32.395Z"
+    },
+    "GTI07014": {
+      "sku": "GTI07-014",
+      "name": "PUNTA EJE L/R. TOYOTA COROLLA 1.8/1.6 AT/MT 02/24D — GTI07-014",
+      "outputImage": "/catalogo-gti/generated/gti-gti07-014-punta-eje-l-r-toyota-corolla-1-8-1-6-at-mt-02-24d-generated-reference.webp",
+      "sourceSha256": "697788a49d1de12bd5243e23372aadffe50999a17882d7b489d949edf90c3387",
+      "generationPrompt": "Fotografía de catálogo de kit de punta homocinética lado rueda para Toyota Corolla 1.6/1.8 2002+, configuración de 24 estrías, fondo blanco.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T17:41:32.395Z"
+    },
+    "GTI07025": {
+      "sku": "GTI07-025",
+      "name": "PUNTA EJE L/R. KIA SEPHIA 97/99 23 DTS. — GTI07-025",
+      "outputImage": "/catalogo-gti/generated/gti-gti07-025-punta-eje-l-r-kia-sephia-97-99-23-dts-generated-reference.webp",
+      "sourceSha256": "e0416979d095e8585ad353005bb8fe451d70408afb0f01bcab0f0cd5a756439c",
+      "generationPrompt": "Fotografía de catálogo de kit de punta homocinética lado rueda para Kia Sephia 1997-1999, 23 estrías, fuelle y accesorios, fondo blanco.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T17:41:32.395Z"
+    },
+    "GTI07051": {
+      "sku": "GTI07-051",
+      "name": "PUNTA EJE L/R. PEUGEOT 405 1.6 (90T) — GTI07-051",
+      "outputImage": "/catalogo-gti/generated/gti-gti07-051-punta-eje-l-r-peugeot-405-1-6-90t-generated-reference.webp",
+      "sourceSha256": "ac57954162ff82c356fa9427ba778e015615a180e8227b47833bf2c6c59132cd",
+      "generationPrompt": "Fotografía de catálogo de kit de punta homocinética lado rueda para Peugeot 405 1.6 con anillo ABS de 90 dientes, fuelle y accesorios, fondo blanco.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T17:41:32.395Z"
+    },
+    "GTI07054": {
+      "sku": "GTI07-054",
+      "name": "EJE HOMOCINETICO IZQ. PEUGEOT 306/405 — GTI07-054",
+      "outputImage": "/catalogo-gti/generated/gti-gti07-054-eje-homocinetico-izq-peugeot-306-405-generated-reference.webp",
+      "sourceSha256": "be4f95cb961ade87f4bcb389d735bb2a8c515e4a3c599f2b227bb5e640b61609",
+      "generationPrompt": "Fotografía de catálogo de eje homocinético completo izquierdo para Peugeot 306 o 405, junta exterior y tulipa interior cerrada sin cruceta, fondo blanco.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T17:41:32.395Z"
+    },
+    "GTI07060": {
+      "sku": "GTI07-060",
+      "name": "EJE HOMOCINETICO TOYOTA HILUX VIGO — GTI07-060",
+      "outputImage": "/catalogo-gti/generated/gti-gti07-060-eje-homocinetico-toyota-hilux-vigo-generated-reference.webp",
+      "sourceSha256": "0cb5f0a735c36e49157d6eec326b33b43da0e681aaf3827833d9ad818f9b3a5f",
+      "generationPrompt": "Fotografía de catálogo de eje homocinético completo para Toyota Hilux Vigo, semieje robusto de camioneta con juntas y fuelles, fondo blanco.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T17:41:32.395Z"
+    },
+    "GTI07062": {
+      "sku": "GTI07-062",
+      "name": "PUNTA EJE L/C. AVEO 1.6 EMOTION AUT. — GTI07-062",
+      "outputImage": "/catalogo-gti/generated/gti-gti07-062-punta-eje-l-c-aveo-1-6-emotion-aut-generated-reference.webp",
+      "sourceSha256": "a6c384b98bee36a11a98d005afe4e42cacbead44f6d7ed87035dd72cb4bff304",
+      "generationPrompt": "Fotografía de catálogo de kit de junta homocinética lado transmisión para Chevrolet Aveo 1.6 Emotion automática, tulipa, trípode, fuelle y accesorios, fondo blanco.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T17:46:21.799Z"
+    },
+    "GTI07103": {
+      "sku": "GTI07-103",
+      "name": "PUNTA EJE L/R. FORD FORTALEZA/150 EXPEDITION — GTI07-103",
+      "outputImage": "/catalogo-gti/generated/gti-gti07-103-punta-eje-l-r-ford-fortaleza-150-expedition-generated-reference.webp",
+      "sourceSha256": "71b187f96a6b960229e40bd0c10896056de6171a840417863216e20234dd0d3c",
+      "generationPrompt": "Fotografía de catálogo de kit de punta homocinética lado rueda reforzada para Ford F-150 o Expedition 4x4, fuelle y accesorios, fondo blanco.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T17:46:21.800Z"
+    },
+    "GTI07104": {
+      "sku": "GTI07-104",
+      "name": "PUNTA EJE L/C. FORD ECO SPORT 4X2 89/02 — GTI07-104",
+      "outputImage": "/catalogo-gti/generated/gti-gti07-104-punta-eje-l-c-ford-eco-sport-4x2-89-02-generated-reference.webp",
+      "sourceSha256": "da84790914e86a1eefb1042d647e48d538e3e3e9a0d7858b99103f4d5442b39f",
+      "generationPrompt": "Fotografía de catálogo de kit de junta homocinética lado transmisión para Ford EcoSport 4x2, tulipa, trípode, fuelle y accesorios, fondo blanco.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T17:46:21.800Z"
+    },
+    "GTI07112": {
+      "sku": "GTI07-112",
+      "name": "PUNTA EJE L/C. IZQ. FORD FIESTA/CHARGER — GTI07-112",
+      "outputImage": "/catalogo-gti/generated/gti-gti07-112-punta-eje-l-c-izq-ford-fiesta-charger-generated-reference.webp",
+      "sourceSha256": "172718b30910d77046164570809d233dabd14db45b93a24297ad3327f43bdf06",
+      "generationPrompt": "Fotografía de catálogo de kit de junta homocinética izquierda lado transmisión para Ford Fiesta/Charger, tulipa, trípode y fuelle, fondo blanco.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T17:46:21.800Z"
+    },
+    "GTI07149": {
+      "sku": "GTI07-149",
+      "name": "PUNTA EJE L/C. VOLKSWAGEN PANEL T5 2011/ (HEMBRA LARGA) — GTI07-149",
+      "outputImage": "/catalogo-gti/generated/gti-gti07-149-punta-eje-l-c-volkswagen-panel-t5-2011-hembra-larga-generated-reference.webp",
+      "sourceSha256": "315f9cd66127e9772c85558de56441707c90202e2ea6f7b298de9e8e561cfbef",
+      "generationPrompt": "Fotografía de catálogo de kit de junta homocinética lado transmisión tipo hembra larga para Volkswagen Panel T5 2011+, fondo blanco.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T17:46:21.800Z"
+    },
+    "GTI07153": {
+      "sku": "GTI07-153",
+      "name": "PUNTA EJE L/R. NISSAN X-TRAIL — GTI07-153",
+      "outputImage": "/catalogo-gti/generated/gti-gti07-153-punta-eje-l-r-nissan-x-trail-generated-reference.webp",
+      "sourceSha256": "f1e39f90ca98a37b6d416a04a3a93b336a52dc095e20687151eb53bb590878aa",
+      "generationPrompt": "Fotografía de catálogo de kit de punta homocinética lado rueda para Nissan X-Trail con anillo ABS, fuelle y accesorios, fondo blanco.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T17:46:21.800Z"
+    },
+    "GTI07154": {
+      "sku": "GTI07-154",
+      "name": "EJE HOMOCINETICO DER. MITSUBISHI SPORTERO — GTI07-154",
+      "outputImage": "/catalogo-gti/generated/gti-gti07-154-eje-homocinetico-der-mitsubishi-sportero-generated-reference.webp",
+      "sourceSha256": "f37a6141c5b187534a5928df6bbcd8433c7fe1c5a9c00cbfac45ebacd18ea9da",
+      "generationPrompt": "Fotografía de catálogo de eje homocinético completo derecho para Mitsubishi Sportero/L200, semieje 4x4 largo con juntas cerradas, fondo blanco.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T17:46:21.800Z"
+    },
+    "GTI07155": {
+      "sku": "GTI07-155",
+      "name": "EJE HOMOCINETICO IZQ. MITSUBISHI SPORTERO — GTI07-155",
+      "outputImage": "/catalogo-gti/generated/gti-gti07-155-eje-homocinetico-izq-mitsubishi-sportero-generated-reference.webp",
+      "sourceSha256": "c00a5126017f19f73a7b101c1125bce4518ec70613d526512b3f3f84021fa2f5",
+      "generationPrompt": "Fotografía de catálogo de eje homocinético completo izquierdo para Mitsubishi Sportero/L200, semieje 4x4 corto distinto al derecho, fondo blanco.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T17:46:21.800Z"
+    },
+    "GTI07156": {
+      "sku": "GTI07-156",
+      "name": "PUNTA EJE L/R. MITSUBISHI SPORTERO 33 DTS — GTI07-156",
+      "outputImage": "/catalogo-gti/generated/gti-gti07-156-punta-eje-l-r-mitsubishi-sportero-33-dts-generated-reference.webp",
+      "sourceSha256": "14bf2395c0747f3c4e1940cd4f5a1e2e6e1f8c701a891b266379a2ad0c32e6f7",
+      "generationPrompt": "Fotografía de catálogo de kit de punta homocinética lado rueda reforzada para Mitsubishi Sportero/L200, 33 estrías, fuelle y accesorios, fondo blanco.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T17:48:48.229Z"
+    },
+    "GTI07160": {
+      "sku": "GTI07-160",
+      "name": "PUNTA EJE L/R. NISSAN ALMERA — GTI07-160",
+      "outputImage": "/catalogo-gti/generated/gti-gti07-160-punta-eje-l-r-nissan-almera-generated-reference.webp",
+      "sourceSha256": "1832627389b42ad03bebeedc635b16fb295f8eb43663adb0e227aead7b8218ab",
+      "generationPrompt": "Fotografía de catálogo de kit de punta homocinética lado rueda para Nissan Almera con anillo ABS, fuelle y accesorios, fondo blanco.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T17:48:48.230Z"
+    },
+    "GTI07179": {
+      "sku": "GTI07-179",
+      "name": "PUNTA EJE L/R. CHEVY — GTI07-179",
+      "outputImage": "/catalogo-gti/generated/gti-gti07-179-punta-eje-l-r-chevy-generated-reference.webp",
+      "sourceSha256": "ce8b7bea4ee36ea0cfb5b83dfe2c55ea992f81aff68da2229dde686ba5c44bde",
+      "generationPrompt": "Fotografía de catálogo de kit de punta homocinética lado rueda para Chevrolet Chevy, fuelle, abrazaderas, tuerca y accesorios, fondo blanco.",
+      "imageStatus": "generated-reference-image",
+      "generatedAt": "2026-08-28T17:48:48.230Z"
+    }
+  }
+}

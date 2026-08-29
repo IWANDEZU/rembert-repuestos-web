@@ -2,6 +2,8 @@
 
 import { useCart } from "@/components/CartContext";
 import { useRouter } from "next/navigation";
+import { useEffect, useRef } from "react";
+import Image from "next/image";
 
 export default function CartDrawer() {
   const {
@@ -17,12 +19,33 @@ export default function CartDrawer() {
   } = useCart();
 
   const router = useRouter();
+  const closeButtonRef = useRef(null);
+
+  useEffect(() => {
+    if (!isCartOpen) return undefined;
+    const previouslyFocused = document.activeElement;
+    closeButtonRef.current?.focus();
+    const handleKeyDown = (event) => {
+      if (event.key === "Escape") closeCart();
+    };
+    window.addEventListener("keydown", handleKeyDown);
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown);
+      previouslyFocused?.focus?.();
+    };
+  }, [isCartOpen, closeCart]);
 
   if (!isMounted || !isCartOpen) return null;
 
   const handleCheckout = () => {
     closeCart();
     router.push("/checkout");
+  };
+
+  const handleClearCart = () => {
+    if (window.confirm("¿Vaciar el carrito? Esta acción eliminará los productos seleccionados.")) {
+      clearCart();
+    }
   };
 
   return (
@@ -43,6 +66,9 @@ export default function CartDrawer() {
     >
       <div
         onClick={(e) => e.stopPropagation()}
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="cart-drawer-title"
         style={{
           width: "100%",
           maxWidth: "420px",
@@ -69,12 +95,15 @@ export default function CartDrawer() {
         >
           <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
             <span style={{ fontSize: "1.4rem" }}>🛒</span>
-            <h2 style={{ fontSize: "1.2rem", margin: 0, color: "#fff" }}>
+            <h2 id="cart-drawer-title" style={{ fontSize: "1.2rem", margin: 0, color: "#fff" }}>
               Carrito de Compras ({cartCount})
             </h2>
           </div>
           <button
+            ref={closeButtonRef}
+            type="button"
             onClick={closeCart}
+            aria-label="Cerrar carrito"
             style={{
               background: "transparent",
               border: "none",
@@ -125,7 +154,7 @@ export default function CartDrawer() {
           ) : (
             cart.map((item) => (
               <div
-                key={item.id}
+                key={item.cartKey || item.id}
                 style={{
                   display: "flex",
                   gap: "12px",
@@ -136,26 +165,37 @@ export default function CartDrawer() {
                   alignItems: "center",
                 }}
               >
-                <img
-                  src={item.image || "/logo.png"}
-                  alt={item.name}
+                <div
                   style={{
+                    position: "relative",
                     width: "60px",
                     height: "60px",
-                    objectFit: "contain",
+                    flexShrink: 0,
                     background: "#fff",
                     borderRadius: "6px",
                     padding: "4px",
+                    overflow: "hidden",
                   }}
-                />
+                >
+                  <Image
+                    src={item.image || "/logo.png"}
+                    alt={item.name}
+                    fill
+                    sizes="60px"
+                    style={{ objectFit: "contain" }}
+                  />
+                </div>
 
-                <div style={{ flex: 1 }}>
+                <div style={{ flex: 1, minWidth: 0 }}>
                   <div
                     style={{
                       fontSize: "0.9rem",
                       fontWeight: "bold",
                       marginBottom: "4px",
                       color: "#fff",
+                      whiteSpace: "nowrap",
+                      overflow: "hidden",
+                      textOverflow: "ellipsis",
                     }}
                   >
                     {item.name}
@@ -184,7 +224,9 @@ export default function CartDrawer() {
                       }}
                     >
                       <button
-                        onClick={() => updateQuantity(item.id, item.quantity - 1)}
+                        type="button"
+                        onClick={() => updateQuantity(item.cartKey || item.id, item.quantity - 1)}
+                        aria-label={`Reducir cantidad de ${item.name}`}
                         style={{
                           background: "transparent",
                           color: "#fff",
@@ -206,7 +248,10 @@ export default function CartDrawer() {
                         {item.quantity}
                       </span>
                       <button
-                        onClick={() => updateQuantity(item.id, item.quantity + 1)}
+                        type="button"
+                        onClick={() => updateQuantity(item.cartKey || item.id, item.quantity + 1)}
+                        aria-label={`Aumentar cantidad de ${item.name}`}
+                        disabled={Number.isFinite(Number(item.stock)) && item.quantity >= Number(item.stock)}
                         style={{
                           background: "transparent",
                           color: "#fff",
@@ -221,7 +266,8 @@ export default function CartDrawer() {
                     </div>
 
                     <button
-                      onClick={() => removeFromCart(item.id)}
+                      type="button"
+                      onClick={() => removeFromCart(item.cartKey || item.id)}
                       style={{
                         background: "transparent",
                         border: "none",
@@ -280,11 +326,12 @@ export default function CartDrawer() {
                 cursor: "pointer",
               }}
             >
-              🚀 COMPLETAR PEDIDO (WHATSAPP / EMAIL)
+              🚀 COMPLETAR PEDIDO POR WHATSAPP
             </button>
 
             <button
-              onClick={clearCart}
+              type="button"
+              onClick={handleClearCart}
               style={{
                 background: "transparent",
                 border: "none",

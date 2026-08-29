@@ -1,0 +1,17 @@
+[
+  {
+    "sku": "GTI01-039",
+    "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-generated-sources\\GTI01-039-generated.png",
+    "generation_prompt": "Photorealistic catalog reference for GTI01-039: wheel-side outer CV joint kit for Renault Laguna with documented 23 x 29 spline configuration; joint, boot, axle nut, clamps, grease and circlip; no ABS ring because the exact source does not specify ABS; specifications contrasted against the exact Imotriz GTI SKU page and historical GTI catalog; pure white background, no text, logo or watermark."
+  },
+  {
+    "sku": "GTI01-045",
+    "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-generated-sources\\GTI01-045-generated.png",
+    "generation_prompt": "Photorealistic catalog reference for GTI01-045: complete right front CV axle for Renault Duster / Oroch 4x4 2.0 automatic with documented 25 x 26 spline configuration; closed transmission-side plunge housing, inner and outer boots, robust connecting shaft and wheel-side spline; no ABS ring, support bearing, transmission gender or asserted length because the exact source does not specify them; specifications contrasted against the exact Imotriz GTI SKU page and historical GTI catalog; pure white background, no text, logo or watermark."
+  },
+  {
+    "sku": "GTI01-074",
+    "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-generated-sources\\GTI01-074-generated.png",
+    "generation_prompt": "Photorealistic catalog reference for GTI01-074: wheel-side outer CV joint kit for Renault Logan / Sandero New automatic with documented 23 x 30 spline configuration; joint, boot, axle nut, clamps, grease and circlip; no ABS ring because the exact source does not specify ABS; specifications contrasted against the exact Imotriz GTI SKU page and historical GTI catalog; pure white background, no text, logo or watermark."
+  }
+]

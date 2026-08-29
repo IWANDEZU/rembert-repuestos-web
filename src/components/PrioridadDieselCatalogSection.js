@@ -67,17 +67,17 @@ export default function PrioridadDieselCatalogSection({ activeCategory }) {
       id="coleccion-prioridad-diesel"
       style={{
         background: "var(--card-dark)",
-        borderRadius: "var(--border-radius)",
-        padding: "2rem",
+        borderRadius: "12px",
+        padding: "1.25rem 1.5rem",
         border: "1px solid var(--border-color)",
-        marginBottom: "3rem",
+        marginBottom: "1.75rem",
       }}
     >
       {/* Banner / Header de la Colección */}
-      <div style={{ borderBottom: "1px solid var(--border-color)", paddingBottom: "1.2rem", marginBottom: "1.5rem" }}>
-        <div style={{ display: "flex", alignItems: "center", gap: "10px", marginBottom: "0.5rem" }}>
-          <span style={{ fontSize: "1.8rem" }}>🛠️</span>
-          <h2 style={{ fontSize: "1.8rem", color: "#fff", margin: 0 }}>
+      <div style={{ borderBottom: "1px solid var(--border-color)", paddingBottom: "0.85rem", marginBottom: "1rem" }}>
+        <div style={{ display: "flex", alignItems: "center", gap: "10px", marginBottom: "0.35rem" }}>
+          <span style={{ fontSize: "1.4rem" }}>🛠️</span>
+          <h2 style={{ fontSize: "1.35rem", color: "#fff", margin: 0 }}>
             {activeCategory === "filtros"
               ? "Colección: Filtros Diésel (Referencias Prioritarias)"
               : activeCategory === "frenos-y-suspension"
@@ -220,13 +220,7 @@ export default function PrioridadDieselCatalogSection({ activeCategory }) {
           </button>
         </div>
       ) : (
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))",
-            gap: "1.5rem",
-          }}
-        >
+        <div className="catalog-grid">
           {filteredProducts.map((product, idx) => (
             <PrioridadDieselCard
               key={product.id}

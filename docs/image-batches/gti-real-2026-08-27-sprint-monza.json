@@ -1,0 +1,41 @@
+[
+  {
+    "sku": "GTI04-003",
+    "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI04-003-pedbox.JPG",
+    "sources": [
+      "https://www.imotriz.com/producto/3a2057194426f3f82688e441b9b66930/gti04-003/punta-eje-l-r-monza-1-8-2-0-33x25",
+      "https://app.pedbox.co:7777/imagenes_catalogo/15/04I09005.JPG"
+    ],
+    "exact_reference_confirmed": true,
+    "usage_authorized": true,
+    "source_type": "authorized-distributor",
+    "source_image_clean": true,
+    "reference_evidence": "La ficha JSON-LD exacta identifica marca GTI, referencia GTI04-003 y configuración 33X25 para Chevrolet Monza 1.8/2.0; enlaza directamente la fotografía 04I09005. Revisión visual 2026-08-27: kit real individual con junta, fuelle, grasa, seguros y abrazaderas sobre fondo blanco."
+  },
+  {
+    "sku": "GTI04-004",
+    "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI04-004-pedbox.png",
+    "sources": [
+      "https://www.imotriz.com/producto/7609cf26141b185ee0984edded459bb5/gti04-004/punta-eje-l-r-sprint-t-ntn-pin-int-23x19",
+      "https://app.pedbox.co:7777/imagenes_catalogo/15/04I09006.png"
+    ],
+    "exact_reference_confirmed": true,
+    "usage_authorized": true,
+    "source_type": "authorized-distributor",
+    "source_image_clean": true,
+    "reference_evidence": "La ficha JSON-LD exacta identifica marca GTI, referencia GTI04-004, tipo NTN, pin interno y configuración 23X19 para Chevrolet Sprint; enlaza directamente la fotografía 04I09006. Revisión visual 2026-08-27: junta real individual sobre fondo blanco."
+  },
+  {
+    "sku": "GTI04-005",
+    "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI04-005-pedbox.png",
+    "sources": [
+      "https://www.imotriz.com/producto/639bf7b689918bf3e10e7777282a8494/gti04-005/punta-eje-l-r-sprint-t-th-pin-ext-23x20",
+      "https://app.pedbox.co:7777/imagenes_catalogo/15/04I09001.png"
+    ],
+    "exact_reference_confirmed": true,
+    "usage_authorized": true,
+    "source_type": "authorized-distributor",
+    "source_image_clean": true,
+    "reference_evidence": "La ficha JSON-LD exacta identifica marca GTI, referencia GTI04-005, tipo TH, pin externo y configuración 23X20 para Chevrolet Sprint; enlaza directamente la fotografía 04I09001. Revisión visual 2026-08-27: kit real individual con junta, fuelle, grasa, seguro, pasador y abrazaderas sobre fondo blanco."
+  }
+]

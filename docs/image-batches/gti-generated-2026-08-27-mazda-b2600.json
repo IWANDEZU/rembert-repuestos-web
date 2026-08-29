@@ -1,0 +1,17 @@
+[
+  {
+    "sku": "GTI03-001",
+    "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-generated-sources\\GTI03-001-generated.png",
+    "generation_prompt": "Photorealistic catalog reference for GTI03-001: female transmission-side inner CV joint kit for Mazda B2600, documented 26x25 configuration, recessed female splined bore, heavy-duty tulip housing, tripod bearing, inner boot, clamps and circlip; specification contrasted against the exact Imotriz SKU page and historical GTI catalog; pure white background, no text, logo or watermark."
+  },
+  {
+    "sku": "GTI03-002",
+    "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-generated-sources\\GTI03-002-generated.png",
+    "generation_prompt": "Photorealistic catalog reference for GTI03-002: male transmission-side inner CV joint kit for Mazda B2600, documented 26x25 configuration, short protruding male splined shaft, heavy-duty tulip housing, tripod bearing, inner boot, clamps and circlip; specification contrasted against the exact Imotriz SKU page and historical GTI catalog; pure white background, no text, logo or watermark."
+  },
+  {
+    "sku": "GTI03-024",
+    "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-generated-sources\\GTI03-024-generated.png",
+    "generation_prompt": "Photorealistic catalog reference for GTI03-024: wheel-side outer CV joint kit for Mazda B2600 through 2000, pin interno, documented 26 external x 25 internal spline configuration, no ABS ring, outer boot, axle nut, clamps, grease sachet and circlip; specification contrasted against exact MercadoLibre and Imotriz SKU pages plus the historical GTI catalog; pure white background, no text, logo or watermark."
+  }
+]

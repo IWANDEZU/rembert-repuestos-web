@@ -1,0 +1,17 @@
+[
+  {
+    "sku": "GTI03-025",
+    "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-generated-sources\\GTI03-025-generated.png",
+    "generation_prompt": "Photorealistic catalog reference for GTI03-025: complete right front CV axle assembly for Mazda 323 with documented 24 x 24 spline configuration; fully assembled closed transmission-side plunge housing, inner and outer boots, connecting shaft and threaded wheel-side spline; no ABS ring because the exact source does not specify ABS, and no asserted length; specifications contrasted against the exact Imotriz GTI SKU page and historical GTI catalog; pure white background, no text, logo or watermark."
+  },
+  {
+    "sku": "GTI03-027",
+    "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-generated-sources\\GTI03-027-generated.png",
+    "generation_prompt": "Photorealistic catalog reference for GTI03-027: wheel-side outer CV joint kit for Mazda 626 Asahi with documented external retaining pin and 26 x 25 spline configuration; joint, boot, nut, clamps, grease and circlip; no ABS ring because the exact source does not specify ABS; specifications contrasted against the exact Imotriz GTI SKU page and historical GTI catalog; pure white background, no text, logo or watermark."
+  },
+  {
+    "sku": "GTI03-048",
+    "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-generated-sources\\GTI03-048-generated.png",
+    "generation_prompt": "Photorealistic catalog reference for GTI03-048: complete right front CV axle assembly for Mazda BT-50 gasoline, male transmission connection and documented 26 x 26 spline configuration; closed transmission-side plunge housing with protruding male spline, inner and outer boots, connecting shaft and threaded wheel-side spline; no ABS ring, support bearing or asserted length because the exact source does not specify them; specifications contrasted against the exact Imotriz GTI SKU page and historical GTI catalog; pure white background, no text, logo or watermark."
+  }
+]

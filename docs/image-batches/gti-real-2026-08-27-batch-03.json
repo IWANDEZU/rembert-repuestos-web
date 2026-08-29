@@ -1,0 +1,22 @@
+[
+  {
+    "sku": "GTI01-034",
+    "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-source-previews\\GTI01-034.png",
+    "sources": ["https://www.imotriz.com/producto/3/GTI01-034-/"],
+    "exact_reference_confirmed": true,
+    "usage_authorized": true,
+    "reference_evidence": "La ficha Product JSON-LD declara marca GTI y SKU GTI01-034; el grabado GTI01-034 es visible en la pieza con corona ABS de 35 dientes.",
+    "source_type": "authorized-distributor",
+    "source_image_clean": true
+  },
+  {
+    "sku": "GTI01-061",
+    "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-source-previews\\GTI01-061.png",
+    "sources": ["https://www.imotriz.com/producto/3/GTI01-061-/"],
+    "exact_reference_confirmed": true,
+    "usage_authorized": true,
+    "reference_evidence": "La ficha Product JSON-LD declara marca GTI y SKU GTI01-061; la fotografía limpia muestra la punta lado rueda completa con guardapolvo, seguro, grasa y abrazaderas.",
+    "source_type": "authorized-distributor",
+    "source_image_clean": true
+  }
+]

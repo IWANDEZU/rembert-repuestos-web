@@ -1,0 +1,82 @@
+[
+  {
+    "sku": "GTI04-100",
+    "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI04-100-imotriz.png",
+    "sources": ["https://www.imotriz.com/producto/3/GTI04-100-/", "https://app.pedbox.co:7777/imagenes_catalogo/15/04I09110.png"],
+    "exact_reference_confirmed": true,
+    "usage_authorized": true,
+    "source_type": "authorized-distributor",
+    "source_image_clean": true,
+    "reference_evidence": "Ficha exacta GTI04-100: punta lado rueda Suzuki Alto MN K10 1.0 desde 2013, 20 dientes; imagen 04I09110. Kit real aislado sobre blanco, sin marca de agua."
+  },
+  {
+    "sku": "GTI06-008",
+    "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI06-008-imotriz.png",
+    "sources": ["https://www.imotriz.com/producto/3/GTI06-008-/", "https://app.pedbox.co:7777/imagenes_catalogo/15/06I09003.png"],
+    "exact_reference_confirmed": true,
+    "usage_authorized": true,
+    "source_type": "authorized-distributor",
+    "source_image_clean": true,
+    "reference_evidence": "Ficha exacta GTI06-008: punta lado caja Hyundai Accent/Verna/Gyro/Excel y Mitsubishi Lancer, 25X22. Junta y kit reales sobre blanco."
+  },
+  {
+    "sku": "GTI06-013",
+    "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI06-013-imotriz.png",
+    "sources": ["https://www.imotriz.com/producto/3/GTI06-013-/", "https://app.pedbox.co:7777/imagenes_catalogo/15/06I09018.png"],
+    "exact_reference_confirmed": true,
+    "usage_authorized": true,
+    "source_type": "authorized-distributor",
+    "source_image_clean": true,
+    "reference_evidence": "Ficha exacta GTI06-013: punta lado caja Hyundai Atos/Chevrolet Spark/Cronos, cuerpo largo 22X19. Referencia grabada y kit real sin marca de agua."
+  },
+  {
+    "sku": "GTI06-015",
+    "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI06-015-imotriz.png",
+    "sources": ["https://www.imotriz.com/producto/3/GTI06-015-/", "https://app.pedbox.co:7777/imagenes_catalogo/15/06I09001.png"],
+    "exact_reference_confirmed": true,
+    "usage_authorized": true,
+    "source_type": "authorized-distributor",
+    "source_image_clean": true,
+    "reference_evidence": "Ficha exacta GTI06-015: eje homocinético izquierdo Hyundai Atos, 25X22. Semieje completo real sobre blanco."
+  },
+  {
+    "sku": "GTI06-016",
+    "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI06-016-imotriz.png",
+    "sources": ["https://www.imotriz.com/producto/3/GTI06-016-/", "https://app.pedbox.co:7777/imagenes_catalogo/15/06I09009.png"],
+    "exact_reference_confirmed": true,
+    "usage_authorized": true,
+    "source_type": "authorized-distributor",
+    "source_image_clean": true,
+    "reference_evidence": "Ficha exacta GTI06-016: eje homocinético derecho Hyundai Atos, 25X22. Semieje completo real y visualmente distinto al izquierdo."
+  },
+  {
+    "sku": "GTI06-017",
+    "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI06-017-imotriz.png",
+    "sources": ["https://www.imotriz.com/producto/3/GTI06-017-/", "https://app.pedbox.co:7777/imagenes_catalogo/15/06I09020.png"],
+    "exact_reference_confirmed": true,
+    "usage_authorized": true,
+    "source_type": "authorized-distributor",
+    "source_image_clean": true,
+    "reference_evidence": "Ficha exacta GTI06-017: punta lado rueda Hyundai Tucson 4X2 automática, 27X25. Junta y kit reales, referencia grabada."
+  },
+  {
+    "sku": "GTI06-020",
+    "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI06-020-imotriz.png",
+    "sources": ["https://www.imotriz.com/producto/3/GTI06-020-/", "https://app.pedbox.co:7777/imagenes_catalogo/15/06I09023.png"],
+    "exact_reference_confirmed": true,
+    "usage_authorized": true,
+    "source_type": "authorized-distributor",
+    "source_image_clean": true,
+    "reference_evidence": "Ficha exacta GTI06-020: punta lado rueda Hyundai Tucson 4X4 con ABS, 27X25. Junta real con anillo ABS sobre blanco."
+  },
+  {
+    "sku": "GTI06-021",
+    "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI06-021-imotriz.JPG",
+    "sources": ["https://www.imotriz.com/producto/3/GTI06-021-/", "https://app.pedbox.co:7777/imagenes_catalogo/15/06I09026.JPG"],
+    "exact_reference_confirmed": true,
+    "usage_authorized": true,
+    "source_type": "authorized-distributor",
+    "source_image_clean": true,
+    "reference_evidence": "Ficha exacta GTI06-021: punta lado rueda Hyundai Santa Fe 2.7 2002-2010, 27X26. Junta real con anillo ABS sobre blanco."
+  }
+]

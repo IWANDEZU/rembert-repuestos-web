@@ -8,9 +8,12 @@ export default function ContactForm() {
     name: "",
     phone: "",
     email: "",
-    subject: "Consulta de Productos / Cotización",
+    vehicle: "",
+    subject: "Consulta de Repuestos / Cotización",
     message: "",
   });
+
+  const [submitted, setSubmitted] = useState(false);
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -18,68 +21,100 @@ export default function ContactForm() {
 
   const handleSendWhatsApp = (e) => {
     e.preventDefault();
-    if (!formData.name || !formData.message) {
+    if (!formData.name.trim() || !formData.message.trim()) {
       return alert("Por favor ingresa tu nombre y mensaje.");
     }
 
     const text =
-      `💬 *NUEVA CONSULTA - REMBERT*\n` +
+      `💬 *NUEVA CONSULTA - REMBERT REPUESTOS*\n` +
       `--------------------------------\n` +
-      `👤 *Nombre:* ${formData.name}\n` +
-      `📱 *Teléfono:* ${formData.phone || "No especificado"}\n` +
-      `✉️ *Email:* ${formData.email || "No especificado"}\n` +
-      (formData.vehicle ? `🚗 *Vehículo / Modelo:* ${formData.vehicle}\n` : "") +
-      `📝 *Mensaje:* ${formData.message}\n` +
+      `👤 *Nombre:* ${formData.name.trim()}\n` +
+      `📱 *Teléfono:* ${formData.phone.trim() || "No especificado"}\n` +
+      `✉️ *Email:* ${formData.email.trim() || "No especificado"}\n` +
+      (formData.vehicle.trim() ? `🚗 *Vehículo / Modelo:* ${formData.vehicle.trim()}\n` : "") +
+      `📋 *Asunto:* ${formData.subject}\n` +
+      `📝 *Mensaje:* ${formData.message.trim()}\n` +
       `--------------------------------\n` +
-      `Enviado desde el formulario de contacto web.`;
+      `Enviado desde el portal web oficial.`;
 
+    setSubmitted(true);
+    setTimeout(() => setSubmitted(false), 4000);
     window.open(getWhatsAppUrl(text), "_blank", "noopener,noreferrer");
   };
 
   const handleSendEmail = (e) => {
     e.preventDefault();
-    if (!formData.name || !formData.message) {
+    if (!formData.name.trim() || !formData.message.trim()) {
       return alert("Por favor ingresa tu nombre y mensaje.");
     }
 
     const body =
       `NUEVA CONSULTA DESDE LA WEB - REMBERT\n` +
       `==================================================\n` +
-      `Nombre: ${formData.name}\n` +
-      `Teléfono: ${formData.phone || "No especificado"}\n` +
-      `Email: ${formData.email || "No especificado"}\n` +
+      `Nombre: ${formData.name.trim()}\n` +
+      `Teléfono: ${formData.phone.trim() || "No especificado"}\n` +
+      `Email: ${formData.email.trim() || "No especificado"}\n` +
+      (formData.vehicle.trim() ? `Vehículo / Modelo: ${formData.vehicle.trim()}\n` : "") +
       `Asunto: ${formData.subject}\n` +
       `==================================================\n` +
-      `Mensaje:\n${formData.message}\n` +
+      `Mensaje:\n${formData.message.trim()}\n` +
       `==================================================`;
 
     const mailUrl = getMailtoUrl({
       to: "repuestosrembertsa@gmail.com",
-      subject: `Consulta Web: ${formData.subject} (${formData.name})`,
+      subject: `Consulta Web: ${formData.subject} - ${formData.name.trim()}`,
       body,
     });
 
+    setSubmitted(true);
+    setTimeout(() => setSubmitted(false), 4000);
     window.location.href = mailUrl;
   };
 
   return (
     <div
+      className="glass-card-light"
       style={{
-        background: "var(--card-dark)",
-        padding: "3rem 2rem",
-        borderRadius: "12px",
-        boxShadow: "0 10px 30px rgba(0,0,0,0.2)",
-        border: "1px solid var(--border-color)",
+        padding: "clamp(1.25rem, 4vw, 2.2rem) clamp(1rem, 3vw, 1.8rem)",
+        background: "#FFFFFF",
+        border: "1.5px solid #E2E8F0",
       }}
     >
-      <h2 style={{ fontSize: "1.8rem", marginBottom: "1.5rem", color: "#fff" }}>
-        Envíanos un mensaje
-      </h2>
+      <div style={{ marginBottom: "1.5rem" }}>
+        <h2 style={{ fontSize: "1.5rem", color: "#0F172A", fontWeight: "800", marginBottom: "0.35rem" }}>
+          💬 Envíanos un Mensaje
+        </h2>
+        <p style={{ color: "#64748B", fontSize: "0.92rem", margin: 0 }}>
+          Diligencia tus datos y te responderemos en el menor tiempo posible.
+        </p>
+      </div>
 
-      <form style={{ display: "flex", flexDirection: "column", gap: "1.2rem" }}>
+      {submitted && (
+        <div
+          style={{
+            background: "#ECFDF5",
+            border: "1px solid #10B981",
+            color: "#065F46",
+            padding: "0.85rem 1rem",
+            borderRadius: "10px",
+            fontSize: "0.9rem",
+            fontWeight: "600",
+            marginBottom: "1.2rem",
+            display: "flex",
+            alignItems: "center",
+            gap: "0.5rem",
+          }}
+        >
+          <span>✅</span> ¡Mensaje preparado con éxito! Redirigiendo a tu canal seleccionado...
+        </div>
+      )}
+
+      <form style={{ display: "flex", flexDirection: "column", gap: "1.1rem" }}>
+        
+        {/* Nombre */}
         <div>
-          <label style={{ display: "block", marginBottom: "0.5rem", color: "#ccc", fontWeight: "500" }}>
-            Nombre Completo *
+          <label style={{ display: "block", marginBottom: "0.4rem", color: "#334155", fontWeight: "700", fontSize: "0.88rem" }}>
+            Nombre Completo <span style={{ color: "#EF4444" }}>*</span>
           </label>
           <input
             type="text"
@@ -87,43 +122,28 @@ export default function ContactForm() {
             value={formData.name}
             onChange={handleChange}
             required
-            placeholder="Tu nombre"
-            style={{
-              width: "100%",
-              padding: "0.8rem",
-              borderRadius: "6px",
-              border: "1px solid #444",
-              background: "#111",
-              color: "#fff",
-              fontSize: "1rem",
-            }}
+            placeholder="Ej: Carlos Rodríguez"
+            className="modern-contact-input"
           />
         </div>
 
-        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "1rem" }}>
+        {/* Teléfono y Correo */}
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 140px), 1fr))", gap: "0.85rem" }}>
           <div>
-            <label style={{ display: "block", marginBottom: "0.5rem", color: "#ccc", fontWeight: "500" }}>
+            <label style={{ display: "block", marginBottom: "0.4rem", color: "#334155", fontWeight: "700", fontSize: "0.88rem" }}>
               Teléfono / WhatsApp
             </label>
             <input
-              type="text"
+              type="tel"
               name="phone"
               value={formData.phone}
               onChange={handleChange}
-              placeholder="3101234567"
-              style={{
-                width: "100%",
-                padding: "0.8rem",
-                borderRadius: "6px",
-                border: "1px solid #444",
-                background: "#111",
-                color: "#fff",
-                fontSize: "1rem",
-              }}
+              placeholder="310 123 4567"
+              className="modern-contact-input"
             />
           </div>
           <div>
-            <label style={{ display: "block", marginBottom: "0.5rem", color: "#ccc", fontWeight: "500" }}>
+            <label style={{ display: "block", marginBottom: "0.4rem", color: "#334155", fontWeight: "700", fontSize: "0.88rem" }}>
               Correo Electrónico
             </label>
             <input
@@ -131,109 +151,101 @@ export default function ContactForm() {
               name="email"
               value={formData.email}
               onChange={handleChange}
-              placeholder="tu@email.com"
-              style={{
-                width: "100%",
-                padding: "0.8rem",
-                borderRadius: "6px",
-                border: "1px solid #444",
-                background: "#111",
-                color: "#fff",
-                fontSize: "1rem",
-              }}
+              placeholder="tu@correo.com"
+              className="modern-contact-input"
             />
           </div>
         </div>
 
+        {/* Vehículo / Modelo */}
         <div>
-          <label style={{ display: "block", marginBottom: "0.5rem", color: "#ccc", fontWeight: "500" }}>
-            Asunto
+          <label style={{ display: "block", marginBottom: "0.4rem", color: "#334155", fontWeight: "700", fontSize: "0.88rem" }}>
+            Vehículo o Repuesto Buscado <span style={{ color: "#64748B", fontWeight: "normal", fontSize: "0.8rem" }}>(Opcional)</span>
           </label>
           <input
             type="text"
-            name="subject"
-            value={formData.subject}
+            name="vehicle"
+            value={formData.vehicle}
             onChange={handleChange}
-            style={{
-              width: "100%",
-              padding: "0.8rem",
-              borderRadius: "6px",
-              border: "1px solid #444",
-              background: "#111",
-              color: "#fff",
-              fontSize: "1rem",
-            }}
+            placeholder="Ej: Chevrolet Spark GT 2018 - Pastillas de freno"
+            className="modern-contact-input"
           />
         </div>
 
+        {/* Asunto */}
         <div>
-          <label style={{ display: "block", marginBottom: "0.5rem", color: "#ccc", fontWeight: "500" }}>
-            Mensaje o Consulta *
+          <label style={{ display: "block", marginBottom: "0.4rem", color: "#334155", fontWeight: "700", fontSize: "0.88rem" }}>
+            Asunto o Motivo
+          </label>
+          <select
+            name="subject"
+            value={formData.subject}
+            onChange={handleChange}
+            className="modern-contact-input"
+            style={{ cursor: "pointer" }}
+          >
+            <option value="Consulta de Repuestos / Cotización">Cotización de Repuestos</option>
+            <option value="Asesoría Técnica de Compatibilidad">Asesoría Técnica de Compatibilidad</option>
+            <option value="Compras al Por Mayor / Talleres">Compras al Por Mayor / Talleres y Flotas</option>
+            <option value="Estado de Pedido o Envío">Estado de Pedido o Envío Nacional</option>
+            <option value="Otro Motivo">Otro Motivo</option>
+          </select>
+        </div>
+
+        {/* Mensaje */}
+        <div>
+          <label style={{ display: "block", marginBottom: "0.4rem", color: "#334155", fontWeight: "700", fontSize: "0.88rem" }}>
+            Mensaje o Consulta <span style={{ color: "#EF4444" }}>*</span>
           </label>
           <textarea
             name="message"
             value={formData.message}
             onChange={handleChange}
             required
-            placeholder="¿En qué te podemos ayudar? (Cotizaciones, repuestos específicos, asesoría técnica, etc.)"
+            placeholder="Escribe aquí los detalles del repuesto que necesitas (marca, modelo, año, cilindraje, referencia o duda)..."
             rows="4"
-            style={{
-              width: "100%",
-              padding: "0.8rem",
-              borderRadius: "6px",
-              border: "1px solid #444",
-              background: "#111",
-              color: "#fff",
-              fontSize: "1rem",
-              resize: "vertical",
-            }}
-          ></textarea>
+            className="modern-contact-input modern-contact-textarea"
+          />
         </div>
 
-        <div style={{ display: "flex", flexDirection: "column", gap: "10px", marginTop: "1rem" }}>
+        {/* Botones de Envío */}
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 160px), 1fr))", gap: "0.85rem", marginTop: "0.5rem" }}>
           <button
             type="button"
             onClick={handleSendWhatsApp}
-            style={{
-              background: "#25D366",
-              color: "white",
-              padding: "0.9rem",
-              border: "none",
-              borderRadius: "6px",
-              fontSize: "1rem",
-              fontWeight: "600",
-              cursor: "pointer",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              gap: "8px",
-            }}
+            className="btn-whatsapp-action"
+            style={{ padding: "0.85rem 1.2rem", fontSize: "0.95rem" }}
           >
-            💬 Enviar Mensaje por WhatsApp
+            <span>💬 Enviar por WhatsApp</span>
           </button>
 
           <button
             type="button"
             onClick={handleSendEmail}
             style={{
-              background: "#EA4335",
-              color: "white",
-              padding: "0.9rem",
+              background: "#0F172A",
+              color: "#FFFFFF",
+              padding: "0.85rem 1.2rem",
+              borderRadius: "10px",
               border: "none",
-              borderRadius: "6px",
-              fontSize: "1rem",
-              fontWeight: "600",
+              fontWeight: "700",
+              fontSize: "0.92rem",
               cursor: "pointer",
-              display: "flex",
+              display: "inline-flex",
               alignItems: "center",
               justifyContent: "center",
-              gap: "8px",
+              gap: "0.5rem",
+              transition: "all 0.2s ease",
             }}
+            onMouseOver={(e) => (e.currentTarget.style.background = "#1E293B")}
+            onMouseOut={(e) => (e.currentTarget.style.background = "#0F172A")}
           >
-            ✉️ Enviar Mensaje por Correo
+            <span>✉️ Enviar por Correo</span>
           </button>
         </div>
+
       </form>
     </div>
   );
 }
+

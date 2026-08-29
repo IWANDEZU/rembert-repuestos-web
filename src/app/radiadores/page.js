@@ -77,7 +77,7 @@ export default function RadiadoresPage() {
         style={{
           background: "linear-gradient(135deg, #101010 0%, #1a1a1a 100%)",
           color: "#ffffff",
-          padding: "4.5rem 1rem 5rem",
+          padding: "clamp(2.5rem, 6vw, 4.5rem) 1rem clamp(2.5rem, 5vw, 5rem)",
           position: "relative",
           overflow: "hidden",
           borderBottom: "4px solid var(--primary-color)",
@@ -87,8 +87,8 @@ export default function RadiadoresPage() {
           className="main-container"
           style={{
             display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))",
-            gap: "3rem",
+            gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 290px), 1fr))",
+            gap: "2.5rem",
             alignItems: "center",
             position: "relative",
             zIndex: 2,
@@ -102,10 +102,10 @@ export default function RadiadoresPage() {
                 gap: "0.5rem",
                 background: "var(--primary-color)",
                 color: "#111111",
-                padding: "0.4rem 1.1rem",
+                padding: "0.35rem 0.95rem",
                 borderRadius: "30px",
                 fontWeight: "900",
-                fontSize: "0.85rem",
+                fontSize: "clamp(0.75rem, 2.5vw, 0.85rem)",
                 marginBottom: "1.2rem",
                 letterSpacing: "0.5px",
                 boxShadow: "0 4px 15px rgba(255, 215, 0, 0.4)",
@@ -116,7 +116,7 @@ export default function RadiadoresPage() {
 
             <h1
               style={{
-                fontSize: "clamp(2.2rem, 5vw, 3.4rem)",
+                fontSize: "clamp(2rem, 5vw, 3.4rem)",
                 lineHeight: 1.15,
                 marginBottom: "1.2rem",
                 textTransform: "uppercase",
@@ -131,22 +131,22 @@ export default function RadiadoresPage() {
             <p
               style={{
                 color: "#E2E8F0",
-                fontSize: "1.1rem",
+                fontSize: "clamp(0.95rem, 2.5vw, 1.1rem)",
                 lineHeight: "1.6",
-                marginBottom: "2rem",
+                marginBottom: "1.75rem",
                 maxWidth: "600px",
               }}
             >
               Radiadores originales y homologados en aluminio para vehículos Chevrolet, Renault, camionetas y línea liviana. Máxima disipación térmica, asesoría técnica y envíos a todo el país.
             </p>
 
-            <div style={{ display: "flex", gap: "1rem", flexWrap: "wrap" }}>
+            <div style={{ display: "flex", gap: "0.85rem", flexWrap: "wrap" }}>
               <a
                 href="https://wa.me/573102420490?text=Hola%2C%20quisiera%20cotizar%20un%20radiador%20para%20mi%20veh%C3%ADculo.%20Indico%20marca%2C%20modelo%20y%20a%C3%B1o%3A"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn btn--primary"
-                style={{ padding: "0.95rem 2rem", fontSize: "0.95rem", fontWeight: "800" }}
+                style={{ padding: "0.85rem 1.75rem", fontSize: "0.92rem", fontWeight: "800" }}
               >
                 💬 COTIZAR MI RADIADOR POR WHATSAPP
               </a>
@@ -154,10 +154,10 @@ export default function RadiadoresPage() {
                 href="/catalogo?category=radiadores"
                 className="btn btn--outline"
                 style={{
-                  padding: "0.95rem 1.8rem",
+                  padding: "0.85rem 1.5rem",
                   color: "#ffffff",
                   borderColor: "rgba(255,255,255,0.6)",
-                  fontSize: "0.95rem",
+                  fontSize: "0.92rem",
                 }}
               >
                 VER PRODUCTOS EN CATÁLOGO →
@@ -167,30 +167,30 @@ export default function RadiadoresPage() {
             <div
               style={{
                 display: "flex",
-                gap: "1.5rem",
-                marginTop: "2.5rem",
-                paddingTop: "1.5rem",
+                gap: "1.25rem",
+                marginTop: "2rem",
+                paddingTop: "1.25rem",
                 borderTop: "1px solid rgba(255,255,255,0.15)",
                 flexWrap: "wrap",
               }}
             >
               <div>
-                <span style={{ color: "var(--primary-color)", fontWeight: "900", fontSize: "1.2rem", display: "block" }}>
+                <span style={{ color: "var(--primary-color)", fontWeight: "900", fontSize: "1.15rem", display: "block" }}>
                   100% Garantía
                 </span>
-                <span style={{ color: "#aaa", fontSize: "0.85rem" }}>Ajuste OEM perfecto</span>
+                <span style={{ color: "#aaa", fontSize: "0.82rem" }}>Ajuste OEM perfecto</span>
               </div>
               <div>
-                <span style={{ color: "var(--primary-color)", fontWeight: "900", fontSize: "1.2rem", display: "block" }}>
+                <span style={{ color: "var(--primary-color)", fontWeight: "900", fontSize: "1.15rem", display: "block" }}>
                   Envíos Rápidos
                 </span>
-                <span style={{ color: "#aaa", fontSize: "0.85rem" }}>A nivel nacional</span>
+                <span style={{ color: "#aaa", fontSize: "0.82rem" }}>A nivel nacional</span>
               </div>
               <div>
-                <span style={{ color: "var(--primary-color)", fontWeight: "900", fontSize: "1.2rem", display: "block" }}>
+                <span style={{ color: "var(--primary-color)", fontWeight: "900", fontSize: "1.15rem", display: "block" }}>
                   Barrancabermeja
                 </span>
-                <span style={{ color: "#aaa", fontSize: "0.85rem" }}>Entrega e instalación</span>
+                <span style={{ color: "#aaa", fontSize: "0.82rem" }}>Entrega e instalación</span>
               </div>
             </div>
           </div>
@@ -203,8 +203,8 @@ export default function RadiadoresPage() {
               overflow: "hidden",
               border: "2px solid rgba(255, 215, 0, 0.4)",
               boxShadow: "0 15px 40px rgba(0,0,0,0.6)",
-              minHeight: "360px",
-              height: "100%",
+              minHeight: "260px",
+              height: "clamp(240px, 40vw, 360px)",
             }}
           >
             <Image
@@ -283,8 +283,8 @@ export default function RadiadoresPage() {
           <div
             style={{
               display: "grid",
-              gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
-              gap: "2rem",
+              gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 270px), 1fr))",
+              gap: "1.5rem",
             }}
           >
             {radiatorCategories.map((cat) => (
@@ -302,7 +302,7 @@ export default function RadiadoresPage() {
                 }}
                 className="hover-card"
               >
-                <div style={{ position: "relative", height: "220px", background: "#181818" }}>
+                <div style={{ position: "relative", height: "clamp(180px, 35vw, 220px)", background: "#181818" }}>
                   <Image
                     src={cat.image}
                     alt={cat.title}
@@ -328,7 +328,7 @@ export default function RadiadoresPage() {
                   </span>
                 </div>
 
-                <div style={{ padding: "1.75rem", display: "flex", flexDirection: "column", flex: 1 }}>
+                <div style={{ padding: "clamp(1.25rem, 3vw, 1.75rem)", display: "flex", flexDirection: "column", flex: 1 }}>
                   <h3 style={{ fontSize: "1.25rem", fontWeight: "800", marginBottom: "0.6rem", color: "#111" }}>
                     {cat.title}
                   </h3>
@@ -396,7 +396,7 @@ export default function RadiadoresPage() {
       </section>
 
       {/* Compatibilidad por Marcas de Vehículo */}
-      <section className="section" style={{ background: "#FFFFFF", borderTop: "1px solid #E2E8F0", borderBottom: "1px solid #E2E8F0", padding: "4rem 1rem" }}>
+      <section className="section" style={{ background: "#FFFFFF", borderTop: "1px solid #E2E8F0", borderBottom: "1px solid #E2E8F0", padding: "clamp(2.5rem, 5vw, 4rem) 1rem" }}>
         <div className="main-container">
           <div style={{ textAlign: "center", marginBottom: "2.5rem" }}>
             <span
@@ -432,8 +432,8 @@ export default function RadiadoresPage() {
           <div
             style={{
               display: "grid",
-              gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))",
-              gap: "1.5rem",
+              gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 160px), 1fr))",
+              gap: "1.25rem",
             }}
           >
             {brandCompatibilities.map((b) => (

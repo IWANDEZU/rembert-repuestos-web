@@ -1,0 +1,12 @@
+[
+  {
+    "sku": "GTI01-017",
+    "image_source": "C:\\Users\\iwand\\.codex\\generated_images\\01a0406c-6bd0-7e61-8e9b-bc2f85d5a022\\exec-a7682347-cbca-49e3-8364-b6fea193f7e9.png",
+    "generation_prompt": "Photorealistic studio product reference of a front wheel-side outer CV joint for Renault Mégane / Clio II with a 44-tooth ABS tone ring, steel housing, black boot, metal bands, splined shaft and threaded wheel-end tip; white background, no text, no logo, no packaging. Fitment remains subject to VIN confirmation."
+  },
+  {
+    "sku": "GTI06-037",
+    "image_source": "C:\\Users\\iwand\\.codex\\generated_images\\01a0406c-6bd0-7e61-8e9b-bc2f85d5a022\\exec-f47182f7-5edf-427a-b4f4-fe1f6a0c0479.png",
+    "generation_prompt": "Photorealistic studio product reference of a gearbox-side inner CV tulip for Kia Rio Xcite / Cerato / Forte / Hyundai i25: open steel cup with internal roller tracks, splined bore and stem; white background, no boot, no text, no logo, no packaging. Fitment remains subject to VIN confirmation."
+  }
+]

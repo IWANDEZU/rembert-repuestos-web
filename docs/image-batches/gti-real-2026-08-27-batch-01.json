@@ -1,0 +1,38 @@
+[
+  {
+    "sku": "GTI01-001",
+    "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-source-previews\\GTI01-001.png",
+    "sources": [
+      "https://www.imotriz.com/producto/3/GTI01-001-/"
+    ],
+    "exact_reference_confirmed": true,
+    "usage_authorized": true,
+    "reference_evidence": "La ficha Product JSON-LD declara marca GTI e identificadores GTI01-001; la pieza fotografiada tiene el grabado GTI01-001 visible y coincide con una punta de eje lado rueda de 30 dientes.",
+    "source_type": "authorized-distributor",
+    "source_image_clean": true
+  },
+  {
+    "sku": "GTI01-003",
+    "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-source-previews\\GTI01-003.png",
+    "sources": [
+      "https://www.imotriz.com/producto/3/GTI01-003-/"
+    ],
+    "exact_reference_confirmed": true,
+    "usage_authorized": true,
+    "reference_evidence": "La ficha Product JSON-LD declara marca GTI e identificadores GTI01-003; la fotografía es distinta a las otras referencias y muestra la punta de eje completa con su kit sobre fondo blanco.",
+    "source_type": "authorized-distributor",
+    "source_image_clean": true
+  },
+  {
+    "sku": "GTI01-005",
+    "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-source-previews\\GTI01-005.png",
+    "sources": [
+      "https://www.imotriz.com/producto/3/GTI01-005-/"
+    ],
+    "exact_reference_confirmed": true,
+    "usage_authorized": true,
+    "reference_evidence": "La ficha Product JSON-LD declara marca GTI e identificadores GTI01-005; la fotografía muestra un eje homocinético completo izquierdo y no una punta genérica.",
+    "source_type": "authorized-distributor",
+    "source_image_clean": true
+  }
+]

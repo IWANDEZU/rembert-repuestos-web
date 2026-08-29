@@ -1,0 +1,44 @@
+[
+  {
+    "sku": "GTI04-016",
+    "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI04-016-pedbox.png",
+    "sources": ["https://www.imotriz.com/producto/c4e8f8d635996d0322fc116438a4ebd3/gti04-016/punta-eje-l-c-sprint-con-triceta-22x19", "https://app.pedbox.co:7777/imagenes_catalogo/15/04I09018.png"],
+    "exact_reference_confirmed": true, "usage_authorized": true, "source_type": "authorized-distributor", "source_image_clean": true,
+    "reference_evidence": "Ficha JSON-LD exacta GTI04-016: punta lado caja Sprint con triceta, 22X19; foto directa 04I09018. Revisión visual 2026-08-28: copa, fuelle y kit reales sobre blanco."
+  },
+  {
+    "sku": "GTI04-017",
+    "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI04-017-pedbox.png",
+    "sources": ["https://www.imotriz.com/producto/8381ebb6a4b34f05e888a568a7b9e6eb/gti04-017/punta-eje-l-r-luv-1-6-24x23", "https://app.pedbox.co:7777/imagenes_catalogo/15/04I09017.png"],
+    "exact_reference_confirmed": true, "usage_authorized": true, "source_type": "authorized-distributor", "source_image_clean": true,
+    "reference_evidence": "Ficha JSON-LD exacta GTI04-017: punta lado rueda LUV 1.6, 24X23; foto directa 04I09017. Revisión visual 2026-08-28: kit real individual sobre blanco."
+  },
+  {
+    "sku": "GTI04-020",
+    "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI04-020-pedbox.png",
+    "sources": ["https://www.imotriz.com/producto/979e3889054d18b2c0e5732dca84cdcc/gti04-020/punta-eje-l-r-chev-alto-wagon-r-23x19", "https://app.pedbox.co:7777/imagenes_catalogo/15/04I09021.png"],
+    "exact_reference_confirmed": true, "usage_authorized": true, "source_type": "authorized-distributor", "source_image_clean": true,
+    "reference_evidence": "Ficha JSON-LD exacta GTI04-020: punta lado rueda Chevrolet Alto/Wagon R, 23X19; foto directa 04I09021. La referencia GTI04-020 se observa grabada en la pieza; kit real sobre blanco."
+  },
+  {
+    "sku": "GTI04-021",
+    "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI04-021-pedbox.png",
+    "sources": ["https://www.imotriz.com/producto/3be0dea70bd389935bdbd95a5f9b72b6/gti04-021/punta-eje-l-r-swift-1-6-venezolano-23x22", "https://app.pedbox.co:7777/imagenes_catalogo/15/04I09022.png"],
+    "exact_reference_confirmed": true, "usage_authorized": true, "source_type": "authorized-distributor", "source_image_clean": true,
+    "reference_evidence": "Ficha JSON-LD exacta GTI04-021: punta lado rueda Swift 1.6 venezolano, 23X22; foto directa 04I09022. Revisión visual 2026-08-28: kit real individual sobre blanco."
+  },
+  {
+    "sku": "GTI04-022",
+    "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI04-022-pedbox.png",
+    "sources": ["https://www.imotriz.com/producto/491a0866c672d4e75a991a8c24bae0d1/gti04-022/triceta-eje-sprint-agujas-19", "https://app.pedbox.co:7777/imagenes_catalogo/15/04I09025.png"],
+    "exact_reference_confirmed": true, "usage_authorized": true, "source_type": "authorized-distributor", "source_image_clean": true,
+    "reference_evidence": "Ficha JSON-LD exacta GTI04-022: triceta de eje Sprint con agujas y 19 estrías; foto directa 04I09025. Revisión visual 2026-08-28: triceta real individual sobre blanco."
+  },
+  {
+    "sku": "GTI04-023",
+    "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-real-sources\\GTI04-023-pedbox.png",
+    "sources": ["https://www.imotriz.com/producto/b5ec6726ff69fe4e8dd56e88728f0464/gti04-023/punta-eje-l-r-vitara-26x22", "https://app.pedbox.co:7777/imagenes_catalogo/15/04I09029.png"],
+    "exact_reference_confirmed": true, "usage_authorized": true, "source_type": "authorized-distributor", "source_image_clean": true,
+    "reference_evidence": "Ficha JSON-LD exacta GTI04-023: punta lado rueda Vitara, 26X22; foto directa 04I09029. Revisión visual 2026-08-28: kit real individual sobre blanco."
+  }
+]

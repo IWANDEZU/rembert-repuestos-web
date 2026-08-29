@@ -1,0 +1,12 @@
+[
+  {
+    "sku": "GTI06-081",
+    "image_source": "C:\\Users\\iwand\\.codex\\generated_images\\01a0406c-6bd0-7e61-8e9b-bc2f85d5a022\\exec-4a89ba17-dc8d-47c1-982d-24c9da417bfe.png",
+    "generation_prompt": "Photorealistic studio product reference of a front wheel-side outer CV joint for Hyundai Eon: compact steel joint, black boot, metal bands, splined shaft and threaded wheel-end tip; white background, no ABS ring, no text, no logo, no packaging. Fitment remains subject to VIN confirmation."
+  },
+  {
+    "sku": "GTI06-012",
+    "image_source": "C:\\Users\\iwand\\.codex\\generated_images\\01a0406c-6bd0-7e61-8e9b-bc2f85d5a022\\exec-e48880f7-3c64-4d8d-962a-b02b13e6fb90.png",
+    "generation_prompt": "Photorealistic studio product reference of a front wheel-side outer CV joint for Kia Cerato / Forte: steel joint, black boot, metal bands, splined shaft and threaded wheel-end tip; white background, no ABS ring, no text, no logo, no packaging. Fitment remains subject to VIN confirmation."
+  }
+]

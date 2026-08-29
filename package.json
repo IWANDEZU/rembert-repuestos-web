@@ -14,11 +14,29 @@
     "sync:caterpillar": "node prisma/sync-caterpillar-products.js",
     "sync:priority-filters": "node prisma/upsert-priority-filters.js",
     "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
+    "dev:cloudflare": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
+    "preview:cloudflare:built": "opennextjs-cloudflare populateCache local && wrangler dev --local",
+    "verify:local": "npm run catalog:check && npm run check:fitments && npm run lint && npm run build",
     "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy",
     "upload": "opennextjs-cloudflare build && opennextjs-cloudflare upload",
     "analyze": "ANALYZE=true next build",
     "cf-typegen": "wrangler types --env-interface CloudflareEnv cloudflare-env.d.ts",
-    "check:fitments": "node scripts/validate-fitments.mjs"
+    "check:fitments": "node scripts/validate-fitments.mjs",
+    "catalog:import": "node scripts/import-product-batch.mjs",
+    "catalog:check": "node scripts/validate-automated-catalog.mjs",
+    "catalog:image-audit": "node scripts/audit-product-images.mjs",
+    "catalog:image-update": "node scripts/update-product-images.mjs",
+    "catalog:gti-sources": "node scripts/discover-gti-source-candidates.mjs",
+    "catalog:gti-images:check": "node scripts/verify-gti-image-coverage.mjs",
+    "catalog:gti-images:integrity": "node scripts/audit-gti-image-integrity.mjs",
+    "catalog:gti-photo-request": "node scripts/generate-gti-photo-intake.mjs",
+    "catalog:gti-candidate-drafts": "node scripts/generate-gti-candidate-photo-drafts.mjs",
+    "catalog:gti-photo-preview": "node scripts/fetch-gti-candidate-previews.mjs",
+    "catalog:gti-generated-image": "node scripts/apply-generated-gti-image.mjs",
+    "catalog:generated-image": "node scripts/apply-generated-product-image.mjs",
+    "catalog:gti-publication": "node scripts/audit-gti-publication.mjs",
+    "catalog:db:sync": "node --env-file=.env --import tsx scripts/sync-static-catalog-to-db.ts",
+    "catalog:architecture:check": "node --import tsx --test tests/catalog-architecture.test.ts"
   },
   "dependencies": {
     "@opennextjs/cloudflare": "^1.20.2",
@@ -34,17 +52,23 @@
     "pg": "8.16.3",
     "pg-cloudflare": "1.4.0",
     "react": "19.2.8",
-    "react-dom": "19.2.8"
+    "react-dom": "19.2.8",
+    "zod": "4.4.3"
   },
   "devDependencies": {
     "@libsql/client": "^0.17.4",
     "@next/bundle-analyzer": "^16.3.1",
     "@tailwindcss/postcss": "^4",
+    "@types/node": "22.20.1",
+    "@types/react": "19.2.18",
+    "@types/react-dom": "19.2.5",
     "dotenv": "^17.4.2",
     "eslint": "^9",
     "eslint-config-next": "16.3.0",
     "prisma": "6.12.0",
     "tailwindcss": "^4",
+    "tsx": "4.23.12",
+    "typescript": "5.9.3",
     "wrangler": "^4.125.0"
   }
 }

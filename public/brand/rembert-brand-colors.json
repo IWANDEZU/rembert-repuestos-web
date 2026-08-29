@@ -1,0 +1,18 @@
+{
+  "brand": "REMBERT REPUESTOS BCA",
+  "version": 2,
+  "colors": {
+    "primary": {
+      "name": "Amarillo REMBERT Vivo",
+      "hex": "#FFFF00",
+      "rgb": [255, 255, 0],
+      "usage": "Color oficial de máxima intensidad para logo plano, titulares, botones, subrayados y destellos"
+    },
+    "background": {
+      "name": "Negro REMBERT",
+      "hex": "#05080D",
+      "rgb": [5, 8, 13],
+      "usage": "Fondos principales y contraste del amarillo"
+    }
+  }
+}

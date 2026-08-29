@@ -1,0 +1,17 @@
+[
+  {
+    "sku": "GTI03-064",
+    "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-generated-sources\\GTI03-064-generated.png",
+    "generation_prompt": "Photorealistic catalog reference for GTI03-064: right gearbox-side female inner CV tulip for Mazda Allegro 1.3/1.6 2002–2009, with verified 28 x 29 spline configuration and 43 mm dimension; empty female cup with exactly three trefoil roller channels and central splined bore, plus one separate tripod, boot, clamps, circlip and grease sachet; specifications contrasted against the Imotriz 634090 page and the official Spicer 141-821 technical catalog; pure white background, no text, logo, packaging or watermark."
+  },
+  {
+    "sku": "GTI03-069",
+    "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-generated-sources\\GTI03-069-generated.png",
+    "generation_prompt": "Photorealistic catalog reference for GTI03-069: wheel-side outer CV joint for Mazda Demio 1996 onward, with verified 24 x 19 spline configuration, 52 mm joint dimension and one 44-tooth ABS tone ring; joint, boot, clamps, axle nut, circlip and grease sachet; no pin-style assertion because secondary catalogs disagree; specifications contrasted against the exact Imotriz GTI page, IPS Colombia catalog and technical measurements catalog; pure white background, no text, logo, packaging or watermark."
+  },
+  {
+    "sku": "GTI03-085",
+    "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-generated-sources\\GTI03-085-generated.png",
+    "generation_prompt": "Photorealistic catalog reference for GTI03-085: heavy-duty wheel-side outer CV joint for Mazda BT-50 3.2 and Ford Ranger 2.5 diesel 4x4, with exact verified 28 external x 26 internal spline configuration and external retaining-pin/circlip style; joint, thick boot, clamps, axle nut, external snap ring and grease sachet; no ABS ring because exact sources do not specify ABS; specifications contrasted against exact Imotriz and Mercado Libre GTI03-085 pages, with marketplace photos used only as reference and not copied; pure white background, no text, logo, packaging or watermark."
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "sku": "GTI04-068",
+    "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-generated-sources\\GTI04-068-generated-final.png",
+    "generation_prompt": "Fotografía de catálogo automotriz de un eje homocinético completo mecánico para Chevrolet Captiva 2.4, geometría fiel de semieje delantero, aislado sobre fondo blanco puro, iluminación de estudio, sin texto ni logotipos."
+  },
+  {
+    "sku": "GTI04-069",
+    "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-generated-sources\\GTI04-069-generated-final.png",
+    "generation_prompt": "Fotografía de catálogo de kit de punta homocinética lado rueda para Chevrolet Captiva, configuración de 24 estrías, junta, fuelle, abrazaderas y grasa, fondo blanco puro, sin texto ni logotipos."
+  },
+  {
+    "sku": "GTI04-073",
+    "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-generated-sources\\GTI04-073-generated-final.png",
+    "generation_prompt": "Fotografía de catálogo de kit de junta homocinética lado transmisión para Chevrolet Captiva, carcasa tipo tulipa, fuelle y accesorios, aislado en fondo blanco, sin texto ni marcas."
+  },
+  {
+    "sku": "GTI04-074",
+    "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-generated-sources\\GTI04-074-generated-final.png",
+    "generation_prompt": "Fotografía de catálogo de eje homocinético completo derecho para Chevrolet Corsa, semieje delantero con juntas y fuelles correctos, fondo blanco puro, sin texto ni logos."
+  },
+  {
+    "sku": "GTI04-078",
+    "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-generated-sources\\GTI04-078-generated-final.png",
+    "generation_prompt": "Fotografía de catálogo de eje homocinético trasero 4x4 de seis perforaciones para Chevrolet Grand Vitara, componente metálico fiel, aislado sobre blanco, sin texto ni logotipos."
+  },
+  {
+    "sku": "GTI04-094",
+    "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-generated-sources\\GTI04-094-generated-final.png",
+    "generation_prompt": "Fotografía de catálogo de kit de punta homocinética lado rueda de 34 estrías para Chevrolet Captiva 3.0, junta, fuelle y accesorios, fondo blanco puro, sin texto ni marcas."
+  },
+  {
+    "sku": "GTI04-095",
+    "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-generated-sources\\GTI04-095-generated-final.png",
+    "generation_prompt": "Fotografía de catálogo de eje homocinético completo izquierdo para Chevrolet Aveo, semieje delantero con proporciones y juntas fieles, fondo blanco puro, sin texto ni logotipos."
+  },
+  {
+    "sku": "GTI04-096",
+    "image_source": "E:\\REMBERT REPUESTOS WEB\\rembert-repuestos-web\\.catalog-cache\\gti-generated-sources\\GTI04-096-generated-final.png",
+    "generation_prompt": "Fotografía de catálogo de eje homocinético completo derecho para Chevrolet Aveo, semieje delantero distinto al izquierdo, fondo blanco puro, sin texto ni logotipos."
+  }
+]

@@ -1,6 +1,6 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "main": ".open-next/worker.js",
+  "main": "cloudflare-worker.js",
   "name": "rembert",
   "compatibility_date": "2026-08-20",
   "compatibility_flags": [
@@ -17,6 +17,24 @@
       "service": "rembert"
     }
   ],
+  "queues": {
+    "producers": [
+      {
+        "queue": "rembert-catalog-imports",
+        "binding": "CATALOG_IMPORT_QUEUE"
+      }
+    ],
+    "consumers": [
+      {
+        "queue": "rembert-catalog-imports",
+        "max_batch_size": 1,
+        "max_batch_timeout": 5,
+        "max_retries": 5,
+        "retry_delay": 30,
+        "dead_letter_queue": "rembert-catalog-imports-dlq"
+      }
+    ]
+  },
   "ratelimits": [
     {
       "name": "API_RATE_LIMITER",
