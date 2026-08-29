@@ -26,7 +26,11 @@ const nextConfig = {
   compress: true,
   poweredByHeader: false,
   outputFileTracingIncludes: {
-    "/*": ["./node_modules/pg-cloudflare/dist/**/*", "./node_modules/pg-cloudflare/esm/**/*"],
+    "/*": [
+      "./node_modules/pg-cloudflare/dist/**/*",
+      "./node_modules/pg-cloudflare/esm/**/*",
+      "./node_modules/.prisma/client/query_compiler_bg.wasm",
+    ],
   },
   images: {
     formats: ["image/avif", "image/webp"],
