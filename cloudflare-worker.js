@@ -20,6 +20,14 @@ const STATIC_CATEGORIES = new Set([
   "siliconas",
 ]);
 
+function redirectToCanonicalHost(request) {
+  const url = new URL(request.url);
+  if (url.hostname !== "www.rembertrepuestos.com") return null;
+
+  url.hostname = "rembertrepuestos.com";
+  return Response.redirect(url.toString(), 308);
+}
+
 function rewriteStaticCatalogCategory(request) {
   if (request.method !== "GET" && request.method !== "HEAD") return request;
 
@@ -44,6 +52,9 @@ function rewriteStaticCatalogCategory(request) {
 
 const worker = {
   fetch(request, env, ctx) {
+    const canonicalRedirect = redirectToCanonicalHost(request);
+    if (canonicalRedirect) return canonicalRedirect;
+
     return openNextWorker.fetch(rewriteStaticCatalogCategory(request), env, ctx);
   },
   async queue(batch, env, ctx) {

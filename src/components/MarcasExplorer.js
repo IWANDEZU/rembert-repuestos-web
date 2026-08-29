@@ -546,8 +546,8 @@ export default function MarcasExplorer() {
         style={{
           background: "linear-gradient(135deg, #161616 0%, #222222 100%)",
           borderRadius: "16px",
-          padding: "1.75rem 1.5rem",
-          marginBottom: "2rem",
+          padding: "clamp(1.25rem, 3.5vw, 1.75rem) clamp(0.85rem, 3vw, 1.5rem)",
+          marginBottom: "1.5rem",
           boxShadow: "0 8px 24px rgba(0,0,0,0.12)",
           color: "#FFFFFF",
           border: "1px solid rgba(255, 215, 0, 0.25)",
@@ -561,22 +561,24 @@ export default function MarcasExplorer() {
               color: "#FFD700",
               border: "1px solid rgba(255, 215, 0, 0.4)",
               borderRadius: "999px",
-              padding: "0.3rem 0.9rem",
-              fontSize: "0.82rem",
+              padding: "0.25rem 0.8rem",
+              fontSize: "clamp(0.72rem, 2vw, 0.80rem)",
               fontWeight: "700",
               textTransform: "uppercase",
               letterSpacing: "0.05em",
-              marginBottom: "0.75rem",
+              marginBottom: "0.6rem",
             }}
           >
             Búsqueda de Repuestos por Marca y Fabricante
           </span>
           <h2
             style={{
-              fontSize: "1.75rem",
+              fontSize: "clamp(1.25rem, 4vw, 1.75rem)",
               fontWeight: "800",
               color: "#FFFFFF",
-              marginBottom: "0.5rem",
+              marginBottom: "0.4rem",
+              lineHeight: "1.25",
+              textWrap: "balance",
             }}
           >
             ¿Qué marca o repuesto estás buscando?
@@ -584,9 +586,9 @@ export default function MarcasExplorer() {
           <p
             style={{
               color: "#D1D5DB",
-              fontSize: "0.95rem",
-              marginBottom: "1.25rem",
-              lineHeight: 1.5,
+              fontSize: "clamp(0.82rem, 2.2vw, 0.95rem)",
+              marginBottom: "1rem",
+              lineHeight: 1.45,
             }}
           >
             Filtra fabricantes automotrices, marcas de repuestos o busca directamente por modelo, pieza o referencia.
@@ -600,17 +602,18 @@ export default function MarcasExplorer() {
               alignItems: "center",
               background: "#FFFFFF",
               borderRadius: "12px",
-              padding: "0.35rem 0.5rem 0.35rem 1rem",
+              padding: "0.25rem 0.35rem 0.25rem 0.75rem",
               boxShadow: "0 4px 20px rgba(0,0,0,0.25)",
-              gap: "0.5rem",
+              gap: "0.35rem",
               maxWidth: "680px",
               margin: "0 auto",
+              minHeight: "44px",
             }}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              height="20"
+              width="18"
+              height="18"
               viewBox="0 0 24 24"
               fill="none"
               stroke="#888888"
@@ -627,15 +630,16 @@ export default function MarcasExplorer() {
               type="text"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              placeholder="Buscar marca (ej. Chevrolet, Verke, WIX) o repuesto..."
+              placeholder="Buscar marca (ej. Chevrolet, Verke) o pieza..."
               style={{
                 flex: 1,
                 border: "none",
                 outline: "none",
-                fontSize: "0.95rem",
+                fontSize: "clamp(0.85rem, 2.2vw, 0.95rem)",
                 color: "#111111",
                 background: "transparent",
-                padding: "0.6rem 0",
+                padding: "0.45rem 0",
+                minWidth: 0,
               }}
               aria-label="Buscar marcas y productos"
             />
@@ -650,7 +654,7 @@ export default function MarcasExplorer() {
                   cursor: "pointer",
                   color: "#999",
                   padding: "0.3rem",
-                  fontSize: "1.1rem",
+                  fontSize: "1rem",
                   lineHeight: 1,
                 }}
                 title="Limpiar búsqueda"
@@ -663,21 +667,23 @@ export default function MarcasExplorer() {
               type="submit"
               className="btn btn--primary"
               style={{
-                padding: "0.65rem 1.25rem",
-                fontSize: "0.88rem",
+                padding: "0.55rem 0.95rem",
+                fontSize: "clamp(0.78rem, 2vw, 0.86rem)",
                 fontWeight: "800",
                 borderRadius: "8px",
                 whiteSpace: "nowrap",
                 display: "flex",
                 alignItems: "center",
-                gap: "0.4rem",
+                gap: "0.35rem",
+                flexShrink: 0,
+                minHeight: "36px",
               }}
             >
               <span>Buscar</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
+                width="14"
+                height="14"
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
@@ -698,11 +704,11 @@ export default function MarcasExplorer() {
               flexWrap: "wrap",
               alignItems: "center",
               justifyContent: "center",
-              gap: "0.4rem",
-              marginTop: "1.2rem",
+              gap: "0.35rem",
+              marginTop: "1rem",
             }}
           >
-            <span style={{ fontSize: "0.8rem", color: "#9CA3AF", marginRight: "0.2rem" }}>
+            <span style={{ fontSize: "0.75rem", color: "#9CA3AF", marginRight: "0.2rem" }}>
               Búsquedas frecuentes:
             </span>
             {POPULAR_QUICK_SEARCHES.map((item) => (
@@ -715,8 +721,8 @@ export default function MarcasExplorer() {
                   color: "#F3F4F6",
                   border: "1px solid rgba(255, 255, 255, 0.18)",
                   borderRadius: "999px",
-                  padding: "0.25rem 0.65rem",
-                  fontSize: "0.78rem",
+                  padding: "0.25rem 0.6rem",
+                  fontSize: "0.74rem",
                   cursor: "pointer",
                   transition: "all 0.2s ease",
                 }}
@@ -745,23 +751,23 @@ export default function MarcasExplorer() {
             background: "#FFFBE6",
             border: "1px solid #FFE066",
             borderRadius: "12px",
-            padding: "1rem 1.25rem",
-            marginBottom: "1.75rem",
+            padding: "0.85rem 1rem",
+            marginBottom: "1.25rem",
             display: "flex",
             flexWrap: "wrap",
             alignItems: "center",
             justifyContent: "space-between",
-            gap: "1rem",
+            gap: "0.75rem",
           }}
         >
-          <div style={{ display: "flex", alignItems: "center", gap: "0.75rem" }}>
-            <span style={{ fontSize: "1.4rem" }}>🔍</span>
+          <div style={{ display: "flex", alignItems: "center", gap: "0.6rem", flex: 1, minWidth: "220px" }}>
+            <span style={{ fontSize: "1.25rem" }}>🔍</span>
             <div>
-              <p style={{ margin: 0, fontWeight: "700", color: "#855D00", fontSize: "0.98rem" }}>
+              <p style={{ margin: 0, fontWeight: "700", color: "#855D00", fontSize: "0.90rem" }}>
                 Buscando repuestos para &quot;{searchQuery}&quot;
               </p>
-              <p style={{ margin: 0, color: "#665000", fontSize: "0.85rem" }}>
-                Puedes explorar los repuestos directamente o hacer clic en una marca abajo.
+              <p style={{ margin: 0, color: "#665000", fontSize: "0.78rem" }}>
+                Explora los repuestos directamente o haz clic en una marca abajo.
               </p>
             </div>
           </div>
@@ -769,25 +775,28 @@ export default function MarcasExplorer() {
             href={`/catalogo?search=${encodeURIComponent(searchQuery.trim())}`}
             className="btn btn--primary"
             style={{
-              padding: "0.55rem 1.1rem",
-              fontSize: "0.85rem",
+              padding: "0.5rem 0.95rem",
+              fontSize: "0.80rem",
               fontWeight: "800",
               borderRadius: "8px",
+              whiteSpace: "nowrap",
             }}
           >
-            Buscar en Catálogo General &rarr;
+            Buscar en Catálogo &rarr;
           </Link>
         </div>
       )}
 
-      {/* Pestañas de Filtro por Categoría de Marca */}
+      {/* Pestañas de Filtro por Categoría de Marca con Scroll Táctil */}
       <div
         style={{
           display: "flex",
-          flexWrap: "wrap",
-          gap: "0.5rem",
-          marginBottom: "1.75rem",
-          paddingBottom: "0.5rem",
+          overflowX: "auto",
+          WebkitOverflowScrolling: "touch",
+          scrollbarWidth: "none",
+          gap: "0.45rem",
+          marginBottom: "1.25rem",
+          paddingBottom: "0.45rem",
           borderBottom: "1px solid #E2E8F0",
         }}
       >
@@ -799,9 +808,9 @@ export default function MarcasExplorer() {
               type="button"
               onClick={() => setActiveTab(tab.id)}
               style={{
-                padding: "0.55rem 1rem",
+                padding: "0.45rem 0.85rem",
                 borderRadius: "999px",
-                fontSize: "0.85rem",
+                fontSize: "clamp(0.76rem, 2vw, 0.84rem)",
                 fontWeight: isActive ? "800" : "600",
                 cursor: "pointer",
                 border: isActive ? "2px solid #111111" : "1px solid #CBD5E1",
@@ -809,6 +818,8 @@ export default function MarcasExplorer() {
                 color: isActive ? "#FFD700" : "#475569",
                 boxShadow: isActive ? "0 2px 8px rgba(0,0,0,0.1)" : "none",
                 transition: "all 0.2s ease",
+                whiteSpace: "nowrap",
+                flexShrink: 0,
               }}
             >
               {tab.label}
@@ -823,10 +834,12 @@ export default function MarcasExplorer() {
           display: "flex",
           justifyContent: "space-between",
           alignItems: "center",
-          marginBottom: "1.25rem",
+          marginBottom: "1rem",
+          flexWrap: "wrap",
+          gap: "0.4rem",
         }}
       >
-        <span style={{ fontSize: "0.9rem", color: "#64748B", fontWeight: "600" }}>
+        <span style={{ fontSize: "0.82rem", color: "#64748B", fontWeight: "600" }}>
           Mostrando <strong>{filteredBrands.length}</strong> marcas aliadas
           {searchQuery && ` para "${searchQuery}"`}
         </span>
@@ -839,7 +852,7 @@ export default function MarcasExplorer() {
               background: "none",
               border: "none",
               color: "#2563EB",
-              fontSize: "0.85rem",
+              fontSize: "0.80rem",
               fontWeight: "700",
               cursor: "pointer",
               textDecoration: "underline",
@@ -855,8 +868,8 @@ export default function MarcasExplorer() {
         <div
           style={{
             display: "grid",
-            gridTemplateColumns: "repeat(auto-fill, minmax(min(100%, 180px), 1fr))",
-            gap: "1.25rem",
+            gridTemplateColumns: "repeat(auto-fill, minmax(min(100%, 145px), 1fr))",
+            gap: "clamp(0.75rem, 2vw, 1.15rem)",
           }}
         >
           {filteredBrands.map((brand) => {
@@ -870,8 +883,8 @@ export default function MarcasExplorer() {
                 key={brand.slug}
                 style={{
                   background: "#FFFFFF",
-                  borderRadius: "14px",
-                  padding: "1.5rem 1.15rem",
+                  borderRadius: "12px",
+                  padding: "clamp(0.85rem, 2vw, 1.25rem) clamp(0.65rem, 1.8vw, 0.95rem)",
                   textAlign: "center",
                   boxShadow: brand.highlight
                     ? "0 4px 14px rgba(255, 215, 0, 0.25), 0 2px 8px rgba(0,0,0,0.05)"
@@ -890,45 +903,46 @@ export default function MarcasExplorer() {
                   <span
                     style={{
                       position: "absolute",
-                      top: "10px",
-                      right: "10px",
+                      top: "8px",
+                      right: "8px",
                       background: "#FFD700",
                       color: "#111111",
-                      fontSize: "0.68rem",
+                      fontSize: "0.62rem",
                       fontWeight: "800",
-                      padding: "0.2rem 0.5rem",
+                      padding: "0.15rem 0.45rem",
                       borderRadius: "999px",
                       textTransform: "uppercase",
                       letterSpacing: "0.03em",
+                      zIndex: 2,
                     }}
                   >
-                    Línea Top
+                    Top
                   </span>
                 )}
 
                 {/* Logo de la Marca */}
                 <div
                   style={{
-                    height: "75px",
+                    height: "65px",
                     width: "100%",
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "center",
                     background: "#F8FAFC",
-                    borderRadius: "10px",
-                    padding: "0.75rem",
-                    marginBottom: "1rem",
+                    borderRadius: "8px",
+                    padding: "0.5rem",
+                    marginBottom: "0.65rem",
                     border: "1px solid #EDF2F7",
                   }}
                 >
                   <Image
                     src={brand.logo}
                     alt={`Logo ${brand.name}`}
-                    width={140}
-                    height={55}
+                    width={130}
+                    height={48}
                     style={{
-                      maxHeight: "50px",
-                      maxWidth: "130px",
+                      maxHeight: "44px",
+                      maxWidth: "115px",
                       objectFit: "contain",
                     }}
                     loading="lazy"
@@ -936,17 +950,17 @@ export default function MarcasExplorer() {
                 </div>
 
                 {/* Información de la Marca */}
-                <div style={{ marginBottom: "1rem", width: "100%" }}>
+                <div style={{ marginBottom: "0.75rem", width: "100%" }}>
                   <span
                     style={{
                       display: "inline-block",
-                      fontSize: "0.72rem",
+                      fontSize: "0.68rem",
                       fontWeight: "700",
                       color: "#475569",
                       background: "#F1F5F9",
-                      padding: "0.15rem 0.55rem",
-                      borderRadius: "6px",
-                      marginBottom: "0.35rem",
+                      padding: "0.12rem 0.45rem",
+                      borderRadius: "4px",
+                      marginBottom: "0.25rem",
                     }}
                   >
                     {brand.categoryLabel}
@@ -954,10 +968,10 @@ export default function MarcasExplorer() {
 
                   <h3
                     style={{
-                      fontSize: "1.1rem",
+                      fontSize: "clamp(0.92rem, 2.4vw, 1.05rem)",
                       fontWeight: "800",
                       color: "#111111",
-                      margin: "0.1rem 0 0.35rem 0",
+                      margin: "0.1rem 0 0.25rem 0",
                     }}
                   >
                     {brand.name}
@@ -967,16 +981,18 @@ export default function MarcasExplorer() {
                     <p
                       style={{
                         color: "#64748B",
-                        fontSize: "0.78rem",
-                        lineHeight: 1.35,
-                        margin: "0 0 0.5rem 0",
-                        minHeight: "2.4em",
+                        fontSize: "0.74rem",
+                        lineHeight: 1.3,
+                        margin: "0 0 0.4rem 0",
+                        minHeight: "2.3em",
+                        display: "-webkit-box",
+                        WebkitLineClamp: 2,
+                        WebkitBoxOrient: "vertical",
+                        overflow: "hidden",
                       }}
                       title={brand.models}
                     >
-                      {brand.models.length > 50
-                        ? `${brand.models.slice(0, 50)}...`
-                        : brand.models}
+                      {brand.models}
                     </p>
                   )}
 
@@ -984,8 +1000,8 @@ export default function MarcasExplorer() {
                     style={{
                       display: "inline-flex",
                       alignItems: "center",
-                      gap: "0.3rem",
-                      fontSize: "0.8rem",
+                      gap: "0.25rem",
+                      fontSize: "0.74rem",
                       color: brand.count > 0 ? "#059669" : "#64748B",
                       fontWeight: "700",
                     }}
@@ -993,8 +1009,8 @@ export default function MarcasExplorer() {
                     <span>{brand.count > 0 ? "✓" : "•"}</span>
                     <span>
                       {brand.count > 0
-                        ? `${brand.count} productos disponibles`
-                        : "Disponibilidad bajo catálogo"}
+                        ? `${brand.count} repuestos`
+                        : "Bajo catálogo"}
                     </span>
                   </div>
                 </div>
@@ -1005,16 +1021,17 @@ export default function MarcasExplorer() {
                   className="btn btn--primary"
                   style={{
                     width: "100%",
-                    padding: "0.6rem 0.9rem",
-                    fontSize: "0.82rem",
+                    padding: "0.48rem 0.65rem",
+                    fontSize: "clamp(0.70rem, 2vw, 0.78rem)",
                     textTransform: "uppercase",
                     fontWeight: "800",
                     textAlign: "center",
-                    borderRadius: "8px",
+                    borderRadius: "6px",
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "center",
-                    gap: "0.35rem",
+                    gap: "0.3rem",
+                    minHeight: "34px",
                   }}
                 >
                   <span>
@@ -1022,8 +1039,8 @@ export default function MarcasExplorer() {
                   </span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    width="14"
-                    height="14"
+                    width="12"
+                    height="12"
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="currentColor"

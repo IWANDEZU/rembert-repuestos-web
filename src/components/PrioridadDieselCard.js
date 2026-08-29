@@ -243,20 +243,21 @@ export default function PrioridadDieselCard({ product, onSelect }) {
             lineHeight: "1.35",
           }}
         >
-          <strong>⚠️ Nota de Compatibilidad:</strong> Confirma compatibilidad por VIN, código de motor, año y tracción antes de comprar o instalar.
+          <strong>⚠️ Nota de Compatibilidad:</strong> Confirma compatibilidad por VIN, código de motor, año y tracción antes de comprar.
         </div>
 
         {/* Botones de Acción */}
-        <div style={{ display: "flex", flexDirection: "column", gap: "6px" }}>
+        <div style={{ display: "flex", flexDirection: "column", gap: "5px" }}>
           <button
             type="button"
             onClick={handleAddToCart}
             className="btn-add-to-cart"
             style={{
-              padding: "0.55rem 0.75rem",
-              fontSize: "0.82rem",
+              padding: "0.48rem 0.65rem",
+              fontSize: "clamp(0.72rem, 2vw, 0.82rem)",
               fontWeight: "800",
               width: "100%",
+              minHeight: "36px",
               borderRadius: "6px",
               border: added ? "1.5px solid #16A34A" : "1.5px solid #FFD700",
               background: added ? "#16A34A" : "#111111",
@@ -264,9 +265,9 @@ export default function PrioridadDieselCard({ product, onSelect }) {
               display: "inline-flex",
               alignItems: "center",
               justifyContent: "center",
-              gap: "0.4rem",
+              gap: "0.35rem",
               cursor: "pointer",
-              boxShadow: added ? "0 0 10px rgba(22, 163, 74, 0.5)" : "0 2px 8px rgba(0, 0, 0, 0.4)",
+              boxShadow: added ? "0 0 10px rgba(22, 163, 74, 0.5)" : "0 2px 6px rgba(0, 0, 0, 0.4)",
               transition: "all 0.2s ease",
             }}
           >
@@ -277,7 +278,7 @@ export default function PrioridadDieselCard({ product, onSelect }) {
               </>
             ) : (
               <>
-                <span style={{ color: "#FFD700", fontSize: "0.95rem" }}>🛒</span>
+                <span style={{ color: "#FFD700", fontSize: "0.90rem" }}>🛒</span>
                 <span>Añadir al carrito</span>
               </>
             )}
@@ -288,9 +289,9 @@ export default function PrioridadDieselCard({ product, onSelect }) {
             target="_blank"
             rel="noopener noreferrer"
             style={{
-              padding: "0.48rem 0.75rem",
-              fontSize: "0.78rem",
-              fontWeight: "bold",
+              padding: "0.45rem 0.65rem",
+              fontSize: "clamp(0.68rem, 1.9vw, 0.76rem)",
+              fontWeight: "700",
               background: "#25D366",
               color: "#FFFFFF",
               border: "none",
@@ -300,12 +301,13 @@ export default function PrioridadDieselCard({ product, onSelect }) {
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
-              gap: "6px",
+              gap: "5px",
+              minHeight: "34px",
               boxShadow: "0 2px 6px rgba(37, 211, 102, 0.25)",
               transition: "opacity 0.2s ease",
             }}
           >
-            <WhatsAppIcon size={15} color="#FFFFFF" />
+            <WhatsAppIcon size={14} color="#FFFFFF" />
             <span>Confirmar por VIN en WhatsApp</span>
           </a>
         </div>

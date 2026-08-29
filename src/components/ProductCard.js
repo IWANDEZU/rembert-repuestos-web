@@ -133,23 +133,23 @@ export default function ProductCard({ product, onExpand, isFavorite = false, isR
           aria-label={favorite ? "Remover de favoritos" : "Guardar en favoritos"}
           style={{
             position: "absolute",
-            top: "8px",
-            right: "8px",
+            top: "6px",
+            right: "6px",
             background: "#FFFFFF",
             border: "1px solid #E2E8F0",
             borderRadius: "50%",
-            width: "32px",
-            height: "32px",
+            width: "30px",
+            height: "30px",
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
             cursor: "pointer",
-            boxShadow: "0 2px 6px rgba(0,0,0,0.15)",
+            boxShadow: "0 2px 6px rgba(0,0,0,0.18)",
             zIndex: 3,
             transition: "transform 0.2s ease",
           }}
         >
-          <span style={{ fontSize: "1rem", color: favorite ? "#EF4444" : "#94A3B8" }}>
+          <span style={{ fontSize: "0.95rem", color: favorite ? "#EF4444" : "#94A3B8" }}>
             {favorite ? "❤️" : "🤍"}
           </span>
         </button>
@@ -159,36 +159,41 @@ export default function ProductCard({ product, onExpand, isFavorite = false, isR
           onClick={handleViewExpanded}
           style={{
             position: "absolute",
-            bottom: "8px",
-            right: "8px",
+            bottom: "6px",
+            right: "6px",
             background: "rgba(0, 0, 0, 0.88)",
             color: "var(--primary-color)",
             borderRadius: "999px",
-            padding: "3px 9px",
-            fontSize: "0.68rem",
-            fontWeight: "bold",
-            border: "1px solid rgba(255,215,0,0.35)",
+            padding: "3px 8px",
+            fontSize: "clamp(0.64rem, 1.8vw, 0.70rem)",
+            fontWeight: "800",
+            border: "1px solid rgba(255,215,0,0.4)",
             cursor: "pointer",
             zIndex: 2,
+            display: "inline-flex",
+            alignItems: "center",
+            gap: "3px",
+            boxShadow: "0 2px 6px rgba(0,0,0,0.3)",
           }}
         >
           🔍 Ficha
         </button>
       </div>
 
-      <div style={{ margin: "0.5rem 0 0.35rem" }}>
+      <div style={{ margin: "0.45rem 0 0.3rem", display: "flex", flexDirection: "column", gap: "2px" }}>
         <h3
           style={{
-            fontSize: "0.88rem",
+            fontSize: "clamp(0.82rem, 2.2vw, 0.90rem)",
             fontWeight: "700",
             color: "#FFFFFF",
-            lineHeight: "1.3",
-            marginBottom: "0.25rem",
+            lineHeight: "1.25",
+            marginBottom: "0.15rem",
             display: "-webkit-box",
             WebkitLineClamp: 2,
             WebkitBoxOrient: "vertical",
             overflow: "hidden",
-            minHeight: "2.4em",
+            minHeight: "2.3em",
+            textWrap: "balance",
           }}
         >
           <Link
@@ -202,28 +207,27 @@ export default function ProductCard({ product, onExpand, isFavorite = false, isR
         {product.brand && (
           <span
             style={{
-              fontSize: "0.74rem",
-              fontWeight: "700",
+              fontSize: "clamp(0.68rem, 1.8vw, 0.74rem)",
+              fontWeight: "800",
               color: "#94A3B8",
               display: "block",
               textTransform: "uppercase",
-              letterSpacing: "0.025em",
-              marginBottom: "0.2rem",
+              letterSpacing: "0.03em",
             }}
           >
             {typeof product.brand === "string" ? product.brand : product.brand.name}
           </span>
         )}
 
-        <div style={{ marginTop: "0.25rem" }}>
+        <div style={{ marginTop: "0.2rem" }}>
           <ProductCompatibilityPanel product={product} compact dark />
         </div>
 
         {product.sku && (
-          <div style={{ marginTop: "0.3rem" }}>
+          <div style={{ marginTop: "0.25rem" }}>
             <span
               style={{
-                fontSize: "0.7rem",
+                fontSize: "0.68rem",
                 fontFamily: "ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace",
                 fontWeight: "700",
                 color: "#FFD700",
@@ -232,6 +236,10 @@ export default function ProductCard({ product, onExpand, isFavorite = false, isR
                 padding: "2px 6px",
                 borderRadius: "4px",
                 display: "inline-block",
+                maxWidth: "100%",
+                overflow: "hidden",
+                textOverflow: "ellipsis",
+                whiteSpace: "nowrap",
                 letterSpacing: "0.02em",
               }}
             >
@@ -241,50 +249,51 @@ export default function ProductCard({ product, onExpand, isFavorite = false, isR
         )}
       </div>
 
-      <div style={{ marginTop: "auto", paddingTop: "0.4rem" }}>
-        <p style={{ fontSize: "1.18rem", fontWeight: "800", color: "#FFFFFF", marginBottom: "0.5rem" }}>
+      <div style={{ marginTop: "auto", paddingTop: "0.35rem" }}>
+        <p style={{ fontSize: "clamp(1.05rem, 3vw, 1.20rem)", fontWeight: "900", color: "#FFFFFF", marginBottom: "0.45rem" }}>
           {product.price > 0 ? (
             <span>
-              <span style={{ color: "#FFD700", fontSize: "0.95rem", marginRight: "2px" }}>$</span>
+              <span style={{ color: "#FFD700", fontSize: "0.90rem", marginRight: "2px" }}>$</span>
               {Number(product.price).toLocaleString("es-CO")}
             </span>
           ) : (
-            <span style={{ color: "#FFD700", fontSize: "0.88rem" }}>{product.availabilityLabel || "Precio bajo cotización"}</span>
+            <span style={{ color: "#FFD700", fontSize: "0.82rem" }}>{product.availabilityLabel || "Precio bajo cotización"}</span>
           )}
         </p>
 
-        <div style={{ display: "flex", flexDirection: "column", gap: "6px" }}>
+        <div style={{ display: "flex", flexDirection: "column", gap: "5px" }}>
           {canBuy ? (
             <button
               type="button"
               onClick={handleAddToCart}
               className="btn-add-to-cart"
               style={{
-                padding: "0.52rem 0.75rem",
-                fontSize: "0.82rem",
+                padding: "0.48rem 0.65rem",
+                fontSize: "clamp(0.72rem, 2vw, 0.82rem)",
                 fontWeight: "800",
                 width: "100%",
-                borderRadius: "7px",
+                minHeight: "36px",
+                borderRadius: "6px",
                 border: added ? "1.5px solid #16A34A" : "1.5px solid #FFD700",
                 background: added ? "#16A34A" : "#0A0A0A",
                 color: added ? "#FFFFFF" : "#FFD700",
                 display: "inline-flex",
                 alignItems: "center",
                 justifyContent: "center",
-                gap: "0.4rem",
+                gap: "0.35rem",
                 cursor: "pointer",
-                boxShadow: added ? "0 0 10px rgba(22, 163, 74, 0.5)" : "0 2px 8px rgba(0, 0, 0, 0.6)",
+                boxShadow: added ? "0 0 10px rgba(22, 163, 74, 0.5)" : "0 2px 6px rgba(0, 0, 0, 0.5)",
                 transition: "all 0.2s ease",
               }}
             >
               {added ? (
                 <><span>✓</span><span>¡Agregado!</span></>
               ) : (
-                <><span style={{ color: "#FFD700", fontSize: "0.95rem" }}>🛒</span><span>Añadir al carrito</span></>
+                <><span style={{ color: "#FFD700", fontSize: "0.90rem" }}>🛒</span><span>Añadir al carrito</span></>
               )}
             </button>
           ) : (
-            <div className="product-card__quote-notice product-card__quote-notice--dark" style={{ padding: "0.45rem 0.6rem", fontSize: "0.74rem" }}>
+            <div className="product-card__quote-notice product-card__quote-notice--dark" style={{ padding: "0.4rem 0.5rem", fontSize: "0.72rem" }}>
               {product.availabilityLabel || "Validamos referencia y precio antes de vender"}
             </div>
           )}
@@ -295,10 +304,11 @@ export default function ProductCard({ product, onExpand, isFavorite = false, isR
             rel="noopener noreferrer"
             className="btn product-card__whatsapp-quote"
             style={{
-              padding: "0.48rem 0.75rem",
-              fontSize: "0.78rem",
-              fontWeight: "bold",
+              padding: "0.45rem 0.65rem",
+              fontSize: "clamp(0.68rem, 1.9vw, 0.76rem)",
+              fontWeight: "700",
               width: "100%",
+              minHeight: "34px",
               background: "#25D366",
               color: "#FFFFFF",
               border: "none",
@@ -308,12 +318,12 @@ export default function ProductCard({ product, onExpand, isFavorite = false, isR
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
-              gap: "6px",
+              gap: "5px",
               boxShadow: "0 2px 6px rgba(37, 211, 102, 0.25)",
               transition: "opacity 0.2s ease",
             }}
           >
-            <WhatsAppIcon size={15} color="#FFFFFF" />
+            <WhatsAppIcon size={14} color="#FFFFFF" />
             <span>COTIZAR POR WHATSAPP</span>
           </a>
         </div>

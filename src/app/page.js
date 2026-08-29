@@ -4,7 +4,10 @@ import { products as fallbackProducts } from "@/lib/products";
 import { prisma } from "@/lib/prisma";
 import ProductCard from "@/components/ProductCard";
 
-export const dynamic = "force-dynamic";
+// La portada se genera durante la compilación. El catálogo y las rutas de cuenta
+// siguen siendo dinámicos, pero una visita a "/" no debe abrir Prisma ni consumir
+// CPU del Worker.
+export const dynamic = "force-static";
 
 const brandLogos = [
   ["Bosch", "/logos/bosch.svg"], ["WIX Filters", "/logos/wix-filters.svg"], ["Partmo", "/logos/partmo-real.png"],
@@ -57,15 +60,15 @@ export default async function Home() {
       orderBy: { createdAt: "desc" },
       take: 8,
     });
-    featuredProducts = dbProducts.length > 0 ? dbProducts : fallbackProducts;
+    featuredProducts = dbProducts.length > 0 ? dbProducts : fallbackProducts.slice(0, 8);
   } catch (err) {
-    featuredProducts = fallbackProducts;
+    featuredProducts = fallbackProducts.slice(0, 8);
   }
 
   return (
     <main>
       {/* Hero Section (Oscuro) */}
-      <header className="hero" style={{ 
+      <header className="hero" style={{
         background: '#101010',
         alignItems: 'flex-start',
         textAlign: 'left',
@@ -89,14 +92,14 @@ export default async function Home() {
               ⭐ 38 AÑOS DE EXPERIENCIA EN EL SECTOR AUTOMOTRIZ
             </div>
             <h1 style={{ fontSize: 'clamp(2rem, 7vw, 3.8rem)', maxWidth: '850px', lineHeight: 1.1, marginBottom: '1rem', textTransform: 'uppercase', color: '#ffffff' }}>
-              Repuestos confiables <br/>
+              Repuestos confiables <br />
               <span className="text-primary">de la mejor calidad</span>
             </h1>
             <p style={{ color: '#E2E8F0', fontSize: 'clamp(0.95rem, 2.5vw, 1.1rem)', maxWidth: '650px', lineHeight: '1.5', margin: '0 0 1.5rem 0' }}>
               Originales y alternativos para todas las marcas. Precios al por mayor y detal con envíos rápidos a todo el país.
             </p>
           </div>
-          
+
           <div style={{ display: 'flex', gap: '0.85rem', flexWrap: 'wrap', marginBottom: '2rem' }}>
             <Link href="/catalogo" className="btn btn--primary" style={{ padding: '0.85rem 1.8rem', fontSize: '0.95rem' }}>VER PRODUCTOS</Link>
             <a href="https://wa.me/573102420490?text=Hola%2C%20quisiera%20cotizar%20un%20repuesto." target="_blank" rel="noopener noreferrer" className="btn btn--outline" style={{ padding: '0.85rem 1.8rem', color: '#fff', borderColor: '#fff', fontSize: '0.95rem' }}>
@@ -132,13 +135,13 @@ export default async function Home() {
         <div className="main-container">
           <h2 style={{ marginBottom: '2rem', textTransform: 'uppercase', fontSize: 'clamp(1.75rem, 5vw, 2.4rem)' }}>Categorías Principales</h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 240px), 1fr))', gap: '1.25rem' }}>
-            
+
             {/* Categoría 1: Mantenimiento automotriz */}
             <Link href="/catalogo?category=mantenimiento" style={{ textDecoration: 'none', color: 'inherit' }}>
-              <div style={{ 
-                background: '#fff', 
-                borderRadius: 'var(--border-radius)', 
-                padding: '1.25rem', 
+              <div style={{
+                background: '#fff',
+                borderRadius: 'var(--border-radius)',
+                padding: '1.25rem',
                 textAlign: 'center',
                 boxShadow: 'var(--box-shadow-light)',
                 cursor: 'pointer',
@@ -154,10 +157,10 @@ export default async function Home() {
 
             {/* Categoría 2: Filtros */}
             <Link href="/catalogo?category=filtros" style={{ textDecoration: 'none', color: 'inherit' }}>
-              <div style={{ 
-                background: '#fff', 
-                borderRadius: 'var(--border-radius)', 
-                padding: '1.25rem', 
+              <div style={{
+                background: '#fff',
+                borderRadius: 'var(--border-radius)',
+                padding: '1.25rem',
                 textAlign: 'center',
                 boxShadow: 'var(--box-shadow-light)',
                 cursor: 'pointer',
@@ -173,10 +176,10 @@ export default async function Home() {
 
             {/* Categoría 3: Frenos y Suspensión */}
             <Link href="/catalogo?category=frenos-y-suspension" style={{ textDecoration: 'none', color: 'inherit' }}>
-              <div style={{ 
-                background: '#fff', 
-                borderRadius: 'var(--border-radius)', 
-                padding: '1.25rem', 
+              <div style={{
+                background: '#fff',
+                borderRadius: 'var(--border-radius)',
+                padding: '1.25rem',
                 textAlign: 'center',
                 boxShadow: 'var(--box-shadow-light)',
                 cursor: 'pointer',
@@ -192,11 +195,11 @@ export default async function Home() {
 
             {/* Categoría 4: Radiadores */}
             <Link href="/radiadores" style={{ textDecoration: 'none', color: 'inherit' }}>
-              <div style={{ 
-                background: '#fff', 
-                borderRadius: 'var(--border-radius)', 
-                padding: '1.25rem', 
-                textAlign: 'center', 
+              <div style={{
+                background: '#fff',
+                borderRadius: 'var(--border-radius)',
+                padding: '1.25rem',
+                textAlign: 'center',
                 boxShadow: 'var(--box-shadow-light)',
                 cursor: 'pointer',
                 border: '1px solid transparent',
@@ -211,11 +214,11 @@ export default async function Home() {
 
             {/* Categoría 5: Transmisión */}
             <Link href="/catalogo?category=transmision" style={{ textDecoration: 'none', color: 'inherit' }}>
-              <div style={{ 
-                background: '#fff', 
-                borderRadius: 'var(--border-radius)', 
-                padding: '1.25rem', 
-                textAlign: 'center', 
+              <div style={{
+                background: '#fff',
+                borderRadius: 'var(--border-radius)',
+                padding: '1.25rem',
+                textAlign: 'center',
                 boxShadow: 'var(--box-shadow-light)',
                 cursor: 'pointer',
                 border: '1px solid transparent',
@@ -230,11 +233,11 @@ export default async function Home() {
 
             {/* Categoría 6: Servicio Técnico */}
             <Link href="/servicio-tecnico" style={{ textDecoration: 'none', color: 'inherit' }}>
-              <div style={{ 
-                background: '#fff', 
-                borderRadius: 'var(--border-radius)', 
-                padding: '1.25rem', 
-                textAlign: 'center', 
+              <div style={{
+                background: '#fff',
+                borderRadius: 'var(--border-radius)',
+                padding: '1.25rem',
+                textAlign: 'center',
                 boxShadow: 'var(--box-shadow-light)',
                 cursor: 'pointer',
                 border: '1px solid var(--primary-color)',
@@ -271,14 +274,14 @@ export default async function Home() {
               { name: 'BATERÍAS & SISTEMA ELÉCTRICO', icon: '🔋' },
               { name: 'SUSPENSIÓN & DIRECCIÓN', icon: '⚙️' },
             ].map((servicio, idx) => (
-              <div 
-                key={idx} 
-                style={{ 
-                  background: 'rgba(255,255,255,0.08)', 
+              <div
+                key={idx}
+                style={{
+                  background: 'rgba(255,255,255,0.08)',
                   border: '1px solid rgba(255, 215, 0, 0.3)',
-                  color: '#ffffff', 
-                  padding: '0.75rem 1.35rem', 
-                  borderRadius: '30px', 
+                  color: '#ffffff',
+                  padding: '0.75rem 1.35rem',
+                  borderRadius: '30px',
                   letterSpacing: '0.5px',
                   display: 'inline-flex',
                   alignItems: 'center',
@@ -296,28 +299,28 @@ export default async function Home() {
       {/* Marcas de Autos más comercializadas en Colombia */}
       <section className="section" style={{ background: '#ffffff', color: '#111111' }}>
         <div className="main-container">
-          <div style={{ textAlign: 'center', marginBottom: '2.5rem' }}>
-            <h2 style={{ fontSize: 'clamp(1.8rem, 4vw, 2.6rem)', marginTop: '0.5rem', marginBottom: '0.5rem', textTransform: 'uppercase' }}>
+          <div style={{ textAlign: 'center', marginBottom: 'clamp(1.5rem, 4vw, 2.5rem)' }}>
+            <h2 style={{ fontSize: 'clamp(1.5rem, 4vw, 2.5rem)', marginTop: '0.5rem', marginBottom: '0.5rem', textTransform: 'uppercase', lineHeight: '1.2' }}>
               Repuestos por Marca de Vehículo
             </h2>
-            <p style={{ color: '#666666', fontSize: '1.05rem', maxWidth: '700px', margin: '0 auto' }}>
+            <p style={{ color: '#666666', fontSize: 'clamp(0.88rem, 2.2vw, 1.05rem)', maxWidth: '700px', margin: '0 auto', lineHeight: '1.45' }}>
               Disponemos de filtros, radiadores, frenos y repuestos para las marcas y modelos más vendidos en Colombia.
             </p>
           </div>
 
-          <div style={{ 
-            display: 'grid', 
-            gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 160px), 1fr))', 
-            gap: '1.15rem' 
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fill, minmax(min(100%, 140px), 1fr))',
+            gap: 'clamp(0.75rem, 2vw, 1.15rem)'
           }}>
             {popularCarBrands.map((brand) => (
-              <div 
+              <div
                 key={brand.name}
                 style={{
                   background: '#fcfcfc',
                   border: '1px solid #e8e8e8',
                   borderRadius: '12px',
-                  padding: '1.25rem 1rem',
+                  padding: 'clamp(0.85rem, 2vw, 1.25rem) clamp(0.65rem, 1.8vw, 0.95rem)',
                   display: 'flex',
                   flexDirection: 'column',
                   alignItems: 'center',
@@ -330,63 +333,67 @@ export default async function Home() {
               >
                 <span style={{
                   position: 'absolute',
-                  top: '10px',
-                  right: '10px',
+                  top: '8px',
+                  right: '8px',
                   background: '#111111',
                   color: 'var(--primary-color)',
-                  fontSize: '0.68rem',
-                  fontWeight: '700',
-                  padding: '0.18rem 0.5rem',
-                  borderRadius: '10px',
+                  fontSize: '0.62rem',
+                  fontWeight: '800',
+                  padding: '0.15rem 0.45rem',
+                  borderRadius: '8px',
                 }}>
                   {brand.badge}
                 </span>
 
-                <div style={{ 
-                  height: '60px', 
-                  width: '100%', 
-                  position: 'relative', 
-                  display: 'flex', 
-                  alignItems: 'center', 
+                <div style={{
+                  height: '52px',
+                  width: '100%',
+                  position: 'relative',
+                  display: 'flex',
+                  alignItems: 'center',
                   justifyContent: 'center',
-                  marginBottom: '0.75rem',
-                  marginTop: '0.5rem',
+                  marginBottom: '0.5rem',
+                  marginTop: '0.35rem',
                 }}>
-                  <Image 
-                    src={brand.logo} 
-                    alt={`Logo oficial ${brand.name}`} 
-                    width={100} 
-                    height={50} 
-                    style={{ objectFit: 'contain', maxHeight: '50px' }} 
+                  <Image
+                    src={brand.logo}
+                    alt={`Logo oficial ${brand.name}`}
+                    width={90}
+                    height={44}
+                    style={{ objectFit: 'contain', maxHeight: '44px', maxWidth: '85px' }}
                   />
                 </div>
 
-                <h3 style={{ fontSize: '1.15rem', fontWeight: '800', marginBottom: '0.35rem', color: '#111111' }}>
+                <h3 style={{ fontSize: 'clamp(0.95rem, 2.4vw, 1.12rem)', fontWeight: '800', marginBottom: '0.25rem', color: '#111111' }}>
                   {brand.name}
                 </h3>
 
-                <p style={{ fontSize: '0.80rem', color: '#666666', marginBottom: '1rem', minHeight: '34px', lineHeight: '1.35' }}>
+                <p style={{ fontSize: '0.74rem', color: '#666666', marginBottom: '0.75rem', minHeight: '2.4em', lineHeight: '1.3' }}>
                   <strong style={{ color: '#333333' }}>Modelos:</strong> {brand.popularModels}
                 </p>
 
-                <div style={{ display: 'flex', flexDirection: 'column', gap: '0.45rem', width: '100%', marginTop: 'auto' }}>
-                  <Link 
-                    href={`/catalogo?search=${brand.query}`} 
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '0.35rem', width: '100%', marginTop: 'auto' }}>
+                  <Link
+                    href={`/catalogo?search=${brand.query}`}
                     style={{
                       background: 'var(--primary-color)',
                       color: '#111111',
-                      padding: '0.55rem 0.85rem',
+                      padding: '0.45rem 0.65rem',
                       borderRadius: '6px',
-                      fontWeight: '700',
-                      fontSize: '0.82rem',
+                      fontWeight: '800',
+                      fontSize: 'clamp(0.72rem, 2vw, 0.80rem)',
                       textAlign: 'center',
                       textDecoration: 'none',
-                      transition: 'background 0.2s ease'
+                      transition: 'background 0.2s ease',
+                      minHeight: '32px',
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center'
                     }}
                   >
                     Ver Repuestos
                   </Link>
-                  <a 
+                  <a
                     href={`https://wa.me/573108737354?text=Hola%2C%20estoy%20buscando%20repuestos%20para%20veh%C3%ADculo%20${encodeURIComponent(brand.name)}`}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -394,12 +401,16 @@ export default async function Home() {
                       background: 'transparent',
                       color: '#2e7d32',
                       border: '1px solid #a5d6a7',
-                      padding: '0.45rem 0.75rem',
+                      padding: '0.40rem 0.65rem',
                       borderRadius: '6px',
-                      fontWeight: '600',
-                      fontSize: '0.78rem',
+                      fontWeight: '700',
+                      fontSize: 'clamp(0.68rem, 1.8vw, 0.74rem)',
                       textAlign: 'center',
-                      textDecoration: 'none'
+                      textDecoration: 'none',
+                      minHeight: '30px',
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center'
                     }}
                   >
                     💬 Consultar por VIN
@@ -409,16 +420,16 @@ export default async function Home() {
             ))}
           </div>
 
-          <div style={{ textAlign: 'center', marginTop: '2.5rem' }}>
-            <p style={{ fontSize: '0.95rem', color: '#666666', marginBottom: '1rem' }}>
+          <div style={{ textAlign: 'center', marginTop: 'clamp(1.5rem, 4vw, 2.5rem)' }}>
+            <p style={{ fontSize: 'clamp(0.85rem, 2vw, 0.95rem)', color: '#666666', marginBottom: '0.75rem' }}>
               ¿Tu vehículo no aparece en la lista? Tenemos stock para marcas europeas, asiáticas y americanas.
             </p>
-            <a 
-              href="https://wa.me/573108737354?text=Hola%2C%20necesito%20cotizar%20repuestos%20para%20mi%20veh%C3%ADculo." 
-              target="_blank" 
-              rel="noopener noreferrer" 
+            <a
+              href="https://wa.me/573108737354?text=Hola%2C%20necesito%20cotizar%20repuestos%20para%20mi%20veh%C3%ADculo."
+              target="_blank"
+              rel="noopener noreferrer"
               className="btn btn--primary"
-              style={{ padding: '0.85rem 2rem', fontSize: '1rem' }}
+              style={{ padding: '0.75rem 1.6rem', fontSize: 'clamp(0.85rem, 2.2vw, 0.95rem)' }}
             >
               💬 Cotizar mi Vehículo por WhatsApp
             </a>
@@ -431,13 +442,13 @@ export default async function Home() {
         <div className="main-container">
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 290px), 1fr))', gap: '2.5rem', alignItems: 'center' }}>
             <div>
-              <span style={{ 
-                background: 'var(--primary-color)', 
-                color: '#111', 
-                fontWeight: '900', 
-                fontSize: '0.85rem', 
-                padding: '0.35rem 0.9rem', 
-                borderRadius: '20px', 
+              <span style={{
+                background: 'var(--primary-color)',
+                color: '#111',
+                fontWeight: '900',
+                fontSize: '0.85rem',
+                padding: '0.35rem 0.9rem',
+                borderRadius: '20px',
                 display: 'inline-block',
                 marginBottom: '1rem',
                 textTransform: 'uppercase',
@@ -467,10 +478,10 @@ export default async function Home() {
                 <Link href="/radiadores" className="btn btn--primary" style={{ padding: '0.85rem 1.6rem', fontSize: '0.92rem', fontWeight: '800' }}>
                   CONOCER SECCIÓN RADIADORES
                 </Link>
-                <a 
-                  href="https://wa.me/573102420490?text=Hola%2C%20quisiera%20cotizar%20un%20radiador%20con%20urgencia." 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
+                <a
+                  href="https://wa.me/573102420490?text=Hola%2C%20quisiera%20cotizar%20un%20radiador%20con%20urgencia."
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="btn btn--outline"
                   style={{ padding: '0.85rem 1.6rem', color: '#fff', borderColor: '#fff', fontSize: '0.92rem' }}
                 >
@@ -480,12 +491,12 @@ export default async function Home() {
             </div>
 
             <div style={{ position: 'relative', borderRadius: '16px', overflow: 'hidden', border: '2px solid #333', boxShadow: '0 12px 35px rgba(0,0,0,0.6)', height: 'clamp(240px, 40vw, 360px)' }}>
-              <Image 
-                src="/radiador-banner.jpg" 
-                alt="Radiadores automotrices de alta eficiencia térmica" 
-                fill 
-                sizes="(max-width: 768px) 100vw, 50vw" 
-                style={{ objectFit: 'cover' }} 
+              <Image
+                src="/radiador-banner.jpg"
+                alt="Radiadores automotrices de alta eficiencia térmica"
+                fill
+                sizes="(max-width: 768px) 100vw, 50vw"
+                style={{ objectFit: 'cover' }}
               />
             </div>
           </div>
@@ -499,7 +510,7 @@ export default async function Home() {
             <h2 style={{ textTransform: 'uppercase', margin: 0, fontSize: 'clamp(1.4rem, 4vw, 2rem)' }}>Productos Destacados</h2>
             <Link href="/catalogo" className="text-primary" style={{ fontWeight: 'bold' }}>VER TODOS →</Link>
           </div>
-          
+
           <div className="catalog-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(220px, 1fr))', gap: '1.5rem' }}>
             {featuredProducts.map((p) => (
               <ProductCard key={p.id} product={p} />
@@ -514,13 +525,13 @@ export default async function Home() {
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 300px), 1fr))', gap: '2.5rem', alignItems: 'center' }}>
             {/* Información del Almacén */}
             <div>
-              <span style={{ 
-                background: 'var(--primary-color)', 
-                color: '#111', 
-                fontWeight: 'bold', 
-                fontSize: '0.85rem', 
-                padding: '0.35rem 0.85rem', 
-                borderRadius: '20px', 
+              <span style={{
+                background: 'var(--primary-color)',
+                color: '#111',
+                fontWeight: 'bold',
+                fontSize: '0.85rem',
+                padding: '0.35rem 0.85rem',
+                borderRadius: '20px',
                 display: 'inline-block',
                 marginBottom: '1rem',
                 textTransform: 'uppercase',
@@ -579,20 +590,20 @@ export default async function Home() {
               </div>
 
               <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
-                <a 
-                  href="https://maps.app.goo.gl/FmmwX9PivNVnurEL7" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
+                <a
+                  href="https://maps.app.goo.gl/FmmwX9PivNVnurEL7"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="btn btn--primary"
                   style={{ padding: '0.85rem 1.5rem', display: 'inline-flex', alignItems: 'center', gap: '0.5rem', fontSize: '0.92rem' }}
                 >
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 0C7.589 0 4 3.589 4 8c0 4.274 7.219 15.184 7.633 15.82a.498.498 0 00.734 0C12.781 23.184 20 12.274 20 8c0-4.411-3.589-8-8-8zm0 11.5a3.5 3.5 0 110-7 3.5 3.5 0 010 7z"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 0C7.589 0 4 3.589 4 8c0 4.274 7.219 15.184 7.633 15.82a.498.498 0 00.734 0C12.781 23.184 20 12.274 20 8c0-4.411-3.589-8-8-8zm0 11.5a3.5 3.5 0 110-7 3.5 3.5 0 010 7z" /></svg>
                   Cómo Llegar (Google Maps)
                 </a>
-                <a 
-                  href="https://wa.me/573102420490?text=Hola%2C%20quisiera%20cotizar%20repuestos." 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
+                <a
+                  href="https://wa.me/573102420490?text=Hola%2C%20quisiera%20cotizar%20repuestos."
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="btn"
                   style={{ background: '#25D366', color: '#fff', border: 'none', padding: '0.85rem 1.5rem', display: 'inline-flex', alignItems: 'center', gap: '0.5rem', fontSize: '0.92rem' }}
                 >
@@ -603,13 +614,13 @@ export default async function Home() {
 
             {/* Mapa Interactivo Google Maps */}
             <div style={{ borderRadius: '16px', overflow: 'hidden', border: '2px solid #333', boxShadow: '0 12px 35px rgba(0,0,0,0.5)', height: 'clamp(280px, 45vw, 420px)', minHeight: '260px' }}>
-              <iframe 
-                src="https://maps.google.com/maps?q=Rembeat,+Tv.+29,+Barrancabermeja,+Santander&t=&z=16&ie=UTF8&iwloc=&output=embed" 
-                width="100%" 
-                height="100%" 
-                style={{ border: 0, display: 'block' }} 
-                allowFullScreen="" 
-                loading="lazy" 
+              <iframe
+                src="https://maps.google.com/maps?q=Rembeat,+Tv.+29,+Barrancabermeja,+Santander&t=&z=16&ie=UTF8&iwloc=&output=embed"
+                width="100%"
+                height="100%"
+                style={{ border: 0, display: 'block' }}
+                allowFullScreen=""
+                loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
                 title="Mapa Rembert Repuestos Barrancabermeja"
               ></iframe>

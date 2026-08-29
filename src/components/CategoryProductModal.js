@@ -159,8 +159,8 @@ export default function CategoryProductModal({ products, initialIndex = 0, onClo
         style={{
           position: "relative",
           width: "100%",
-          maxWidth: "1000px",
-          maxHeight: "95vh",
+          maxWidth: "980px",
+          maxHeight: "94vh",
           background: "#141414",
           border: "1px solid #333",
           borderRadius: "16px",
@@ -170,17 +170,18 @@ export default function CategoryProductModal({ products, initialIndex = 0, onClo
           boxShadow: "0 25px 50px -12px rgba(0, 0, 0, 0.95)",
         }}
       >
-        {/* Cabecera del Modal con Navegación y Botón Volver/Cerrar */}
+        {/* Cabecera del Modal con Navegación Compacta en 1 Sola Línea */}
         <div
           style={{
-            padding: "12px 16px",
+            padding: "10px 14px",
             background: "#0a0a0a",
             borderBottom: "1px solid #262626",
             display: "flex",
             alignItems: "center",
             justifyContent: "space-between",
             gap: "8px",
-            flexWrap: "wrap",
+            flexWrap: "nowrap",
+            flexShrink: 0,
           }}
         >
           {/* Botón Volver / Cerrar Rápido */}
@@ -194,40 +195,47 @@ export default function CategoryProductModal({ products, initialIndex = 0, onClo
               color: "#FFFFFF",
               border: "none",
               borderRadius: "8px",
-              padding: "6px 14px",
+              padding: "6px 12px",
               cursor: "pointer",
               fontWeight: "800",
-              fontSize: "0.85rem",
+              fontSize: "clamp(0.75rem, 2vw, 0.84rem)",
               display: "inline-flex",
               alignItems: "center",
-              gap: "6px",
+              gap: "4px",
               boxShadow: "0 2px 8px rgba(229, 36, 33, 0.4)",
+              flexShrink: 0,
+              whiteSpace: "nowrap",
             }}
           >
             ← VOLVER
           </button>
 
-          <div style={{ display: "flex", alignItems: "center", gap: "8px", flexWrap: "wrap" }}>
+          {/* Categoría y Contador de Posición */}
+          <div style={{ display: "flex", alignItems: "center", gap: "6px", minWidth: 0, overflow: "hidden" }}>
             <span
               style={{
                 background: "var(--primary-color)",
                 color: "#000",
-                fontSize: "0.72rem",
-                fontWeight: "bold",
+                fontSize: "clamp(0.68rem, 1.8vw, 0.74rem)",
+                fontWeight: "800",
                 padding: "3px 8px",
-                borderRadius: "4px",
+                borderRadius: "6px",
                 textTransform: "uppercase",
+                whiteSpace: "nowrap",
+                overflow: "hidden",
+                textOverflow: "ellipsis",
+                maxWidth: "140px",
               }}
             >
               {categoryName}
             </span>
-            <span style={{ color: "#aaa", fontSize: "0.82rem" }}>
-              <strong>{currentIndex + 1}</strong> / <strong>{products.length}</strong>
+            <span style={{ color: "#aaa", fontSize: "0.78rem", whiteSpace: "nowrap" }}>
+              <strong>{currentIndex + 1}</strong>/<strong style={{ color: "#fff" }}>{products.length}</strong>
             </span>
           </div>
 
-          {/* Botones Centrales de Avanzar / Retroceder */}
-          <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+          {/* Botones de Navegación (◄, ►, ✕) */}
+          <div style={{ display: "flex", alignItems: "center", gap: "5px", flexShrink: 0 }}>
             <button
               type="button"
               onClick={handlePrev}
@@ -237,14 +245,16 @@ export default function CategoryProductModal({ products, initialIndex = 0, onClo
                 background: "#222",
                 color: "#fff",
                 border: "1px solid #444",
-                borderRadius: "8px",
-                padding: "6px 10px",
+                borderRadius: "6px",
+                padding: "5px 8px",
                 cursor: "pointer",
                 fontWeight: "bold",
                 fontSize: "0.82rem",
                 display: "flex",
                 alignItems: "center",
-                gap: "4px",
+                justifyContent: "center",
+                minWidth: "28px",
+                height: "30px",
               }}
             >
               ◄
@@ -258,20 +268,20 @@ export default function CategoryProductModal({ products, initialIndex = 0, onClo
                 background: "var(--primary-color)",
                 color: "#000",
                 border: "none",
-                borderRadius: "8px",
-                padding: "6px 10px",
+                borderRadius: "6px",
+                padding: "5px 8px",
                 cursor: "pointer",
                 fontWeight: "bold",
                 fontSize: "0.82rem",
                 display: "flex",
                 alignItems: "center",
-                gap: "4px",
+                justifyContent: "center",
+                minWidth: "28px",
+                height: "30px",
               }}
             >
               ►
             </button>
-
-            {/* Cerrar X */}
             <button
               type="button"
               onClick={handleClose}
@@ -282,14 +292,15 @@ export default function CategoryProductModal({ products, initialIndex = 0, onClo
                 color: "#fff",
                 border: "1px solid #444",
                 borderRadius: "50%",
-                width: "32px",
-                height: "32px",
+                width: "30px",
+                height: "30px",
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
                 cursor: "pointer",
                 fontWeight: "bold",
-                fontSize: "0.95rem",
+                fontSize: "0.9rem",
+                marginLeft: "2px",
               }}
             >
               ✕
@@ -300,29 +311,30 @@ export default function CategoryProductModal({ products, initialIndex = 0, onClo
         {/* Cuerpo del Modal (Scrollable) */}
         <div
           style={{
-            padding: "clamp(12px, 3vw, 24px)",
+            padding: "clamp(12px, 2.5vw, 20px)",
             overflowY: "auto",
+            WebkitOverflowScrolling: "touch",
             display: "flex",
             flexDirection: "column",
-            gap: "20px",
+            gap: "16px",
           }}
         >
           {/* Grid Principal (Imagen + Detalles) */}
           <div
             style={{
               display: "grid",
-              gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 260px), 1fr))",
-              gap: "20px",
+              gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 280px), 1fr))",
+              gap: "16px",
             }}
           >
             {/* Galería de Fotos */}
-            <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
+            <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
               <div
                 style={{
                   background: "#FFFFFF",
                   borderRadius: "12px",
-                  padding: "16px",
-                  height: "clamp(200px, 40vw, 300px)",
+                  padding: "14px",
+                  height: "clamp(200px, 42vw, 300px)",
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "center",
@@ -346,26 +358,34 @@ export default function CategoryProductModal({ products, initialIndex = 0, onClo
 
               {/* Thumbnails si hay más de 1 imagen */}
               {galleryImages.length > 1 && (
-                <div style={{ display: "flex", gap: "8px", overflowX: "auto" }}>
+                <div style={{ display: "flex", gap: "8px", overflowX: "auto", paddingBottom: "4px" }}>
                   {galleryImages.map((imgUrl, idx) => (
                     <button
                       type="button"
                       key={idx}
                       onClick={() => setSelectedImage(imgUrl)}
                       style={{
-                        width: "60px",
-                        height: "60px",
+                        width: "56px",
+                        height: "56px",
                         borderRadius: "6px",
                         background: "#FFFFFF",
                         border: selectedImage === imgUrl ? "2px solid var(--primary-color)" : "1px solid #CBD5E1",
-                        padding: "4px",
+                        padding: "3px",
                         cursor: "pointer",
                         display: "flex",
                         alignItems: "center",
                         justifyContent: "center",
+                        flexShrink: 0,
                       }}
                     >
-                      <Image src={imgUrl} alt={`Vista ${idx + 1} de ${currentProduct.name}`} width={52} height={52} unoptimized={imgUrl.startsWith("/api/imagen-referencia")} style={{ width: "100%", height: "100%", objectFit: "contain" }} />
+                      <Image
+                        src={imgUrl}
+                        alt={`Vista ${idx + 1} de ${currentProduct.name}`}
+                        width={50}
+                        height={50}
+                        unoptimized={imgUrl.startsWith("/api/imagen-referencia")}
+                        style={{ width: "100%", height: "100%", objectFit: "contain" }}
+                      />
                     </button>
                   ))}
                 </div>
@@ -373,15 +393,34 @@ export default function CategoryProductModal({ products, initialIndex = 0, onClo
             </div>
 
             {/* Información del Producto y Compra */}
-            <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-              <div style={{ color: "var(--primary-color)", fontWeight: "bold", fontSize: "0.82rem", letterSpacing: "1px" }}>
-                {brandName} • <span className="product-reference">{referenceLabel}: {currentProduct.sku || currentProduct.id.slice(-8)}</span>
+            <div style={{ display: "flex", flexDirection: "column", gap: "10px", minWidth: 0 }}>
+              <div style={{ display: "flex", alignItems: "center", gap: "6px", flexWrap: "wrap" }}>
+                <span style={{ color: "var(--primary-color)", fontWeight: "800", fontSize: "0.80rem", letterSpacing: "0.5px", textTransform: "uppercase" }}>
+                  {brandName}
+                </span>
+                <span style={{ color: "#666" }}>•</span>
+                <span className="product-reference" style={{ fontSize: "0.74rem", padding: "0.15rem 0.55rem" }}>
+                  {referenceLabel}: {currentProduct.sku || currentProduct.id.slice(-8)}
+                </span>
               </div>
 
-              <h2 id="product-modal-title" style={{ fontSize: "clamp(1.2rem, 4vw, 1.6rem)", color: "#fff", lineHeight: "1.2" }}>{currentProduct.name}</h2>
+              <h2
+                id="product-modal-title"
+                style={{
+                  fontSize: "clamp(1.15rem, 3.5vw, 1.5rem)",
+                  color: "#FFFFFF",
+                  lineHeight: "1.25",
+                  margin: 0,
+                  overflowWrap: "anywhere",
+                  textWrap: "balance",
+                }}
+              >
+                {currentProduct.name}
+              </h2>
 
-              <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-                <span style={{ fontSize: "clamp(1.3rem, 4vw, 1.8rem)", fontWeight: "bold", color: "var(--primary-color)" }}>
+              {/* Precio y Estado de Existencia */}
+              <div style={{ display: "flex", alignItems: "center", gap: "10px", flexWrap: "wrap" }}>
+                <span style={{ fontSize: "clamp(1.3rem, 4vw, 1.75rem)", fontWeight: "900", color: "var(--primary-color)" }}>
                   {currentPrice > 0
                     ? new Intl.NumberFormat("es-CO", { style: "currency", currency: "COP", maximumFractionDigits: 0 }).format(currentPrice)
                     : "Precio bajo cotización"}
@@ -389,9 +428,9 @@ export default function CategoryProductModal({ products, initialIndex = 0, onClo
                 <span
                   style={{
                     padding: "4px 10px",
-                    borderRadius: "12px",
-                    fontSize: "0.78rem",
-                    fontWeight: "bold",
+                    borderRadius: "20px",
+                    fontSize: "0.76rem",
+                    fontWeight: "700",
                     background: canBuy ? "rgba(76, 175, 80, 0.15)" : "rgba(255, 107, 0, 0.12)",
                     color: canBuy ? "#4caf50" : "var(--primary-color)",
                     border: `1px solid ${canBuy ? "#2e7d32" : "var(--primary-color)"}`,
@@ -401,19 +440,21 @@ export default function CategoryProductModal({ products, initialIndex = 0, onClo
                 </span>
               </div>
 
-              <p style={{ color: "#aaa", fontSize: "0.9rem", lineHeight: "1.5" }}>
-                {currentProduct.description}
-              </p>
+              {currentProduct.description && (
+                <p style={{ color: "#CBD5E1", fontSize: "0.88rem", lineHeight: "1.45", margin: 0 }}>
+                  {currentProduct.description}
+                </p>
+              )}
 
-              <ProductCompatibilityPanel product={currentProduct} dark />
+              <ProductCompatibilityPanel product={currentProduct} dark compact />
 
               {/* Selector de Presentación / Variantes */}
               {currentProduct.variants && currentProduct.variants.length > 0 && (
                 <div>
-                  <label style={{ fontSize: "0.8rem", textTransform: "uppercase", color: "#888", display: "block", marginBottom: "6px" }}>
+                  <label style={{ fontSize: "0.78rem", textTransform: "uppercase", color: "#94A3B8", display: "block", marginBottom: "5px", fontWeight: "700" }}>
                     Selecciona Presentación / Empaque:
                   </label>
-                  <div style={{ display: "flex", flexWrap: "wrap", gap: "8px" }}>
+                  <div style={{ display: "flex", flexWrap: "wrap", gap: "6px" }}>
                     {currentProduct.variants.map((v) => (
                       <button
                         key={v.id}
@@ -422,10 +463,10 @@ export default function CategoryProductModal({ products, initialIndex = 0, onClo
                           background: selectedVariant?.id === v.id ? "var(--primary-color)" : "#1f1f1f",
                           color: selectedVariant?.id === v.id ? "#000" : "#fff",
                           border: `1px solid ${selectedVariant?.id === v.id ? "var(--primary-color)" : "#333"}`,
-                          padding: "6px 12px",
+                          padding: "6px 10px",
                           borderRadius: "6px",
                           cursor: "pointer",
-                          fontSize: "0.82rem",
+                          fontSize: "0.80rem",
                           fontWeight: "bold",
                         }}
                       >
@@ -436,26 +477,26 @@ export default function CategoryProductModal({ products, initialIndex = 0, onClo
                 </div>
               )}
 
-              {/* Botones de Acción */}
-              <div style={{ display: "flex", gap: "10px", marginTop: "auto", paddingTop: "12px" }}>
-                <div style={{ display: "flex", border: "1px solid #333", borderRadius: "8px", overflow: "hidden", background: "#111" }}>
+              {/* Botones de Acción (Cantidad + Añadir al Carrito) */}
+              <div style={{ display: "flex", gap: "8px", marginTop: "auto", paddingTop: "8px", flexWrap: "wrap" }}>
+                <div style={{ display: "flex", border: "1px solid #333", borderRadius: "8px", overflow: "hidden", background: "#111", height: "44px" }}>
                   <button
                     onClick={() => setQuantity(Math.max(1, quantity - 1))}
                     type="button"
                     aria-label="Reducir cantidad"
-                    style={{ background: "transparent", color: "#fff", border: "none", padding: "8px 12px", cursor: "pointer" }}
+                    style={{ background: "transparent", color: "#fff", border: "none", padding: "0 12px", cursor: "pointer", fontSize: "1.1rem", fontWeight: "bold" }}
                   >
                     -
                   </button>
-                  <span style={{ padding: "8px 12px", color: "#fff", fontWeight: "bold", display: "flex", alignItems: "center" }}>
+                  <span style={{ padding: "0 10px", color: "#fff", fontWeight: "bold", display: "flex", alignItems: "center", minWidth: "32px", justifyContent: "center" }}>
                     {quantity}
                   </span>
                   <button
-                    onClick={() => setQuantity(Math.min(currentStock, quantity + 1))}
+                    onClick={() => setQuantity(Math.min(currentStock || 99, quantity + 1))}
                     type="button"
                     aria-label="Aumentar cantidad"
-                    disabled={quantity >= currentStock}
-                    style={{ background: "transparent", color: "#fff", border: "none", padding: "8px 12px", cursor: "pointer" }}
+                    disabled={quantity >= currentStock && canBuy}
+                    style={{ background: "transparent", color: "#fff", border: "none", padding: "0 12px", cursor: "pointer", fontSize: "1.1rem", fontWeight: "bold" }}
                   >
                     +
                   </button>
@@ -468,9 +509,11 @@ export default function CategoryProductModal({ products, initialIndex = 0, onClo
                     className="btn-add-to-cart"
                     style={{
                       flex: 1,
-                      padding: "10px 14px",
+                      minWidth: "140px",
+                      height: "44px",
+                      padding: "0 14px",
                       fontWeight: "800",
-                      fontSize: "0.9rem",
+                      fontSize: "0.88rem",
                       borderRadius: "8px",
                       border: added ? "1.5px solid #16A34A" : "1.5px solid #FFD700",
                       background: added ? "#16A34A" : "#111111",
@@ -487,13 +530,16 @@ export default function CategoryProductModal({ products, initialIndex = 0, onClo
                     {added ? <><span>✓</span><span>¡Agregado!</span></> : <><span>🛒</span><span>Añadir al carrito</span></>}
                   </button>
                 ) : (
-                  <div className="product-card__quote-notice product-card__quote-notice--dark">
-                    Validamos referencia, precio y existencia antes de vender
+                  <div
+                    className="product-card__quote-notice product-card__quote-notice--dark"
+                    style={{ flex: 1, minWidth: "140px", height: "44px", display: "flex", alignItems: "center", justifyContent: "center", padding: "0 10px", fontSize: "0.78rem" }}
+                  >
+                    Validamos referencia y precio antes de vender
                   </div>
                 )}
               </div>
 
-              {/* WhatsApp */}
+              {/* Botón WhatsApp */}
               <a
                 href={whatsappUrl}
                 target="_blank"
@@ -503,89 +549,125 @@ export default function CategoryProductModal({ products, initialIndex = 0, onClo
                   alignItems: "center",
                   justifyContent: "center",
                   gap: "8px",
-                  padding: "10px",
+                  height: "44px",
+                  padding: "0 14px",
                   borderRadius: "8px",
                   border: "1.5px solid #25D366",
                   background: "rgba(37, 211, 102, 0.08)",
                   color: "#25D366",
                   textDecoration: "none",
                   fontWeight: "bold",
-                  fontSize: "0.85rem",
+                  fontSize: "0.86rem",
+                  boxShadow: "0 2px 8px rgba(37, 211, 102, 0.2)",
+                  transition: "background 0.2s ease",
                 }}
               >
                 <WhatsAppIcon size={18} color="#25D366" />
-                <span>Cotizar por WhatsApp (310 242 0490)</span>
+                <span>Cotizar por WhatsApp</span>
               </a>
             </div>
           </div>
 
-          {/* Ficha Técnica Detallada */}
+          {/* Ficha Técnica Detallada y Pestañas */}
           <div style={{ background: "#0a0a0a", borderRadius: "12px", border: "1px solid #222", overflow: "hidden" }}>
-            <div style={{ display: "flex", borderBottom: "1px solid #222", background: "#111" }}>
+            <div style={{ display: "flex", borderBottom: "1px solid #222", background: "#111", overflowX: "auto" }}>
               <button
+                type="button"
                 onClick={() => setActiveTab("specs")}
                 style={{
-                  padding: "12px 20px",
+                  padding: "10px 16px",
                   background: activeTab === "specs" ? "#0a0a0a" : "transparent",
                   color: activeTab === "specs" ? "var(--primary-color)" : "#888",
                   border: "none",
                   borderBottom: activeTab === "specs" ? "2px solid var(--primary-color)" : "none",
                   fontWeight: "bold",
                   cursor: "pointer",
-                  fontSize: "0.88rem",
+                  fontSize: "0.84rem",
+                  whiteSpace: "nowrap",
                 }}
               >
-                ⚙️ Ficha Técnica & Especificaciones OEM
+                ⚙️ Ficha Técnica & Especificaciones
               </button>
               <button
+                type="button"
                 onClick={() => setActiveTab("shipping")}
                 style={{
-                  padding: "12px 20px",
+                  padding: "10px 16px",
                   background: activeTab === "shipping" ? "#0a0a0a" : "transparent",
                   color: activeTab === "shipping" ? "var(--primary-color)" : "#888",
                   border: "none",
                   borderBottom: activeTab === "shipping" ? "2px solid var(--primary-color)" : "none",
                   fontWeight: "bold",
                   cursor: "pointer",
-                  fontSize: "0.88rem",
+                  fontSize: "0.84rem",
+                  whiteSpace: "nowrap",
                 }}
               >
                 🚚 Envíos y Garantía
               </button>
             </div>
 
-            <div style={{ padding: "16px 20px" }}>
+            <div style={{ padding: "12px 16px" }}>
               {activeTab === "specs" && (
                 <div>
-                  <h4 style={{ color: "#fff", marginBottom: "12px", fontSize: "0.95rem" }}>
-                    Ficha Técnica Oficial de {currentProduct.name}
+                  <h4 style={{ color: "#fff", marginBottom: "10px", fontSize: "0.88rem", fontWeight: "700" }}>
+                    Especificaciones de {currentProduct.name}
                   </h4>
-                  {currentProduct.attributes && currentProduct.attributes.length > 0 ? (
-                    <table style={{ width: "100%", borderCollapse: "collapse", color: "#ccc", fontSize: "0.85rem" }}>
-                      <tbody>
-                        {currentProduct.attributes.map((attr) => (
-                          <tr key={attr.id} style={{ borderBottom: "1px solid #1a1a1a" }}>
-                            <td style={{ padding: "8px 12px", fontWeight: "bold", color: "var(--primary-color)", width: "35%" }}>
+                  <table style={{ width: "100%", borderCollapse: "collapse", color: "#ccc", fontSize: "0.82rem" }}>
+                    <tbody>
+                      <tr style={{ borderBottom: "1px solid #1a1a1a" }}>
+                        <td style={{ padding: "7px 10px", fontWeight: "bold", color: "var(--primary-color)", width: "36%", minWidth: "90px", verticalAlign: "top" }}>
+                          Marca:
+                        </td>
+                        <td style={{ padding: "7px 10px", color: "#E2E8F0" }}>{brandName}</td>
+                      </tr>
+                      <tr style={{ borderBottom: "1px solid #1a1a1a" }}>
+                        <td style={{ padding: "7px 10px", fontWeight: "bold", color: "var(--primary-color)", verticalAlign: "top" }}>
+                          Categoría:
+                        </td>
+                        <td style={{ padding: "7px 10px", color: "#E2E8F0" }}>{categoryName}</td>
+                      </tr>
+                      {currentProduct.sku && (
+                        <tr style={{ borderBottom: "1px solid #1a1a1a" }}>
+                          <td style={{ padding: "7px 10px", fontWeight: "bold", color: "var(--primary-color)", verticalAlign: "top" }}>
+                            Referencia:
+                          </td>
+                          <td style={{ padding: "7px 10px", color: "#E2E8F0", fontFamily: "monospace" }}>
+                            {currentProduct.sku}
+                          </td>
+                        </tr>
+                      )}
+                      {currentProduct.attributes && currentProduct.attributes.length > 0 ? (
+                        currentProduct.attributes.map((attr) => (
+                          <tr key={attr.id || attr.name} style={{ borderBottom: "1px solid #1a1a1a" }}>
+                            <td style={{ padding: "7px 10px", fontWeight: "bold", color: "var(--primary-color)", verticalAlign: "top" }}>
                               {attr.name}:
                             </td>
-                            <td style={{ padding: "8px 12px" }}>{attr.value}</td>
+                            <td style={{ padding: "7px 10px", color: "#E2E8F0", overflowWrap: "anywhere", wordBreak: "break-word" }}>
+                              {attr.value}
+                            </td>
                           </tr>
-                        ))}
-                      </tbody>
-                    </table>
-                  ) : (
-                    <p style={{ color: "#888", fontSize: "0.85rem" }}>
-                      Producto certificado 100% original. Especificaciones de fábrica garantizadas para repuestos y lubricación.
-                    </p>
-                  )}
+                        ))
+                      ) : (
+                        <tr style={{ borderBottom: "1px solid #1a1a1a" }}>
+                          <td style={{ padding: "7px 10px", fontWeight: "bold", color: "var(--primary-color)", verticalAlign: "top" }}>
+                            Calidad:
+                          </td>
+                          <td style={{ padding: "7px 10px", color: "#E2E8F0" }}>
+                            Repuesto certificado con garantía y ajuste garantizado.
+                          </td>
+                        </tr>
+                      )}
+                    </tbody>
+                  </table>
                 </div>
               )}
 
               {activeTab === "shipping" && (
-                <div style={{ color: "#aaa", fontSize: "0.85rem", display: "flex", flexDirection: "column", gap: "8px" }}>
-                  <p>📍 <strong>Despacho Local:</strong> Entregas en Barrancabermeja y zonas industriales el mismo día.</p>
-                  <p>🚚 <strong>Envíos Nacionales:</strong> Despachos diarios a toda Colombia por Interrapidísimo, Envía y Servientrega.</p>
-                  <p>🛡️ <strong>Garantía:</strong> Repuesto 100% sellado de fábrica con garantía de encaje y calidad.</p>
+                <div style={{ color: "#aaa", fontSize: "0.82rem", display: "flex", flexDirection: "column", gap: "8px" }}>
+                  <p style={{ margin: 0 }}>📍 <strong>Despacho Local:</strong> Entregas en Barrancabermeja y zonas industriales el mismo día.</p>
+                  <p style={{ margin: 0 }}>🚚 <strong>Envíos Nacionales:</strong> Despachos diarios a toda Colombia por transportadora aliada.</p>
+                  <p style={{ margin: 0 }}>🛡️ <strong>Garantía:</strong> Producto nuevo y sellado con respaldo técnico oficial.</p>
                 </div>
               )}
             </div>
@@ -595,62 +677,69 @@ export default function CategoryProductModal({ products, initialIndex = 0, onClo
         {/* Footer Modal con Botón Volver y Navegación Inferior */}
         <div
           style={{
-            padding: "12px 16px",
+            padding: "10px 14px",
             background: "#080808",
             borderTop: "1px solid #222",
             display: "flex",
             alignItems: "center",
             justifyContent: "space-between",
-            gap: "10px",
-            flexWrap: "wrap",
+            gap: "8px",
+            flexWrap: "nowrap",
+            flexShrink: 0,
           }}
         >
           <button
+            type="button"
             onClick={onClose}
             style={{
               background: "#222",
               color: "#fff",
               border: "1px solid #444",
-              borderRadius: "8px",
-              padding: "7px 16px",
+              borderRadius: "6px",
+              padding: "6px 12px",
               cursor: "pointer",
               fontWeight: "700",
-              fontSize: "0.85rem",
+              fontSize: "clamp(0.74rem, 2vw, 0.82rem)",
               display: "inline-flex",
               alignItems: "center",
-              gap: "6px",
+              gap: "4px",
+              whiteSpace: "nowrap",
             }}
           >
-            ✕ Cerrar y volver al catálogo
+            ✕ Cerrar
           </button>
 
-          <div style={{ display: "flex", gap: "8px", alignItems: "center" }}>
+          <div style={{ display: "flex", gap: "6px", alignItems: "center" }}>
             <button
+              type="button"
               onClick={handlePrev}
               style={{
                 background: "#1c1c1c",
                 color: "#ccc",
                 border: "1px solid #333",
                 borderRadius: "6px",
-                padding: "6px 12px",
+                padding: "6px 10px",
                 cursor: "pointer",
                 fontWeight: "bold",
-                fontSize: "0.82rem",
+                fontSize: "0.78rem",
+                whiteSpace: "nowrap",
               }}
             >
               ◄ Anterior
             </button>
             <button
+              type="button"
               onClick={handleNext}
               style={{
                 background: "var(--primary-color)",
                 color: "#000",
                 border: "none",
                 borderRadius: "6px",
-                padding: "6px 14px",
+                padding: "6px 12px",
                 fontWeight: "bold",
                 cursor: "pointer",
-                fontSize: "0.82rem",
+                fontSize: "0.78rem",
+                whiteSpace: "nowrap",
               }}
             >
               Siguiente ►
