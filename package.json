@@ -6,7 +6,7 @@
     "node": ">=22.0.0"
   },
   "scripts": {
-    "build": "prisma generate && node prisma/prepare-production-db.js && node prisma/upsert-priority-filters.js --build-sync && next build",
+    "build": "prisma generate && node prisma/prepare-production-db.js && node prisma/upsert-priority-filters.js --build-sync && next build --webpack",
     "dev": "next dev -H 0.0.0.0",
     "postinstall": "prisma generate",
     "start": "next start",

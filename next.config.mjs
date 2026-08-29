@@ -29,7 +29,6 @@ const nextConfig = {
     "/*": [
       "./node_modules/pg-cloudflare/dist/**/*",
       "./node_modules/pg-cloudflare/esm/**/*",
-      "./node_modules/.prisma/client/query_compiler_bg.wasm",
     ],
   },
   images: {

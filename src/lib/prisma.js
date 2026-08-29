@@ -1,4 +1,6 @@
-import { PrismaClient } from "@prisma/client";
+// La entrada WASM evita lecturas del sistema de archivos que no existen dentro
+// del runtime aislado de Cloudflare Workers.
+import { PrismaClient } from "@prisma/client/wasm.js";
 import { PrismaPg } from "@prisma/adapter-pg";
 
 const globalForPrisma = globalThis;
