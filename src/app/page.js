@@ -82,7 +82,7 @@ export default async function Home() {
           fill
           priority
           sizes="100vw"
-          quality={85}
+          quality={75}
           style={{ objectFit: 'cover', objectPosition: 'center 35%', zIndex: 0 }}
         />
         <div aria-hidden="true" style={{ position: 'absolute', inset: 0, zIndex: 1, background: 'linear-gradient(90deg, rgba(10,10,10,0.92) 0%, rgba(10,10,10,0.72) 55%, rgba(10,10,10,0.45) 100%)' }} />

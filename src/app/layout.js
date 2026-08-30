@@ -184,6 +184,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="es" className={`${inter.variable}`}>
       <head>
+        <link rel="preconnect" href="https://yrgycsbspqjqifyypueo.supabase.co" crossOrigin="anonymous" />
+        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+        <link rel="dns-prefetch" href="https://maps.googleapis.com" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdGraph) }}
