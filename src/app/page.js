@@ -422,7 +422,7 @@ export default async function Home() {
 
           <div style={{ textAlign: 'center', marginTop: 'clamp(1.5rem, 4vw, 2.5rem)' }}>
             <p style={{ fontSize: 'clamp(0.85rem, 2vw, 0.95rem)', color: '#666666', marginBottom: '0.75rem' }}>
-              ¿Tu vehículo no aparece en la lista? Tenemos stock para marcas europeas, asiáticas y americanas.
+              ¿Tu vehículo no aparece en la lista? Tenemos inventario de repuestos para marcas europeas, asiáticas y americanas.
             </p>
             <a
               href="https://wa.me/573108737354?text=Hola%2C%20necesito%20cotizar%20repuestos%20para%20mi%20veh%C3%ADculo."
@@ -431,7 +431,7 @@ export default async function Home() {
               className="btn btn--primary"
               style={{ padding: '0.75rem 1.6rem', fontSize: 'clamp(0.85rem, 2.2vw, 0.95rem)' }}
             >
-              💬 Cotizar mi Vehículo por WhatsApp
+              💬 Cotizar Repuestos para mi Vehículo por WhatsApp
             </a>
           </div>
         </div>
@@ -615,7 +615,7 @@ export default async function Home() {
             {/* Mapa Interactivo Google Maps */}
             <div style={{ borderRadius: '16px', overflow: 'hidden', border: '2px solid #333', boxShadow: '0 12px 35px rgba(0,0,0,0.5)', height: 'clamp(280px, 45vw, 420px)', minHeight: '260px' }}>
               <iframe
-                src="https://maps.google.com/maps?q=Rembeat,+Tv.+29,+Barrancabermeja,+Santander&t=&z=16&ie=UTF8&iwloc=&output=embed"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3955.5796030999557!2d-73.8350463!3d7.0385664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e42eb56b38df4f9%3A0xb7c9324e2b880f05!2sRembeat!5e0!3m2!1ses!2sco!4v1700000000000!5m2!1ses!2sco"
                 width="100%"
                 height="100%"
                 style={{ border: 0, display: 'block' }}

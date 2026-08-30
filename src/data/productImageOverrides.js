@@ -1,5 +1,77 @@
-// Generado por scripts/update-product-images.mjs y scripts/apply-generated-gti-image.mjs. No editar manualmente.
+// Generado por scripts/update-product-images.mjs, scripts/apply-generated-gti-image.mjs y scripts/brand-generated-product-images.mjs. No editar manualmente.
 export const productImageOverrides = Object.freeze({
+  "184441": {
+    "image": "/catalogo-ads/branded/184441-ads-184441-soporte-hidraulico-peugeot-branded-v2.webp",
+    "images": [
+      {
+        "url": "/catalogo-ads/branded/184441-ads-184441-soporte-hidraulico-peugeot-branded-v2.webp",
+        "alt": "Imagen generada de referencia de Soporte Hidráulico ADS 184441 — Peugeot, SKU 184441; no es fotografía original. Identificada con el logotipo ADS.",
+        "isMain": true
+      }
+    ],
+    "imageStatus": "generated-reference-image",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo ADS azul fue integrado digitalmente. Confirmar referencia, medidas y VIN antes de vender.",
+    "sourceRecord": {
+      "type": "ai-generated-reference",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "ADS",
+        "badgeVariant": "blue-wordmark",
+        "sourceImage": "/catalogo-ads/ads-184441-soporte-hidraulico-peugeot-referencial.png",
+        "sourceSha256": "e00677369f993647504ed5f3b656233ed9655ce0d9411540562af7c466c87b8a",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.222Z"
+      }
+    }
+  },
+  "184442": {
+    "image": "/catalogo-ads/branded/184442-ads-184442-soporte-hidraulico-peugeot-citroen-branded-v2.webp",
+    "images": [
+      {
+        "url": "/catalogo-ads/branded/184442-ads-184442-soporte-hidraulico-peugeot-citroen-branded-v2.webp",
+        "alt": "Imagen generada de referencia de Soporte Hidráulico ADS 184442 — Peugeot / Citroën, SKU 184442; no es fotografía original. Identificada con el logotipo ADS.",
+        "isMain": true
+      }
+    ],
+    "imageStatus": "generated-reference-image",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo ADS azul fue integrado digitalmente. Confirmar referencia, medidas y VIN antes de vender.",
+    "sourceRecord": {
+      "type": "ai-generated-reference",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "ADS",
+        "badgeVariant": "blue-wordmark",
+        "sourceImage": "/catalogo-ads/ads-184442-soporte-hidraulico-peugeot-citroen-referencial.png",
+        "sourceSha256": "c9b7ce0ef885f0673b3b7bbc53f6150ec1e33e12f66b12af2f2e21d68eff536a",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.224Z"
+      }
+    }
+  },
+  "364077": {
+    "image": "/catalogo-ads/branded/364077-ads-364077-rotula-inferior-peugeot-208-citroen-c3-c4-cactus-branded-v2.webp",
+    "images": [
+      {
+        "url": "/catalogo-ads/branded/364077-ads-364077-rotula-inferior-peugeot-208-citroen-c3-c4-cactus-branded-v2.webp",
+        "alt": "Imagen generada de referencia de Rótula Inferior ADS 364077 — Peugeot 208 / Citroën C3 / C4 Cactus, SKU 364077; no es fotografía original. Identificada con el logotipo ADS.",
+        "isMain": true
+      }
+    ],
+    "imageStatus": "generated-reference-image",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo ADS azul fue integrado digitalmente. Confirmar referencia, medidas y VIN antes de vender.",
+    "sourceRecord": {
+      "type": "ai-generated-reference",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "ADS",
+        "badgeVariant": "blue-wordmark",
+        "sourceImage": "/catalogo-ads/ads-364077-rotula-inferior-peugeot-citroen-referencial.png",
+        "sourceSha256": "493de305a1263fa8b92bc3ca776e4c90856529949590ff6f8fbf80d7a168ed5c",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.220Z"
+      }
+    }
+  },
   "94535475": {
     "image": "/catalogo-generated/reten-cig-tico-matiz-spark-7-24-kronos-143723-94535475-generated-reference.webp",
     "images": [
@@ -77,22 +149,31 @@ export const productImageOverrides = Object.freeze({
     }
   },
   "GTI04161": {
-    "image": "/catalogo-gti/generated/gti04-161-punta-lado-rueda-gti-chevrolet-tracker-turbo-onix-turbo-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti04-161-gti04-161-punta-lado-rueda-gti-chevrolet-tracker-turbo-onix-turbo-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti04-161-punta-lado-rueda-gti-chevrolet-tracker-turbo-onix-turbo-generated-reference.webp",
-        "alt": "Imagen generada de referencia para Punta lado rueda GTI — Chevrolet Tracker Turbo / Onix Turbo, SKU GTI04-161. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti04-161-gti04-161-punta-lado-rueda-gti-chevrolet-tracker-turbo-onix-turbo-branded-v2.webp",
+        "alt": "Imagen generada de referencia de Punta lado rueda GTI — Chevrolet Tracker Turbo / Onix Turbo, SKU GTI04-161; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Photorealistic studio product reference of a front wheel-side outer CV joint for Chevrolet Tracker 1.2 Turbo / Onix 1.0 Turbo manual transmission: single complete steel joint, splined shaft, threaded wheel-end tip and black boot; pure white background, no ABS ring, no text, no logo, no packaging. Fitment remains subject to VIN confirmation.",
       "sourceSha256": "742a35e9ab3d410670c03b7a707be644a2a4fb0d566b216579147a1e4cd1a390",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-27T21:20:20.495Z"
+      "generatedAt": "2026-08-27T21:20:20.495Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti04-161-punta-lado-rueda-gti-chevrolet-tracker-turbo-onix-turbo-generated-reference.webp",
+        "sourceSha256": "6e589a17630aa4e5d3a7d8c41766583def073716eaa39eb0d0e1af9785a75141",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.207Z"
+      }
     }
   },
   "GTI06082": {
@@ -120,22 +201,31 @@ export const productImageOverrides = Object.freeze({
     }
   },
   "GTI106092": {
-    "image": "/catalogo-gti/generated/punta-l-c-kia-picanto-all-new-1-2-25-21-gti106-092-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti106-092-punta-l-c-kia-picanto-all-new-1-2-25-21-gti106-092-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/punta-l-c-kia-picanto-all-new-1-2-25-21-gti106-092-generated-reference.webp",
-        "alt": "Imagen generada de referencia para PUNTA L/C KIA PICANTO ALL NEW 1.2 (25*21), SKU GTI106-092. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti106-092-punta-l-c-kia-picanto-all-new-1-2-25-21-gti106-092-branded-v2.webp",
+        "alt": "Imagen generada de referencia de PUNTA L/C KIA PICANTO ALL NEW 1.2 (25*21), SKU GTI106-092; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Photorealistic studio product reference of a gearbox-side inner CV joint for Kia Picanto All New 1.2, 25 × 21 splines: compact steel tulip housing, black boot, metal bands and splined stem; pure white background, no text, no logo, no packaging. Fitment remains subject to VIN confirmation.",
       "sourceSha256": "162d8b4e6cffbaa28ce6ed29ebc4207e5bfc8a0b576b3321d0394e3e06829a00",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-27T21:20:22.193Z"
+      "generatedAt": "2026-08-27T21:20:22.193Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/punta-l-c-kia-picanto-all-new-1-2-25-21-gti106-092-generated-reference.webp",
+        "sourceSha256": "d10727e4bbba4424a82a9fcc0fefc8237b9907c7bbcb4256a2440c7109c92ac5",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.208Z"
+      }
     }
   },
   "GTI01093": {
@@ -187,60 +277,87 @@ export const productImageOverrides = Object.freeze({
     }
   },
   "GTI04089": {
-    "image": "/catalogo-gti/generated/gti04-089-punta-lado-rueda-gti-chevrolet-cobalt-taxi-elite-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti04-089-gti04-089-punta-lado-rueda-gti-chevrolet-cobalt-taxi-elite-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti04-089-punta-lado-rueda-gti-chevrolet-cobalt-taxi-elite-generated-reference.webp",
-        "alt": "Imagen generada de referencia para Punta lado rueda GTI — Chevrolet Cobalt / Taxi Elite, SKU GTI04-089. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti04-089-gti04-089-punta-lado-rueda-gti-chevrolet-cobalt-taxi-elite-branded-v2.webp",
+        "alt": "Imagen generada de referencia de Punta lado rueda GTI — Chevrolet Cobalt / Taxi Elite, SKU GTI04-089; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Photorealistic studio product reference of a front wheel-side outer CV joint for Chevrolet Cobalt / Taxi Elite: steel outer joint, black boot, metal bands, splined shaft and threaded wheel-end tip; white background, no ABS ring, no text, no logo, no packaging. Fitment remains subject to VIN confirmation.",
       "sourceSha256": "ebef7bc781a1a593c2ee5f7e8163eca068491eebf907dbf6c123bde469a1768c",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-27T21:37:30.863Z"
+      "generatedAt": "2026-08-27T21:37:30.863Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti04-089-punta-lado-rueda-gti-chevrolet-cobalt-taxi-elite-generated-reference.webp",
+        "sourceSha256": "dd978546f4d5600b25fa91f1ed0d4fe44d3928790bbe01c4699b554faa6cb200",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.209Z"
+      }
     }
   },
   "GTI04D01": {
-    "image": "/catalogo-gti/generated/gti04-d01-punta-lado-rueda-gti-chevrolet-corsa-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti04-d01-gti04-d01-punta-lado-rueda-gti-chevrolet-corsa-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti04-d01-punta-lado-rueda-gti-chevrolet-corsa-generated-reference.webp",
-        "alt": "Imagen generada de referencia para Punta lado rueda GTI — Chevrolet Corsa, SKU GTI04-D01. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti04-d01-gti04-d01-punta-lado-rueda-gti-chevrolet-corsa-branded-v2.webp",
+        "alt": "Imagen generada de referencia de Punta lado rueda GTI — Chevrolet Corsa, SKU GTI04-D01; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Photorealistic studio product reference of a front wheel-side outer CV joint for Chevrolet Corsa: steel outer joint, black boot, metal bands, splined shaft and threaded wheel-end tip; white background, no ABS ring, no text, no logo, no packaging. Fitment remains subject to VIN confirmation.",
       "sourceSha256": "84b8db2cca316e0bc5a82bc92db940f6d8b5b9f611adb912f0024d4e5b31d8ad",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-27T21:37:30.864Z"
+      "generatedAt": "2026-08-27T21:37:30.864Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti04-d01-punta-lado-rueda-gti-chevrolet-corsa-generated-reference.webp",
+        "sourceSha256": "5c3fd02abdb46c6f6ab13109d0f7bb0a2b97fb8adc96941c20e86019edb90b60",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.210Z"
+      }
     }
   },
   "GTI06081": {
-    "image": "/catalogo-gti/generated/gti06-081-punta-lado-rueda-gti-hyundai-eon-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti06-081-gti06-081-punta-lado-rueda-gti-hyundai-eon-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti06-081-punta-lado-rueda-gti-hyundai-eon-generated-reference.webp",
-        "alt": "Imagen generada de referencia para Punta lado rueda GTI — Hyundai Eon, SKU GTI06-081. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti06-081-gti06-081-punta-lado-rueda-gti-hyundai-eon-branded-v2.webp",
+        "alt": "Imagen generada de referencia de Punta lado rueda GTI — Hyundai Eon, SKU GTI06-081; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Photorealistic studio product reference of a front wheel-side outer CV joint for Hyundai Eon: compact steel joint, black boot, metal bands, splined shaft and threaded wheel-end tip; white background, no ABS ring, no text, no logo, no packaging. Fitment remains subject to VIN confirmation.",
       "sourceSha256": "3aee6a94cf74a8a9102568bde71384e9a972d7c35fae0338f9299c271cfb1599",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-27T21:39:02.756Z"
+      "generatedAt": "2026-08-27T21:39:02.756Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti06-081-punta-lado-rueda-gti-hyundai-eon-generated-reference.webp",
+        "sourceSha256": "c8c3a187bcfd54490bb595ef7d348aebd9c40ed91a1be85a6f9c7d9868e8f000",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.210Z"
+      }
     }
   },
   "GTI06012": {
@@ -268,60 +385,87 @@ export const productImageOverrides = Object.freeze({
     }
   },
   "GTI03003": {
-    "image": "/catalogo-gti/generated/gti03-003-punta-lado-rueda-gti-kia-rio-stylus-1-5-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti03-003-gti03-003-punta-lado-rueda-gti-kia-rio-stylus-1-5-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti03-003-punta-lado-rueda-gti-kia-rio-stylus-1-5-generated-reference.webp",
-        "alt": "Imagen generada de referencia para Punta lado rueda GTI — Kia Rio Stylus 1.5, SKU GTI03-003. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti03-003-gti03-003-punta-lado-rueda-gti-kia-rio-stylus-1-5-branded-v2.webp",
+        "alt": "Imagen generada de referencia de Punta lado rueda GTI — Kia Rio Stylus 1.5, SKU GTI03-003; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Photorealistic studio product reference of a front wheel-side outer CV joint for Kia Rio Stylus 1.5, with a steel joint, black boot, metal bands, splined shaft, threaded wheel-end tip and internal retaining pin configuration; white background, no text, no logo, no packaging. Fitment remains subject to VIN confirmation.",
       "sourceSha256": "45d2f645f0163a563316d825f9dca59f4e299fb5cda4d0e6d3ccb82ac9939654",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-27T21:59:49.826Z"
+      "generatedAt": "2026-08-27T21:59:49.826Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti03-003-punta-lado-rueda-gti-kia-rio-stylus-1-5-generated-reference.webp",
+        "sourceSha256": "5c8242f00fb53ccfc0eb3abda3b048a9659e36f53a53e019e765ab0b38417229",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.211Z"
+      }
     }
   },
   "GTI01092": {
-    "image": "/catalogo-gti/generated/gti01-092-punta-lado-rueda-gti-renault-kwid-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti01-092-gti01-092-punta-lado-rueda-gti-renault-kwid-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti01-092-punta-lado-rueda-gti-renault-kwid-generated-reference.webp",
-        "alt": "Imagen generada de referencia para Punta lado rueda GTI — Renault Kwid, SKU GTI01-092. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti01-092-gti01-092-punta-lado-rueda-gti-renault-kwid-branded-v2.webp",
+        "alt": "Imagen generada de referencia de Punta lado rueda GTI — Renault Kwid, SKU GTI01-092; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Photorealistic studio product reference of a compact front wheel-side outer CV joint for Renault Kwid, with steel housing, black boot, metal bands, splined shaft and threaded wheel-end tip; white background, no text, no logo, no packaging. Fitment remains subject to VIN confirmation.",
       "sourceSha256": "0865648c8043071fa10e1c43d4135db70de9d260552b0002a13d6fd8c273c597",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-27T21:59:49.827Z"
+      "generatedAt": "2026-08-27T21:59:49.827Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti01-092-punta-lado-rueda-gti-renault-kwid-generated-reference.webp",
+        "sourceSha256": "c18171afc6dd9b141294f17334df0503305b1e36f3a73645284eac60e6b20543",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.211Z"
+      }
     }
   },
   "GTI03072": {
-    "image": "/catalogo-gti/generated/gti03-072-punta-lado-rueda-gti-mazda-2-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti03-072-gti03-072-punta-lado-rueda-gti-mazda-2-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti03-072-punta-lado-rueda-gti-mazda-2-generated-reference.webp",
-        "alt": "Imagen generada de referencia para Punta lado rueda GTI — Mazda 2, SKU GTI03-072. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti03-072-gti03-072-punta-lado-rueda-gti-mazda-2-branded-v2.webp",
+        "alt": "Imagen generada de referencia de Punta lado rueda GTI — Mazda 2, SKU GTI03-072; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Photorealistic studio product reference of a front wheel-side outer CV joint for Mazda 2, with steel housing, black boot, metal bands, splined shaft and threaded wheel-end tip; white background, no text, no logo, no packaging. Fitment remains subject to VIN confirmation.",
       "sourceSha256": "a9aaf5e2740bb10b56814cdc44216140cbc0228fc5d4512c84f7894253dc1989",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-27T21:59:49.827Z"
+      "generatedAt": "2026-08-27T21:59:49.827Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti03-072-punta-lado-rueda-gti-mazda-2-generated-reference.webp",
+        "sourceSha256": "4fa44816f58fa00ab212d0634c94bb63cd9e0406541b441b57544d25d4eaad53",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.212Z"
+      }
     }
   },
   "GTI01017": {
@@ -349,22 +493,31 @@ export const productImageOverrides = Object.freeze({
     }
   },
   "GTI06037": {
-    "image": "/catalogo-gti/generated/gti06-037-tulipa-lado-caja-gti-kia-rio-xcite-cerato-forte-hyundai-i25-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti06-037-gti06-037-tulipa-lado-caja-gti-kia-rio-xcite-cerato-forte-hyundai-i25-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti06-037-tulipa-lado-caja-gti-kia-rio-xcite-cerato-forte-hyundai-i25-generated-reference.webp",
-        "alt": "Imagen generada de referencia para Tulipa lado caja GTI — Kia Rio Xcite / Cerato / Forte / Hyundai i25, SKU GTI06-037. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti06-037-gti06-037-tulipa-lado-caja-gti-kia-rio-xcite-cerato-forte-hyundai-i25-branded-v2.webp",
+        "alt": "Imagen generada de referencia de Tulipa lado caja GTI — Kia Rio Xcite / Cerato / Forte / Hyundai i25, SKU GTI06-037; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Photorealistic studio product reference of a gearbox-side inner CV tulip for Kia Rio Xcite / Cerato / Forte / Hyundai i25: open steel cup with internal roller tracks, splined bore and stem; white background, no boot, no text, no logo, no packaging. Fitment remains subject to VIN confirmation.",
       "sourceSha256": "01a924b532d12c048402137acdb96734173d0db3828eacce6ae807647aaed49a",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-27T22:01:15.344Z"
+      "generatedAt": "2026-08-27T22:01:15.344Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti06-037-tulipa-lado-caja-gti-kia-rio-xcite-cerato-forte-hyundai-i25-generated-reference.webp",
+        "sourceSha256": "53885042bd18399aa0f09ef0f0e30d94006737e44f213cebae5974fd3b49f3a1",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.212Z"
+      }
     }
   },
   "GTI01004": {
@@ -392,22 +545,31 @@ export const productImageOverrides = Object.freeze({
     }
   },
   "GTI038": {
-    "image": "/catalogo-gti/generated/gti-038-tulipa-lado-caja-gti-hyundai-vision-kia-sephia-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti-038-gti-038-tulipa-lado-caja-gti-hyundai-vision-kia-sephia-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-038-tulipa-lado-caja-gti-hyundai-vision-kia-sephia-generated-reference.webp",
-        "alt": "Imagen generada de referencia para Tulipa lado caja GTI — Hyundai Vision / Kia Sephia, SKU GTI-038. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti-038-gti-038-tulipa-lado-caja-gti-hyundai-vision-kia-sephia-branded-v2.webp",
+        "alt": "Imagen generada de referencia de Tulipa lado caja GTI — Hyundai Vision / Kia Sephia, SKU GTI-038; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Photorealistic studio product reference of a gearbox-side inner CV tulip for Hyundai Accent Vision / Kia Sephia, open steel cup with internal roller tracks, splined bore and stem; white background, no text, no logo, no packaging. Fitment remains subject to VIN and physical spline-count confirmation.",
       "sourceSha256": "a70983101cd5c14932bdbd90fd62106f0320ec22ea7e7a1332b924663b0d5885",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-27T22:09:40.715Z"
+      "generatedAt": "2026-08-27T22:09:40.715Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-038-tulipa-lado-caja-gti-hyundai-vision-kia-sephia-generated-reference.webp",
+        "sourceSha256": "60671748fc08fc468cf4e692af2ee638f38f4121c2e964e0915f4d8982aeb85e",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.213Z"
+      }
     }
   },
   "OP4611": {
@@ -646,79 +808,115 @@ export const productImageOverrides = Object.freeze({
     }
   },
   "GTI01042": {
-    "image": "/catalogo-gti/generated/gti-gti01-042-punta-eje-l-r-master-ii-2-5-2010-2013-abs-51t-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti01-042-gti-gti01-042-punta-eje-l-r-master-ii-2-5-2010-2013-abs-51t-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti01-042-punta-eje-l-r-master-ii-2-5-2010-2013-abs-51t-generated-reference.webp",
-        "alt": "Imagen generada de referencia para PUNTA EJE L/R. MASTER II 2.5 2010/2013 (ABS 51T) — GTI01-042, SKU GTI01-042. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti01-042-gti-gti01-042-punta-eje-l-r-master-ii-2-5-2010-2013-abs-51t-branded-v2.webp",
+        "alt": "Imagen generada de referencia de PUNTA EJE L/R. MASTER II 2.5 2010/2013 (ABS 51T) — GTI01-042, SKU GTI01-042; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Photorealistic catalog reference for GTI01-042: one Renault Master II 2.5 outer CV joint kit, 2010–2013, with 51-tooth ABS ring, threaded male splined shaft, nut, black boot, clamps and circlip; pure white background; geometry contrasted against the exact distributor listing; no text, logo or watermark.",
       "sourceSha256": "35961f951f6147e32b53487b4c4156d95ae459c1f5a485d1ca029bfb0e6274b3",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T00:28:56.799Z"
+      "generatedAt": "2026-08-28T00:28:56.799Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti01-042-punta-eje-l-r-master-ii-2-5-2010-2013-abs-51t-generated-reference.webp",
+        "sourceSha256": "d602789c6e435369fa3cf0fea24b065599a1a38df20407ddfbbf497772cb7622",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.232Z"
+      }
     }
   },
   "GTI01056": {
-    "image": "/catalogo-gti/generated/gti-gti01-056-eje-homocinetico-izq-master-ii-2-5-2010-2013-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti01-056-gti-gti01-056-eje-homocinetico-izq-master-ii-2-5-2010-2013-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti01-056-eje-homocinetico-izq-master-ii-2-5-2010-2013-generated-reference.webp",
-        "alt": "Imagen generada de referencia para EJE HOMOCINETICO IZQ. MASTER II 2.5 2010/2013 — GTI01-056, SKU GTI01-056. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti01-056-gti-gti01-056-eje-homocinetico-izq-master-ii-2-5-2010-2013-branded-v2.webp",
+        "alt": "Imagen generada de referencia de EJE HOMOCINETICO IZQ. MASTER II 2.5 2010/2013 — GTI01-056, SKU GTI01-056; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Photorealistic catalog reference for GTI01-056: one complete left front CV axle for Renault Master II 2.5 2010–2013, inner tripod housing, two black accordion boots, long steel shaft and outer splined threaded end; pure white background; silhouette contrasted against the exact distributor listing; no text, logo or watermark.",
       "sourceSha256": "59a98f6606fe54bf991146a9c1e19e325071d8d876128673413e766ca8775892",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T00:28:56.800Z"
+      "generatedAt": "2026-08-28T00:28:56.800Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti01-056-eje-homocinetico-izq-master-ii-2-5-2010-2013-generated-reference.webp",
+        "sourceSha256": "fe71d3272c2825f4f7803a6dcbf648075a9c0e20a7235550ed1537cc435fba07",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.233Z"
+      }
     }
   },
   "GTI01057": {
-    "image": "/catalogo-gti/generated/gti-gti01-057-eje-homocinetico-der-master-ii-2-5-2010-2013-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti01-057-gti-gti01-057-eje-homocinetico-der-master-ii-2-5-2010-2013-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti01-057-eje-homocinetico-der-master-ii-2-5-2010-2013-generated-reference.webp",
-        "alt": "Imagen generada de referencia para EJE HOMOCINETICO DER. MASTER II 2.5 2010/2013 — GTI01-057, SKU GTI01-057. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti01-057-gti-gti01-057-eje-homocinetico-der-master-ii-2-5-2010-2013-branded-v2.webp",
+        "alt": "Imagen generada de referencia de EJE HOMOCINETICO DER. MASTER II 2.5 2010/2013 — GTI01-057, SKU GTI01-057; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Photorealistic catalog reference for GTI01-057: one complete right front CV axle for Renault Master II 2.5 2010–2013, inner joint and mounting flange, long steel shaft, two black boots and outer splined threaded end; pure white background; proportions contrasted against the exact distributor listing; no text, logo or watermark.",
       "sourceSha256": "18fa0be8b720dbfc60daa4b3cef199577aa4825206af7a3e5525f44cb7f1dd30",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T00:28:56.800Z"
+      "generatedAt": "2026-08-28T00:28:56.800Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti01-057-eje-homocinetico-der-master-ii-2-5-2010-2013-generated-reference.webp",
+        "sourceSha256": "93c3849d011defd34e7e518d24e7c383d7e628a85931bed7e8a6bd6d0ebe334d",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.234Z"
+      }
     }
   },
   "GTI01058": {
-    "image": "/catalogo-gti/generated/gti-gti01-058-punta-eje-l-c-der-master-ii-2-5-2010-2013-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti01-058-gti-gti01-058-punta-eje-l-c-der-master-ii-2-5-2010-2013-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti01-058-punta-eje-l-c-der-master-ii-2-5-2010-2013-generated-reference.webp",
-        "alt": "Imagen generada de referencia para PUNTA EJE L/C. DER. MASTER II 2.5 2010/2013 — GTI01-058, SKU GTI01-058. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti01-058-gti-gti01-058-punta-eje-l-c-der-master-ii-2-5-2010-2013-branded-v2.webp",
+        "alt": "Imagen generada de referencia de PUNTA EJE L/C. DER. MASTER II 2.5 2010/2013 — GTI01-058, SKU GTI01-058; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Photorealistic catalog reference for GTI01-058: one smooth cylindrical right inner CV joint cup for Renault Master II 2.5 2010–2013 with visible female splines, black boot, two clamps and circlip; no ABS toothed ring; pure white background; geometry contrasted against the exact distributor listing; no text, logo or watermark.",
       "sourceSha256": "2251754791edc81e34b9466eef00ce99abe087068beb675ba4f9bd8ae9be7b0f",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T00:28:56.800Z"
+      "generatedAt": "2026-08-28T00:28:56.800Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti01-058-punta-eje-l-c-der-master-ii-2-5-2010-2013-generated-reference.webp",
+        "sourceSha256": "adfaa5e032cd1a3b25594c464b94b83adf7c010af05de39e633c7ad228ff1e49",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.234Z"
+      }
     }
   },
   "GTI01068": {
@@ -770,839 +968,1235 @@ export const productImageOverrides = Object.freeze({
     }
   },
   "GTI01067": {
-    "image": "/catalogo-gti/generated/gti-gti01-067-punta-eje-l-r-trafic-1-9-2013-2014-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti01-067-gti-gti01-067-punta-eje-l-r-trafic-1-9-2013-2014-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti01-067-punta-eje-l-r-trafic-1-9-2013-2014-generated-reference.webp",
-        "alt": "Imagen generada de referencia para PUNTA EJE L/R. TRAFIC 1.9 2013/2014 — GTI01-067, SKU GTI01-067. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti01-067-gti-gti01-067-punta-eje-l-r-trafic-1-9-2013-2014-branded-v2.webp",
+        "alt": "Imagen generada de referencia de PUNTA EJE L/R. TRAFIC 1.9 2013/2014 — GTI01-067, SKU GTI01-067; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Photorealistic catalog reference for GTI01-067: one smooth outer CV joint kit for Renault Trafic 1.9 2013–2014, no ABS ring, male splined threaded shaft, black boot and grease sachet; pure white background; geometry contrasted against the exact distributor listing; no text, logo or watermark.",
       "sourceSha256": "3b525e1d78006087786bfd8258e530f2aabad4e67fb33f3d1eb449048cf1cb70",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T00:33:36.668Z"
+      "generatedAt": "2026-08-28T00:33:36.668Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti01-067-punta-eje-l-r-trafic-1-9-2013-2014-generated-reference.webp",
+        "sourceSha256": "dda39244dba78d901f52befb6f4ebf99abfe1e4b2e6c8626435dcc9bd6ebffb6",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.235Z"
+      }
     }
   },
   "GTI01072": {
-    "image": "/catalogo-gti/generated/gti-gti01-072-eje-homocinetico-der-master-iii-new-master-2-3-2014-2017-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti01-072-gti-gti01-072-eje-homocinetico-der-master-iii-new-master-2-3-2014-2017-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti01-072-eje-homocinetico-der-master-iii-new-master-2-3-2014-2017-generated-reference.webp",
-        "alt": "Imagen generada de referencia para EJE HOMOCINETICO DER. MASTER III/NEW MASTER 2.3 2014/2017 — GTI01-072, SKU GTI01-072. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti01-072-gti-gti01-072-eje-homocinetico-der-master-iii-new-master-2-3-2014-2017-branded-v2.webp",
+        "alt": "Imagen generada de referencia de EJE HOMOCINETICO DER. MASTER III/NEW MASTER 2.3 2014/2017 — GTI01-072, SKU GTI01-072; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Photorealistic catalog reference for GTI01-072: one complete right front CV axle for Renault Master III / New Master 2.3 2014–2017, inner mounting flange, long steel shaft, two boots and outer splined threaded end; pure white background; silhouette contrasted against the exact distributor listing; no text, logo or watermark.",
       "sourceSha256": "bd7a267fa93b128e2323e6eb5cbb56f3f7b2be1a8127c9ef68591dc8bd2b775d",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T00:33:36.669Z"
+      "generatedAt": "2026-08-28T00:33:36.669Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti01-072-eje-homocinetico-der-master-iii-new-master-2-3-2014-2017-generated-reference.webp",
+        "sourceSha256": "6e3f4b9108ce0cd4824c17858c8f8a368b7d5966403a2a9af58caaf1d9ece1b5",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.235Z"
+      }
     }
   },
   "GTI01073": {
-    "image": "/catalogo-gti/generated/gti-gti01-073-punta-eje-l-r-trafic-ii-2-0-2014-2015-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti01-073-gti-gti01-073-punta-eje-l-r-trafic-ii-2-0-2014-2015-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti01-073-punta-eje-l-r-trafic-ii-2-0-2014-2015-generated-reference.webp",
-        "alt": "Imagen generada de referencia para PUNTA EJE L/R. TRAFIC II 2.0 2014/2015 — GTI01-073, SKU GTI01-073. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti01-073-gti-gti01-073-punta-eje-l-r-trafic-ii-2-0-2014-2015-branded-v2.webp",
+        "alt": "Imagen generada de referencia de PUNTA EJE L/R. TRAFIC II 2.0 2014/2015 — GTI01-073, SKU GTI01-073; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Photorealistic catalog reference for GTI01-073: one smooth outer CV joint kit for Renault Trafic II 2.0 2014–2015, no ABS ring, male splined threaded shaft, boot, two clamps, circlip and grease sachet; pure white background; geometry contrasted against the exact distributor listing; no text, logo or watermark.",
       "sourceSha256": "18ad112720d909c60d1bebb1316a7a23ddd8dc0e93354c2ad6c82054d0a3679d",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T00:33:36.669Z"
+      "generatedAt": "2026-08-28T00:33:36.669Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti01-073-punta-eje-l-r-trafic-ii-2-0-2014-2015-generated-reference.webp",
+        "sourceSha256": "31f0b457f647438161f661f563a60c338f344d49c76e9739c4755a6ac7a51d51",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.236Z"
+      }
     }
   },
   "GTI01051": {
-    "image": "/catalogo-gti/generated/gti-gti01-051-punta-eje-l-r-clio-campus-twingo-16v-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti01-051-gti-gti01-051-punta-eje-l-r-clio-campus-twingo-16v-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti01-051-punta-eje-l-r-clio-campus-twingo-16v-generated-reference.webp",
-        "alt": "Imagen generada de referencia para PUNTA EJE L/R. CLIO CAMPUS/TWINGO 16V. — GTI01-051, SKU GTI01-051. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti01-051-gti-gti01-051-punta-eje-l-r-clio-campus-twingo-16v-branded-v2.webp",
+        "alt": "Imagen generada de referencia de PUNTA EJE L/R. CLIO CAMPUS/TWINGO 16V. — GTI01-051, SKU GTI01-051; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Photorealistic catalog reference for GTI01-051: outer CV joint kit for Renault Clio Campus / Twingo 16V, 21x21 splines and internal retaining pin, smooth body without ABS ring, boot, clamps, circlip and grease; specifications contrasted against exact GTI marketplace listings; pure white background, no text, logo or watermark.",
       "sourceSha256": "1623f053bc44b448354d3112926e5ef393f9dd420778f4dc21bafa39a4790f03",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T00:43:28.165Z"
+      "generatedAt": "2026-08-28T00:43:28.165Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti01-051-punta-eje-l-r-clio-campus-twingo-16v-generated-reference.webp",
+        "sourceSha256": "6db90648cb75cf79d8792cdada2db3bfb2f3d017b6aa55d71b63a4965c103e77",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.233Z"
+      }
     }
   },
   "GTI01062": {
-    "image": "/catalogo-gti/generated/gti-gti01-062-punta-eje-l-r-laguna-25-dts-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti01-062-gti-gti01-062-punta-eje-l-r-laguna-25-dts-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti01-062-punta-eje-l-r-laguna-25-dts-generated-reference.webp",
-        "alt": "Imagen generada de referencia para PUNTA EJE L/R. LAGUNA 25 DTS. — GTI01-062, SKU GTI01-062. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti01-062-gti-gti01-062-punta-eje-l-r-laguna-25-dts-branded-v2.webp",
+        "alt": "Imagen generada de referencia de PUNTA EJE L/R. LAGUNA 25 DTS. — GTI01-062, SKU GTI01-062; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Photorealistic catalog reference for GTI01-062: outer CV joint kit for Renault Laguna / Scenic II with 23x25 spline configuration, smooth body without ABS ring, boot, clamps, circlip and grease; specifications contrasted against the exact Imotriz GTI listing; pure white background, no text, logo or watermark.",
       "sourceSha256": "0df5e1e7217bea69952de463d85cfce0c20cd12ea1877d2aba071ba6d0733d87",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T00:43:28.165Z"
+      "generatedAt": "2026-08-28T00:43:28.165Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti01-062-punta-eje-l-r-laguna-25-dts-generated-reference.webp",
+        "sourceSha256": "c5910926e23383b6c40ee53945e0045c05634c0cb370df15e395ae929a679fd0",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.234Z"
+      }
     }
   },
   "GTI01063": {
-    "image": "/catalogo-gti/generated/gti-gti01-063-punta-eje-l-r-scenic-30-dts-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti01-063-gti-gti01-063-punta-eje-l-r-scenic-30-dts-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti01-063-punta-eje-l-r-scenic-30-dts-generated-reference.webp",
-        "alt": "Imagen generada de referencia para PUNTA EJE L/R. SCENIC 30 DTS. — GTI01-063, SKU GTI01-063. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti01-063-gti-gti01-063-punta-eje-l-r-scenic-30-dts-branded-v2.webp",
+        "alt": "Imagen generada de referencia de PUNTA EJE L/R. SCENIC 30 DTS. — GTI01-063, SKU GTI01-063; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Photorealistic catalog reference for GTI01-063: outer CV joint kit for Renault Scenic with 23x30 spline configuration and 44-tooth ABS ring, boot, clamps, circlip and grease; specifications contrasted against the exact Imotriz GTI listing and historical GTI catalog; pure white background, no text, logo or watermark.",
       "sourceSha256": "d09060ee8bc116100968e2de1d8fa9815a92b8165f511277d05e6a746f238b3a",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T00:43:28.165Z"
+      "generatedAt": "2026-08-28T00:43:28.165Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti01-063-punta-eje-l-r-scenic-30-dts-generated-reference.webp",
+        "sourceSha256": "90c5ac8cec958ba0604cd19f6cfb9ec136d5355c55747cbfc0f84f002650b28f",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.234Z"
+      }
     }
   },
   "GTI03013": {
-    "image": "/catalogo-gti/generated/gti-gti03-013-punta-eje-l-r-allegro-2000-28-dts-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti03-013-gti-gti03-013-punta-eje-l-r-allegro-2000-28-dts-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti03-013-punta-eje-l-r-allegro-2000-28-dts-generated-reference.webp",
-        "alt": "Imagen generada de referencia para PUNTA EJE L/R. ALLEGRO 2000/ 28 DTS. — GTI03-013, SKU GTI03-013. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti03-013-gti-gti03-013-punta-eje-l-r-allegro-2000-28-dts-branded-v2.webp",
+        "alt": "Imagen generada de referencia de PUNTA EJE L/R. ALLEGRO 2000/ 28 DTS. — GTI03-013, SKU GTI03-013; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Photorealistic catalog reference for GTI03-013: outer CV joint kit for Mazda Allegro 2000 onward with verified 26x28 spline configuration, smooth body without ABS ring, boot, clamps, axle nut, circlip and grease; specifications contrasted against the exact Imotriz GTI listing and historical GTI catalog; pure white background, no text, logo or watermark.",
       "sourceSha256": "b4b6d1774e6eb0371543023ca1da20c54117727eacebd02b7b0395fe9b399af2",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T00:51:21.728Z"
+      "generatedAt": "2026-08-28T00:51:21.728Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti03-013-punta-eje-l-r-allegro-2000-28-dts-generated-reference.webp",
+        "sourceSha256": "3ae1cc7c5504447a07b06b35cb942e1338a7e30f8166dae60fb8249c5148d38f",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.240Z"
+      }
     }
   },
   "GTI03014": {
-    "image": "/catalogo-gti/generated/gti-gti03-014-punta-eje-l-r-allegro-95-99-aut-30-dts-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti03-014-gti-gti03-014-punta-eje-l-r-allegro-95-99-aut-30-dts-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti03-014-punta-eje-l-r-allegro-95-99-aut-30-dts-generated-reference.webp",
-        "alt": "Imagen generada de referencia para PUNTA EJE L/R. ALLEGRO 95/99 AUT. 30 DTS. — GTI03-014, SKU GTI03-014. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti03-014-gti-gti03-014-punta-eje-l-r-allegro-95-99-aut-30-dts-branded-v2.webp",
+        "alt": "Imagen generada de referencia de PUNTA EJE L/R. ALLEGRO 95/99 AUT. 30 DTS. — GTI03-014, SKU GTI03-014; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Photorealistic catalog reference for GTI03-014: outer CV joint kit for Mazda Allegro 1995-1999 automatic with verified 26x30 spline configuration, smooth body without ABS ring, boot, clamps, axle nut, circlip and grease; specifications contrasted against the exact Imotriz GTI listing and historical GTI catalog; pure white background, no text, logo or watermark.",
       "sourceSha256": "905f5973697280ff48f314c0837786eb26ac13c52d110d0d29030fdbdfe8fb64",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T00:51:21.729Z"
+      "generatedAt": "2026-08-28T00:51:21.729Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti03-014-punta-eje-l-r-allegro-95-99-aut-30-dts-generated-reference.webp",
+        "sourceSha256": "f762b1a516d1474b2d9abbf8f591875e71bf72c8e37e4c2cca6cd8e67bbef017",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.240Z"
+      }
     }
   },
   "GTI03015": {
-    "image": "/catalogo-gti/generated/gti-gti03-015-punta-eje-l-r-allegro-95-99-22-dts-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti03-015-gti-gti03-015-punta-eje-l-r-allegro-95-99-22-dts-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti03-015-punta-eje-l-r-allegro-95-99-22-dts-generated-reference.webp",
-        "alt": "Imagen generada de referencia para PUNTA EJE L/R. ALLEGRO 95/99 22 DTS. — GTI03-015, SKU GTI03-015. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti03-015-gti-gti03-015-punta-eje-l-r-allegro-95-99-22-dts-branded-v2.webp",
+        "alt": "Imagen generada de referencia de PUNTA EJE L/R. ALLEGRO 95/99 22 DTS. — GTI03-015, SKU GTI03-015; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Photorealistic catalog reference for GTI03-015: outer CV joint kit for Mazda Allegro 1995-1999 manual with verified 26x22 spline configuration, smooth body without ABS ring, boot, clamps, axle nut, circlip and grease; specifications contrasted against the exact Imotriz GTI listing and historical GTI catalog; pure white background, no text, logo or watermark.",
       "sourceSha256": "2e5ed08126f2779e181f5d517e729fa79270e309f8047404026c3a438a51104d",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T00:51:21.729Z"
+      "generatedAt": "2026-08-28T00:51:21.729Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti03-015-punta-eje-l-r-allegro-95-99-22-dts-generated-reference.webp",
+        "sourceSha256": "a17bbbb3a467cdfc6140408afe50efcf1a3ec42a245a826ce6fadc28222c2dc5",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.240Z"
+      }
     }
   },
   "GTI03016": {
-    "image": "/catalogo-gti/generated/gti-gti03-016-punta-eje-l-c-m323-22-dts-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti03-016-gti-gti03-016-punta-eje-l-c-m323-22-dts-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti03-016-punta-eje-l-c-m323-22-dts-generated-reference.webp",
-        "alt": "Imagen generada de referencia para PUNTA EJE L/C. M323 22.DTS — GTI03-016, SKU GTI03-016. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti03-016-gti-gti03-016-punta-eje-l-c-m323-22-dts-branded-v2.webp",
+        "alt": "Imagen generada de referencia de PUNTA EJE L/C. M323 22.DTS — GTI03-016, SKU GTI03-016; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Photorealistic catalog reference for GTI03-016: transmission-side inner CV joint for Mazda 323, verified 24 external x 22 internal splines and supplied with separate tripod bearing, tulip housing, inner boot, clamps and circlip; specifications contrasted against the exact MercadoLibre GTI listing, exact Imotriz listing and historical catalog; pure white background, no text, logo or watermark.",
       "sourceSha256": "5b69aeafc665398d34d7d92d69a9cc4e4aba7e6de6f2ea7e99b3cd7c1f2e1d2b",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T01:04:33.141Z"
+      "generatedAt": "2026-08-28T01:04:33.141Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti03-016-punta-eje-l-c-m323-22-dts-generated-reference.webp",
+        "sourceSha256": "fdce593fdd4de05c9cbdc95fb944ce8237abe57ef90bec615b78ac61dfdccd9e",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.241Z"
+      }
     }
   },
   "GTI03017": {
-    "image": "/catalogo-gti/generated/gti-gti03-017-punta-eje-l-c-m626-84-92-2-0-hembra-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti03-017-gti-gti03-017-punta-eje-l-c-m626-84-92-2-0-hembra-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti03-017-punta-eje-l-c-m626-84-92-2-0-hembra-generated-reference.webp",
-        "alt": "Imagen generada de referencia para PUNTA EJE L/C. M626 84/92 2.0 HEMBRA — GTI03-017, SKU GTI03-017. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti03-017-gti-gti03-017-punta-eje-l-c-m626-84-92-2-0-hembra-branded-v2.webp",
+        "alt": "Imagen generada de referencia de PUNTA EJE L/C. M626 84/92 2.0 HEMBRA — GTI03-017, SKU GTI03-017; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Photorealistic catalog reference for GTI03-017: female transmission-side inner CV joint for Mazda 626 2.0 1984-1992, verified 26x25 spline configuration, recessed female splined bore, tulip housing, tripod, inner boot, clamps and circlip; specifications contrasted against the exact Imotriz GTI listing and historical catalog; pure white background, no text, logo or watermark.",
       "sourceSha256": "544c41a7a69ca1c45d80d54ec09db7b86b87b36883ea66f7e3dfe339600d08f3",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T01:04:33.142Z"
+      "generatedAt": "2026-08-28T01:04:33.142Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti03-017-punta-eje-l-c-m626-84-92-2-0-hembra-generated-reference.webp",
+        "sourceSha256": "8a876d5ceed85a5bcb018eaf303466df136607e7e996b02d523e0b0cc65f44a2",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.241Z"
+      }
     }
   },
   "GTI03018": {
-    "image": "/catalogo-gti/generated/gti-gti03-018-punta-eje-l-c-m626-84-92-2-0-macho-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti03-018-gti-gti03-018-punta-eje-l-c-m626-84-92-2-0-macho-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti03-018-punta-eje-l-c-m626-84-92-2-0-macho-generated-reference.webp",
-        "alt": "Imagen generada de referencia para PUNTA EJE L/C. M626 84/92 2.0 MACHO — GTI03-018, SKU GTI03-018. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti03-018-gti-gti03-018-punta-eje-l-c-m626-84-92-2-0-macho-branded-v2.webp",
+        "alt": "Imagen generada de referencia de PUNTA EJE L/C. M626 84/92 2.0 MACHO — GTI03-018, SKU GTI03-018; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Photorealistic catalog reference for GTI03-018: male transmission-side inner CV joint for Mazda 626 2.0 1984-1992, verified 26x25 spline configuration, short protruding male splined shaft, tulip housing, tripod, inner boot, clamps and circlip; specifications contrasted against the exact Imotriz GTI listing and historical catalog; pure white background, no text, logo or watermark.",
       "sourceSha256": "1877d68749ba67c65fb20623d8fb272674781a4687799aa5f370f4f4869e670c",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T01:04:33.142Z"
+      "generatedAt": "2026-08-28T01:04:33.142Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti03-018-punta-eje-l-c-m626-84-92-2-0-macho-generated-reference.webp",
+        "sourceSha256": "86449c1c28d22ca6252516d217fa50e5b5da55ed65ccfed0efdd46134018a1b2",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.242Z"
+      }
     }
   },
   "GTI03019": {
-    "image": "/catalogo-gti/generated/gti-gti03-019-punta-eje-l-c-m626-84-92-1-8-hembra-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti03-019-gti-gti03-019-punta-eje-l-c-m626-84-92-1-8-hembra-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti03-019-punta-eje-l-c-m626-84-92-1-8-hembra-generated-reference.webp",
-        "alt": "Imagen generada de referencia para PUNTA EJE L/C. M626 84/92 1.8 HEMBRA — GTI03-019, SKU GTI03-019. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti03-019-gti-gti03-019-punta-eje-l-c-m626-84-92-1-8-hembra-branded-v2.webp",
+        "alt": "Imagen generada de referencia de PUNTA EJE L/C. M626 84/92 1.8 HEMBRA — GTI03-019, SKU GTI03-019; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Photorealistic catalog reference for GTI03-019: female transmission-side inner CV joint for Mazda 626 1.8 1984-1992, documented 26x23 spline configuration, deep recessed female splined bore, compact tulip housing, tripod bearing, inner boot, clamps and circlip; specifications contrasted against the exact GTI/Imotriz catalog metadata and historical catalog; pure white background, no text, logo or watermark.",
       "sourceSha256": "65472f3ca70a8891a4f6f368a2904aa7da3bd7e8ff35d7f3495160c4c00d4e8d",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T01:10:14.704Z"
+      "generatedAt": "2026-08-28T01:10:14.704Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti03-019-punta-eje-l-c-m626-84-92-1-8-hembra-generated-reference.webp",
+        "sourceSha256": "3a569d2e3c51af0e6e0bb90cd938d08e5c2a4a402ab7c216dc6028d58c0c02ec",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.243Z"
+      }
     }
   },
   "GTI03020": {
-    "image": "/catalogo-gti/generated/gti-gti03-020-punta-eje-l-c-m626-84-92-1-8-macho-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti03-020-gti-gti03-020-punta-eje-l-c-m626-84-92-1-8-macho-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti03-020-punta-eje-l-c-m626-84-92-1-8-macho-generated-reference.webp",
-        "alt": "Imagen generada de referencia para PUNTA EJE L/C. M626 84/92 1.8 MACHO — GTI03-020, SKU GTI03-020. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti03-020-gti-gti03-020-punta-eje-l-c-m626-84-92-1-8-macho-branded-v2.webp",
+        "alt": "Imagen generada de referencia de PUNTA EJE L/C. M626 84/92 1.8 MACHO — GTI03-020, SKU GTI03-020; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Photorealistic catalog reference for GTI03-020: male transmission-side inner CV joint for Mazda 626 1.8 1984-1992, documented 26x23 spline configuration, short protruding male splined shaft, compact tulip housing, tripod bearing, inner boot, clamps and circlip; specifications contrasted against the exact GTI/Imotriz catalog metadata and historical catalog; pure white background, no text, logo or watermark.",
       "sourceSha256": "f88817b000f89f19df57c908ad84d8ea5606a7d4e4cb630c3bb64dfcb3ff0dfd",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T01:10:14.705Z"
+      "generatedAt": "2026-08-28T01:10:14.705Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti03-020-punta-eje-l-c-m626-84-92-1-8-macho-generated-reference.webp",
+        "sourceSha256": "b8168b7cf1adfaf5b6039c19148df3cf106d46fa66c8e804834c68244b46e504",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.243Z"
+      }
     }
   },
   "GTI03001": {
-    "image": "/catalogo-gti/generated/gti-gti03-001-punta-eje-l-c-mb2600-hembra-todos-26x25-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti03-001-gti-gti03-001-punta-eje-l-c-mb2600-hembra-todos-26x25-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti03-001-punta-eje-l-c-mb2600-hembra-todos-26x25-generated-reference.webp",
-        "alt": "Imagen generada de referencia para PUNTA EJE L/C. MB2600 HEMBRA TODOS (26X25) — GTI03-001, SKU GTI03-001. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti03-001-gti-gti03-001-punta-eje-l-c-mb2600-hembra-todos-26x25-branded-v2.webp",
+        "alt": "Imagen generada de referencia de PUNTA EJE L/C. MB2600 HEMBRA TODOS (26X25) — GTI03-001, SKU GTI03-001; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Photorealistic catalog reference for GTI03-001: female transmission-side inner CV joint kit for Mazda B2600, documented 26x25 configuration, recessed female splined bore, heavy-duty tulip housing, tripod bearing, inner boot, clamps and circlip; specification contrasted against the exact Imotriz SKU page and historical GTI catalog; pure white background, no text, logo or watermark.",
       "sourceSha256": "dffdcbbd5741d34945a63c11dbe07b9920bee5cd1efd011ffcb6e13d40a95402",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T01:18:49.446Z"
+      "generatedAt": "2026-08-28T01:18:49.446Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti03-001-punta-eje-l-c-mb2600-hembra-todos-26x25-generated-reference.webp",
+        "sourceSha256": "67eb26b1626276218c904d82eea47970291ec40f65d095a4994b0ea3e78187ce",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.237Z"
+      }
     }
   },
   "GTI03002": {
-    "image": "/catalogo-gti/generated/gti-gti03-002-punta-eje-l-c-mb2600-macho-todos-26x25-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti03-002-gti-gti03-002-punta-eje-l-c-mb2600-macho-todos-26x25-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti03-002-punta-eje-l-c-mb2600-macho-todos-26x25-generated-reference.webp",
-        "alt": "Imagen generada de referencia para PUNTA EJE L/C. MB2600 MACHO TODOS (26X25) — GTI03-002, SKU GTI03-002. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti03-002-gti-gti03-002-punta-eje-l-c-mb2600-macho-todos-26x25-branded-v2.webp",
+        "alt": "Imagen generada de referencia de PUNTA EJE L/C. MB2600 MACHO TODOS (26X25) — GTI03-002, SKU GTI03-002; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Photorealistic catalog reference for GTI03-002: male transmission-side inner CV joint kit for Mazda B2600, documented 26x25 configuration, short protruding male splined shaft, heavy-duty tulip housing, tripod bearing, inner boot, clamps and circlip; specification contrasted against the exact Imotriz SKU page and historical GTI catalog; pure white background, no text, logo or watermark.",
       "sourceSha256": "4770eeae5d592b3d945e5d483c321388feb4831c608281b88706bfa869aff570",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T01:18:49.447Z"
+      "generatedAt": "2026-08-28T01:18:49.447Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti03-002-punta-eje-l-c-mb2600-macho-todos-26x25-generated-reference.webp",
+        "sourceSha256": "07ef5a3d36b1593a66f9eb575ba05530f58090068032d120cd9ad28eef7cdbee",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.237Z"
+      }
     }
   },
   "GTI03024": {
-    "image": "/catalogo-gti/generated/gti-gti03-024-punta-eje-l-r-mb2600-00-pin-interno-26x25-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti03-024-gti-gti03-024-punta-eje-l-r-mb2600-00-pin-interno-26x25-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti03-024-punta-eje-l-r-mb2600-00-pin-interno-26x25-generated-reference.webp",
-        "alt": "Imagen generada de referencia para PUNTA EJE L/R. MB2600 /00 PIN INTERNO (26X25) — GTI03-024, SKU GTI03-024. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti03-024-gti-gti03-024-punta-eje-l-r-mb2600-00-pin-interno-26x25-branded-v2.webp",
+        "alt": "Imagen generada de referencia de PUNTA EJE L/R. MB2600 /00 PIN INTERNO (26X25) — GTI03-024, SKU GTI03-024; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Photorealistic catalog reference for GTI03-024: wheel-side outer CV joint kit for Mazda B2600 through 2000, pin interno, documented 26 external x 25 internal spline configuration, no ABS ring, outer boot, axle nut, clamps, grease sachet and circlip; specification contrasted against exact MercadoLibre and Imotriz SKU pages plus the historical GTI catalog; pure white background, no text, logo or watermark.",
       "sourceSha256": "aea995afdea3333eb04fd5b82286022165a25cec539d52018e90d9e513b5ea10",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T01:18:49.447Z"
+      "generatedAt": "2026-08-28T01:18:49.447Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti03-024-punta-eje-l-r-mb2600-00-pin-interno-26x25-generated-reference.webp",
+        "sourceSha256": "8b3e475b4d0086b39def1140c50115c3a9327ece7ab9f2ca19d5f36efbfcd9f2",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.244Z"
+      }
     }
   },
   "GTI03004": {
-    "image": "/catalogo-gti/generated/gti-gti03-004-punta-eje-l-r-m323-t-th-pin-externo-24x30-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti03-004-gti-gti03-004-punta-eje-l-r-m323-t-th-pin-externo-24x30-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti03-004-punta-eje-l-r-m323-t-th-pin-externo-24x30-generated-reference.webp",
-        "alt": "Imagen generada de referencia para PUNTA EJE L/R. M323 T. TH. PIN EXTERNO (24X30) — GTI03-004, SKU GTI03-004. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti03-004-gti-gti03-004-punta-eje-l-r-m323-t-th-pin-externo-24x30-branded-v2.webp",
+        "alt": "Imagen generada de referencia de PUNTA EJE L/R. M323 T. TH. PIN EXTERNO (24X30) — GTI03-004, SKU GTI03-004; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Photorealistic catalog reference for GTI03-004: wheel-side outer CV joint kit for Mazda 323 TH, documented 24 external x 30 internal spline configuration and pin externo retention, outer boot, axle nut, clamps, grease and circlip; specification contrasted against two exact MercadoLibre GTI listings, exact Imotriz SKU metadata and historical catalog; pure white background, no text, logo or watermark.",
       "sourceSha256": "a5443d6b86f4b316a1c57813c0ab285c13df2d0053af29b9ac02250bdf2ba928",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T01:36:43.467Z"
+      "generatedAt": "2026-08-28T01:36:43.467Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti03-004-punta-eje-l-r-m323-t-th-pin-externo-24x30-generated-reference.webp",
+        "sourceSha256": "5c51a340a3b380452f8ec538da3485abdec57e21f6c4eba3ab28e2cf135ba4e9",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.238Z"
+      }
     }
   },
   "GTI03008": {
-    "image": "/catalogo-gti/generated/gti-gti03-008-punta-eje-l-r-m626-asahi-1-8-pin-interno-cuello-30-mm-26x23-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti03-008-gti-gti03-008-punta-eje-l-r-m626-asahi-1-8-pin-interno-cuello-30-mm-26x23-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti03-008-punta-eje-l-r-m626-asahi-1-8-pin-interno-cuello-30-mm-26x23-generated-reference.webp",
-        "alt": "Imagen generada de referencia para PUNTA EJE L/R. M626 ASAHI 1.8 PIN INTERNO, CUELLO 30 MM (26X23) — GTI03-008, SKU GTI03-008. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti03-008-gti-gti03-008-punta-eje-l-r-m626-asahi-1-8-pin-interno-cuello-30-mm-26x23-branded-v2.webp",
+        "alt": "Imagen generada de referencia de PUNTA EJE L/R. M626 ASAHI 1.8 PIN INTERNO, CUELLO 30 MM (26X23) — GTI03-008, SKU GTI03-008; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Photorealistic catalog reference for GTI03-008: wheel-side outer CV joint kit for Mazda 626 Asahi 1.8, documented 26 external x 23 internal spline configuration, pin interno and 30 mm neck, outer boot, axle nut, clamps, grease and circlip; specification contrasted against the exact Imotriz SKU page and historical catalog; pure white background, no text, logo or watermark.",
       "sourceSha256": "7d4fcc97f0f3f8e054c7486a4ed1fcd33be66818743ba1022c0b422aa95d39cf",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T01:36:43.467Z"
+      "generatedAt": "2026-08-28T01:36:43.467Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti03-008-punta-eje-l-r-m626-asahi-1-8-pin-interno-cuello-30-mm-26x23-generated-reference.webp",
+        "sourceSha256": "0e198196c1c2024691b89c0a42cc9217dc17d6ee55d238aafd38bf587dc4c58c",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.239Z"
+      }
     }
   },
   "GTI03010": {
-    "image": "/catalogo-gti/generated/gti-gti03-010-punta-eje-l-r-m626-1-8-84-88-pin-interno-cuello-28-mm-26x23-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti03-010-gti-gti03-010-punta-eje-l-r-m626-1-8-84-88-pin-interno-cuello-28-mm-26x23-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti03-010-punta-eje-l-r-m626-1-8-84-88-pin-interno-cuello-28-mm-26x23-generated-reference.webp",
-        "alt": "Imagen generada de referencia para PUNTA EJE L/R. M626 1.8 84/88 PIN INTERNO, CUELLO 28 MM (26X23) — GTI03-010, SKU GTI03-010. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti03-010-gti-gti03-010-punta-eje-l-r-m626-1-8-84-88-pin-interno-cuello-28-mm-26x23-branded-v2.webp",
+        "alt": "Imagen generada de referencia de PUNTA EJE L/R. M626 1.8 84/88 PIN INTERNO, CUELLO 28 MM (26X23) — GTI03-010, SKU GTI03-010; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Photorealistic catalog reference for GTI03-010: wheel-side outer CV joint kit for Mazda 626 1.8 1984-1988, documented 26 external x 23 internal spline configuration, pin interno and 28 mm neck, separate outer boot, axle nut, clamps, grease and circlip; specification contrasted against the exact Imotriz SKU page and historical catalog; pure white background, no text, logo or watermark.",
       "sourceSha256": "e0b2653bde3493301740517e463a941260ae7cb0a04dd613d9ea8e8acad82a6a",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T01:36:43.467Z"
+      "generatedAt": "2026-08-28T01:36:43.467Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti03-010-punta-eje-l-r-m626-1-8-84-88-pin-interno-cuello-28-mm-26x23-generated-reference.webp",
+        "sourceSha256": "b7d1612a82f72d1596769c5f8b1d30a45361678694cc1f6b755dd6674d0796fa",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.239Z"
+      }
     }
   },
   "GTI03006": {
-    "image": "/catalogo-gti/generated/gti-gti03-006-punta-eje-l-r-m626-matsuri-28x23-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti03-006-gti-gti03-006-punta-eje-l-r-m626-matsuri-28x23-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti03-006-punta-eje-l-r-m626-matsuri-28x23-generated-reference.webp",
-        "alt": "Imagen generada de referencia para PUNTA EJE L/R. M626 MATSURI (28X23) — GTI03-006, SKU GTI03-006. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti03-006-gti-gti03-006-punta-eje-l-r-m626-matsuri-28x23-branded-v2.webp",
+        "alt": "Imagen generada de referencia de PUNTA EJE L/R. M626 MATSURI (28X23) — GTI03-006, SKU GTI03-006; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Photorealistic catalog reference for GTI03-006: wheel-side outer CV joint kit for Mazda 626 Matsuri, documented 28 external x 23 internal spline configuration; retention type intentionally not asserted because the exact source does not specify it; outer boot, axle nut, clamps and grease; specification contrasted against the exact Imotriz SKU page and historical GTI catalog; pure white background, no text, logo or watermark.",
       "sourceSha256": "b41c13329957d4abebf58aa4d4d71063bf3a97c5a8a9bf1b47275a502d68c4dd",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T01:45:14.592Z"
+      "generatedAt": "2026-08-28T01:45:14.592Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti03-006-punta-eje-l-r-m626-matsuri-28x23-generated-reference.webp",
+        "sourceSha256": "5b07064acdcc8b3af8b622c62355e5a6381b495c4574b8bbb00428fcbb834f7a",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.238Z"
+      }
     }
   },
   "GTI03007": {
-    "image": "/catalogo-gti/generated/gti-gti03-007-punta-eje-l-r-m626-asahi-2-0-pin-interno-26x25-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti03-007-gti-gti03-007-punta-eje-l-r-m626-asahi-2-0-pin-interno-26x25-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti03-007-punta-eje-l-r-m626-asahi-2-0-pin-interno-26x25-generated-reference.webp",
-        "alt": "Imagen generada de referencia para PUNTA EJE L/R. M626 ASAHI 2.0 PIN INTERNO (26X25) — GTI03-007, SKU GTI03-007. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti03-007-gti-gti03-007-punta-eje-l-r-m626-asahi-2-0-pin-interno-26x25-branded-v2.webp",
+        "alt": "Imagen generada de referencia de PUNTA EJE L/R. M626 ASAHI 2.0 PIN INTERNO (26X25) — GTI03-007, SKU GTI03-007; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Photorealistic catalog reference for GTI03-007: wheel-side outer CV joint kit for Mazda 626 Asahi 2.0, documented 26 external x 25 internal spline configuration and pin interno retention, outer boot, axle nut, clamps, grease and internal circlip; specification contrasted against the exact Imotriz SKU page and historical GTI catalog; pure white background, no text, logo or watermark.",
       "sourceSha256": "33ae156921f602c662c6cb8abdc88c0c27a4139c2dff59df28a8f70de92434d7",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T01:45:14.592Z"
+      "generatedAt": "2026-08-28T01:45:14.592Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti03-007-punta-eje-l-r-m626-asahi-2-0-pin-interno-26x25-generated-reference.webp",
+        "sourceSha256": "98d66242cb730c8f785df644a5afdd49b71a4adedfc675865a713bec91e47134",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.239Z"
+      }
     }
   },
   "GTI03029": {
-    "image": "/catalogo-gti/generated/gti-gti03-029-punta-eje-l-r-m626-84-89-pin-externo-26x25-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti03-029-gti-gti03-029-punta-eje-l-r-m626-84-89-pin-externo-26x25-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti03-029-punta-eje-l-r-m626-84-89-pin-externo-26x25-generated-reference.webp",
-        "alt": "Imagen generada de referencia para PUNTA EJE L/R. M626 84/89 PIN EXTERNO (26X25) — GTI03-029, SKU GTI03-029. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti03-029-gti-gti03-029-punta-eje-l-r-m626-84-89-pin-externo-26x25-branded-v2.webp",
+        "alt": "Imagen generada de referencia de PUNTA EJE L/R. M626 84/89 PIN EXTERNO (26X25) — GTI03-029, SKU GTI03-029; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Photorealistic catalog reference for GTI03-029: wheel-side outer CV joint kit for Mazda 626 1984-1989, documented 26 external x 25 internal spline configuration and pin externo retention, outer boot, axle nut, clamps, grease and external circlip; specification contrasted against the exact Imotriz SKU page and historical GTI catalog; pure white background, no text, logo or watermark.",
       "sourceSha256": "b7841f6e533d9e5567de5c2619dfc063e80bf3f87c228e46e92bc5ac6312e4ed",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T01:45:14.592Z"
+      "generatedAt": "2026-08-28T01:45:14.592Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti03-029-punta-eje-l-r-m626-84-89-pin-externo-26x25-generated-reference.webp",
+        "sourceSha256": "57a0f2bce5d9197784a28ed46a51fc1af7c6f004ee06f0afd74f6dba12acbe0e",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.245Z"
+      }
     }
   },
   "GTI03031": {
-    "image": "/catalogo-gti/generated/gti-gti03-031-punta-eje-l-r-m626-milenium-allegro-1-8-pin-interno-abs-44-dts-28x30-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti03-031-gti-gti03-031-punta-eje-l-r-m626-milenium-allegro-1-8-pin-interno-abs-44-dts-28x30-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti03-031-punta-eje-l-r-m626-milenium-allegro-1-8-pin-interno-abs-44-dts-28x30-generated-reference.webp",
-        "alt": "Imagen generada de referencia para PUNTA EJE L/R. M626 MILENIUM/ALLEGRO 1.8 PIN INTERNO, ABS 44 DTS. (28X30) — GTI03-031, SKU GTI03-031. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti03-031-gti-gti03-031-punta-eje-l-r-m626-milenium-allegro-1-8-pin-interno-abs-44-dts-28x30-branded-v2.webp",
+        "alt": "Imagen generada de referencia de PUNTA EJE L/R. M626 MILENIUM/ALLEGRO 1.8 PIN INTERNO, ABS 44 DTS. (28X30) — GTI03-031, SKU GTI03-031; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Photorealistic catalog reference for GTI03-031: wheel-side outer CV joint kit for Mazda 626 Millennium / Allegro 1.8, documented 28 external x 30 internal spline configuration, pin interno and 44-tooth ABS tone ring, outer boot, axle nut, clamps, grease and internal circlip; specifications contrasted against the exact MercadoLibre GTI SKU listing and historical GTI catalog; pure white background, no text, logo or watermark.",
       "sourceSha256": "4fad38968491b687e08ba07ffd6d1641dd395676a2108c2edb6cf726b9182b8b",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T01:53:18.743Z"
+      "generatedAt": "2026-08-28T01:53:18.743Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti03-031-punta-eje-l-r-m626-milenium-allegro-1-8-pin-interno-abs-44-dts-28x30-generated-reference.webp",
+        "sourceSha256": "9f951ddf92842bcd3a177e8fd0c6215466ce9e777a52cd5ab57af74e5037dded",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.246Z"
+      }
     }
   },
   "GTI03032": {
-    "image": "/catalogo-gti/generated/gti-gti03-032-punta-eje-l-r-m626-milenium-mazda-3-28x23-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti03-032-gti-gti03-032-punta-eje-l-r-m626-milenium-mazda-3-28x23-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti03-032-punta-eje-l-r-m626-milenium-mazda-3-28x23-generated-reference.webp",
-        "alt": "Imagen generada de referencia para PUNTA EJE L/R. M626 MILENIUM/MAZDA 3 (28X23) — GTI03-032, SKU GTI03-032. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti03-032-gti-gti03-032-punta-eje-l-r-m626-milenium-mazda-3-28x23-branded-v2.webp",
+        "alt": "Imagen generada de referencia de PUNTA EJE L/R. M626 MILENIUM/MAZDA 3 (28X23) — GTI03-032, SKU GTI03-032; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Photorealistic catalog reference for GTI03-032: wheel-side outer CV joint kit for Mazda 626 Millennium / Mazda 3, documented 28 external x 23 internal spline configuration; ABS and retention type intentionally not asserted because the exact source does not specify them; outer boot, axle nut, clamps and grease; specification contrasted against the exact Imotriz SKU page and historical GTI catalog; pure white background, no text, logo or watermark.",
       "sourceSha256": "0435ada0422d2655b7db5871ad71368443c71ece6e6f1fa0f9cb4d37df035554",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T01:53:18.744Z"
+      "generatedAt": "2026-08-28T01:53:18.744Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti03-032-punta-eje-l-r-m626-milenium-mazda-3-28x23-generated-reference.webp",
+        "sourceSha256": "8390b6d6687624918b5b071a308220de078d67652b3d07a0a4540bd2b258a272",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.246Z"
+      }
     }
   },
   "GTI03033": {
-    "image": "/catalogo-gti/generated/gti-gti03-033-punta-eje-l-c-m323-ecuatoriano-24x21-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti03-033-gti-gti03-033-punta-eje-l-c-m323-ecuatoriano-24x21-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti03-033-punta-eje-l-c-m323-ecuatoriano-24x21-generated-reference.webp",
-        "alt": "Imagen generada de referencia para PUNTA EJE L/C. M323 ECUATORIANO (24X21) — GTI03-033, SKU GTI03-033. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti03-033-gti-gti03-033-punta-eje-l-c-m323-ecuatoriano-24x21-branded-v2.webp",
+        "alt": "Imagen generada de referencia de PUNTA EJE L/C. M323 ECUATORIANO (24X21) — GTI03-033, SKU GTI03-033; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Photorealistic catalog reference for GTI03-033: transmission-side inner CV joint kit for Ecuadorian-market Mazda 323, documented 24 external x 21 internal spline configuration, without asserting left/right or male/female variant; compact plunge housing, tripod bearing, inner boot, clamps, grease and circlip; specification contrasted against the exact Imotriz SKU page and historical GTI catalog; pure white background, no text, logo or watermark.",
       "sourceSha256": "a5bbd3416702675bf9a7f438a8a91724a39dc3930c61e92c620010dcbbb92455",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T01:53:18.744Z"
+      "generatedAt": "2026-08-28T01:53:18.744Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti03-033-punta-eje-l-c-m323-ecuatoriano-24x21-generated-reference.webp",
+        "sourceSha256": "89b59bed7f9e16981290828151319f176c7a4bb028cff7fd7641496799599d0f",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.246Z"
+      }
     }
   },
   "GTI01030": {
-    "image": "/catalogo-gti/generated/gti-gti01-030-punta-eje-l-r-megane-ii-pin-externo-23x32-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti01-030-gti-gti01-030-punta-eje-l-r-megane-ii-pin-externo-23x32-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti01-030-punta-eje-l-r-megane-ii-pin-externo-23x32-generated-reference.webp",
-        "alt": "Imagen generada de referencia para PUNTA EJE L/R. MEGANE II PIN EXTERNO (23X32) — GTI01-030, SKU GTI01-030. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti01-030-gti-gti01-030-punta-eje-l-r-megane-ii-pin-externo-23x32-branded-v2.webp",
+        "alt": "Imagen generada de referencia de PUNTA EJE L/R. MEGANE II PIN EXTERNO (23X32) — GTI01-030, SKU GTI01-030; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Photorealistic catalog reference for GTI01-030: wheel-side outer CV joint kit for Renault Megane II, documented 23 external x 32 internal spline configuration and pin externo; outer boot, axle nut, clamps, grease and retaining pin; specifications contrasted against the exact MercadoLibre GTI SKU listing and historical GTI catalog; pure white background, no text, logo or watermark.",
       "sourceSha256": "738861bc82a7c1b1594ef0fa7e5110ca94e1986cec6d9eb195868ea5ebec1899",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T02:02:10.857Z"
+      "generatedAt": "2026-08-28T02:02:10.857Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti01-030-punta-eje-l-r-megane-ii-pin-externo-23x32-generated-reference.webp",
+        "sourceSha256": "c5bdacd4dd1215aa7947259d916e41d7d0ad1a513d9e2c9227c9d00dcb0d2ced",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.230Z"
+      }
     }
   },
   "GTI01031": {
-    "image": "/catalogo-gti/generated/gti-gti01-031-punta-eje-l-r-megane-ii-pin-externo-23x33-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti01-031-gti-gti01-031-punta-eje-l-r-megane-ii-pin-externo-23x33-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti01-031-punta-eje-l-r-megane-ii-pin-externo-23x33-generated-reference.webp",
-        "alt": "Imagen generada de referencia para PUNTA EJE L/R. MEGANE II PIN EXTERNO (23X33) — GTI01-031, SKU GTI01-031. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti01-031-gti-gti01-031-punta-eje-l-r-megane-ii-pin-externo-23x33-branded-v2.webp",
+        "alt": "Imagen generada de referencia de PUNTA EJE L/R. MEGANE II PIN EXTERNO (23X33) — GTI01-031, SKU GTI01-031; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Photorealistic catalog reference for GTI01-031: wheel-side outer CV joint kit for Renault Megane II, documented 23 external x 33 internal spline configuration and pin externo; smooth housing with no ABS ring because the exact source does not specify ABS; outer boot, axle nut, clamps, grease and retaining pin; specifications contrasted against the exact MercadoLibre and Imotriz GTI SKU listings and historical GTI catalog; pure white background, no text, logo or watermark.",
       "sourceSha256": "bc1ab1699013473dda277a8be579ecee665dccc248636ec7707c1b758d89f361",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T02:02:10.858Z"
+      "generatedAt": "2026-08-28T02:02:10.858Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti01-031-punta-eje-l-r-megane-ii-pin-externo-23x33-generated-reference.webp",
+        "sourceSha256": "5c8d45f75598b3b6a74c08e95c33ba136fa1901f6a1a3c6bb639bc1015f7849c",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.230Z"
+      }
     }
   },
   "GTI01033": {
-    "image": "/catalogo-gti/generated/gti-gti01-033-punta-eje-l-r-kangoo-07-pin-interno-23x23-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti01-033-gti-gti01-033-punta-eje-l-r-kangoo-07-pin-interno-23x23-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti01-033-punta-eje-l-r-kangoo-07-pin-interno-23x23-generated-reference.webp",
-        "alt": "Imagen generada de referencia para PUNTA EJE L/R. KANGOO 07/ PIN INTERNO (23X23) — GTI01-033, SKU GTI01-033. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti01-033-gti-gti01-033-punta-eje-l-r-kangoo-07-pin-interno-23x23-branded-v2.webp",
+        "alt": "Imagen generada de referencia de PUNTA EJE L/R. KANGOO 07/ PIN INTERNO (23X23) — GTI01-033, SKU GTI01-033; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Photorealistic catalog reference for GTI01-033: wheel-side outer CV joint kit for Renault Kangoo 2007 onward, documented 23 external x 23 internal spline configuration and pin interno; no ABS ring because the exact source does not specify ABS; outer boot, axle nut, clamps, grease and internal retaining clip; specifications contrasted against the exact Imotriz and Importadoras Asociadas GTI SKU listings and historical GTI catalog; pure white background, no text, logo or watermark.",
       "sourceSha256": "1b959801031ce6a2b8804e8fe612d2a13f60f063ea28f921f4e7079ca40e578f",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T02:02:10.858Z"
+      "generatedAt": "2026-08-28T02:02:10.858Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti01-033-punta-eje-l-r-kangoo-07-pin-interno-23x23-generated-reference.webp",
+        "sourceSha256": "d227cfbacc9c877492954b05742155a021f04f3f8cf5bfc70a2f1b1fbdee5df3",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.231Z"
+      }
     }
   },
   "GTI01002": {
-    "image": "/catalogo-gti/generated/gti-gti01-002-punta-eje-l-r-r18-gtx-21-rx-2-0-pin-externo-23x25-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti01-002-gti-gti01-002-punta-eje-l-r-r18-gtx-21-rx-2-0-pin-externo-23x25-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti01-002-punta-eje-l-r-r18-gtx-21-rx-2-0-pin-externo-23x25-generated-reference.webp",
-        "alt": "Imagen generada de referencia para PUNTA EJE L/R. R18 GTX/21 RX 2.0 PIN EXTERNO (23X25) — GTI01-002, SKU GTI01-002. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti01-002-gti-gti01-002-punta-eje-l-r-r18-gtx-21-rx-2-0-pin-externo-23x25-branded-v2.webp",
+        "alt": "Imagen generada de referencia de PUNTA EJE L/R. R18 GTX/21 RX 2.0 PIN EXTERNO (23X25) — GTI01-002, SKU GTI01-002; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Photorealistic catalog reference for GTI01-002: wheel-side outer CV joint kit for Renault 18 GTX / Renault 21 RX 2.0, documented 23 external x 25 internal spline configuration and pin externo; no ABS ring because the source does not specify ABS; boot, nut, clamps, grease and retaining pin; specifications contrasted against the exact MercadoLibre GTI SKU listing and historical GTI catalog; pure white background, no text, logo or watermark.",
       "sourceSha256": "84685ad3e274d4dcf68a48928b560e582b467105cb558c85444a0b931b04d419",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T02:11:00.377Z"
+      "generatedAt": "2026-08-28T02:11:00.377Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti01-002-punta-eje-l-r-r18-gtx-21-rx-2-0-pin-externo-23x25-generated-reference.webp",
+        "sourceSha256": "dfea2aff2769c03b4a65d8a8e2bad14cc473d56d426bc56d3de98fd9b7755d4b",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.224Z"
+      }
     }
   },
   "GTI01006": {
-    "image": "/catalogo-gti/generated/gti-gti01-006-triceta-eje-r9-12-18-22-estrias-agujas-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti01-006-gti-gti01-006-triceta-eje-r9-12-18-22-estrias-agujas-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti01-006-triceta-eje-r9-12-18-22-estrias-agujas-generated-reference.webp",
-        "alt": "Imagen generada de referencia para TRICETA EJE R9/12/18 22 ESTRIAS AGUJAS — GTI01-006, SKU GTI01-006. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti01-006-gti-gti01-006-triceta-eje-r9-12-18-22-estrias-agujas-branded-v2.webp",
+        "alt": "Imagen generada de referencia de TRICETA EJE R9/12/18 22 ESTRIAS AGUJAS — GTI01-006, SKU GTI01-006; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Photorealistic catalog reference for GTI01-006 / TP3305: three-arm tripod CV joint spider for Renault 9, 12 and 18 with three needle-roller trunnions and documented 22-spline central bore; specifications contrasted against the exact Imotriz SKU page, import record and historical GTI catalog; pure white background, no text, logo or watermark.",
       "sourceSha256": "fd2abd48851f253b2d4bad99a0301309d098bf775ac7cea1ad263e6bdc516858",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T02:11:00.378Z"
+      "generatedAt": "2026-08-28T02:11:00.378Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti01-006-triceta-eje-r9-12-18-22-estrias-agujas-generated-reference.webp",
+        "sourceSha256": "c3bf6318f550ff1fc98a2fc5037a5e31b1b8be794ec82867f057f04459998cc2",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.225Z"
+      }
     }
   },
   "GTI01015": {
-    "image": "/catalogo-gti/generated/gti-gti01-015-eje-homocinetico-r18-gtl-3-pernos-20x23-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti01-015-gti-gti01-015-eje-homocinetico-r18-gtl-3-pernos-20x23-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti01-015-eje-homocinetico-r18-gtl-3-pernos-20x23-generated-reference.webp",
-        "alt": "Imagen generada de referencia para EJE HOMOCINETICO R18 GTL 3 PERNOS (20X23) — GTI01-015, SKU GTI01-015. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti01-015-gti-gti01-015-eje-homocinetico-r18-gtl-3-pernos-20x23-branded-v2.webp",
+        "alt": "Imagen generada de referencia de EJE HOMOCINETICO R18 GTL 3 PERNOS (20X23) — GTI01-015, SKU GTI01-015; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Photorealistic catalog reference for GTI01-015: complete Renault 18 GTL homokinetic front axle, documented 20 x 23 spline configuration and transmission-side triangular flange with exactly three bolt holes; no ABS ring because the source does not specify ABS; specifications contrasted against the exact Imotriz GTI SKU page and historical GTI catalog; pure white background, no text, logo or watermark.",
       "sourceSha256": "f13513571d0f3455105e392ebc4910aedc5b0169e79e0c34f51e38ab9a19ef22",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T02:11:00.378Z"
+      "generatedAt": "2026-08-28T02:11:00.378Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti01-015-eje-homocinetico-r18-gtl-3-pernos-20x23-generated-reference.webp",
+        "sourceSha256": "9caee4a8343e731cf0861cc9650f91721d15d86bc2e29b864f7de642f1a13fba",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.229Z"
+      }
     }
   },
   "GTI01010": {
-    "image": "/catalogo-gti/generated/gti-gti01-010-eje-homocinetico-r12-20x23-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti01-010-gti-gti01-010-eje-homocinetico-r12-20x23-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti01-010-eje-homocinetico-r12-20x23-generated-reference.webp",
-        "alt": "Imagen generada de referencia para EJE HOMOCINETICO R12 (20X23) — GTI01-010, SKU GTI01-010. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti01-010-gti-gti01-010-eje-homocinetico-r12-20x23-branded-v2.webp",
+        "alt": "Imagen generada de referencia de EJE HOMOCINETICO R12 (20X23) — GTI01-010, SKU GTI01-010; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Photorealistic catalog reference for GTI01-010: complete Renault 12 homokinetic front axle with documented 20 x 23 spline configuration; no bolt flange, side, ABS ring or retention type asserted because the exact source does not specify them; specifications contrasted against the exact Imotriz GTI SKU page and historical GTI catalog; pure white background, no text, logo or watermark.",
       "sourceSha256": "f9720c2678f6615716938793085a10f2775acc2494d9f729e36dbae8f16d38f8",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T02:19:21.924Z"
+      "generatedAt": "2026-08-28T02:19:21.924Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti01-010-eje-homocinetico-r12-20x23-generated-reference.webp",
+        "sourceSha256": "9226115970c47dbe3d6960ded98983276cf60ec1e0ce685295d267a7ffb1cb0f",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.228Z"
+      }
     }
   },
   "GTI03005": {
-    "image": "/catalogo-gti/generated/gti-gti03-005-punta-eje-l-r-mb2600-01-bt-50-gas-con-rosca-26x25-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti03-005-gti-gti03-005-punta-eje-l-r-mb2600-01-bt-50-gas-con-rosca-26x25-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti03-005-punta-eje-l-r-mb2600-01-bt-50-gas-con-rosca-26x25-generated-reference.webp",
-        "alt": "Imagen generada de referencia para PUNTA EJE L/R. MB2600 01/ BT-50 GAS. CON ROSCA (26X25) — GTI03-005, SKU GTI03-005. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti03-005-gti-gti03-005-punta-eje-l-r-mb2600-01-bt-50-gas-con-rosca-26x25-branded-v2.webp",
+        "alt": "Imagen generada de referencia de PUNTA EJE L/R. MB2600 01/ BT-50 GAS. CON ROSCA (26X25) — GTI03-005, SKU GTI03-005; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Photorealistic catalog reference for GTI03-005: wheel-side outer CV joint kit for Mazda B2600 2001 onward / BT-50 gasoline, documented 26 external x 25 internal spline configuration with threaded spindle; no ABS ring or retention type asserted because the exact source does not specify them; specifications contrasted against the exact Imotriz GTI SKU page and historical Mazda GTI catalog; pure white background, no text, logo or watermark.",
       "sourceSha256": "dd97832d1595f251483e86372b1a7ee88503e3a6f5d094e1382e71aeb08a3e21",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T02:19:21.925Z"
+      "generatedAt": "2026-08-28T02:19:21.925Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti03-005-punta-eje-l-r-mb2600-01-bt-50-gas-con-rosca-26x25-generated-reference.webp",
+        "sourceSha256": "acab7966c49341d29feca9b5b120d557c68c1e90b553d013f89d4868bf75054e",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.238Z"
+      }
     }
   },
   "GTI03049": {
-    "image": "/catalogo-gti/generated/gti-gti03-049-punta-eje-l-r-kia-grand-carnival-mecanica-31x28-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti03-049-gti-gti03-049-punta-eje-l-r-kia-grand-carnival-mecanica-31x28-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti03-049-punta-eje-l-r-kia-grand-carnival-mecanica-31x28-generated-reference.webp",
-        "alt": "Imagen generada de referencia para PUNTA EJE L/R. KIA GRAND CARNIVAL MECANICA (31X28) — GTI03-049, SKU GTI03-049. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti03-049-gti-gti03-049-punta-eje-l-r-kia-grand-carnival-mecanica-31x28-branded-v2.webp",
+        "alt": "Imagen generada de referencia de PUNTA EJE L/R. KIA GRAND CARNIVAL MECANICA (31X28) — GTI03-049, SKU GTI03-049; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Photorealistic catalog reference for GTI03-049: heavy-duty wheel-side outer CV joint kit for Kia Grand Carnival / Sedona with manual transmission, documented 31 external x 28 internal spline configuration; no ABS ring, side or retention type asserted because the exact source does not specify them; specifications contrasted against two exact Imotriz SKU pages and historical GTI catalog; pure white background, no text, logo or watermark.",
       "sourceSha256": "1ec1c1b87a6916f0e42e3cad878972f26147cba3f0c0b4d14baa8eaa7edfa998",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T02:19:21.925Z"
+      "generatedAt": "2026-08-28T02:19:21.925Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti03-049-punta-eje-l-r-kia-grand-carnival-mecanica-31x28-generated-reference.webp",
+        "sourceSha256": "56916582729c0b49562d4af52ee8046d07aab8a7023af8894d47e2a7e841f8f2",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.250Z"
+      }
     }
   },
   "GTI03040": {
-    "image": "/catalogo-gti/generated/gti-gti03-040-punta-eje-l-r-mazda-3-automatico-de-tornillo-36x22-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti03-040-gti-gti03-040-punta-eje-l-r-mazda-3-automatico-de-tornillo-36x22-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti03-040-punta-eje-l-r-mazda-3-automatico-de-tornillo-36x22-generated-reference.webp",
-        "alt": "Imagen generada de referencia para PUNTA EJE L/R. MAZDA 3 AUTOMATICO DE TORNILLO (36X22) — GTI03-040, SKU GTI03-040. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti03-040-gti-gti03-040-punta-eje-l-r-mazda-3-automatico-de-tornillo-36x22-branded-v2.webp",
+        "alt": "Imagen generada de referencia de PUNTA EJE L/R. MAZDA 3 AUTOMATICO DE TORNILLO (36X22) — GTI03-040, SKU GTI03-040; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Photorealistic catalog reference for GTI03-040: wheel-side outer CV joint kit for Mazda 3 automatic transmission, documented bolt-retained design and 36 x 22 spline configuration; separate central retaining bolt and no ABS ring because the exact source does not specify ABS; specifications contrasted against the exact Imotriz GTI SKU page and historical Mazda GTI catalog; pure white background, no text, logo or watermark.",
       "sourceSha256": "3ef702031064047257de412daebf593a0d099a444a5f213b4da724e08ba83bed",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T02:28:15.542Z"
+      "generatedAt": "2026-08-28T02:28:15.542Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti03-040-punta-eje-l-r-mazda-3-automatico-de-tornillo-36x22-generated-reference.webp",
+        "sourceSha256": "3b1b02ee368b4f558e7ba7f108364a83dc9f2b604749790bbbe672273020269e",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.247Z"
+      }
     }
   },
   "GTI03058": {
-    "image": "/catalogo-gti/generated/gti-gti03-058-punta-eje-l-r-mazda-3-22-dts-con-abs-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti03-058-gti-gti03-058-punta-eje-l-r-mazda-3-22-dts-con-abs-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti03-058-punta-eje-l-r-mazda-3-22-dts-con-abs-generated-reference.webp",
-        "alt": "Imagen generada de referencia para PUNTA EJE L/R. MAZDA 3 22 DTS. CON ABS — GTI03-058, SKU GTI03-058. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti03-058-gti-gti03-058-punta-eje-l-r-mazda-3-22-dts-con-abs-branded-v2.webp",
+        "alt": "Imagen generada de referencia de PUNTA EJE L/R. MAZDA 3 22 DTS. CON ABS — GTI03-058, SKU GTI03-058; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Photorealistic catalog reference for GTI03-058: wheel-side outer CV joint kit for Mazda 3, documented 22-spline specification and ABS tone ring; the source does not state whether 22 refers to internal or external splines and does not state ABS ring tooth count, so neither is asserted; specifications contrasted against two historical Mazda GTI catalog sources; pure white background, no text, logo or watermark.",
       "sourceSha256": "eea8cafd2ae64ef60b0738a12ac22f561f846454788b6f3d6f207b665bb6f390",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T02:28:15.542Z"
+      "generatedAt": "2026-08-28T02:28:15.542Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti03-058-punta-eje-l-r-mazda-3-22-dts-con-abs-generated-reference.webp",
+        "sourceSha256": "8696a4235ea0a7fe279912db2d79a95c6a8c4417d3768e0a7d0b4fe9016968c4",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.252Z"
+      }
     }
   },
   "GTI03062": {
-    "image": "/catalogo-gti/generated/gti-gti03-062-punta-eje-l-r-mazda-3-24-dts-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti03-062-gti-gti03-062-punta-eje-l-r-mazda-3-24-dts-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti03-062-punta-eje-l-r-mazda-3-24-dts-generated-reference.webp",
-        "alt": "Imagen generada de referencia para PUNTA EJE L/R. MAZDA 3 24 DTS. — GTI03-062, SKU GTI03-062. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti03-062-gti-gti03-062-punta-eje-l-r-mazda-3-24-dts-branded-v2.webp",
+        "alt": "Imagen generada de referencia de PUNTA EJE L/R. MAZDA 3 24 DTS. — GTI03-062, SKU GTI03-062; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Photorealistic catalog reference for GTI03-062: wheel-side outer CV joint kit for Mazda 3 with documented 24-tooth spline specification; the source does not state whether 24 refers to internal or external splines and does not specify ABS or retention type, so a plain housing without ABS ring is shown; specifications contrasted against the exact Imotriz GTI SKU page and historical Mazda GTI catalog; pure white background, no text, logo or watermark.",
       "sourceSha256": "fe3c41bca13b3cb1eb3300cd19a0c341be4a640bce317702f0be999be6af56d4",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T02:28:15.542Z"
+      "generatedAt": "2026-08-28T02:28:15.542Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti03-062-punta-eje-l-r-mazda-3-24-dts-generated-reference.webp",
+        "sourceSha256": "f4d5462bb8a204d7c370a47e1c16cab553afd856ba494a7f98348d13156e37eb",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.252Z"
+      }
     }
   },
   "GTI03065": {
-    "image": "/catalogo-gti/generated/gti-gti03-065-punta-eje-l-c-izq-mazda-3-automatico-macho-26x23-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti03-065-gti-gti03-065-punta-eje-l-c-izq-mazda-3-automatico-macho-26x23-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti03-065-punta-eje-l-c-izq-mazda-3-automatico-macho-26x23-generated-reference.webp",
-        "alt": "Imagen generada de referencia para PUNTA EJE L/C. IZQ. MAZDA 3 AUTOMATICO (MACHO) (26X23) — GTI03-065, SKU GTI03-065. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti03-065-gti-gti03-065-punta-eje-l-c-izq-mazda-3-automatico-macho-26x23-branded-v2.webp",
+        "alt": "Imagen generada de referencia de PUNTA EJE L/C. IZQ. MAZDA 3 AUTOMATICO (MACHO) (26X23) — GTI03-065, SKU GTI03-065; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Photorealistic catalog reference for GTI03-065: transmission-side inner tripod CV joint kit, left side, Mazda 3 automatic transmission, male type with protruding transmission spline, documented 26 x 23 configuration; includes separate boot, tripod spider, clamps, grease and circlip; specifications contrasted against the exact Imotriz GTI SKU page and historical GTI catalog; pure white background, no text, logo or watermark.",
       "sourceSha256": "febd24b9fe709208a1a46ef35924d1f871f19432f9b57e71ee0d93da2ed2e7de",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T02:37:55.028Z"
+      "generatedAt": "2026-08-28T02:37:55.028Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti03-065-punta-eje-l-c-izq-mazda-3-automatico-macho-26x23-generated-reference.webp",
+        "sourceSha256": "eaeefe85230d54aa374fa8f5e52ee683ac1db9d00b498847b227f9c52050ecf7",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.254Z"
+      }
     }
   },
   "GTI03079": {
-    "image": "/catalogo-gti/generated/gti-gti03-079-punta-eje-l-c-der-mazda-3-mazda-5-mecanico-hembra-28x24-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti03-079-gti-gti03-079-punta-eje-l-c-der-mazda-3-mazda-5-mecanico-hembra-28x24-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti03-079-punta-eje-l-c-der-mazda-3-mazda-5-mecanico-hembra-28x24-generated-reference.webp",
-        "alt": "Imagen generada de referencia para PUNTA EJE L/C. DER. MAZDA 3/MAZDA 5 MECANICO (HEMBRA) (28X24) — GTI03-079, SKU GTI03-079. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti03-079-gti-gti03-079-punta-eje-l-c-der-mazda-3-mazda-5-mecanico-hembra-28x24-branded-v2.webp",
+        "alt": "Imagen generada de referencia de PUNTA EJE L/C. DER. MAZDA 3/MAZDA 5 MECANICO (HEMBRA) (28X24) — GTI03-079, SKU GTI03-079; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Photorealistic catalog reference for GTI03-079: transmission-side inner tripod CV joint kit, right side, Mazda 3 and Mazda 5 manual transmission, female type with a centered internal splined socket and no protruding shaft, documented 28 x 24 configuration; includes separate boot, tripod spider, clamps, grease and circlip; specifications contrasted against the exact Imotriz GTI SKU page and historical GTI catalog; pure white background, no text, logo or watermark.",
       "sourceSha256": "4ca3b7a80cc0b0c357e5dbd8b6e76a01b337e52ef8ad7672f2e8ad9b83b96275",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T02:37:55.029Z"
+      "generatedAt": "2026-08-28T02:37:55.029Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti03-079-punta-eje-l-c-der-mazda-3-mazda-5-mecanico-hembra-28x24-generated-reference.webp",
+        "sourceSha256": "d7befc9d8beedb4dea6b82bf15a13ef3c2caa8d416e2303b4ba42c570de1f1c5",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.256Z"
+      }
     }
   },
   "GTI03080": {
-    "image": "/catalogo-gti/generated/gti-gti03-080-punta-eje-l-c-izq-mazda-3-mazda-5-mecanico-macho-28x24-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti03-080-gti-gti03-080-punta-eje-l-c-izq-mazda-3-mazda-5-mecanico-macho-28x24-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti03-080-punta-eje-l-c-izq-mazda-3-mazda-5-mecanico-macho-28x24-generated-reference.webp",
-        "alt": "Imagen generada de referencia para PUNTA EJE L/C. IZQ. MAZDA 3/MAZDA 5 MECANICO (MACHO) (28X24) — GTI03-080, SKU GTI03-080. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti03-080-gti-gti03-080-punta-eje-l-c-izq-mazda-3-mazda-5-mecanico-macho-28x24-branded-v2.webp",
+        "alt": "Imagen generada de referencia de PUNTA EJE L/C. IZQ. MAZDA 3/MAZDA 5 MECANICO (MACHO) (28X24) — GTI03-080, SKU GTI03-080; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Photorealistic catalog reference for GTI03-080: transmission-side inner tripod CV joint kit, left side, Mazda 3 and Mazda 5 manual transmission, male type with protruding transmission spline, documented 28 x 24 configuration; includes separate boot, tripod spider, clamps, grease and circlip; specifications contrasted against the exact Imotriz GTI SKU page and historical GTI catalog; pure white background, no text, logo or watermark.",
       "sourceSha256": "e3bbaefae9efcd7c8afd4de06f60b3ba084273f927799382eb67cf16efb4a467",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T02:37:55.029Z"
+      "generatedAt": "2026-08-28T02:37:55.029Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti03-080-punta-eje-l-c-izq-mazda-3-mazda-5-mecanico-macho-28x24-generated-reference.webp",
+        "sourceSha256": "4f5f263a23dae45e977c8e32e31f56c5738f9bafb53e79fd7ff5e718543aa88e",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.257Z"
+      }
     }
   },
   "GTI03042": {
-    "image": "/catalogo-gti/generated/gti-gti03-042-punta-eje-l-c-der-m626-milenium-manual-hembra-28x30-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti03-042-gti-gti03-042-punta-eje-l-c-der-m626-milenium-manual-hembra-28x30-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti03-042-punta-eje-l-c-der-m626-milenium-manual-hembra-28x30-generated-reference.webp",
-        "alt": "Imagen generada de referencia para PUNTA EJE L/C. DER. M626 MILENIUM MANUAL (HEMBRA) (28X30) — GTI03-042, SKU GTI03-042. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti03-042-gti-gti03-042-punta-eje-l-c-der-m626-milenium-manual-hembra-28x30-branded-v2.webp",
+        "alt": "Imagen generada de referencia de PUNTA EJE L/C. DER. M626 MILENIUM MANUAL (HEMBRA) (28X30) — GTI03-042, SKU GTI03-042; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Photorealistic catalog reference for GTI03-042: transmission-side inner tripod CV joint kit, right side, Mazda 626 Millennium manual transmission, female type with centered internal splined socket, documented 28 x 30 configuration; includes separate boot, tripod spider, clamps, grease and circlip; specifications contrasted against the exact Imotriz GTI SKU page and historical GTI catalog; pure white background, no text, logo or watermark.",
       "sourceSha256": "058c19e1e33c1f1c4a8747c545762f6550df66302dab898afeb584b31b403342",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T02:47:14.427Z"
+      "generatedAt": "2026-08-28T02:47:14.427Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti03-042-punta-eje-l-c-der-m626-milenium-manual-hembra-28x30-generated-reference.webp",
+        "sourceSha256": "8a886dd03be084fd926f2a8fc1abe5cb73fe8aeaf7c6efd628af102d649436ca",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.248Z"
+      }
     }
   },
   "GTI03043": {
-    "image": "/catalogo-gti/generated/gti-gti03-043-punta-eje-l-c-der-m626-milenium-aut-hembra-28x23-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti03-043-gti-gti03-043-punta-eje-l-c-der-m626-milenium-aut-hembra-28x23-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti03-043-punta-eje-l-c-der-m626-milenium-aut-hembra-28x23-generated-reference.webp",
-        "alt": "Imagen generada de referencia para PUNTA EJE L/C. DER. M626 MILENIUM AUT. (HEMBRA) (28X23) — GTI03-043, SKU GTI03-043. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti03-043-gti-gti03-043-punta-eje-l-c-der-m626-milenium-aut-hembra-28x23-branded-v2.webp",
+        "alt": "Imagen generada de referencia de PUNTA EJE L/C. DER. M626 MILENIUM AUT. (HEMBRA) (28X23) — GTI03-043, SKU GTI03-043; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Photorealistic catalog reference for GTI03-043: transmission-side inner tripod CV joint kit, right side, Mazda 626 Millennium automatic transmission, female type with centered internal splined socket, documented 28 x 23 configuration; includes separate boot, tripod spider, clamps, grease and circlip; specifications contrasted against the exact Imotriz GTI SKU page and historical GTI catalog; pure white background, no text, logo or watermark.",
       "sourceSha256": "d58fe072b42cd21b0275b36ed5ddfa2d5a31e483caa40a83926d0bb490e4ec09",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T02:47:14.427Z"
+      "generatedAt": "2026-08-28T02:47:14.427Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti03-043-punta-eje-l-c-der-m626-milenium-aut-hembra-28x23-generated-reference.webp",
+        "sourceSha256": "e23c2bf2856a1992157c1c39a59708a655dd1ae27cd31a98363f3bb369edf29f",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.248Z"
+      }
     }
   },
   "GTI03044": {
-    "image": "/catalogo-gti/generated/gti-gti03-044-punta-eje-l-c-izq-m626-milenium-aut-macho-26x23-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti03-044-gti-gti03-044-punta-eje-l-c-izq-m626-milenium-aut-macho-26x23-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti03-044-punta-eje-l-c-izq-m626-milenium-aut-macho-26x23-generated-reference.webp",
-        "alt": "Imagen generada de referencia para PUNTA EJE L/C. IZQ. M626 MILENIUM AUT. (MACHO) (26X23) — GTI03-044, SKU GTI03-044. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti03-044-gti-gti03-044-punta-eje-l-c-izq-m626-milenium-aut-macho-26x23-branded-v2.webp",
+        "alt": "Imagen generada de referencia de PUNTA EJE L/C. IZQ. M626 MILENIUM AUT. (MACHO) (26X23) — GTI03-044, SKU GTI03-044; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Photorealistic catalog reference for GTI03-044: transmission-side inner tripod CV joint kit, left side, Mazda 626 Millennium automatic transmission, male type with protruding transmission spline, documented 26 x 23 configuration; includes separate boot, tripod spider, clamps, grease and circlip; specifications contrasted against the exact Imotriz GTI SKU page and historical GTI catalog; pure white background, no text, logo or watermark.",
       "sourceSha256": "94b00a0c4b23d688b66c93a72300b416491b1b1b4954a5d9895194f4604f094b",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T02:47:14.427Z"
+      "generatedAt": "2026-08-28T02:47:14.427Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti03-044-punta-eje-l-c-izq-m626-milenium-aut-macho-26x23-generated-reference.webp",
+        "sourceSha256": "c075e7c32baddc88bc014d0f8f6db17724c9d1f312ed96904b9981bc35ea43d2",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.249Z"
+      }
     }
   },
   "GTI03035": {
@@ -1706,60 +2300,87 @@ export const productImageOverrides = Object.freeze({
     }
   },
   "GTI03025": {
-    "image": "/catalogo-gti/generated/gti-gti03-025-eje-homocinetico-der-m323-24x24-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti03-025-gti-gti03-025-eje-homocinetico-der-m323-24x24-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti03-025-eje-homocinetico-der-m323-24x24-generated-reference.webp",
-        "alt": "Imagen generada de referencia para EJE HOMOCINETICO DER. M323 (24X24) — GTI03-025, SKU GTI03-025. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti03-025-gti-gti03-025-eje-homocinetico-der-m323-24x24-branded-v2.webp",
+        "alt": "Imagen generada de referencia de EJE HOMOCINETICO DER. M323 (24X24) — GTI03-025, SKU GTI03-025; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Photorealistic catalog reference for GTI03-025: complete right front CV axle assembly for Mazda 323 with documented 24 x 24 spline configuration; fully assembled closed transmission-side plunge housing, inner and outer boots, connecting shaft and threaded wheel-side spline; no ABS ring because the exact source does not specify ABS, and no asserted length; specifications contrasted against the exact Imotriz GTI SKU page and historical GTI catalog; pure white background, no text, logo or watermark.",
       "sourceSha256": "d8d7092a4719a397a20ccb6e52ea8cd0e7ba67cc86ea60fa6503eb6c279fa0dd",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T03:04:21.710Z"
+      "generatedAt": "2026-08-28T03:04:21.710Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti03-025-eje-homocinetico-der-m323-24x24-generated-reference.webp",
+        "sourceSha256": "f997ccd9fe2cfecc34da48b0231e921073c3492230af9e9db9162c0878773431",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.245Z"
+      }
     }
   },
   "GTI03027": {
-    "image": "/catalogo-gti/generated/gti-gti03-027-punta-eje-l-r-m626-asahi-pin-externo-26x25-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti03-027-gti-gti03-027-punta-eje-l-r-m626-asahi-pin-externo-26x25-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti03-027-punta-eje-l-r-m626-asahi-pin-externo-26x25-generated-reference.webp",
-        "alt": "Imagen generada de referencia para PUNTA EJE L/R. M626 ASAHI PIN EXTERNO (26X25) — GTI03-027, SKU GTI03-027. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti03-027-gti-gti03-027-punta-eje-l-r-m626-asahi-pin-externo-26x25-branded-v2.webp",
+        "alt": "Imagen generada de referencia de PUNTA EJE L/R. M626 ASAHI PIN EXTERNO (26X25) — GTI03-027, SKU GTI03-027; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Photorealistic catalog reference for GTI03-027: wheel-side outer CV joint kit for Mazda 626 Asahi with documented external retaining pin and 26 x 25 spline configuration; joint, boot, nut, clamps, grease and circlip; no ABS ring because the exact source does not specify ABS; specifications contrasted against the exact Imotriz GTI SKU page and historical GTI catalog; pure white background, no text, logo or watermark.",
       "sourceSha256": "6bf03491a1ffff9c8826debe9edc646186022d0eb23ae56e6eb5005aecad1d4c",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T03:04:21.711Z"
+      "generatedAt": "2026-08-28T03:04:21.711Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti03-027-punta-eje-l-r-m626-asahi-pin-externo-26x25-generated-reference.webp",
+        "sourceSha256": "0b7d344efddbb446cd4458d92ea0178b4fdbfc75dba4d3d968fb609b592ae845",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.245Z"
+      }
     }
   },
   "GTI03048": {
-    "image": "/catalogo-gti/generated/gti-gti03-048-eje-homocinetico-der-mazda-bt-50-gas-macho-26x26-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti03-048-gti-gti03-048-eje-homocinetico-der-mazda-bt-50-gas-macho-26x26-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti03-048-eje-homocinetico-der-mazda-bt-50-gas-macho-26x26-generated-reference.webp",
-        "alt": "Imagen generada de referencia para EJE HOMOCINETICO DER. MAZDA BT-50 GAS. (MACHO) (26X26) — GTI03-048, SKU GTI03-048. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti03-048-gti-gti03-048-eje-homocinetico-der-mazda-bt-50-gas-macho-26x26-branded-v2.webp",
+        "alt": "Imagen generada de referencia de EJE HOMOCINETICO DER. MAZDA BT-50 GAS. (MACHO) (26X26) — GTI03-048, SKU GTI03-048; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Photorealistic catalog reference for GTI03-048: complete right front CV axle assembly for Mazda BT-50 gasoline, male transmission connection and documented 26 x 26 spline configuration; closed transmission-side plunge housing with protruding male spline, inner and outer boots, connecting shaft and threaded wheel-side spline; no ABS ring, support bearing or asserted length because the exact source does not specify them; specifications contrasted against the exact Imotriz GTI SKU page and historical GTI catalog; pure white background, no text, logo or watermark.",
       "sourceSha256": "e4cba6125d877fcd0e2e0df3e7c4ca194a259e6f3e28b79d3866d0de581fd7e0",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T03:04:21.711Z"
+      "generatedAt": "2026-08-28T03:04:21.711Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti03-048-eje-homocinetico-der-mazda-bt-50-gas-macho-26x26-generated-reference.webp",
+        "sourceSha256": "8dc6ae7473db19b32d15b9091065557903c8861f15fc7becf8085f1e14af568e",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.249Z"
+      }
     }
   },
   "GTI03053": {
@@ -1788,459 +2409,675 @@ export const productImageOverrides = Object.freeze({
     }
   },
   "GTI03051": {
-    "image": "/catalogo-gti/generated/gti-gti03-051-eje-homocinetico-izq-mazda-bt-50-2-5-diesel-2010-28x28-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti03-051-gti-gti03-051-eje-homocinetico-izq-mazda-bt-50-2-5-diesel-2010-28x28-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti03-051-eje-homocinetico-izq-mazda-bt-50-2-5-diesel-2010-28x28-generated-reference.webp",
-        "alt": "Imagen generada de referencia para EJE HOMOCINETICO IZQ. MAZDA BT-50 2.5 DIESEL 2010/ (28X28) — GTI03-051, SKU GTI03-051. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti03-051-gti-gti03-051-eje-homocinetico-izq-mazda-bt-50-2-5-diesel-2010-28x28-branded-v2.webp",
+        "alt": "Imagen generada de referencia de EJE HOMOCINETICO IZQ. MAZDA BT-50 2.5 DIESEL 2010/ (28X28) — GTI03-051, SKU GTI03-051; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Photorealistic catalog reference for GTI03-051: complete left front CV axle assembly for Mazda BT-50 2.5 diesel 2010 onward with documented 28 x 28 spline configuration; closed transmission-side plunge housing, inner and outer boots, connecting shaft and threaded wheel-side spline; transmission connection is oriented away because the exact source does not specify male or female, and no ABS ring, support bearing or length is asserted; specifications contrasted against the exact Imotriz GTI SKU page and historical GTI catalog; pure white background, no text, logo or watermark.",
       "sourceSha256": "1a4a62d30ae8e964e7dc0ef1c574727dbe332f82bb0ccdeb41a3b8a883a4bbea",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T03:13:10.192Z"
+      "generatedAt": "2026-08-28T03:13:10.192Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti03-051-eje-homocinetico-izq-mazda-bt-50-2-5-diesel-2010-28x28-generated-reference.webp",
+        "sourceSha256": "5580c9340fc7c85f9762bab616af6f52d8552bf550737c32b0cd88348cd3685e",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.250Z"
+      }
     }
   },
   "GTI03055": {
-    "image": "/catalogo-gti/generated/gti-gti03-055-punta-eje-l-r-mazda-bt-50-diesel-2010-28x36-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti03-055-gti-gti03-055-punta-eje-l-r-mazda-bt-50-diesel-2010-28x36-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti03-055-punta-eje-l-r-mazda-bt-50-diesel-2010-28x36-generated-reference.webp",
-        "alt": "Imagen generada de referencia para PUNTA EJE L/R. MAZDA BT-50 DIESEL 2010/ (28X36) — GTI03-055, SKU GTI03-055. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti03-055-gti-gti03-055-punta-eje-l-r-mazda-bt-50-diesel-2010-28x36-branded-v2.webp",
+        "alt": "Imagen generada de referencia de PUNTA EJE L/R. MAZDA BT-50 DIESEL 2010/ (28X36) — GTI03-055, SKU GTI03-055; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Photorealistic catalog reference for GTI03-055: wheel-side outer CV joint kit for Mazda BT-50 diesel 2010 onward with documented 28 x 36 spline configuration; joint, boot, axle nut, clamps, grease and circlip; no ABS ring or retention type is asserted because the exact source does not specify them; specifications contrasted against the exact Imotriz GTI SKU page and historical GTI catalog; pure white background, no text, logo or watermark.",
       "sourceSha256": "405770e2b95541810266ade3b6f325d095859e4410c5564e44795a613265c758",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T03:13:10.193Z"
+      "generatedAt": "2026-08-28T03:13:10.193Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti03-055-punta-eje-l-r-mazda-bt-50-diesel-2010-28x36-generated-reference.webp",
+        "sourceSha256": "9e419cab653918e64d416ceb4ead24b81ff35b72b78945e118be6db9f3993bf9",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.251Z"
+      }
     }
   },
   "GTI03068": {
-    "image": "/catalogo-gti/generated/gti-gti03-068-punta-eje-l-c-m121-22x21-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti03-068-gti-gti03-068-punta-eje-l-c-m121-22x21-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti03-068-punta-eje-l-c-m121-22x21-generated-reference.webp",
-        "alt": "Imagen generada de referencia para PUNTA EJE L/C. M121 (22X21) — GTI03-068, SKU GTI03-068. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti03-068-gti-gti03-068-punta-eje-l-c-m121-22x21-branded-v2.webp",
+        "alt": "Imagen generada de referencia de PUNTA EJE L/C. M121 (22X21) — GTI03-068, SKU GTI03-068; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Photorealistic catalog reference for GTI03-068: transmission-side inner CV joint / tripod kit for Mazda 121 with documented 22 x 21 spline configuration; open tulip housing, separate tripod bearing, boot, clamps, grease and circlip; no male/female transmission connection, ABS ring or vehicle-side retention type is asserted because the exact source does not specify them; specifications contrasted against the exact Imotriz GTI SKU page; pure white background, no text, logo or watermark.",
       "sourceSha256": "ce865e9b0ceebe1e13b283de0088544f566bb58509f064fbd8bbcc141e0c9209",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T03:21:57.957Z"
+      "generatedAt": "2026-08-28T03:21:57.957Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti03-068-punta-eje-l-c-m121-22x21-generated-reference.webp",
+        "sourceSha256": "78a3a0f342a539b7a18657c68a1b96ca2abda05654cea2433d9dd598c378ef78",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.254Z"
+      }
     }
   },
   "GTI03070": {
-    "image": "/catalogo-gti/generated/gti-gti03-070-eje-homocinetico-izq-mazda-3-de-tornillo-automatico-36x26-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti03-070-gti-gti03-070-eje-homocinetico-izq-mazda-3-de-tornillo-automatico-36x26-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti03-070-eje-homocinetico-izq-mazda-3-de-tornillo-automatico-36x26-generated-reference.webp",
-        "alt": "Imagen generada de referencia para EJE HOMOCINETICO IZQ. MAZDA 3 DE TORNILLO AUTOMATICO (36X26) — GTI03-070, SKU GTI03-070. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti03-070-gti-gti03-070-eje-homocinetico-izq-mazda-3-de-tornillo-automatico-36x26-branded-v2.webp",
+        "alt": "Imagen generada de referencia de EJE HOMOCINETICO IZQ. MAZDA 3 DE TORNILLO AUTOMATICO (36X26) — GTI03-070, SKU GTI03-070; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Photorealistic catalog reference for GTI03-070: complete left front CV axle assembly for automatic Mazda 3 with documented bolt-retained wheel side and 36 x 26 spline configuration; outer wheel-side spline has a centered internally threaded bore and no external nut thread, with closed transmission-side plunge housing, inner and outer boots and connecting shaft; no ABS ring, support bearing, transmission gender or asserted length because the exact source does not specify them; specifications contrasted against the exact Imotriz GTI SKU page; pure white background, no text, logo or watermark.",
       "sourceSha256": "82f98803dc4f06a71524c8ccd5a11672b70e331bb04aa645706c72c85451be27",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T03:21:57.957Z"
+      "generatedAt": "2026-08-28T03:21:57.957Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti03-070-eje-homocinetico-izq-mazda-3-de-tornillo-automatico-36x26-generated-reference.webp",
+        "sourceSha256": "da1a8429086af8a20b45f67a442cba5339cfcaf6ea594af9d9c669e1cf200ed3",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.255Z"
+      }
     }
   },
   "GTI03075": {
-    "image": "/catalogo-gti/generated/gti-gti03-075-eje-homocinetico-izq-mazda-3-mazda-3-all-new-triptonico-28x28-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti03-075-gti-gti03-075-eje-homocinetico-izq-mazda-3-mazda-3-all-new-triptonico-28x28-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti03-075-eje-homocinetico-izq-mazda-3-mazda-3-all-new-triptonico-28x28-generated-reference.webp",
-        "alt": "Imagen generada de referencia para EJE HOMOCINETICO IZQ. MAZDA 3/MAZDA 3 ALL NEW TRIPTONICO (28X28) — GTI03-075, SKU GTI03-075. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti03-075-gti-gti03-075-eje-homocinetico-izq-mazda-3-mazda-3-all-new-triptonico-28x28-branded-v2.webp",
+        "alt": "Imagen generada de referencia de EJE HOMOCINETICO IZQ. MAZDA 3/MAZDA 3 ALL NEW TRIPTONICO (28X28) — GTI03-075, SKU GTI03-075; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Photorealistic catalog reference for GTI03-075: complete left front CV axle assembly for Mazda 3 and Mazda 3 All New Tiptronic with documented 28 x 28 spline configuration; closed transmission-side plunge housing, inner and outer boots, connecting shaft and threaded wheel-side spline; transmission connection is oriented away because the exact source does not specify male or female, and no ABS ring, support bearing, retention type or asserted length is added; specifications contrasted against the exact Imotriz GTI SKU page; pure white background, no text, logo or watermark.",
       "sourceSha256": "a03d60675e13f67d5b59a885e0a7ed36a6098d643252795189de9c5ee3a15503",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T03:21:57.957Z"
+      "generatedAt": "2026-08-28T03:21:57.957Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti03-075-eje-homocinetico-izq-mazda-3-mazda-3-all-new-triptonico-28x28-generated-reference.webp",
+        "sourceSha256": "ad2be14004be0028155491f2b2b4f7700fbb9bafd3bc97dc4912672801e1faa5",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.255Z"
+      }
     }
   },
   "GTI03082": {
-    "image": "/catalogo-gti/generated/gti-gti03-082-eje-homocinetico-der-mazda-3-de-tornillo-automatico-36x28-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti03-082-gti-gti03-082-eje-homocinetico-der-mazda-3-de-tornillo-automatico-36x28-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti03-082-eje-homocinetico-der-mazda-3-de-tornillo-automatico-36x28-generated-reference.webp",
-        "alt": "Imagen generada de referencia para EJE HOMOCINETICO DER. MAZDA 3 DE TORNILLO AUTOMATICO (36X28) — GTI03-082, SKU GTI03-082. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti03-082-gti-gti03-082-eje-homocinetico-der-mazda-3-de-tornillo-automatico-36x28-branded-v2.webp",
+        "alt": "Imagen generada de referencia de EJE HOMOCINETICO DER. MAZDA 3 DE TORNILLO AUTOMATICO (36X28) — GTI03-082, SKU GTI03-082; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Photorealistic catalog reference for GTI03-082: complete right front CV axle assembly for automatic Mazda 3 with documented bolt-retained wheel side and 36 x 28 spline configuration; outer wheel-side spline has a centered internally threaded bore and no external nut thread, with closed transmission-side plunge housing, inner and outer boots and connecting shaft; no ABS ring, support bearing, transmission gender or asserted length because the exact source does not specify them; specifications contrasted against the exact Imotriz GTI SKU page and the historical GTI catalog; pure white background, no text, logo or watermark.",
       "sourceSha256": "03b20c75f4490fe9226317dad40173efa77fc0c609b1d59e22215721ada0be9b",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T03:31:17.202Z"
+      "generatedAt": "2026-08-28T03:31:17.202Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti03-082-eje-homocinetico-der-mazda-3-de-tornillo-automatico-36x28-generated-reference.webp",
+        "sourceSha256": "3dc5aaa9aa2824264114086a42b4935dd35a52b11ce312a17881a16ed7c26b2a",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.258Z"
+      }
     }
   },
   "GTI01009": {
-    "image": "/catalogo-gti/generated/gti-gti01-009-eje-homocinetico-der-r9-21x23-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti01-009-gti-gti01-009-eje-homocinetico-der-r9-21x23-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti01-009-eje-homocinetico-der-r9-21x23-generated-reference.webp",
-        "alt": "Imagen generada de referencia para EJE HOMOCINETICO DER. R9 (21X23) — GTI01-009, SKU GTI01-009. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti01-009-gti-gti01-009-eje-homocinetico-der-r9-21x23-branded-v2.webp",
+        "alt": "Imagen generada de referencia de EJE HOMOCINETICO DER. R9 (21X23) — GTI01-009, SKU GTI01-009; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Photorealistic catalog reference for GTI01-009: complete right front CV axle for Renault 9 with documented 21 x 23 spline configuration; closed transmission-side plunge housing, inner and outer boots, connecting shaft and wheel-side spline; no ABS ring, support bearing, transmission gender or asserted length because the exact source does not specify them; specifications contrasted against the exact Imotriz GTI SKU page and historical GTI catalog; pure white background, no text, logo or watermark.",
       "sourceSha256": "95d61a13fc9321d60f4667461bf287da4941789d1b45daf9fbf900d04a9c64c8",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T03:40:04.844Z"
+      "generatedAt": "2026-08-28T03:40:04.844Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti01-009-eje-homocinetico-der-r9-21x23-generated-reference.webp",
+        "sourceSha256": "446103989d34b66720bd1715950ba708c3c776de70bdb2dd9d0a3315ac6bad52",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.227Z"
+      }
     }
   },
   "GTI01022": {
-    "image": "/catalogo-gti/generated/gti-gti01-022-eje-homocinetico-der-symbol-citius-reemplaza-carcaza-larga-21x23-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti01-022-gti-gti01-022-eje-homocinetico-der-symbol-citius-reemplaza-carcaza-larga-21x23-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti01-022-eje-homocinetico-der-symbol-citius-reemplaza-carcaza-larga-21x23-generated-reference.webp",
-        "alt": "Imagen generada de referencia para EJE HOMOCINETICO DER. SYMBOL/CITIUS REEMPLAZA CARCAZA LARGA (21X23) — GTI01-022, SKU GTI01-022. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti01-022-gti-gti01-022-eje-homocinetico-der-symbol-citius-reemplaza-carcaza-larga-21x23-branded-v2.webp",
+        "alt": "Imagen generada de referencia de EJE HOMOCINETICO DER. SYMBOL/CITIUS REEMPLAZA CARCAZA LARGA (21X23) — GTI01-022, SKU GTI01-022; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Photorealistic catalog reference for GTI01-022: complete right front CV axle for Renault Symbol / Citius with documented 21 x 23 spline configuration and long replacement transmission-side housing; elongated closed plunge housing, inner and outer boots, connecting shaft and wheel-side spline; no ABS ring, support bearing, transmission gender or asserted overall length because the exact source does not specify them; specifications contrasted against the exact Imotriz GTI SKU page and historical GTI catalog; pure white background, no text, logo or watermark.",
       "sourceSha256": "c05750d8619866d4fe111dd45ed4747fdd2c063be195443b584d54756b4eb13f",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T03:40:04.844Z"
+      "generatedAt": "2026-08-28T03:40:04.844Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti01-022-eje-homocinetico-der-symbol-citius-reemplaza-carcaza-larga-21x23-generated-reference.webp",
+        "sourceSha256": "c3b54c4fb475fb8ff35dd721b8eeb4364fd6eb2fd79ede1e5f2701660e06844c",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.229Z"
+      }
     }
   },
   "GTI01024": {
-    "image": "/catalogo-gti/generated/gti-gti01-024-eje-homocinetico-izq-symbol-citius-21x30-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti01-024-gti-gti01-024-eje-homocinetico-izq-symbol-citius-21x30-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti01-024-eje-homocinetico-izq-symbol-citius-21x30-generated-reference.webp",
-        "alt": "Imagen generada de referencia para EJE HOMOCINETICO IZQ. SYMBOL/CITIUS (21X30) — GTI01-024, SKU GTI01-024. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti01-024-gti-gti01-024-eje-homocinetico-izq-symbol-citius-21x30-branded-v2.webp",
+        "alt": "Imagen generada de referencia de EJE HOMOCINETICO IZQ. SYMBOL/CITIUS (21X30) — GTI01-024, SKU GTI01-024; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Photorealistic catalog reference for GTI01-024: complete left front CV axle for Renault Symbol / Citius with documented 21 x 30 spline configuration; closed transmission-side plunge housing, inner and outer boots, connecting shaft and wheel-side spline; no ABS ring, support bearing, transmission gender or asserted length because the exact source does not specify them; specifications contrasted against the exact Imotriz GTI SKU page and historical GTI catalog; pure white background, no text, logo or watermark.",
       "sourceSha256": "c4894073a1537b6648280afd3e5ae02c4159585b0887966eacc3ad8a22ec2f17",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T03:40:04.844Z"
+      "generatedAt": "2026-08-28T03:40:04.844Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti01-024-eje-homocinetico-izq-symbol-citius-21x30-generated-reference.webp",
+        "sourceSha256": "112b094991c9e2bc382e3d6a16b1f6395fcae32d55d55caa403cb48bae245010",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.230Z"
+      }
     }
   },
   "GTI01025": {
-    "image": "/catalogo-gti/generated/gti-gti01-025-eje-homocinetico-der-logan-2010-t-original-21x23-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti01-025-gti-gti01-025-eje-homocinetico-der-logan-2010-t-original-21x23-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti01-025-eje-homocinetico-der-logan-2010-t-original-21x23-generated-reference.webp",
-        "alt": "Imagen generada de referencia para EJE HOMOCINETICO DER. LOGAN /2010 T. ORIGINAL (21X23) — GTI01-025, SKU GTI01-025. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti01-025-gti-gti01-025-eje-homocinetico-der-logan-2010-t-original-21x23-branded-v2.webp",
+        "alt": "Imagen generada de referencia de EJE HOMOCINETICO DER. LOGAN /2010 T. ORIGINAL (21X23) — GTI01-025, SKU GTI01-025; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Photorealistic catalog reference for GTI01-025: complete right front CV axle, original-type configuration, for Renault Logan through 2010 with documented 21 x 23 spline configuration; closed transmission-side plunge housing, inner and outer boots, connecting shaft and wheel-side spline; no ABS ring, support bearing, transmission gender or asserted length because the exact source does not specify them; specifications contrasted against the exact Imotriz GTI SKU page and historical GTI catalog; pure white background, no text, logo or watermark.",
       "sourceSha256": "72afff78e0524f70d2ca36dcca6f3ed05da06bceaaba70a80683f6905df6a98c",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T03:40:04.844Z"
+      "generatedAt": "2026-08-28T03:40:04.844Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti01-025-eje-homocinetico-der-logan-2010-t-original-21x23-generated-reference.webp",
+        "sourceSha256": "67175313caadc698873a00835700a0e862cf24ee67fefc50b43e2069c21739ab",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.230Z"
+      }
     }
   },
   "GTI01039": {
-    "image": "/catalogo-gti/generated/gti-gti01-039-punta-eje-l-r-laguna-23x29-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti01-039-gti-gti01-039-punta-eje-l-r-laguna-23x29-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti01-039-punta-eje-l-r-laguna-23x29-generated-reference.webp",
-        "alt": "Imagen generada de referencia para PUNTA EJE L/R. LAGUNA (23X29) — GTI01-039, SKU GTI01-039. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti01-039-gti-gti01-039-punta-eje-l-r-laguna-23x29-branded-v2.webp",
+        "alt": "Imagen generada de referencia de PUNTA EJE L/R. LAGUNA (23X29) — GTI01-039, SKU GTI01-039; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Photorealistic catalog reference for GTI01-039: wheel-side outer CV joint kit for Renault Laguna with documented 23 x 29 spline configuration; joint, boot, axle nut, clamps, grease and circlip; no ABS ring because the exact source does not specify ABS; specifications contrasted against the exact Imotriz GTI SKU page and historical GTI catalog; pure white background, no text, logo or watermark.",
       "sourceSha256": "7da7699143cd784d26890e60725661bbb0d2fd752a4713d8893f843f8f9767cd",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T03:48:43.888Z"
+      "generatedAt": "2026-08-28T03:48:43.888Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti01-039-punta-eje-l-r-laguna-23x29-generated-reference.webp",
+        "sourceSha256": "c08ee3aae966c9cdae32889e7820fbde025949ea3a436de4cba5129f1ba7455b",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.232Z"
+      }
     }
   },
   "GTI01045": {
-    "image": "/catalogo-gti/generated/gti-gti01-045-eje-homocinetico-der-duster-oroch-4x4-2-0-aut-25x26-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti01-045-gti-gti01-045-eje-homocinetico-der-duster-oroch-4x4-2-0-aut-25x26-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti01-045-eje-homocinetico-der-duster-oroch-4x4-2-0-aut-25x26-generated-reference.webp",
-        "alt": "Imagen generada de referencia para EJE HOMOCINETICO DER. DUSTER/OROCH 4X4 2.0 AUT. (25X26) — GTI01-045, SKU GTI01-045. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti01-045-gti-gti01-045-eje-homocinetico-der-duster-oroch-4x4-2-0-aut-25x26-branded-v2.webp",
+        "alt": "Imagen generada de referencia de EJE HOMOCINETICO DER. DUSTER/OROCH 4X4 2.0 AUT. (25X26) — GTI01-045, SKU GTI01-045; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Photorealistic catalog reference for GTI01-045: complete right front CV axle for Renault Duster / Oroch 4x4 2.0 automatic with documented 25 x 26 spline configuration; closed transmission-side plunge housing, inner and outer boots, robust connecting shaft and wheel-side spline; no ABS ring, support bearing, transmission gender or asserted length because the exact source does not specify them; specifications contrasted against the exact Imotriz GTI SKU page and historical GTI catalog; pure white background, no text, logo or watermark.",
       "sourceSha256": "2144aeaebb3824ea34df6a384ae061bb6b10dbd514502f6f322029b6d4ebd4b7",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T03:48:43.888Z"
+      "generatedAt": "2026-08-28T03:48:43.888Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti01-045-eje-homocinetico-der-duster-oroch-4x4-2-0-aut-25x26-generated-reference.webp",
+        "sourceSha256": "8b5a23696669e30f3ef39dbec88abe9c9669e333fc5bfb4d78c43356ab75b36f",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.233Z"
+      }
     }
   },
   "GTI01074": {
-    "image": "/catalogo-gti/generated/gti-gti01-074-punta-eje-l-r-logan-sandero-new-automatico-23x30-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti01-074-gti-gti01-074-punta-eje-l-r-logan-sandero-new-automatico-23x30-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti01-074-punta-eje-l-r-logan-sandero-new-automatico-23x30-generated-reference.webp",
-        "alt": "Imagen generada de referencia para PUNTA EJE L/R. LOGAN/SANDERO NEW AUTOMATICO (23X30) — GTI01-074, SKU GTI01-074. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti01-074-gti-gti01-074-punta-eje-l-r-logan-sandero-new-automatico-23x30-branded-v2.webp",
+        "alt": "Imagen generada de referencia de PUNTA EJE L/R. LOGAN/SANDERO NEW AUTOMATICO (23X30) — GTI01-074, SKU GTI01-074; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Photorealistic catalog reference for GTI01-074: wheel-side outer CV joint kit for Renault Logan / Sandero New automatic with documented 23 x 30 spline configuration; joint, boot, axle nut, clamps, grease and circlip; no ABS ring because the exact source does not specify ABS; specifications contrasted against the exact Imotriz GTI SKU page and historical GTI catalog; pure white background, no text, logo or watermark.",
       "sourceSha256": "c60d9da2db041d09cb0410d8c6b3eb4090492f7f6bcefcb3eb9f154353a60df1",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T03:48:43.888Z"
+      "generatedAt": "2026-08-28T03:48:43.888Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti01-074-punta-eje-l-r-logan-sandero-new-automatico-23x30-generated-reference.webp",
+        "sourceSha256": "15f0b9aba49a312862a04c7879884e7bbca2cd8094a98fb2c57d6a98c5e30570",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.236Z"
+      }
     }
   },
   "GTI02001": {
-    "image": "/catalogo-gti/generated/gti-gti02-001-punta-eje-l-r-d-max-3-0-2010-rodeo-pin-interno-17x33-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti02-001-gti-gti02-001-punta-eje-l-r-d-max-3-0-2010-rodeo-pin-interno-17x33-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti02-001-punta-eje-l-r-d-max-3-0-2010-rodeo-pin-interno-17x33-generated-reference.webp",
-        "alt": "Imagen generada de referencia para PUNTA EJE L/R. D-MAX 3.0 /2010. RODEO PIN INTERNO (17X33) — GTI02-001, SKU GTI02-001. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti02-001-gti-gti02-001-punta-eje-l-r-d-max-3-0-2010-rodeo-pin-interno-17x33-branded-v2.webp",
+        "alt": "Imagen generada de referencia de PUNTA EJE L/R. D-MAX 3.0 /2010. RODEO PIN INTERNO (17X33) — GTI02-001, SKU GTI02-001; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Photorealistic catalog reference for GTI02-001: wheel-side outer CV joint kit for Chevrolet / Isuzu D-Max 3.0 through 2010 and Isuzu Rodeo with documented internal retaining pin and 17 x 33 spline configuration; heavy-duty joint, boot, axle nut, clamps, grease and retaining circlip; no ABS ring because the exact sources do not specify ABS; specifications contrasted against the exact Imotriz GTI SKU page, exact Mercado Libre GTI listing and historical Isuzu catalog; pure white background, no text, logo or watermark.",
       "sourceSha256": "48e9fb3391830ecbfa9f8e44298be412be2d8ddef8ac52ffcff357f99e506eae",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T03:56:38.076Z"
+      "generatedAt": "2026-08-28T03:56:38.076Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti02-001-punta-eje-l-r-d-max-3-0-2010-rodeo-pin-interno-17x33-generated-reference.webp",
+        "sourceSha256": "8acdffd688a0350dd4cf00c8476ad45a96212ccd9be43d891fd334716a3f408a",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.236Z"
+      }
     }
   },
   "GTI02002": {
-    "image": "/catalogo-gti/generated/gti-gti02-002-eje-homocinetico-d-max-3-0-4x4-08-l-r-17x17-609-mm-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti02-002-gti-gti02-002-eje-homocinetico-d-max-3-0-4x4-08-l-r-17x17-609-mm-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti02-002-eje-homocinetico-d-max-3-0-4x4-08-l-r-17x17-609-mm-generated-reference.webp",
-        "alt": "Imagen generada de referencia para EJE HOMOCINETICO D-MAX 3.0 4X4 08/ L/R (17X17) 609 MM — GTI02-002, SKU GTI02-002. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti02-002-gti-gti02-002-eje-homocinetico-d-max-3-0-4x4-08-l-r-17x17-609-mm-branded-v2.webp",
+        "alt": "Imagen generada de referencia de EJE HOMOCINETICO D-MAX 3.0 4X4 08/ L/R (17X17) 609 MM — GTI02-002, SKU GTI02-002; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Photorealistic catalog reference for GTI02-002: complete front CV axle usable on right or left side for Chevrolet / Isuzu D-Max 3.0 4x4 from 2008 onward with documented 17 x 17 spline configuration and 609 mm overall length; compact closed inner joint with short unthreaded male spline, inner and outer boots, robust shaft and long unthreaded outer spline matching the exact real product photo; no ABS ring, support bearing or bracket; specifications and geometry contrasted against the exact Repuesto.co GTI SKU page and its watermarked real photo, used only as reference and not copied; pure white background, no text, logo or watermark.",
       "sourceSha256": "9a8ede248df5b5f0a6a749f6c9a7e6589b9a1eceb5b813d8fb76144e74b3b977",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T03:56:38.077Z"
+      "generatedAt": "2026-08-28T03:56:38.077Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti02-002-eje-homocinetico-d-max-3-0-4x4-08-l-r-17x17-609-mm-generated-reference.webp",
+        "sourceSha256": "1a5002cf8976943199c4514f8b041b21beef36f7d5b963e14ed6f814497b9e8f",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.236Z"
+      }
     }
   },
   "GTI03012": {
-    "image": "/catalogo-gti/generated/gti-gti03-012-punta-eje-l-r-allegro-1-3-00-26x21x56-pin-interno-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti03-012-gti-gti03-012-punta-eje-l-r-allegro-1-3-00-26x21x56-pin-interno-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti03-012-punta-eje-l-r-allegro-1-3-00-26x21x56-pin-interno-generated-reference.webp",
-        "alt": "Imagen generada de referencia para PUNTA EJE L/R. ALLEGRO 1.3 00/ (26X21X56) PIN INTERNO — GTI03-012, SKU GTI03-012. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti03-012-gti-gti03-012-punta-eje-l-r-allegro-1-3-00-26x21x56-pin-interno-branded-v2.webp",
+        "alt": "Imagen generada de referencia de PUNTA EJE L/R. ALLEGRO 1.3 00/ (26X21X56) PIN INTERNO — GTI03-012, SKU GTI03-012; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Photorealistic catalog reference for GTI03-012: wheel-side outer CV joint kit for Mazda Allegro 1.3 model year 2000 onward, with verified 26 x 21 spline configuration, 56 mm documented body dimension and internal retaining-pin/circlip configuration; joint, boot, clamps, axle nut, circlip and grease sachet; no ABS ring because the exact source does not specify ABS; specifications contrasted against the exact Imotriz product page and the historical GTI catalog; pure white background, no text, logo, packaging or watermark.",
       "sourceSha256": "1f0b31c0b85579a6a9808fd367a96cbee854c1f3442989f05712bce1d27835c7",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T04:09:22.151Z"
+      "generatedAt": "2026-08-28T04:09:22.151Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti03-012-punta-eje-l-r-allegro-1-3-00-26x21x56-pin-interno-generated-reference.webp",
+        "sourceSha256": "ba4c0033365b3e09183c8554b0f2263fe53a03679996f6a96c78cf24680e950a",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.240Z"
+      }
     }
   },
   "GTI03022": {
-    "image": "/catalogo-gti/generated/gti-gti03-022-punta-eje-l-r-ford-fiesta-1-3-25x20x57-pin-externo-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti03-022-gti-gti03-022-punta-eje-l-r-ford-fiesta-1-3-25x20x57-pin-externo-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti03-022-punta-eje-l-r-ford-fiesta-1-3-25x20x57-pin-externo-generated-reference.webp",
-        "alt": "Imagen generada de referencia para PUNTA EJE L/R. FORD FIESTA 1.3 (25X20X57) PIN EXTERNO — GTI03-022, SKU GTI03-022. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti03-022-gti-gti03-022-punta-eje-l-r-ford-fiesta-1-3-25x20x57-pin-externo-branded-v2.webp",
+        "alt": "Imagen generada de referencia de PUNTA EJE L/R. FORD FIESTA 1.3 (25X20X57) PIN EXTERNO — GTI03-022, SKU GTI03-022; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Photorealistic catalog reference for GTI03-022: wheel-side outer CV joint kit for Ford Fiesta 1.3, with verified 25 x 20 spline configuration, 57 mm documented body dimension and external retaining-pin/circlip style; conventional joint, boot, clamps, axle nut, external clip and grease sachet; no ABS ring because the exact source does not specify ABS; specifications contrasted against the exact Imotriz product page and the historical GTI catalog; pure white background, no text, logo, packaging or watermark.",
       "sourceSha256": "2f5d17c17388d57ead0d91178b8c5e2b966f2ee717f9041837554f53a976d9cd",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T04:09:22.152Z"
+      "generatedAt": "2026-08-28T04:09:22.152Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti03-022-punta-eje-l-r-ford-fiesta-1-3-25x20x57-pin-externo-generated-reference.webp",
+        "sourceSha256": "8f3cef31c70c7fe212c0b201ba0d9a9f35e7af302be7fde7687c6d1a4362c888",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.244Z"
+      }
     }
   },
   "GTI03039": {
-    "image": "/catalogo-gti/generated/gti-gti03-039-punta-eje-l-r-mazda-6-2-0-2-3-2002-2008-28x32x62-abs-44-pulsos-tope-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti03-039-gti-gti03-039-punta-eje-l-r-mazda-6-2-0-2-3-2002-2008-28x32x62-abs-44-pulsos-tope-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti03-039-punta-eje-l-r-mazda-6-2-0-2-3-2002-2008-28x32x62-abs-44-pulsos-tope-generated-reference.webp",
-        "alt": "Imagen generada de referencia para PUNTA EJE L/R. MAZDA 6 2.0/2.3 2002/2008 (28X32X62) ABS 44 PULSOS, TOPE — GTI03-039, SKU GTI03-039. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti03-039-gti-gti03-039-punta-eje-l-r-mazda-6-2-0-2-3-2002-2008-28x32x62-abs-44-pulsos-tope-branded-v2.webp",
+        "alt": "Imagen generada de referencia de PUNTA EJE L/R. MAZDA 6 2.0/2.3 2002/2008 (28X32X62) ABS 44 PULSOS, TOPE — GTI03-039, SKU GTI03-039; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Photorealistic catalog reference for GTI03-039: wheel-side outer CV joint kit for Mazda 6 2.0/2.3 model years 2002 through 2008, with verified 28 x 32 spline configuration, 62 mm documented body dimension, stop-style retention and one 44-tooth ABS tone ring; corrected conventional continuous 32-spline wheel stub with threaded tip, plus boot, clamps, axle nut, circlip and grease sachet; specifications contrasted against the exact Imotriz product page and historical GTI catalog; pure white background, no text, logo, packaging or watermark.",
       "sourceSha256": "62334ef33a269e63ba7ce00679f86b9dca62620d9d3ee7dc93cd6d83d2e1d9ed",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T04:09:22.152Z"
+      "generatedAt": "2026-08-28T04:09:22.152Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti03-039-punta-eje-l-r-mazda-6-2-0-2-3-2002-2008-28x32x62-abs-44-pulsos-tope-generated-reference.webp",
+        "sourceSha256": "7cd1256daa4b7f3f33458417162c4b6801bf69af001e743258d0792a0bd71d6e",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.247Z"
+      }
     }
   },
   "GTI03041": {
-    "image": "/catalogo-gti/generated/gti-gti03-041-punta-eje-l-c-izq-m626-milenium-00-manual-28x30x35-macho-trebol-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti03-041-gti-gti03-041-punta-eje-l-c-izq-m626-milenium-00-manual-28x30x35-macho-trebol-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti03-041-punta-eje-l-c-izq-m626-milenium-00-manual-28x30x35-macho-trebol-generated-reference.webp",
-        "alt": "Imagen generada de referencia para PUNTA EJE L/C. IZQ. M626 MILENIUM 00/ MANUAL (28X30X35) MACHO, TREBOL — GTI03-041, SKU GTI03-041. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti03-041-gti-gti03-041-punta-eje-l-c-izq-m626-milenium-00-manual-28x30x35-macho-trebol-branded-v2.webp",
+        "alt": "Imagen generada de referencia de PUNTA EJE L/C. IZQ. M626 MILENIUM 00/ MANUAL (28X30X35) MACHO, TREBOL — GTI03-041, SKU GTI03-041; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Photorealistic catalog reference for GTI03-041 / MZ-522: left gearbox-side inner CV joint for Mazda 626 Millennium 2000 onward, manual transmission, with verified 28 x 30 spline configuration, 35 mm documented dimension, male gearbox spline and trefoil geometry; compact cylindrical joint, boot, clamps, circlip and grease tube; specifications contrasted against the exact Imotriz MZ-522 page, the technical measurements catalog and a distributor product photo used only for geometry; pure white background, no text, logo, packaging or watermark.",
       "sourceSha256": "ef055930aa00d3ed42fce66a6585782b59f63eac137676c7c2a3bead6cb59c64",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T04:21:05.809Z"
+      "generatedAt": "2026-08-28T04:21:05.809Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti03-041-punta-eje-l-c-izq-m626-milenium-00-manual-28x30x35-macho-trebol-generated-reference.webp",
+        "sourceSha256": "3f0bae91b6830316bc954c95dfbbddd9b9e9246ecfde4f41eab6eff9bc4cf392",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.247Z"
+      }
     }
   },
   "GTI03054": {
-    "image": "/catalogo-gti/generated/gti-gti03-054-punta-eje-l-c-der-mazda-bt-50-2-5-diesel-2006-2014-ford-ranger-2-5-2008-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti03-054-gti-gti03-054-punta-eje-l-c-der-mazda-bt-50-2-5-diesel-2006-2014-ford-ranger-2-5-2008-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti03-054-punta-eje-l-c-der-mazda-bt-50-2-5-diesel-2006-2014-ford-ranger-2-5-2008-generated-reference.webp",
-        "alt": "Imagen generada de referencia para PUNTA EJE L/C. DER. MAZDA BT-50 2.5 DIESEL 2006/2014, FORD RANGER 2.5 2008/2014 MEC. (30X36X38) MACHO, PIN INTERNO — GTI03-054, SKU GTI03-054. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti03-054-gti-gti03-054-punta-eje-l-c-der-mazda-bt-50-2-5-diesel-2006-2014-ford-ranger-2-5-2008-branded-v2.webp",
+        "alt": "Imagen generada de referencia de PUNTA EJE L/C. DER. MAZDA BT-50 2.5 DIESEL 2006/2014, FORD RANGER 2.5 2008/2014 MEC. (30X36X38) MACHO, PIN INTERNO — GTI03-054, SKU GTI03-054; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Photorealistic catalog reference for GTI03-054 / MZ-780: right gearbox-side inner CV joint for Mazda BT-50 2.5 diesel 2006–2014 and Ford Ranger 2.5 diesel manual 2008–2014, with verified 30 x 36 spline configuration, 38 mm documented dimension, male connection, internal retaining pin and tripod spider; no ABS ring; specifications contrasted against exact Imotriz pages, the IPS Colombia suspension catalog and a watermarked distributor photo used only for geometry; pure white background, no text, logo, packaging or watermark.",
       "sourceSha256": "f8b51d63fe5daea0816557ce868ba6b0faf8be28548fb7ff17eed73f2f75f57d",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T04:21:05.810Z"
+      "generatedAt": "2026-08-28T04:21:05.810Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti03-054-punta-eje-l-c-der-mazda-bt-50-2-5-diesel-2006-2014-ford-ranger-2-5-2008-generated-reference.webp",
+        "sourceSha256": "582e174db05524d9159a8cce214357c4277062206699e7a9d865b1172e7397c5",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.251Z"
+      }
     }
   },
   "GTI03060": {
-    "image": "/catalogo-gti/generated/gti-gti03-060-punta-eje-l-c-der-mazda-6-2-3-28x23x43-hembra-trebol-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti03-060-gti-gti03-060-punta-eje-l-c-der-mazda-6-2-3-28x23x43-hembra-trebol-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti03-060-punta-eje-l-c-der-mazda-6-2-3-28x23x43-hembra-trebol-generated-reference.webp",
-        "alt": "Imagen generada de referencia para PUNTA EJE L/C. DER. MAZDA 6 2.3 (28X23X43) HEMBRA, TREBOL — GTI03-060, SKU GTI03-060. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti03-060-gti-gti03-060-punta-eje-l-c-der-mazda-6-2-3-28x23x43-hembra-trebol-branded-v2.webp",
+        "alt": "Imagen generada de referencia de PUNTA EJE L/C. DER. MAZDA 6 2.3 (28X23X43) HEMBRA, TREBOL — GTI03-060, SKU GTI03-060; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Photorealistic catalog reference for GTI03-060 / MZ-719: right gearbox-side female inner CV tulip for Mazda 6 2.3, with verified 28 x 23 spline configuration, 43 mm documented dimension and trefoil geometry; empty cup with exactly three roller tracks and central female splined bore, plus one separate tripod, boot, clamps, circlip and grease sachet; specifications contrasted against the exact Imotriz MZ-719 page, technical measurements catalog and exact marketplace listing used only as product reference; pure white background, no text, logo, packaging or watermark.",
       "sourceSha256": "e352e28f399ec08c4c76113b3db233bf35d91a35a323f63f22eaeeb0a83569da",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T04:21:05.810Z"
+      "generatedAt": "2026-08-28T04:21:05.810Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti03-060-punta-eje-l-c-der-mazda-6-2-3-28x23x43-hembra-trebol-generated-reference.webp",
+        "sourceSha256": "46e8d1681867aeb611fcd1fbf0b1e3918d29bf7116e55973dff1b14c9b4b7bf0",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.252Z"
+      }
     }
   },
   "GTI03064": {
-    "image": "/catalogo-gti/generated/gti-gti03-064-punta-eje-l-c-der-mazda-allegro-1-3-1-6-2002-2009-28x29x43-hembra-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti03-064-gti-gti03-064-punta-eje-l-c-der-mazda-allegro-1-3-1-6-2002-2009-28x29x43-hembra-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti03-064-punta-eje-l-c-der-mazda-allegro-1-3-1-6-2002-2009-28x29x43-hembra-generated-reference.webp",
-        "alt": "Imagen generada de referencia para PUNTA EJE L/C. DER. MAZDA ALLEGRO 1.3/1.6 2002/2009 (28X29X43) HEMBRA — GTI03-064, SKU GTI03-064. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti03-064-gti-gti03-064-punta-eje-l-c-der-mazda-allegro-1-3-1-6-2002-2009-28x29x43-hembra-branded-v2.webp",
+        "alt": "Imagen generada de referencia de PUNTA EJE L/C. DER. MAZDA ALLEGRO 1.3/1.6 2002/2009 (28X29X43) HEMBRA — GTI03-064, SKU GTI03-064; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Photorealistic catalog reference for GTI03-064: right gearbox-side female inner CV tulip for Mazda Allegro 1.3/1.6 2002–2009, with verified 28 x 29 spline configuration and 43 mm dimension; empty female cup with exactly three trefoil roller channels and central splined bore, plus one separate tripod, boot, clamps, circlip and grease sachet; specifications contrasted against the Imotriz 634090 page and the official Spicer 141-821 technical catalog; pure white background, no text, logo, packaging or watermark.",
       "sourceSha256": "b7852cace1d1956b7708b4f1a4b1eb0945c1dfab9380cccc8b6571a31f2ed4e5",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T04:30:59.090Z"
+      "generatedAt": "2026-08-28T04:30:59.090Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti03-064-punta-eje-l-c-der-mazda-allegro-1-3-1-6-2002-2009-28x29x43-hembra-generated-reference.webp",
+        "sourceSha256": "20fa7321e1ce94be99f36706cd3fb24cb50fe6089877f8ca916ded7cba1ab395",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.253Z"
+      }
     }
   },
   "GTI03069": {
-    "image": "/catalogo-gti/generated/gti-gti03-069-punta-eje-l-r-mazda-demio-96-24x19x52-con-abs-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti03-069-gti-gti03-069-punta-eje-l-r-mazda-demio-96-24x19x52-con-abs-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti03-069-punta-eje-l-r-mazda-demio-96-24x19x52-con-abs-generated-reference.webp",
-        "alt": "Imagen generada de referencia para PUNTA EJE L/R. MAZDA DEMIO 96/ (24X19X52) CON ABS — GTI03-069, SKU GTI03-069. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti03-069-gti-gti03-069-punta-eje-l-r-mazda-demio-96-24x19x52-con-abs-branded-v2.webp",
+        "alt": "Imagen generada de referencia de PUNTA EJE L/R. MAZDA DEMIO 96/ (24X19X52) CON ABS — GTI03-069, SKU GTI03-069; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Photorealistic catalog reference for GTI03-069: wheel-side outer CV joint for Mazda Demio 1996 onward, with verified 24 x 19 spline configuration, 52 mm joint dimension and one 44-tooth ABS tone ring; joint, boot, clamps, axle nut, circlip and grease sachet; no pin-style assertion because secondary catalogs disagree; specifications contrasted against the exact Imotriz GTI page, IPS Colombia catalog and technical measurements catalog; pure white background, no text, logo, packaging or watermark.",
       "sourceSha256": "c4cb22042f42518e26d671a6f665022224e83d6c1f113939bb546c7a6bdad51c",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T04:30:59.091Z"
+      "generatedAt": "2026-08-28T04:30:59.091Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti03-069-punta-eje-l-r-mazda-demio-96-24x19x52-con-abs-generated-reference.webp",
+        "sourceSha256": "26fa93fea57d7cce9dc7d88ea6bd357d6d0d3fbd414a91277c8d87e7ed3aa8d6",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.255Z"
+      }
     }
   },
   "GTI03085": {
-    "image": "/catalogo-gti/generated/gti-gti03-085-punta-eje-l-r-mazda-bt-50-3-2-ford-ranger-2-5-diesel-4x4-28x26-pin-exter-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti03-085-gti-gti03-085-punta-eje-l-r-mazda-bt-50-3-2-ford-ranger-2-5-diesel-4x4-28x26-pin-exter-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti03-085-punta-eje-l-r-mazda-bt-50-3-2-ford-ranger-2-5-diesel-4x4-28x26-pin-exter-generated-reference.webp",
-        "alt": "Imagen generada de referencia para PUNTA EJE L/R. MAZDA BT-50 3.2/FORD RANGER 2.5 DIESEL 4X4 (28X26) PIN EXTERNO — GTI03-085, SKU GTI03-085. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti03-085-gti-gti03-085-punta-eje-l-r-mazda-bt-50-3-2-ford-ranger-2-5-diesel-4x4-28x26-pin-exter-branded-v2.webp",
+        "alt": "Imagen generada de referencia de PUNTA EJE L/R. MAZDA BT-50 3.2/FORD RANGER 2.5 DIESEL 4X4 (28X26) PIN EXTERNO — GTI03-085, SKU GTI03-085; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Photorealistic catalog reference for GTI03-085: heavy-duty wheel-side outer CV joint for Mazda BT-50 3.2 and Ford Ranger 2.5 diesel 4x4, with exact verified 28 external x 26 internal spline configuration and external retaining-pin/circlip style; joint, thick boot, clamps, axle nut, external snap ring and grease sachet; no ABS ring because exact sources do not specify ABS; specifications contrasted against exact Imotriz and Mercado Libre GTI03-085 pages, with marketplace photos used only as reference and not copied; pure white background, no text, logo, packaging or watermark.",
       "sourceSha256": "539848b8d1398c04f4ee7d46b1fda733990de3f41ab6c32c7e9fd6c1b27ba928",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T04:30:59.091Z"
+      "generatedAt": "2026-08-28T04:30:59.091Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti03-085-punta-eje-l-r-mazda-bt-50-3-2-ford-ranger-2-5-diesel-4x4-28x26-pin-exter-generated-reference.webp",
+        "sourceSha256": "898cb777c88bd1268886aa9aa1dbd5550d6510c571ea4cd372bc316a4ebfc549",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.260Z"
+      }
     }
   },
   "GTI01038": {
@@ -2347,60 +3184,87 @@ export const productImageOverrides = Object.freeze({
     }
   },
   "GTI01007": {
-    "image": "/catalogo-gti/generated/gti-gti01-007-eje-homocinetico-r4-6-23x22-semieje-completo-sin-abs-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti01-007-gti-gti01-007-eje-homocinetico-r4-6-23x22-semieje-completo-sin-abs-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti01-007-eje-homocinetico-r4-6-23x22-semieje-completo-sin-abs-generated-reference.webp",
-        "alt": "Imagen generada de referencia para EJE HOMOCINETICO R4/6 23X22 · SEMIEJE COMPLETO SIN ABS — GTI01-007, SKU GTI01-007. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti01-007-gti-gti01-007-eje-homocinetico-r4-6-23x22-semieje-completo-sin-abs-branded-v2.webp",
+        "alt": "Imagen generada de referencia de EJE HOMOCINETICO R4/6 23X22 · SEMIEJE COMPLETO SIN ABS — GTI01-007, SKU GTI01-007; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Photorealistic catalog reference of one complete Renault 4 / Renault 6 front CV axle, GTI01-007: approximately 665–680 mm, 23 gearbox-side splines and 22 wheel-side splines, two rubber boots, threaded wheel spindle and nut, no ABS ring, no flange. Pure white background; no text, logo, package or extra parts. Geometry contrasted with exact Imotriz GTI01-007 listing, GTI/FJMB catalog, HB e Hijos SE6000 and Mecatechnic RT40422.",
       "sourceSha256": "75f6eeab66d50ee322cda46b110d7bf6237cfbcb06205c50c81bc43a9025fd80",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T04:49:21.345Z"
+      "generatedAt": "2026-08-28T04:49:21.345Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti01-007-eje-homocinetico-r4-6-23x22-semieje-completo-sin-abs-generated-reference.webp",
+        "sourceSha256": "31fc5e6c5953fdcedc9def001b20f5a4dca1e3bf461705b0c42390d8493dc462",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.226Z"
+      }
     }
   },
   "GTI01014": {
-    "image": "/catalogo-gti/generated/gti-gti01-014-eje-homocinetico-r18-gtx-4-pernos-23x23-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti01-014-gti-gti01-014-eje-homocinetico-r18-gtx-4-pernos-23x23-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti01-014-eje-homocinetico-r18-gtx-4-pernos-23x23-generated-reference.webp",
-        "alt": "Imagen generada de referencia para EJE HOMOCINETICO R18 GTX 4 PERNOS 23X23 — GTI01-014, SKU GTI01-014. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti01-014-gti-gti01-014-eje-homocinetico-r18-gtx-4-pernos-23x23-branded-v2.webp",
+        "alt": "Imagen generada de referencia de EJE HOMOCINETICO R18 GTX 4 PERNOS 23X23 — GTI01-014, SKU GTI01-014; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Photorealistic catalog reference of one complete Renault 18 GTX / TS front CV axle, GTI01-014: 23x23 configuration, outer threaded wheel spindle with nut, no ABS ring, two rubber boots, and one inner round flange with exactly four bolt holes for the four-bolt mounting. Pure white background; no text, logo, package or extra parts. Geometry contrasted with exact Imotriz GTI01-014 listing, GTI/FJMB catalog and Colombian four-bolt Renault 18 listing.",
       "sourceSha256": "02819b4511cf82d7b5e0c7691f8f279bd110bfd02633a564f5da230eefca0245",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T04:49:21.346Z"
+      "generatedAt": "2026-08-28T04:49:21.346Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti01-014-eje-homocinetico-r18-gtx-4-pernos-23x23-generated-reference.webp",
+        "sourceSha256": "593e3fe7916cf8fe2cdc1204d8c9115b5b6703d97151054b808a1ddbf7ebd73c",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.228Z"
+      }
     }
   },
   "GTI01036": {
-    "image": "/catalogo-gti/generated/gti-gti01-036-eje-homocinetico-der-logan-2011-23x23-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti01-036-gti-gti01-036-eje-homocinetico-der-logan-2011-23x23-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti01-036-eje-homocinetico-der-logan-2011-23x23-generated-reference.webp",
-        "alt": "Imagen generada de referencia para EJE HOMOCINETICO DER. LOGAN 2011/ 23X23 — GTI01-036, SKU GTI01-036. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti01-036-gti-gti01-036-eje-homocinetico-der-logan-2011-23x23-branded-v2.webp",
+        "alt": "Imagen generada de referencia de EJE HOMOCINETICO DER. LOGAN 2011/ 23X23 — GTI01-036, SKU GTI01-036; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Photorealistic catalog reference of one complete long right-side Renault Logan 2011+ / Sandero front CV axle, GTI01-036: 23x23 configuration, outer threaded wheel spindle and nut, inner male transmission spline, two rubber boots, no flange, no support bearing and no ABS ring. Pure white background; no text, logo, package or extra parts. Geometry contrasted with exact Imotriz GTI01-036 listing, GTI/FJMB catalog and independent right-side Logan/Sandero axle catalogs.",
       "sourceSha256": "a278e23d8cf34ce8edf480c559a539bd52acc108e688f3387a37abcf272e4132",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T04:49:21.346Z"
+      "generatedAt": "2026-08-28T04:49:21.346Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti01-036-eje-homocinetico-der-logan-2011-23x23-generated-reference.webp",
+        "sourceSha256": "76486080cccb93b84d8e438b4d6602c6dd53d039c3f7350893f0ca8cfa572763",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.231Z"
+      }
     }
   },
   "GTI04003": {
@@ -3054,22 +3918,31 @@ export const productImageOverrides = Object.freeze({
     }
   },
   "GTI04028": {
-    "image": "/catalogo-gti/generated/gti-gti04-028-punta-eje-l-r-spark-cronos-dw-matiz-tico-23x19-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti04-028-gti-gti04-028-punta-eje-l-r-spark-cronos-dw-matiz-tico-23x19-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti04-028-punta-eje-l-r-spark-cronos-dw-matiz-tico-23x19-generated-reference.webp",
-        "alt": "Imagen generada de referencia para PUNTA EJE L/R. SPARK/CRONOS/DW. MATIZ/TICO 23X19. — GTI04-028, SKU GTI04-028. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti04-028-gti-gti04-028-punta-eje-l-r-spark-cronos-dw-matiz-tico-23x19-branded-v2.webp",
+        "alt": "Imagen generada de referencia de PUNTA EJE L/R. SPARK/CRONOS/DW. MATIZ/TICO 23X19. — GTI04-028, SKU GTI04-028; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Referencia de catálogo fotorrealista única para la punta de eje lado rueda GTI04-028, Chevrolet Spark/Cronos y Daewoo Matiz/Tico, configuración 23X19: junta homocinética exterior compacta de acero, espiga roscada con tuerca castillo, sin corona ABS, fuelle negro de cuatro pliegues, dos abrazaderas, seguro y bolsa de grasa sin marca. Fondo blanco puro, sin texto, logos ni marcas de agua. Geometría contrastada con la ficha Product JSON-LD exacta de Imotriz; la fotografía externa con marca de agua se rechazó y no se reutilizó.",
       "sourceSha256": "87494ac6ff5cbbc586925e77c6d692becbcbd51fc53ee3fa9af49ccee8e70c40",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T05:12:36.761Z"
+      "generatedAt": "2026-08-28T05:12:36.761Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti04-028-punta-eje-l-r-spark-cronos-dw-matiz-tico-23x19-generated-reference.webp",
+        "sourceSha256": "a057b41bb7b1a9fa42d6c11f291ddfda0e46f779f0aa96f970a783e48154b33b",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.261Z"
+      }
     }
   },
   "GTI04036": {
@@ -3673,41 +4546,59 @@ export const productImageOverrides = Object.freeze({
     }
   },
   "GTI04063": {
-    "image": "/catalogo-gti/generated/gti-gti04-063-eje-homocinetico-der-spark-gt-sin-abs-2017-22x22-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti04-063-gti-gti04-063-eje-homocinetico-der-spark-gt-sin-abs-2017-22x22-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti04-063-eje-homocinetico-der-spark-gt-sin-abs-2017-22x22-generated-reference.webp",
-        "alt": "Imagen generada de referencia para EJE HOMOCINETICO DER. SPARK GT SIN ABS /2017 22X22. — GTI04-063, SKU GTI04-063. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti04-063-gti-gti04-063-eje-homocinetico-der-spark-gt-sin-abs-2017-22x22-branded-v2.webp",
+        "alt": "Imagen generada de referencia de EJE HOMOCINETICO DER. SPARK GT SIN ABS /2017 22X22. — GTI04-063, SKU GTI04-063; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Edición generativa controlada de la fotografía real exacta GTI04-063 obtenida de la ficha https://www.imotriz.com/producto/3/GTI04-063-/ y de http://api.pedbox.co:4590/files/items/04I09072.JPG. Se conservó el eje homocinético derecho Spark GT sin ABS hasta 2017, configuración 22X22, con su geometría, longitud, extremos, guardapolvos y masas diferenciadas; solo se sustituyó la tela gris arrugada por fondo blanco puro de catálogo. Imagen única, sin texto, logos ni marca de agua.",
       "sourceSha256": "8b0bbd3c9f6d4fbde17326f679735079320e19cf67c9e1ffeb3d67badc36b6c6",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T14:38:54.821Z"
+      "generatedAt": "2026-08-28T14:38:54.821Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti04-063-eje-homocinetico-der-spark-gt-sin-abs-2017-22x22-generated-reference.webp",
+        "sourceSha256": "f0c6476b857572e8c22f47668c9b2264401d4f35b01cb06a4623684d29a8befd",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.263Z"
+      }
     }
   },
   "GTI04064": {
-    "image": "/catalogo-gti/generated/gti-gti04-064-eje-homocinetico-izq-spark-gt-sin-abs-2017-22x22-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti04-064-gti-gti04-064-eje-homocinetico-izq-spark-gt-sin-abs-2017-22x22-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti04-064-eje-homocinetico-izq-spark-gt-sin-abs-2017-22x22-generated-reference.webp",
-        "alt": "Imagen generada de referencia para EJE HOMOCINETICO IZQ. SPARK GT SIN ABS /2017 22X22. — GTI04-064, SKU GTI04-064. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti04-064-gti-gti04-064-eje-homocinetico-izq-spark-gt-sin-abs-2017-22x22-branded-v2.webp",
+        "alt": "Imagen generada de referencia de EJE HOMOCINETICO IZQ. SPARK GT SIN ABS /2017 22X22. — GTI04-064, SKU GTI04-064; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Edición generativa controlada de la fotografía real exacta GTI04-064 obtenida de la ficha https://www.imotriz.com/producto/3/GTI04-064-/ y de http://api.pedbox.co:4590/files/items/04I09073.jpg. Se conservó el eje homocinético izquierdo Spark GT sin ABS hasta 2017, configuración 22X22, más corto y distinto del derecho, con su geometría, extremos, guardapolvos, masas y tuerca; solo se sustituyó la tela gris arrugada por fondo blanco puro de catálogo. Imagen única, sin texto, logos ni marca de agua.",
       "sourceSha256": "c4a4e1136f8519c4e75ff73711add83fa4073c739dc2ce823e66613f5722774e",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T14:38:54.822Z"
+      "generatedAt": "2026-08-28T14:38:54.822Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti04-064-eje-homocinetico-izq-spark-gt-sin-abs-2017-22x22-generated-reference.webp",
+        "sourceSha256": "5ca3e4dbbfab37ce59c25daf9c3479e0cc54998a0e413659d53553a935944cdd",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.263Z"
+      }
     }
   },
   "GTI04075": {
@@ -4386,22 +5277,31 @@ export const productImageOverrides = Object.freeze({
     }
   },
   "GTI05001": {
-    "image": "/catalogo-gti/generated/gti-gti05-001-punta-eje-l-r-dw-espero-cielo-glx-nubira-33x29-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti05-001-gti-gti05-001-punta-eje-l-r-dw-espero-cielo-glx-nubira-33x29-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti05-001-punta-eje-l-r-dw-espero-cielo-glx-nubira-33x29-generated-reference.webp",
-        "alt": "Imagen generada de referencia para PUNTA EJE L/R. DW. ESPERO/CIELO GLX/NUBIRA 33X29. — GTI05-001, SKU GTI05-001. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti05-001-gti-gti05-001-punta-eje-l-r-dw-espero-cielo-glx-nubira-33x29-branded-v2.webp",
+        "alt": "Imagen generada de referencia de PUNTA EJE L/R. DW. ESPERO/CIELO GLX/NUBIRA 33X29. — GTI05-001, SKU GTI05-001; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Referencia fotorrealista única generada desde la ficha documental exacta https://www.imotriz.com/producto/3/GTI05-001-/: punta lado rueda Daewoo Espero/Cielo GLX/Nubira, 33X29. Junta exterior de acero con tres cavidades ovaladas, espiga estriada larga, rosca y tuerca castillo; fuelle negro separado y seguro circular. La foto externa se rechazó por marca de agua. Fondo blanco puro, sin texto, logos, empaque ni marcas de agua.",
       "sourceSha256": "69513a5ed0ced492d54c321fe2f4f285314627dd649b6d5fd642654d9fa6a58b",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T14:56:37.604Z"
+      "generatedAt": "2026-08-28T14:56:37.604Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti05-001-punta-eje-l-r-dw-espero-cielo-glx-nubira-33x29-generated-reference.webp",
+        "sourceSha256": "eec86b4802bfbc6d9665743d193b7a22b02a34b4a31277c298cfbdec2d4bc1ac",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.267Z"
+      }
     }
   },
   "GTI04100": {
@@ -4605,41 +5505,59 @@ export const productImageOverrides = Object.freeze({
     }
   },
   "GTI06009": {
-    "image": "/catalogo-gti/generated/gti-gti06-009-eje-homocinetico-der-hd-accent-verna-indu-25x25-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti06-009-gti-gti06-009-eje-homocinetico-der-hd-accent-verna-indu-25x25-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti06-009-eje-homocinetico-der-hd-accent-verna-indu-25x25-generated-reference.webp",
-        "alt": "Imagen generada de referencia para EJE HOMOCINETICO DER. HD. ACCENT/VERNA INDU 25X25 — GTI06-009, SKU GTI06-009. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti06-009-gti-gti06-009-eje-homocinetico-der-hd-accent-verna-indu-25x25-branded-v2.webp",
+        "alt": "Imagen generada de referencia de EJE HOMOCINETICO DER. HD. ACCENT/VERNA INDU 25X25 — GTI06-009, SKU GTI06-009; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Referencia fotorrealista única generada a partir de la ficha exacta https://www.imotriz.com/producto/3/GTI06-009-/: eje homocinético completo derecho Hyundai Accent/Verna Indu, 25X25; semieje horizontal con juntas interior y exterior, dos fuelles negros, extremo roscado y tuerca, sin anillo ABS. La única foto externa encontrada se descartó por marca de agua y por mostrar sólo una junta. Fondo blanco puro, sin texto, logos, empaque ni marca de agua.",
       "sourceSha256": "12189ec03740b77b7c9dfe10bfc507beb4f6583f1e751e17868cfa1d9cd0d3b3",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T15:05:01.718Z"
+      "generatedAt": "2026-08-28T15:05:01.718Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti06-009-eje-homocinetico-der-hd-accent-verna-indu-25x25-generated-reference.webp",
+        "sourceSha256": "2561729941032f6aa053b35e10773d56694a9950f24b46e1f08e7965b1a8b460",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.267Z"
+      }
     }
   },
   "GTI06011": {
-    "image": "/catalogo-gti/generated/gti-gti06-011-punta-eje-l-r-hd-accent-verna-gyro-vision-25x30-pin-ext-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti06-011-gti-gti06-011-punta-eje-l-r-hd-accent-verna-gyro-vision-25x30-pin-ext-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti06-011-punta-eje-l-r-hd-accent-verna-gyro-vision-25x30-pin-ext-generated-reference.webp",
-        "alt": "Imagen generada de referencia para PUNTA EJE L/R. HD. ACCENT/VERNA/GYRO/VISION 25X30 (PIN EXT.) — GTI06-011, SKU GTI06-011. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti06-011-gti-gti06-011-punta-eje-l-r-hd-accent-verna-gyro-vision-25x30-pin-ext-branded-v2.webp",
+        "alt": "Imagen generada de referencia de PUNTA EJE L/R. HD. ACCENT/VERNA/GYRO/VISION 25X30 (PIN EXT.) — GTI06-011, SKU GTI06-011; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Referencia fotorrealista única generada a partir de la ficha exacta https://www.imotriz.com/producto/3/GTI06-011-/: punta lado rueda Hyundai Accent/Verna/Gyro/Vision, 25X30, versión con pasador externo; junta, fuelle, abrazaderas, seguro, tuerca castillo y pasador, sin anillo ABS. La foto externa exacta se descartó por marca de agua. Fondo blanco puro, sin texto, logos ni empaque.",
       "sourceSha256": "7ff933e953a3328de6e88891d1781dbf93f11ecf0d9ff587a881dfb73dd23ba3",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T15:05:01.719Z"
+      "generatedAt": "2026-08-28T15:05:01.719Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti06-011-punta-eje-l-r-hd-accent-verna-gyro-vision-25x30-pin-ext-generated-reference.webp",
+        "sourceSha256": "cd7a2dc73a377c67dffeee2181b2d0afc203918cda26110c646191402cea44bf",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.267Z"
+      }
     }
   },
   "GTI06025": {
@@ -4768,98 +5686,143 @@ export const productImageOverrides = Object.freeze({
     }
   },
   "GTI06022": {
-    "image": "/catalogo-gti/generated/gti-gti06-022-eje-homocinetico-izq-hd-vision-kia-rio-xcite-sephia-25x25-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti06-022-gti-gti06-022-eje-homocinetico-izq-hd-vision-kia-rio-xcite-sephia-25x25-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti06-022-eje-homocinetico-izq-hd-vision-kia-rio-xcite-sephia-25x25-generated-reference.webp",
-        "alt": "Imagen generada de referencia para EJE HOMOCINETICO IZQ. HD. VISION/KIA RIO XCITE/SEPHIA 25X25 — GTI06-022, SKU GTI06-022. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti06-022-gti-gti06-022-eje-homocinetico-izq-hd-vision-kia-rio-xcite-sephia-25x25-branded-v2.webp",
+        "alt": "Imagen generada de referencia de EJE HOMOCINETICO IZQ. HD. VISION/KIA RIO XCITE/SEPHIA 25X25 — GTI06-022, SKU GTI06-022; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Referencia fotorrealista única basada en la ficha exacta https://www.imotriz.com/producto/3/GTI06-022-/: eje homocinético completo izquierdo Hyundai Vision/Kia Rio Xcite/Sephia 25X25, eje compacto con dos juntas, dos fuelles y extremos estriados, sin ABS. La foto exacta encontrada se descartó por marca de agua. Fondo blanco puro, sin textos ni logos.",
       "sourceSha256": "bf99643fa0770bc23339386888f7ceb6fd512689f142b3de783ca0eb21fdce90",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T15:13:16.168Z"
+      "generatedAt": "2026-08-28T15:13:16.168Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti06-022-eje-homocinetico-izq-hd-vision-kia-rio-xcite-sephia-25x25-generated-reference.webp",
+        "sourceSha256": "455c81fb8d599101dbb12d84908c6ee0e6f994635f239b7bd837832fc241f922",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.268Z"
+      }
     }
   },
   "GTI06023": {
-    "image": "/catalogo-gti/generated/gti-gti06-023-eje-homocinetico-der-hd-vision-kia-rio-xcite-sephia-25x25-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti06-023-gti-gti06-023-eje-homocinetico-der-hd-vision-kia-rio-xcite-sephia-25x25-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti06-023-eje-homocinetico-der-hd-vision-kia-rio-xcite-sephia-25x25-generated-reference.webp",
-        "alt": "Imagen generada de referencia para EJE HOMOCINETICO DER. HD. VISION/KIA RIO XCITE/SEPHIA 25X25 — GTI06-023, SKU GTI06-023. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti06-023-gti-gti06-023-eje-homocinetico-der-hd-vision-kia-rio-xcite-sephia-25x25-branded-v2.webp",
+        "alt": "Imagen generada de referencia de EJE HOMOCINETICO DER. HD. VISION/KIA RIO XCITE/SEPHIA 25X25 — GTI06-023, SKU GTI06-023; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Referencia fotorrealista única basada en la ficha exacta https://www.imotriz.com/producto/3/GTI06-023-/: eje homocinético completo derecho Hyundai Vision/Kia Rio Xcite/Sephia 25X25, más largo que el izquierdo, con amortiguador central y anillo ABS exterior. La foto exacta se descartó por marca de agua. Fondo blanco puro, sin textos ni logos.",
       "sourceSha256": "81458d652b4259a8190d80ed12885d136277d83122ce130bc9a2f19cd0927e5b",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T15:13:16.168Z"
+      "generatedAt": "2026-08-28T15:13:16.168Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti06-023-eje-homocinetico-der-hd-vision-kia-rio-xcite-sephia-25x25-generated-reference.webp",
+        "sourceSha256": "df6e322073d3e8bee4afdc1782ab4205d3be5d49bef593f7453d5e63f5e90ca7",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.268Z"
+      }
     }
   },
   "GTI06024": {
-    "image": "/catalogo-gti/generated/gti-gti06-024-eje-homocinetico-izq-kia-rio-stylus-24x26-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti06-024-gti-gti06-024-eje-homocinetico-izq-kia-rio-stylus-24x26-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti06-024-eje-homocinetico-izq-kia-rio-stylus-24x26-generated-reference.webp",
-        "alt": "Imagen generada de referencia para EJE HOMOCINETICO IZQ. KIA RIO STYLUS 24X26 — GTI06-024, SKU GTI06-024. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti06-024-gti-gti06-024-eje-homocinetico-izq-kia-rio-stylus-24x26-branded-v2.webp",
+        "alt": "Imagen generada de referencia de EJE HOMOCINETICO IZQ. KIA RIO STYLUS 24X26 — GTI06-024, SKU GTI06-024; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Referencia fotorrealista única basada en la ficha exacta https://www.imotriz.com/producto/3/GTI06-024-/: eje homocinético completo izquierdo Kia Rio Stylus 24X26, dos juntas, dos fuelles, extremos estriados y anillo ABS exterior. La foto exacta se descartó por marca de agua. Fondo blanco puro, sin textos ni logos.",
       "sourceSha256": "20e741b5081bd18569c6301bc7acae62266be228f1a4451e53350656fc857437",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T15:13:16.168Z"
+      "generatedAt": "2026-08-28T15:13:16.168Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti06-024-eje-homocinetico-izq-kia-rio-stylus-24x26-generated-reference.webp",
+        "sourceSha256": "549aedee22ff16c5174cdfc3d87ad74228c89c24590c0b7a5c9c75fe04c4ab4c",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.269Z"
+      }
     }
   },
   "GTI06029": {
-    "image": "/catalogo-gti/generated/gti-gti06-029-eje-homocinetico-der-hd-i-10-24x25-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti06-029-gti-gti06-029-eje-homocinetico-der-hd-i-10-24x25-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti06-029-eje-homocinetico-der-hd-i-10-24x25-generated-reference.webp",
-        "alt": "Imagen generada de referencia para EJE HOMOCINETICO DER. HD. I-10 24X25 — GTI06-029, SKU GTI06-029. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti06-029-gti-gti06-029-eje-homocinetico-der-hd-i-10-24x25-branded-v2.webp",
+        "alt": "Imagen generada de referencia de EJE HOMOCINETICO DER. HD. I-10 24X25 — GTI06-029, SKU GTI06-029; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Referencia fotorrealista única basada en la ficha exacta https://www.imotriz.com/producto/3/GTI06-029-/: eje homocinético completo derecho Hyundai i10 1.1 24X25, eje largo con dos fuelles y amortiguador central, sin anillo ABS visible. La foto exacta se descartó por marca de agua. Fondo blanco puro, sin textos ni logos.",
       "sourceSha256": "fce722f41c147f2a7cf867c0a8fae8f18f5004a48687e82a8cf58cd30540f1de",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T15:13:16.168Z"
+      "generatedAt": "2026-08-28T15:13:16.168Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti06-029-eje-homocinetico-der-hd-i-10-24x25-generated-reference.webp",
+        "sourceSha256": "d917979f7bf814d89d44f4a47b21a9af41ac0d718370dc66d4dac6fcbcfbf026",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.269Z"
+      }
     }
   },
   "GTI06035": {
-    "image": "/catalogo-gti/generated/gti-gti06-035-punta-eje-l-r-hd-santa-fe-2010-2012-36x30-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti06-035-gti-gti06-035-punta-eje-l-r-hd-santa-fe-2010-2012-36x30-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti06-035-punta-eje-l-r-hd-santa-fe-2010-2012-36x30-generated-reference.webp",
-        "alt": "Imagen generada de referencia para PUNTA EJE L/R. HD. SANTA FE 2010/2012 36X30 — GTI06-035, SKU GTI06-035. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti06-035-gti-gti06-035-punta-eje-l-r-hd-santa-fe-2010-2012-36x30-branded-v2.webp",
+        "alt": "Imagen generada de referencia de PUNTA EJE L/R. HD. SANTA FE 2010/2012 36X30 — GTI06-035, SKU GTI06-035; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Referencia fotorrealista única basada en la ficha exacta https://www.imotriz.com/producto/3/GTI06-035-/: kit de punta de eje exterior Hyundai Santa Fe 2010-2012 36X30, junta robusta con anillo ABS, fuelle, abrazaderas, seguro, tuerca y pasador. La foto exacta se descartó por marca de agua. Fondo blanco puro, sin textos ni logos.",
       "sourceSha256": "2265fc3a0ef08096b351ec9f20c66c11b5dc9a3e93f36cea6b83d99247865073",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T15:13:16.168Z"
+      "generatedAt": "2026-08-28T15:13:16.168Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti06-035-punta-eje-l-r-hd-santa-fe-2010-2012-36x30-generated-reference.webp",
+        "sourceSha256": "9d4ecf20b36f0d7ff0e62607f5183d115d905c9c601ddf60b389968c036daf65",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.269Z"
+      }
     }
   },
   "GTI06040": {
@@ -5063,22 +6026,31 @@ export const productImageOverrides = Object.freeze({
     }
   },
   "GTI06042": {
-    "image": "/catalogo-gti/generated/gti-gti06-042-punta-eje-l-r-kia-sportage-revolution-hd-tucson-ix-35-4x4-4x2-mecanica-p-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti06-042-gti-gti06-042-punta-eje-l-r-kia-sportage-revolution-hd-tucson-ix-35-4x4-4x2-mecanica-p-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti06-042-punta-eje-l-r-kia-sportage-revolution-hd-tucson-ix-35-4x4-4x2-mecanica-p-generated-reference.webp",
-        "alt": "Imagen generada de referencia para PUNTA EJE L/R. KIA SPORTAGE REVOLUTION/HD. TUCSON IX-35 4X4/4X2 MECANICA PIN INTERNO 24X27X62MM — GTI06-042, SKU GTI06-042. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti06-042-gti-gti06-042-punta-eje-l-r-kia-sportage-revolution-hd-tucson-ix-35-4x4-4x2-mecanica-p-branded-v2.webp",
+        "alt": "Imagen generada de referencia de PUNTA EJE L/R. KIA SPORTAGE REVOLUTION/HD. TUCSON IX-35 4X4/4X2 MECANICA PIN INTERNO 24X27X62MM — GTI06-042, SKU GTI06-042; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Referencia fotorrealista única basada en la ficha exacta https://www.imotriz.com/producto/3/GTI06-042-/: kit de punta lado rueda Hyundai Tucson IX35/Kia Sportage Revolution 4X2/4X4 mecánica, pasador interno 24X27X62 mm; junta sin anillo ABS, fuelle, abrazaderas, seguro y grasa. La foto exacta encontrada se descartó por marca de agua y la búsqueda OEM no produjo alternativa limpia. Fondo blanco puro, sin textos, logos ni empaque.",
       "sourceSha256": "bfb8bd55c12f109aff481c760923e9bf3bbe75f33db1049a78a138e372d13402",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T15:22:22.006Z"
+      "generatedAt": "2026-08-28T15:22:22.006Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti06-042-punta-eje-l-r-kia-sportage-revolution-hd-tucson-ix-35-4x4-4x2-mecanica-p-generated-reference.webp",
+        "sourceSha256": "98992cde76a43084282c3dabc32582d6c57c133e57ca1c81d1d78b460452991a",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.270Z"
+      }
     }
   },
   "GTI06051": {
@@ -5282,22 +6254,31 @@ export const productImageOverrides = Object.freeze({
     }
   },
   "GTI06062": {
-    "image": "/catalogo-gti/generated/gti-gti06-062-punta-eje-l-r-hd-tucson-ix-35-diesel-4x2-4x4-mecanica-kia-sportage-2-0-3-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti06-062-gti-gti06-062-punta-eje-l-r-hd-tucson-ix-35-diesel-4x2-4x4-mecanica-kia-sportage-2-0-3-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti06-062-punta-eje-l-r-hd-tucson-ix-35-diesel-4x2-4x4-mecanica-kia-sportage-2-0-3-generated-reference.webp",
-        "alt": "Imagen generada de referencia para PUNTA EJE L/R. HD. TUCSON IX-35 DIESEL 4X2/4X4 MECANICA/KIA SPORTAGE 2.0 30X25X62 PIN INTERNO ABS 48 — GTI06-062, SKU GTI06-062. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti06-062-gti-gti06-062-punta-eje-l-r-hd-tucson-ix-35-diesel-4x2-4x4-mecanica-kia-sportage-2-0-3-branded-v2.webp",
+        "alt": "Imagen generada de referencia de PUNTA EJE L/R. HD. TUCSON IX-35 DIESEL 4X2/4X4 MECANICA/KIA SPORTAGE 2.0 30X25X62 PIN INTERNO ABS 48 — GTI06-062, SKU GTI06-062; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Referencia fotorrealista única basada en la ficha exacta https://www.imotriz.com/producto/3/GTI06-062-/ y contraste web: punta lado rueda Hyundai Tucson IX35 diésel 4X2/4X4 mecánica/Kia Sportage 2.0, pasador interno 30X25X62 mm y anillo ABS de 48 dientes; junta, fuelle, abrazaderas, seguro y grasa. La única foto exacta encontrada tenía marca de agua. Fondo blanco puro, sin texto, logos ni empaque.",
       "sourceSha256": "188a601e08702025390a0192c2e8cd048d747e3dc10b981283b8a33226dec91c",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T15:28:25.623Z"
+      "generatedAt": "2026-08-28T15:28:25.623Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti06-062-punta-eje-l-r-hd-tucson-ix-35-diesel-4x2-4x4-mecanica-kia-sportage-2-0-3-generated-reference.webp",
+        "sourceSha256": "763a0619a5892a3d36953a0d09f38b3a9a8cb5883fd0a2ddb117c2b95d491489",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.271Z"
+      }
     }
   },
   "GTI06067": {
@@ -5501,41 +6482,59 @@ export const productImageOverrides = Object.freeze({
     }
   },
   "GTI06065": {
-    "image": "/catalogo-gti/generated/gti-gti06-065-punta-eje-lado-rueda-l-r-hyundai-tucson-kia-new-sportage-gasolina-4x2-4x-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti06-065-gti-gti06-065-punta-eje-lado-rueda-l-r-hyundai-tucson-kia-new-sportage-gasolina-4x2-4x-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti06-065-punta-eje-lado-rueda-l-r-hyundai-tucson-kia-new-sportage-gasolina-4x2-4x-generated-reference.webp",
-        "alt": "Imagen generada de referencia para PUNTA EJE LADO RUEDA L/R HYUNDAI TUCSON / KIA NEW SPORTAGE GASOLINA 4X2/4X4, 26x27 ESTRIAS. — GTI06-065, SKU GTI06-065. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti06-065-gti-gti06-065-punta-eje-lado-rueda-l-r-hyundai-tucson-kia-new-sportage-gasolina-4x2-4x-branded-v2.webp",
+        "alt": "Imagen generada de referencia de PUNTA EJE LADO RUEDA L/R HYUNDAI TUCSON / KIA NEW SPORTAGE GASOLINA 4X2/4X4, 26x27 ESTRIAS. — GTI06-065, SKU GTI06-065; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Referencia fotorrealista única basada en la ficha exacta https://www.imotriz.com/producto/29/GTI06-065-/ y su foto real: punta de eje lado rueda L/R Hyundai Tucson/Kia New Sportage gasolina 4X2/4X4, 26X27 estrías. Se preservó la geometría inusual de la pieza exacta; la única foto GTI encontrada tenía marca de agua dominante. Fondo blanco puro, sin texto, logos ni empaque.",
       "sourceSha256": "acb1d1929d94f30eb7db5485269beb8d4b7e04f5b1f64ac8390f14d26518ef9e",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T15:38:29.362Z"
+      "generatedAt": "2026-08-28T15:38:29.362Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti06-065-punta-eje-lado-rueda-l-r-hyundai-tucson-kia-new-sportage-gasolina-4x2-4x-generated-reference.webp",
+        "sourceSha256": "766a39be834e1483804ec1879a74bc8d8e11d4ca97ce8a54c113766d965f6371",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.271Z"
+      }
     }
   },
   "GTI06066": {
-    "image": "/catalogo-gti/generated/gti-gti06-066-eje-homocinetico-completo-izquierdo-hyundai-grand-i-10-1-0-1-2-oem-49500-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti06-066-gti-gti06-066-eje-homocinetico-completo-izquierdo-hyundai-grand-i-10-1-0-1-2-oem-49500-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti06-066-eje-homocinetico-completo-izquierdo-hyundai-grand-i-10-1-0-1-2-oem-49500-generated-reference.webp",
-        "alt": "Imagen generada de referencia para EJE HOMOCINETICO COMPLETO IZQUIERDO HYUNDAI GRAND I-10 1.0/1.2, OEM 49500-B4100. — GTI06-066, SKU GTI06-066. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti06-066-gti-gti06-066-eje-homocinetico-completo-izquierdo-hyundai-grand-i-10-1-0-1-2-oem-49500-branded-v2.webp",
+        "alt": "Imagen generada de referencia de EJE HOMOCINETICO COMPLETO IZQUIERDO HYUNDAI GRAND I-10 1.0/1.2, OEM 49500-B4100. — GTI06-066, SKU GTI06-066; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Referencia fotorrealista única basada en la ficha exacta https://www.imotriz.com/producto/29/49500-B4100/ y contraste OEM 49500-B4100: eje homocinético completo izquierdo Hyundai Grand i10 1.0/1.2, 25X25. Se preservaron la longitud corta, las dos juntas, fuelles y extremos estriados del semieje izquierdo; la foto GTI exacta tenía marca de agua dominante. Fondo blanco puro, sin texto, logos ni empaque.",
       "sourceSha256": "9cd132df0229d56db2651d9ebae646b0f2a845c2a9a374b400427b4f8ab015a2",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T15:38:29.363Z"
+      "generatedAt": "2026-08-28T15:38:29.363Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti06-066-eje-homocinetico-completo-izquierdo-hyundai-grand-i-10-1-0-1-2-oem-49500-generated-reference.webp",
+        "sourceSha256": "e9ae19816b775fd2744e6e9b27e73420192136b72d9dc4a18b0052471369c55f",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.271Z"
+      }
     }
   },
   "GTI07008": {
@@ -5739,22 +6738,31 @@ export const productImageOverrides = Object.freeze({
     }
   },
   "GTI07020": {
-    "image": "/catalogo-gti/generated/gti-gti07-020-punta-eje-lado-rueda-l-r-kia-picanto-i-ii-ion-morning-y-ford-festiva-1-3-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti07-020-gti-gti07-020-punta-eje-lado-rueda-l-r-kia-picanto-i-ii-ion-morning-y-ford-festiva-1-3-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti07-020-punta-eje-lado-rueda-l-r-kia-picanto-i-ii-ion-morning-y-ford-festiva-1-3-generated-reference.webp",
-        "alt": "Imagen generada de referencia para PUNTA EJE LADO RUEDA L/R KIA PICANTO I/II/ION-MORNING Y FORD FESTIVA 1.3 GLX MECANICO, PIN INTERNO, 24x20 ESTRIAS, ABS 48 DIENTES. — GTI07-020, SKU GTI07-020. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti07-020-gti-gti07-020-punta-eje-lado-rueda-l-r-kia-picanto-i-ii-ion-morning-y-ford-festiva-1-3-branded-v2.webp",
+        "alt": "Imagen generada de referencia de PUNTA EJE LADO RUEDA L/R KIA PICANTO I/II/ION-MORNING Y FORD FESTIVA 1.3 GLX MECANICO, PIN INTERNO, 24x20 ESTRIAS, ABS 48 DIENTES. — GTI07-020, SKU GTI07-020; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Referencia fotorrealista única basada en la ficha exacta https://www.imotriz.com/producto/3/GTI07-020-/ y contraste web con la publicación GTI: punta lado rueda Kia Picanto I/II/Ion-Morning y Ford Festiva 1.3 GLX mecánico, pasador interno, 24 estrías externas, 20 internas y anillo ABS de 48 dientes; junta, fuelle, abrazaderas, seguro y grasa. La única foto GTI exacta encontrada tenía marca de agua dominante. Fondo blanco puro, sin texto, logos ni empaque.",
       "sourceSha256": "d2e22d607e035819a5a1d72e389be7c9c134ef1a0933115a9cd54bdc9ee5bf6e",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T15:45:24.166Z"
+      "generatedAt": "2026-08-28T15:45:24.166Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti07-020-punta-eje-lado-rueda-l-r-kia-picanto-i-ii-ion-morning-y-ford-festiva-1-3-generated-reference.webp",
+        "sourceSha256": "e6da3fef4a2c79de48cf4cd327e591ed5d3283a10c48529b8bc41bef03cae61d",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.273Z"
+      }
     }
   },
   "GTI07022": {
@@ -5983,22 +6991,31 @@ export const productImageOverrides = Object.freeze({
     }
   },
   "GTI07032": {
-    "image": "/catalogo-gti/generated/gti-gti07-032-punta-eje-lado-caja-kia-picanto-1-1-i-ii-y-picanto-ion-hasta-2018-25x20-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti07-032-gti-gti07-032-punta-eje-lado-caja-kia-picanto-1-1-i-ii-y-picanto-ion-hasta-2018-25x20-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti07-032-punta-eje-lado-caja-kia-picanto-1-1-i-ii-y-picanto-ion-hasta-2018-25x20-generated-reference.webp",
-        "alt": "Imagen generada de referencia para PUNTA EJE LADO CAJA KIA PICANTO 1.1 I/II Y PICANTO ION HASTA 2018, 25x20 ESTRIAS, OEM 49592-07000. — GTI07-032, SKU GTI07-032. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti07-032-gti-gti07-032-punta-eje-lado-caja-kia-picanto-1-1-i-ii-y-picanto-ion-hasta-2018-25x20-branded-v2.webp",
+        "alt": "Imagen generada de referencia de PUNTA EJE LADO CAJA KIA PICANTO 1.1 I/II Y PICANTO ION HASTA 2018, 25x20 ESTRIAS, OEM 49592-07000. — GTI07-032, SKU GTI07-032; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Referencia fotorrealista única basada en la ficha exacta https://www.imotriz.com/producto/3/GTI07-032-/ y contraste web/OEM 49592-07000: punta lado caja Kia Picanto 1.1 I/II e Ion hasta 2018, 25X20 estrías; copa interior angular, trípode, fuelle y abrazaderas. La única foto GTI exacta encontrada tenía marca de agua dominante. Fondo blanco puro, sin texto, logos ni empaque.",
       "sourceSha256": "316675ee57fe68d817e1da927bc685b0cebbed2054f31c2dc8ab7f0819291bbf",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T15:51:33.666Z"
+      "generatedAt": "2026-08-28T15:51:33.666Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti07-032-punta-eje-lado-caja-kia-picanto-1-1-i-ii-y-picanto-ion-hasta-2018-25x20-generated-reference.webp",
+        "sourceSha256": "1c65a28dbe9be7c63e852cc2192db0dc9766020022063c3486194876b1ba97a1",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.273Z"
+      }
     }
   },
   "GTI07037": {
@@ -8877,1124 +9894,1751 @@ export const productImageOverrides = Object.freeze({
     }
   },
   "GTI01012": {
-    "image": "/catalogo-gti/generated/gti-gti01-012-punta-eje-l-c-der-kangoo-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti01-012-gti-gti01-012-punta-eje-l-c-der-kangoo-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti01-012-punta-eje-l-c-der-kangoo-generated-reference.webp",
-        "alt": "Imagen generada de referencia para PUNTA EJE L/C. DER. KANGOO — GTI01-012, SKU GTI01-012. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti01-012-gti-gti01-012-punta-eje-l-c-der-kangoo-branded-v2.webp",
+        "alt": "Imagen generada de referencia de PUNTA EJE L/C. DER. KANGOO — GTI01-012, SKU GTI01-012; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Referencia visual fotorrealista única: punta eje lado caja derecha Renault Kangoo, junta interior tipo tulipa/tripode con fuelle, abrazaderas, seguro y grasa neutra; fondo blanco puro, sin texto, logos ni marca de agua.",
       "sourceSha256": "9298c6574e12c150cdd7d51b2abc2b5424744cf05bd39e6b52a1c46d8895bd0f",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T17:17:02.868Z"
+      "generatedAt": "2026-08-28T17:17:02.868Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti01-012-punta-eje-l-c-der-kangoo-generated-reference.webp",
+        "sourceSha256": "bbe18fe2af2b304a29060376fc33844cf27fe052b770a683f786dc53aa65fe37",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.228Z"
+      }
     }
   },
   "GTI01040": {
-    "image": "/catalogo-gti/generated/gti-gti01-040-eje-homocinetico-der-megane-con-abs-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti01-040-gti-gti01-040-eje-homocinetico-der-megane-con-abs-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti01-040-eje-homocinetico-der-megane-con-abs-generated-reference.webp",
-        "alt": "Imagen generada de referencia para EJE HOMOCINETICO DER. MEGANE CON ABS — GTI01-040, SKU GTI01-040. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti01-040-gti-gti01-040-eje-homocinetico-der-megane-con-abs-branded-v2.webp",
+        "alt": "Imagen generada de referencia de EJE HOMOCINETICO DER. MEGANE CON ABS — GTI01-040, SKU GTI01-040; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Referencia visual fotorrealista única: eje homocinetico completo derecho Renault Megane con ABS, semieje, junta exterior con anillo ABS, junta interior y dos fuelles; fondo blanco puro, sin texto, logos ni marca de agua.",
       "sourceSha256": "60b65204deb663dbaccff7f352343048dadba9f870bb65ad07f1e1e2133e9d5c",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T17:17:02.869Z"
+      "generatedAt": "2026-08-28T17:17:02.869Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti01-040-eje-homocinetico-der-megane-con-abs-generated-reference.webp",
+        "sourceSha256": "ea9bc7416f65c5ef0ea8c385f061c5ac7d98a35e992ee42493151c19eb87838b",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.232Z"
+      }
     }
   },
   "GTI01046": {
-    "image": "/catalogo-gti/generated/gti-gti01-046-eje-homocinetico-izq-clio-campus-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti01-046-gti-gti01-046-eje-homocinetico-izq-clio-campus-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti01-046-eje-homocinetico-izq-clio-campus-generated-reference.webp",
-        "alt": "Imagen generada de referencia para EJE HOMOCINETICO IZQ. CLIO CAMPUS — GTI01-046, SKU GTI01-046. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti01-046-gti-gti01-046-eje-homocinetico-izq-clio-campus-branded-v2.webp",
+        "alt": "Imagen generada de referencia de EJE HOMOCINETICO IZQ. CLIO CAMPUS — GTI01-046, SKU GTI01-046; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Referencia visual fotorrealista única: eje homocinetico completo izquierdo Renault Clio Campus, semieje corto con dos juntas homocineticas cerradas y dos fuelles; fondo blanco puro, sin texto, logos ni marca de agua. Segunda generacion corregida para excluir crucetas tipo cardan.",
       "sourceSha256": "19d6cb5625f3250a30bf378b4a812e94521d025e89447950efcc05c53b8056f1",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T17:17:02.869Z"
+      "generatedAt": "2026-08-28T17:17:02.869Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti01-046-eje-homocinetico-izq-clio-campus-generated-reference.webp",
+        "sourceSha256": "602695b987217db7dddf69df06383ca9664f5b31fbbcf8cfda3a6d708176f19c",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.233Z"
+      }
     }
   },
   "GTI01066": {
-    "image": "/catalogo-gti/generated/gti-gti01-066-eje-homocinetico-izq-clio-i-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti01-066-gti-gti01-066-eje-homocinetico-izq-clio-i-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti01-066-eje-homocinetico-izq-clio-i-generated-reference.webp",
-        "alt": "Imagen generada de referencia para EJE HOMOCINETICO IZQ. CLIO I — GTI01-066, SKU GTI01-066. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti01-066-gti-gti01-066-eje-homocinetico-izq-clio-i-branded-v2.webp",
+        "alt": "Imagen generada de referencia de EJE HOMOCINETICO IZQ. CLIO I — GTI01-066, SKU GTI01-066; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Referencia visual fotorrealista única: eje homocinetico completo izquierdo Renault Clio I, semieje de longitud media con junta exterior estriada, junta interior y fuelles; fondo blanco puro, sin texto, logos ni marca de agua.",
       "sourceSha256": "b98db682f8d4a8d2299ab228eb13cbfa802345dd4d6c51f29986a4f0a7cd07d3",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T17:17:02.869Z"
+      "generatedAt": "2026-08-28T17:17:02.869Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti01-066-eje-homocinetico-izq-clio-i-generated-reference.webp",
+        "sourceSha256": "0942ea7de16afb64c33068a6f55134282e3bcda0a4a9d50d452c3eaaedf34aac",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.235Z"
+      }
     }
   },
   "GTI01070": {
-    "image": "/catalogo-gti/generated/gti-gti01-070-eje-homocinetico-izq-trafic-1-9-2013-2014-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti01-070-gti-gti01-070-eje-homocinetico-izq-trafic-1-9-2013-2014-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti01-070-eje-homocinetico-izq-trafic-1-9-2013-2014-generated-reference.webp",
-        "alt": "Imagen generada de referencia para EJE HOMOCINETICO IZQ. TRAFIC 1.9 2013/2014 — GTI01-070, SKU GTI01-070. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti01-070-gti-gti01-070-eje-homocinetico-izq-trafic-1-9-2013-2014-branded-v2.webp",
+        "alt": "Imagen generada de referencia de EJE HOMOCINETICO IZQ. TRAFIC 1.9 2013/2014 — GTI01-070, SKU GTI01-070; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Referencia visual fotorrealista única: eje homocinetico izquierdo Renault Trafic 1.9 2013/2014, semieje largo y robusto con juntas, dos fuelles y anillo ABS; fondo blanco puro, sin texto, logos ni marca de agua.",
       "sourceSha256": "dc7d4f30a60a2da120e15170f2ddf3fbbb0cd7b085334380445b846d56d27023",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T17:19:35.433Z"
+      "generatedAt": "2026-08-28T17:19:35.433Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti01-070-eje-homocinetico-izq-trafic-1-9-2013-2014-generated-reference.webp",
+        "sourceSha256": "cd917878c51a95516926e3eee4537b8b03071798c8cb19eb48ccde7d110774d9",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.235Z"
+      }
     }
   },
   "GTI03026": {
-    "image": "/catalogo-gti/generated/gti-gti03-026-eje-homocinetico-izq-m323-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti03-026-gti-gti03-026-eje-homocinetico-izq-m323-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti03-026-eje-homocinetico-izq-m323-generated-reference.webp",
-        "alt": "Imagen generada de referencia para EJE HOMOCINETICO IZQ. M323 — GTI03-026, SKU GTI03-026. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti03-026-gti-gti03-026-eje-homocinetico-izq-m323-branded-v2.webp",
+        "alt": "Imagen generada de referencia de EJE HOMOCINETICO IZQ. M323 — GTI03-026, SKU GTI03-026; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Referencia visual fotorrealista única: eje homocinetico izquierdo Mazda 323, semieje compacto con junta exterior, junta interior y dos fuelles; fondo blanco puro, sin texto, logos ni marca de agua.",
       "sourceSha256": "2430e48f36370c5a249c64b4ee6256f2219c2ef1c142c93fc8eae4e5bc51d9ea",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T17:19:35.434Z"
+      "generatedAt": "2026-08-28T17:19:35.434Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti03-026-eje-homocinetico-izq-m323-generated-reference.webp",
+        "sourceSha256": "21a7d6a59874b9d5d01b29b5660f1d1ffa0b840a6ebcba55ff80ab771a4e5601",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.245Z"
+      }
     }
   },
   "GTI03047": {
-    "image": "/catalogo-gti/generated/gti-gti03-047-eje-homocinetico-izq-mazda-bt-50-gas-hembra-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti03-047-gti-gti03-047-eje-homocinetico-izq-mazda-bt-50-gas-hembra-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti03-047-eje-homocinetico-izq-mazda-bt-50-gas-hembra-generated-reference.webp",
-        "alt": "Imagen generada de referencia para EJE HOMOCINETICO IZQ. MAZDA BT-50 GAS. (HEMBRA) — GTI03-047, SKU GTI03-047. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti03-047-gti-gti03-047-eje-homocinetico-izq-mazda-bt-50-gas-hembra-branded-v2.webp",
+        "alt": "Imagen generada de referencia de EJE HOMOCINETICO IZQ. MAZDA BT-50 GAS. (HEMBRA) — GTI03-047, SKU GTI03-047; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Referencia visual fotorrealista única: eje homocinetico izquierdo Mazda BT-50 gasolina con conexion interior hembra, semieje 4x4 robusto y anillo ABS; fondo blanco puro, sin texto, logos ni marca de agua.",
       "sourceSha256": "d6b7e7f913210db5bfa43329e9584cae4adc4e8318c5462a00bd117f000b8a83",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T17:19:35.434Z"
+      "generatedAt": "2026-08-28T17:19:35.434Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti03-047-eje-homocinetico-izq-mazda-bt-50-gas-hembra-generated-reference.webp",
+        "sourceSha256": "30a097c86711abb33feca8b4a0fbd56ca1906c879649cc1efa6d504f431dd2c9",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.249Z"
+      }
     }
   },
   "GTI03052": {
-    "image": "/catalogo-gti/generated/gti-gti03-052-eje-homocinetico-der-mazda-bt-50-diesel-2010-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti03-052-gti-gti03-052-eje-homocinetico-der-mazda-bt-50-diesel-2010-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti03-052-eje-homocinetico-der-mazda-bt-50-diesel-2010-generated-reference.webp",
-        "alt": "Imagen generada de referencia para EJE HOMOCINETICO DER. MAZDA BT-50 DIESEL 2010/ — GTI03-052, SKU GTI03-052. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti03-052-gti-gti03-052-eje-homocinetico-der-mazda-bt-50-diesel-2010-branded-v2.webp",
+        "alt": "Imagen generada de referencia de EJE HOMOCINETICO DER. MAZDA BT-50 DIESEL 2010/ — GTI03-052, SKU GTI03-052; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Referencia visual fotorrealista única: eje homocinetico derecho Mazda BT-50 diesel 2010 en adelante, semieje largo y robusto con dos juntas, fuelles y anillo ABS; fondo blanco puro, sin texto, logos ni marca de agua.",
       "sourceSha256": "6dae806350737db8db87258855db0841e143ca78ac1cbb4f89721280047de3d3",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T17:19:35.434Z"
+      "generatedAt": "2026-08-28T17:19:35.434Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti03-052-eje-homocinetico-der-mazda-bt-50-diesel-2010-generated-reference.webp",
+        "sourceSha256": "79dd88df7d562e9e483064ab1d3eb47b3095272ad36b2a627e6ff591bedf3270",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.250Z"
+      }
     }
   },
   "GTI03057": {
-    "image": "/catalogo-gti/generated/gti-gti03-057-eje-interconeccion-mb2600-bt-50-gasolina-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti03-057-gti-gti03-057-eje-interconeccion-mb2600-bt-50-gasolina-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti03-057-eje-interconeccion-mb2600-bt-50-gasolina-generated-reference.webp",
-        "alt": "Imagen generada de referencia para EJE INTERCONECCION MB2600/BT-50 GASOLINA — GTI03-057, SKU GTI03-057. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti03-057-gti-gti03-057-eje-interconeccion-mb2600-bt-50-gasolina-branded-v2.webp",
+        "alt": "Imagen generada de referencia de EJE INTERCONECCION MB2600/BT-50 GASOLINA — GTI03-057, SKU GTI03-057; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Referencia visual fotorrealista única: eje de interconexion Mazda B2600/BT-50 gasolina, barra estriada con rodamiento y soporte central; fondo blanco, sin texto, logos ni marca de agua.",
       "sourceSha256": "e94d46be8614a49daeffe4251791d61660739bc2c3545ca606ad78e94966c685",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T17:23:32.126Z"
+      "generatedAt": "2026-08-28T17:23:32.126Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti03-057-eje-interconeccion-mb2600-bt-50-gasolina-generated-reference.webp",
+        "sourceSha256": "0d850e2e8877bf9c03e356e72c4e281b6fe6c71b03ac3e6ac6a2f23401dd1deb",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.251Z"
+      }
     }
   },
   "GTI03059": {
-    "image": "/catalogo-gti/generated/gti-gti03-059-punta-eje-l-r-mazda-6-ford-fusion-33-dts-pin-ext-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti03-059-gti-gti03-059-punta-eje-l-r-mazda-6-ford-fusion-33-dts-pin-ext-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti03-059-punta-eje-l-r-mazda-6-ford-fusion-33-dts-pin-ext-generated-reference.webp",
-        "alt": "Imagen generada de referencia para PUNTA EJE L/R. MAZDA 6/FORD FUSION 33 DTS. PIN EXT. — GTI03-059, SKU GTI03-059. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti03-059-gti-gti03-059-punta-eje-l-r-mazda-6-ford-fusion-33-dts-pin-ext-branded-v2.webp",
+        "alt": "Imagen generada de referencia de PUNTA EJE L/R. MAZDA 6/FORD FUSION 33 DTS. PIN EXT. — GTI03-059, SKU GTI03-059; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Referencia visual fotorrealista única: punta eje lado rueda Mazda 6/Ford Fusion 33 dientes pin exterior, junta con ABS, fuelle y kit; fondo blanco, sin texto, logos ni marca de agua.",
       "sourceSha256": "6da11cac506586c3910f01a170f866848b4bf783e2557f3f3f022e7fe7334245",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T17:23:32.126Z"
+      "generatedAt": "2026-08-28T17:23:32.126Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti03-059-punta-eje-l-r-mazda-6-ford-fusion-33-dts-pin-ext-generated-reference.webp",
+        "sourceSha256": "0666f59d103642a7862eb2e39c7a73e47a3249e1545dfe8d426cb88c8dbeaf2e",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.252Z"
+      }
     }
   },
   "GTI03063": {
-    "image": "/catalogo-gti/generated/gti-gti03-063-eje-interconeccion-mazda-bt-50-diesel-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti03-063-gti-gti03-063-eje-interconeccion-mazda-bt-50-diesel-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti03-063-eje-interconeccion-mazda-bt-50-diesel-generated-reference.webp",
-        "alt": "Imagen generada de referencia para EJE INTERCONECCION MAZDA BT-50 DIESEL — GTI03-063, SKU GTI03-063. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti03-063-gti-gti03-063-eje-interconeccion-mazda-bt-50-diesel-branded-v2.webp",
+        "alt": "Imagen generada de referencia de EJE INTERCONECCION MAZDA BT-50 DIESEL — GTI03-063, SKU GTI03-063; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Referencia visual fotorrealista única: eje de interconexion Mazda BT-50 diesel, barra robusta con estriado y soporte central; fondo blanco, sin texto, logos ni marca de agua.",
       "sourceSha256": "bfcdce9957a71943eb8588d0fdda04c9c27519393c93eeb9ced63539858cd91f",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T17:23:32.126Z"
+      "generatedAt": "2026-08-28T17:23:32.126Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti03-063-eje-interconeccion-mazda-bt-50-diesel-generated-reference.webp",
+        "sourceSha256": "71956a7a36e5665be29d17e16305ab57fc1f07bd6cb445985ba42edd2672022b",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.253Z"
+      }
     }
   },
   "GTI03067": {
-    "image": "/catalogo-gti/generated/gti-gti03-067-eje-homocinetico-izq-mazda-3-manual-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti03-067-gti-gti03-067-eje-homocinetico-izq-mazda-3-manual-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti03-067-eje-homocinetico-izq-mazda-3-manual-generated-reference.webp",
-        "alt": "Imagen generada de referencia para EJE HOMOCINETICO IZQ. MAZDA 3 MANUAL — GTI03-067, SKU GTI03-067. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti03-067-gti-gti03-067-eje-homocinetico-izq-mazda-3-manual-branded-v2.webp",
+        "alt": "Imagen generada de referencia de EJE HOMOCINETICO IZQ. MAZDA 3 MANUAL — GTI03-067, SKU GTI03-067; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Referencia visual fotorrealista única: eje homocinetico izquierdo Mazda 3 manual, semieje corto con ABS y dos juntas; fondo blanco, sin texto, logos ni marca de agua.",
       "sourceSha256": "20894c9eadcee648e96213aae0b890df22288d1569d95f7293788ad49def0c84",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T17:23:32.126Z"
+      "generatedAt": "2026-08-28T17:23:32.126Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti03-067-eje-homocinetico-izq-mazda-3-manual-generated-reference.webp",
+        "sourceSha256": "aeff97597ae0166a410230c3b672c13ba310328f96e0891292e15b2930892052",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.254Z"
+      }
     }
   },
   "GTI03076": {
-    "image": "/catalogo-gti/generated/gti-gti03-076-eje-homocinetico-der-mazda-626-asahi-2-0-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti03-076-gti-gti03-076-eje-homocinetico-der-mazda-626-asahi-2-0-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti03-076-eje-homocinetico-der-mazda-626-asahi-2-0-generated-reference.webp",
-        "alt": "Imagen generada de referencia para EJE HOMOCINETICO DER. MAZDA 626 ASAHI 2.0 — GTI03-076, SKU GTI03-076. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti03-076-gti-gti03-076-eje-homocinetico-der-mazda-626-asahi-2-0-branded-v2.webp",
+        "alt": "Imagen generada de referencia de EJE HOMOCINETICO DER. MAZDA 626 ASAHI 2.0 — GTI03-076, SKU GTI03-076; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Referencia visual fotorrealista única: eje homocinetico derecho Mazda 626 Asahi 2.0, semieje largo con ABS y dos fuelles; fondo blanco, sin texto, logos ni marca de agua.",
       "sourceSha256": "2c788247e731231579306cde4455558f6addae9aebdec08ee4df87a67f68baa7",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T17:23:32.127Z"
+      "generatedAt": "2026-08-28T17:23:32.127Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti03-076-eje-homocinetico-der-mazda-626-asahi-2-0-generated-reference.webp",
+        "sourceSha256": "8e61040517fbe2250831dc27e1514a84e400947a279c76d99208f2bfd854caa7",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.256Z"
+      }
     }
   },
   "GTI03077": {
-    "image": "/catalogo-gti/generated/gti-gti03-077-eje-homocinetico-izq-mazda-626-asahi-2-0-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti03-077-gti-gti03-077-eje-homocinetico-izq-mazda-626-asahi-2-0-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti03-077-eje-homocinetico-izq-mazda-626-asahi-2-0-generated-reference.webp",
-        "alt": "Imagen generada de referencia para EJE HOMOCINETICO IZQ. MAZDA 626 ASAHI 2.0 — GTI03-077, SKU GTI03-077. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti03-077-gti-gti03-077-eje-homocinetico-izq-mazda-626-asahi-2-0-branded-v2.webp",
+        "alt": "Imagen generada de referencia de EJE HOMOCINETICO IZQ. MAZDA 626 ASAHI 2.0 — GTI03-077, SKU GTI03-077; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Referencia visual fotorrealista única: eje homocinetico izquierdo Mazda 626 Asahi 2.0, semieje corto con geometria distinta al derecho; fondo blanco, sin texto, logos ni marca de agua.",
       "sourceSha256": "bed65015aca428d1dcc7dba5537dec26246e8f11f2e912ebf971298d57ac248c",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T17:23:32.127Z"
+      "generatedAt": "2026-08-28T17:23:32.127Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti03-077-eje-homocinetico-izq-mazda-626-asahi-2-0-generated-reference.webp",
+        "sourceSha256": "154bce8c3507f1c3fad6af8935a9ffdb6774db3e066c21adab351c6678a34b6f",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.256Z"
+      }
     }
   },
   "GTI03081": {
-    "image": "/catalogo-gti/generated/gti-gti03-081-punta-eje-l-r-mazda-3-1-6-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti03-081-gti-gti03-081-punta-eje-l-r-mazda-3-1-6-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti03-081-punta-eje-l-r-mazda-3-1-6-generated-reference.webp",
-        "alt": "Imagen generada de referencia para PUNTA EJE L/R. MAZDA 3 1.6 — GTI03-081, SKU GTI03-081. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti03-081-gti-gti03-081-punta-eje-l-r-mazda-3-1-6-branded-v2.webp",
+        "alt": "Imagen generada de referencia de PUNTA EJE L/R. MAZDA 3 1.6 — GTI03-081, SKU GTI03-081; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Referencia visual fotorrealista única: punta eje lado rueda Mazda 3 1.6, junta compacta con ABS, fuelle y accesorios; fondo blanco, sin texto, logos ni marca de agua.",
       "sourceSha256": "31a3dd54de57afa0b3ca551f735a1792bd0104ff13222de84c79db4596ab163b",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T17:23:32.127Z"
+      "generatedAt": "2026-08-28T17:23:32.127Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti03-081-punta-eje-l-r-mazda-3-1-6-generated-reference.webp",
+        "sourceSha256": "a560745d742d4e9a48d7bd33cfa5d75fac6d16545a7b8363112d80c0d42dac3c",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.257Z"
+      }
     }
   },
   "GTI03083": {
-    "image": "/catalogo-gti/generated/gti-gti03-083-eje-homocinetico-izq-mazda-bt-50-ford-ranger-2-5-diesel-4x4-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti03-083-gti-gti03-083-eje-homocinetico-izq-mazda-bt-50-ford-ranger-2-5-diesel-4x4-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti03-083-eje-homocinetico-izq-mazda-bt-50-ford-ranger-2-5-diesel-4x4-generated-reference.webp",
-        "alt": "Imagen generada de referencia para EJE HOMOCINETICO IZQ. MAZDA BT-50/FORD RANGER 2.5 DIESEL 4X4 — GTI03-083, SKU GTI03-083. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti03-083-gti-gti03-083-eje-homocinetico-izq-mazda-bt-50-ford-ranger-2-5-diesel-4x4-branded-v2.webp",
+        "alt": "Imagen generada de referencia de EJE HOMOCINETICO IZQ. MAZDA BT-50/FORD RANGER 2.5 DIESEL 4X4 — GTI03-083, SKU GTI03-083; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Referencia visual fotorrealista única: eje homocinetico izquierdo Mazda BT-50/Ford Ranger 2.5 diesel 4x4, semieje robusto con ABS; fondo blanco, sin texto, logos ni marca de agua.",
       "sourceSha256": "8e370845e810b2fff150042097b13df801bca45e9b631262617809fca4a7206d",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T17:23:32.127Z"
+      "generatedAt": "2026-08-28T17:23:32.127Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti03-083-eje-homocinetico-izq-mazda-bt-50-ford-ranger-2-5-diesel-4x4-generated-reference.webp",
+        "sourceSha256": "481d07d2d56dd1b3b3482db4b3e027bf7ff127691efbb0d46cf388ebf0744a81",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.259Z"
+      }
     }
   },
   "GTI03084": {
-    "image": "/catalogo-gti/generated/gti-gti03-084-eje-homocinetico-der-mazda-bt-50-ford-ranger-2-5-diesel-4x4-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti03-084-gti-gti03-084-eje-homocinetico-der-mazda-bt-50-ford-ranger-2-5-diesel-4x4-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti03-084-eje-homocinetico-der-mazda-bt-50-ford-ranger-2-5-diesel-4x4-generated-reference.webp",
-        "alt": "Imagen generada de referencia para EJE HOMOCINETICO DER. MAZDA BT-50/FORD RANGER 2.5 DIESEL 4X4 — GTI03-084, SKU GTI03-084. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti03-084-gti-gti03-084-eje-homocinetico-der-mazda-bt-50-ford-ranger-2-5-diesel-4x4-branded-v2.webp",
+        "alt": "Imagen generada de referencia de EJE HOMOCINETICO DER. MAZDA BT-50/FORD RANGER 2.5 DIESEL 4X4 — GTI03-084, SKU GTI03-084; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Referencia fotorrealista única: eje homocinetico derecho Mazda BT-50/Ford Ranger 2.5 diesel 4x4, semieje largo robusto; fondo blanco, sin texto ni logos.",
       "sourceSha256": "8b1807a8de45b758907fa1cc9271d5c53035e583d99630b65c2c20084e85d7e6",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T17:27:21.492Z"
+      "generatedAt": "2026-08-28T17:27:21.492Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti03-084-eje-homocinetico-der-mazda-bt-50-ford-ranger-2-5-diesel-4x4-generated-reference.webp",
+        "sourceSha256": "224c498a51e293ff8ba6f62f746e6cda7e96fd01be117e8d3bb07ab0f43b1dbe",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.259Z"
+      }
     }
   },
   "GTI03087": {
-    "image": "/catalogo-gti/generated/gti-gti03-087-punta-eje-l-c-der-mazda-bt-50-ford-ranger-2-5-diesel-4x4-macho-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti03-087-gti-gti03-087-punta-eje-l-c-der-mazda-bt-50-ford-ranger-2-5-diesel-4x4-macho-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti03-087-punta-eje-l-c-der-mazda-bt-50-ford-ranger-2-5-diesel-4x4-macho-generated-reference.webp",
-        "alt": "Imagen generada de referencia para PUNTA EJE L/C. DER. MAZDA BT-50/FORD RANGER 2.5 DIESEL 4X4 (MACHO) — GTI03-087, SKU GTI03-087. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti03-087-gti-gti03-087-punta-eje-l-c-der-mazda-bt-50-ford-ranger-2-5-diesel-4x4-macho-branded-v2.webp",
+        "alt": "Imagen generada de referencia de PUNTA EJE L/C. DER. MAZDA BT-50/FORD RANGER 2.5 DIESEL 4X4 (MACHO) — GTI03-087, SKU GTI03-087; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Referencia fotorrealista única: punta eje lado caja derecha Mazda BT-50/Ford Ranger 2.5 diesel 4x4 macho, junta robusta y kit; fondo blanco, sin texto ni logos.",
       "sourceSha256": "6fd30d1bceaf1d8c4edde3d89c7e113ff204ed10d15e2d0e5080b69f40b20d25",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T17:27:21.493Z"
+      "generatedAt": "2026-08-28T17:27:21.493Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti03-087-punta-eje-l-c-der-mazda-bt-50-ford-ranger-2-5-diesel-4x4-macho-generated-reference.webp",
+        "sourceSha256": "c11b0598265af4fffa47629ec8518b33c31463d1b57a7b949d1ebce9e4efe694",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.260Z"
+      }
     }
   },
   "GTI04018": {
-    "image": "/catalogo-gti/generated/gti-gti04-018-eje-homocinetico-der-swift-1-3-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti04-018-gti-gti04-018-eje-homocinetico-der-swift-1-3-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti04-018-eje-homocinetico-der-swift-1-3-generated-reference.webp",
-        "alt": "Imagen generada de referencia para EJE HOMOCINETICO DER. SWIFT 1.3 — GTI04-018, SKU GTI04-018. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti04-018-gti-gti04-018-eje-homocinetico-der-swift-1-3-branded-v2.webp",
+        "alt": "Imagen generada de referencia de EJE HOMOCINETICO DER. SWIFT 1.3 — GTI04-018, SKU GTI04-018; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Referencia fotorrealista única: eje homocinetico derecho Suzuki Swift 1.3, semieje compacto; fondo blanco, sin texto ni logos.",
       "sourceSha256": "29ffeaf3d1963f54be0f319a3aefbcb7018c56e9f4c62ca8cd45a3edbdb3daf7",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T17:27:21.493Z"
+      "generatedAt": "2026-08-28T17:27:21.493Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti04-018-eje-homocinetico-der-swift-1-3-generated-reference.webp",
+        "sourceSha256": "847a40a00bbdced80cff1d2ab9ef880b3c0cdb7f3eeeee9d22a2b14864a5ebdd",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.261Z"
+      }
     }
   },
   "GTI04019": {
-    "image": "/catalogo-gti/generated/gti-gti04-019-eje-homocinetico-izq-swift-1-3-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti04-019-gti-gti04-019-eje-homocinetico-izq-swift-1-3-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti04-019-eje-homocinetico-izq-swift-1-3-generated-reference.webp",
-        "alt": "Imagen generada de referencia para EJE HOMOCINETICO IZQ. SWIFT 1.3 — GTI04-019, SKU GTI04-019. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti04-019-gti-gti04-019-eje-homocinetico-izq-swift-1-3-branded-v2.webp",
+        "alt": "Imagen generada de referencia de EJE HOMOCINETICO IZQ. SWIFT 1.3 — GTI04-019, SKU GTI04-019; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Referencia fotorrealista única: eje homocinetico izquierdo Suzuki Swift 1.3, geometria corta distinta del derecho; fondo blanco, sin texto ni logos.",
       "sourceSha256": "296a4bd5e325ed12581738e18fd31b44d608e906543f23996595954615f72c07",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T17:27:21.493Z"
+      "generatedAt": "2026-08-28T17:27:21.493Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti04-019-eje-homocinetico-izq-swift-1-3-generated-reference.webp",
+        "sourceSha256": "37c7baf8f23e17a1d09801bce28a47d14318d3a1e39bd9044fc2105a41d15852",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.261Z"
+      }
     }
   },
   "GTI04054": {
-    "image": "/catalogo-gti/generated/gti-gti04-054-punta-eje-l-r-cronos-21-dts-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti04-054-gti-gti04-054-punta-eje-l-r-cronos-21-dts-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti04-054-punta-eje-l-r-cronos-21-dts-generated-reference.webp",
-        "alt": "Imagen generada de referencia para PUNTA EJE L/R. CRONOS 21 DTS. — GTI04-054, SKU GTI04-054. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti04-054-gti-gti04-054-punta-eje-l-r-cronos-21-dts-branded-v2.webp",
+        "alt": "Imagen generada de referencia de PUNTA EJE L/R. CRONOS 21 DTS. — GTI04-054, SKU GTI04-054; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Referencia fotorrealista única: punta eje lado rueda Chevrolet Cronos 21 dientes con fuelle y kit; fondo blanco, sin texto ni logos.",
       "sourceSha256": "392329d5845d7fe49fc2d5a41f84e7e727b84c3d9428462970d114cb28214dfe",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T17:27:21.493Z"
+      "generatedAt": "2026-08-28T17:27:21.493Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti04-054-punta-eje-l-r-cronos-21-dts-generated-reference.webp",
+        "sourceSha256": "1e01ce28bfecc3eba1bf2e79ed550c093c78004de97a23b0a39c29999cb38deb",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.262Z"
+      }
     }
   },
   "GTI04058": {
-    "image": "/catalogo-gti/generated/gti-gti04-058-eje-homocinetico-d-max-2010-sin-teta-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti04-058-gti-gti04-058-eje-homocinetico-d-max-2010-sin-teta-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti04-058-eje-homocinetico-d-max-2010-sin-teta-generated-reference.webp",
-        "alt": "Imagen generada de referencia para EJE HOMOCINETICO D-MAX 2010/ SIN TETA — GTI04-058, SKU GTI04-058. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti04-058-gti-gti04-058-eje-homocinetico-d-max-2010-sin-teta-branded-v2.webp",
+        "alt": "Imagen generada de referencia de EJE HOMOCINETICO D-MAX 2010/ SIN TETA — GTI04-058, SKU GTI04-058; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Referencia fotorrealista única: eje homocinetico Chevrolet D-Max 2010 en adelante sin teta, semieje robusto; fondo blanco, sin texto ni logos.",
       "sourceSha256": "7639f6da0a3ff1477ec406b3ec10c2d168ce73496d4d7de212b0ef68c6a35ac7",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T17:27:21.493Z"
+      "generatedAt": "2026-08-28T17:27:21.493Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti04-058-eje-homocinetico-d-max-2010-sin-teta-generated-reference.webp",
+        "sourceSha256": "a36c6584bf584ccbf6f7f32cc70cf420da5d8d4e6c336ba75d71f3b411c4d520",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.262Z"
+      }
     }
   },
   "GTI04059": {
-    "image": "/catalogo-gti/generated/gti-gti04-059-punta-eje-l-r-d-max-2010-sin-teta-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti04-059-gti-gti04-059-punta-eje-l-r-d-max-2010-sin-teta-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti04-059-punta-eje-l-r-d-max-2010-sin-teta-generated-reference.webp",
-        "alt": "Imagen generada de referencia para PUNTA EJE L/R. D-MAX 2010/ SIN TETA — GTI04-059, SKU GTI04-059. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti04-059-gti-gti04-059-punta-eje-l-r-d-max-2010-sin-teta-branded-v2.webp",
+        "alt": "Imagen generada de referencia de PUNTA EJE L/R. D-MAX 2010/ SIN TETA — GTI04-059, SKU GTI04-059; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Referencia fotorrealista única: punta eje lado rueda Chevrolet D-Max 2010 en adelante sin teta, junta con ABS y kit; fondo blanco, sin texto ni logos.",
       "sourceSha256": "9d1a4baedbc79269d1a79ed9e74e1ed298da5916eaf6190ad07cc07c66830011",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T17:27:21.493Z"
+      "generatedAt": "2026-08-28T17:27:21.493Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti04-059-punta-eje-l-r-d-max-2010-sin-teta-generated-reference.webp",
+        "sourceSha256": "838926290ff6169bfeca69d65baa4616e6ccdd2d3d34b32001c4cda277be24f6",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.262Z"
+      }
     }
   },
   "GTI04065": {
-    "image": "/catalogo-gti/generated/gti-gti04-065-punta-eje-l-r-spark-gt-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti04-065-gti-gti04-065-punta-eje-l-r-spark-gt-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti04-065-punta-eje-l-r-spark-gt-generated-reference.webp",
-        "alt": "Imagen generada de referencia para PUNTA EJE L/R. SPARK GT — GTI04-065, SKU GTI04-065. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti04-065-gti-gti04-065-punta-eje-l-r-spark-gt-branded-v2.webp",
+        "alt": "Imagen generada de referencia de PUNTA EJE L/R. SPARK GT — GTI04-065, SKU GTI04-065; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Referencia fotorrealista única: punta eje lado rueda Chevrolet Spark GT, junta compacta con ABS y kit; fondo blanco, sin texto ni logos.",
       "sourceSha256": "988c9660db272fb323bc56396d5fb2a3525f03b92fde819e8dad5493adae69be",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T17:27:21.493Z"
+      "generatedAt": "2026-08-28T17:27:21.493Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti04-065-punta-eje-l-r-spark-gt-generated-reference.webp",
+        "sourceSha256": "e6ad395f04fd996fd688ac33f85b2132a6d58ee62808ce49d8ea08947c82ea35",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.263Z"
+      }
     }
   },
   "GTI04068": {
-    "image": "/catalogo-gti/generated/gti-gti04-068-eje-homocinetico-captiva-2-4-mecanica-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti04-068-gti-gti04-068-eje-homocinetico-captiva-2-4-mecanica-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti04-068-eje-homocinetico-captiva-2-4-mecanica-generated-reference.webp",
-        "alt": "Imagen generada de referencia para EJE HOMOCINETICO CAPTIVA 2.4 MECANICA — GTI04-068, SKU GTI04-068. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti04-068-gti-gti04-068-eje-homocinetico-captiva-2-4-mecanica-branded-v2.webp",
+        "alt": "Imagen generada de referencia de EJE HOMOCINETICO CAPTIVA 2.4 MECANICA — GTI04-068, SKU GTI04-068; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Fotografía de catálogo automotriz de un eje homocinético completo mecánico para Chevrolet Captiva 2.4, geometría fiel de semieje delantero, aislado sobre fondo blanco puro, iluminación de estudio, sin texto ni logotipos.",
       "sourceSha256": "ec7a58e3ed75be98afa314b576facce7cab6802b3ca3a08d2fcd32890d5d1b23",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T17:31:55.200Z"
+      "generatedAt": "2026-08-28T17:31:55.200Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti04-068-eje-homocinetico-captiva-2-4-mecanica-generated-reference.webp",
+        "sourceSha256": "274f8dc466aecd0c6fa6f96c337cc7d59f36ff3ca285b6cc3e52b2015b6d381a",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.263Z"
+      }
     }
   },
   "GTI04069": {
-    "image": "/catalogo-gti/generated/gti-gti04-069-punta-eje-l-r-captiva-24-dts-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti04-069-gti-gti04-069-punta-eje-l-r-captiva-24-dts-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti04-069-punta-eje-l-r-captiva-24-dts-generated-reference.webp",
-        "alt": "Imagen generada de referencia para PUNTA EJE L/R. CAPTIVA 24 DTS — GTI04-069, SKU GTI04-069. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti04-069-gti-gti04-069-punta-eje-l-r-captiva-24-dts-branded-v2.webp",
+        "alt": "Imagen generada de referencia de PUNTA EJE L/R. CAPTIVA 24 DTS — GTI04-069, SKU GTI04-069; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Fotografía de catálogo de kit de punta homocinética lado rueda para Chevrolet Captiva, configuración de 24 estrías, junta, fuelle, abrazaderas y grasa, fondo blanco puro, sin texto ni logotipos.",
       "sourceSha256": "258b1cc7236462ef5aa98998f54ce7e6e42412f3719e27fbe2cacb1ca19fd001",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T17:31:55.201Z"
+      "generatedAt": "2026-08-28T17:31:55.201Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti04-069-punta-eje-l-r-captiva-24-dts-generated-reference.webp",
+        "sourceSha256": "ccc4b74e010c929f2176d3467b1d2f2c0a794cd4b646bbe1db2ed7de3a3f5d15",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.264Z"
+      }
     }
   },
   "GTI04073": {
-    "image": "/catalogo-gti/generated/gti-gti04-073-punta-eje-l-c-captiva-mecanica-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti04-073-gti-gti04-073-punta-eje-l-c-captiva-mecanica-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti04-073-punta-eje-l-c-captiva-mecanica-generated-reference.webp",
-        "alt": "Imagen generada de referencia para PUNTA EJE L/C. CAPTIVA MECANICA — GTI04-073, SKU GTI04-073. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti04-073-gti-gti04-073-punta-eje-l-c-captiva-mecanica-branded-v2.webp",
+        "alt": "Imagen generada de referencia de PUNTA EJE L/C. CAPTIVA MECANICA — GTI04-073, SKU GTI04-073; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Fotografía de catálogo de kit de junta homocinética lado transmisión para Chevrolet Captiva, carcasa tipo tulipa, fuelle y accesorios, aislado en fondo blanco, sin texto ni marcas.",
       "sourceSha256": "a8778f3d130744fa8c42fbc0a7870fa099ad0e6953b341a72f99959bc947222c",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T17:31:55.201Z"
+      "generatedAt": "2026-08-28T17:31:55.201Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti04-073-punta-eje-l-c-captiva-mecanica-generated-reference.webp",
+        "sourceSha256": "907236b4bf42bb3861cb749fa3a3aeabcab548a78138807e0bb07162afe4ee04",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.264Z"
+      }
     }
   },
   "GTI04074": {
-    "image": "/catalogo-gti/generated/gti-gti04-074-eje-homocinetico-der-corsa-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti04-074-gti-gti04-074-eje-homocinetico-der-corsa-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti04-074-eje-homocinetico-der-corsa-generated-reference.webp",
-        "alt": "Imagen generada de referencia para EJE HOMOCINETICO DER. CORSA — GTI04-074, SKU GTI04-074. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti04-074-gti-gti04-074-eje-homocinetico-der-corsa-branded-v2.webp",
+        "alt": "Imagen generada de referencia de EJE HOMOCINETICO DER. CORSA — GTI04-074, SKU GTI04-074; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Fotografía de catálogo de eje homocinético completo derecho para Chevrolet Corsa, semieje delantero con juntas y fuelles correctos, fondo blanco puro, sin texto ni logos.",
       "sourceSha256": "fd25294bb96c408173c831e140b488e512518a563ee4f1cca16163177d03ac36",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T17:31:55.201Z"
+      "generatedAt": "2026-08-28T17:31:55.201Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti04-074-eje-homocinetico-der-corsa-generated-reference.webp",
+        "sourceSha256": "042212f8585754ee7e53f232753cfb02c4f80089f9f68612573e74eec0b80f82",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.264Z"
+      }
     }
   },
   "GTI04078": {
-    "image": "/catalogo-gti/generated/gti-gti04-078-eje-homocinetico-tras-grand-vitara-sz-2-7-4x4-mt-at-2007-6-huecos-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti04-078-gti-gti04-078-eje-homocinetico-tras-grand-vitara-sz-2-7-4x4-mt-at-2007-6-huecos-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti04-078-eje-homocinetico-tras-grand-vitara-sz-2-7-4x4-mt-at-2007-6-huecos-generated-reference.webp",
-        "alt": "Imagen generada de referencia para EJE HOMOCINETICO TRAS. GRAND VITARA SZ 2.7 4X4 MT/AT 2007/ (6 HUECOS) — GTI04-078, SKU GTI04-078. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti04-078-gti-gti04-078-eje-homocinetico-tras-grand-vitara-sz-2-7-4x4-mt-at-2007-6-huecos-branded-v2.webp",
+        "alt": "Imagen generada de referencia de EJE HOMOCINETICO TRAS. GRAND VITARA SZ 2.7 4X4 MT/AT 2007/ (6 HUECOS) — GTI04-078, SKU GTI04-078; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Fotografía de catálogo de eje homocinético trasero 4x4 de seis perforaciones para Chevrolet Grand Vitara, componente metálico fiel, aislado sobre blanco, sin texto ni logotipos.",
       "sourceSha256": "73e297e9e972006d39cea6483c525ec6011704ce93059002ef034da90fd2b2dc",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T17:31:55.201Z"
+      "generatedAt": "2026-08-28T17:31:55.201Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti04-078-eje-homocinetico-tras-grand-vitara-sz-2-7-4x4-mt-at-2007-6-huecos-generated-reference.webp",
+        "sourceSha256": "d06401a47f547ccbd2cb347519be3ba8e12b600297061673160c20fcc00cbb18",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.265Z"
+      }
     }
   },
   "GTI04094": {
-    "image": "/catalogo-gti/generated/gti-gti04-094-punta-eje-l-r-captiva-3-0-34-dts-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti04-094-gti-gti04-094-punta-eje-l-r-captiva-3-0-34-dts-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti04-094-punta-eje-l-r-captiva-3-0-34-dts-generated-reference.webp",
-        "alt": "Imagen generada de referencia para PUNTA EJE L/R. CAPTIVA 3.0 / 34 DTS — GTI04-094, SKU GTI04-094. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti04-094-gti-gti04-094-punta-eje-l-r-captiva-3-0-34-dts-branded-v2.webp",
+        "alt": "Imagen generada de referencia de PUNTA EJE L/R. CAPTIVA 3.0 / 34 DTS — GTI04-094, SKU GTI04-094; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Fotografía de catálogo de kit de punta homocinética lado rueda de 34 estrías para Chevrolet Captiva 3.0, junta, fuelle y accesorios, fondo blanco puro, sin texto ni marcas.",
       "sourceSha256": "d519c78dc38d1d22a12466e40866a29520eb3386be51524894b753e496613fb8",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T17:31:55.201Z"
+      "generatedAt": "2026-08-28T17:31:55.201Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti04-094-punta-eje-l-r-captiva-3-0-34-dts-generated-reference.webp",
+        "sourceSha256": "76ae8b2e8ad7814f33aa480705bb6c3ed79dbb27b42f4140e507602213dfecc0",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.265Z"
+      }
     }
   },
   "GTI04095": {
-    "image": "/catalogo-gti/generated/gti-gti04-095-eje-homocinetico-izq-aveo-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti04-095-gti-gti04-095-eje-homocinetico-izq-aveo-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti04-095-eje-homocinetico-izq-aveo-generated-reference.webp",
-        "alt": "Imagen generada de referencia para EJE HOMOCINETICO IZQ. AVEO — GTI04-095, SKU GTI04-095. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti04-095-gti-gti04-095-eje-homocinetico-izq-aveo-branded-v2.webp",
+        "alt": "Imagen generada de referencia de EJE HOMOCINETICO IZQ. AVEO — GTI04-095, SKU GTI04-095; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Fotografía de catálogo de eje homocinético completo izquierdo para Chevrolet Aveo, semieje delantero con proporciones y juntas fieles, fondo blanco puro, sin texto ni logotipos.",
       "sourceSha256": "adc2f06e05ff83b0b4393b46b170a68dbd507c364153fed464ddb9e68c02a374",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T17:31:55.201Z"
+      "generatedAt": "2026-08-28T17:31:55.201Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti04-095-eje-homocinetico-izq-aveo-generated-reference.webp",
+        "sourceSha256": "f0709c4a78cd55f0881181bd35dc076d90687b4bcd2d64cda15afd1e0b3f90b7",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.265Z"
+      }
     }
   },
   "GTI04096": {
-    "image": "/catalogo-gti/generated/gti-gti04-096-eje-homocinetico-der-aveo-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti04-096-gti-gti04-096-eje-homocinetico-der-aveo-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti04-096-eje-homocinetico-der-aveo-generated-reference.webp",
-        "alt": "Imagen generada de referencia para EJE HOMOCINETICO DER. AVEO — GTI04-096, SKU GTI04-096. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti04-096-gti-gti04-096-eje-homocinetico-der-aveo-branded-v2.webp",
+        "alt": "Imagen generada de referencia de EJE HOMOCINETICO DER. AVEO — GTI04-096, SKU GTI04-096; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Fotografía de catálogo de eje homocinético completo derecho para Chevrolet Aveo, semieje delantero distinto al izquierdo, fondo blanco puro, sin texto ni logotipos.",
       "sourceSha256": "e5ac45dea03a02f8242d1cf14b407d6197a0481d8e64b5ed8549a7f3a84e5538",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T17:31:55.201Z"
+      "generatedAt": "2026-08-28T17:31:55.201Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti04-096-eje-homocinetico-der-aveo-generated-reference.webp",
+        "sourceSha256": "50035a81fc0a8b53098ed087746caf7a96d8e46e0764392b051926dd5ba72a0a",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.265Z"
+      }
     }
   },
   "GTI04103": {
-    "image": "/catalogo-gti/generated/gti-gti04-103-eje-homocinetico-der-tracker-automatica-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti04-103-gti-gti04-103-eje-homocinetico-der-tracker-automatica-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti04-103-eje-homocinetico-der-tracker-automatica-generated-reference.webp",
-        "alt": "Imagen generada de referencia para EJE HOMOCINETICO DER. TRACKER AUTOMATICA — GTI04-103, SKU GTI04-103. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti04-103-gti-gti04-103-eje-homocinetico-der-tracker-automatica-branded-v2.webp",
+        "alt": "Imagen generada de referencia de EJE HOMOCINETICO DER. TRACKER AUTOMATICA — GTI04-103, SKU GTI04-103; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Fotografía de catálogo de eje homocinético completo derecho para Chevrolet Tracker automática, semieje largo con juntas, fuelles y estrías, fondo blanco puro, sin texto ni marcas.",
       "sourceSha256": "08cb99a16d425b35173c3f1adb95e56572130301d9cd41aa8b5468d30e2f594c",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T17:35:35.367Z"
+      "generatedAt": "2026-08-28T17:35:35.367Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti04-103-eje-homocinetico-der-tracker-automatica-generated-reference.webp",
+        "sourceSha256": "506bcfaa1be8207148abb2eba2d462d649c3ed3d16fd0a7d242e7680b02d9cc9",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.266Z"
+      }
     }
   },
   "GTI04104": {
-    "image": "/catalogo-gti/generated/gti-gti04-104-eje-homocinetico-izq-tracker-automatica-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti04-104-gti-gti04-104-eje-homocinetico-izq-tracker-automatica-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti04-104-eje-homocinetico-izq-tracker-automatica-generated-reference.webp",
-        "alt": "Imagen generada de referencia para EJE HOMOCINETICO IZQ. TRACKER AUTOMATICA — GTI04-104, SKU GTI04-104. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti04-104-gti-gti04-104-eje-homocinetico-izq-tracker-automatica-branded-v2.webp",
+        "alt": "Imagen generada de referencia de EJE HOMOCINETICO IZQ. TRACKER AUTOMATICA — GTI04-104, SKU GTI04-104; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Fotografía de catálogo de eje homocinético completo izquierdo para Chevrolet Tracker automática, geometría corta y distinta al derecho, fondo blanco puro, sin texto ni marcas.",
       "sourceSha256": "2bf48cd8074d89ac460e2252fac62e6c3533d572cb1c4049b7d26c353eccd962",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T17:35:35.368Z"
+      "generatedAt": "2026-08-28T17:35:35.368Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti04-104-eje-homocinetico-izq-tracker-automatica-generated-reference.webp",
+        "sourceSha256": "ae73bc98fd714b682e67bbf263667aab82ff6731a1f032cd61e63059e5fcf9b3",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.266Z"
+      }
     }
   },
   "GTI04105": {
-    "image": "/catalogo-gti/generated/gti-gti04-105-eje-homocinetico-der-tracker-mecanica-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti04-105-gti-gti04-105-eje-homocinetico-der-tracker-mecanica-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti04-105-eje-homocinetico-der-tracker-mecanica-generated-reference.webp",
-        "alt": "Imagen generada de referencia para EJE HOMOCINETICO DER. TRACKER MECANICA — GTI04-105, SKU GTI04-105. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti04-105-gti-gti04-105-eje-homocinetico-der-tracker-mecanica-branded-v2.webp",
+        "alt": "Imagen generada de referencia de EJE HOMOCINETICO DER. TRACKER MECANICA — GTI04-105, SKU GTI04-105; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Fotografía de catálogo de eje homocinético completo derecho para Chevrolet Tracker mecánica, tulipa interior de transmisión manual y punta exterior, fondo blanco, sin logos.",
       "sourceSha256": "833812979537dadaee4a1e4f7c0511a980a04efc95a397c0efbd1285bce46ec1",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T17:35:35.368Z"
+      "generatedAt": "2026-08-28T17:35:35.368Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti04-105-eje-homocinetico-der-tracker-mecanica-generated-reference.webp",
+        "sourceSha256": "715593fd0cfc19637695c862761205665eb7cbd506e3108456397154267f5240",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.266Z"
+      }
     }
   },
   "GTI04106": {
-    "image": "/catalogo-gti/generated/gti-gti04-106-eje-homocinetico-izq-tracker-mecanica-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti04-106-gti-gti04-106-eje-homocinetico-izq-tracker-mecanica-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti04-106-eje-homocinetico-izq-tracker-mecanica-generated-reference.webp",
-        "alt": "Imagen generada de referencia para EJE HOMOCINETICO IZQ. TRACKER MECANICA — GTI04-106, SKU GTI04-106. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti04-106-gti-gti04-106-eje-homocinetico-izq-tracker-mecanica-branded-v2.webp",
+        "alt": "Imagen generada de referencia de EJE HOMOCINETICO IZQ. TRACKER MECANICA — GTI04-106, SKU GTI04-106; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Fotografía de catálogo de eje homocinético completo izquierdo para Chevrolet Tracker mecánica, geometría corta y carcasa interior manual, fondo blanco, sin logos.",
       "sourceSha256": "53ab77e67c38c166ecf77624cc0199a8811bc4b971bf550e903fe16c63f60dab",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T17:35:35.368Z"
+      "generatedAt": "2026-08-28T17:35:35.368Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti04-106-eje-homocinetico-izq-tracker-mecanica-generated-reference.webp",
+        "sourceSha256": "69114bbb8b763cfd2331943ca92e17a44a93fb8e3623ab280d12f1d71c999da1",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.266Z"
+      }
     }
   },
   "GTI06010": {
-    "image": "/catalogo-gti/generated/gti-gti06-010-eje-homocinetico-izq-hd-accent-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti06-010-gti-gti06-010-eje-homocinetico-izq-hd-accent-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti06-010-eje-homocinetico-izq-hd-accent-generated-reference.webp",
-        "alt": "Imagen generada de referencia para EJE HOMOCINETICO IZQ. HD. ACCENT — GTI06-010, SKU GTI06-010. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti06-010-gti-gti06-010-eje-homocinetico-izq-hd-accent-branded-v2.webp",
+        "alt": "Imagen generada de referencia de EJE HOMOCINETICO IZQ. HD. ACCENT — GTI06-010, SKU GTI06-010; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Fotografía de catálogo de eje homocinético completo izquierdo para Hyundai Accent, semieje nuevo con juntas y fuelles, fondo blanco puro, sin texto ni logotipos.",
       "sourceSha256": "10737ae3c9b7289b0a4261144f41cccb07d8b56c14d2a71a3dd494227a98649b",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T17:35:35.368Z"
+      "generatedAt": "2026-08-28T17:35:35.368Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti06-010-eje-homocinetico-izq-hd-accent-generated-reference.webp",
+        "sourceSha256": "5b32778669e02530f8ceee4b75d46a0cca33314deb4f93fc43a68eb52d0e392c",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.267Z"
+      }
     }
   },
   "GTI06018": {
-    "image": "/catalogo-gti/generated/gti-gti06-018-punta-eje-l-r-hd-tucson-4x2-23x27-dts-sin-abs-mecanico-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti06-018-gti-gti06-018-punta-eje-l-r-hd-tucson-4x2-23x27-dts-sin-abs-mecanico-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti06-018-punta-eje-l-r-hd-tucson-4x2-23x27-dts-sin-abs-mecanico-generated-reference.webp",
-        "alt": "Imagen generada de referencia para PUNTA EJE L/R. HD. TUCSON 4X2 23X27 DTS. SIN ABS (MECANICO) — GTI06-018, SKU GTI06-018. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti06-018-gti-gti06-018-punta-eje-l-r-hd-tucson-4x2-23x27-dts-sin-abs-mecanico-branded-v2.webp",
+        "alt": "Imagen generada de referencia de PUNTA EJE L/R. HD. TUCSON 4X2 23X27 DTS. SIN ABS (MECANICO) — GTI06-018, SKU GTI06-018; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Fotografía de catálogo de kit de punta homocinética lado rueda Hyundai Tucson 4x2 mecánica, 23x27 estrías sin anillo ABS, fuelle y accesorios, fondo blanco.",
       "sourceSha256": "b6483c50b8144e26bb424e1718aa2e9a33b362d1b9f28ff92664fb34195c907a",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T17:35:35.368Z"
+      "generatedAt": "2026-08-28T17:35:35.368Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti06-018-punta-eje-l-r-hd-tucson-4x2-23x27-dts-sin-abs-mecanico-generated-reference.webp",
+        "sourceSha256": "75f5233f50589d102e2b0594e060658c44ec267036c13fab2075818fbc2f7236",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.268Z"
+      }
     }
   },
   "GTI06036": {
-    "image": "/catalogo-gti/generated/gti-gti06-036-eje-homocinetico-izq-hd-verna-gyro-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti06-036-gti-gti06-036-eje-homocinetico-izq-hd-verna-gyro-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti06-036-eje-homocinetico-izq-hd-verna-gyro-generated-reference.webp",
-        "alt": "Imagen generada de referencia para EJE HOMOCINETICO IZQ. HD. VERNA/GYRO — GTI06-036, SKU GTI06-036. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti06-036-gti-gti06-036-eje-homocinetico-izq-hd-verna-gyro-branded-v2.webp",
+        "alt": "Imagen generada de referencia de EJE HOMOCINETICO IZQ. HD. VERNA/GYRO — GTI06-036, SKU GTI06-036; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Fotografía de catálogo de eje homocinético completo izquierdo para Hyundai Verna o Gyro, juntas, fuelles y anillo ABS, fondo blanco puro, sin marcas.",
       "sourceSha256": "88949101c88c83f841237a6f756cbddd5af00231cd772b9851129e6ba3fe436f",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T17:35:35.368Z"
+      "generatedAt": "2026-08-28T17:35:35.368Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti06-036-eje-homocinetico-izq-hd-verna-gyro-generated-reference.webp",
+        "sourceSha256": "e343dc4d408dcaa5c086465c527dd744c39532da84c9f755d8db394219f13810",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.270Z"
+      }
     }
   },
   "GTI06045": {
-    "image": "/catalogo-gti/generated/gti-gti06-045-eje-homocinetico-der-hd-tucson-4x2-automatico-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti06-045-gti-gti06-045-eje-homocinetico-der-hd-tucson-4x2-automatico-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti06-045-eje-homocinetico-der-hd-tucson-4x2-automatico-generated-reference.webp",
-        "alt": "Imagen generada de referencia para EJE HOMOCINETICO DER. HD. TUCSON 4X2 (AUTOMATICO) — GTI06-045, SKU GTI06-045. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti06-045-gti-gti06-045-eje-homocinetico-der-hd-tucson-4x2-automatico-branded-v2.webp",
+        "alt": "Imagen generada de referencia de EJE HOMOCINETICO DER. HD. TUCSON 4X2 (AUTOMATICO) — GTI06-045, SKU GTI06-045; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Fotografía de catálogo de eje homocinético completo derecho para Hyundai Tucson 4x2 automática, semieje robusto de SUV, fondo blanco puro, sin texto ni marcas.",
       "sourceSha256": "28cf0b1096fb88440fa07dd8da6bfa1e2667d253a580771c15f1e74b6a9dbd85",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T17:35:35.368Z"
+      "generatedAt": "2026-08-28T17:35:35.368Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti06-045-eje-homocinetico-der-hd-tucson-4x2-automatico-generated-reference.webp",
+        "sourceSha256": "9bd0ad07532d6c342dc912d1b9ff551e04ca3c6765d5581ceb65bd6fe50876bd",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.270Z"
+      }
     }
   },
   "GTI06047": {
-    "image": "/catalogo-gti/generated/gti-gti06-047-eje-homocinetico-der-kia-sorento-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti06-047-gti-gti06-047-eje-homocinetico-der-kia-sorento-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti06-047-eje-homocinetico-der-kia-sorento-generated-reference.webp",
-        "alt": "Imagen generada de referencia para EJE HOMOCINETICO DER. KIA SORENTO — GTI06-047, SKU GTI06-047. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti06-047-gti-gti06-047-eje-homocinetico-der-kia-sorento-branded-v2.webp",
+        "alt": "Imagen generada de referencia de EJE HOMOCINETICO DER. KIA SORENTO — GTI06-047, SKU GTI06-047; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Fotografía de catálogo de eje homocinético completo derecho para Kia Sorento, semieje robusto de SUV con juntas y fuelles, fondo blanco, sin texto ni marcas.",
       "sourceSha256": "89613000b7e81406f5f6daca3288a6fd5948722b6855f043bd85ef32a85ee9c4",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T17:41:32.394Z"
+      "generatedAt": "2026-08-28T17:41:32.394Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti06-047-eje-homocinetico-der-kia-sorento-generated-reference.webp",
+        "sourceSha256": "a672ab2f2c947e9cf9d24c5c0427610847c893351960cb91809488de735fe845",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.270Z"
+      }
     }
   },
   "GTI06064": {
-    "image": "/catalogo-gti/generated/gti-gti06-064-eje-homocinetico-izq-hd-i-25-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti06-064-gti-gti06-064-eje-homocinetico-izq-hd-i-25-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti06-064-eje-homocinetico-izq-hd-i-25-generated-reference.webp",
-        "alt": "Imagen generada de referencia para EJE HOMOCINETICO IZQ. HD. I-25 — GTI06-064, SKU GTI06-064. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti06-064-gti-gti06-064-eje-homocinetico-izq-hd-i-25-branded-v2.webp",
+        "alt": "Imagen generada de referencia de EJE HOMOCINETICO IZQ. HD. I-25 — GTI06-064, SKU GTI06-064; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Fotografía de catálogo de eje homocinético completo izquierdo para Hyundai i25, semieje compacto con juntas y fuelles, fondo blanco, sin texto ni marcas.",
       "sourceSha256": "5de0809605a3db963ad59ffb4a2e762032e435c7a2fdd48d3c82149f084fcc2a",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T17:41:32.395Z"
+      "generatedAt": "2026-08-28T17:41:32.395Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti06-064-eje-homocinetico-izq-hd-i-25-generated-reference.webp",
+        "sourceSha256": "b170bcfbf94ce8e63eee02cebce0fe8837e1b1dc55210f1ab872bf0b5668b419",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.271Z"
+      }
     }
   },
   "GTI07006": {
-    "image": "/catalogo-gti/generated/gti-gti07-006-punta-eje-l-r-fiat-147-zastava-20-dts-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti07-006-gti-gti07-006-punta-eje-l-r-fiat-147-zastava-20-dts-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti07-006-punta-eje-l-r-fiat-147-zastava-20-dts-generated-reference.webp",
-        "alt": "Imagen generada de referencia para PUNTA EJE L/R. FIAT 147/ZASTAVA 20 DTS. — GTI07-006, SKU GTI07-006. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti07-006-gti-gti07-006-punta-eje-l-r-fiat-147-zastava-20-dts-branded-v2.webp",
+        "alt": "Imagen generada de referencia de PUNTA EJE L/R. FIAT 147/ZASTAVA 20 DTS. — GTI07-006, SKU GTI07-006; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Fotografía de catálogo de kit de punta homocinética lado rueda para Fiat 147 o Zastava, configuración de 20 estrías, fuelle y accesorios, fondo blanco.",
       "sourceSha256": "92e0e61f91b5580d53b50d986e37136d9504035eee331cf7f603553131d8c6cc",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T17:41:32.395Z"
+      "generatedAt": "2026-08-28T17:41:32.395Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti07-006-punta-eje-l-r-fiat-147-zastava-20-dts-generated-reference.webp",
+        "sourceSha256": "04ebed4ef88276cd2dc973e91fb4073afcdd4346b3287e0718ad2eefe6939287",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.272Z"
+      }
     }
   },
   "GTI07014": {
-    "image": "/catalogo-gti/generated/gti-gti07-014-punta-eje-l-r-toyota-corolla-1-8-1-6-at-mt-02-24d-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti07-014-gti-gti07-014-punta-eje-l-r-toyota-corolla-1-8-1-6-at-mt-02-24d-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti07-014-punta-eje-l-r-toyota-corolla-1-8-1-6-at-mt-02-24d-generated-reference.webp",
-        "alt": "Imagen generada de referencia para PUNTA EJE L/R. TOYOTA COROLLA 1.8/1.6 AT/MT 02/24D — GTI07-014, SKU GTI07-014. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti07-014-gti-gti07-014-punta-eje-l-r-toyota-corolla-1-8-1-6-at-mt-02-24d-branded-v2.webp",
+        "alt": "Imagen generada de referencia de PUNTA EJE L/R. TOYOTA COROLLA 1.8/1.6 AT/MT 02/24D — GTI07-014, SKU GTI07-014; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Fotografía de catálogo de kit de punta homocinética lado rueda para Toyota Corolla 1.6/1.8 2002+, configuración de 24 estrías, fondo blanco.",
       "sourceSha256": "697788a49d1de12bd5243e23372aadffe50999a17882d7b489d949edf90c3387",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T17:41:32.395Z"
+      "generatedAt": "2026-08-28T17:41:32.395Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti07-014-punta-eje-l-r-toyota-corolla-1-8-1-6-at-mt-02-24d-generated-reference.webp",
+        "sourceSha256": "1b3470a4a41c9be2e27da8fa377bfa3d50473c953bc0f7b4dc7ac605622f0472",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.272Z"
+      }
     }
   },
   "GTI07025": {
-    "image": "/catalogo-gti/generated/gti-gti07-025-punta-eje-l-r-kia-sephia-97-99-23-dts-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti07-025-gti-gti07-025-punta-eje-l-r-kia-sephia-97-99-23-dts-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti07-025-punta-eje-l-r-kia-sephia-97-99-23-dts-generated-reference.webp",
-        "alt": "Imagen generada de referencia para PUNTA EJE L/R. KIA SEPHIA 97/99 23 DTS. — GTI07-025, SKU GTI07-025. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti07-025-gti-gti07-025-punta-eje-l-r-kia-sephia-97-99-23-dts-branded-v2.webp",
+        "alt": "Imagen generada de referencia de PUNTA EJE L/R. KIA SEPHIA 97/99 23 DTS. — GTI07-025, SKU GTI07-025; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Fotografía de catálogo de kit de punta homocinética lado rueda para Kia Sephia 1997-1999, 23 estrías, fuelle y accesorios, fondo blanco.",
       "sourceSha256": "e0416979d095e8585ad353005bb8fe451d70408afb0f01bcab0f0cd5a756439c",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T17:41:32.395Z"
+      "generatedAt": "2026-08-28T17:41:32.395Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti07-025-punta-eje-l-r-kia-sephia-97-99-23-dts-generated-reference.webp",
+        "sourceSha256": "132b8afb1695d69356e71cb9473cc38e9797e209a80b7c95d3a83093a33a4445",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.273Z"
+      }
     }
   },
   "GTI07051": {
-    "image": "/catalogo-gti/generated/gti-gti07-051-punta-eje-l-r-peugeot-405-1-6-90t-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti07-051-gti-gti07-051-punta-eje-l-r-peugeot-405-1-6-90t-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti07-051-punta-eje-l-r-peugeot-405-1-6-90t-generated-reference.webp",
-        "alt": "Imagen generada de referencia para PUNTA EJE L/R. PEUGEOT 405 1.6 (90T) — GTI07-051, SKU GTI07-051. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti07-051-gti-gti07-051-punta-eje-l-r-peugeot-405-1-6-90t-branded-v2.webp",
+        "alt": "Imagen generada de referencia de PUNTA EJE L/R. PEUGEOT 405 1.6 (90T) — GTI07-051, SKU GTI07-051; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Fotografía de catálogo de kit de punta homocinética lado rueda para Peugeot 405 1.6 con anillo ABS de 90 dientes, fuelle y accesorios, fondo blanco.",
       "sourceSha256": "ac57954162ff82c356fa9427ba778e015615a180e8227b47833bf2c6c59132cd",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T17:41:32.395Z"
+      "generatedAt": "2026-08-28T17:41:32.395Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti07-051-punta-eje-l-r-peugeot-405-1-6-90t-generated-reference.webp",
+        "sourceSha256": "b966a792c7fb482cde6e736a3a20fbc20328caeeb5b3e07c319504062a4f921a",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.273Z"
+      }
     }
   },
   "GTI07054": {
-    "image": "/catalogo-gti/generated/gti-gti07-054-eje-homocinetico-izq-peugeot-306-405-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti07-054-gti-gti07-054-eje-homocinetico-izq-peugeot-306-405-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti07-054-eje-homocinetico-izq-peugeot-306-405-generated-reference.webp",
-        "alt": "Imagen generada de referencia para EJE HOMOCINETICO IZQ. PEUGEOT 306/405 — GTI07-054, SKU GTI07-054. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti07-054-gti-gti07-054-eje-homocinetico-izq-peugeot-306-405-branded-v2.webp",
+        "alt": "Imagen generada de referencia de EJE HOMOCINETICO IZQ. PEUGEOT 306/405 — GTI07-054, SKU GTI07-054; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Fotografía de catálogo de eje homocinético completo izquierdo para Peugeot 306 o 405, junta exterior y tulipa interior cerrada sin cruceta, fondo blanco.",
       "sourceSha256": "be4f95cb961ade87f4bcb389d735bb2a8c515e4a3c599f2b227bb5e640b61609",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T17:41:32.395Z"
+      "generatedAt": "2026-08-28T17:41:32.395Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti07-054-eje-homocinetico-izq-peugeot-306-405-generated-reference.webp",
+        "sourceSha256": "8025f5cd21d27971074a61da1270275c56953df64c72df13fc9268925d149cba",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.274Z"
+      }
     }
   },
   "GTI07060": {
-    "image": "/catalogo-gti/generated/gti-gti07-060-eje-homocinetico-toyota-hilux-vigo-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti07-060-gti-gti07-060-eje-homocinetico-toyota-hilux-vigo-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti07-060-eje-homocinetico-toyota-hilux-vigo-generated-reference.webp",
-        "alt": "Imagen generada de referencia para EJE HOMOCINETICO TOYOTA HILUX VIGO — GTI07-060, SKU GTI07-060. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti07-060-gti-gti07-060-eje-homocinetico-toyota-hilux-vigo-branded-v2.webp",
+        "alt": "Imagen generada de referencia de EJE HOMOCINETICO TOYOTA HILUX VIGO — GTI07-060, SKU GTI07-060; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Fotografía de catálogo de eje homocinético completo para Toyota Hilux Vigo, semieje robusto de camioneta con juntas y fuelles, fondo blanco.",
       "sourceSha256": "0cb5f0a735c36e49157d6eec326b33b43da0e681aaf3827833d9ad818f9b3a5f",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T17:41:32.395Z"
+      "generatedAt": "2026-08-28T17:41:32.395Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti07-060-eje-homocinetico-toyota-hilux-vigo-generated-reference.webp",
+        "sourceSha256": "faec6ece90190c3f40bd3435119bf514e3adc8483237f5e61ec0214eb8976f27",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.274Z"
+      }
     }
   },
   "GTI07062": {
-    "image": "/catalogo-gti/generated/gti-gti07-062-punta-eje-l-c-aveo-1-6-emotion-aut-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti07-062-gti-gti07-062-punta-eje-l-c-aveo-1-6-emotion-aut-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti07-062-punta-eje-l-c-aveo-1-6-emotion-aut-generated-reference.webp",
-        "alt": "Imagen generada de referencia para PUNTA EJE L/C. AVEO 1.6 EMOTION AUT. — GTI07-062, SKU GTI07-062. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti07-062-gti-gti07-062-punta-eje-l-c-aveo-1-6-emotion-aut-branded-v2.webp",
+        "alt": "Imagen generada de referencia de PUNTA EJE L/C. AVEO 1.6 EMOTION AUT. — GTI07-062, SKU GTI07-062; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Fotografía de catálogo de kit de junta homocinética lado transmisión para Chevrolet Aveo 1.6 Emotion automática, tulipa, trípode, fuelle y accesorios, fondo blanco.",
       "sourceSha256": "a6c384b98bee36a11a98d005afe4e42cacbead44f6d7ed87035dd72cb4bff304",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T17:46:21.799Z"
+      "generatedAt": "2026-08-28T17:46:21.799Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti07-062-punta-eje-l-c-aveo-1-6-emotion-aut-generated-reference.webp",
+        "sourceSha256": "36f6aaf8a181b98454b39bca929dd19ff00e9d8980d51faf8ab11fc0048325da",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.275Z"
+      }
     }
   },
   "GTI07103": {
-    "image": "/catalogo-gti/generated/gti-gti07-103-punta-eje-l-r-ford-fortaleza-150-expedition-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti07-103-gti-gti07-103-punta-eje-l-r-ford-fortaleza-150-expedition-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti07-103-punta-eje-l-r-ford-fortaleza-150-expedition-generated-reference.webp",
-        "alt": "Imagen generada de referencia para PUNTA EJE L/R. FORD FORTALEZA/150 EXPEDITION — GTI07-103, SKU GTI07-103. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti07-103-gti-gti07-103-punta-eje-l-r-ford-fortaleza-150-expedition-branded-v2.webp",
+        "alt": "Imagen generada de referencia de PUNTA EJE L/R. FORD FORTALEZA/150 EXPEDITION — GTI07-103, SKU GTI07-103; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Fotografía de catálogo de kit de punta homocinética lado rueda reforzada para Ford F-150 o Expedition 4x4, fuelle y accesorios, fondo blanco.",
       "sourceSha256": "71b187f96a6b960229e40bd0c10896056de6171a840417863216e20234dd0d3c",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T17:46:21.800Z"
+      "generatedAt": "2026-08-28T17:46:21.800Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti07-103-punta-eje-l-r-ford-fortaleza-150-expedition-generated-reference.webp",
+        "sourceSha256": "e9dee92022010d8da518d51fce9e9a350230378a703bacaa2e3b83aa7affeaa2",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.276Z"
+      }
     }
   },
   "GTI07104": {
-    "image": "/catalogo-gti/generated/gti-gti07-104-punta-eje-l-c-ford-eco-sport-4x2-89-02-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti07-104-gti-gti07-104-punta-eje-l-c-ford-eco-sport-4x2-89-02-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti07-104-punta-eje-l-c-ford-eco-sport-4x2-89-02-generated-reference.webp",
-        "alt": "Imagen generada de referencia para PUNTA EJE L/C. FORD ECO SPORT 4X2 89/02 — GTI07-104, SKU GTI07-104. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti07-104-gti-gti07-104-punta-eje-l-c-ford-eco-sport-4x2-89-02-branded-v2.webp",
+        "alt": "Imagen generada de referencia de PUNTA EJE L/C. FORD ECO SPORT 4X2 89/02 — GTI07-104, SKU GTI07-104; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Fotografía de catálogo de kit de junta homocinética lado transmisión para Ford EcoSport 4x2, tulipa, trípode, fuelle y accesorios, fondo blanco.",
       "sourceSha256": "da84790914e86a1eefb1042d647e48d538e3e3e9a0d7858b99103f4d5442b39f",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T17:46:21.800Z"
+      "generatedAt": "2026-08-28T17:46:21.800Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti07-104-punta-eje-l-c-ford-eco-sport-4x2-89-02-generated-reference.webp",
+        "sourceSha256": "3d94c36cc44ae4d0b6011d9598fa62747bbeb107e6d749a0600279d4cc5eb644",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.276Z"
+      }
     }
   },
   "GTI07112": {
-    "image": "/catalogo-gti/generated/gti-gti07-112-punta-eje-l-c-izq-ford-fiesta-charger-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti07-112-gti-gti07-112-punta-eje-l-c-izq-ford-fiesta-charger-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti07-112-punta-eje-l-c-izq-ford-fiesta-charger-generated-reference.webp",
-        "alt": "Imagen generada de referencia para PUNTA EJE L/C. IZQ. FORD FIESTA/CHARGER — GTI07-112, SKU GTI07-112. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti07-112-gti-gti07-112-punta-eje-l-c-izq-ford-fiesta-charger-branded-v2.webp",
+        "alt": "Imagen generada de referencia de PUNTA EJE L/C. IZQ. FORD FIESTA/CHARGER — GTI07-112, SKU GTI07-112; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Fotografía de catálogo de kit de junta homocinética izquierda lado transmisión para Ford Fiesta/Charger, tulipa, trípode y fuelle, fondo blanco.",
       "sourceSha256": "172718b30910d77046164570809d233dabd14db45b93a24297ad3327f43bdf06",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T17:46:21.800Z"
+      "generatedAt": "2026-08-28T17:46:21.800Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti07-112-punta-eje-l-c-izq-ford-fiesta-charger-generated-reference.webp",
+        "sourceSha256": "4ce18086fbd3552fc2d677728d4f7b226ef2eeecf2cb9153422819306dda56e3",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.277Z"
+      }
     }
   },
   "GTI07149": {
-    "image": "/catalogo-gti/generated/gti-gti07-149-punta-eje-l-c-volkswagen-panel-t5-2011-hembra-larga-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti07-149-gti-gti07-149-punta-eje-l-c-volkswagen-panel-t5-2011-hembra-larga-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti07-149-punta-eje-l-c-volkswagen-panel-t5-2011-hembra-larga-generated-reference.webp",
-        "alt": "Imagen generada de referencia para PUNTA EJE L/C. VOLKSWAGEN PANEL T5 2011/ (HEMBRA LARGA) — GTI07-149, SKU GTI07-149. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti07-149-gti-gti07-149-punta-eje-l-c-volkswagen-panel-t5-2011-hembra-larga-branded-v2.webp",
+        "alt": "Imagen generada de referencia de PUNTA EJE L/C. VOLKSWAGEN PANEL T5 2011/ (HEMBRA LARGA) — GTI07-149, SKU GTI07-149; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Fotografía de catálogo de kit de junta homocinética lado transmisión tipo hembra larga para Volkswagen Panel T5 2011+, fondo blanco.",
       "sourceSha256": "315f9cd66127e9772c85558de56441707c90202e2ea6f7b298de9e8e561cfbef",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T17:46:21.800Z"
+      "generatedAt": "2026-08-28T17:46:21.800Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti07-149-punta-eje-l-c-volkswagen-panel-t5-2011-hembra-larga-generated-reference.webp",
+        "sourceSha256": "80240802b2cf3a7c82281b480960b03d222eb461f440f34777860305cf0e1f16",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.277Z"
+      }
     }
   },
   "GTI07153": {
-    "image": "/catalogo-gti/generated/gti-gti07-153-punta-eje-l-r-nissan-x-trail-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti07-153-gti-gti07-153-punta-eje-l-r-nissan-x-trail-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti07-153-punta-eje-l-r-nissan-x-trail-generated-reference.webp",
-        "alt": "Imagen generada de referencia para PUNTA EJE L/R. NISSAN X-TRAIL — GTI07-153, SKU GTI07-153. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti07-153-gti-gti07-153-punta-eje-l-r-nissan-x-trail-branded-v2.webp",
+        "alt": "Imagen generada de referencia de PUNTA EJE L/R. NISSAN X-TRAIL — GTI07-153, SKU GTI07-153; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Fotografía de catálogo de kit de punta homocinética lado rueda para Nissan X-Trail con anillo ABS, fuelle y accesorios, fondo blanco.",
       "sourceSha256": "f1e39f90ca98a37b6d416a04a3a93b336a52dc095e20687151eb53bb590878aa",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T17:46:21.800Z"
+      "generatedAt": "2026-08-28T17:46:21.800Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti07-153-punta-eje-l-r-nissan-x-trail-generated-reference.webp",
+        "sourceSha256": "d3abc823857c44934320b460a567ccee386f89179a8a94e184a1fb7b31964cb2",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.278Z"
+      }
     }
   },
   "GTI07154": {
-    "image": "/catalogo-gti/generated/gti-gti07-154-eje-homocinetico-der-mitsubishi-sportero-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti07-154-gti-gti07-154-eje-homocinetico-der-mitsubishi-sportero-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti07-154-eje-homocinetico-der-mitsubishi-sportero-generated-reference.webp",
-        "alt": "Imagen generada de referencia para EJE HOMOCINETICO DER. MITSUBISHI SPORTERO — GTI07-154, SKU GTI07-154. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti07-154-gti-gti07-154-eje-homocinetico-der-mitsubishi-sportero-branded-v2.webp",
+        "alt": "Imagen generada de referencia de EJE HOMOCINETICO DER. MITSUBISHI SPORTERO — GTI07-154, SKU GTI07-154; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Fotografía de catálogo de eje homocinético completo derecho para Mitsubishi Sportero/L200, semieje 4x4 largo con juntas cerradas, fondo blanco.",
       "sourceSha256": "f37a6141c5b187534a5928df6bbcd8433c7fe1c5a9c00cbfac45ebacd18ea9da",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T17:46:21.800Z"
+      "generatedAt": "2026-08-28T17:46:21.800Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti07-154-eje-homocinetico-der-mitsubishi-sportero-generated-reference.webp",
+        "sourceSha256": "a4b405821738e97414de49f157e20cedbc4a3dea4b1d6b873daad81439ad714e",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.278Z"
+      }
     }
   },
   "GTI07155": {
-    "image": "/catalogo-gti/generated/gti-gti07-155-eje-homocinetico-izq-mitsubishi-sportero-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti07-155-gti-gti07-155-eje-homocinetico-izq-mitsubishi-sportero-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti07-155-eje-homocinetico-izq-mitsubishi-sportero-generated-reference.webp",
-        "alt": "Imagen generada de referencia para EJE HOMOCINETICO IZQ. MITSUBISHI SPORTERO — GTI07-155, SKU GTI07-155. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti07-155-gti-gti07-155-eje-homocinetico-izq-mitsubishi-sportero-branded-v2.webp",
+        "alt": "Imagen generada de referencia de EJE HOMOCINETICO IZQ. MITSUBISHI SPORTERO — GTI07-155, SKU GTI07-155; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Fotografía de catálogo de eje homocinético completo izquierdo para Mitsubishi Sportero/L200, semieje 4x4 corto distinto al derecho, fondo blanco.",
       "sourceSha256": "c00a5126017f19f73a7b101c1125bce4518ec70613d526512b3f3f84021fa2f5",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T17:46:21.800Z"
+      "generatedAt": "2026-08-28T17:46:21.800Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti07-155-eje-homocinetico-izq-mitsubishi-sportero-generated-reference.webp",
+        "sourceSha256": "6def1338991cdc358927179e93bf712b4dbfb75374430620f40bb7339499f03d",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.278Z"
+      }
     }
   },
   "GTI07156": {
-    "image": "/catalogo-gti/generated/gti-gti07-156-punta-eje-l-r-mitsubishi-sportero-33-dts-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti07-156-gti-gti07-156-punta-eje-l-r-mitsubishi-sportero-33-dts-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti07-156-punta-eje-l-r-mitsubishi-sportero-33-dts-generated-reference.webp",
-        "alt": "Imagen generada de referencia para PUNTA EJE L/R. MITSUBISHI SPORTERO 33 DTS — GTI07-156, SKU GTI07-156. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti07-156-gti-gti07-156-punta-eje-l-r-mitsubishi-sportero-33-dts-branded-v2.webp",
+        "alt": "Imagen generada de referencia de PUNTA EJE L/R. MITSUBISHI SPORTERO 33 DTS — GTI07-156, SKU GTI07-156; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Fotografía de catálogo de kit de punta homocinética lado rueda reforzada para Mitsubishi Sportero/L200, 33 estrías, fuelle y accesorios, fondo blanco.",
       "sourceSha256": "14bf2395c0747f3c4e1940cd4f5a1e2e6e1f8c701a891b266379a2ad0c32e6f7",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T17:48:48.229Z"
+      "generatedAt": "2026-08-28T17:48:48.229Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti07-156-punta-eje-l-r-mitsubishi-sportero-33-dts-generated-reference.webp",
+        "sourceSha256": "3fcc99a215284c61b39edba43f5534e5c1f858440097f258578a4802cc4065e1",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.279Z"
+      }
     }
   },
   "GTI07160": {
-    "image": "/catalogo-gti/generated/gti-gti07-160-punta-eje-l-r-nissan-almera-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti07-160-gti-gti07-160-punta-eje-l-r-nissan-almera-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti07-160-punta-eje-l-r-nissan-almera-generated-reference.webp",
-        "alt": "Imagen generada de referencia para PUNTA EJE L/R. NISSAN ALMERA — GTI07-160, SKU GTI07-160. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti07-160-gti-gti07-160-punta-eje-l-r-nissan-almera-branded-v2.webp",
+        "alt": "Imagen generada de referencia de PUNTA EJE L/R. NISSAN ALMERA — GTI07-160, SKU GTI07-160; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Fotografía de catálogo de kit de punta homocinética lado rueda para Nissan Almera con anillo ABS, fuelle y accesorios, fondo blanco.",
       "sourceSha256": "1832627389b42ad03bebeedc635b16fb295f8eb43663adb0e227aead7b8218ab",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T17:48:48.230Z"
+      "generatedAt": "2026-08-28T17:48:48.230Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti07-160-punta-eje-l-r-nissan-almera-generated-reference.webp",
+        "sourceSha256": "48867ad0fea6cc67521e0b8c4b7733c14a8e45e3f308a476bc9472795caad102",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.279Z"
+      }
     }
   },
   "GTI07179": {
-    "image": "/catalogo-gti/generated/gti-gti07-179-punta-eje-l-r-chevy-generated-reference.webp",
+    "image": "/catalogo-gti/generated-branded/gti07-179-gti-gti07-179-punta-eje-l-r-chevy-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated/gti-gti07-179-punta-eje-l-r-chevy-generated-reference.webp",
-        "alt": "Imagen generada de referencia para PUNTA EJE L/R. CHEVY — GTI07-179, SKU GTI07-179. No es fotografía original.",
+        "url": "/catalogo-gti/generated-branded/gti07-179-gti-gti07-179-punta-eje-l-r-chevy-branded-v2.webp",
+        "alt": "Imagen generada de referencia de PUNTA EJE L/R. CHEVY — GTI07-179, SKU GTI07-179; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
     "imageStatus": "generated-reference-image",
-    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. Confirmar etiqueta GTI, medidas y VIN antes de vender.",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
       "generationPrompt": "Fotografía de catálogo de kit de punta homocinética lado rueda para Chevrolet Chevy, fuelle, abrazaderas, tuerca y accesorios, fondo blanco.",
       "sourceSha256": "ce8b7bea4ee36ea0cfb5b83dfe2c55ea992f81aff68da2229dde686ba5c44bde",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-28T17:48:48.230Z"
+      "generatedAt": "2026-08-28T17:48:48.230Z",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "GTI",
+        "badgeVariant": "yellow-on-blue-capsule",
+        "sourceImage": "/catalogo-gti/generated/gti-gti07-179-punta-eje-l-r-chevy-generated-reference.webp",
+        "sourceSha256": "957782d99f7de784e0e21045a8438f21974becdf802dfc6a88888708ae2371db",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.279Z"
+      }
+    }
+  },
+  "9833753380": {
+    "image": "/catalogo-ads/branded/9833753380-ads-9833753380-tijera-inferior-izquierda-peugeot-208-branded-v2.webp",
+    "images": [
+      {
+        "url": "/catalogo-ads/branded/9833753380-ads-9833753380-tijera-inferior-izquierda-peugeot-208-branded-v2.webp",
+        "alt": "Imagen generada de referencia de Tijera Inferior Izquierda ADS 9833753380 — Peugeot 208 Nuevo, SKU 9833753380; no es fotografía original. Identificada con el logotipo ADS.",
+        "isMain": true
+      }
+    ],
+    "imageStatus": "generated-reference-image",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo ADS azul fue integrado digitalmente. Confirmar referencia, medidas y VIN antes de vender.",
+    "sourceRecord": {
+      "type": "ai-generated-reference",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "ADS",
+        "badgeVariant": "blue-wordmark",
+        "sourceImage": "/catalogo-ads/ads-9833753380-tijera-inferior-izquierda-peugeot-208-referencial.png",
+        "sourceSha256": "db87aca7006e8bd91b7b7e1b16733ea8327d8c978f7b3364b4d6d53529dbcdb4",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.214Z"
+      }
+    }
+  },
+  "9833753280": {
+    "image": "/catalogo-ads/branded/9833753280-ads-9833753280-tijera-inferior-derecha-peugeot-208-branded-v2.webp",
+    "images": [
+      {
+        "url": "/catalogo-ads/branded/9833753280-ads-9833753280-tijera-inferior-derecha-peugeot-208-branded-v2.webp",
+        "alt": "Imagen generada de referencia de Tijera Inferior Derecha ADS 9833753280 — Peugeot 208 Nuevo, SKU 9833753280; no es fotografía original. Identificada con el logotipo ADS.",
+        "isMain": true
+      }
+    ],
+    "imageStatus": "generated-reference-image",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo ADS azul fue integrado digitalmente. Confirmar referencia, medidas y VIN antes de vender.",
+    "sourceRecord": {
+      "type": "ai-generated-reference",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "ADS",
+        "badgeVariant": "blue-wordmark",
+        "sourceImage": "/catalogo-ads/ads-9833753280-tijera-inferior-derecha-peugeot-208-referencial.png",
+        "sourceSha256": "6d9fd08f56b69dacd453f14644774b80447f4c3d069dfd723090f7515b960fe7",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.216Z"
+      }
+    }
+  },
+  "9824626380": {
+    "image": "/catalogo-ads/branded/9824626380-ads-9824626380-rotula-inferior-peugeot-208-2008-branded-v2.webp",
+    "images": [
+      {
+        "url": "/catalogo-ads/branded/9824626380-ads-9824626380-rotula-inferior-peugeot-208-2008-branded-v2.webp",
+        "alt": "Imagen generada de referencia de Rótula Inferior ADS 9824626380 — Peugeot 208 / 2008, SKU 9824626380; no es fotografía original. Identificada con el logotipo ADS.",
+        "isMain": true
+      }
+    ],
+    "imageStatus": "generated-reference-image",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo ADS azul fue integrado digitalmente. Confirmar referencia, medidas y VIN antes de vender.",
+    "sourceRecord": {
+      "type": "ai-generated-reference",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "ADS",
+        "badgeVariant": "blue-wordmark",
+        "sourceImage": "/catalogo-ads/ads-9824626380-rotula-inferior-peugeot-208-2008-referencial.png",
+        "sourceSha256": "a6a8b9539d1db697c4e39d2e71572644a0a188c86d259b0937efac715ec31057",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.217Z"
+      }
+    }
+  },
+  "9802103780": {
+    "image": "/catalogo-ads/branded/9802103780-ads-9802103780-rotula-inferior-peugeot-2008-c3-aircross-branded-v2.webp",
+    "images": [
+      {
+        "url": "/catalogo-ads/branded/9802103780-ads-9802103780-rotula-inferior-peugeot-2008-c3-aircross-branded-v2.webp",
+        "alt": "Imagen generada de referencia de Rótula Inferior ADS 9802103780 — Peugeot 2008 / Citroën C3 Aircross, SKU 9802103780; no es fotografía original. Identificada con el logotipo ADS.",
+        "isMain": true
+      }
+    ],
+    "imageStatus": "generated-reference-image",
+    "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo ADS azul fue integrado digitalmente. Confirmar referencia, medidas y VIN antes de vender.",
+    "sourceRecord": {
+      "type": "ai-generated-reference",
+      "brandTreatment": {
+        "version": 2,
+        "brand": "ADS",
+        "badgeVariant": "blue-wordmark",
+        "sourceImage": "/catalogo-ads/ads-9802103780-rotula-inferior-peugeot-2008-c3-aircross-referencial.png",
+        "sourceSha256": "791646c64e446fcc63cd8860b2af07efdd9d5b4452136d978a884eb996933ede",
+        "renderer": "scripts/brand-generated-product-images.mjs",
+        "appliedAt": "2026-08-30T22:53:45.219Z"
+      }
     }
   }
 });

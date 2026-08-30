@@ -6,7 +6,7 @@ export const revalidate = false;
 export const metadata = {
   title: "Marcas y Fabricantes Automotrices | REMBERT Repuestos",
   description:
-    "Busca y encuentra repuestos automotrices por marca y fabricante: Chevrolet, Renault, Toyota, Kia, Hyundai, Mazda, GTI, Verke, TNK, WIX, Bosch, Incolbest y más en Barrancabermeja con envíos a Colombia.",
+    "Busca y encuentra repuestos automotrices por marca y fabricante: Chevrolet, Renault, Toyota, Kia, Hyundai, Mazda, Dynamik, GTI, Verke, TNK, WIX, Bosch, Incolbest y más en Barrancabermeja con envíos a Colombia.",
   alternates: {
     canonical: "/marcas",
   },

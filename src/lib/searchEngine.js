@@ -305,6 +305,21 @@ export function scoreProductSearch(product, rawQuery) {
     }
   }
 
+  // Bonificación de prioridad para marca ADS en búsquedas de soportes (soportes de motor primero)
+  if (score > 0 && queryClean.includes("soporte")) {
+    const isSoporte = name.includes("soporte") || categorySlug.includes("soporte") || line.includes("soporte");
+    if (isSoporte) {
+      if (brandSlug === "ads" || brandName === "ads") {
+        score += 4500; // Prioridad #1 para soportes ADS
+      } else if (brandSlug && brandSlug !== "marca-segun-empaque") {
+        score += 800; // Marcas reconocidas
+      }
+      if (name.includes("soporte motor") || name.includes("soporte de motor") || name.includes("soporte hidraulico") || name.includes("soporte caja")) {
+        score += 400;
+      }
+    }
+  }
+
   return { matches: score > 0, score };
 }
 

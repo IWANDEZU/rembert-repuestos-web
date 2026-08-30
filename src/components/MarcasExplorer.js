@@ -73,7 +73,7 @@ const ALL_BRANDS = [
     category: "vehiculos",
     categoryLabel: "Fabricante Automotriz",
     models: "March, Versa, Sentra, Kicks, Frontier, X-Trail, Qashqai",
-    count: 33,
+    count: 161,
   },
   {
     name: "Toyota",
@@ -222,7 +222,17 @@ const ALL_BRANDS = [
     category: "repuestos",
     categoryLabel: "Bocines y Dirección",
     models: "Bocines de rueda ABS y cajas de dirección",
-    count: 5,
+    count: 7,
+  },
+  {
+    name: "Dynamik",
+    slug: "dynamik",
+    logo: "/catalogo-dynamik/dynamik-pastillas-discos-catalogo.jpg",
+    category: "suspension",
+    categoryLabel: "Frenos y Fricción",
+    models: "Pastillas Low Metallic, Semi Metallic, Carboceramic, Severe Duty y discos",
+    count: 33,
+    highlight: true,
   },
   {
     name: "Motorcraft",
@@ -473,6 +483,7 @@ const POPULAR_QUICK_SEARCHES = [
   { label: "GTI Autoparts", type: "brand", query: "gti" },
   { label: "Verke", type: "brand", query: "verke" },
   { label: "TNK Suspensión", type: "brand", query: "tnk" },
+  { label: "Dynamik", type: "brand", query: "dynamik" },
   { label: "WIX Filters", type: "brand", query: "wix" },
   { label: "Amortiguadores", type: "part", query: "amortiguador" },
   { label: "Pastillas de freno", type: "part", query: "pastillas" },
@@ -876,7 +887,7 @@ export default function MarcasExplorer() {
             const hasActiveQuery = searchQuery.trim().length > 0;
             const targetHref = hasActiveQuery
               ? `/catalogo?brand=${brand.slug}&search=${encodeURIComponent(searchQuery.trim())}`
-              : `/catalogo?brand=${brand.slug}`;
+              : brand.slug === "dynamik" ? "/marcas/dynamik" : `/catalogo?brand=${brand.slug}`;
 
             return (
               <div

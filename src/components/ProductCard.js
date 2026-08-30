@@ -6,17 +6,19 @@ import Image from "next/image";
 import Link from "next/link";
 import { useSession } from "@/components/AuthProvider";
 import { useRouter } from "next/navigation";
-import { getProductDisplayImage } from "@/lib/productImage";
+import { getProductDisplayImage, isDynamikProduct } from "@/lib/productImage";
 import { generateWhatsAppProductText, getWhatsAppUrl } from "@/lib/orderFormatter";
 import WhatsAppIcon from "@/components/WhatsAppIcon";
 import ProductCompatibilityPanel from "@/components/ProductCompatibilityPanel";
 import { getProductReferenceLabel } from "@/lib/productCompatibility";
+import ProductImageSignature from "@/components/ProductImageSignature";
 
 export default function ProductCard({ product, onExpand, isFavorite = false, isRepeated = false }) {
   const { addToCart } = useCart();
   const [added, setAdded] = useState(false);
   const [favorite, setFavorite] = useState(isFavorite);
   const [isUpdatingFav, setIsUpdatingFav] = useState(false);
+  const [unavailableImageUrl, setUnavailableImageUrl] = useState("");
   const { data: session } = useSession();
   const router = useRouter();
 
@@ -55,8 +57,12 @@ export default function ProductCard({ product, onExpand, isFavorite = false, isR
   };
 
   const imageUrl = getProductDisplayImage(product);
+  const isDynamik = isDynamikProduct(product);
+  const isGeneratedReference = product.imageStatus === "generated-reference-image";
   const referenceLabel = getProductReferenceLabel(product);
   const canBuy = Boolean(product.inStock && Number(product.stock) > 0 && Number(product.price) > 0);
+
+  const isImageUnavailable = unavailableImageUrl === imageUrl;
 
   const handleAddToCart = () => {
     if (!canBuy) return;
@@ -110,17 +116,37 @@ export default function ProductCard({ product, onExpand, isFavorite = false, isR
           aria-label={`Ver ${product.name}`}
           style={{ position: "relative", display: "block", width: "100%", height: "100%" }}
         >
-          <Image
-            src={imageUrl}
-            alt={product.images?.[0]?.alt || product.name}
-            fill
-            sizes="(max-width: 640px) 100vw, (max-width: 1100px) 33vw, 260px"
-            unoptimized={imageUrl.startsWith("/api/imagen-referencia")}
-            loading="lazy"
-            decoding="async"
-            className="product-card__image"
-            style={{ objectFit: "contain", objectPosition: "center" }}
-          />
+          {!imageUrl || isImageUnavailable ? (
+            <span
+              role="status"
+              style={{ position: "absolute", inset: 0, display: "grid", placeItems: "center", padding: "16px", textAlign: "center", color: "#475569", fontSize: "0.78rem", fontWeight: 700, background: "#F8FAFC" }}
+            >
+              Foto real pendiente de validación
+            </span>
+          ) : (
+            <Image
+              src={imageUrl}
+              alt={product.images?.[0]?.alt || product.name}
+              fill
+              sizes="(max-width: 640px) 100vw, (max-width: 1100px) 33vw, 260px"
+              quality={isDynamik ? 100 : undefined}
+              unoptimized={isDynamik || imageUrl.startsWith("/api/imagen-referencia")}
+              onError={() => setUnavailableImageUrl(imageUrl)}
+              loading="lazy"
+              decoding="async"
+              className="product-card__image"
+              style={{ objectFit: "contain", objectPosition: "center" }}
+            />
+          )}
+          <ProductImageSignature product={product} compact />
+          {isGeneratedReference && (
+            <span
+              role="note"
+              style={{ position: "absolute", left: "6px", bottom: "6px", zIndex: 3, borderRadius: "999px", background: "#1E293B", color: "#F8FAFC", padding: "4px 7px", fontSize: "0.64rem", fontWeight: 800, letterSpacing: "0.01em" }}
+            >
+              Ilustración IA · no verificada
+            </span>
+          )}
         </Link>
 
 
@@ -182,6 +208,7 @@ export default function ProductCard({ product, onExpand, isFavorite = false, isR
 
       <div style={{ margin: "0.45rem 0 0.3rem", display: "flex", flexDirection: "column", gap: "2px" }}>
         <h3
+          className="product-card__title"
           style={{
             fontSize: "clamp(0.82rem, 2.2vw, 0.90rem)",
             fontWeight: "700",

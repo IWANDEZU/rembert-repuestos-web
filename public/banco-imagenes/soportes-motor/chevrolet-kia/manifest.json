@@ -1,0 +1,63 @@
+{
+  "title": "Banco visual — soportes de motor Chevrolet y Kia",
+  "usage": "Biblioteca interna de imágenes generadas para preparar fichas. No publicar como fotografía oficial ni usar para confirmar compatibilidad sin VIN, OEM o muestra física.",
+  "imageStatus": "generated-reference-image",
+  "items": [
+    {
+      "file": "chevrolet-aveo-soporte-derecho-96535431-referencial.png",
+      "brand": "Chevrolet",
+      "vehicle": "Aveo",
+      "position": "Derecho",
+      "referenceFamily": "96535431"
+    },
+    {
+      "file": "chevrolet-sail-soporte-trasero-9072809-referencial.png",
+      "brand": "Chevrolet",
+      "vehicle": "Sail",
+      "position": "Trasero",
+      "referenceFamily": "9072809"
+    },
+    {
+      "file": "chevrolet-spark-beat-soporte-derecho-96484904-referencial.png",
+      "brand": "Chevrolet",
+      "vehicle": "Spark / Beat",
+      "position": "Derecho",
+      "referenceFamily": "96484904"
+    },
+    {
+      "file": "chevrolet-onix-sonic-soporte-trasero-95493722-referencial.png",
+      "brand": "Chevrolet",
+      "vehicle": "Onix / Sonic / Cobalt / Tracker",
+      "position": "Trasero",
+      "referenceFamily": "95493722"
+    },
+    {
+      "file": "kia-picanto-ion-soporte-derecho-21810-1y200-referencial.png",
+      "brand": "Kia",
+      "vehicle": "Picanto Ion",
+      "position": "Derecho",
+      "referenceFamily": "21810-1Y200"
+    },
+    {
+      "file": "kia-rio-spice-soporte-derecho-21810-2v000-referencial.png",
+      "brand": "Kia",
+      "vehicle": "Rio Spice / Cerato Pro",
+      "position": "Derecho",
+      "referenceFamily": "21810-2V000"
+    },
+    {
+      "file": "kia-cerato-forte-soporte-derecho-21810-2h000-referencial.png",
+      "brand": "Kia",
+      "vehicle": "Cerato Forte",
+      "position": "Derecho",
+      "referenceFamily": "21810-2H000"
+    },
+    {
+      "file": "kia-rio-spice-soporte-trasero-21950-2v000-referencial.png",
+      "brand": "Kia",
+      "vehicle": "Rio Spice / Cerato Pro",
+      "position": "Trasero",
+      "referenceFamily": "21950-2V000"
+    }
+  ]
+}

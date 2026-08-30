@@ -1,6 +1,10 @@
 import { frenosSuspensionProducts } from "../data/frenosSuspensionProducts.js";
 import { brandPanelProducts } from "../data/brandPanelProducts.js";
 import { catalogoProveedoresProducts } from "../data/catalogoProveedoresProducts.js";
+import { getVerifiedDynamikPhoto } from "../data/dynamikLocalPhotoAssets.js";
+import { getVerifiedDynamikSourcedPhoto } from "../data/dynamikSourcedPhotoAssets.js";
+import { getCiosaDynamikPhoto, getCiosaDynamikTechnicalSource } from "../data/dynamikCiosaPhotoAssets.js";
+import { getDynamikSyntheticVisual, isDynamikSyntheticVisualCompatible } from "../data/dynamikSyntheticVisuals.js";
 import { automatedCatalogProducts } from "../data/automatedCatalogProducts.js";
 import { kiaProducts } from "../data/kiaProducts.js";
 import { electricalProducts } from "../data/electricalProducts.js";
@@ -1294,10 +1298,106 @@ const applyRealImageOverride = (product) => {
   };
 };
 
+const sanitizeDynamikMedia = (product) => {
+  const brand = String(product?.brand?.slug || product?.brand?.name || product?.brand || "").trim().toLowerCase();
+  if (brand !== "dynamik") return product;
+
+  const ciosaTechnicalSource = getCiosaDynamikTechnicalSource(product.sku);
+  const technical = ciosaTechnicalSource?.technical || {};
+  const technicalAttributes = [
+    ["Descripción Ciosa", technical.description],
+    ["Sistema", technical.system],
+    ["Subgrupo", technical.subgroup],
+    ["Grupo", technical.group],
+    ...(Array.isArray(technical.specifications)
+      ? technical.specifications.map((item) => [item.name, item.value])
+      : []),
+    ["Fuente técnica", ciosaTechnicalSource ? "Ciosa Autopartes · NPC exacto" : null],
+  ].filter(([, value]) => value);
+  const existingAttributes = Array.isArray(product.attributes) ? product.attributes : [];
+  const existingNames = new Set(existingAttributes.map((attribute) => String(attribute.name || "").toLowerCase()));
+  const enrichedProduct = ciosaTechnicalSource
+    ? {
+        ...product,
+        sourceUrl: ciosaTechnicalSource.sourceProof.detailUrl,
+        attributes: [
+          ...existingAttributes,
+          ...technicalAttributes
+            .filter(([name]) => !existingNames.has(name.toLowerCase()))
+            .map(([name, value]) => ({ name, value })),
+        ],
+      }
+    : product;
+
+  // Las fotografías exactas siempre tienen prioridad. Las ilustraciones
+  // referenciales se mantienen separadas y pasan además una validación de
+  // familia para impedir cruces entre pastillas, discos y embrague.
+  const verifiedPhoto = getVerifiedDynamikPhoto(product.sku);
+  if (verifiedPhoto) {
+    return {
+      ...product,
+      ...enrichedProduct,
+      image: verifiedPhoto.main.url,
+      images: verifiedPhoto.views,
+      imageStatus: "exact-real-photo",
+      imageDisclosure: "Fotografía real de esta referencia verificada.",
+    };
+  }
+
+  const sourcedPhoto = getVerifiedDynamikSourcedPhoto(product.sku);
+  if (sourcedPhoto) {
+    return {
+      ...product,
+      ...enrichedProduct,
+      image: sourcedPhoto.main.url,
+      images: sourcedPhoto.views,
+      imageStatus: "exact-real-photo",
+      imageDisclosure: `Fotografía física exacta de ${product.sku}, verificada por NPC y marcación Dynamik.`,
+      sourceUrl: enrichedProduct.sourceUrl,
+      imageReferenceSourceUrl: sourcedPhoto.sourceProof.sourcePageUrl,
+      imageReferenceSourceLabel: "Ver fuente de la foto",
+    };
+  }
+
+  const ciosaPhoto = getCiosaDynamikPhoto(product.sku);
+  if (ciosaPhoto) {
+    return {
+      ...enrichedProduct,
+      image: ciosaPhoto.main.url,
+      images: ciosaPhoto.views,
+      imageStatus: ciosaPhoto.imageStatus,
+      imageDisclosure: ciosaPhoto.imageDisclosure,
+      sourceUrl: ciosaPhoto.sourceProof.detailUrl,
+    };
+  }
+
+  const syntheticVisual = getDynamikSyntheticVisual(product.sku);
+    if (syntheticVisual && isDynamikSyntheticVisualCompatible(product, syntheticVisual)) {
+      return {
+        ...enrichedProduct,
+        image: syntheticVisual.main.url,
+        images: syntheticVisual.views,
+        imageStatus: syntheticVisual.imageStatus,
+        imageDisclosure: syntheticVisual.imageDisclosure,
+        sourceUrl: enrichedProduct.sourceUrl,
+        imageReferenceSourceUrl: syntheticVisual.sourceUrl || null,
+        imageReferenceSourceLabel: "Ver cruce geométrico",
+      };
+    }
+
+  return {
+    ...enrichedProduct,
+    image: null,
+    images: [],
+    imageStatus: "pending-real-photo",
+    imageDisclosure: "Fotografía real de esta referencia pendiente de validación.",
+  };
+};
+
 export const products = consolidateCatalogProducts([
   ...inventoryBackedProducts,
   ...approvedPostInventoryProducts,
-]).map(applyRealImageOverride);
+]).map(applyRealImageOverride).map(sanitizeDynamikMedia);
 
 export function getProductById(id) {
   const norm = normalizeInventoryCode(id);

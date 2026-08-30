@@ -258,7 +258,7 @@ export default function RootLayout({ children }) {
               </div>
               <div className="navbar__main">
                 {/* Brand / Logo + 38 Años de Experiencia Debajo */}
-                <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: '0.45rem' }}>
+                <div className="navbar__identity" style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: '0.45rem' }}>
                   <Link href="/" className="navbar__brand" style={{ display: 'flex', alignItems: 'center', textDecoration: 'none' }}>
                     <BrandLogo width={285} height={95} />
                   </Link>

@@ -1,10 +1,10 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import AddToCartButton from "./AddToCartButton";
 import Image from "next/image";
-import Link from "next/link";
-import { getProductDisplayImage } from "@/lib/productImage";
+import { getDynamikCatalogGallery, getProductDisplayImage, hasDynamikCatalogGallery, isDynamikProduct } from "@/lib/productImage";
+import ProductImageSignature from "@/components/ProductImageSignature";
 import { generateWhatsAppProductText, getWhatsAppUrl } from "@/lib/orderFormatter";
 import WhatsAppIcon from "@/components/WhatsAppIcon";
 import ProductCompatibilityPanel from "@/components/ProductCompatibilityPanel";
@@ -17,13 +17,20 @@ export default function ProductVariantSelector({ product }) {
   const [activeTab, setActiveTab] = useState("desc");
   const [isZoomOpen, setIsZoomOpen] = useState(false);
   const [quantity, setQuantity] = useState(1);
+  const [unavailableImageUrls, setUnavailableImageUrls] = useState([]);
+  const zoomHistoryPushedRef = useRef(false);
+  const hasOfficialDynamikGallery = hasDynamikCatalogGallery(product);
+  const isDynamik = isDynamikProduct(product);
+  const isReferentialImage = ["ai-catalog-watermarked", "generated-reference-image", "user-supplied-reference-graphic"].includes(product.imageStatus);
 
   // Manejo de retroceso nativo en celular (botón atrás) y bloqueo de scroll
   useEffect(() => {
     if (!isZoomOpen) return;
 
     window.history.pushState({ zoomOpen: true }, "");
+    zoomHistoryPushedRef.current = true;
     const handlePopState = () => {
+      zoomHistoryPushedRef.current = false;
       setIsZoomOpen(false);
     };
     window.addEventListener("popstate", handlePopState);
@@ -32,7 +39,7 @@ export default function ProductVariantSelector({ product }) {
     document.body.style.overflow = "hidden";
 
     const handleKeyDown = (e) => {
-      if (e.key === "Escape") setIsZoomOpen(false);
+      if (e.key === "Escape") window.history.back();
     };
     window.addEventListener("keydown", handleKeyDown);
 
@@ -43,22 +50,52 @@ export default function ProductVariantSelector({ product }) {
     };
   }, [isZoomOpen]);
 
+  const closeZoom = () => {
+    if (zoomHistoryPushedRef.current) {
+      window.history.back();
+      return;
+    }
+    setIsZoomOpen(false);
+  };
+
   // Obtener solo las imágenes verdaderas del producto
   const defaultImage = getProductDisplayImage(product);
   
-  const galleryImages = product.images && product.images.length > 0 && product.images[0]?.url === defaultImage
-    ? product.images.map(img => img.url) 
-    : [defaultImage];
+  const sourceGallery = hasOfficialDynamikGallery
+    ? getDynamikCatalogGallery(product)
+    : isDynamikProduct(product)
+    ? []
+    : product.images?.length
+    ? product.images
+    : [{ url: defaultImage, alt: product.name, label: "Producto", isMain: true }];
+  // Dynamik usa fotografías físicas verificadas asignadas al mismo NPC. Cuando
+  // existe una ilustración sintética explícita, se mantiene rotulada como tal.
+  const imageKey = (url) => `${product?.sku || product?.id || "dynamik"}:${url}`;
+  const galleryImages = sourceGallery.filter((image) => !unavailableImageUrls.includes(imageKey(image.url)));
+  const initialImageIndex = Math.max(0, galleryImages.findIndex((image) => image.isMain || image.url === defaultImage));
+  const [selectedImageIndex, setSelectedImageIndex] = useState(initialImageIndex);
+  const resolvedImageIndex = Math.min(selectedImageIndex, Math.max(0, galleryImages.length - 1));
+  const activeImage = galleryImages[resolvedImageIndex] || galleryImages[initialImageIndex];
+  const selectedImage = activeImage?.url || defaultImage;
 
-  const [selectedImage, setSelectedImage] = useState(defaultImage);
+  const hideUnavailableImage = (url) => {
+    const key = imageKey(url);
+    setUnavailableImageUrls((current) => current.includes(key) ? current : [...current, key]);
+  };
+
+  const selectGalleryImage = (index) => {
+    if (galleryImages.length === 0) return;
+    setSelectedImageIndex((index + galleryImages.length) % galleryImages.length);
+  };
 
   // Cambiar variante manteniendo la foto auténtica del producto
   const handleVariantSelect = (variant) => {
     setSelectedVariant(variant);
     if (variant && variant.image) {
-      setSelectedImage(variant.image);
+      const variantIndex = galleryImages.findIndex((image) => image.url === variant.image && !image.zoom);
+      setSelectedImageIndex(variantIndex >= 0 ? variantIndex : initialImageIndex);
     } else {
-      setSelectedImage(defaultImage);
+      setSelectedImageIndex(initialImageIndex);
     }
   };
 
@@ -87,8 +124,10 @@ export default function ProductVariantSelector({ product }) {
       
       {/* Barra Superior de Retorno Rápido para Móvil */}
       <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '10px' }}>
-        <Link
-          href="/catalogo"
+        <button
+          type="button"
+          onClick={() => window.history.back()}
+          aria-label="Volver un paso"
           style={{
             display: 'inline-flex',
             alignItems: 'center',
@@ -100,12 +139,12 @@ export default function ProductVariantSelector({ product }) {
             borderRadius: '8px',
             fontWeight: '700',
             fontSize: '0.88rem',
-            textDecoration: 'none',
+            cursor: 'pointer',
             boxShadow: '0 2px 8px rgba(0,0,0,0.3)'
           }}
         >
           ← Volver al Catálogo / Menú
-        </Link>
+        </button>
         <span style={{ color: '#888', fontSize: '0.85rem' }}>
           {categoryName} • <strong>{brandName}</strong>
         </span>
@@ -114,7 +153,7 @@ export default function ProductVariantSelector({ product }) {
       {/* Modal / Lightbox de Foto Ampliada Ultra Accesible en Móvil */}
       {isZoomOpen && (
         <div 
-          onClick={() => setIsZoomOpen(false)}
+          onClick={closeZoom}
           style={{
             position: 'fixed',
             top: 0,
@@ -146,7 +185,7 @@ export default function ProductVariantSelector({ product }) {
             }}
           >
             <button 
-              onClick={() => setIsZoomOpen(false)}
+              onClick={closeZoom}
               style={{
                 background: '#E52421',
                 color: '#fff',
@@ -166,7 +205,7 @@ export default function ProductVariantSelector({ product }) {
             </button>
 
             <button 
-              onClick={() => setIsZoomOpen(false)}
+              onClick={closeZoom}
               style={{
                 background: '#222',
                 color: '#fff',
@@ -190,19 +229,21 @@ export default function ProductVariantSelector({ product }) {
             onClick={(e) => e.stopPropagation()}
             style={{ position: 'relative', maxWidth: '92vw', maxHeight: '80vh', marginTop: '40px', background: '#FFFFFF', padding: '16px', borderRadius: '12px' }}
           >
-            <Image
+            {selectedImage && <Image
               src={selectedImage} 
               alt={product.name} 
               width={1200}
               height={1000}
-              unoptimized={selectedImage.startsWith('/api/imagen-referencia')}
+              quality={isDynamik ? 100 : undefined}
+              unoptimized={isDynamik || selectedImage.startsWith('/api/imagen-referencia')}
+              onError={() => hideUnavailableImage(selectedImage)}
               style={{ maxWidth: '100%', maxHeight: '72vh', objectFit: 'contain', borderRadius: '12px', boxShadow: '0 10px 40px rgba(0,0,0,0.9)' }} 
-            />
+            />}
           </div>
 
           {/* Botón Inferior Táctil para Móvil */}
           <button 
-            onClick={() => setIsZoomOpen(false)}
+            onClick={closeZoom}
             style={{
               marginTop: '16px',
               background: '#222',
@@ -237,7 +278,7 @@ export default function ProductVariantSelector({ product }) {
           
           {/* Contenedor Principal de la Foto */}
           <div 
-            onClick={() => setIsZoomOpen(true)}
+            onClick={() => selectedImage && setIsZoomOpen(true)}
             style={{ 
               background: '#FFFFFF', 
               borderRadius: '12px', 
@@ -248,24 +289,37 @@ export default function ProductVariantSelector({ product }) {
               height: 'clamp(260px, 45vw, 380px)',
               border: '1px solid #E2E8F0',
               position: 'relative',
-              cursor: 'zoom-in',
+              cursor: selectedImage ? 'zoom-in' : 'default',
               overflow: 'hidden'
             }}
           >
-            <Image
+            {selectedImage ? <Image
               src={selectedImage} 
               alt={product.name} 
               width={800}
               height={600}
-              unoptimized={selectedImage.startsWith('/api/imagen-referencia')}
+              quality={isDynamik ? 100 : undefined}
+              unoptimized={isDynamik || selectedImage.startsWith('/api/imagen-referencia')}
+              onError={() => hideUnavailableImage(selectedImage)}
               priority
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
-              style={{ maxWidth: '100%', maxHeight: '330px', objectFit: 'contain', transition: 'transform 0.3s ease' }} 
-            />
+              style={{ maxWidth: '100%', maxHeight: '330px', objectFit: 'contain', transition: 'opacity 0.18s ease' }}
+            /> : (
+              <p role="status" style={{ maxWidth: '260px', margin: 0, color: '#475569', fontWeight: 700, lineHeight: 1.4, textAlign: 'center' }}>
+                Fotografía real de esta referencia pendiente de validación.
+              </p>
+            )}
+            {selectedImage && <ProductImageSignature product={product} />}
+
+            {activeImage?.label && (
+              <span style={{ position: 'absolute', top: '10px', left: '10px', background: 'rgba(17,24,39,0.86)', color: '#fff', padding: '5px 9px', borderRadius: '999px', fontSize: '0.72rem', fontWeight: 800, letterSpacing: '0.02em' }}>
+                {activeImage.label}
+              </span>
+            )}
 
             
             {/* Badge de Zoom */}
-            <span style={{
+            {selectedImage && <span style={{
               position: 'absolute',
               bottom: '10px',
               right: '10px',
@@ -280,22 +334,30 @@ export default function ProductVariantSelector({ product }) {
               gap: '5px'
             }}>
               🔍 Ampliar
-            </span>
+            </span>}
           </div>
 
-          {/* Miniaturas / Thumbnails (solo si el producto tiene más de 1 foto auténtica) */}
+          {/* Slider de vistas físicas: producto y detalle de la misma toma. */}
           {galleryImages.length > 1 && (
-            <div style={{ display: 'flex', gap: '10px', overflowX: 'auto', paddingBottom: '5px' }}>
-              {galleryImages.map((imgUrl, idx) => (
-                <div 
-                  key={idx}
-                  onClick={() => setSelectedImage(imgUrl)}
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }} aria-label="Vistas del producto">
+              <div style={{ display: 'flex', justifyContent: 'space-between', gap: '8px', color: '#CBD5E1', fontSize: '0.78rem', fontWeight: 700 }}>
+                <span>Galería verificada</span><span>{resolvedImageIndex + 1} de {galleryImages.length}</span>
+              </div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+              <button type="button" onClick={() => selectGalleryImage(selectedImageIndex - 1)} aria-label="Vista anterior" style={{ width: '44px', height: '48px', flexShrink: 0, borderRadius: '10px', border: '1px solid #64748B', background: '#0F172A', color: '#fff', cursor: 'pointer', fontSize: '1.3rem', fontWeight: 800 }}>‹</button>
+              <div style={{ display: 'flex', gap: '10px', overflowX: 'auto', paddingBottom: '5px' }}>
+                {galleryImages.map((image, idx) => (
+                <button
+                  type="button"
+                  key={`${image.url}-${image.label || idx}-${idx}`}
+                  onClick={() => selectGalleryImage(idx)}
+                  aria-label={`Ver ${image.label || `vista ${idx + 1}`} de ${product.name}`}
                   style={{
                     width: '68px',
                     height: '68px',
                     borderRadius: '8px',
                     background: '#FFFFFF',
-                    border: selectedImage === imgUrl ? '2px solid var(--primary-color)' : '1px solid #CBD5E1',
+                    border: resolvedImageIndex === idx ? '2px solid var(--primary-color)' : '1px solid #CBD5E1',
                     padding: '4px',
                     cursor: 'pointer',
                     display: 'flex',
@@ -305,10 +367,24 @@ export default function ProductVariantSelector({ product }) {
                     transition: 'background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease'
                   }}
                 >
-                  <Image src={imgUrl} alt={`Vista ${idx + 1} de ${product.name}`} width={68} height={68} unoptimized={imgUrl.startsWith('/api/imagen-referencia')} style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
-                </div>
+                  <Image src={image.url} alt={image.alt || `Vista ${idx + 1} de ${product.name}`} width={68} height={68} quality={isDynamik ? 100 : undefined} unoptimized={isDynamik || image.url.startsWith('/api/imagen-referencia')} onError={() => hideUnavailableImage(image.url)} style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+                </button>
               ))}
+              </div>
+              <button type="button" onClick={() => selectGalleryImage(selectedImageIndex + 1)} aria-label="Vista siguiente" style={{ width: '44px', height: '48px', flexShrink: 0, borderRadius: '10px', border: '1px solid #64748B', background: '#0F172A', color: '#fff', cursor: 'pointer', fontSize: '1.3rem', fontWeight: 800 }}>›</button>
+              </div>
             </div>
+          )}
+          {product.imageDisclosure && selectedImage && (
+            <p style={{ margin: 0, color: "#94A3B8", fontSize: "0.74rem", lineHeight: 1.4 }}>
+              {product.imageDisclosure}
+              {product.sourceUrl && (
+                <> <a href={product.sourceUrl} target="_blank" rel="noreferrer" style={{ color: "#FACC15", fontWeight: 700 }}>Ver fuente por NPC</a>.</>
+              )}
+              {product.imageReferenceSourceUrl && (
+                <> <a href={product.imageReferenceSourceUrl} target="_blank" rel="noreferrer" style={{ color: "#FB923C", fontWeight: 700, marginLeft: "6px" }}>{product.imageReferenceSourceLabel || "Ver cruce geométrico"}</a>.</>
+              )}
+            </p>
           )}
 
         </div>
@@ -324,9 +400,12 @@ export default function ProductVariantSelector({ product }) {
 
           {product.sku && <p className="product-reference product-reference--detail">{referenceLabel}: {product.sku}</p>}
 
-          {product.imageStatus === "generated-reference-image" && (
-            <p style={{ margin: '0 0 16px', color: '#FDE68A', border: '1px solid rgba(246, 200, 0, 0.55)', background: 'rgba(146, 64, 14, 0.18)', borderRadius: '8px', padding: '10px 12px', fontSize: '0.88rem', lineHeight: 1.45 }}>
-              Imagen generada de referencia, no fotografía original. Confirmar referencia, medidas y aplicación antes de vender o instalar.
+          {isReferentialImage && (
+            <p
+              role="note"
+              style={{ margin: '0 0 12px', color: '#CBD5E1', fontSize: '0.76rem', lineHeight: 1.35 }}
+            >
+              Imagen referencial: confirma la referencia física antes de comprar o instalar.
             </p>
           )}
           

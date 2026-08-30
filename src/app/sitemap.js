@@ -29,6 +29,12 @@ export default async function sitemap() {
       priority: 0.85,
     },
     {
+      url: `${baseUrl}/marcas/dynamik`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.82,
+    },
+    {
       url: `${baseUrl}/nosotros`,
       lastModified: now,
       changeFrequency: "monthly",

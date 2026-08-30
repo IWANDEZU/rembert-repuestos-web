@@ -36,5 +36,7 @@ export async function generateMetadata({ params }) {
 export default async function StaticCategoryPage({ params }) {
   const { category } = await params;
   const searchParams = category === "todos" ? {} : { category };
-  return Catalogo({ searchParams: Promise.resolve(searchParams) });
+  // Renderizar el componente de página como elemento conserva el límite entre
+  // Server Components y los controles de cliente del catálogo (paginación).
+  return <Catalogo searchParams={Promise.resolve(searchParams)} />;
 }

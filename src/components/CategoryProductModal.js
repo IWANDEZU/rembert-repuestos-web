@@ -3,11 +3,12 @@
 import { useState, useEffect, useCallback, useRef } from "react";
 import { useCart } from "@/components/CartContext";
 import Image from "next/image";
-import { getProductDisplayImage } from "@/lib/productImage";
+import { getDynamikCatalogGallery, getProductDisplayImage, hasDynamikCatalogGallery, isDynamikProduct } from "@/lib/productImage";
 import { generateWhatsAppProductText, getWhatsAppUrl } from "@/lib/orderFormatter";
 import WhatsAppIcon from "@/components/WhatsAppIcon";
 import ProductCompatibilityPanel from "@/components/ProductCompatibilityPanel";
 import { getProductReferenceLabel } from "@/lib/productCompatibility";
+import ProductImageSignature from "@/components/ProductImageSignature";
 
 const getMainImage = (product) => getProductDisplayImage(product);
 const getFirstVariant = (product) => product?.variants?.[0] || null;
@@ -24,9 +25,12 @@ export default function CategoryProductModal({ products, initialIndex = 0, onClo
   const { addToCart } = useCart();
 
   const currentProduct = products && products.length > 0 ? products[currentIndex] : null;
+  const isDynamik = isDynamikProduct(currentProduct);
   const referenceLabel = getProductReferenceLabel(currentProduct);
+  const isReferentialImage = ["ai-catalog-watermarked", "generated-reference-image", "user-supplied-reference-graphic"].includes(currentProduct?.imageStatus);
   const [selectedVariant, setSelectedVariant] = useState(() => getFirstVariant(initialProduct));
   const [selectedImage, setSelectedImage] = useState(() => getMainImage(initialProduct));
+  const [unavailableImageUrls, setUnavailableImageUrls] = useState([]);
 
   const selectProduct = useCallback((nextIndex) => {
     const nextProduct = products?.[nextIndex];
@@ -117,9 +121,29 @@ export default function CategoryProductModal({ products, initialIndex = 0, onClo
     setTimeout(() => setAdded(false), 2000);
   };
 
-  const galleryImages = currentProduct.images && currentProduct.images.length > 0 && currentProduct.images[0]?.url === getMainImage(currentProduct)
+  const sourceGalleryImages = hasDynamikCatalogGallery(currentProduct)
+    ? getDynamikCatalogGallery(currentProduct).map((image) => image.url)
+    : isDynamikProduct(currentProduct)
+    ? []
+    : currentProduct.images && currentProduct.images.length > 0 && currentProduct.images[0]?.url === getMainImage(currentProduct)
     ? currentProduct.images.map((img) => img.url)
     : [selectedImage || "/logo.png"];
+  const imageKey = (url) => `${currentProduct.sku || currentProduct.id}:${url}`;
+  const galleryImages = sourceGalleryImages.filter((url) => !unavailableImageUrls.includes(imageKey(url)));
+
+  const hideUnavailableImage = (url) => {
+    const key = imageKey(url);
+    setUnavailableImageUrls((current) => current.includes(key) ? current : [...current, key]);
+    if (selectedImage === url) {
+      const nextImage = sourceGalleryImages.find((candidate) => candidate !== url && !unavailableImageUrls.includes(imageKey(candidate)));
+      setSelectedImage(nextImage || getMainImage(currentProduct));
+    }
+  };
+  const selectGalleryImage = (index) => {
+    if (!galleryImages.length) return;
+    setSelectedImage(galleryImages[(index + galleryImages.length) % galleryImages.length]);
+  };
+  const selectedGalleryIndex = Math.max(0, galleryImages.indexOf(selectedImage));
   const whatsappUrl = getWhatsAppUrl(
     generateWhatsAppProductText({
       product: currentProduct,
@@ -342,28 +366,37 @@ export default function CategoryProductModal({ products, initialIndex = 0, onClo
                   position: "relative",
                 }}
               >
-                <Image
+                {selectedImage ? <Image
                   src={selectedImage}
                   alt={currentProduct.name}
                   width={800}
                   height={600}
-                  unoptimized={selectedImage.startsWith("/api/imagen-referencia")}
+                  quality={isDynamik ? 100 : undefined}
+                  unoptimized={isDynamik || selectedImage.startsWith("/api/imagen-referencia")}
+                  onError={() => hideUnavailableImage(selectedImage)}
                   style={{
                     maxWidth: "100%",
                     maxHeight: "100%",
                     objectFit: "contain",
                   }}
-                />
+                /> : (
+                  <p role="status" style={{ maxWidth: "220px", margin: 0, textAlign: "center", color: "#475569", fontWeight: 700, lineHeight: 1.4 }}>
+                    Fotografía real de esta referencia pendiente de validación.
+                  </p>
+                )}
+                {selectedImage && <ProductImageSignature product={currentProduct} />}
               </div>
 
-              {/* Thumbnails si hay más de 1 imagen */}
+              {/* Slider de vistas físicas verificadas. */}
               {galleryImages.length > 1 && (
-                <div style={{ display: "flex", gap: "8px", overflowX: "auto", paddingBottom: "4px" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px" }} aria-label="Vistas verificadas del producto">
+                  <button type="button" onClick={() => selectGalleryImage(selectedGalleryIndex - 1)} aria-label="Vista anterior" style={{ width: "44px", height: "44px", flexShrink: 0, borderRadius: "8px", border: "1px solid #64748B", background: "#0F172A", color: "#fff", cursor: "pointer", fontSize: "1.15rem", fontWeight: 800 }}>‹</button>
+                  <div style={{ display: "flex", gap: "8px", overflowX: "auto", paddingBottom: "4px" }}>
                   {galleryImages.map((imgUrl, idx) => (
                     <button
                       type="button"
                       key={idx}
-                      onClick={() => setSelectedImage(imgUrl)}
+                      onClick={() => selectGalleryImage(idx)}
                       style={{
                         width: "56px",
                         height: "56px",
@@ -383,12 +416,27 @@ export default function CategoryProductModal({ products, initialIndex = 0, onClo
                         alt={`Vista ${idx + 1} de ${currentProduct.name}`}
                         width={50}
                         height={50}
-                        unoptimized={imgUrl.startsWith("/api/imagen-referencia")}
+                        quality={isDynamik ? 100 : undefined}
+                        unoptimized={isDynamik || imgUrl.startsWith("/api/imagen-referencia")}
+                        onError={() => hideUnavailableImage(imgUrl)}
                         style={{ width: "100%", height: "100%", objectFit: "contain" }}
                       />
                     </button>
                   ))}
+                  </div>
+                  <button type="button" onClick={() => selectGalleryImage(selectedGalleryIndex + 1)} aria-label="Vista siguiente" style={{ width: "44px", height: "44px", flexShrink: 0, borderRadius: "8px", border: "1px solid #64748B", background: "#0F172A", color: "#fff", cursor: "pointer", fontSize: "1.15rem", fontWeight: 800 }}>›</button>
                 </div>
+              )}
+              {currentProduct.imageDisclosure && selectedImage && (
+                <p style={{ margin: 0, color: "#94A3B8", fontSize: "0.72rem", lineHeight: 1.4 }}>
+                  {currentProduct.imageDisclosure}
+                  {currentProduct.sourceUrl && (
+                    <> <a href={currentProduct.sourceUrl} target="_blank" rel="noreferrer" style={{ color: "#FACC15", fontWeight: 700 }}>Fuente por NPC</a>.</>
+                  )}
+                  {currentProduct.imageReferenceSourceUrl && (
+                    <> <a href={currentProduct.imageReferenceSourceUrl} target="_blank" rel="noreferrer" style={{ color: "#FB923C", fontWeight: 700, marginLeft: "6px" }}>{currentProduct.imageReferenceSourceLabel || "Cruce geométrico"}</a>.</>
+                  )}
+                </p>
               )}
             </div>
 
@@ -417,6 +465,15 @@ export default function CategoryProductModal({ products, initialIndex = 0, onClo
               >
                 {currentProduct.name}
               </h2>
+
+              {isReferentialImage && (
+                <p
+                  role="note"
+                  style={{ color: "#CBD5E1", fontSize: "0.74rem", lineHeight: "1.35", margin: "-3px 0 0" }}
+                >
+                  Imagen referencial: confirma la referencia física antes de comprar o instalar.
+                </p>
+              )}
 
               {/* Precio y Estado de Existencia */}
               <div style={{ display: "flex", alignItems: "center", gap: "10px", flexWrap: "wrap" }}>

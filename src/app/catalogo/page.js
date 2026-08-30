@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { redirect } from "next/navigation";
 import CatalogGridWithModal from "@/components/CatalogGridWithModal";
+import CatalogPagination from "@/components/CatalogPagination";
 import CatalogSidebar from "@/components/CatalogSidebar";
 import VerkePriorityShowcase from "@/components/VerkePriorityShowcase";
 import RowenPriorityShowcase from "@/components/RowenPriorityShowcase";
@@ -15,6 +16,13 @@ import { searchAndRankProducts, cleanText } from "@/lib/searchEngine";
 // cliente para no ejecutar Supabase + Prisma durante cada visita anónima.
 export const revalidate = 300;
 const PAGE_SIZE = 24;
+const BRAND_SEO = {
+  dynamik: {
+    name: "Dynamik",
+    title: "Dynamik: Pastillas y Discos de Freno por Referencia",
+    description: "Catálogo Dynamik de pastillas y discos de freno en REMBERT Repuestos. Cotiza por referencia, VIN y sistema de freno con envío desde Barrancabermeja a Colombia.",
+  },
+};
 const PART_FILTERS = {
   pastillas: ["pastilla"],
   discos: ["disco", "rotor"],
@@ -37,6 +45,7 @@ const PART_FILTERS = {
   cilindros: ["cilindro de rueda"],
   bieletas: ["bieleta", "estabilizadora"],
   guardapolvos: ["guardapolvo", "fuelle"],
+  soportes: ["soporte", "soporte motor", "soporte caja", "soporte amortiguador", "copela", "strut mount"],
 };
 
 const SMART_BRAKE_FAMILIES = [
@@ -47,7 +56,45 @@ const SMART_BRAKE_FAMILIES = [
   ["rotulas", "Rótulas"], ["terminales", "Terminales"], ["axiales", "Axiales"],
   ["bieletas", "Bieletas"], ["bujes", "Bujes"], ["brazos", "Tijeras y brazos"],
   ["rodamientos", "Cubos y rodamientos"], ["sensores", "Sensores ABS"], ["guardapolvos", "Guardapolvos"],
+  ["soportes", "Soportes"],
 ];
+
+function getSoporteBrandScore(product) {
+  const brandSlug = cleanText(product?.brand?.slug || "");
+  const brandName = cleanText(product?.brand?.name || "");
+  // Marca ADS siempre primero con máxima prioridad
+  if (brandSlug === "ads" || brandName === "ads") return 1000;
+  if (brandSlug === "eagle-bhp" || brandName.includes("eagle")) return 800;
+  if (brandSlug === "vazlo" || brandName.includes("vazlo")) return 700;
+  if (brandSlug === "corteco" || brandName.includes("corteco")) return 600;
+  if (brandSlug === "verke" || brandName.includes("verke")) return 500;
+  if (brandSlug === "moog" || brandName.includes("moog")) return 400;
+  if (brandSlug === "gti" || brandName.includes("gti")) return 300;
+  if (brandSlug && brandSlug !== "marca-segun-empaque") return 200;
+  return 100;
+}
+
+function isMotorMountProduct(product) {
+  const searchable = cleanText(`${product?.name || ""} ${product?.shortDesc || ""} ${product?.description || ""}`);
+  return /soporte.*(motor|caja|transmi|hidraulico|torsion|derech|izquierd|traser|delanter)/i.test(searchable);
+}
+
+function sortSoportesByBrand(productsList) {
+  return [...productsList].sort((a, b) => {
+    const scoreA = getSoporteBrandScore(a);
+    const scoreB = getSoporteBrandScore(b);
+    if (scoreB !== scoreA) return scoreB - scoreA;
+    const motorA = isMotorMountProduct(a) ? 1 : 0;
+    const motorB = isMotorMountProduct(b) ? 1 : 0;
+    if (motorB !== motorA) return motorB - motorA;
+    const brandA = a.brand?.name || "";
+    const brandB = b.brand?.name || "";
+    if (brandA !== brandB && brandA !== "Marca según empaque" && brandB !== "Marca según empaque") {
+      return brandA.localeCompare(brandB, "es");
+    }
+    return (a.name || "").localeCompare(b.name || "", "es");
+  });
+}
 
 function filterSlug(value = "") {
   return value.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
@@ -78,9 +125,10 @@ export async function generateMetadata({ searchParams }) {
   }
 
   if (brandParam) {
-    const brandName = brandParam.charAt(0).toUpperCase() + brandParam.slice(1);
-    title = `${titularPrincipal} - ${brandName}`;
-    description = `Catálogo oficial de repuestos automotrices para ${brandName} y todas las marcas en Barrancabermeja. Filtros y piezas originales en Rembert Repuestos BCA.`;
+    const brand = BRAND_SEO[brandParam];
+    const brandName = brand?.name || brandParam.charAt(0).toUpperCase() + brandParam.slice(1);
+    title = brand?.title || `${titularPrincipal} - ${brandName}`;
+    description = brand?.description || `Catálogo de repuestos automotrices para ${brandName} y todas las marcas en Barrancabermeja. Filtros y piezas originales en Rembert Repuestos BCA.`;
   }
 
   if (searchQuery) {
@@ -453,6 +501,13 @@ export default async function Catalogo({ searchParams }) {
       const available = filtered.filter(isAvailable).length;
       gtiAvailabilitySummary = { available, quoteOnly: filtered.length - available };
       filtered = [...filtered].sort((left, right) => Number(isAvailable(right)) - Number(isAvailable(left)));
+    } else if (
+      categoryParam === "soportes-retenedores-y-guayas" ||
+      partParam === "soportes" ||
+      tipoParam === "soportes" ||
+      (!searchQuery && lineParam === "SOPORTES")
+    ) {
+      filtered = sortSoportesByBrand(filtered);
     }
     totalProducts = filtered.length;
     fetchedProducts = requiresPriceSort
@@ -528,7 +583,7 @@ export default async function Catalogo({ searchParams }) {
     radiadores: ["Radiadores y sistema de refrigeración", "Radiadores de aluminio y cobre, tapas presurizadas, termostatos y refrigerantes para autos y camiones."],
     urea: ["Urea automotriz (AdBlue / DEF)", "Solución para reducción de emisiones en sistemas SCR."],
     "mangueras-y-tubos": ["Mangueras y tubos automotrices", "Líneas de refrigeración, admisión, freno y combustible seleccionadas por medidas, posición y referencia OE."],
-    "soportes-retenedores-y-guayas": ["Soportes, retenedores y guayas", "Soportes de motor y caja, retenedores y cables de mando identificados por VIN, medidas y posición."],
+    "soportes-retenedores-y-guayas": ["Soportes de motor, caja y suspensión", "Soportes de motor, amortiguador y transmisión clasificados por marca (ADS, Eagle BHP, Vazlo) y retenedores con validación técnica."],
   };
   let [bannerTitle, bannerSubtitle] = banners[categoryParam] || [
     "Catálogo completo",
@@ -863,11 +918,21 @@ export default async function Catalogo({ searchParams }) {
 
         <CatalogGridWithModal products={products} favoriteProductIds={favoriteProductIds} />
         {totalPages > 1 && (
-          <nav className="catalog-pagination" aria-label="Paginación del catálogo">
-            {currentPage > 1 && <Link href={pageHref(currentPage - 1)} rel="prev" className="btn btn--outline">Anterior</Link>}
-            <span aria-current="page">Página {currentPage} de {totalPages}</span>
-            {currentPage < totalPages && <Link href={pageHref(currentPage + 1)} rel="next" className="btn btn--outline">Siguiente</Link>}
-          </nav>
+          <CatalogPagination
+            currentPage={currentPage}
+            totalPages={totalPages}
+            totalProducts={totalProducts}
+            queryFilters={{
+              category: categoryParam,
+              brand: brandParam,
+              tipo: tipoParam,
+              line: lineParam,
+              vehicle: vehicleParam,
+              part: partParam,
+              search: searchQuery,
+              sort: sortParam,
+            }}
+          />
         )}
 
         {categoryParam === "frenos-y-suspension" && !brandParam && !searchQuery && !vehicleParam && !partParam && !lineParam && (

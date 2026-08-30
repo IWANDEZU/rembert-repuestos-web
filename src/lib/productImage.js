@@ -1,4 +1,7 @@
 import dieselImages from "@/data/diesel-images.json";
+import { getVerifiedDynamikPhoto } from "@/data/dynamikLocalPhotoAssets";
+import { getCiosaDynamikPhoto } from "@/data/dynamikCiosaPhotoAssets";
+import { getDynamikSyntheticVisual, isDynamikSyntheticVisualCompatible } from "@/data/dynamikSyntheticVisuals";
 
 const REFERENCE_FILTER_BRANDS = new Set(["donsson"]);
 
@@ -90,6 +93,39 @@ function normalize(value = "") {
     .toLowerCase();
 }
 
+export function isDynamikProduct(product) {
+  const brand = normalize(product?.brand?.slug || product?.brand?.name || product?.brand);
+  return brand === "dynamik";
+}
+
+const getCompatibleSyntheticVisual = (product) => {
+  const visual = getDynamikSyntheticVisual(product?.sku);
+  return isDynamikSyntheticVisualCompatible(product, visual) ? visual : null;
+};
+
+const getDynamikApprovedViews = (product) => (
+  getVerifiedDynamikPhoto(product?.sku)?.views
+  || getCiosaDynamikPhoto(product?.sku)?.views
+  || getCompatibleSyntheticVisual(product)?.views
+  || []
+);
+
+const getDynamikLocalPhoto = (product) => (
+  getVerifiedDynamikPhoto(product?.sku)?.main?.url
+  || getCiosaDynamikPhoto(product?.sku)?.main?.url
+  || getCompatibleSyntheticVisual(product)?.main?.url
+  || null
+);
+
+export function hasDynamikCatalogGallery(product) {
+  return isDynamikProduct(product) && getDynamikApprovedViews(product).length > 0;
+}
+
+export function getDynamikCatalogGallery(product) {
+  if (!hasDynamikCatalogGallery(product)) return [];
+  return getDynamikApprovedViews(product);
+}
+
 export function getFilterType(name = "") {
   const normalizedName = normalize(name);
 
@@ -123,6 +159,14 @@ export function getProductDisplayImage(product) {
   const cleanSlug = slug.replace(/[-_]/g, "");
   const rawSku = product?.sku ? String(product.sku).toLowerCase() : "";
   const cleanSku = rawSku.replace(/[-_]/g, "");
+
+  // Dynamik prioriza una fotografía física verificada. Una ilustración
+  // sintética solo puede mostrarse si pertenece a la misma familia del producto
+  // (pastilla, disco o kit de embrague); así una pieza de embrague o un cable
+  // nunca puede aparecer en la ficha de una pastilla.
+  if (isDynamikProduct(product)) {
+    return getDynamikLocalPhoto(product);
+  }
 
   // 1. Fotografías verificadas manuales
   if (slug && PRODUCT_IMAGE_OVERRIDES[slug]) return PRODUCT_IMAGE_OVERRIDES[slug];

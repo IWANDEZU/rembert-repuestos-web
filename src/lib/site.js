@@ -1,7 +1,9 @@
 const rawSiteUrl = process.env.NEXT_PUBLIC_SITE_URL;
 const isValidUrl = /^https?:\/\/[^\s/$.?#].[^\s]*$/i.test(rawSiteUrl || "");
-const configuredSiteUrl = isValidUrl ? rawSiteUrl : "https://rembert.iwandesu2018.workers.dev";
+const configuredSiteUrl = isValidUrl ? rawSiteUrl : "https://rembertrepuestos.com";
 
-// Keep the canonical URL independent from NEXTAUTH_URL, which may point to an
-// internal deployment URL used only by the authentication callback.
-export const siteUrl = configuredSiteUrl.replace(/\/$/, "");
+// Mantener la URL canónica independiente de NEXTAUTH_URL y normalizar el host
+// al dominio canónico (rembertrepuestos.com) para evitar saltos 308 en sitemap y SEO.
+export const siteUrl = configuredSiteUrl
+  .replace(/\/$/, "")
+  .replace("https://www.rembertrepuestos.com", "https://rembertrepuestos.com");

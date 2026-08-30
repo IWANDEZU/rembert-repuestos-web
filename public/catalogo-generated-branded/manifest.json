@@ -1,0 +1,1545 @@
+{
+  "version": 2,
+  "generatedAt": "2026-08-30T22:53:45.205Z",
+  "images": {
+    "184441": {
+      "sku": "184441",
+      "brand": "ADS",
+      "sourceImage": "/catalogo-ads/ads-184441-soporte-hidraulico-peugeot-referencial.png",
+      "sourceSha256": "e00677369f993647504ed5f3b656233ed9655ce0d9411540562af7c466c87b8a",
+      "outputImage": "/catalogo-ads/branded/184441-ads-184441-soporte-hidraulico-peugeot-branded-v2.webp",
+      "badgeVariant": "blue-wordmark",
+      "imageStatus": "generated-reference-image"
+    },
+    "184442": {
+      "sku": "184442",
+      "brand": "ADS",
+      "sourceImage": "/catalogo-ads/ads-184442-soporte-hidraulico-peugeot-citroen-referencial.png",
+      "sourceSha256": "c9b7ce0ef885f0673b3b7bbc53f6150ec1e33e12f66b12af2f2e21d68eff536a",
+      "outputImage": "/catalogo-ads/branded/184442-ads-184442-soporte-hidraulico-peugeot-citroen-branded-v2.webp",
+      "badgeVariant": "blue-wordmark",
+      "imageStatus": "generated-reference-image"
+    },
+    "364077": {
+      "sku": "364077",
+      "brand": "ADS",
+      "sourceImage": "/catalogo-ads/ads-364077-rotula-inferior-peugeot-citroen-referencial.png",
+      "sourceSha256": "493de305a1263fa8b92bc3ca776e4c90856529949590ff6f8fbf80d7a168ed5c",
+      "outputImage": "/catalogo-ads/branded/364077-ads-364077-rotula-inferior-peugeot-208-citroen-c3-c4-cactus-branded-v2.webp",
+      "badgeVariant": "blue-wordmark",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI04161": {
+      "sku": "GTI04-161",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti04-161-punta-lado-rueda-gti-chevrolet-tracker-turbo-onix-turbo-generated-reference.webp",
+      "sourceSha256": "6e589a17630aa4e5d3a7d8c41766583def073716eaa39eb0d0e1af9785a75141",
+      "outputImage": "/catalogo-gti/generated-branded/gti04-161-gti04-161-punta-lado-rueda-gti-chevrolet-tracker-turbo-onix-turbo-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI106092": {
+      "sku": "GTI106-092",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/punta-l-c-kia-picanto-all-new-1-2-25-21-gti106-092-generated-reference.webp",
+      "sourceSha256": "d10727e4bbba4424a82a9fcc0fefc8237b9907c7bbcb4256a2440c7109c92ac5",
+      "outputImage": "/catalogo-gti/generated-branded/gti106-092-punta-l-c-kia-picanto-all-new-1-2-25-21-gti106-092-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI04089": {
+      "sku": "GTI04-089",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti04-089-punta-lado-rueda-gti-chevrolet-cobalt-taxi-elite-generated-reference.webp",
+      "sourceSha256": "dd978546f4d5600b25fa91f1ed0d4fe44d3928790bbe01c4699b554faa6cb200",
+      "outputImage": "/catalogo-gti/generated-branded/gti04-089-gti04-089-punta-lado-rueda-gti-chevrolet-cobalt-taxi-elite-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI04D01": {
+      "sku": "GTI04-D01",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti04-d01-punta-lado-rueda-gti-chevrolet-corsa-generated-reference.webp",
+      "sourceSha256": "5c3fd02abdb46c6f6ab13109d0f7bb0a2b97fb8adc96941c20e86019edb90b60",
+      "outputImage": "/catalogo-gti/generated-branded/gti04-d01-gti04-d01-punta-lado-rueda-gti-chevrolet-corsa-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI06081": {
+      "sku": "GTI06-081",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti06-081-punta-lado-rueda-gti-hyundai-eon-generated-reference.webp",
+      "sourceSha256": "c8c3a187bcfd54490bb595ef7d348aebd9c40ed91a1be85a6f9c7d9868e8f000",
+      "outputImage": "/catalogo-gti/generated-branded/gti06-081-gti06-081-punta-lado-rueda-gti-hyundai-eon-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI03003": {
+      "sku": "GTI03-003",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti03-003-punta-lado-rueda-gti-kia-rio-stylus-1-5-generated-reference.webp",
+      "sourceSha256": "5c8242f00fb53ccfc0eb3abda3b048a9659e36f53a53e019e765ab0b38417229",
+      "outputImage": "/catalogo-gti/generated-branded/gti03-003-gti03-003-punta-lado-rueda-gti-kia-rio-stylus-1-5-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI01092": {
+      "sku": "GTI01-092",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti01-092-punta-lado-rueda-gti-renault-kwid-generated-reference.webp",
+      "sourceSha256": "c18171afc6dd9b141294f17334df0503305b1e36f3a73645284eac60e6b20543",
+      "outputImage": "/catalogo-gti/generated-branded/gti01-092-gti01-092-punta-lado-rueda-gti-renault-kwid-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI03072": {
+      "sku": "GTI03-072",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti03-072-punta-lado-rueda-gti-mazda-2-generated-reference.webp",
+      "sourceSha256": "4fa44816f58fa00ab212d0634c94bb63cd9e0406541b441b57544d25d4eaad53",
+      "outputImage": "/catalogo-gti/generated-branded/gti03-072-gti03-072-punta-lado-rueda-gti-mazda-2-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI06037": {
+      "sku": "GTI06-037",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti06-037-tulipa-lado-caja-gti-kia-rio-xcite-cerato-forte-hyundai-i25-generated-reference.webp",
+      "sourceSha256": "53885042bd18399aa0f09ef0f0e30d94006737e44f213cebae5974fd3b49f3a1",
+      "outputImage": "/catalogo-gti/generated-branded/gti06-037-gti06-037-tulipa-lado-caja-gti-kia-rio-xcite-cerato-forte-hyundai-i25-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI038": {
+      "sku": "GTI-038",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-038-tulipa-lado-caja-gti-hyundai-vision-kia-sephia-generated-reference.webp",
+      "sourceSha256": "60671748fc08fc468cf4e692af2ee638f38f4121c2e964e0915f4d8982aeb85e",
+      "outputImage": "/catalogo-gti/generated-branded/gti-038-gti-038-tulipa-lado-caja-gti-hyundai-vision-kia-sephia-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "9833753380": {
+      "sku": "9833753380",
+      "brand": "ADS",
+      "sourceImage": "/catalogo-ads/ads-9833753380-tijera-inferior-izquierda-peugeot-208-referencial.png",
+      "sourceSha256": "db87aca7006e8bd91b7b7e1b16733ea8327d8c978f7b3364b4d6d53529dbcdb4",
+      "outputImage": "/catalogo-ads/branded/9833753380-ads-9833753380-tijera-inferior-izquierda-peugeot-208-branded-v2.webp",
+      "badgeVariant": "blue-wordmark",
+      "imageStatus": "generated-reference-image"
+    },
+    "9833753280": {
+      "sku": "9833753280",
+      "brand": "ADS",
+      "sourceImage": "/catalogo-ads/ads-9833753280-tijera-inferior-derecha-peugeot-208-referencial.png",
+      "sourceSha256": "6d9fd08f56b69dacd453f14644774b80447f4c3d069dfd723090f7515b960fe7",
+      "outputImage": "/catalogo-ads/branded/9833753280-ads-9833753280-tijera-inferior-derecha-peugeot-208-branded-v2.webp",
+      "badgeVariant": "blue-wordmark",
+      "imageStatus": "generated-reference-image"
+    },
+    "9824626380": {
+      "sku": "9824626380",
+      "brand": "ADS",
+      "sourceImage": "/catalogo-ads/ads-9824626380-rotula-inferior-peugeot-208-2008-referencial.png",
+      "sourceSha256": "a6a8b9539d1db697c4e39d2e71572644a0a188c86d259b0937efac715ec31057",
+      "outputImage": "/catalogo-ads/branded/9824626380-ads-9824626380-rotula-inferior-peugeot-208-2008-branded-v2.webp",
+      "badgeVariant": "blue-wordmark",
+      "imageStatus": "generated-reference-image"
+    },
+    "9802103780": {
+      "sku": "9802103780",
+      "brand": "ADS",
+      "sourceImage": "/catalogo-ads/ads-9802103780-rotula-inferior-peugeot-2008-c3-aircross-referencial.png",
+      "sourceSha256": "791646c64e446fcc63cd8860b2af07efdd9d5b4452136d978a884eb996933ede",
+      "outputImage": "/catalogo-ads/branded/9802103780-ads-9802103780-rotula-inferior-peugeot-2008-c3-aircross-branded-v2.webp",
+      "badgeVariant": "blue-wordmark",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI01002": {
+      "sku": "GTI01-002",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti01-002-punta-eje-l-r-r18-gtx-21-rx-2-0-pin-externo-23x25-generated-reference.webp",
+      "sourceSha256": "dfea2aff2769c03b4a65d8a8e2bad14cc473d56d426bc56d3de98fd9b7755d4b",
+      "outputImage": "/catalogo-gti/generated-branded/gti01-002-gti-gti01-002-punta-eje-l-r-r18-gtx-21-rx-2-0-pin-externo-23x25-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI01006": {
+      "sku": "GTI01-006",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti01-006-triceta-eje-r9-12-18-22-estrias-agujas-generated-reference.webp",
+      "sourceSha256": "c3bf6318f550ff1fc98a2fc5037a5e31b1b8be794ec82867f057f04459998cc2",
+      "outputImage": "/catalogo-gti/generated-branded/gti01-006-gti-gti01-006-triceta-eje-r9-12-18-22-estrias-agujas-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI01007": {
+      "sku": "GTI01-007",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti01-007-eje-homocinetico-r4-6-23x22-semieje-completo-sin-abs-generated-reference.webp",
+      "sourceSha256": "31fc5e6c5953fdcedc9def001b20f5a4dca1e3bf461705b0c42390d8493dc462",
+      "outputImage": "/catalogo-gti/generated-branded/gti01-007-gti-gti01-007-eje-homocinetico-r4-6-23x22-semieje-completo-sin-abs-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI01009": {
+      "sku": "GTI01-009",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti01-009-eje-homocinetico-der-r9-21x23-generated-reference.webp",
+      "sourceSha256": "446103989d34b66720bd1715950ba708c3c776de70bdb2dd9d0a3315ac6bad52",
+      "outputImage": "/catalogo-gti/generated-branded/gti01-009-gti-gti01-009-eje-homocinetico-der-r9-21x23-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI01010": {
+      "sku": "GTI01-010",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti01-010-eje-homocinetico-r12-20x23-generated-reference.webp",
+      "sourceSha256": "9226115970c47dbe3d6960ded98983276cf60ec1e0ce685295d267a7ffb1cb0f",
+      "outputImage": "/catalogo-gti/generated-branded/gti01-010-gti-gti01-010-eje-homocinetico-r12-20x23-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI01012": {
+      "sku": "GTI01-012",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti01-012-punta-eje-l-c-der-kangoo-generated-reference.webp",
+      "sourceSha256": "bbe18fe2af2b304a29060376fc33844cf27fe052b770a683f786dc53aa65fe37",
+      "outputImage": "/catalogo-gti/generated-branded/gti01-012-gti-gti01-012-punta-eje-l-c-der-kangoo-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI01014": {
+      "sku": "GTI01-014",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti01-014-eje-homocinetico-r18-gtx-4-pernos-23x23-generated-reference.webp",
+      "sourceSha256": "593e3fe7916cf8fe2cdc1204d8c9115b5b6703d97151054b808a1ddbf7ebd73c",
+      "outputImage": "/catalogo-gti/generated-branded/gti01-014-gti-gti01-014-eje-homocinetico-r18-gtx-4-pernos-23x23-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI01015": {
+      "sku": "GTI01-015",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti01-015-eje-homocinetico-r18-gtl-3-pernos-20x23-generated-reference.webp",
+      "sourceSha256": "9caee4a8343e731cf0861cc9650f91721d15d86bc2e29b864f7de642f1a13fba",
+      "outputImage": "/catalogo-gti/generated-branded/gti01-015-gti-gti01-015-eje-homocinetico-r18-gtl-3-pernos-20x23-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI01022": {
+      "sku": "GTI01-022",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti01-022-eje-homocinetico-der-symbol-citius-reemplaza-carcaza-larga-21x23-generated-reference.webp",
+      "sourceSha256": "c3b54c4fb475fb8ff35dd721b8eeb4364fd6eb2fd79ede1e5f2701660e06844c",
+      "outputImage": "/catalogo-gti/generated-branded/gti01-022-gti-gti01-022-eje-homocinetico-der-symbol-citius-reemplaza-carcaza-larga-21x23-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI01024": {
+      "sku": "GTI01-024",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti01-024-eje-homocinetico-izq-symbol-citius-21x30-generated-reference.webp",
+      "sourceSha256": "112b094991c9e2bc382e3d6a16b1f6395fcae32d55d55caa403cb48bae245010",
+      "outputImage": "/catalogo-gti/generated-branded/gti01-024-gti-gti01-024-eje-homocinetico-izq-symbol-citius-21x30-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI01025": {
+      "sku": "GTI01-025",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti01-025-eje-homocinetico-der-logan-2010-t-original-21x23-generated-reference.webp",
+      "sourceSha256": "67175313caadc698873a00835700a0e862cf24ee67fefc50b43e2069c21739ab",
+      "outputImage": "/catalogo-gti/generated-branded/gti01-025-gti-gti01-025-eje-homocinetico-der-logan-2010-t-original-21x23-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI01030": {
+      "sku": "GTI01-030",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti01-030-punta-eje-l-r-megane-ii-pin-externo-23x32-generated-reference.webp",
+      "sourceSha256": "c5bdacd4dd1215aa7947259d916e41d7d0ad1a513d9e2c9227c9d00dcb0d2ced",
+      "outputImage": "/catalogo-gti/generated-branded/gti01-030-gti-gti01-030-punta-eje-l-r-megane-ii-pin-externo-23x32-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI01031": {
+      "sku": "GTI01-031",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti01-031-punta-eje-l-r-megane-ii-pin-externo-23x33-generated-reference.webp",
+      "sourceSha256": "5c8d45f75598b3b6a74c08e95c33ba136fa1901f6a1a3c6bb639bc1015f7849c",
+      "outputImage": "/catalogo-gti/generated-branded/gti01-031-gti-gti01-031-punta-eje-l-r-megane-ii-pin-externo-23x33-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI01033": {
+      "sku": "GTI01-033",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti01-033-punta-eje-l-r-kangoo-07-pin-interno-23x23-generated-reference.webp",
+      "sourceSha256": "d227cfbacc9c877492954b05742155a021f04f3f8cf5bfc70a2f1b1fbdee5df3",
+      "outputImage": "/catalogo-gti/generated-branded/gti01-033-gti-gti01-033-punta-eje-l-r-kangoo-07-pin-interno-23x23-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI01036": {
+      "sku": "GTI01-036",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti01-036-eje-homocinetico-der-logan-2011-23x23-generated-reference.webp",
+      "sourceSha256": "76486080cccb93b84d8e438b4d6602c6dd53d039c3f7350893f0ca8cfa572763",
+      "outputImage": "/catalogo-gti/generated-branded/gti01-036-gti-gti01-036-eje-homocinetico-der-logan-2011-23x23-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI01039": {
+      "sku": "GTI01-039",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti01-039-punta-eje-l-r-laguna-23x29-generated-reference.webp",
+      "sourceSha256": "c08ee3aae966c9cdae32889e7820fbde025949ea3a436de4cba5129f1ba7455b",
+      "outputImage": "/catalogo-gti/generated-branded/gti01-039-gti-gti01-039-punta-eje-l-r-laguna-23x29-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI01040": {
+      "sku": "GTI01-040",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti01-040-eje-homocinetico-der-megane-con-abs-generated-reference.webp",
+      "sourceSha256": "ea9bc7416f65c5ef0ea8c385f061c5ac7d98a35e992ee42493151c19eb87838b",
+      "outputImage": "/catalogo-gti/generated-branded/gti01-040-gti-gti01-040-eje-homocinetico-der-megane-con-abs-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI01042": {
+      "sku": "GTI01-042",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti01-042-punta-eje-l-r-master-ii-2-5-2010-2013-abs-51t-generated-reference.webp",
+      "sourceSha256": "d602789c6e435369fa3cf0fea24b065599a1a38df20407ddfbbf497772cb7622",
+      "outputImage": "/catalogo-gti/generated-branded/gti01-042-gti-gti01-042-punta-eje-l-r-master-ii-2-5-2010-2013-abs-51t-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI01045": {
+      "sku": "GTI01-045",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti01-045-eje-homocinetico-der-duster-oroch-4x4-2-0-aut-25x26-generated-reference.webp",
+      "sourceSha256": "8b5a23696669e30f3ef39dbec88abe9c9669e333fc5bfb4d78c43356ab75b36f",
+      "outputImage": "/catalogo-gti/generated-branded/gti01-045-gti-gti01-045-eje-homocinetico-der-duster-oroch-4x4-2-0-aut-25x26-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI01046": {
+      "sku": "GTI01-046",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti01-046-eje-homocinetico-izq-clio-campus-generated-reference.webp",
+      "sourceSha256": "602695b987217db7dddf69df06383ca9664f5b31fbbcf8cfda3a6d708176f19c",
+      "outputImage": "/catalogo-gti/generated-branded/gti01-046-gti-gti01-046-eje-homocinetico-izq-clio-campus-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI01051": {
+      "sku": "GTI01-051",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti01-051-punta-eje-l-r-clio-campus-twingo-16v-generated-reference.webp",
+      "sourceSha256": "6db90648cb75cf79d8792cdada2db3bfb2f3d017b6aa55d71b63a4965c103e77",
+      "outputImage": "/catalogo-gti/generated-branded/gti01-051-gti-gti01-051-punta-eje-l-r-clio-campus-twingo-16v-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI01056": {
+      "sku": "GTI01-056",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti01-056-eje-homocinetico-izq-master-ii-2-5-2010-2013-generated-reference.webp",
+      "sourceSha256": "fe71d3272c2825f4f7803a6dcbf648075a9c0e20a7235550ed1537cc435fba07",
+      "outputImage": "/catalogo-gti/generated-branded/gti01-056-gti-gti01-056-eje-homocinetico-izq-master-ii-2-5-2010-2013-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI01057": {
+      "sku": "GTI01-057",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti01-057-eje-homocinetico-der-master-ii-2-5-2010-2013-generated-reference.webp",
+      "sourceSha256": "93c3849d011defd34e7e518d24e7c383d7e628a85931bed7e8a6bd6d0ebe334d",
+      "outputImage": "/catalogo-gti/generated-branded/gti01-057-gti-gti01-057-eje-homocinetico-der-master-ii-2-5-2010-2013-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI01058": {
+      "sku": "GTI01-058",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti01-058-punta-eje-l-c-der-master-ii-2-5-2010-2013-generated-reference.webp",
+      "sourceSha256": "adfaa5e032cd1a3b25594c464b94b83adf7c010af05de39e633c7ad228ff1e49",
+      "outputImage": "/catalogo-gti/generated-branded/gti01-058-gti-gti01-058-punta-eje-l-c-der-master-ii-2-5-2010-2013-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI01062": {
+      "sku": "GTI01-062",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti01-062-punta-eje-l-r-laguna-25-dts-generated-reference.webp",
+      "sourceSha256": "c5910926e23383b6c40ee53945e0045c05634c0cb370df15e395ae929a679fd0",
+      "outputImage": "/catalogo-gti/generated-branded/gti01-062-gti-gti01-062-punta-eje-l-r-laguna-25-dts-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI01063": {
+      "sku": "GTI01-063",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti01-063-punta-eje-l-r-scenic-30-dts-generated-reference.webp",
+      "sourceSha256": "90c5ac8cec958ba0604cd19f6cfb9ec136d5355c55747cbfc0f84f002650b28f",
+      "outputImage": "/catalogo-gti/generated-branded/gti01-063-gti-gti01-063-punta-eje-l-r-scenic-30-dts-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI01066": {
+      "sku": "GTI01-066",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti01-066-eje-homocinetico-izq-clio-i-generated-reference.webp",
+      "sourceSha256": "0942ea7de16afb64c33068a6f55134282e3bcda0a4a9d50d452c3eaaedf34aac",
+      "outputImage": "/catalogo-gti/generated-branded/gti01-066-gti-gti01-066-eje-homocinetico-izq-clio-i-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI01067": {
+      "sku": "GTI01-067",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti01-067-punta-eje-l-r-trafic-1-9-2013-2014-generated-reference.webp",
+      "sourceSha256": "dda39244dba78d901f52befb6f4ebf99abfe1e4b2e6c8626435dcc9bd6ebffb6",
+      "outputImage": "/catalogo-gti/generated-branded/gti01-067-gti-gti01-067-punta-eje-l-r-trafic-1-9-2013-2014-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI01070": {
+      "sku": "GTI01-070",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti01-070-eje-homocinetico-izq-trafic-1-9-2013-2014-generated-reference.webp",
+      "sourceSha256": "cd917878c51a95516926e3eee4537b8b03071798c8cb19eb48ccde7d110774d9",
+      "outputImage": "/catalogo-gti/generated-branded/gti01-070-gti-gti01-070-eje-homocinetico-izq-trafic-1-9-2013-2014-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI01072": {
+      "sku": "GTI01-072",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti01-072-eje-homocinetico-der-master-iii-new-master-2-3-2014-2017-generated-reference.webp",
+      "sourceSha256": "6e3f4b9108ce0cd4824c17858c8f8a368b7d5966403a2a9af58caaf1d9ece1b5",
+      "outputImage": "/catalogo-gti/generated-branded/gti01-072-gti-gti01-072-eje-homocinetico-der-master-iii-new-master-2-3-2014-2017-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI01073": {
+      "sku": "GTI01-073",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti01-073-punta-eje-l-r-trafic-ii-2-0-2014-2015-generated-reference.webp",
+      "sourceSha256": "31f0b457f647438161f661f563a60c338f344d49c76e9739c4755a6ac7a51d51",
+      "outputImage": "/catalogo-gti/generated-branded/gti01-073-gti-gti01-073-punta-eje-l-r-trafic-ii-2-0-2014-2015-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI01074": {
+      "sku": "GTI01-074",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti01-074-punta-eje-l-r-logan-sandero-new-automatico-23x30-generated-reference.webp",
+      "sourceSha256": "15f0b9aba49a312862a04c7879884e7bbca2cd8094a98fb2c57d6a98c5e30570",
+      "outputImage": "/catalogo-gti/generated-branded/gti01-074-gti-gti01-074-punta-eje-l-r-logan-sandero-new-automatico-23x30-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI02001": {
+      "sku": "GTI02-001",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti02-001-punta-eje-l-r-d-max-3-0-2010-rodeo-pin-interno-17x33-generated-reference.webp",
+      "sourceSha256": "8acdffd688a0350dd4cf00c8476ad45a96212ccd9be43d891fd334716a3f408a",
+      "outputImage": "/catalogo-gti/generated-branded/gti02-001-gti-gti02-001-punta-eje-l-r-d-max-3-0-2010-rodeo-pin-interno-17x33-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI02002": {
+      "sku": "GTI02-002",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti02-002-eje-homocinetico-d-max-3-0-4x4-08-l-r-17x17-609-mm-generated-reference.webp",
+      "sourceSha256": "1a5002cf8976943199c4514f8b041b21beef36f7d5b963e14ed6f814497b9e8f",
+      "outputImage": "/catalogo-gti/generated-branded/gti02-002-gti-gti02-002-eje-homocinetico-d-max-3-0-4x4-08-l-r-17x17-609-mm-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI03001": {
+      "sku": "GTI03-001",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti03-001-punta-eje-l-c-mb2600-hembra-todos-26x25-generated-reference.webp",
+      "sourceSha256": "67eb26b1626276218c904d82eea47970291ec40f65d095a4994b0ea3e78187ce",
+      "outputImage": "/catalogo-gti/generated-branded/gti03-001-gti-gti03-001-punta-eje-l-c-mb2600-hembra-todos-26x25-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI03002": {
+      "sku": "GTI03-002",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti03-002-punta-eje-l-c-mb2600-macho-todos-26x25-generated-reference.webp",
+      "sourceSha256": "07ef5a3d36b1593a66f9eb575ba05530f58090068032d120cd9ad28eef7cdbee",
+      "outputImage": "/catalogo-gti/generated-branded/gti03-002-gti-gti03-002-punta-eje-l-c-mb2600-macho-todos-26x25-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI03004": {
+      "sku": "GTI03-004",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti03-004-punta-eje-l-r-m323-t-th-pin-externo-24x30-generated-reference.webp",
+      "sourceSha256": "5c51a340a3b380452f8ec538da3485abdec57e21f6c4eba3ab28e2cf135ba4e9",
+      "outputImage": "/catalogo-gti/generated-branded/gti03-004-gti-gti03-004-punta-eje-l-r-m323-t-th-pin-externo-24x30-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI03005": {
+      "sku": "GTI03-005",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti03-005-punta-eje-l-r-mb2600-01-bt-50-gas-con-rosca-26x25-generated-reference.webp",
+      "sourceSha256": "acab7966c49341d29feca9b5b120d557c68c1e90b553d013f89d4868bf75054e",
+      "outputImage": "/catalogo-gti/generated-branded/gti03-005-gti-gti03-005-punta-eje-l-r-mb2600-01-bt-50-gas-con-rosca-26x25-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI03006": {
+      "sku": "GTI03-006",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti03-006-punta-eje-l-r-m626-matsuri-28x23-generated-reference.webp",
+      "sourceSha256": "5b07064acdcc8b3af8b622c62355e5a6381b495c4574b8bbb00428fcbb834f7a",
+      "outputImage": "/catalogo-gti/generated-branded/gti03-006-gti-gti03-006-punta-eje-l-r-m626-matsuri-28x23-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI03007": {
+      "sku": "GTI03-007",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti03-007-punta-eje-l-r-m626-asahi-2-0-pin-interno-26x25-generated-reference.webp",
+      "sourceSha256": "98d66242cb730c8f785df644a5afdd49b71a4adedfc675865a713bec91e47134",
+      "outputImage": "/catalogo-gti/generated-branded/gti03-007-gti-gti03-007-punta-eje-l-r-m626-asahi-2-0-pin-interno-26x25-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI03008": {
+      "sku": "GTI03-008",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti03-008-punta-eje-l-r-m626-asahi-1-8-pin-interno-cuello-30-mm-26x23-generated-reference.webp",
+      "sourceSha256": "0e198196c1c2024691b89c0a42cc9217dc17d6ee55d238aafd38bf587dc4c58c",
+      "outputImage": "/catalogo-gti/generated-branded/gti03-008-gti-gti03-008-punta-eje-l-r-m626-asahi-1-8-pin-interno-cuello-30-mm-26x23-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI03010": {
+      "sku": "GTI03-010",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti03-010-punta-eje-l-r-m626-1-8-84-88-pin-interno-cuello-28-mm-26x23-generated-reference.webp",
+      "sourceSha256": "b7d1612a82f72d1596769c5f8b1d30a45361678694cc1f6b755dd6674d0796fa",
+      "outputImage": "/catalogo-gti/generated-branded/gti03-010-gti-gti03-010-punta-eje-l-r-m626-1-8-84-88-pin-interno-cuello-28-mm-26x23-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI03012": {
+      "sku": "GTI03-012",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti03-012-punta-eje-l-r-allegro-1-3-00-26x21x56-pin-interno-generated-reference.webp",
+      "sourceSha256": "ba4c0033365b3e09183c8554b0f2263fe53a03679996f6a96c78cf24680e950a",
+      "outputImage": "/catalogo-gti/generated-branded/gti03-012-gti-gti03-012-punta-eje-l-r-allegro-1-3-00-26x21x56-pin-interno-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI03013": {
+      "sku": "GTI03-013",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti03-013-punta-eje-l-r-allegro-2000-28-dts-generated-reference.webp",
+      "sourceSha256": "3ae1cc7c5504447a07b06b35cb942e1338a7e30f8166dae60fb8249c5148d38f",
+      "outputImage": "/catalogo-gti/generated-branded/gti03-013-gti-gti03-013-punta-eje-l-r-allegro-2000-28-dts-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI03014": {
+      "sku": "GTI03-014",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti03-014-punta-eje-l-r-allegro-95-99-aut-30-dts-generated-reference.webp",
+      "sourceSha256": "f762b1a516d1474b2d9abbf8f591875e71bf72c8e37e4c2cca6cd8e67bbef017",
+      "outputImage": "/catalogo-gti/generated-branded/gti03-014-gti-gti03-014-punta-eje-l-r-allegro-95-99-aut-30-dts-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI03015": {
+      "sku": "GTI03-015",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti03-015-punta-eje-l-r-allegro-95-99-22-dts-generated-reference.webp",
+      "sourceSha256": "a17bbbb3a467cdfc6140408afe50efcf1a3ec42a245a826ce6fadc28222c2dc5",
+      "outputImage": "/catalogo-gti/generated-branded/gti03-015-gti-gti03-015-punta-eje-l-r-allegro-95-99-22-dts-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI03016": {
+      "sku": "GTI03-016",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti03-016-punta-eje-l-c-m323-22-dts-generated-reference.webp",
+      "sourceSha256": "fdce593fdd4de05c9cbdc95fb944ce8237abe57ef90bec615b78ac61dfdccd9e",
+      "outputImage": "/catalogo-gti/generated-branded/gti03-016-gti-gti03-016-punta-eje-l-c-m323-22-dts-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI03017": {
+      "sku": "GTI03-017",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti03-017-punta-eje-l-c-m626-84-92-2-0-hembra-generated-reference.webp",
+      "sourceSha256": "8a876d5ceed85a5bcb018eaf303466df136607e7e996b02d523e0b0cc65f44a2",
+      "outputImage": "/catalogo-gti/generated-branded/gti03-017-gti-gti03-017-punta-eje-l-c-m626-84-92-2-0-hembra-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI03018": {
+      "sku": "GTI03-018",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti03-018-punta-eje-l-c-m626-84-92-2-0-macho-generated-reference.webp",
+      "sourceSha256": "86449c1c28d22ca6252516d217fa50e5b5da55ed65ccfed0efdd46134018a1b2",
+      "outputImage": "/catalogo-gti/generated-branded/gti03-018-gti-gti03-018-punta-eje-l-c-m626-84-92-2-0-macho-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI03019": {
+      "sku": "GTI03-019",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti03-019-punta-eje-l-c-m626-84-92-1-8-hembra-generated-reference.webp",
+      "sourceSha256": "3a569d2e3c51af0e6e0bb90cd938d08e5c2a4a402ab7c216dc6028d58c0c02ec",
+      "outputImage": "/catalogo-gti/generated-branded/gti03-019-gti-gti03-019-punta-eje-l-c-m626-84-92-1-8-hembra-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI03020": {
+      "sku": "GTI03-020",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti03-020-punta-eje-l-c-m626-84-92-1-8-macho-generated-reference.webp",
+      "sourceSha256": "b8168b7cf1adfaf5b6039c19148df3cf106d46fa66c8e804834c68244b46e504",
+      "outputImage": "/catalogo-gti/generated-branded/gti03-020-gti-gti03-020-punta-eje-l-c-m626-84-92-1-8-macho-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI03022": {
+      "sku": "GTI03-022",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti03-022-punta-eje-l-r-ford-fiesta-1-3-25x20x57-pin-externo-generated-reference.webp",
+      "sourceSha256": "8f3cef31c70c7fe212c0b201ba0d9a9f35e7af302be7fde7687c6d1a4362c888",
+      "outputImage": "/catalogo-gti/generated-branded/gti03-022-gti-gti03-022-punta-eje-l-r-ford-fiesta-1-3-25x20x57-pin-externo-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI03024": {
+      "sku": "GTI03-024",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti03-024-punta-eje-l-r-mb2600-00-pin-interno-26x25-generated-reference.webp",
+      "sourceSha256": "8b3e475b4d0086b39def1140c50115c3a9327ece7ab9f2ca19d5f36efbfcd9f2",
+      "outputImage": "/catalogo-gti/generated-branded/gti03-024-gti-gti03-024-punta-eje-l-r-mb2600-00-pin-interno-26x25-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI03025": {
+      "sku": "GTI03-025",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti03-025-eje-homocinetico-der-m323-24x24-generated-reference.webp",
+      "sourceSha256": "f997ccd9fe2cfecc34da48b0231e921073c3492230af9e9db9162c0878773431",
+      "outputImage": "/catalogo-gti/generated-branded/gti03-025-gti-gti03-025-eje-homocinetico-der-m323-24x24-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI03026": {
+      "sku": "GTI03-026",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti03-026-eje-homocinetico-izq-m323-generated-reference.webp",
+      "sourceSha256": "21a7d6a59874b9d5d01b29b5660f1d1ffa0b840a6ebcba55ff80ab771a4e5601",
+      "outputImage": "/catalogo-gti/generated-branded/gti03-026-gti-gti03-026-eje-homocinetico-izq-m323-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI03027": {
+      "sku": "GTI03-027",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti03-027-punta-eje-l-r-m626-asahi-pin-externo-26x25-generated-reference.webp",
+      "sourceSha256": "0b7d344efddbb446cd4458d92ea0178b4fdbfc75dba4d3d968fb609b592ae845",
+      "outputImage": "/catalogo-gti/generated-branded/gti03-027-gti-gti03-027-punta-eje-l-r-m626-asahi-pin-externo-26x25-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI03029": {
+      "sku": "GTI03-029",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti03-029-punta-eje-l-r-m626-84-89-pin-externo-26x25-generated-reference.webp",
+      "sourceSha256": "57a0f2bce5d9197784a28ed46a51fc1af7c6f004ee06f0afd74f6dba12acbe0e",
+      "outputImage": "/catalogo-gti/generated-branded/gti03-029-gti-gti03-029-punta-eje-l-r-m626-84-89-pin-externo-26x25-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI03031": {
+      "sku": "GTI03-031",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti03-031-punta-eje-l-r-m626-milenium-allegro-1-8-pin-interno-abs-44-dts-28x30-generated-reference.webp",
+      "sourceSha256": "9f951ddf92842bcd3a177e8fd0c6215466ce9e777a52cd5ab57af74e5037dded",
+      "outputImage": "/catalogo-gti/generated-branded/gti03-031-gti-gti03-031-punta-eje-l-r-m626-milenium-allegro-1-8-pin-interno-abs-44-dts-28x30-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI03032": {
+      "sku": "GTI03-032",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti03-032-punta-eje-l-r-m626-milenium-mazda-3-28x23-generated-reference.webp",
+      "sourceSha256": "8390b6d6687624918b5b071a308220de078d67652b3d07a0a4540bd2b258a272",
+      "outputImage": "/catalogo-gti/generated-branded/gti03-032-gti-gti03-032-punta-eje-l-r-m626-milenium-mazda-3-28x23-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI03033": {
+      "sku": "GTI03-033",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti03-033-punta-eje-l-c-m323-ecuatoriano-24x21-generated-reference.webp",
+      "sourceSha256": "89b59bed7f9e16981290828151319f176c7a4bb028cff7fd7641496799599d0f",
+      "outputImage": "/catalogo-gti/generated-branded/gti03-033-gti-gti03-033-punta-eje-l-c-m323-ecuatoriano-24x21-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI03039": {
+      "sku": "GTI03-039",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti03-039-punta-eje-l-r-mazda-6-2-0-2-3-2002-2008-28x32x62-abs-44-pulsos-tope-generated-reference.webp",
+      "sourceSha256": "7cd1256daa4b7f3f33458417162c4b6801bf69af001e743258d0792a0bd71d6e",
+      "outputImage": "/catalogo-gti/generated-branded/gti03-039-gti-gti03-039-punta-eje-l-r-mazda-6-2-0-2-3-2002-2008-28x32x62-abs-44-pulsos-tope-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI03040": {
+      "sku": "GTI03-040",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti03-040-punta-eje-l-r-mazda-3-automatico-de-tornillo-36x22-generated-reference.webp",
+      "sourceSha256": "3b1b02ee368b4f558e7ba7f108364a83dc9f2b604749790bbbe672273020269e",
+      "outputImage": "/catalogo-gti/generated-branded/gti03-040-gti-gti03-040-punta-eje-l-r-mazda-3-automatico-de-tornillo-36x22-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI03041": {
+      "sku": "GTI03-041",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti03-041-punta-eje-l-c-izq-m626-milenium-00-manual-28x30x35-macho-trebol-generated-reference.webp",
+      "sourceSha256": "3f0bae91b6830316bc954c95dfbbddd9b9e9246ecfde4f41eab6eff9bc4cf392",
+      "outputImage": "/catalogo-gti/generated-branded/gti03-041-gti-gti03-041-punta-eje-l-c-izq-m626-milenium-00-manual-28x30x35-macho-trebol-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI03042": {
+      "sku": "GTI03-042",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti03-042-punta-eje-l-c-der-m626-milenium-manual-hembra-28x30-generated-reference.webp",
+      "sourceSha256": "8a886dd03be084fd926f2a8fc1abe5cb73fe8aeaf7c6efd628af102d649436ca",
+      "outputImage": "/catalogo-gti/generated-branded/gti03-042-gti-gti03-042-punta-eje-l-c-der-m626-milenium-manual-hembra-28x30-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI03043": {
+      "sku": "GTI03-043",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti03-043-punta-eje-l-c-der-m626-milenium-aut-hembra-28x23-generated-reference.webp",
+      "sourceSha256": "e23c2bf2856a1992157c1c39a59708a655dd1ae27cd31a98363f3bb369edf29f",
+      "outputImage": "/catalogo-gti/generated-branded/gti03-043-gti-gti03-043-punta-eje-l-c-der-m626-milenium-aut-hembra-28x23-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI03044": {
+      "sku": "GTI03-044",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti03-044-punta-eje-l-c-izq-m626-milenium-aut-macho-26x23-generated-reference.webp",
+      "sourceSha256": "c075e7c32baddc88bc014d0f8f6db17724c9d1f312ed96904b9981bc35ea43d2",
+      "outputImage": "/catalogo-gti/generated-branded/gti03-044-gti-gti03-044-punta-eje-l-c-izq-m626-milenium-aut-macho-26x23-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI03047": {
+      "sku": "GTI03-047",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti03-047-eje-homocinetico-izq-mazda-bt-50-gas-hembra-generated-reference.webp",
+      "sourceSha256": "30a097c86711abb33feca8b4a0fbd56ca1906c879649cc1efa6d504f431dd2c9",
+      "outputImage": "/catalogo-gti/generated-branded/gti03-047-gti-gti03-047-eje-homocinetico-izq-mazda-bt-50-gas-hembra-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI03048": {
+      "sku": "GTI03-048",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti03-048-eje-homocinetico-der-mazda-bt-50-gas-macho-26x26-generated-reference.webp",
+      "sourceSha256": "8dc6ae7473db19b32d15b9091065557903c8861f15fc7becf8085f1e14af568e",
+      "outputImage": "/catalogo-gti/generated-branded/gti03-048-gti-gti03-048-eje-homocinetico-der-mazda-bt-50-gas-macho-26x26-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI03049": {
+      "sku": "GTI03-049",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti03-049-punta-eje-l-r-kia-grand-carnival-mecanica-31x28-generated-reference.webp",
+      "sourceSha256": "56916582729c0b49562d4af52ee8046d07aab8a7023af8894d47e2a7e841f8f2",
+      "outputImage": "/catalogo-gti/generated-branded/gti03-049-gti-gti03-049-punta-eje-l-r-kia-grand-carnival-mecanica-31x28-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI03051": {
+      "sku": "GTI03-051",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti03-051-eje-homocinetico-izq-mazda-bt-50-2-5-diesel-2010-28x28-generated-reference.webp",
+      "sourceSha256": "5580c9340fc7c85f9762bab616af6f52d8552bf550737c32b0cd88348cd3685e",
+      "outputImage": "/catalogo-gti/generated-branded/gti03-051-gti-gti03-051-eje-homocinetico-izq-mazda-bt-50-2-5-diesel-2010-28x28-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI03052": {
+      "sku": "GTI03-052",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti03-052-eje-homocinetico-der-mazda-bt-50-diesel-2010-generated-reference.webp",
+      "sourceSha256": "79dd88df7d562e9e483064ab1d3eb47b3095272ad36b2a627e6ff591bedf3270",
+      "outputImage": "/catalogo-gti/generated-branded/gti03-052-gti-gti03-052-eje-homocinetico-der-mazda-bt-50-diesel-2010-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI03054": {
+      "sku": "GTI03-054",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti03-054-punta-eje-l-c-der-mazda-bt-50-2-5-diesel-2006-2014-ford-ranger-2-5-2008-generated-reference.webp",
+      "sourceSha256": "582e174db05524d9159a8cce214357c4277062206699e7a9d865b1172e7397c5",
+      "outputImage": "/catalogo-gti/generated-branded/gti03-054-gti-gti03-054-punta-eje-l-c-der-mazda-bt-50-2-5-diesel-2006-2014-ford-ranger-2-5-2008-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI03055": {
+      "sku": "GTI03-055",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti03-055-punta-eje-l-r-mazda-bt-50-diesel-2010-28x36-generated-reference.webp",
+      "sourceSha256": "9e419cab653918e64d416ceb4ead24b81ff35b72b78945e118be6db9f3993bf9",
+      "outputImage": "/catalogo-gti/generated-branded/gti03-055-gti-gti03-055-punta-eje-l-r-mazda-bt-50-diesel-2010-28x36-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI03057": {
+      "sku": "GTI03-057",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti03-057-eje-interconeccion-mb2600-bt-50-gasolina-generated-reference.webp",
+      "sourceSha256": "0d850e2e8877bf9c03e356e72c4e281b6fe6c71b03ac3e6ac6a2f23401dd1deb",
+      "outputImage": "/catalogo-gti/generated-branded/gti03-057-gti-gti03-057-eje-interconeccion-mb2600-bt-50-gasolina-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI03058": {
+      "sku": "GTI03-058",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti03-058-punta-eje-l-r-mazda-3-22-dts-con-abs-generated-reference.webp",
+      "sourceSha256": "8696a4235ea0a7fe279912db2d79a95c6a8c4417d3768e0a7d0b4fe9016968c4",
+      "outputImage": "/catalogo-gti/generated-branded/gti03-058-gti-gti03-058-punta-eje-l-r-mazda-3-22-dts-con-abs-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI03059": {
+      "sku": "GTI03-059",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti03-059-punta-eje-l-r-mazda-6-ford-fusion-33-dts-pin-ext-generated-reference.webp",
+      "sourceSha256": "0666f59d103642a7862eb2e39c7a73e47a3249e1545dfe8d426cb88c8dbeaf2e",
+      "outputImage": "/catalogo-gti/generated-branded/gti03-059-gti-gti03-059-punta-eje-l-r-mazda-6-ford-fusion-33-dts-pin-ext-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI03060": {
+      "sku": "GTI03-060",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti03-060-punta-eje-l-c-der-mazda-6-2-3-28x23x43-hembra-trebol-generated-reference.webp",
+      "sourceSha256": "46e8d1681867aeb611fcd1fbf0b1e3918d29bf7116e55973dff1b14c9b4b7bf0",
+      "outputImage": "/catalogo-gti/generated-branded/gti03-060-gti-gti03-060-punta-eje-l-c-der-mazda-6-2-3-28x23x43-hembra-trebol-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI03062": {
+      "sku": "GTI03-062",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti03-062-punta-eje-l-r-mazda-3-24-dts-generated-reference.webp",
+      "sourceSha256": "f4d5462bb8a204d7c370a47e1c16cab553afd856ba494a7f98348d13156e37eb",
+      "outputImage": "/catalogo-gti/generated-branded/gti03-062-gti-gti03-062-punta-eje-l-r-mazda-3-24-dts-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI03063": {
+      "sku": "GTI03-063",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti03-063-eje-interconeccion-mazda-bt-50-diesel-generated-reference.webp",
+      "sourceSha256": "71956a7a36e5665be29d17e16305ab57fc1f07bd6cb445985ba42edd2672022b",
+      "outputImage": "/catalogo-gti/generated-branded/gti03-063-gti-gti03-063-eje-interconeccion-mazda-bt-50-diesel-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI03064": {
+      "sku": "GTI03-064",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti03-064-punta-eje-l-c-der-mazda-allegro-1-3-1-6-2002-2009-28x29x43-hembra-generated-reference.webp",
+      "sourceSha256": "20fa7321e1ce94be99f36706cd3fb24cb50fe6089877f8ca916ded7cba1ab395",
+      "outputImage": "/catalogo-gti/generated-branded/gti03-064-gti-gti03-064-punta-eje-l-c-der-mazda-allegro-1-3-1-6-2002-2009-28x29x43-hembra-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI03065": {
+      "sku": "GTI03-065",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti03-065-punta-eje-l-c-izq-mazda-3-automatico-macho-26x23-generated-reference.webp",
+      "sourceSha256": "eaeefe85230d54aa374fa8f5e52ee683ac1db9d00b498847b227f9c52050ecf7",
+      "outputImage": "/catalogo-gti/generated-branded/gti03-065-gti-gti03-065-punta-eje-l-c-izq-mazda-3-automatico-macho-26x23-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI03067": {
+      "sku": "GTI03-067",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti03-067-eje-homocinetico-izq-mazda-3-manual-generated-reference.webp",
+      "sourceSha256": "aeff97597ae0166a410230c3b672c13ba310328f96e0891292e15b2930892052",
+      "outputImage": "/catalogo-gti/generated-branded/gti03-067-gti-gti03-067-eje-homocinetico-izq-mazda-3-manual-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI03068": {
+      "sku": "GTI03-068",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti03-068-punta-eje-l-c-m121-22x21-generated-reference.webp",
+      "sourceSha256": "78a3a0f342a539b7a18657c68a1b96ca2abda05654cea2433d9dd598c378ef78",
+      "outputImage": "/catalogo-gti/generated-branded/gti03-068-gti-gti03-068-punta-eje-l-c-m121-22x21-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI03069": {
+      "sku": "GTI03-069",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti03-069-punta-eje-l-r-mazda-demio-96-24x19x52-con-abs-generated-reference.webp",
+      "sourceSha256": "26fa93fea57d7cce9dc7d88ea6bd357d6d0d3fbd414a91277c8d87e7ed3aa8d6",
+      "outputImage": "/catalogo-gti/generated-branded/gti03-069-gti-gti03-069-punta-eje-l-r-mazda-demio-96-24x19x52-con-abs-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI03070": {
+      "sku": "GTI03-070",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti03-070-eje-homocinetico-izq-mazda-3-de-tornillo-automatico-36x26-generated-reference.webp",
+      "sourceSha256": "da1a8429086af8a20b45f67a442cba5339cfcaf6ea594af9d9c669e1cf200ed3",
+      "outputImage": "/catalogo-gti/generated-branded/gti03-070-gti-gti03-070-eje-homocinetico-izq-mazda-3-de-tornillo-automatico-36x26-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI03075": {
+      "sku": "GTI03-075",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti03-075-eje-homocinetico-izq-mazda-3-mazda-3-all-new-triptonico-28x28-generated-reference.webp",
+      "sourceSha256": "ad2be14004be0028155491f2b2b4f7700fbb9bafd3bc97dc4912672801e1faa5",
+      "outputImage": "/catalogo-gti/generated-branded/gti03-075-gti-gti03-075-eje-homocinetico-izq-mazda-3-mazda-3-all-new-triptonico-28x28-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI03076": {
+      "sku": "GTI03-076",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti03-076-eje-homocinetico-der-mazda-626-asahi-2-0-generated-reference.webp",
+      "sourceSha256": "8e61040517fbe2250831dc27e1514a84e400947a279c76d99208f2bfd854caa7",
+      "outputImage": "/catalogo-gti/generated-branded/gti03-076-gti-gti03-076-eje-homocinetico-der-mazda-626-asahi-2-0-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI03077": {
+      "sku": "GTI03-077",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti03-077-eje-homocinetico-izq-mazda-626-asahi-2-0-generated-reference.webp",
+      "sourceSha256": "154bce8c3507f1c3fad6af8935a9ffdb6774db3e066c21adab351c6678a34b6f",
+      "outputImage": "/catalogo-gti/generated-branded/gti03-077-gti-gti03-077-eje-homocinetico-izq-mazda-626-asahi-2-0-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI03079": {
+      "sku": "GTI03-079",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti03-079-punta-eje-l-c-der-mazda-3-mazda-5-mecanico-hembra-28x24-generated-reference.webp",
+      "sourceSha256": "d7befc9d8beedb4dea6b82bf15a13ef3c2caa8d416e2303b4ba42c570de1f1c5",
+      "outputImage": "/catalogo-gti/generated-branded/gti03-079-gti-gti03-079-punta-eje-l-c-der-mazda-3-mazda-5-mecanico-hembra-28x24-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI03080": {
+      "sku": "GTI03-080",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti03-080-punta-eje-l-c-izq-mazda-3-mazda-5-mecanico-macho-28x24-generated-reference.webp",
+      "sourceSha256": "4f5f263a23dae45e977c8e32e31f56c5738f9bafb53e79fd7ff5e718543aa88e",
+      "outputImage": "/catalogo-gti/generated-branded/gti03-080-gti-gti03-080-punta-eje-l-c-izq-mazda-3-mazda-5-mecanico-macho-28x24-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI03081": {
+      "sku": "GTI03-081",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti03-081-punta-eje-l-r-mazda-3-1-6-generated-reference.webp",
+      "sourceSha256": "a560745d742d4e9a48d7bd33cfa5d75fac6d16545a7b8363112d80c0d42dac3c",
+      "outputImage": "/catalogo-gti/generated-branded/gti03-081-gti-gti03-081-punta-eje-l-r-mazda-3-1-6-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI03082": {
+      "sku": "GTI03-082",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti03-082-eje-homocinetico-der-mazda-3-de-tornillo-automatico-36x28-generated-reference.webp",
+      "sourceSha256": "3dc5aaa9aa2824264114086a42b4935dd35a52b11ce312a17881a16ed7c26b2a",
+      "outputImage": "/catalogo-gti/generated-branded/gti03-082-gti-gti03-082-eje-homocinetico-der-mazda-3-de-tornillo-automatico-36x28-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI03083": {
+      "sku": "GTI03-083",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti03-083-eje-homocinetico-izq-mazda-bt-50-ford-ranger-2-5-diesel-4x4-generated-reference.webp",
+      "sourceSha256": "481d07d2d56dd1b3b3482db4b3e027bf7ff127691efbb0d46cf388ebf0744a81",
+      "outputImage": "/catalogo-gti/generated-branded/gti03-083-gti-gti03-083-eje-homocinetico-izq-mazda-bt-50-ford-ranger-2-5-diesel-4x4-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI03084": {
+      "sku": "GTI03-084",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti03-084-eje-homocinetico-der-mazda-bt-50-ford-ranger-2-5-diesel-4x4-generated-reference.webp",
+      "sourceSha256": "224c498a51e293ff8ba6f62f746e6cda7e96fd01be117e8d3bb07ab0f43b1dbe",
+      "outputImage": "/catalogo-gti/generated-branded/gti03-084-gti-gti03-084-eje-homocinetico-der-mazda-bt-50-ford-ranger-2-5-diesel-4x4-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI03085": {
+      "sku": "GTI03-085",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti03-085-punta-eje-l-r-mazda-bt-50-3-2-ford-ranger-2-5-diesel-4x4-28x26-pin-exter-generated-reference.webp",
+      "sourceSha256": "898cb777c88bd1268886aa9aa1dbd5550d6510c571ea4cd372bc316a4ebfc549",
+      "outputImage": "/catalogo-gti/generated-branded/gti03-085-gti-gti03-085-punta-eje-l-r-mazda-bt-50-3-2-ford-ranger-2-5-diesel-4x4-28x26-pin-exter-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI03087": {
+      "sku": "GTI03-087",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti03-087-punta-eje-l-c-der-mazda-bt-50-ford-ranger-2-5-diesel-4x4-macho-generated-reference.webp",
+      "sourceSha256": "c11b0598265af4fffa47629ec8518b33c31463d1b57a7b949d1ebce9e4efe694",
+      "outputImage": "/catalogo-gti/generated-branded/gti03-087-gti-gti03-087-punta-eje-l-c-der-mazda-bt-50-ford-ranger-2-5-diesel-4x4-macho-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI04018": {
+      "sku": "GTI04-018",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti04-018-eje-homocinetico-der-swift-1-3-generated-reference.webp",
+      "sourceSha256": "847a40a00bbdced80cff1d2ab9ef880b3c0cdb7f3eeeee9d22a2b14864a5ebdd",
+      "outputImage": "/catalogo-gti/generated-branded/gti04-018-gti-gti04-018-eje-homocinetico-der-swift-1-3-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI04019": {
+      "sku": "GTI04-019",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti04-019-eje-homocinetico-izq-swift-1-3-generated-reference.webp",
+      "sourceSha256": "37c7baf8f23e17a1d09801bce28a47d14318d3a1e39bd9044fc2105a41d15852",
+      "outputImage": "/catalogo-gti/generated-branded/gti04-019-gti-gti04-019-eje-homocinetico-izq-swift-1-3-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI04028": {
+      "sku": "GTI04-028",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti04-028-punta-eje-l-r-spark-cronos-dw-matiz-tico-23x19-generated-reference.webp",
+      "sourceSha256": "a057b41bb7b1a9fa42d6c11f291ddfda0e46f779f0aa96f970a783e48154b33b",
+      "outputImage": "/catalogo-gti/generated-branded/gti04-028-gti-gti04-028-punta-eje-l-r-spark-cronos-dw-matiz-tico-23x19-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI04054": {
+      "sku": "GTI04-054",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti04-054-punta-eje-l-r-cronos-21-dts-generated-reference.webp",
+      "sourceSha256": "1e01ce28bfecc3eba1bf2e79ed550c093c78004de97a23b0a39c29999cb38deb",
+      "outputImage": "/catalogo-gti/generated-branded/gti04-054-gti-gti04-054-punta-eje-l-r-cronos-21-dts-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI04058": {
+      "sku": "GTI04-058",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti04-058-eje-homocinetico-d-max-2010-sin-teta-generated-reference.webp",
+      "sourceSha256": "a36c6584bf584ccbf6f7f32cc70cf420da5d8d4e6c336ba75d71f3b411c4d520",
+      "outputImage": "/catalogo-gti/generated-branded/gti04-058-gti-gti04-058-eje-homocinetico-d-max-2010-sin-teta-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI04059": {
+      "sku": "GTI04-059",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti04-059-punta-eje-l-r-d-max-2010-sin-teta-generated-reference.webp",
+      "sourceSha256": "838926290ff6169bfeca69d65baa4616e6ccdd2d3d34b32001c4cda277be24f6",
+      "outputImage": "/catalogo-gti/generated-branded/gti04-059-gti-gti04-059-punta-eje-l-r-d-max-2010-sin-teta-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI04063": {
+      "sku": "GTI04-063",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti04-063-eje-homocinetico-der-spark-gt-sin-abs-2017-22x22-generated-reference.webp",
+      "sourceSha256": "f0c6476b857572e8c22f47668c9b2264401d4f35b01cb06a4623684d29a8befd",
+      "outputImage": "/catalogo-gti/generated-branded/gti04-063-gti-gti04-063-eje-homocinetico-der-spark-gt-sin-abs-2017-22x22-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI04064": {
+      "sku": "GTI04-064",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti04-064-eje-homocinetico-izq-spark-gt-sin-abs-2017-22x22-generated-reference.webp",
+      "sourceSha256": "5ca3e4dbbfab37ce59c25daf9c3479e0cc54998a0e413659d53553a935944cdd",
+      "outputImage": "/catalogo-gti/generated-branded/gti04-064-gti-gti04-064-eje-homocinetico-izq-spark-gt-sin-abs-2017-22x22-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI04065": {
+      "sku": "GTI04-065",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti04-065-punta-eje-l-r-spark-gt-generated-reference.webp",
+      "sourceSha256": "e6ad395f04fd996fd688ac33f85b2132a6d58ee62808ce49d8ea08947c82ea35",
+      "outputImage": "/catalogo-gti/generated-branded/gti04-065-gti-gti04-065-punta-eje-l-r-spark-gt-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI04068": {
+      "sku": "GTI04-068",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti04-068-eje-homocinetico-captiva-2-4-mecanica-generated-reference.webp",
+      "sourceSha256": "274f8dc466aecd0c6fa6f96c337cc7d59f36ff3ca285b6cc3e52b2015b6d381a",
+      "outputImage": "/catalogo-gti/generated-branded/gti04-068-gti-gti04-068-eje-homocinetico-captiva-2-4-mecanica-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI04069": {
+      "sku": "GTI04-069",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti04-069-punta-eje-l-r-captiva-24-dts-generated-reference.webp",
+      "sourceSha256": "ccc4b74e010c929f2176d3467b1d2f2c0a794cd4b646bbe1db2ed7de3a3f5d15",
+      "outputImage": "/catalogo-gti/generated-branded/gti04-069-gti-gti04-069-punta-eje-l-r-captiva-24-dts-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI04073": {
+      "sku": "GTI04-073",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti04-073-punta-eje-l-c-captiva-mecanica-generated-reference.webp",
+      "sourceSha256": "907236b4bf42bb3861cb749fa3a3aeabcab548a78138807e0bb07162afe4ee04",
+      "outputImage": "/catalogo-gti/generated-branded/gti04-073-gti-gti04-073-punta-eje-l-c-captiva-mecanica-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI04074": {
+      "sku": "GTI04-074",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti04-074-eje-homocinetico-der-corsa-generated-reference.webp",
+      "sourceSha256": "042212f8585754ee7e53f232753cfb02c4f80089f9f68612573e74eec0b80f82",
+      "outputImage": "/catalogo-gti/generated-branded/gti04-074-gti-gti04-074-eje-homocinetico-der-corsa-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI04078": {
+      "sku": "GTI04-078",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti04-078-eje-homocinetico-tras-grand-vitara-sz-2-7-4x4-mt-at-2007-6-huecos-generated-reference.webp",
+      "sourceSha256": "d06401a47f547ccbd2cb347519be3ba8e12b600297061673160c20fcc00cbb18",
+      "outputImage": "/catalogo-gti/generated-branded/gti04-078-gti-gti04-078-eje-homocinetico-tras-grand-vitara-sz-2-7-4x4-mt-at-2007-6-huecos-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI04094": {
+      "sku": "GTI04-094",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti04-094-punta-eje-l-r-captiva-3-0-34-dts-generated-reference.webp",
+      "sourceSha256": "76ae8b2e8ad7814f33aa480705bb6c3ed79dbb27b42f4140e507602213dfecc0",
+      "outputImage": "/catalogo-gti/generated-branded/gti04-094-gti-gti04-094-punta-eje-l-r-captiva-3-0-34-dts-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI04095": {
+      "sku": "GTI04-095",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti04-095-eje-homocinetico-izq-aveo-generated-reference.webp",
+      "sourceSha256": "f0709c4a78cd55f0881181bd35dc076d90687b4bcd2d64cda15afd1e0b3f90b7",
+      "outputImage": "/catalogo-gti/generated-branded/gti04-095-gti-gti04-095-eje-homocinetico-izq-aveo-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI04096": {
+      "sku": "GTI04-096",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti04-096-eje-homocinetico-der-aveo-generated-reference.webp",
+      "sourceSha256": "50035a81fc0a8b53098ed087746caf7a96d8e46e0764392b051926dd5ba72a0a",
+      "outputImage": "/catalogo-gti/generated-branded/gti04-096-gti-gti04-096-eje-homocinetico-der-aveo-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI04103": {
+      "sku": "GTI04-103",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti04-103-eje-homocinetico-der-tracker-automatica-generated-reference.webp",
+      "sourceSha256": "506bcfaa1be8207148abb2eba2d462d649c3ed3d16fd0a7d242e7680b02d9cc9",
+      "outputImage": "/catalogo-gti/generated-branded/gti04-103-gti-gti04-103-eje-homocinetico-der-tracker-automatica-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI04104": {
+      "sku": "GTI04-104",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti04-104-eje-homocinetico-izq-tracker-automatica-generated-reference.webp",
+      "sourceSha256": "ae73bc98fd714b682e67bbf263667aab82ff6731a1f032cd61e63059e5fcf9b3",
+      "outputImage": "/catalogo-gti/generated-branded/gti04-104-gti-gti04-104-eje-homocinetico-izq-tracker-automatica-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI04105": {
+      "sku": "GTI04-105",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti04-105-eje-homocinetico-der-tracker-mecanica-generated-reference.webp",
+      "sourceSha256": "715593fd0cfc19637695c862761205665eb7cbd506e3108456397154267f5240",
+      "outputImage": "/catalogo-gti/generated-branded/gti04-105-gti-gti04-105-eje-homocinetico-der-tracker-mecanica-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI04106": {
+      "sku": "GTI04-106",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti04-106-eje-homocinetico-izq-tracker-mecanica-generated-reference.webp",
+      "sourceSha256": "69114bbb8b763cfd2331943ca92e17a44a93fb8e3623ab280d12f1d71c999da1",
+      "outputImage": "/catalogo-gti/generated-branded/gti04-106-gti-gti04-106-eje-homocinetico-izq-tracker-mecanica-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI05001": {
+      "sku": "GTI05-001",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti05-001-punta-eje-l-r-dw-espero-cielo-glx-nubira-33x29-generated-reference.webp",
+      "sourceSha256": "eec86b4802bfbc6d9665743d193b7a22b02a34b4a31277c298cfbdec2d4bc1ac",
+      "outputImage": "/catalogo-gti/generated-branded/gti05-001-gti-gti05-001-punta-eje-l-r-dw-espero-cielo-glx-nubira-33x29-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI06009": {
+      "sku": "GTI06-009",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti06-009-eje-homocinetico-der-hd-accent-verna-indu-25x25-generated-reference.webp",
+      "sourceSha256": "2561729941032f6aa053b35e10773d56694a9950f24b46e1f08e7965b1a8b460",
+      "outputImage": "/catalogo-gti/generated-branded/gti06-009-gti-gti06-009-eje-homocinetico-der-hd-accent-verna-indu-25x25-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI06010": {
+      "sku": "GTI06-010",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti06-010-eje-homocinetico-izq-hd-accent-generated-reference.webp",
+      "sourceSha256": "5b32778669e02530f8ceee4b75d46a0cca33314deb4f93fc43a68eb52d0e392c",
+      "outputImage": "/catalogo-gti/generated-branded/gti06-010-gti-gti06-010-eje-homocinetico-izq-hd-accent-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI06011": {
+      "sku": "GTI06-011",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti06-011-punta-eje-l-r-hd-accent-verna-gyro-vision-25x30-pin-ext-generated-reference.webp",
+      "sourceSha256": "cd7a2dc73a377c67dffeee2181b2d0afc203918cda26110c646191402cea44bf",
+      "outputImage": "/catalogo-gti/generated-branded/gti06-011-gti-gti06-011-punta-eje-l-r-hd-accent-verna-gyro-vision-25x30-pin-ext-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI06018": {
+      "sku": "GTI06-018",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti06-018-punta-eje-l-r-hd-tucson-4x2-23x27-dts-sin-abs-mecanico-generated-reference.webp",
+      "sourceSha256": "75f5233f50589d102e2b0594e060658c44ec267036c13fab2075818fbc2f7236",
+      "outputImage": "/catalogo-gti/generated-branded/gti06-018-gti-gti06-018-punta-eje-l-r-hd-tucson-4x2-23x27-dts-sin-abs-mecanico-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI06022": {
+      "sku": "GTI06-022",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti06-022-eje-homocinetico-izq-hd-vision-kia-rio-xcite-sephia-25x25-generated-reference.webp",
+      "sourceSha256": "455c81fb8d599101dbb12d84908c6ee0e6f994635f239b7bd837832fc241f922",
+      "outputImage": "/catalogo-gti/generated-branded/gti06-022-gti-gti06-022-eje-homocinetico-izq-hd-vision-kia-rio-xcite-sephia-25x25-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI06023": {
+      "sku": "GTI06-023",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti06-023-eje-homocinetico-der-hd-vision-kia-rio-xcite-sephia-25x25-generated-reference.webp",
+      "sourceSha256": "df6e322073d3e8bee4afdc1782ab4205d3be5d49bef593f7453d5e63f5e90ca7",
+      "outputImage": "/catalogo-gti/generated-branded/gti06-023-gti-gti06-023-eje-homocinetico-der-hd-vision-kia-rio-xcite-sephia-25x25-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI06024": {
+      "sku": "GTI06-024",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti06-024-eje-homocinetico-izq-kia-rio-stylus-24x26-generated-reference.webp",
+      "sourceSha256": "549aedee22ff16c5174cdfc3d87ad74228c89c24590c0b7a5c9c75fe04c4ab4c",
+      "outputImage": "/catalogo-gti/generated-branded/gti06-024-gti-gti06-024-eje-homocinetico-izq-kia-rio-stylus-24x26-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI06029": {
+      "sku": "GTI06-029",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti06-029-eje-homocinetico-der-hd-i-10-24x25-generated-reference.webp",
+      "sourceSha256": "d917979f7bf814d89d44f4a47b21a9af41ac0d718370dc66d4dac6fcbcfbf026",
+      "outputImage": "/catalogo-gti/generated-branded/gti06-029-gti-gti06-029-eje-homocinetico-der-hd-i-10-24x25-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI06035": {
+      "sku": "GTI06-035",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti06-035-punta-eje-l-r-hd-santa-fe-2010-2012-36x30-generated-reference.webp",
+      "sourceSha256": "9d4ecf20b36f0d7ff0e62607f5183d115d905c9c601ddf60b389968c036daf65",
+      "outputImage": "/catalogo-gti/generated-branded/gti06-035-gti-gti06-035-punta-eje-l-r-hd-santa-fe-2010-2012-36x30-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI06036": {
+      "sku": "GTI06-036",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti06-036-eje-homocinetico-izq-hd-verna-gyro-generated-reference.webp",
+      "sourceSha256": "e343dc4d408dcaa5c086465c527dd744c39532da84c9f755d8db394219f13810",
+      "outputImage": "/catalogo-gti/generated-branded/gti06-036-gti-gti06-036-eje-homocinetico-izq-hd-verna-gyro-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI06042": {
+      "sku": "GTI06-042",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti06-042-punta-eje-l-r-kia-sportage-revolution-hd-tucson-ix-35-4x4-4x2-mecanica-p-generated-reference.webp",
+      "sourceSha256": "98992cde76a43084282c3dabc32582d6c57c133e57ca1c81d1d78b460452991a",
+      "outputImage": "/catalogo-gti/generated-branded/gti06-042-gti-gti06-042-punta-eje-l-r-kia-sportage-revolution-hd-tucson-ix-35-4x4-4x2-mecanica-p-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI06045": {
+      "sku": "GTI06-045",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti06-045-eje-homocinetico-der-hd-tucson-4x2-automatico-generated-reference.webp",
+      "sourceSha256": "9bd0ad07532d6c342dc912d1b9ff551e04ca3c6765d5581ceb65bd6fe50876bd",
+      "outputImage": "/catalogo-gti/generated-branded/gti06-045-gti-gti06-045-eje-homocinetico-der-hd-tucson-4x2-automatico-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI06047": {
+      "sku": "GTI06-047",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti06-047-eje-homocinetico-der-kia-sorento-generated-reference.webp",
+      "sourceSha256": "a672ab2f2c947e9cf9d24c5c0427610847c893351960cb91809488de735fe845",
+      "outputImage": "/catalogo-gti/generated-branded/gti06-047-gti-gti06-047-eje-homocinetico-der-kia-sorento-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI06062": {
+      "sku": "GTI06-062",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti06-062-punta-eje-l-r-hd-tucson-ix-35-diesel-4x2-4x4-mecanica-kia-sportage-2-0-3-generated-reference.webp",
+      "sourceSha256": "763a0619a5892a3d36953a0d09f38b3a9a8cb5883fd0a2ddb117c2b95d491489",
+      "outputImage": "/catalogo-gti/generated-branded/gti06-062-gti-gti06-062-punta-eje-l-r-hd-tucson-ix-35-diesel-4x2-4x4-mecanica-kia-sportage-2-0-3-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI06064": {
+      "sku": "GTI06-064",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti06-064-eje-homocinetico-izq-hd-i-25-generated-reference.webp",
+      "sourceSha256": "b170bcfbf94ce8e63eee02cebce0fe8837e1b1dc55210f1ab872bf0b5668b419",
+      "outputImage": "/catalogo-gti/generated-branded/gti06-064-gti-gti06-064-eje-homocinetico-izq-hd-i-25-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI06065": {
+      "sku": "GTI06-065",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti06-065-punta-eje-lado-rueda-l-r-hyundai-tucson-kia-new-sportage-gasolina-4x2-4x-generated-reference.webp",
+      "sourceSha256": "766a39be834e1483804ec1879a74bc8d8e11d4ca97ce8a54c113766d965f6371",
+      "outputImage": "/catalogo-gti/generated-branded/gti06-065-gti-gti06-065-punta-eje-lado-rueda-l-r-hyundai-tucson-kia-new-sportage-gasolina-4x2-4x-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI06066": {
+      "sku": "GTI06-066",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti06-066-eje-homocinetico-completo-izquierdo-hyundai-grand-i-10-1-0-1-2-oem-49500-generated-reference.webp",
+      "sourceSha256": "e9ae19816b775fd2744e6e9b27e73420192136b72d9dc4a18b0052471369c55f",
+      "outputImage": "/catalogo-gti/generated-branded/gti06-066-gti-gti06-066-eje-homocinetico-completo-izquierdo-hyundai-grand-i-10-1-0-1-2-oem-49500-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI07006": {
+      "sku": "GTI07-006",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti07-006-punta-eje-l-r-fiat-147-zastava-20-dts-generated-reference.webp",
+      "sourceSha256": "04ebed4ef88276cd2dc973e91fb4073afcdd4346b3287e0718ad2eefe6939287",
+      "outputImage": "/catalogo-gti/generated-branded/gti07-006-gti-gti07-006-punta-eje-l-r-fiat-147-zastava-20-dts-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI07014": {
+      "sku": "GTI07-014",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti07-014-punta-eje-l-r-toyota-corolla-1-8-1-6-at-mt-02-24d-generated-reference.webp",
+      "sourceSha256": "1b3470a4a41c9be2e27da8fa377bfa3d50473c953bc0f7b4dc7ac605622f0472",
+      "outputImage": "/catalogo-gti/generated-branded/gti07-014-gti-gti07-014-punta-eje-l-r-toyota-corolla-1-8-1-6-at-mt-02-24d-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI07020": {
+      "sku": "GTI07-020",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti07-020-punta-eje-lado-rueda-l-r-kia-picanto-i-ii-ion-morning-y-ford-festiva-1-3-generated-reference.webp",
+      "sourceSha256": "e6da3fef4a2c79de48cf4cd327e591ed5d3283a10c48529b8bc41bef03cae61d",
+      "outputImage": "/catalogo-gti/generated-branded/gti07-020-gti-gti07-020-punta-eje-lado-rueda-l-r-kia-picanto-i-ii-ion-morning-y-ford-festiva-1-3-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI07025": {
+      "sku": "GTI07-025",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti07-025-punta-eje-l-r-kia-sephia-97-99-23-dts-generated-reference.webp",
+      "sourceSha256": "132b8afb1695d69356e71cb9473cc38e9797e209a80b7c95d3a83093a33a4445",
+      "outputImage": "/catalogo-gti/generated-branded/gti07-025-gti-gti07-025-punta-eje-l-r-kia-sephia-97-99-23-dts-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI07032": {
+      "sku": "GTI07-032",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti07-032-punta-eje-lado-caja-kia-picanto-1-1-i-ii-y-picanto-ion-hasta-2018-25x20-generated-reference.webp",
+      "sourceSha256": "1c65a28dbe9be7c63e852cc2192db0dc9766020022063c3486194876b1ba97a1",
+      "outputImage": "/catalogo-gti/generated-branded/gti07-032-gti-gti07-032-punta-eje-lado-caja-kia-picanto-1-1-i-ii-y-picanto-ion-hasta-2018-25x20-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI07051": {
+      "sku": "GTI07-051",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti07-051-punta-eje-l-r-peugeot-405-1-6-90t-generated-reference.webp",
+      "sourceSha256": "b966a792c7fb482cde6e736a3a20fbc20328caeeb5b3e07c319504062a4f921a",
+      "outputImage": "/catalogo-gti/generated-branded/gti07-051-gti-gti07-051-punta-eje-l-r-peugeot-405-1-6-90t-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI07054": {
+      "sku": "GTI07-054",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti07-054-eje-homocinetico-izq-peugeot-306-405-generated-reference.webp",
+      "sourceSha256": "8025f5cd21d27971074a61da1270275c56953df64c72df13fc9268925d149cba",
+      "outputImage": "/catalogo-gti/generated-branded/gti07-054-gti-gti07-054-eje-homocinetico-izq-peugeot-306-405-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI07060": {
+      "sku": "GTI07-060",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti07-060-eje-homocinetico-toyota-hilux-vigo-generated-reference.webp",
+      "sourceSha256": "faec6ece90190c3f40bd3435119bf514e3adc8483237f5e61ec0214eb8976f27",
+      "outputImage": "/catalogo-gti/generated-branded/gti07-060-gti-gti07-060-eje-homocinetico-toyota-hilux-vigo-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI07062": {
+      "sku": "GTI07-062",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti07-062-punta-eje-l-c-aveo-1-6-emotion-aut-generated-reference.webp",
+      "sourceSha256": "36f6aaf8a181b98454b39bca929dd19ff00e9d8980d51faf8ab11fc0048325da",
+      "outputImage": "/catalogo-gti/generated-branded/gti07-062-gti-gti07-062-punta-eje-l-c-aveo-1-6-emotion-aut-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI07103": {
+      "sku": "GTI07-103",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti07-103-punta-eje-l-r-ford-fortaleza-150-expedition-generated-reference.webp",
+      "sourceSha256": "e9dee92022010d8da518d51fce9e9a350230378a703bacaa2e3b83aa7affeaa2",
+      "outputImage": "/catalogo-gti/generated-branded/gti07-103-gti-gti07-103-punta-eje-l-r-ford-fortaleza-150-expedition-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI07104": {
+      "sku": "GTI07-104",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti07-104-punta-eje-l-c-ford-eco-sport-4x2-89-02-generated-reference.webp",
+      "sourceSha256": "3d94c36cc44ae4d0b6011d9598fa62747bbeb107e6d749a0600279d4cc5eb644",
+      "outputImage": "/catalogo-gti/generated-branded/gti07-104-gti-gti07-104-punta-eje-l-c-ford-eco-sport-4x2-89-02-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI07112": {
+      "sku": "GTI07-112",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti07-112-punta-eje-l-c-izq-ford-fiesta-charger-generated-reference.webp",
+      "sourceSha256": "4ce18086fbd3552fc2d677728d4f7b226ef2eeecf2cb9153422819306dda56e3",
+      "outputImage": "/catalogo-gti/generated-branded/gti07-112-gti-gti07-112-punta-eje-l-c-izq-ford-fiesta-charger-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI07149": {
+      "sku": "GTI07-149",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti07-149-punta-eje-l-c-volkswagen-panel-t5-2011-hembra-larga-generated-reference.webp",
+      "sourceSha256": "80240802b2cf3a7c82281b480960b03d222eb461f440f34777860305cf0e1f16",
+      "outputImage": "/catalogo-gti/generated-branded/gti07-149-gti-gti07-149-punta-eje-l-c-volkswagen-panel-t5-2011-hembra-larga-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI07153": {
+      "sku": "GTI07-153",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti07-153-punta-eje-l-r-nissan-x-trail-generated-reference.webp",
+      "sourceSha256": "d3abc823857c44934320b460a567ccee386f89179a8a94e184a1fb7b31964cb2",
+      "outputImage": "/catalogo-gti/generated-branded/gti07-153-gti-gti07-153-punta-eje-l-r-nissan-x-trail-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI07154": {
+      "sku": "GTI07-154",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti07-154-eje-homocinetico-der-mitsubishi-sportero-generated-reference.webp",
+      "sourceSha256": "a4b405821738e97414de49f157e20cedbc4a3dea4b1d6b873daad81439ad714e",
+      "outputImage": "/catalogo-gti/generated-branded/gti07-154-gti-gti07-154-eje-homocinetico-der-mitsubishi-sportero-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI07155": {
+      "sku": "GTI07-155",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti07-155-eje-homocinetico-izq-mitsubishi-sportero-generated-reference.webp",
+      "sourceSha256": "6def1338991cdc358927179e93bf712b4dbfb75374430620f40bb7339499f03d",
+      "outputImage": "/catalogo-gti/generated-branded/gti07-155-gti-gti07-155-eje-homocinetico-izq-mitsubishi-sportero-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI07156": {
+      "sku": "GTI07-156",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti07-156-punta-eje-l-r-mitsubishi-sportero-33-dts-generated-reference.webp",
+      "sourceSha256": "3fcc99a215284c61b39edba43f5534e5c1f858440097f258578a4802cc4065e1",
+      "outputImage": "/catalogo-gti/generated-branded/gti07-156-gti-gti07-156-punta-eje-l-r-mitsubishi-sportero-33-dts-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI07160": {
+      "sku": "GTI07-160",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti07-160-punta-eje-l-r-nissan-almera-generated-reference.webp",
+      "sourceSha256": "48867ad0fea6cc67521e0b8c4b7733c14a8e45e3f308a476bc9472795caad102",
+      "outputImage": "/catalogo-gti/generated-branded/gti07-160-gti-gti07-160-punta-eje-l-r-nissan-almera-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    },
+    "GTI07179": {
+      "sku": "GTI07-179",
+      "brand": "GTI",
+      "sourceImage": "/catalogo-gti/generated/gti-gti07-179-punta-eje-l-r-chevy-generated-reference.webp",
+      "sourceSha256": "957782d99f7de784e0e21045a8438f21974becdf802dfc6a88888708ae2371db",
+      "outputImage": "/catalogo-gti/generated-branded/gti07-179-gti-gti07-179-punta-eje-l-r-chevy-branded-v2.webp",
+      "badgeVariant": "yellow-on-blue-capsule",
+      "imageStatus": "generated-reference-image"
+    }
+  }
+}

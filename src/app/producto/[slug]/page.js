@@ -3,7 +3,7 @@ import { cache } from "react";
 import ProductVariantSelector from "@/components/ProductVariantSelector";
 import CatalogSidebar from "@/components/CatalogSidebar";
 import { siteUrl } from "@/lib/site";
-import { getProductDisplayImage } from "@/lib/productImage";
+import { getDynamikCatalogGallery, getProductDisplayImage, isDynamikProduct } from "@/lib/productImage";
 import { getProductById } from "@/lib/products";
 
 export const dynamic = "force-dynamic";
@@ -55,6 +55,24 @@ export async function generateMetadata({ params }) {
     product.shortDesc ||
     `Compra ${product.name} en REMBERT, Barrancabermeja. Envíos a toda Colombia.`;
 
+  const openGraph = {
+    title: `${product.name} | REMBERT`,
+    description,
+    url: `${baseUrl}/producto/${product.slug}`,
+    siteName: "REMBERT",
+    type: "website",
+  };
+  if (imageUrl) {
+    openGraph.images = [{ url: imageUrl, width: 800, height: 800, alt: product.name }];
+  }
+
+  const twitter = {
+    card: "summary_large_image",
+    title: product.name,
+    description,
+  };
+  if (imageUrl) twitter.images = [imageUrl];
+
   return {
     title: product.name,
     description,
@@ -68,27 +86,8 @@ export async function generateMetadata({ params }) {
     alternates: {
       canonical: `/producto/${product.slug}`,
     },
-    openGraph: {
-      title: `${product.name} | REMBERT`,
-      description,
-      url: `${baseUrl}/producto/${product.slug}`,
-      siteName: "REMBERT",
-      images: [
-        {
-          url: imageUrl,
-          width: 800,
-          height: 800,
-          alt: product.name,
-        },
-      ],
-      type: "website",
-    },
-    twitter: {
-      card: "summary_large_image",
-      title: product.name,
-      description,
-      images: [imageUrl],
-    },
+    openGraph,
+    twitter,
   };
 }
 
@@ -102,7 +101,9 @@ export default async function ProductPage({ params }) {
 
   const toAbsoluteUrl = (url) => new URL(url || "/logo.png", baseUrl).toString();
   const displayImage = getProductDisplayImage(product);
-  const imageUrls = product.images?.length && product.images[0]?.url === displayImage
+  const imageUrls = isDynamikProduct(product)
+    ? getDynamikCatalogGallery(product).map((image) => toAbsoluteUrl(image.url))
+    : product.images?.length
     ? product.images.map((image) => toAbsoluteUrl(image.url))
     : [toAbsoluteUrl(displayImage)];
   const productUrl = `${baseUrl}/producto/${product.slug}`;
