@@ -161,19 +161,6 @@ export default function HeroMediaShowcase() {
           />
         )}
 
-        {/* Capa de Difuminado Negro Perimetral */}
-        <div
-          aria-hidden="true"
-          style={{
-            position: "absolute",
-            inset: 0,
-            zIndex: 4,
-            pointerEvents: "none",
-            background: "radial-gradient(ellipse at center, transparent 55%, rgba(10, 10, 10, 0.35) 80%, rgba(10, 10, 10, 0.95) 100%)",
-            boxShadow: "inset 0 0 40px 20px #0a0a0a, inset 0 0 80px 40px rgba(10, 10, 10, 0.8)",
-          }}
-        />
-
         {/* Contador Diapositivas */}
         <div
           style={{

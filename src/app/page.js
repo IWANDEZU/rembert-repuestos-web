@@ -126,12 +126,12 @@ export default async function Home() {
               aria-hidden="true"
               style={{
                 position: 'absolute',
-                inset: '-60px -80px',
-                background: 'radial-gradient(ellipse 70% 70% at 50% 50%, rgba(10, 10, 10, 0.98) 25%, rgba(10, 10, 10, 0.75) 60%, rgba(10, 10, 10, 0) 100%)',
-                filter: 'blur(45px)',
+                inset: '-80px -100px',
+                background: 'radial-gradient(ellipse 75% 75% at 50% 50%, rgba(10, 10, 10, 0.98) 30%, rgba(10, 10, 10, 0.7) 65%, rgba(10, 10, 10, 0) 100%)',
+                filter: 'blur(55px)',
                 zIndex: 1,
                 pointerEvents: 'none',
-                borderRadius: '50px',
+                borderRadius: '60px',
               }}
             />
             <div style={{ position: 'relative', zIndex: 2, width: '100%', display: 'flex', justifyContent: 'center' }}>
