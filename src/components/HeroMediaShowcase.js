@@ -120,17 +120,15 @@ export default function HeroMediaShowcase() {
         margin: "0 auto",
         borderRadius: "20px",
         overflow: "hidden",
-        background: "rgba(10, 10, 10, 0.35)",
-        backdropFilter: "blur(10px)",
+        background: "transparent",
         border: "none",
-        boxShadow: "0 15px 45px rgba(0, 0, 0, 0.6)",
+        outline: "none",
+        boxShadow: "none",
         display: "flex",
         flexDirection: "column",
-        maskImage: "radial-gradient(ellipse 96% 96% at 50% 50%, black 72%, transparent 100%)",
-        WebkitMaskImage: "radial-gradient(ellipse 96% 96% at 50% 50%, black 72%, transparent 100%)",
       }}
     >
-      {/* Contenedor del Medio (Video o Imagen) con fondo translúcido */}
+      {/* Contenedor del Medio (Video o Imagen) con difuminado negro */}
       <div style={{ position: "relative", width: "100%", flex: 1, overflow: "hidden", background: "transparent" }}>
         {currentItem.type === "video" ? (
           <video
@@ -163,20 +161,34 @@ export default function HeroMediaShowcase() {
           />
         )}
 
+        {/* Capa de Difuminado Negro Profundo (Vignette que funde los bordes con el fondo) */}
+        <div
+          aria-hidden="true"
+          style={{
+            position: "absolute",
+            inset: 0,
+            zIndex: 4,
+            pointerEvents: "none",
+            background: "radial-gradient(ellipse at center, transparent 38%, rgba(10, 10, 10, 0.45) 70%, rgba(10, 10, 10, 0.98) 100%)",
+            boxShadow: "inset 0 0 55px 35px #0a0a0a, inset 0 0 110px 65px rgba(10, 10, 10, 0.85)",
+          }}
+        />
+
         {/* Contador Diapositivas */}
         <div
           style={{
             position: "absolute",
-            top: "12px",
-            right: "12px",
+            top: "14px",
+            right: "14px",
             zIndex: 10,
             background: "rgba(0, 0, 0, 0.75)",
+            backdropFilter: "blur(6px)",
             color: "#E2E8F0",
-            padding: "3px 8px",
+            padding: "3px 9px",
             borderRadius: "12px",
             fontSize: "0.72rem",
             fontWeight: "700",
-            border: "1px solid rgba(255, 255, 255, 0.2)",
+            border: "1px solid rgba(255, 255, 255, 0.15)",
           }}
         >
           {currentIndex + 1} / {MEDIA_ITEMS.length}
@@ -189,17 +201,17 @@ export default function HeroMediaShowcase() {
           aria-label="Contenido anterior"
           style={{
             position: "absolute",
-            left: "8px",
+            left: "10px",
             top: "50%",
             transform: "translateY(-50%)",
             zIndex: 15,
             width: "36px",
             height: "36px",
             borderRadius: "50%",
-            background: "rgba(0, 0, 0, 0.65)",
-            backdropFilter: "blur(4px)",
+            background: "rgba(0, 0, 0, 0.55)",
+            backdropFilter: "blur(6px)",
             color: "#FFFFFF",
-            border: "1px solid rgba(255, 255, 255, 0.3)",
+            border: "1px solid rgba(255, 255, 255, 0.2)",
             fontSize: "1.1rem",
             fontWeight: "900",
             display: "flex",
@@ -214,9 +226,9 @@ export default function HeroMediaShowcase() {
             e.currentTarget.style.borderColor = "#FFD700";
           }}
           onMouseLeave={(e) => {
-            e.currentTarget.style.background = "rgba(0, 0, 0, 0.65)";
+            e.currentTarget.style.background = "rgba(0, 0, 0, 0.55)";
             e.currentTarget.style.color = "#FFFFFF";
-            e.currentTarget.style.borderColor = "rgba(255, 255, 255, 0.3)";
+            e.currentTarget.style.borderColor = "rgba(255, 255, 255, 0.2)";
           }}
         >
           ‹
@@ -228,17 +240,17 @@ export default function HeroMediaShowcase() {
           aria-label="Siguiente contenido"
           style={{
             position: "absolute",
-            right: "8px",
+            right: "10px",
             top: "50%",
             transform: "translateY(-50%)",
             zIndex: 15,
             width: "36px",
             height: "36px",
             borderRadius: "50%",
-            background: "rgba(0, 0, 0, 0.65)",
-            backdropFilter: "blur(4px)",
+            background: "rgba(0, 0, 0, 0.55)",
+            backdropFilter: "blur(6px)",
             color: "#FFFFFF",
-            border: "1px solid rgba(255, 255, 255, 0.3)",
+            border: "1px solid rgba(255, 255, 255, 0.2)",
             fontSize: "1.1rem",
             fontWeight: "900",
             display: "flex",
@@ -253,9 +265,9 @@ export default function HeroMediaShowcase() {
             e.currentTarget.style.borderColor = "#FFD700";
           }}
           onMouseLeave={(e) => {
-            e.currentTarget.style.background = "rgba(0, 0, 0, 0.65)";
+            e.currentTarget.style.background = "rgba(0, 0, 0, 0.55)";
             e.currentTarget.style.color = "#FFFFFF";
-            e.currentTarget.style.borderColor = "rgba(255, 255, 255, 0.3)";
+            e.currentTarget.style.borderColor = "rgba(255, 255, 255, 0.2)";
           }}
         >
           ›
@@ -265,13 +277,15 @@ export default function HeroMediaShowcase() {
       {/* Pie de Información y Botón de Acción Translúcido y Difuminado */}
       <div
         style={{
-          padding: "10px 14px 12px",
-          background: "rgba(10, 10, 10, 0.55)",
+          padding: "10px 14px 14px",
+          background: "linear-gradient(180deg, rgba(10,10,10,0.4) 0%, rgba(10,10,10,0.85) 40%, rgba(10,10,10,0.98) 100%)",
           backdropFilter: "blur(14px)",
-          borderTop: "1px solid rgba(255, 255, 255, 0.06)",
+          borderTop: "none",
           display: "flex",
           flexDirection: "column",
           gap: "8px",
+          position: "relative",
+          zIndex: 10,
         }}
       >
         <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: "8px" }}>

@@ -2909,8 +2909,11 @@ h1, h2, h3, h4 {
   }
 
   .hero-media-showcase {
-    height: 380px !important;
+    height: 475px !important;
     max-width: 100% !important;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
   }
 
   .btn-add-to-cart,
