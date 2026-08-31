@@ -115,8 +115,8 @@ export default function HeroMediaShowcase() {
       style={{
         position: "relative",
         width: "100%",
-        maxWidth: "520px",
-        height: "460px",
+        maxWidth: "660px",
+        height: "585px",
         margin: "0 auto",
         borderRadius: "20px",
         overflow: "hidden",
@@ -151,7 +151,7 @@ export default function HeroMediaShowcase() {
             src={currentItem.src}
             alt={currentItem.title}
             fill
-            sizes="(max-width: 768px) 100vw, 575px"
+            sizes="(max-width: 768px) 100vw, 680px"
             priority={currentIndex === 0}
             style={{
               objectFit: "contain",
@@ -161,7 +161,7 @@ export default function HeroMediaShowcase() {
           />
         )}
 
-        {/* Capa de Difuminado Negro Profundo (Vignette que funde los bordes con el fondo) */}
+        {/* Capa de Difuminado Negro Profundo (Vignette ajustado a los límites exteriores) */}
         <div
           aria-hidden="true"
           style={{
@@ -169,8 +169,8 @@ export default function HeroMediaShowcase() {
             inset: 0,
             zIndex: 4,
             pointerEvents: "none",
-            background: "radial-gradient(ellipse at center, transparent 38%, rgba(10, 10, 10, 0.45) 70%, rgba(10, 10, 10, 0.98) 100%)",
-            boxShadow: "inset 0 0 55px 35px #0a0a0a, inset 0 0 110px 65px rgba(10, 10, 10, 0.85)",
+            background: "radial-gradient(ellipse at center, transparent 48%, rgba(10, 10, 10, 0.4) 75%, rgba(10, 10, 10, 0.98) 100%)",
+            boxShadow: "inset 0 0 45px 25px #0a0a0a, inset 0 0 90px 48px rgba(10, 10, 10, 0.85)",
           }}
         />
 
