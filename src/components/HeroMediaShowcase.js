@@ -11,7 +11,6 @@ const MEDIA_ITEMS = [
     src: "/flyers/rembert-comercial-8s.mp4",
     title: "Comercial Oficial Rembert Repuestos",
     subtitle: "38 Años de Calidad y Confianza Automotriz",
-    badge: "🎬 VIDEO OFICIAL",
     ctaLabel: "Explorar Catálogo",
     ctaHref: "/catalogo",
     duration: 8000,
@@ -22,7 +21,6 @@ const MEDIA_ITEMS = [
     src: "/flyers/flyer-promo-rembert.png",
     title: "Todo para tu Vehículo al Mejor Precio",
     subtitle: "Repuestos originales y alternativos garantizados",
-    badge: "🏷️ FLYER PROMOCIONAL",
     ctaLabel: "Cotizar por WhatsApp",
     ctaHref: "https://wa.me/573102420490?text=Hola%2C%20quisiera%20cotizar%20repuestos%20vistos%20en%20el%20flyer.",
     duration: 6000,
@@ -33,7 +31,6 @@ const MEDIA_ITEMS = [
     src: "/flyers/flyer-embragues-dynamik.png",
     title: "Kits de Embrague DYNAMIK",
     subtitle: "Prensa, Disco y Balinera con Máximo Rendimiento",
-    badge: "⚙️ LÍNEA DYNAMIK",
     ctaLabel: "Ver Línea DYNAMIK",
     ctaHref: "/marcas/dynamik",
     duration: 6000,
@@ -44,7 +41,6 @@ const MEDIA_ITEMS = [
     src: "/banners/rembert-banner-promocional-suspension-v4.jpg",
     title: "Suspensión, Amortiguadores y Frenos",
     subtitle: "Seguridad y estabilidad para todas las marcas",
-    badge: "🛞 SUSPENSIÓN & FRENOS",
     ctaLabel: "Ver Suspensión",
     ctaHref: "/catalogo?category=frenos-y-suspension",
     duration: 6000,
@@ -55,7 +51,6 @@ const MEDIA_ITEMS = [
     src: "/banners/rembert-banner-promocional-productos-v2.jpg",
     title: "Filtros, Lubricantes y Eléctricos",
     subtitle: "Stock disponible para entrega inmediata y envíos",
-    badge: "📦 STOCK NACIONAL",
     ctaLabel: "Ver Catálogo Completo",
     ctaHref: "/catalogo",
     duration: 6000,
@@ -120,20 +115,23 @@ export default function HeroMediaShowcase() {
       style={{
         position: "relative",
         width: "100%",
-        maxWidth: "460px",
-        height: "440px",
+        maxWidth: "520px",
+        height: "460px",
         margin: "0 auto",
-        borderRadius: "16px",
+        borderRadius: "20px",
         overflow: "hidden",
-        background: "linear-gradient(145deg, #181A20 0%, #0D0E12 100%)",
-        border: "2px solid rgba(255, 215, 0, 0.4)",
-        boxShadow: "0 20px 40px -10px rgba(0, 0, 0, 0.8), 0 0 25px rgba(255, 215, 0, 0.15)",
+        background: "rgba(10, 10, 10, 0.35)",
+        backdropFilter: "blur(10px)",
+        border: "none",
+        boxShadow: "0 15px 45px rgba(0, 0, 0, 0.6)",
         display: "flex",
         flexDirection: "column",
+        maskImage: "radial-gradient(ellipse 96% 96% at 50% 50%, black 72%, transparent 100%)",
+        WebkitMaskImage: "radial-gradient(ellipse 96% 96% at 50% 50%, black 72%, transparent 100%)",
       }}
     >
-      {/* Contenedor del Medio (Video o Imagen) */}
-      <div style={{ position: "relative", width: "100%", flex: 1, overflow: "hidden", background: "#000000" }}>
+      {/* Contenedor del Medio (Video o Imagen) con fondo translúcido */}
+      <div style={{ position: "relative", width: "100%", flex: 1, overflow: "hidden", background: "transparent" }}>
         {currentItem.type === "video" ? (
           <video
             ref={videoRef}
@@ -155,7 +153,7 @@ export default function HeroMediaShowcase() {
             src={currentItem.src}
             alt={currentItem.title}
             fill
-            sizes="(max-width: 768px) 100vw, 460px"
+            sizes="(max-width: 768px) 100vw, 575px"
             priority={currentIndex === 0}
             style={{
               objectFit: "contain",
@@ -164,32 +162,6 @@ export default function HeroMediaShowcase() {
             }}
           />
         )}
-
-        {/* Badge Superior Tipo Chip */}
-        <div
-          style={{
-            position: "absolute",
-            top: "12px",
-            left: "12px",
-            zIndex: 10,
-            background: "rgba(10, 10, 10, 0.85)",
-            backdropFilter: "blur(6px)",
-            color: "#FFD700",
-            border: "1px solid rgba(255, 215, 0, 0.4)",
-            padding: "4px 10px",
-            borderRadius: "20px",
-            fontSize: "0.72rem",
-            fontWeight: "800",
-            letterSpacing: "0.5px",
-            display: "inline-flex",
-            alignItems: "center",
-            gap: "5px",
-            boxShadow: "0 4px 12px rgba(0, 0, 0, 0.5)",
-          }}
-        >
-          <span style={{ width: "6px", height: "6px", borderRadius: "50%", background: "#FFD700", display: "inline-block", animation: "pulse 1.5s infinite" }} />
-          <span>{currentItem.badge}</span>
-        </div>
 
         {/* Contador Diapositivas */}
         <div
@@ -290,12 +262,13 @@ export default function HeroMediaShowcase() {
         </button>
       </div>
 
-      {/* Pie de Información y Botón de Acción */}
+      {/* Pie de Información y Botón de Acción Translúcido y Difuminado */}
       <div
         style={{
           padding: "10px 14px 12px",
-          background: "linear-gradient(180deg, #111317 0%, #08090B 100%)",
-          borderTop: "1px solid rgba(255, 255, 255, 0.1)",
+          background: "rgba(10, 10, 10, 0.55)",
+          backdropFilter: "blur(14px)",
+          borderTop: "1px solid rgba(255, 255, 255, 0.06)",
           display: "flex",
           flexDirection: "column",
           gap: "8px",
