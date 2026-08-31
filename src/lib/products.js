@@ -1268,6 +1268,37 @@ const consolidateCatalogProducts = (catalog) => {
   });
 };
 
+export const getPublishedGeneratedGeometryReference = (override) => {
+  const geometryEvidence = override?.sourceRecord?.geometryEvidence;
+  if (geometryEvidence?.publishedAsPhysicalPhoto !== false) return {};
+
+  const sourcePageUrl = String(geometryEvidence.sourcePageUrl || "").trim();
+  if (!sourcePageUrl) return {};
+
+  try {
+    const sourceUrl = new URL(sourcePageUrl);
+    if (sourceUrl.protocol !== "https:" || !sourceUrl.hostname) return {};
+
+    const reference = [
+      String(geometryEvidence.crossReferenceBrand || "").trim(),
+      String(geometryEvidence.crossReferenceNumber || "").trim(),
+    ].filter(Boolean).join(" · ");
+    const brandLabel = String(override?.sourceRecord?.brandSlug || "producto")
+      .trim()
+      .toUpperCase();
+
+    return {
+      // Esta URL documenta únicamente el cruce geométrico usado para la
+      // recreación. Nunca ocupa sourceUrl, que se reserva para fuentes de la
+      // fotografía física/publicada.
+      imageReferenceSourceUrl: sourceUrl.toString(),
+      imageReferenceSourceLabel: `Cruce geométrico externo${reference ? ` · ${reference}` : ""} (no es foto ${brandLabel})`,
+    };
+  } catch {
+    return {};
+  }
+};
+
 const applyRealImageOverride = (product) => {
   const override = productImageOverrides[normalizeInventoryCode(product.sku)]
     || productImageOverrides[normalizeInventoryCode(product.manufacturerReference)];
@@ -1295,6 +1326,10 @@ const applyRealImageOverride = (product) => {
 
   const hasAuthenticPhotoOverride = ["real-source-photo", "real-source-watermarked", "authentic-product-photo", "exact-real-photo"]
     .includes(override.imageStatus);
+  const hasGeneratedReferenceOverride = override.imageStatus === "generated-reference-image";
+  const generatedGeometryReference = hasGeneratedReferenceOverride
+    ? getPublishedGeneratedGeometryReference(override)
+    : {};
   const description = hasAuthenticPhotoOverride
     ? String(product.description || "")
       .replace(
@@ -1309,15 +1344,31 @@ const applyRealImageOverride = (product) => {
         "La fotografía real exacta sigue pendiente; no sustituirla por un eje genérico de Picanto.",
         "La ficha incluye una fotografía real de la referencia exacta, normalizada sobre fondo blanco y vinculada a su fuente trazable."
       )
-    : product.description;
-  const attributes = hasAuthenticPhotoOverride && Array.isArray(product.attributes)
+    : hasGeneratedReferenceOverride
+      ? String(product.description || "")
+        .replace(
+          /Foto real pendiente; la ficha no muestra un repuesto genérico ni una geometría generada\.?/gi,
+          "La ficha muestra una imagen generada de referencia identificada como tal; la fotografía física exacta continúa pendiente."
+        )
+        .replace(
+          /Foto exacta pendiente; no se publica una pieza parecida, genérica o generada sin fuente trazable\.?/gi,
+          "La fotografía física exacta continúa pendiente; la recreación publicada conserva trazabilidad y divulgación visible."
+        )
+      : product.description;
+  const attributes = (hasAuthenticPhotoOverride || hasGeneratedReferenceOverride) && Array.isArray(product.attributes)
     ? product.attributes.map((attribute) => ["Imagen", "Estado de imagen"].includes(attribute.name)
-      ? { ...attribute, value: override.imageDisclosure || "Fotografía real de la referencia exacta" }
+      ? {
+          ...attribute,
+          value: override.imageDisclosure || (hasAuthenticPhotoOverride
+            ? "Fotografía real de la referencia exacta"
+            : "Imagen generada de referencia; no es fotografía original"),
+        }
       : attribute)
     : product.attributes;
   return {
     ...product,
     ...override,
+    ...generatedGeometryReference,
     description,
     attributes,
     images: override.images,

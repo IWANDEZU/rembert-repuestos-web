@@ -719,12 +719,36 @@ export default async function Catalogo({ searchParams }) {
     "mainEntity": {
       "@type": "ItemList",
       "numberOfItems": totalProducts,
-      "itemListElement": products.slice(0, 24).map((product, index) => ({
-        "@type": "ListItem",
-        "position": (currentPage - 1) * PAGE_SIZE + index + 1,
-        "name": product.name,
-        "url": `${siteUrl}/producto/${product.slug}`,
-      })),
+      "itemListElement": products.slice(0, 24).map((product, index) => {
+        const itemUrl = `${siteUrl}/producto/${product.slug || product.id}`;
+        const itemImage = product.image || (product.images && product.images[0]?.url) || `${siteUrl}/logo.png`;
+        const itemBrand = product.brand?.name || product.brand || "REMBERT";
+        return {
+          "@type": "ListItem",
+          "position": (currentPage - 1) * PAGE_SIZE + index + 1,
+          "name": product.name,
+          "url": itemUrl,
+          "item": {
+            "@type": "Product",
+            "name": product.name,
+            "url": itemUrl,
+            "image": itemImage.startsWith("http") ? itemImage : `${siteUrl}${itemImage}`,
+            "sku": product.sku || product.id,
+            "brand": {
+              "@type": "Brand",
+              "name": itemBrand,
+            },
+            ...(product.price > 0 ? {
+              "offers": {
+                "@type": "Offer",
+                "priceCurrency": "COP",
+                "price": product.price,
+                "availability": product.inStock ? "https://schema.org/InStock" : "https://schema.org/OutOfStock"
+              }
+            } : {})
+          }
+        };
+      }),
     },
   };
 

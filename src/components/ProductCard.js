@@ -9,7 +9,6 @@ import { useRouter } from "next/navigation";
 import { getProductDisplayImage, isDynamikProduct } from "@/lib/productImage";
 import { generateWhatsAppProductText, getWhatsAppUrl } from "@/lib/orderFormatter";
 import WhatsAppIcon from "@/components/WhatsAppIcon";
-import ProductCompatibilityPanel from "@/components/ProductCompatibilityPanel";
 import { getProductReferenceLabel } from "@/lib/productCompatibility";
 import ProductImageSignature from "@/components/ProductImageSignature";
 
@@ -59,6 +58,10 @@ export default function ProductCard({ product, onExpand, isFavorite = false, isR
   const imageUrl = getProductDisplayImage(product);
   const isDynamik = isDynamikProduct(product);
   const isGeneratedReference = product.imageStatus === "generated-reference-image";
+  const hasPublishedGeometryEvidence = Boolean(
+    product.sourceRecord?.geometryEvidence?.publishedAsPhysicalPhoto === false
+    && product.imageReferenceSourceUrl
+  );
   const referenceLabel = getProductReferenceLabel(product);
   const canBuy = Boolean(product.inStock && Number(product.stock) > 0 && Number(product.price) > 0);
 
@@ -142,9 +145,12 @@ export default function ProductCard({ product, onExpand, isFavorite = false, isR
           {isGeneratedReference && (
             <span
               role="note"
+              title={product.imageDisclosure || "Imagen generada de referencia; no es fotografía original."}
               style={{ position: "absolute", left: "6px", bottom: "6px", zIndex: 3, borderRadius: "999px", background: "#1E293B", color: "#F8FAFC", padding: "4px 7px", fontSize: "0.64rem", fontWeight: 800, letterSpacing: "0.01em" }}
             >
-              Ilustración IA · no verificada
+              {hasPublishedGeometryEvidence
+                ? "Referencia generada · geometría contrastada"
+                : "Referencia generada · validar"}
             </span>
           )}
         </Link>
@@ -190,8 +196,8 @@ export default function ProductCard({ product, onExpand, isFavorite = false, isR
             background: "rgba(0, 0, 0, 0.88)",
             color: "var(--primary-color)",
             borderRadius: "999px",
-            padding: "3px 8px",
-            fontSize: "clamp(0.64rem, 1.8vw, 0.70rem)",
+            padding: "4px 9px",
+            fontSize: "clamp(0.65rem, 1.8vw, 0.72rem)",
             fontWeight: "800",
             border: "1px solid rgba(255,215,0,0.4)",
             cursor: "pointer",
@@ -206,7 +212,22 @@ export default function ProductCard({ product, onExpand, isFavorite = false, isR
         </button>
       </div>
 
-      <div style={{ margin: "0.45rem 0 0.3rem", display: "flex", flexDirection: "column", gap: "2px" }}>
+      <div style={{ margin: "0.45rem 0 0.3rem", display: "flex", flexDirection: "column", gap: "2px", flexGrow: 1 }}>
+        {product.brand && (
+          <span
+            style={{
+              fontSize: "clamp(0.65rem, 1.8vw, 0.72rem)",
+              fontWeight: "800",
+              color: "var(--primary-color)",
+              display: "block",
+              textTransform: "uppercase",
+              letterSpacing: "0.04em",
+            }}
+          >
+            {typeof product.brand === "string" ? product.brand : product.brand.name}
+          </span>
+        )}
+
         <h3
           className="product-card__title"
           style={{
@@ -214,44 +235,33 @@ export default function ProductCard({ product, onExpand, isFavorite = false, isR
             fontWeight: "700",
             color: "#FFFFFF",
             lineHeight: "1.25",
-            marginBottom: "0.15rem",
+            marginBottom: "0.2rem",
             display: "-webkit-box",
             WebkitLineClamp: 2,
             WebkitBoxOrient: "vertical",
             overflow: "hidden",
             minHeight: "2.3em",
             textWrap: "balance",
+            cursor: "pointer",
           }}
+          onClick={handleViewExpanded}
         >
-          <Link
-            href={`/producto/${product.slug || product.id}`}
-            style={{ color: "inherit", textDecoration: "none" }}
-          >
-            {product.name}
-          </Link>
+          {onExpand ? (
+            <span role="button" tabIndex={0} onKeyDown={(e) => e.key === "Enter" && onExpand()} style={{ color: "inherit", textDecoration: "none" }}>
+              {product.name}
+            </span>
+          ) : (
+            <Link
+              href={`/producto/${product.slug || product.id}`}
+              style={{ color: "inherit", textDecoration: "none" }}
+            >
+              {product.name}
+            </Link>
+          )}
         </h3>
 
-        {product.brand && (
-          <span
-            style={{
-              fontSize: "clamp(0.68rem, 1.8vw, 0.74rem)",
-              fontWeight: "800",
-              color: "#94A3B8",
-              display: "block",
-              textTransform: "uppercase",
-              letterSpacing: "0.03em",
-            }}
-          >
-            {typeof product.brand === "string" ? product.brand : product.brand.name}
-          </span>
-        )}
-
-        <div style={{ marginTop: "0.2rem" }}>
-          <ProductCompatibilityPanel product={product} compact dark />
-        </div>
-
         {product.sku && (
-          <div style={{ marginTop: "0.25rem" }}>
+          <div style={{ marginTop: "0.15rem" }}>
             <span
               style={{
                 fontSize: "0.68rem",
@@ -276,7 +286,7 @@ export default function ProductCard({ product, onExpand, isFavorite = false, isR
         )}
       </div>
 
-      <div style={{ marginTop: "auto", paddingTop: "0.35rem" }}>
+      <div style={{ marginTop: "auto", paddingTop: "0.4rem" }}>
         <p style={{ fontSize: "clamp(1.05rem, 3vw, 1.20rem)", fontWeight: "900", color: "#FFFFFF", marginBottom: "0.45rem" }}>
           {product.price > 0 ? (
             <span>
@@ -288,18 +298,18 @@ export default function ProductCard({ product, onExpand, isFavorite = false, isR
           )}
         </p>
 
-        <div style={{ display: "flex", flexDirection: "column", gap: "5px" }}>
+        <div style={{ display: "flex", flexDirection: "column", gap: "4px" }}>
           {canBuy ? (
             <button
               type="button"
               onClick={handleAddToCart}
               className="btn-add-to-cart"
               style={{
-                padding: "0.48rem 0.65rem",
-                fontSize: "clamp(0.72rem, 2vw, 0.82rem)",
+                padding: "0.4rem 0.5rem",
+                fontSize: "clamp(0.70rem, 1.8vw, 0.80rem)",
                 fontWeight: "800",
                 width: "100%",
-                minHeight: "36px",
+                minHeight: "34px",
                 borderRadius: "6px",
                 border: added ? "1.5px solid #16A34A" : "1.5px solid #FFD700",
                 background: added ? "#16A34A" : "#0A0A0A",
@@ -307,22 +317,30 @@ export default function ProductCard({ product, onExpand, isFavorite = false, isR
                 display: "inline-flex",
                 alignItems: "center",
                 justifyContent: "center",
-                gap: "0.35rem",
+                gap: "0.3rem",
                 cursor: "pointer",
                 boxShadow: added ? "0 0 10px rgba(22, 163, 74, 0.5)" : "0 2px 6px rgba(0, 0, 0, 0.5)",
                 transition: "all 0.2s ease",
+                whiteSpace: "nowrap",
+                overflow: "hidden",
+                textOverflow: "ellipsis",
               }}
             >
               {added ? (
                 <><span>✓</span><span>¡Agregado!</span></>
               ) : (
-                <><span style={{ color: "#FFD700", fontSize: "0.90rem" }}>🛒</span><span>Añadir al carrito</span></>
+                <><span style={{ color: "#FFD700", fontSize: "0.85rem" }}>🛒</span><span className="card-btn-text-full">Añadir al carrito</span><span className="card-btn-text-short">Añadir</span></>
               )}
             </button>
           ) : (
-            <div className="product-card__quote-notice product-card__quote-notice--dark" style={{ padding: "0.4rem 0.5rem", fontSize: "0.72rem" }}>
-              {product.availabilityLabel || "Validamos referencia y precio antes de vender"}
-            </div>
+            <button
+              type="button"
+              onClick={handleViewExpanded}
+              className="product-card__quote-notice product-card__quote-notice--dark"
+              style={{ padding: "0.38rem 0.45rem", fontSize: "0.70rem", border: "1px solid rgba(255, 215, 0, 0.3)", borderRadius: "6px", cursor: "pointer", width: "100%", whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}
+            >
+              🔍 Ver detalles
+            </button>
           )}
 
           <a
@@ -331,11 +349,11 @@ export default function ProductCard({ product, onExpand, isFavorite = false, isR
             rel="noopener noreferrer"
             className="btn product-card__whatsapp-quote"
             style={{
-              padding: "0.45rem 0.65rem",
-              fontSize: "clamp(0.68rem, 1.9vw, 0.76rem)",
+              padding: "0.38rem 0.5rem",
+              fontSize: "clamp(0.66rem, 1.7vw, 0.74rem)",
               fontWeight: "700",
               width: "100%",
-              minHeight: "34px",
+              minHeight: "32px",
               background: "#25D366",
               color: "#FFFFFF",
               border: "none",
@@ -345,13 +363,17 @@ export default function ProductCard({ product, onExpand, isFavorite = false, isR
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
-              gap: "5px",
+              gap: "4px",
               boxShadow: "0 2px 6px rgba(37, 211, 102, 0.25)",
               transition: "opacity 0.2s ease",
+              whiteSpace: "nowrap",
+              overflow: "hidden",
+              textOverflow: "ellipsis",
             }}
           >
-            <WhatsAppIcon size={14} color="#FFFFFF" />
-            <span>COTIZAR POR WHATSAPP</span>
+            <WhatsAppIcon size={13} color="#FFFFFF" />
+            <span className="card-btn-text-full">COTIZAR POR WHATSAPP</span>
+            <span className="card-btn-text-short">COTIZAR</span>
           </a>
         </div>
       </div>

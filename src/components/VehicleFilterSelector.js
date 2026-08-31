@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useTransition, useMemo } from "react";
-import { useRouter, useSearchParams } from "next/navigation";
+import { useRouter } from "next/navigation";
 import Image from "next/image";
 import { VEHICLE_MAKES } from "@/lib/vehicleIndex";
 import { buildCatalogHref } from "@/lib/catalogUtils";
@@ -28,7 +28,6 @@ export default function VehicleFilterSelector({
   sortParam,
 }) {
   const router = useRouter();
-  const searchParams = useSearchParams();
   const [isPending, startTransition] = useTransition();
 
   const [selectedMake, setSelectedMake] = useState(activeMake || "");
@@ -106,13 +105,13 @@ export default function VehicleFilterSelector({
 
   return (
     <div className="vehicle-filter-box" style={{
-      background: "linear-gradient(135deg, #16181D 0%, #0F1015 100%)",
+      background: "#FFFFFF",
       borderRadius: "14px",
-      padding: "1.25rem 1.5rem",
+      padding: "clamp(1rem, 2.5vw, 1.35rem) clamp(1rem, 3vw, 1.5rem)",
       marginBottom: "1.75rem",
-      border: "1px solid rgba(255, 215, 0, 0.22)",
-      boxShadow: "0 8px 24px rgba(0, 0, 0, 0.28)",
-      color: "#FFFFFF",
+      border: "1px solid #E2E8F0",
+      boxShadow: "0 4px 18px rgba(0, 0, 0, 0.05)",
+      color: "#111827",
     }}>
       <div style={{
         display: "flex",
@@ -128,14 +127,14 @@ export default function VehicleFilterSelector({
             <h3 style={{
               margin: 0,
               fontSize: "1.05rem",
-              fontWeight: "800",
-              color: "#FFD700",
-              letterSpacing: "0.3px",
+              fontWeight: "900",
+              color: "#111827",
+              letterSpacing: "0.2px",
               textTransform: "uppercase",
             }}>
               Filtrar Repuestos por Vehículo
             </h3>
-            <p style={{ margin: 0, fontSize: "0.82rem", color: "#A0AEC0" }}>
+            <p style={{ margin: "2px 0 0", fontSize: "0.84rem", color: "#6B7280" }}>
               Encuentra repuestos compatibles seleccionando la marca y modelo de tu auto
             </p>
           </div>
@@ -144,13 +143,13 @@ export default function VehicleFilterSelector({
         {hasActiveVehicle && (
           <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
             <span style={{
-              background: "rgba(255, 215, 0, 0.15)",
-              color: "#FFD700",
+              background: "#FEF3C7",
+              color: "#92400E",
               padding: "0.3rem 0.75rem",
               borderRadius: "20px",
               fontSize: "0.82rem",
               fontWeight: "700",
-              border: "1px solid rgba(255, 215, 0, 0.35)",
+              border: "1px solid #FCD34D",
             }}>
               Filtrado por: {currentMakeObj?.name || activeMake} {currentModelObj?.name || activeModel || activeVehicle}
             </span>
@@ -158,13 +157,14 @@ export default function VehicleFilterSelector({
               type="button"
               onClick={handleClearVehicle}
               style={{
-                background: "transparent",
-                border: "1px solid rgba(255,255,255,0.2)",
-                color: "#CBD5E0",
+                background: "#F3F4F6",
+                border: "1px solid #D1D5DB",
+                color: "#4B5563",
                 padding: "0.3rem 0.65rem",
                 borderRadius: "20px",
                 fontSize: "0.78rem",
                 cursor: "pointer",
+                fontWeight: "600",
                 transition: "all 0.2s",
               }}
               title="Quitar filtro de auto"
@@ -176,14 +176,14 @@ export default function VehicleFilterSelector({
       </div>
 
       {/* Selectores de Marca y Modelo */}
-      <form onSubmit={handleApplyFilter} style={{
-        display: "grid",
-        gridTemplateColumns: "repeat(auto-fit, minmax(180px, 1fr)) auto",
-        gap: "0.75rem",
-        alignItems: "center",
+      <form onSubmit={handleApplyFilter} className="vehicle-filter-form" style={{
+        display: "flex",
+        flexWrap: "wrap",
+        gap: "0.65rem",
+        alignItems: "stretch",
       }}>
         {/* Selector de Marca */}
-        <div style={{ position: "relative" }}>
+        <div style={{ flex: "1 1 min(100%, 180px)", position: "relative" }}>
           <label htmlFor="vehicle-make-select" style={{ display: "none" }}>Marca de Auto</label>
           <select
             id="vehicle-make-select"
@@ -191,12 +191,13 @@ export default function VehicleFilterSelector({
             onChange={handleMakeChange}
             style={{
               width: "100%",
-              padding: "0.65rem 0.9rem",
+              height: "42px",
+              padding: "0 0.9rem",
               borderRadius: "8px",
-              background: "#1E222B",
-              color: "#FFFFFF",
-              border: "1px solid #374151",
-              fontSize: "0.9rem",
+              background: "#F9FAFB",
+              color: "#111827",
+              border: "1.5px solid #D1D5DB",
+              fontSize: "0.88rem",
               fontWeight: "600",
               cursor: "pointer",
               outline: "none",
@@ -212,7 +213,7 @@ export default function VehicleFilterSelector({
         </div>
 
         {/* Selector de Modelo */}
-        <div style={{ position: "relative" }}>
+        <div style={{ flex: "1 1 min(100%, 180px)", position: "relative" }}>
           <label htmlFor="vehicle-model-select" style={{ display: "none" }}>Modelo de Auto</label>
           <select
             id="vehicle-model-select"
@@ -221,12 +222,13 @@ export default function VehicleFilterSelector({
             disabled={!selectedMake}
             style={{
               width: "100%",
-              padding: "0.65rem 0.9rem",
+              height: "42px",
+              padding: "0 0.9rem",
               borderRadius: "8px",
-              background: selectedMake ? "#1E222B" : "#14171E",
-              color: selectedMake ? "#FFFFFF" : "#6B7280",
-              border: "1px solid #374151",
-              fontSize: "0.9rem",
+              background: selectedMake ? "#F9FAFB" : "#F3F4F6",
+              color: selectedMake ? "#111827" : "#9CA3AF",
+              border: "1.5px solid #D1D5DB",
+              fontSize: "0.88rem",
               fontWeight: "600",
               cursor: selectedMake ? "pointer" : "not-allowed",
               outline: "none",
@@ -244,24 +246,27 @@ export default function VehicleFilterSelector({
         </div>
 
         {/* Botón Aplicar */}
-        <div style={{ display: "flex", gap: "0.5rem" }}>
+        <div style={{ display: "flex", gap: "0.5rem", flex: "1 1 min(100%, 140px)" }}>
           <button
             type="submit"
             disabled={isPending}
             style={{
-              background: "linear-gradient(135deg, #FFD700 0%, #D4A000 100%)",
+              flex: "1 1 auto",
+              minHeight: "42px",
+              background: "linear-gradient(135deg, #FFD700 0%, #E6B800 100%)",
               color: "#111111",
               border: "none",
               borderRadius: "8px",
-              padding: "0.65rem 1.25rem",
-              fontSize: "0.9rem",
-              fontWeight: "800",
+              padding: "0 1.25rem",
+              fontSize: "0.88rem",
+              fontWeight: "900",
               cursor: "pointer",
               display: "inline-flex",
               alignItems: "center",
+              justifyContent: "center",
               gap: "0.4rem",
               whiteSpace: "nowrap",
-              boxShadow: "0 2px 8px rgba(212, 160, 0, 0.35)",
+              boxShadow: "0 2px 8px rgba(230, 184, 0, 0.35)",
               opacity: isPending ? 0.7 : 1,
             }}
           >
@@ -273,11 +278,12 @@ export default function VehicleFilterSelector({
               type="button"
               onClick={handleClearVehicle}
               style={{
-                background: "rgba(255,255,255,0.08)",
-                color: "#E2E8F0",
-                border: "1px solid rgba(255,255,255,0.15)",
+                minHeight: "42px",
+                background: "#F3F4F6",
+                color: "#374151",
+                border: "1px solid #D1D5DB",
                 borderRadius: "8px",
-                padding: "0.65rem 0.9rem",
+                padding: "0 0.9rem",
                 fontSize: "0.85rem",
                 fontWeight: "600",
                 cursor: "pointer",
@@ -294,13 +300,13 @@ export default function VehicleFilterSelector({
       <div style={{
         marginTop: "1rem",
         paddingTop: "0.85rem",
-        borderTop: "1px solid rgba(255, 255, 255, 0.08)",
+        borderTop: "1px solid #E5E7EB",
         display: "flex",
         alignItems: "center",
-        gap: "0.4rem",
+        gap: "0.45rem",
         flexWrap: "wrap",
       }}>
-        <span style={{ fontSize: "0.78rem", color: "#A0AEC0", fontWeight: "700", marginRight: "0.2rem" }}>
+        <span style={{ fontSize: "0.80rem", color: "#4B5563", fontWeight: "700", marginRight: "0.2rem" }}>
           Vehículos populares:
         </span>
         {POPULAR_QUICK_VEHICLES.map((v) => {
@@ -311,15 +317,16 @@ export default function VehicleFilterSelector({
               type="button"
               onClick={() => handleQuickVehicleClick(v.make, v.model)}
               style={{
-                background: isActive ? "#FFD700" : "rgba(255, 255, 255, 0.06)",
-                color: isActive ? "#111111" : "#E2E8F0",
-                border: isActive ? "1px solid #FFD700" : "1px solid rgba(255, 255, 255, 0.12)",
+                background: isActive ? "#FFD700" : "#F3F4F6",
+                color: isActive ? "#111111" : "#374151",
+                border: isActive ? "1px solid #D4A000" : "1px solid #E5E7EB",
                 borderRadius: "16px",
-                padding: "0.25rem 0.65rem",
+                padding: "0.28rem 0.7rem",
                 fontSize: "0.78rem",
                 fontWeight: isActive ? "800" : "600",
                 cursor: "pointer",
                 transition: "all 0.15s ease",
+                boxShadow: isActive ? "0 2px 6px rgba(212, 160, 0, 0.25)" : "none",
               }}
             >
               <span>{v.icon}</span> {v.label}

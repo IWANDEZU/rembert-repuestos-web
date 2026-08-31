@@ -6,15 +6,17 @@ export default function robots() {
   return {
     rules: [
       {
-        userAgent: "OAI-SearchBot",
-        allow: "/",
+        userAgent: ["Googlebot", "Bingbot", "Applebot", "DuckDuckBot", "OAI-SearchBot"],
+        allow: ["/", "/catalogo", "/producto/", "/marcas/", "/radiadores", "/blog"],
+        disallow: ["/admin/", "/api/", "/perfil", "/checkout", "/auth/"],
       },
       {
         userAgent: "*",
         allow: "/",
-        disallow: ["/admin/", "/api/", "/perfil", "/checkout"],
+        disallow: ["/admin/", "/api/", "/perfil", "/checkout", "/auth/"],
       },
     ],
     sitemap: `${baseUrl}/sitemap.xml`,
+    host: baseUrl,
   };
 }

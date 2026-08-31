@@ -184,7 +184,8 @@ export default function CategoryProductModal({ products, initialIndex = 0, onClo
           position: "relative",
           width: "100%",
           maxWidth: "980px",
-          maxHeight: "94vh",
+          maxHeight: "min(92dvh, calc(100vh - 20px))",
+          height: "auto",
           background: "#141414",
           border: "1px solid #333",
           borderRadius: "16px",
@@ -336,6 +337,7 @@ export default function CategoryProductModal({ products, initialIndex = 0, onClo
         <div
           style={{
             padding: "clamp(12px, 2.5vw, 20px)",
+            paddingBottom: "calc(36px + env(safe-area-inset-bottom, 24px))",
             overflowY: "auto",
             WebkitOverflowScrolling: "touch",
             display: "flex",

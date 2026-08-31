@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { products as fallbackProducts } from "@/lib/products";
 import { prisma } from "@/lib/prisma";
-import ProductCard from "@/components/ProductCard";
+import CatalogGridWithModal from "@/components/CatalogGridWithModal";
 
 // La portada se genera durante la compilación. El catálogo y las rutas de cuenta
 // siguen siendo dinámicos, pero una visita a "/" no debe abrir Prisma ni consumir
@@ -511,11 +511,7 @@ export default async function Home() {
             <Link href="/catalogo" className="text-primary" style={{ fontWeight: 'bold' }}>VER TODOS →</Link>
           </div>
 
-          <div className="catalog-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(220px, 1fr))', gap: '1.5rem' }}>
-            {featuredProducts.map((p) => (
-              <ProductCard key={p.id} product={p} />
-            ))}
-          </div>
+          <CatalogGridWithModal products={featuredProducts} />
         </div>
       </section>
 

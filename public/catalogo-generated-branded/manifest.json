@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "generatedAt": "2026-08-31T00:25:29.259Z",
+  "generatedAt": "2026-08-31T02:03:22.652Z",
   "images": {
     "184441": {
       "sku": "184441",
@@ -28,7 +28,7 @@
       },
       "sourceImage": "/catalogo-ads/ads-184441-soporte-motor-peugeot-referencial-v2.png",
       "sourceSha256": "8c5fe7acc307cb56e7ef3d839cb29c1484ba4470bd4a6c2e19df78ec85b93597",
-      "outputImage": "/catalogo-ads/branded/184441-ads-184441-soporte-hidraulico-peugeot-branded-v2.webp",
+      "outputImage": "/catalogo-ads/branded/184441-ads-184441-soporte-motor-transmision-psa-fiat-branded-v2.webp",
       "badgeVariant": "catalog-blue-wordmark",
       "badgeAsset": "/brands/ads-product-logo-blue-catalog.png",
       "badgeSha256": "56c3a934749c90926f203738ece622a64ee82bd5772d48a4ceae0c2133eb1c00",
@@ -63,7 +63,7 @@
       },
       "sourceImage": "/catalogo-ads/ads-184442-soporte-motor-peugeot-citroen-referencial-v2.png",
       "sourceSha256": "9f3345addf6bbccc30dfab8ad0e0a2991230e37fb4a773624567368e5cd4b319",
-      "outputImage": "/catalogo-ads/branded/184442-ads-184442-soporte-hidraulico-peugeot-citroen-branded-v2.webp",
+      "outputImage": "/catalogo-ads/branded/184442-ads-184442-soporte-motor-derecho-peugeot-citroen-branded-v2.webp",
       "badgeVariant": "catalog-blue-wordmark",
       "badgeAsset": "/brands/ads-product-logo-blue-catalog.png",
       "badgeSha256": "56c3a934749c90926f203738ece622a64ee82bd5772d48a4ceae0c2133eb1c00",
@@ -133,8 +133,8 @@
           "ABS y número de dientes de corona"
         ]
       },
-      "sourceImage": "/catalogo-gti/generated/gti04-161-punta-lado-rueda-gti-chevrolet-tracker-turbo-onix-turbo-generated-reference.webp",
-      "sourceSha256": "6e589a17630aa4e5d3a7d8c41766583def073716eaa39eb0d0e1af9785a75141",
+      "sourceImage": "/catalogo-gti/generated/gti04-161-punta-lado-rueda-tracker-onix-geometry-v2.png",
+      "sourceSha256": "aa11d4c0826e4ed9c6bf06c93fb6b987dd2539c228192ea1ddc32250c8ae9237",
       "outputImage": "/catalogo-gti/generated-branded/gti04-161-gti04-161-punta-lado-rueda-gti-chevrolet-tracker-turbo-onix-turbo-branded-v2.webp",
       "badgeVariant": "yellow-on-blue-capsule",
       "badgeAsset": "/brands/gti-product-logo-capsule.svg",
@@ -142,7 +142,7 @@
       "colorPolicy": "natural-materials-no-orange-recolor",
       "orangePixelRatio": 0,
       "imageStatus": "generated-reference-image",
-      "outputSha256": "bb0ce693c5675391295ab8563e2082b694a8586e5ebe33ebedb4c8cc3d00ee88"
+      "outputSha256": "3a039933a98772048ede81706cb767f4a97362ce9261212d7414b810a6b5c928"
     },
     "GTI106092": {
       "sku": "GTI106-092",
@@ -158,25 +158,28 @@
         "includedComponents": [
           "inner-cv-joint"
         ],
-        "fitmentStatus": "inventory-listed",
+        "fitmentStatus": "conditional",
         "requirements": [
           "VIN",
           "año",
           "motor",
-          "versión",
-          "muestra o referencia desmontada"
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "diámetro del sello",
+          "ABS y número de dientes de corona"
         ]
       },
-      "sourceImage": "/catalogo-gti/generated/punta-l-c-kia-picanto-all-new-1-2-25-21-gti106-092-generated-reference.webp",
-      "sourceSha256": "d10727e4bbba4424a82a9fcc0fefc8237b9907c7bbcb4256a2440c7109c92ac5",
-      "outputImage": "/catalogo-gti/generated-branded/gti106-092-punta-l-c-kia-picanto-all-new-1-2-25-21-gti106-092-branded-v2.webp",
+      "sourceImage": "/catalogo-gti/generated/gti106-092-tulipa-lado-caja-picanto-geometry-v2.png",
+      "sourceSha256": "23122521763562252863f17a6e0cddbd5c93667649eb705554d21d61c6283e0f",
+      "outputImage": "/catalogo-gti/generated-branded/gti106-092-gti106-092-junta-homocinetica-lado-caja-gti-kia-picanto-all-new-1-2-branded-v2.webp",
       "badgeVariant": "yellow-on-blue-capsule",
       "badgeAsset": "/brands/gti-product-logo-capsule.svg",
       "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
       "colorPolicy": "natural-materials-no-orange-recolor",
       "orangePixelRatio": 0,
       "imageStatus": "generated-reference-image",
-      "outputSha256": "ad211d0f3f5a6b4891d45db110687d1f4ce0ff7996a83a2462de862b8de9dbdb"
+      "outputSha256": "8edb90847b97d06d2923820320415ba755699d0d236146a026bf7fadebd41230"
     },
     "GTI04089": {
       "sku": "GTI04-089",
@@ -204,8 +207,8 @@
           "ABS y número de dientes de corona"
         ]
       },
-      "sourceImage": "/catalogo-gti/generated/gti04-089-punta-lado-rueda-gti-chevrolet-cobalt-taxi-elite-generated-reference.webp",
-      "sourceSha256": "dd978546f4d5600b25fa91f1ed0d4fe44d3928790bbe01c4699b554faa6cb200",
+      "sourceImage": "/catalogo-gti/generated/gti04-089-punta-lado-rueda-chevrolet-cobalt-taxi-elite-geometry-v2.png",
+      "sourceSha256": "481edb19cb120be7a47719c451d0c989af3e7d499ad8f41da4dc615ae1f4f05f",
       "outputImage": "/catalogo-gti/generated-branded/gti04-089-gti04-089-punta-lado-rueda-gti-chevrolet-cobalt-taxi-elite-branded-v2.webp",
       "badgeVariant": "yellow-on-blue-capsule",
       "badgeAsset": "/brands/gti-product-logo-capsule.svg",
@@ -213,7 +216,7 @@
       "colorPolicy": "natural-materials-no-orange-recolor",
       "orangePixelRatio": 0,
       "imageStatus": "generated-reference-image",
-      "outputSha256": "e248ad3e8d7445deeb035ae1e85e07d18671652d0a274e98fecd190aa0422cb4"
+      "outputSha256": "a9f6043ab8fc2fbd15ca16792263a865d7682ade9fb2b47d8b8b3fb5f52d7638"
     },
     "GTI04D01": {
       "sku": "GTI04-D01",
@@ -241,16 +244,16 @@
           "ABS y número de dientes de corona"
         ]
       },
-      "sourceImage": "/catalogo-gti/generated/gti04-d01-punta-lado-rueda-gti-chevrolet-corsa-generated-reference.webp",
-      "sourceSha256": "5c3fd02abdb46c6f6ab13109d0f7bb0a2b97fb8adc96941c20e86019edb90b60",
-      "outputImage": "/catalogo-gti/generated-branded/gti04-d01-gti04-d01-punta-lado-rueda-gti-chevrolet-corsa-branded-v2.webp",
+      "sourceImage": "/catalogo-gti/generated/gti04-d01-punta-lado-rueda-corsa-geometry-v2.png",
+      "sourceSha256": "03d94db324a9239b35309cf569c60ebc3c605450077f915461ceb44a1dfc77cd",
+      "outputImage": "/catalogo-gti/generated-branded/gti04-d01-gti04-d01-punta-lado-rueda-gti-chevrolet-corsa-identidad-por-confirmar-branded-v2.webp",
       "badgeVariant": "yellow-on-blue-capsule",
       "badgeAsset": "/brands/gti-product-logo-capsule.svg",
       "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
       "colorPolicy": "natural-materials-no-orange-recolor",
       "orangePixelRatio": 0,
       "imageStatus": "generated-reference-image",
-      "outputSha256": "e5a8aa1689f5b44e4a30b8e743e7c0d0bf5dc943267ae2807a3def84743f8260"
+      "outputSha256": "a983caa6a34925abf94907a451a047efe2e1c7f0ae57a5fcaa8dd6c9bfeffe66"
     },
     "GTI06081": {
       "sku": "GTI06-081",
@@ -278,8 +281,8 @@
           "ABS y número de dientes de corona"
         ]
       },
-      "sourceImage": "/catalogo-gti/generated/gti06-081-punta-lado-rueda-gti-hyundai-eon-generated-reference.webp",
-      "sourceSha256": "c8c3a187bcfd54490bb595ef7d348aebd9c40ed91a1be85a6f9c7d9868e8f000",
+      "sourceImage": "/catalogo-gti/generated/gti06-081-punta-lado-rueda-hyundai-eon-geometry-v2.png",
+      "sourceSha256": "e0f28af46d23cb92dccbea7e0d21c0d209ef8afb922356f927863cd39baa4f72",
       "outputImage": "/catalogo-gti/generated-branded/gti06-081-gti06-081-punta-lado-rueda-gti-hyundai-eon-branded-v2.webp",
       "badgeVariant": "yellow-on-blue-capsule",
       "badgeAsset": "/brands/gti-product-logo-capsule.svg",
@@ -287,7 +290,7 @@
       "colorPolicy": "natural-materials-no-orange-recolor",
       "orangePixelRatio": 0,
       "imageStatus": "generated-reference-image",
-      "outputSha256": "589294b31b325fe52719a62671f59503c321a9d1ec66acd302afcfcd9b0eb11a"
+      "outputSha256": "3d4dafa5ab5dc94118d2adc1d896c22903a0c6d820e5b0fb5a5f9702c7fe17e5"
     },
     "GTI03003": {
       "sku": "GTI03-003",
@@ -315,16 +318,16 @@
           "ABS y número de dientes de corona"
         ]
       },
-      "sourceImage": "/catalogo-gti/generated/gti03-003-punta-lado-rueda-gti-kia-rio-stylus-1-5-generated-reference.webp",
-      "sourceSha256": "5c8242f00fb53ccfc0eb3abda3b048a9659e36f53a53e019e765ab0b38417229",
-      "outputImage": "/catalogo-gti/generated-branded/gti03-003-gti03-003-punta-lado-rueda-gti-kia-rio-stylus-1-5-branded-v2.webp",
+      "sourceImage": "/catalogo-gti/generated/gti03-003-punta-lado-rueda-rio-stylus-geometry-v2.png",
+      "sourceSha256": "837f609f25a6c4b5bed7d595d187e9d8e73efb586c5c3e48525d4285d211afc9",
+      "outputImage": "/catalogo-gti/generated-branded/gti03-003-gti03-003-punta-lado-rueda-gti-mazda-323-kia-rio-stylus-1-5-branded-v2.webp",
       "badgeVariant": "yellow-on-blue-capsule",
       "badgeAsset": "/brands/gti-product-logo-capsule.svg",
       "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
       "colorPolicy": "natural-materials-no-orange-recolor",
       "orangePixelRatio": 0,
       "imageStatus": "generated-reference-image",
-      "outputSha256": "8f588f7e76d462407d000f965181d4cb55a26fe58ac1433d021da7afa3f32296"
+      "outputSha256": "fb3e8626dd696bc91642f5de04afdc867f8e17b4501ec7d9766ea6dbb1687b3b"
     },
     "GTI01092": {
       "sku": "GTI01-092",
@@ -352,8 +355,8 @@
           "ABS y número de dientes de corona"
         ]
       },
-      "sourceImage": "/catalogo-gti/generated/gti01-092-punta-lado-rueda-gti-renault-kwid-generated-reference.webp",
-      "sourceSha256": "c18171afc6dd9b141294f17334df0503305b1e36f3a73645284eac60e6b20543",
+      "sourceImage": "/catalogo-gti/generated/gti01-092-punta-lado-rueda-renault-kwid-geometry-v2.png",
+      "sourceSha256": "8864f09f624de5940bcabe590a01b1fa4ed7b1e9a05df0c90eaf7edbac7a5b3d",
       "outputImage": "/catalogo-gti/generated-branded/gti01-092-gti01-092-punta-lado-rueda-gti-renault-kwid-branded-v2.webp",
       "badgeVariant": "yellow-on-blue-capsule",
       "badgeAsset": "/brands/gti-product-logo-capsule.svg",
@@ -361,7 +364,7 @@
       "colorPolicy": "natural-materials-no-orange-recolor",
       "orangePixelRatio": 0,
       "imageStatus": "generated-reference-image",
-      "outputSha256": "de3d8f62e3a29c247ca10e2c26f77db089848642d8d6bef65e2b70b61739f2dc"
+      "outputSha256": "03605b9b2515f0059bf26cec9c5d0064e597f5da770675eb8a9bd20f9ee970cd"
     },
     "GTI03072": {
       "sku": "GTI03-072",
@@ -389,8 +392,8 @@
           "ABS y número de dientes de corona"
         ]
       },
-      "sourceImage": "/catalogo-gti/generated/gti03-072-punta-lado-rueda-gti-mazda-2-generated-reference.webp",
-      "sourceSha256": "4fa44816f58fa00ab212d0634c94bb63cd9e0406541b441b57544d25d4eaad53",
+      "sourceImage": "/catalogo-gti/generated/gti03-072-punta-lado-rueda-mazda-2-geometry-v2.png",
+      "sourceSha256": "6c2f0434c20f56c3a3653f3d658b3e136c6e6cb386dfcb258697ad549989ea33",
       "outputImage": "/catalogo-gti/generated-branded/gti03-072-gti03-072-punta-lado-rueda-gti-mazda-2-branded-v2.webp",
       "badgeVariant": "yellow-on-blue-capsule",
       "badgeAsset": "/brands/gti-product-logo-capsule.svg",
@@ -398,21 +401,21 @@
       "colorPolicy": "natural-materials-no-orange-recolor",
       "orangePixelRatio": 0,
       "imageStatus": "generated-reference-image",
-      "outputSha256": "7eeb28b82408121e2c61cb6e157b3c92dfcd89e3149545317cc89f6cca1409e8"
+      "outputSha256": "46395cdfafb485c5a04b2a4e0e4f6aeaa8f6904e584cc4d738d860d72c01def6"
     },
     "GTI06037": {
       "sku": "GTI06-037",
       "skuKey": "GTI06037",
       "brand": "GTI",
       "brandSlug": "gti",
-      "partFamily": "inner-cv-tulip",
+      "partFamily": "inner-cv-joint",
       "compatibility": {
-        "partFamily": "inner-cv-tulip",
+        "partFamily": "inner-cv-joint",
         "laterality": "unknown",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
-          "inner-cv-tulip"
+          "inner-cv-joint"
         ],
         "fitmentStatus": "conditional",
         "requirements": [
@@ -426,16 +429,16 @@
           "ABS y número de dientes de corona"
         ]
       },
-      "sourceImage": "/catalogo-gti/generated/gti06-037-tulipa-lado-caja-gti-kia-rio-xcite-cerato-forte-hyundai-i25-generated-reference.webp",
-      "sourceSha256": "53885042bd18399aa0f09ef0f0e30d94006737e44f213cebae5974fd3b49f3a1",
-      "outputImage": "/catalogo-gti/generated-branded/gti06-037-gti06-037-tulipa-lado-caja-gti-kia-rio-xcite-cerato-forte-hyundai-i25-branded-v2.webp",
+      "sourceImage": "/catalogo-gti/generated/gti06-037-junta-lado-caja-kia-hyundai-geometry-v2.png",
+      "sourceSha256": "64671358ccf44cd08f47fc67f147f37ac7d54ad45de42cdef11b779f7109c723",
+      "outputImage": "/catalogo-gti/generated-branded/gti06-037-gti06-037-junta-homocinetica-lado-caja-gti-kia-rio-xcite-cerato-forte-hyundai-i25-branded-v2.webp",
       "badgeVariant": "yellow-on-blue-capsule",
       "badgeAsset": "/brands/gti-product-logo-capsule.svg",
       "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
       "colorPolicy": "natural-materials-no-orange-recolor",
       "orangePixelRatio": 0,
       "imageStatus": "generated-reference-image",
-      "outputSha256": "86c8c24fd456a5eefc58807ca89ec2c02602984c193345eb593d9d55767bf7da"
+      "outputSha256": "dc2fde3ba7b930cd0a90dfbe5eac7704272a3e0e319a59f89866252ae2c85afa"
     },
     "GTI038": {
       "sku": "GTI-038",
@@ -463,16 +466,16 @@
           "ABS y número de dientes de corona"
         ]
       },
-      "sourceImage": "/catalogo-gti/generated/gti-038-tulipa-lado-caja-gti-hyundai-vision-kia-sephia-generated-reference.webp",
-      "sourceSha256": "60671748fc08fc468cf4e692af2ee638f38f4121c2e964e0915f4d8982aeb85e",
-      "outputImage": "/catalogo-gti/generated-branded/gti-038-gti-038-tulipa-lado-caja-gti-hyundai-vision-kia-sephia-branded-v2.webp",
+      "sourceImage": "/catalogo-gti/generated/gti-038-tulipa-lado-caja-vision-codigo-por-confirmar-geometry-v2.png",
+      "sourceSha256": "a6ba7d8ec70c03d303ba6acd32834fde3f8527b84a668ba1ac96d57ba8949d66",
+      "outputImage": "/catalogo-gti/generated-branded/gti-038-gti-038-tulipa-lado-caja-gti-hyundai-vision-codigo-por-confirmar-branded-v2.webp",
       "badgeVariant": "yellow-on-blue-capsule",
       "badgeAsset": "/brands/gti-product-logo-capsule.svg",
       "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
       "colorPolicy": "natural-materials-no-orange-recolor",
       "orangePixelRatio": 0,
       "imageStatus": "generated-reference-image",
-      "outputSha256": "5deba3ca0992e6e5b7d965892c40440eb53319281ae7464ccd97834cc2c0628d"
+      "outputSha256": "85e80ee720aa3b32dc447580aebb2f20f6aace61c4b600fe6f1223417b07d61c"
     },
     "9833753380": {
       "sku": "9833753380",
@@ -733,7 +736,7 @@
       "partFamily": "cv-axle",
       "compatibility": {
         "partFamily": "cv-axle",
-        "laterality": "unknown",
+        "laterality": "right",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -807,7 +810,7 @@
       "partFamily": "inner-cv-joint",
       "compatibility": {
         "partFamily": "inner-cv-joint",
-        "laterality": "unknown",
+        "laterality": "right",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -915,14 +918,14 @@
       "skuKey": "GTI01022",
       "brand": "GTI",
       "brandSlug": "gti",
-      "partFamily": "inner-cv-joint",
+      "partFamily": "cv-axle",
       "compatibility": {
-        "partFamily": "inner-cv-joint",
-        "laterality": "unknown",
+        "partFamily": "cv-axle",
+        "laterality": "right",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
-          "inner-cv-joint"
+          "cv-axle"
         ],
         "fitmentStatus": "conditional",
         "requirements": [
@@ -952,14 +955,14 @@
       "skuKey": "GTI01024",
       "brand": "GTI",
       "brandSlug": "gti",
-      "partFamily": "inner-cv-joint",
+      "partFamily": "cv-axle",
       "compatibility": {
-        "partFamily": "inner-cv-joint",
-        "laterality": "unknown",
+        "partFamily": "cv-axle",
+        "laterality": "left",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
-          "inner-cv-joint"
+          "cv-axle"
         ],
         "fitmentStatus": "conditional",
         "requirements": [
@@ -992,7 +995,7 @@
       "partFamily": "cv-axle",
       "compatibility": {
         "partFamily": "cv-axle",
-        "laterality": "unknown",
+        "laterality": "right",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -1140,7 +1143,7 @@
       "partFamily": "cv-axle",
       "compatibility": {
         "partFamily": "cv-axle",
-        "laterality": "unknown",
+        "laterality": "right",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -1214,7 +1217,7 @@
       "partFamily": "cv-axle",
       "compatibility": {
         "partFamily": "cv-axle",
-        "laterality": "unknown",
+        "laterality": "right",
         "abs": "yes",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -1252,7 +1255,7 @@
       "compatibility": {
         "partFamily": "outer-cv-joint",
         "laterality": "unknown",
-        "abs": "unknown",
+        "abs": "yes",
         "componentScope": "primary-component-only",
         "includedComponents": [
           "outer-cv-joint"
@@ -1288,7 +1291,7 @@
       "partFamily": "cv-axle",
       "compatibility": {
         "partFamily": "cv-axle",
-        "laterality": "unknown",
+        "laterality": "right",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -1325,7 +1328,7 @@
       "partFamily": "cv-axle",
       "compatibility": {
         "partFamily": "cv-axle",
-        "laterality": "unknown",
+        "laterality": "left",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -1399,7 +1402,7 @@
       "partFamily": "cv-axle",
       "compatibility": {
         "partFamily": "cv-axle",
-        "laterality": "unknown",
+        "laterality": "left",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -1436,7 +1439,7 @@
       "partFamily": "cv-axle",
       "compatibility": {
         "partFamily": "cv-axle",
-        "laterality": "unknown",
+        "laterality": "right",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -1473,7 +1476,7 @@
       "partFamily": "inner-cv-joint",
       "compatibility": {
         "partFamily": "inner-cv-joint",
-        "laterality": "unknown",
+        "laterality": "right",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -1584,7 +1587,7 @@
       "partFamily": "cv-axle",
       "compatibility": {
         "partFamily": "cv-axle",
-        "laterality": "unknown",
+        "laterality": "left",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -1658,7 +1661,7 @@
       "partFamily": "cv-axle",
       "compatibility": {
         "partFamily": "cv-axle",
-        "laterality": "unknown",
+        "laterality": "left",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -1695,7 +1698,7 @@
       "partFamily": "cv-axle",
       "compatibility": {
         "partFamily": "cv-axle",
-        "laterality": "unknown",
+        "laterality": "right",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -1840,14 +1843,14 @@
       "skuKey": "GTI02002",
       "brand": "GTI",
       "brandSlug": "gti",
-      "partFamily": "outer-cv-joint",
+      "partFamily": "cv-axle",
       "compatibility": {
-        "partFamily": "outer-cv-joint",
+        "partFamily": "cv-axle",
         "laterality": "unknown",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
-          "outer-cv-joint"
+          "cv-axle"
         ],
         "fitmentStatus": "conditional",
         "requirements": [
@@ -2583,7 +2586,7 @@
       "partFamily": "cv-axle",
       "compatibility": {
         "partFamily": "cv-axle",
-        "laterality": "unknown",
+        "laterality": "right",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -2620,7 +2623,7 @@
       "partFamily": "cv-axle",
       "compatibility": {
         "partFamily": "cv-axle",
-        "laterality": "unknown",
+        "laterality": "left",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -2732,7 +2735,7 @@
       "compatibility": {
         "partFamily": "outer-cv-joint",
         "laterality": "unknown",
-        "abs": "unknown",
+        "abs": "yes",
         "componentScope": "primary-component-only",
         "includedComponents": [
           "outer-cv-joint"
@@ -2843,7 +2846,7 @@
       "compatibility": {
         "partFamily": "outer-cv-joint",
         "laterality": "unknown",
-        "abs": "unknown",
+        "abs": "yes",
         "componentScope": "primary-component-only",
         "includedComponents": [
           "outer-cv-joint"
@@ -2916,7 +2919,7 @@
       "partFamily": "inner-cv-joint",
       "compatibility": {
         "partFamily": "inner-cv-joint",
-        "laterality": "unknown",
+        "laterality": "left",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -2953,7 +2956,7 @@
       "partFamily": "inner-cv-joint",
       "compatibility": {
         "partFamily": "inner-cv-joint",
-        "laterality": "unknown",
+        "laterality": "right",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -2990,7 +2993,7 @@
       "partFamily": "inner-cv-joint",
       "compatibility": {
         "partFamily": "inner-cv-joint",
-        "laterality": "unknown",
+        "laterality": "right",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -3027,7 +3030,7 @@
       "partFamily": "inner-cv-joint",
       "compatibility": {
         "partFamily": "inner-cv-joint",
-        "laterality": "unknown",
+        "laterality": "left",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -3064,7 +3067,7 @@
       "partFamily": "cv-axle",
       "compatibility": {
         "partFamily": "cv-axle",
-        "laterality": "unknown",
+        "laterality": "left",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -3101,7 +3104,7 @@
       "partFamily": "cv-axle",
       "compatibility": {
         "partFamily": "cv-axle",
-        "laterality": "unknown",
+        "laterality": "right",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -3175,7 +3178,7 @@
       "partFamily": "cv-axle",
       "compatibility": {
         "partFamily": "cv-axle",
-        "laterality": "unknown",
+        "laterality": "left",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -3212,7 +3215,7 @@
       "partFamily": "cv-axle",
       "compatibility": {
         "partFamily": "cv-axle",
-        "laterality": "unknown",
+        "laterality": "right",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -3249,7 +3252,7 @@
       "partFamily": "inner-cv-joint",
       "compatibility": {
         "partFamily": "inner-cv-joint",
-        "laterality": "unknown",
+        "laterality": "right",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -3434,7 +3437,7 @@
       "partFamily": "inner-cv-joint",
       "compatibility": {
         "partFamily": "inner-cv-joint",
-        "laterality": "unknown",
+        "laterality": "right",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -3545,7 +3548,7 @@
       "partFamily": "inner-cv-joint",
       "compatibility": {
         "partFamily": "inner-cv-joint",
-        "laterality": "unknown",
+        "laterality": "right",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -3582,7 +3585,7 @@
       "partFamily": "inner-cv-joint",
       "compatibility": {
         "partFamily": "inner-cv-joint",
-        "laterality": "unknown",
+        "laterality": "left",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -3619,7 +3622,7 @@
       "partFamily": "cv-axle",
       "compatibility": {
         "partFamily": "cv-axle",
-        "laterality": "unknown",
+        "laterality": "left",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -3730,7 +3733,7 @@
       "partFamily": "cv-axle",
       "compatibility": {
         "partFamily": "cv-axle",
-        "laterality": "unknown",
+        "laterality": "left",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -3767,7 +3770,7 @@
       "partFamily": "cv-axle",
       "compatibility": {
         "partFamily": "cv-axle",
-        "laterality": "unknown",
+        "laterality": "left",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -3804,7 +3807,7 @@
       "partFamily": "cv-axle",
       "compatibility": {
         "partFamily": "cv-axle",
-        "laterality": "unknown",
+        "laterality": "right",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -3841,7 +3844,7 @@
       "partFamily": "cv-axle",
       "compatibility": {
         "partFamily": "cv-axle",
-        "laterality": "unknown",
+        "laterality": "left",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -3878,7 +3881,7 @@
       "partFamily": "inner-cv-joint",
       "compatibility": {
         "partFamily": "inner-cv-joint",
-        "laterality": "unknown",
+        "laterality": "right",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -3915,7 +3918,7 @@
       "partFamily": "inner-cv-joint",
       "compatibility": {
         "partFamily": "inner-cv-joint",
-        "laterality": "unknown",
+        "laterality": "left",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -3989,7 +3992,7 @@
       "partFamily": "cv-axle",
       "compatibility": {
         "partFamily": "cv-axle",
-        "laterality": "unknown",
+        "laterality": "right",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -4026,7 +4029,7 @@
       "partFamily": "cv-axle",
       "compatibility": {
         "partFamily": "cv-axle",
-        "laterality": "unknown",
+        "laterality": "left",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -4063,7 +4066,7 @@
       "partFamily": "cv-axle",
       "compatibility": {
         "partFamily": "cv-axle",
-        "laterality": "unknown",
+        "laterality": "right",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -4137,7 +4140,7 @@
       "partFamily": "inner-cv-joint",
       "compatibility": {
         "partFamily": "inner-cv-joint",
-        "laterality": "unknown",
+        "laterality": "right",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -4174,7 +4177,7 @@
       "partFamily": "cv-axle",
       "compatibility": {
         "partFamily": "cv-axle",
-        "laterality": "unknown",
+        "laterality": "right",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -4211,7 +4214,7 @@
       "partFamily": "cv-axle",
       "compatibility": {
         "partFamily": "cv-axle",
-        "laterality": "unknown",
+        "laterality": "left",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -4396,7 +4399,7 @@
       "partFamily": "cv-axle",
       "compatibility": {
         "partFamily": "cv-axle",
-        "laterality": "unknown",
+        "laterality": "right",
         "abs": "no",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -4433,7 +4436,7 @@
       "partFamily": "cv-axle",
       "compatibility": {
         "partFamily": "cv-axle",
-        "laterality": "unknown",
+        "laterality": "left",
         "abs": "no",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -4618,7 +4621,7 @@
       "partFamily": "cv-axle",
       "compatibility": {
         "partFamily": "cv-axle",
-        "laterality": "unknown",
+        "laterality": "right",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -4729,7 +4732,7 @@
       "partFamily": "cv-axle",
       "compatibility": {
         "partFamily": "cv-axle",
-        "laterality": "unknown",
+        "laterality": "left",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -4766,7 +4769,7 @@
       "partFamily": "cv-axle",
       "compatibility": {
         "partFamily": "cv-axle",
-        "laterality": "unknown",
+        "laterality": "right",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -4803,7 +4806,7 @@
       "partFamily": "cv-axle",
       "compatibility": {
         "partFamily": "cv-axle",
-        "laterality": "unknown",
+        "laterality": "right",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -4840,7 +4843,7 @@
       "partFamily": "cv-axle",
       "compatibility": {
         "partFamily": "cv-axle",
-        "laterality": "unknown",
+        "laterality": "left",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -4877,7 +4880,7 @@
       "partFamily": "cv-axle",
       "compatibility": {
         "partFamily": "cv-axle",
-        "laterality": "unknown",
+        "laterality": "right",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -4914,7 +4917,7 @@
       "partFamily": "cv-axle",
       "compatibility": {
         "partFamily": "cv-axle",
-        "laterality": "unknown",
+        "laterality": "left",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -4988,7 +4991,7 @@
       "partFamily": "cv-axle",
       "compatibility": {
         "partFamily": "cv-axle",
-        "laterality": "unknown",
+        "laterality": "right",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -5025,7 +5028,7 @@
       "partFamily": "cv-axle",
       "compatibility": {
         "partFamily": "cv-axle",
-        "laterality": "unknown",
+        "laterality": "left",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -5136,7 +5139,7 @@
       "partFamily": "cv-axle",
       "compatibility": {
         "partFamily": "cv-axle",
-        "laterality": "unknown",
+        "laterality": "left",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -5173,7 +5176,7 @@
       "partFamily": "cv-axle",
       "compatibility": {
         "partFamily": "cv-axle",
-        "laterality": "unknown",
+        "laterality": "right",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -5210,7 +5213,7 @@
       "partFamily": "cv-axle",
       "compatibility": {
         "partFamily": "cv-axle",
-        "laterality": "unknown",
+        "laterality": "left",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -5247,7 +5250,7 @@
       "partFamily": "cv-axle",
       "compatibility": {
         "partFamily": "cv-axle",
-        "laterality": "unknown",
+        "laterality": "right",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -5321,7 +5324,7 @@
       "partFamily": "cv-axle",
       "compatibility": {
         "partFamily": "cv-axle",
-        "laterality": "unknown",
+        "laterality": "left",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -5395,7 +5398,7 @@
       "partFamily": "cv-axle",
       "compatibility": {
         "partFamily": "cv-axle",
-        "laterality": "unknown",
+        "laterality": "right",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -5432,7 +5435,7 @@
       "partFamily": "cv-axle",
       "compatibility": {
         "partFamily": "cv-axle",
-        "laterality": "unknown",
+        "laterality": "right",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -5470,7 +5473,7 @@
       "compatibility": {
         "partFamily": "outer-cv-joint",
         "laterality": "unknown",
-        "abs": "no",
+        "abs": "yes",
         "componentScope": "primary-component-only",
         "includedComponents": [
           "outer-cv-joint"
@@ -5506,7 +5509,7 @@
       "partFamily": "cv-axle",
       "compatibility": {
         "partFamily": "cv-axle",
-        "laterality": "unknown",
+        "laterality": "left",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -5692,7 +5695,7 @@
       "compatibility": {
         "partFamily": "outer-cv-joint",
         "laterality": "unknown",
-        "abs": "unknown",
+        "abs": "yes",
         "componentScope": "primary-component-only",
         "includedComponents": [
           "outer-cv-joint"
@@ -5839,7 +5842,7 @@
       "partFamily": "cv-axle",
       "compatibility": {
         "partFamily": "cv-axle",
-        "laterality": "unknown",
+        "laterality": "left",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -6024,7 +6027,7 @@
       "partFamily": "inner-cv-joint",
       "compatibility": {
         "partFamily": "inner-cv-joint",
-        "laterality": "unknown",
+        "laterality": "left",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -6135,7 +6138,7 @@
       "partFamily": "cv-axle",
       "compatibility": {
         "partFamily": "cv-axle",
-        "laterality": "unknown",
+        "laterality": "right",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -6172,7 +6175,7 @@
       "partFamily": "cv-axle",
       "compatibility": {
         "partFamily": "cv-axle",
-        "laterality": "unknown",
+        "laterality": "left",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [

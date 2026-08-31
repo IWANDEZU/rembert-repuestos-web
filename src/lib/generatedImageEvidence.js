@@ -18,6 +18,12 @@ export function productBrandSlug(product) {
 }
 
 export function inferProductPartFamily(product) {
+  const title = normalizeText(product?.name);
+  // The product title is authoritative when it explicitly identifies a complete axle.
+  // Do this before the broader short description: a generic "lado caja/rueda"
+  // label must not turn a named eje homocinético into a single CV joint.
+  if (/eje homocinetico|semieje|cv axle/.test(title)) return "cv-axle";
+
   const text = normalizeText([
     product?.name,
     product?.shortDesc,
@@ -31,34 +37,50 @@ export function inferProductPartFamily(product) {
   if (/guardapolvo|fuelle|cv boot/.test(text)) return "cv-boot";
   if (/triceta|tripode|tripod/.test(text)) return "tripod-joint";
   if (/tulipa|copa lado caja|cv tulip/.test(text)) return "inner-cv-tulip";
-  if (/interconexion|intermedio|intermediate shaft/.test(text)) return "intermediate-shaft";
-  if (/lado caja|l\/c|inner cv|punta caja/.test(text)) return "inner-cv-joint";
-  if (/lado rueda|l\/r|punta(?: de)? eje|punta|junta homocinetica|outer cv/.test(text)) return "outer-cv-joint";
+  if (/interconexion|interconeccion|intermedio|intermediate shaft/.test(text)) return "intermediate-shaft";
+  if (/lado caja|inner cv|punta caja|(?:^|[^a-z0-9])l\s*\/\s*c(?:$|[^a-z0-9])/.test(text)) return "inner-cv-joint";
+  if (/lado rueda|punta(?: de)? eje|punta|junta homocinetica|outer cv|(?:^|[^a-z0-9])l\s*\/\s*r(?:$|[^a-z0-9])/.test(text)) return "outer-cv-joint";
   if (/eje|semieje|flecha|cv axle/.test(text)) return "cv-axle";
   return "unknown";
 }
 
 export function inferProductLaterality(product) {
-  const text = normalizeText([
+  const inferFromText = (text) => {
+    const hasLeft = /\b(?:izq|izquierda|izquierdo|left)\b/.test(text);
+    const hasRight = /\b(?:der|derecha|derecho|right)\b/.test(text);
+    if (hasLeft && hasRight) return "either";
+    if (/ambos lados|indistinto/.test(text)) return "either";
+    if (hasLeft) return "left";
+    if (hasRight) return "right";
+    return "unknown";
+  };
+
+  const titleLaterality = inferFromText(normalizeText(product?.name));
+  if (titleLaterality !== "unknown") return titleLaterality;
+
+  return inferFromText(normalizeText([
     product?.name,
     product?.fitmentSummary,
     ...(Array.isArray(product?.fitments) ? product.fitments.map((fitment) => fitment?.position) : []),
-  ].filter(Boolean).join(" "));
-  if (/izquierda.*derecha|derecha.*izquierda|ambos lados|left.*right|right.*left|indistinto/.test(text)) return "either";
-  if (/izquierda|izquierdo|left|lado izq/.test(text)) return "left";
-  if (/derecha|derecho|right|lado der/.test(text)) return "right";
-  return "unknown";
+  ].filter(Boolean).join(" ")));
 }
 
 export function inferProductAbs(product) {
+  const title = normalizeText(product?.name);
+  const hasExplicitNoAbs = (text) => /\b(?:sin|no|without)\s+(?:(?:anillo|aro|sensor)\s+)?abs\b/.test(text);
+  const hasExplicitYesAbs = (text) => /\bcon\s+abs\b|\b(?:anillo|aro|sensor)\s+abs\b|\babs\s+\d+[a-z]*\b/.test(text);
+
+  if (hasExplicitNoAbs(title)) return "no";
+  if (hasExplicitYesAbs(title)) return "yes";
+
   const text = normalizeText([
     product?.name,
     product?.description,
     product?.fitmentSummary,
     ...(Array.isArray(product?.attributes) ? product.attributes.map((attribute) => `${attribute?.name} ${attribute?.value}`) : []),
   ].filter(Boolean).join(" "));
-  if (/sin abs|no abs|without abs/.test(text)) return "no";
-  if (/con abs|sensor abs|aro abs|with abs/.test(text)) return "yes";
+  if (hasExplicitNoAbs(text)) return "no";
+  if (/\b(?:con|with)\s+abs\b|\b(?:sensor|aro|anillo)\s+abs\b/.test(text)) return "yes";
   return "unknown";
 }
 

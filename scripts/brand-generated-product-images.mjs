@@ -4,6 +4,7 @@ import path from "node:path";
 import sharp from "sharp";
 import { products } from "../src/lib/products.js";
 import { adsGeneratedImageEvidence } from "../src/data/adsGeneratedImageEvidence.js";
+import { gtiGeneratedImageEvidence } from "../src/data/gtiGeneratedImageEvidence.js";
 import { productImageOverrides } from "../src/data/productImageOverrides.js";
 import {
   buildGeneratedImageCompatibility,
@@ -63,9 +64,12 @@ function resolvePublicAsset(publicUrl, label) {
 }
 
 function sourceUrlFor(product, existingOverride) {
+  const skuKey = normalizeImageEvidenceKey(product.sku);
+  const evidenceAsset = product.brand.slug === "ads"
+    ? adsGeneratedImageEvidence[skuKey]?.generatedAsset
+    : gtiGeneratedImageEvidence[skuKey]?.generatedAsset;
+  if (evidenceAsset) return evidenceAsset;
   if (product.brand.slug === "ads") {
-    const evidenceAsset = adsGeneratedImageEvidence[normalizeImageEvidenceKey(product.sku)]?.generatedAsset;
-    if (evidenceAsset) return evidenceAsset;
     const exactGalleryImage = product.images?.find((image) => image?.isMain && image?.url)
       || product.images?.find((image) => image?.url);
     return exactGalleryImage?.url || product.image;
@@ -123,8 +127,10 @@ for (const product of targets) {
   const skuKey = normalizeImageEvidenceKey(product.sku);
   const config = BRAND_CONFIG[product.brand.slug];
   const existingOverride = overrides[skuKey] || {};
-  const adsEvidence = product.brand.slug === "ads" ? adsGeneratedImageEvidence[skuKey] : null;
-  if (product.brand.slug === "ads" && !adsEvidence) throw new Error(`${product.sku}: falta evidencia ADS estructurada`);
+  const generatedEvidence = product.brand.slug === "ads"
+    ? adsGeneratedImageEvidence[skuKey]
+    : gtiGeneratedImageEvidence[skuKey];
+  if (product.brand.slug === "ads" && !generatedEvidence) throw new Error(`${product.sku}: falta evidencia ADS estructurada`);
   const sourceUrl = sourceUrlFor(product, existingOverride);
   const sourcePath = resolvePublicAsset(sourceUrl, product.sku);
   const stats = await fs.stat(sourcePath).catch(() => null);
@@ -141,9 +147,9 @@ for (const product of targets) {
   const badgeBuffer = await fs.readFile(config.badge);
   const sourceSha256 = sha256(sourceBuffer);
   const badgeSha256 = sha256(badgeBuffer);
-  const compatibility = buildGeneratedImageCompatibility(product, adsEvidence || {});
+  const compatibility = buildGeneratedImageCompatibility(product, generatedEvidence || {});
   if (compatibility.partFamily === "unknown") throw new Error(`${product.sku}: familia de pieza no identificada`);
-  const generationPrompt = adsEvidence?.generationPrompt || existingOverride?.sourceRecord?.generationPrompt;
+  const generationPrompt = generatedEvidence?.generationPrompt || existingOverride?.sourceRecord?.generationPrompt;
   if (!generationPrompt) throw new Error(`${product.sku}: falta prompt de generación auditable`);
   const alt = `Imagen generada de referencia de ${product.name}, SKU ${product.sku}; no es fotografía original. Identificada con el logotipo ${config.name}.`;
   const existingTreatment = existingOverride?.sourceRecord?.brandTreatment;
@@ -168,15 +174,17 @@ for (const product of targets) {
       brandSlug: product.brand.slug,
       generationPrompt,
       generationPromptStatus: "recorded",
-      generatedAt: adsEvidence?.generatedAt || existingOverride.sourceRecord?.generatedAt,
+      generatedAt: generatedEvidence?.generatedAt || existingOverride.sourceRecord?.generatedAt,
       compatibility,
-      ...(adsEvidence ? {
+      ...(generatedEvidence ? {
         geometryEvidence: {
-          claimScope: "cross-brand-geometry-reference-only",
-          sourcePageUrl: adsEvidence.sourcePageUrl,
-          sourceImageUrl: adsEvidence.sourceImageUrl,
-          crossReferenceBrand: adsEvidence.crossReferenceBrand,
-          crossReferenceNumber: adsEvidence.crossReferenceNumber,
+          evidenceStatus: generatedEvidence.evidenceStatus || "cross-brand-geometry-reference",
+          claimScope: generatedEvidence.claimScope || "cross-brand-geometry-reference-only",
+          ...(generatedEvidence.sourcePageUrl ? { sourcePageUrl: generatedEvidence.sourcePageUrl } : {}),
+          ...(generatedEvidence.sourceImageUrl ? { sourceImageUrl: generatedEvidence.sourceImageUrl } : {}),
+          crossReferenceBrand: generatedEvidence.crossReferenceBrand,
+          crossReferenceNumber: generatedEvidence.crossReferenceNumber,
+          ...(generatedEvidence.geometryNotes ? { geometryNotes: generatedEvidence.geometryNotes } : {}),
           publishedAsPhysicalPhoto: false,
         },
       } : {}),

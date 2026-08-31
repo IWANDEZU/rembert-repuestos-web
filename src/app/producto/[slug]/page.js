@@ -162,7 +162,7 @@ export default async function ProductPage({ params }) {
       "@type": "Brand",
       "name": product.brand?.name || "REMBERT",
     },
-    "additionalProperty": product.attributes.map((attribute) => ({
+    "additionalProperty": (product.attributes || []).map((attribute) => ({
       "@type": "PropertyValue",
       "name": attribute.name,
       "value": attribute.value,

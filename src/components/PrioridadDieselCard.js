@@ -169,85 +169,51 @@ export default function PrioridadDieselCard({ product, onSelect }) {
       </div>
 
       {/* Referencia y Nombre Principal */}
-      <div style={{ marginBottom: "0.6rem" }}>
-        <span className="product-reference" style={{ marginBottom: "6px" }}>
-          Ref: {product.reference}
-        </span>
+      <div style={{ marginBottom: "0.5rem", flexGrow: 1 }}>
+        <div style={{ display: "flex", alignItems: "center", gap: "6px", marginBottom: "4px" }}>
+          <span className="product-reference" style={{ fontSize: "0.74rem", padding: "2px 8px" }}>
+            Ref: {product.reference}
+          </span>
+        </div>
 
         <h3
+          onClick={onSelect}
           style={{
-            fontSize: "1.05rem",
-            color: "#fff",
+            fontSize: "clamp(0.88rem, 2.2vw, 0.98rem)",
+            color: "#FFFFFF",
             lineHeight: "1.3",
             marginBottom: "0.3rem",
+            cursor: "pointer",
+            fontWeight: "700",
           }}
         >
           {product.subtype}
         </h3>
-      </div>
 
-      {/* Aplicación Vehicular */}
-      <div
-        style={{
-          fontSize: "0.82rem",
-          color: "var(--text-muted)",
-          marginBottom: "0.8rem",
-          display: "flex",
-          flexDirection: "column",
-          gap: "4px",
-          background: "#141414",
-          padding: "8px 10px",
-          borderRadius: "6px",
-        }}
-      >
-        <div>
-          <strong style={{ color: "#ccc" }}>Vehículo:</strong> {product.vehicle}
-        </div>
-        <div>
-          <strong style={{ color: "#ccc" }}>Motor:</strong> {product.engine} |{" "}
-          <strong style={{ color: "#ccc" }}>Posición:</strong> {product.position}
+        <div style={{ fontSize: "0.76rem", color: "var(--text-muted)", display: "flex", alignItems: "center", gap: "4px" }}>
+          <span style={{ color: "#AAA" }}>Aplicación:</span> {product.vehicle}
         </div>
       </div>
-
-      {/* Cruces u OE destacados */}
-      {(product.oe.length > 0 || product.cross_references.length > 0) && (
-        <div style={{ fontSize: "0.75rem", color: "#888", marginBottom: "0.8rem" }}>
-          <strong>OE / Cruces:</strong>{" "}
-          {[...product.oe, ...product.cross_references].slice(0, 2).join(", ")}
-          {[...product.oe, ...product.cross_references].length > 2 && "..."}
-        </div>
-      )}
 
       {/* Sección de Precio */}
-      <div style={{ marginTop: "auto", paddingTop: "0.8rem", borderTop: "1px solid #222" }}>
-        <div style={{ display: "flex", alignItems: "baseline", gap: "8px", marginBottom: "4px" }}>
-          <span style={{ fontSize: "1.35rem", fontWeight: "bold", color: "var(--primary-color)" }}>
+      <div style={{ marginTop: "auto", paddingTop: "0.6rem", borderTop: "1px solid #222" }}>
+        <div style={{ display: "flex", alignItems: "baseline", gap: "8px", marginBottom: "6px" }}>
+          <span style={{ fontSize: "clamp(1.15rem, 3vw, 1.35rem)", fontWeight: "bold", color: "var(--primary-color)" }}>
             {product.formattedPrice}
           </span>
         </div>
 
-        <p style={{ fontSize: "0.7rem", color: "#aaa", fontStyle: "italic", marginBottom: "0.8rem" }}>
-          Precio sugerido, sujeto a disponibilidad y confirmación.
-        </p>
-
-        {/* Advertencia Obligatoria de Compatibilidad */}
-        <div
-          style={{
-            background: "rgba(255, 87, 34, 0.1)",
-            border: "1px solid rgba(255, 87, 34, 0.3)",
-            borderRadius: "6px",
-            padding: "6px 8px",
-            fontSize: "0.72rem",
-            color: "#ff8a65",
-            marginBottom: "0.8rem",
-            lineHeight: "1.35",
-          }}
-        >
-          <strong>⚠️ Nota de Compatibilidad:</strong> Confirma compatibilidad por VIN, código de motor, año y tracción antes de comprar.
-        </div>
-
         {/* Botones de Acción */}
         <div style={{ display: "flex", flexDirection: "column", gap: "5px" }}>
+          <button
+            type="button"
+            onClick={onSelect}
+            className="product-card__quote-notice product-card__quote-notice--dark"
+            style={{ padding: "0.4rem 0.5rem", fontSize: "0.72rem", border: "1px solid rgba(255, 215, 0, 0.3)", borderRadius: "6px", cursor: "pointer", width: "100%", fontWeight: "700" }}
+          >
+            🔍 Ver Ficha Técnica y Compatibilidad
+          </button>
+
           <button
             type="button"
             onClick={handleAddToCart}

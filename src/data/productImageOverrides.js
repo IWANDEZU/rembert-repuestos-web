@@ -1,11 +1,11 @@
 // Generado por scripts/update-product-images.mjs, scripts/apply-generated-gti-image.mjs y scripts/brand-generated-product-images.mjs. No editar manualmente.
 export const productImageOverrides = Object.freeze({
   "184441": {
-    "image": "/catalogo-ads/branded/184441-ads-184441-soporte-hidraulico-peugeot-branded-v2.webp",
+    "image": "/catalogo-ads/branded/184441-ads-184441-soporte-motor-transmision-psa-fiat-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-ads/branded/184441-ads-184441-soporte-hidraulico-peugeot-branded-v2.webp",
-        "alt": "Imagen generada de referencia de Soporte de Motor ADS 184441 — Aplicación PSA/Fiat por confirmar, SKU 184441; no es fotografía original. Identificada con el logotipo ADS.",
+        "url": "/catalogo-ads/branded/184441-ads-184441-soporte-motor-transmision-psa-fiat-branded-v2.webp",
+        "alt": "Imagen generada de referencia de Soporte de Motor/Transmisión ADS 184441 — PSA/Fiat por confirmar, SKU 184441; no es fotografía original. Identificada con el logotipo ADS.",
         "isMain": true
       }
     ],
@@ -52,6 +52,7 @@ export const productImageOverrides = Object.freeze({
         ]
       },
       "geometryEvidence": {
+        "evidenceStatus": "cross-brand-geometry-reference",
         "claimScope": "cross-brand-geometry-reference-only",
         "sourcePageUrl": "https://spareto.com/products/febi-bilstein-engine-mounting/12346",
         "sourceImageUrl": "https://cdn.spareto.com/variants/images/000/264/521/original/12346_1.jpg?1606227849",
@@ -62,10 +63,10 @@ export const productImageOverrides = Object.freeze({
     }
   },
   "184442": {
-    "image": "/catalogo-ads/branded/184442-ads-184442-soporte-hidraulico-peugeot-citroen-branded-v2.webp",
+    "image": "/catalogo-ads/branded/184442-ads-184442-soporte-motor-derecho-peugeot-citroen-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-ads/branded/184442-ads-184442-soporte-hidraulico-peugeot-citroen-branded-v2.webp",
+        "url": "/catalogo-ads/branded/184442-ads-184442-soporte-motor-derecho-peugeot-citroen-branded-v2.webp",
         "alt": "Imagen generada de referencia de Soporte de Motor Derecho ADS 184442 — Peugeot / Citroën, SKU 184442; no es fotografía original. Identificada con el logotipo ADS.",
         "isMain": true
       }
@@ -113,6 +114,7 @@ export const productImageOverrides = Object.freeze({
         ]
       },
       "geometryEvidence": {
+        "evidenceStatus": "cross-brand-geometry-reference",
         "claimScope": "cross-brand-geometry-reference-only",
         "sourcePageUrl": "https://spareto.com/products/febi-bilstein-engine-mounting/18696",
         "sourceImageUrl": "https://cdn.spareto.com/variants/images/000/406/848/original/18696_1.jpg?1606244585",
@@ -174,6 +176,7 @@ export const productImageOverrides = Object.freeze({
         ]
       },
       "geometryEvidence": {
+        "evidenceStatus": "cross-brand-geometry-reference",
         "claimScope": "cross-brand-geometry-reference-only",
         "sourcePageUrl": "https://exist.ua/citroen-peugeot-brand/opora-sharovaja-perednjaja-levaja-3640-77-9277780/",
         "sourceImageUrl": "https://i.ebayimg.com/images/g/P-wAAOSwpr1m3HOa/s-l960.png",
@@ -272,10 +275,10 @@ export const productImageOverrides = Object.freeze({
     "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
-      "generationPrompt": "Photorealistic studio product reference of a front wheel-side outer CV joint for Chevrolet Tracker 1.2 Turbo / Onix 1.0 Turbo manual transmission: single complete steel joint, splined shaft, threaded wheel-end tip and black boot; pure white background, no ABS ring, no text, no logo, no packaging. Fitment remains subject to VIN confirmation.",
+      "generationPrompt": "Create a new high-end photorealistic square e-commerce reference of the exact wheel-side outer CV joint geometry shown in the supplied Nakata NJH280285 source, cross-matched to GTI04-161 for Chevrolet Tracker 1.2 Turbo / Onix 1.0 Turbo manual, 33 external x 22 internal splines and pin interno. Preserve the dark machined bell housing, long splined threaded shaft, black accordion boot, clamps, axle nut and retaining circlip; arrange only those durable kit components. Remove packaging, grease, text, labels, watermarks and all brand marks. Do not add ABS ring, cable, sensor, axle shaft or unrelated parts because ABS is not verified. Natural steel and rubber, no orange recoloring, pure white studio background. The approved GTI yellow-on-blue badge is added later by code. Geometry-grounded generated reference, never a physical GTI photograph.",
       "sourceSha256": "742a35e9ab3d410670c03b7a707be644a2a4fb0d566b216579147a1e4cd1a390",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-27T21:20:20.495Z",
+      "generatedAt": "2026-08-31T01:31:00.000Z",
       "brandTreatment": {
         "version": 3,
         "brand": "GTI",
@@ -284,11 +287,11 @@ export const productImageOverrides = Object.freeze({
         "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
         "colorPolicy": "natural-materials-no-orange-recolor",
         "orangePixelRatio": 0,
-        "sourceImage": "/catalogo-gti/generated/gti04-161-punta-lado-rueda-gti-chevrolet-tracker-turbo-onix-turbo-generated-reference.webp",
-        "sourceSha256": "6e589a17630aa4e5d3a7d8c41766583def073716eaa39eb0d0e1af9785a75141",
+        "sourceImage": "/catalogo-gti/generated/gti04-161-punta-lado-rueda-tracker-onix-geometry-v2.png",
+        "sourceSha256": "aa11d4c0826e4ed9c6bf06c93fb6b987dd2539c228192ea1ddc32250c8ae9237",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-31T00:14:56.824Z",
-        "outputSha256": "bb0ce693c5675391295ab8563e2082b694a8586e5ebe33ebedb4c8cc3d00ee88"
+        "appliedAt": "2026-08-31T01:48:11.022Z",
+        "outputSha256": "3a039933a98772048ede81706cb767f4a97362ce9261212d7414b810a6b5c928"
       },
       "sku": "GTI04-161",
       "skuKey": "GTI04161",
@@ -313,6 +316,16 @@ export const productImageOverrides = Object.freeze({
           "diámetro del sello",
           "ABS y número de dientes de corona"
         ]
+      },
+      "geometryEvidence": {
+        "evidenceStatus": "exact-reference-plus-cross-geometry-recreated",
+        "claimScope": "exact-sku-and-cross-reference-geometry-only",
+        "sourcePageUrl": "https://www.mercadolibre.com.co/punta-eje-lado-rueda-chevro-tracker-turbo--onix-turbo-33x22/up/MCOU3541704938",
+        "sourceImageUrl": "https://cpfabbri.com.br/wp-content/uploads/2023/11/njh280285-1.jpg",
+        "crossReferenceBrand": "GTI / Nakata",
+        "crossReferenceNumber": "GTI04-161+ · NJH280285 · 33 × 22 · pin interno",
+        "geometryNotes": "La ficha GTI confirma SKU, aplicación, transmisión, estrías y pin; la foto del cruce Nakata NJH280285 se usó sólo como guía geométrica. No se republica como foto GTI.",
+        "publishedAsPhysicalPhoto": false
       }
     }
   },
@@ -341,11 +354,11 @@ export const productImageOverrides = Object.freeze({
     }
   },
   "GTI106092": {
-    "image": "/catalogo-gti/generated-branded/gti106-092-punta-l-c-kia-picanto-all-new-1-2-25-21-gti106-092-branded-v2.webp",
+    "image": "/catalogo-gti/generated-branded/gti106-092-gti106-092-junta-homocinetica-lado-caja-gti-kia-picanto-all-new-1-2-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated-branded/gti106-092-punta-l-c-kia-picanto-all-new-1-2-25-21-gti106-092-branded-v2.webp",
-        "alt": "Imagen generada de referencia de PUNTA L/C KIA PICANTO ALL NEW 1.2 (25*21), SKU GTI106-092; no es fotografía original. Identificada con el logotipo GTI.",
+        "url": "/catalogo-gti/generated-branded/gti106-092-gti106-092-junta-homocinetica-lado-caja-gti-kia-picanto-all-new-1-2-branded-v2.webp",
+        "alt": "Imagen generada de referencia de Junta homocinética lado caja GTI — Kia Picanto All New 1.2, SKU GTI106-092; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
@@ -353,10 +366,10 @@ export const productImageOverrides = Object.freeze({
     "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
-      "generationPrompt": "Photorealistic studio product reference of a gearbox-side inner CV joint for Kia Picanto All New 1.2, 25 × 21 splines: compact steel tulip housing, black boot, metal bands and splined stem; pure white background, no text, no logo, no packaging. Fitment remains subject to VIN confirmation.",
+      "generationPrompt": "Using the supplied exact GTI06-092 physical source only as geometry reference, create a new high-end photorealistic square e-commerce generated reference for inventory alias GTI106-092: gearbox-side inner CV joint for Kia Picanto All New 1.2 2019+, specified 25 external x 21 internal splines. Preserve the exact assembled joint housing and splined stem proportions shown, plus the separate matte-black accordion boot, two stainless clamps and the two small retaining rings. Keep the joint assembled exactly as photographed; do NOT add or expose a detached tripod, rollers, wheel-side bell joint, full axle, ABS ring, cable, sensor or unrelated accessory. Remove the yellow grease sachet, printed GTI code, all text, brand marks, labels, watermarks and packaging. Natural dark and silver machined steel and black rubber, no orange recoloring, pure white background, generous whitespace and soft realistic studio shadow. Do not add any brand mark; the approved GTI yellow-on-blue capsule is added later by code. Exact-source geometry recreation, never a physical GTI product photograph.",
       "sourceSha256": "162d8b4e6cffbaa28ce6ed29ebc4207e5bfc8a0b576b3321d0394e3e06829a00",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-27T21:20:22.193Z",
+      "generatedAt": "2026-08-31T01:31:00.000Z",
       "brandTreatment": {
         "version": 3,
         "brand": "GTI",
@@ -365,11 +378,11 @@ export const productImageOverrides = Object.freeze({
         "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
         "colorPolicy": "natural-materials-no-orange-recolor",
         "orangePixelRatio": 0,
-        "sourceImage": "/catalogo-gti/generated/punta-l-c-kia-picanto-all-new-1-2-25-21-gti106-092-generated-reference.webp",
-        "sourceSha256": "d10727e4bbba4424a82a9fcc0fefc8237b9907c7bbcb4256a2440c7109c92ac5",
+        "sourceImage": "/catalogo-gti/generated/gti106-092-tulipa-lado-caja-picanto-geometry-v2.png",
+        "sourceSha256": "23122521763562252863f17a6e0cddbd5c93667649eb705554d21d61c6283e0f",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-31T00:14:56.838Z",
-        "outputSha256": "ad211d0f3f5a6b4891d45db110687d1f4ce0ff7996a83a2462de862b8de9dbdb"
+        "appliedAt": "2026-08-31T02:03:22.706Z",
+        "outputSha256": "8edb90847b97d06d2923820320415ba755699d0d236146a026bf7fadebd41230"
       },
       "sku": "GTI106-092",
       "skuKey": "GTI106092",
@@ -383,14 +396,27 @@ export const productImageOverrides = Object.freeze({
         "includedComponents": [
           "inner-cv-joint"
         ],
-        "fitmentStatus": "inventory-listed",
+        "fitmentStatus": "conditional",
         "requirements": [
           "VIN",
           "año",
           "motor",
-          "versión",
-          "muestra o referencia desmontada"
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "diámetro del sello",
+          "ABS y número de dientes de corona"
         ]
+      },
+      "geometryEvidence": {
+        "evidenceStatus": "exact-reference-alias-geometry-recreated",
+        "claimScope": "inventory-alias-and-exact-sku-geometry-only",
+        "sourcePageUrl": "https://www.imotriz.com/producto/3/GTI06-092-/PUNTA-EJE-L-C-KIA-PICANTO-ALL-NEW-1-2-2019-25x21-",
+        "sourceImageUrl": "https://app.pedbox.co:7777/imagenes_catalogo/15/06I09134.JPG",
+        "crossReferenceBrand": "Inventario REMBERT / GTI",
+        "crossReferenceNumber": "GTI106-092 → GTI06-092 · 25 × 21",
+        "geometryNotes": "El inventario usa el alias GTI106-092; la ficha y fotografía exactas GTI06-092 confirman Kia Picanto All New 1.2, 25 × 21, junta interior ensamblada, fuelle, abrazaderas y seguros. El alias se conserva para búsqueda y control de existencias.",
+        "publishedAsPhysicalPhoto": false
       }
     }
   },
@@ -455,10 +481,10 @@ export const productImageOverrides = Object.freeze({
     "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
-      "generationPrompt": "Photorealistic studio product reference of a front wheel-side outer CV joint for Chevrolet Cobalt / Taxi Elite: steel outer joint, black boot, metal bands, splined shaft and threaded wheel-end tip; white background, no ABS ring, no text, no logo, no packaging. Fitment remains subject to VIN confirmation.",
+      "generationPrompt": "Create a new high-end photorealistic square e-commerce reference image of the exact automotive outer CV joint kit geometry shown in the supplied source, SKU GTI04-089 for Chevrolet Cobalt / Taxi Elite / Tracker 1.8, 23 x 25 splines. Preserve the joint housing silhouette, long splined shaft, threaded tip, black accordion boot, metal clamps, axle nut and retaining circlip, with the same component count and proportions. Arrange the complete kit cleanly and separately. New-product condition, natural dark machined steel, silver clamps and nut, matte black rubber, soft studio shadow, pure white background. Remove the IMOTRIZ watermark, yellow wrapper, all text, labels, logos and packaging. Do not add an ABS tone ring, cable, sensor or unrelated accessory. Do not recolor any component orange. No brand mark; the approved GTI badge is applied later by code. Geometry-grounded generated reference, not a physical GTI photograph.",
       "sourceSha256": "ebef7bc781a1a593c2ee5f7e8163eca068491eebf907dbf6c123bde469a1768c",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-27T21:37:30.863Z",
+      "generatedAt": "2026-08-31T01:31:00.000Z",
       "brandTreatment": {
         "version": 3,
         "brand": "GTI",
@@ -467,11 +493,11 @@ export const productImageOverrides = Object.freeze({
         "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
         "colorPolicy": "natural-materials-no-orange-recolor",
         "orangePixelRatio": 0,
-        "sourceImage": "/catalogo-gti/generated/gti04-089-punta-lado-rueda-gti-chevrolet-cobalt-taxi-elite-generated-reference.webp",
-        "sourceSha256": "dd978546f4d5600b25fa91f1ed0d4fe44d3928790bbe01c4699b554faa6cb200",
+        "sourceImage": "/catalogo-gti/generated/gti04-089-punta-lado-rueda-chevrolet-cobalt-taxi-elite-geometry-v2.png",
+        "sourceSha256": "481edb19cb120be7a47719c451d0c989af3e7d499ad8f41da4dc615ae1f4f05f",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-31T00:14:56.852Z",
-        "outputSha256": "e248ad3e8d7445deeb035ae1e85e07d18671652d0a274e98fecd190aa0422cb4"
+        "appliedAt": "2026-08-31T01:38:00.526Z",
+        "outputSha256": "a9f6043ab8fc2fbd15ca16792263a865d7682ade9fb2b47d8b8b3fb5f52d7638"
       },
       "sku": "GTI04-089",
       "skuKey": "GTI04089",
@@ -496,15 +522,25 @@ export const productImageOverrides = Object.freeze({
           "diámetro del sello",
           "ABS y número de dientes de corona"
         ]
+      },
+      "geometryEvidence": {
+        "evidenceStatus": "exact-reference-geometry-recreated",
+        "claimScope": "exact-sku-third-party-geometry-reference-only",
+        "sourcePageUrl": "https://www.imotriz.com/producto/1b53a9df54af140a5cd22ed417fc6810/gti04-089/punta-de-eje-l-r-cobalt-tracker-1800-cc-23x25-marca-gti",
+        "sourceImageUrl": "https://image.imotriz.com/uploads/products/20230227151457-GTI04-089+-PUNTA-DE-EJE-LR-COBALT-TRACKER-1800-CC-(23X25).webp.webp",
+        "crossReferenceBrand": "GTI / Imotriz",
+        "crossReferenceNumber": "GTI04-089+ · 23 × 25",
+        "geometryNotes": "La imagen externa sólo se usó como guía geométrica; el agua marcada, empaque y marcas se excluyeron y la foto externa no se publica.",
+        "publishedAsPhysicalPhoto": false
       }
     }
   },
   "GTI04D01": {
-    "image": "/catalogo-gti/generated-branded/gti04-d01-gti04-d01-punta-lado-rueda-gti-chevrolet-corsa-branded-v2.webp",
+    "image": "/catalogo-gti/generated-branded/gti04-d01-gti04-d01-punta-lado-rueda-gti-chevrolet-corsa-identidad-por-confirmar-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated-branded/gti04-d01-gti04-d01-punta-lado-rueda-gti-chevrolet-corsa-branded-v2.webp",
-        "alt": "Imagen generada de referencia de Punta lado rueda GTI — Chevrolet Corsa, SKU GTI04-D01; no es fotografía original. Identificada con el logotipo GTI.",
+        "url": "/catalogo-gti/generated-branded/gti04-d01-gti04-d01-punta-lado-rueda-gti-chevrolet-corsa-identidad-por-confirmar-branded-v2.webp",
+        "alt": "Imagen generada de referencia de Punta lado rueda GTI — Chevrolet Corsa · identidad por confirmar, SKU GTI04-D01; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
@@ -512,10 +548,10 @@ export const productImageOverrides = Object.freeze({
     "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
-      "generationPrompt": "Photorealistic studio product reference of a front wheel-side outer CV joint for Chevrolet Corsa: steel outer joint, black boot, metal bands, splined shaft and threaded wheel-end tip; white background, no ABS ring, no text, no logo, no packaging. Fitment remains subject to VIN confirmation.",
+      "generationPrompt": "Create a high-end photorealistic square e-commerce generated reference for anomalous inventory SKU GTI04-D01, described only as a wheel-side outer CV joint for Chevrolet Corsa with an internal inventory note of ‘28 teeth’ whose inner-versus-outer endpoint is NOT verified. Show one conventional natural dark machined-steel bell-shaped wheel-side outer CV joint with a neutral splined shaft at a three-quarter angle, but do not encode, label, highlight, or imply any exact spline count. Arrange a separate matte-black accordion boot, two stainless clamps, an axle nut and retaining circlip as a generic component-family reference. ABS is unknown, so do not add an ABS tone ring, cable or sensor. No axle shaft, box, grease sachet, text, numbers, labels, logo, watermark, orange paint or unrelated accessory. Natural steel and rubber materials, pure white background, generous whitespace, soft realistic studio shadow, catalog-quality focus. Do not add any brand mark; the approved GTI yellow-on-blue capsule will be added later by code. This is an honest application-level generated reference with physical identity and spline assignment requiring inspection, never a physical GTI product photograph.",
       "sourceSha256": "84b8db2cca316e0bc5a82bc92db940f6d8b5b9f611adb912f0024d4e5b31d8ad",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-27T21:37:30.864Z",
+      "generatedAt": "2026-08-31T01:31:00.000Z",
       "brandTreatment": {
         "version": 3,
         "brand": "GTI",
@@ -524,11 +560,11 @@ export const productImageOverrides = Object.freeze({
         "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
         "colorPolicy": "natural-materials-no-orange-recolor",
         "orangePixelRatio": 0,
-        "sourceImage": "/catalogo-gti/generated/gti04-d01-punta-lado-rueda-gti-chevrolet-corsa-generated-reference.webp",
-        "sourceSha256": "5c3fd02abdb46c6f6ab13109d0f7bb0a2b97fb8adc96941c20e86019edb90b60",
+        "sourceImage": "/catalogo-gti/generated/gti04-d01-punta-lado-rueda-corsa-geometry-v2.png",
+        "sourceSha256": "03d94db324a9239b35309cf569c60ebc3c605450077f915461ceb44a1dfc77cd",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-31T00:14:56.865Z",
-        "outputSha256": "e5a8aa1689f5b44e4a30b8e743e7c0d0bf5dc943267ae2807a3def84743f8260"
+        "appliedAt": "2026-08-31T01:58:37.616Z",
+        "outputSha256": "a983caa6a34925abf94907a451a047efe2e1c7f0ae57a5fcaa8dd6c9bfeffe66"
       },
       "sku": "GTI04-D01",
       "skuKey": "GTI04D01",
@@ -553,6 +589,14 @@ export const productImageOverrides = Object.freeze({
           "diámetro del sello",
           "ABS y número de dientes de corona"
         ]
+      },
+      "geometryEvidence": {
+        "evidenceStatus": "application-only-physical-verification-required",
+        "claimScope": "internal-inventory-application-only",
+        "crossReferenceBrand": "Inventario REMBERT / GTI",
+        "crossReferenceNumber": "GTI04-D01 · inventario 28 dientes sin extremo asignado · cruce interno 772531",
+        "geometryNotes": "No se encontró una foto pública exacta autorizada. El inventario no indica si los 28 dientes corresponden al estriado interno o externo; la recreación se limita a la familia lado rueda y no codifica un conteo específico.",
+        "publishedAsPhysicalPhoto": false
       }
     }
   },
@@ -569,10 +613,10 @@ export const productImageOverrides = Object.freeze({
     "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
-      "generationPrompt": "Photorealistic studio product reference of a front wheel-side outer CV joint for Hyundai Eon: compact steel joint, black boot, metal bands, splined shaft and threaded wheel-end tip; white background, no ABS ring, no text, no logo, no packaging. Fitment remains subject to VIN confirmation.",
+      "generationPrompt": "Create a new high-end photorealistic square e-commerce reference image of the exact Hyundai Eon wheel-side outer CV joint kit geometry shown in the supplied source, SKU GTI06-081, 24 x 19 splines. Preserve the upright machined joint housing, long narrow splined shaft, hexagonal shoulder and threaded recessed top, separate black accordion boot and the single large stainless clamp. Keep component count and proportions faithful. New-product condition, natural dark and silver steel, matte black rubber, soft studio shadow and pure white background. Remove the IMOTRIZ watermark and all text, labels, logos and packaging. Do not add an ABS ring, cable, sensor, axle, nut, grease sachet or unrelated accessory. Do not recolor orange. No brand mark; the approved GTI badge is applied later by code. Geometry-grounded generated reference, not a physical GTI photograph.",
       "sourceSha256": "3aee6a94cf74a8a9102568bde71384e9a972d7c35fae0338f9299c271cfb1599",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-27T21:39:02.756Z",
+      "generatedAt": "2026-08-31T01:31:00.000Z",
       "brandTreatment": {
         "version": 3,
         "brand": "GTI",
@@ -581,11 +625,11 @@ export const productImageOverrides = Object.freeze({
         "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
         "colorPolicy": "natural-materials-no-orange-recolor",
         "orangePixelRatio": 0,
-        "sourceImage": "/catalogo-gti/generated/gti06-081-punta-lado-rueda-gti-hyundai-eon-generated-reference.webp",
-        "sourceSha256": "c8c3a187bcfd54490bb595ef7d348aebd9c40ed91a1be85a6f9c7d9868e8f000",
+        "sourceImage": "/catalogo-gti/generated/gti06-081-punta-lado-rueda-hyundai-eon-geometry-v2.png",
+        "sourceSha256": "e0f28af46d23cb92dccbea7e0d21c0d209ef8afb922356f927863cd39baa4f72",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-31T00:14:56.879Z",
-        "outputSha256": "589294b31b325fe52719a62671f59503c321a9d1ec66acd302afcfcd9b0eb11a"
+        "appliedAt": "2026-08-31T01:38:00.578Z",
+        "outputSha256": "3d4dafa5ab5dc94118d2adc1d896c22903a0c6d820e5b0fb5a5f9702c7fe17e5"
       },
       "sku": "GTI06-081",
       "skuKey": "GTI06081",
@@ -610,6 +654,16 @@ export const productImageOverrides = Object.freeze({
           "diámetro del sello",
           "ABS y número de dientes de corona"
         ]
+      },
+      "geometryEvidence": {
+        "evidenceStatus": "exact-reference-geometry-recreated",
+        "claimScope": "exact-sku-third-party-geometry-reference-only",
+        "sourcePageUrl": "https://www.imotriz.com/producto/77/GTI06-081/Punta-Eje-Lado-Rueda-Eon",
+        "sourceImageUrl": "https://image.imotriz.com/uploads/products/6a42da9103a59-20260629205025015000-PUNTA-DE-EJE-L-R-EON.webp",
+        "crossReferenceBrand": "GTI / Imotriz",
+        "crossReferenceNumber": "GTI06-081 · 24 × 19",
+        "geometryNotes": "La fotografía externa se usó como guía de forma y componentes; no se republica ni se presenta como foto propia.",
+        "publishedAsPhysicalPhoto": false
       }
     }
   },
@@ -638,11 +692,11 @@ export const productImageOverrides = Object.freeze({
     }
   },
   "GTI03003": {
-    "image": "/catalogo-gti/generated-branded/gti03-003-gti03-003-punta-lado-rueda-gti-kia-rio-stylus-1-5-branded-v2.webp",
+    "image": "/catalogo-gti/generated-branded/gti03-003-gti03-003-punta-lado-rueda-gti-mazda-323-kia-rio-stylus-1-5-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated-branded/gti03-003-gti03-003-punta-lado-rueda-gti-kia-rio-stylus-1-5-branded-v2.webp",
-        "alt": "Imagen generada de referencia de Punta lado rueda GTI — Kia Rio Stylus 1.5, SKU GTI03-003; no es fotografía original. Identificada con el logotipo GTI.",
+        "url": "/catalogo-gti/generated-branded/gti03-003-gti03-003-punta-lado-rueda-gti-mazda-323-kia-rio-stylus-1-5-branded-v2.webp",
+        "alt": "Imagen generada de referencia de Punta lado rueda GTI — Mazda 323 / Kia Rio Stylus 1.5, SKU GTI03-003; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
@@ -650,10 +704,10 @@ export const productImageOverrides = Object.freeze({
     "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
-      "generationPrompt": "Photorealistic studio product reference of a front wheel-side outer CV joint for Kia Rio Stylus 1.5, with a steel joint, black boot, metal bands, splined shaft, threaded wheel-end tip and internal retaining pin configuration; white background, no text, no logo, no packaging. Fitment remains subject to VIN confirmation.",
+      "generationPrompt": "Create a new high-end photorealistic square e-commerce reference of the exact wheel-side outer CV joint kit geometry shown in the supplied AJ Colombia MZ-001 / 818027 cross-reference, mapped to GTI03-003 for Mazda 323 / Kia Rio Stylus 1.5, 24 external x 22 internal splines and pin interno. Preserve the compact smooth steel joint housing, splined threaded shaft, black accordion boot, two clamps, axle nut and retaining circlip; keep component count and proportions faithful. Remove packaging, text, labels, watermarks and all brand marks. Do not add an ABS ring, cable, sensor, axle shaft or unrelated accessory because ABS is not verified. Natural steel and rubber, no orange recoloring, pure white studio background. The approved GTI yellow-on-blue badge is added later by code. Geometry-grounded generated reference, never a physical GTI photograph.",
       "sourceSha256": "45d2f645f0163a563316d825f9dca59f4e299fb5cda4d0e6d3ccb82ac9939654",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-27T21:59:49.826Z",
+      "generatedAt": "2026-08-31T01:31:00.000Z",
       "brandTreatment": {
         "version": 3,
         "brand": "GTI",
@@ -662,11 +716,11 @@ export const productImageOverrides = Object.freeze({
         "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
         "colorPolicy": "natural-materials-no-orange-recolor",
         "orangePixelRatio": 0,
-        "sourceImage": "/catalogo-gti/generated/gti03-003-punta-lado-rueda-gti-kia-rio-stylus-1-5-generated-reference.webp",
-        "sourceSha256": "5c8242f00fb53ccfc0eb3abda3b048a9659e36f53a53e019e765ab0b38417229",
+        "sourceImage": "/catalogo-gti/generated/gti03-003-punta-lado-rueda-rio-stylus-geometry-v2.png",
+        "sourceSha256": "837f609f25a6c4b5bed7d595d187e9d8e73efb586c5c3e48525d4285d211afc9",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-31T00:14:56.892Z",
-        "outputSha256": "8f588f7e76d462407d000f965181d4cb55a26fe58ac1433d021da7afa3f32296"
+        "appliedAt": "2026-08-31T01:48:11.144Z",
+        "outputSha256": "fb3e8626dd696bc91642f5de04afdc867f8e17b4501ec7d9766ea6dbb1687b3b"
       },
       "sku": "GTI03-003",
       "skuKey": "GTI03003",
@@ -691,6 +745,16 @@ export const productImageOverrides = Object.freeze({
           "diámetro del sello",
           "ABS y número de dientes de corona"
         ]
+      },
+      "geometryEvidence": {
+        "evidenceStatus": "exact-reference-plus-cross-geometry-recreated",
+        "claimScope": "exact-sku-and-cross-reference-geometry-only",
+        "sourcePageUrl": "https://www.mercadolibre.com.co/punta-eje-lado-rueda-mazda-323-k-rio-15-stylus-p-int-24x22/up/MCOU3434170592",
+        "sourceImageUrl": "https://assets.ajcolombia.com.co/uploads/images/products/60c7f9770ae9bMZ-001-1%201.png",
+        "crossReferenceBrand": "GTI / AJ Colombia",
+        "crossReferenceNumber": "GTI03-003+ · MZ-001 / 818027 · 24 × 22 · pin interno",
+        "geometryNotes": "La ficha GTI confirma SKU y especificación; el cruce MZ-001 / 818027 aporta la guía geométrica 24 × 22 × 52. La foto externa no se publica como foto GTI y ABS queda sin afirmar.",
+        "publishedAsPhysicalPhoto": false
       }
     }
   },
@@ -707,10 +771,10 @@ export const productImageOverrides = Object.freeze({
     "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
-      "generationPrompt": "Photorealistic studio product reference of a compact front wheel-side outer CV joint for Renault Kwid, with steel housing, black boot, metal bands, splined shaft and threaded wheel-end tip; white background, no text, no logo, no packaging. Fitment remains subject to VIN confirmation.",
+      "generationPrompt": "Create a new high-end photorealistic square e-commerce reference image of the exact Renault Kwid wheel-side outer CV joint kit geometry shown in the supplied source, SKU GTI01-092, 23 external x 27 internal splines. Preserve the compact joint housing, tall narrow splined shaft, broad collar and recessed threaded top, separate black accordion boot, both stainless clamps and retaining circlip. Arrange the kit cleanly. New-product condition, natural steel, silver clamps, matte black rubber, studio shadow and pure white background. Remove the GTI box, yellow grease sachet, workbench, all text, logos, labels and packaging. Do not add an ABS ring, cable, sensor, axle, nut or unrelated accessory. Do not recolor orange. No brand mark; the approved GTI badge is applied later by code. Geometry-grounded generated reference, not a physical GTI photograph.",
       "sourceSha256": "0865648c8043071fa10e1c43d4135db70de9d260552b0002a13d6fd8c273c597",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-27T21:59:49.827Z",
+      "generatedAt": "2026-08-31T01:31:00.000Z",
       "brandTreatment": {
         "version": 3,
         "brand": "GTI",
@@ -719,11 +783,11 @@ export const productImageOverrides = Object.freeze({
         "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
         "colorPolicy": "natural-materials-no-orange-recolor",
         "orangePixelRatio": 0,
-        "sourceImage": "/catalogo-gti/generated/gti01-092-punta-lado-rueda-gti-renault-kwid-generated-reference.webp",
-        "sourceSha256": "c18171afc6dd9b141294f17334df0503305b1e36f3a73645284eac60e6b20543",
+        "sourceImage": "/catalogo-gti/generated/gti01-092-punta-lado-rueda-renault-kwid-geometry-v2.png",
+        "sourceSha256": "8864f09f624de5940bcabe590a01b1fa4ed7b1e9a05df0c90eaf7edbac7a5b3d",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-31T00:14:56.906Z",
-        "outputSha256": "de3d8f62e3a29c247ca10e2c26f77db089848642d8d6bef65e2b70b61739f2dc"
+        "appliedAt": "2026-08-31T01:38:00.629Z",
+        "outputSha256": "03605b9b2515f0059bf26cec9c5d0064e597f5da770675eb8a9bd20f9ee970cd"
       },
       "sku": "GTI01-092",
       "skuKey": "GTI01092",
@@ -748,6 +812,16 @@ export const productImageOverrides = Object.freeze({
           "diámetro del sello",
           "ABS y número de dientes de corona"
         ]
+      },
+      "geometryEvidence": {
+        "evidenceStatus": "exact-reference-geometry-recreated",
+        "claimScope": "exact-sku-third-party-geometry-reference-only",
+        "sourcePageUrl": "https://repuesto.co/product/punta-eje-lado-rueda-renault-kwid/",
+        "sourceImageUrl": "https://repuesto.co/wp-content/uploads/2023/05/Punta-eje-lado-rueda-Renault-Kwid.jpeg",
+        "crossReferenceBrand": "GTI / Repuesto.co",
+        "crossReferenceNumber": "GTI01-092+ · 23 × 27",
+        "geometryNotes": "La foto de la publicación muestra empaque GTI, pero sólo se usa como referencia geométrica; caja, sachet, texto y marcas no se publican.",
+        "publishedAsPhysicalPhoto": false
       }
     }
   },
@@ -764,10 +838,10 @@ export const productImageOverrides = Object.freeze({
     "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
-      "generationPrompt": "Photorealistic studio product reference of a front wheel-side outer CV joint for Mazda 2, with steel housing, black boot, metal bands, splined shaft and threaded wheel-end tip; white background, no text, no logo, no packaging. Fitment remains subject to VIN confirmation.",
+      "generationPrompt": "Create a new high-end photorealistic square e-commerce reference image of the exact Mazda 2 wheel-side outer CV joint kit geometry shown in the supplied source, SKU GTI03-072 / cross 818223, 25 external x 29 internal splines, pin interno, M22x1.5 threaded end. Preserve the compact smooth bell-shaped joint housing, shaft proportions, thread and nut geometry, separate black accordion boot, two stainless clamps and retaining circlip. Arrange only those durable kit components cleanly. Remove the yellow grease sachet, all GTI text and logos, background artifacts, labels and packaging. Do not add an ABS ring, cable, sensor, axle shaft or unrelated accessory; ABS is not proven. Natural steel and rubber, no orange recoloring, pure white background and realistic studio shadow. The approved GTI badge is applied later by code. Geometry-grounded generated reference, not a physical GTI photograph.",
       "sourceSha256": "a9aaf5e2740bb10b56814cdc44216140cbc0228fc5d4512c84f7894253dc1989",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-27T21:59:49.827Z",
+      "generatedAt": "2026-08-31T01:31:00.000Z",
       "brandTreatment": {
         "version": 3,
         "brand": "GTI",
@@ -776,11 +850,11 @@ export const productImageOverrides = Object.freeze({
         "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
         "colorPolicy": "natural-materials-no-orange-recolor",
         "orangePixelRatio": 0,
-        "sourceImage": "/catalogo-gti/generated/gti03-072-punta-lado-rueda-gti-mazda-2-generated-reference.webp",
-        "sourceSha256": "4fa44816f58fa00ab212d0634c94bb63cd9e0406541b441b57544d25d4eaad53",
+        "sourceImage": "/catalogo-gti/generated/gti03-072-punta-lado-rueda-mazda-2-geometry-v2.png",
+        "sourceSha256": "6c2f0434c20f56c3a3653f3d658b3e136c6e6cb386dfcb258697ad549989ea33",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-31T00:14:56.919Z",
-        "outputSha256": "7eeb28b82408121e2c61cb6e157b3c92dfcd89e3149545317cc89f6cca1409e8"
+        "appliedAt": "2026-08-31T01:38:00.656Z",
+        "outputSha256": "46395cdfafb485c5a04b2a4e0e4f6aeaa8f6904e584cc4d738d860d72c01def6"
       },
       "sku": "GTI03-072",
       "skuKey": "GTI03072",
@@ -805,6 +879,16 @@ export const productImageOverrides = Object.freeze({
           "diámetro del sello",
           "ABS y número de dientes de corona"
         ]
+      },
+      "geometryEvidence": {
+        "evidenceStatus": "exact-reference-geometry-recreated",
+        "claimScope": "exact-sku-and-cross-reference-geometry-only",
+        "sourcePageUrl": "https://www.imotriz.com/producto/b0548b0e32556e40470822a922d31352/gti03-072/punta-eje-l-r-mazda-2-25x29",
+        "sourceImageUrl": "https://app.pedbox.co:7777/imagenes_catalogo/15/03I09068.jpg",
+        "crossReferenceBrand": "GTI / GSP",
+        "crossReferenceNumber": "GTI03-072 · 818223 · 25 × 29 · pin interno",
+        "geometryNotes": "GTI03-072 cruza comercialmente con 818223; Imotriz, GSP y Molpartes coinciden en 25 externas × 29 internas.",
+        "publishedAsPhysicalPhoto": false
       }
     }
   },
@@ -833,11 +917,11 @@ export const productImageOverrides = Object.freeze({
     }
   },
   "GTI06037": {
-    "image": "/catalogo-gti/generated-branded/gti06-037-gti06-037-tulipa-lado-caja-gti-kia-rio-xcite-cerato-forte-hyundai-i25-branded-v2.webp",
+    "image": "/catalogo-gti/generated-branded/gti06-037-gti06-037-junta-homocinetica-lado-caja-gti-kia-rio-xcite-cerato-forte-hyundai-i25-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated-branded/gti06-037-gti06-037-tulipa-lado-caja-gti-kia-rio-xcite-cerato-forte-hyundai-i25-branded-v2.webp",
-        "alt": "Imagen generada de referencia de Tulipa lado caja GTI — Kia Rio Xcite / Cerato / Forte / Hyundai i25, SKU GTI06-037; no es fotografía original. Identificada con el logotipo GTI.",
+        "url": "/catalogo-gti/generated-branded/gti06-037-gti06-037-junta-homocinetica-lado-caja-gti-kia-rio-xcite-cerato-forte-hyundai-i25-branded-v2.webp",
+        "alt": "Imagen generada de referencia de Junta homocinética lado caja GTI — Kia Rio Xcite / Cerato / Forte / Hyundai i25, SKU GTI06-037; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
@@ -845,10 +929,10 @@ export const productImageOverrides = Object.freeze({
     "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
-      "generationPrompt": "Photorealistic studio product reference of a gearbox-side inner CV tulip for Kia Rio Xcite / Cerato / Forte / Hyundai i25: open steel cup with internal roller tracks, splined bore and stem; white background, no boot, no text, no logo, no packaging. Fitment remains subject to VIN confirmation.",
+      "generationPrompt": "Create a new high-end photorealistic square e-commerce reference of the exact GTI06-037 gearbox-side inner CV joint kit shown in the supplied Pedbox source for Kia Rio Xcite, Cerato 1.6, Forte and Hyundai i25, 25 external x 22 internal splines. Preserve the natural steel inner joint housing, detached three-roller tripod, black accordion boot, two stainless clamps and retaining hardware, with faithful component count and proportions. It must read as a lado caja kit, not a wheel-side bell joint. Remove packaging, grease, text, labels, watermarks and every brand mark. No ABS ring, cable, sensor, full axle or unrelated accessory. Natural steel and rubber, no orange recoloring, pure white studio background. The approved GTI yellow-on-blue badge is added later by code. Exact-source geometry recreation, never a physical GTI photograph.",
       "sourceSha256": "01a924b532d12c048402137acdb96734173d0db3828eacce6ae807647aaed49a",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-27T22:01:15.344Z",
+      "generatedAt": "2026-08-31T01:31:00.000Z",
       "brandTreatment": {
         "version": 3,
         "brand": "GTI",
@@ -857,23 +941,23 @@ export const productImageOverrides = Object.freeze({
         "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
         "colorPolicy": "natural-materials-no-orange-recolor",
         "orangePixelRatio": 0,
-        "sourceImage": "/catalogo-gti/generated/gti06-037-tulipa-lado-caja-gti-kia-rio-xcite-cerato-forte-hyundai-i25-generated-reference.webp",
-        "sourceSha256": "53885042bd18399aa0f09ef0f0e30d94006737e44f213cebae5974fd3b49f3a1",
+        "sourceImage": "/catalogo-gti/generated/gti06-037-junta-lado-caja-kia-hyundai-geometry-v2.png",
+        "sourceSha256": "64671358ccf44cd08f47fc67f147f37ac7d54ad45de42cdef11b779f7109c723",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-31T00:14:56.932Z",
-        "outputSha256": "86c8c24fd456a5eefc58807ca89ec2c02602984c193345eb593d9d55767bf7da"
+        "appliedAt": "2026-08-31T01:48:11.222Z",
+        "outputSha256": "dc2fde3ba7b930cd0a90dfbe5eac7704272a3e0e319a59f89866252ae2c85afa"
       },
       "sku": "GTI06-037",
       "skuKey": "GTI06037",
       "brandSlug": "gti",
       "generationPromptStatus": "recorded",
       "compatibility": {
-        "partFamily": "inner-cv-tulip",
+        "partFamily": "inner-cv-joint",
         "laterality": "unknown",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
-          "inner-cv-tulip"
+          "inner-cv-joint"
         ],
         "fitmentStatus": "conditional",
         "requirements": [
@@ -886,6 +970,16 @@ export const productImageOverrides = Object.freeze({
           "diámetro del sello",
           "ABS y número de dientes de corona"
         ]
+      },
+      "geometryEvidence": {
+        "evidenceStatus": "exact-reference-geometry-recreated",
+        "claimScope": "exact-sku-third-party-geometry-reference-only",
+        "sourcePageUrl": "https://www.imotriz.com/producto/3/GTI06-037-/Punta-Eje-L-C-Kia-Rio-Xcite-Cerato-1-6-Forte-Hd-I-25-25X22-",
+        "sourceImageUrl": "https://app.pedbox.co:7777/imagenes_catalogo/15/06I09051.png",
+        "crossReferenceBrand": "GTI / Imotriz",
+        "crossReferenceNumber": "GTI06-037 · lado caja · 25 × 22",
+        "geometryNotes": "La fotografía Pedbox identificada con GTI06-037 muestra el kit interior correcto: carcasa, triceta, fuelle, abrazaderas y accesorios. Otras imágenes mezcladas en la publicación se excluyeron.",
+        "publishedAsPhysicalPhoto": false
       }
     }
   },
@@ -914,11 +1008,11 @@ export const productImageOverrides = Object.freeze({
     }
   },
   "GTI038": {
-    "image": "/catalogo-gti/generated-branded/gti-038-gti-038-tulipa-lado-caja-gti-hyundai-vision-kia-sephia-branded-v2.webp",
+    "image": "/catalogo-gti/generated-branded/gti-038-gti-038-tulipa-lado-caja-gti-hyundai-vision-codigo-por-confirmar-branded-v2.webp",
     "images": [
       {
-        "url": "/catalogo-gti/generated-branded/gti-038-gti-038-tulipa-lado-caja-gti-hyundai-vision-kia-sephia-branded-v2.webp",
-        "alt": "Imagen generada de referencia de Tulipa lado caja GTI — Hyundai Vision / Kia Sephia, SKU GTI-038; no es fotografía original. Identificada con el logotipo GTI.",
+        "url": "/catalogo-gti/generated-branded/gti-038-gti-038-tulipa-lado-caja-gti-hyundai-vision-codigo-por-confirmar-branded-v2.webp",
+        "alt": "Imagen generada de referencia de Tulipa lado caja GTI — Hyundai Vision · código por confirmar, SKU GTI-038; no es fotografía original. Identificada con el logotipo GTI.",
         "isMain": true
       }
     ],
@@ -926,10 +1020,10 @@ export const productImageOverrides = Object.freeze({
     "imageDisclosure": "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
     "sourceRecord": {
       "type": "ai-generated-reference",
-      "generationPrompt": "Photorealistic studio product reference of a gearbox-side inner CV tulip for Hyundai Accent Vision / Kia Sephia, open steel cup with internal roller tracks, splined bore and stem; white background, no text, no logo, no packaging. Fitment remains subject to VIN and physical spline-count confirmation.",
+      "generationPrompt": "Create a high-end photorealistic square e-commerce generated reference for anomalous inventory code GTI-038: one gearbox-side inner CV tulip associated internally with Hyundai Accent Vision. Do not claim equivalence to catalog SKU GTI06-038 and do not imply a verified spline count. Show one conventional compact open machined-steel tulip cup at a three-quarter angle with three smooth internal tripod roller tracks and a short neutral splined stem, as a single primary component. It must be a lado caja tulip, not a wheel-side bell joint. No boot, clamps, nut, circlip, axle, detached tripod, ABS ring, cable, sensor, text, label, logo, watermark, packaging or unrelated accessory. Natural dark and silver steel, no orange recoloring, pure white background and realistic studio shadow. Application-level generated reference with code, spline count and physical identity requiring label verification; not a physical GTI photograph.",
       "sourceSha256": "a70983101cd5c14932bdbd90fd62106f0320ec22ea7e7a1332b924663b0d5885",
       "renderer": "scripts/apply-generated-gti-image.mjs",
-      "generatedAt": "2026-08-27T22:09:40.715Z",
+      "generatedAt": "2026-08-31T01:31:00.000Z",
       "brandTreatment": {
         "version": 3,
         "brand": "GTI",
@@ -938,11 +1032,11 @@ export const productImageOverrides = Object.freeze({
         "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
         "colorPolicy": "natural-materials-no-orange-recolor",
         "orangePixelRatio": 0,
-        "sourceImage": "/catalogo-gti/generated/gti-038-tulipa-lado-caja-gti-hyundai-vision-kia-sephia-generated-reference.webp",
-        "sourceSha256": "60671748fc08fc468cf4e692af2ee638f38f4121c2e964e0915f4d8982aeb85e",
+        "sourceImage": "/catalogo-gti/generated/gti-038-tulipa-lado-caja-vision-codigo-por-confirmar-geometry-v2.png",
+        "sourceSha256": "a6ba7d8ec70c03d303ba6acd32834fde3f8527b84a668ba1ac96d57ba8949d66",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-31T00:14:56.945Z",
-        "outputSha256": "5deba3ca0992e6e5b7d965892c40440eb53319281ae7464ccd97834cc2c0628d"
+        "appliedAt": "2026-08-31T01:38:00.708Z",
+        "outputSha256": "85e80ee720aa3b32dc447580aebb2f20f6aace61c4b600fe6f1223417b07d61c"
       },
       "sku": "GTI-038",
       "skuKey": "GTI038",
@@ -967,6 +1061,14 @@ export const productImageOverrides = Object.freeze({
           "diámetro del sello",
           "ABS y número de dientes de corona"
         ]
+      },
+      "geometryEvidence": {
+        "evidenceStatus": "application-only-physical-verification-required",
+        "claimScope": "internal-inventory-application-only",
+        "crossReferenceBrand": "Inventario REMBERT / GTI",
+        "crossReferenceNumber": "GTI-038 · cruce interno 1012531 · código por confirmar",
+        "geometryNotes": "No se equipara con GTI06-038: son códigos distintos. Deben verificarse etiqueta, aplicación y estrías físicas antes del despacho.",
+        "publishedAsPhysicalPhoto": false
       }
     }
   },
@@ -1243,7 +1345,7 @@ export const productImageOverrides = Object.freeze({
       "compatibility": {
         "partFamily": "outer-cv-joint",
         "laterality": "unknown",
-        "abs": "unknown",
+        "abs": "yes",
         "componentScope": "primary-component-only",
         "includedComponents": [
           "outer-cv-joint"
@@ -1299,7 +1401,7 @@ export const productImageOverrides = Object.freeze({
       "generationPromptStatus": "recorded",
       "compatibility": {
         "partFamily": "cv-axle",
-        "laterality": "unknown",
+        "laterality": "left",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -1356,7 +1458,7 @@ export const productImageOverrides = Object.freeze({
       "generationPromptStatus": "recorded",
       "compatibility": {
         "partFamily": "cv-axle",
-        "laterality": "unknown",
+        "laterality": "right",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -1413,7 +1515,7 @@ export const productImageOverrides = Object.freeze({
       "generationPromptStatus": "recorded",
       "compatibility": {
         "partFamily": "inner-cv-joint",
-        "laterality": "unknown",
+        "laterality": "right",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -1575,7 +1677,7 @@ export const productImageOverrides = Object.freeze({
       "generationPromptStatus": "recorded",
       "compatibility": {
         "partFamily": "cv-axle",
-        "laterality": "unknown",
+        "laterality": "right",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -2830,7 +2932,7 @@ export const productImageOverrides = Object.freeze({
       "compatibility": {
         "partFamily": "outer-cv-joint",
         "laterality": "unknown",
-        "abs": "unknown",
+        "abs": "yes",
         "componentScope": "primary-component-only",
         "includedComponents": [
           "outer-cv-joint"
@@ -3684,7 +3786,7 @@ export const productImageOverrides = Object.freeze({
       "generationPromptStatus": "recorded",
       "compatibility": {
         "partFamily": "inner-cv-joint",
-        "laterality": "unknown",
+        "laterality": "left",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -3741,7 +3843,7 @@ export const productImageOverrides = Object.freeze({
       "generationPromptStatus": "recorded",
       "compatibility": {
         "partFamily": "inner-cv-joint",
-        "laterality": "unknown",
+        "laterality": "right",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -3798,7 +3900,7 @@ export const productImageOverrides = Object.freeze({
       "generationPromptStatus": "recorded",
       "compatibility": {
         "partFamily": "inner-cv-joint",
-        "laterality": "unknown",
+        "laterality": "left",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -3855,7 +3957,7 @@ export const productImageOverrides = Object.freeze({
       "generationPromptStatus": "recorded",
       "compatibility": {
         "partFamily": "inner-cv-joint",
-        "laterality": "unknown",
+        "laterality": "right",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -3912,7 +4014,7 @@ export const productImageOverrides = Object.freeze({
       "generationPromptStatus": "recorded",
       "compatibility": {
         "partFamily": "inner-cv-joint",
-        "laterality": "unknown",
+        "laterality": "right",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -3969,7 +4071,7 @@ export const productImageOverrides = Object.freeze({
       "generationPromptStatus": "recorded",
       "compatibility": {
         "partFamily": "inner-cv-joint",
-        "laterality": "unknown",
+        "laterality": "left",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -4126,7 +4228,7 @@ export const productImageOverrides = Object.freeze({
       "generationPromptStatus": "recorded",
       "compatibility": {
         "partFamily": "cv-axle",
-        "laterality": "unknown",
+        "laterality": "right",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -4240,7 +4342,7 @@ export const productImageOverrides = Object.freeze({
       "generationPromptStatus": "recorded",
       "compatibility": {
         "partFamily": "cv-axle",
-        "laterality": "unknown",
+        "laterality": "right",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -4322,7 +4424,7 @@ export const productImageOverrides = Object.freeze({
       "generationPromptStatus": "recorded",
       "compatibility": {
         "partFamily": "cv-axle",
-        "laterality": "unknown",
+        "laterality": "left",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -4493,7 +4595,7 @@ export const productImageOverrides = Object.freeze({
       "generationPromptStatus": "recorded",
       "compatibility": {
         "partFamily": "cv-axle",
-        "laterality": "unknown",
+        "laterality": "left",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -4550,7 +4652,7 @@ export const productImageOverrides = Object.freeze({
       "generationPromptStatus": "recorded",
       "compatibility": {
         "partFamily": "cv-axle",
-        "laterality": "unknown",
+        "laterality": "left",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -4607,7 +4709,7 @@ export const productImageOverrides = Object.freeze({
       "generationPromptStatus": "recorded",
       "compatibility": {
         "partFamily": "cv-axle",
-        "laterality": "unknown",
+        "laterality": "right",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -4664,7 +4766,7 @@ export const productImageOverrides = Object.freeze({
       "generationPromptStatus": "recorded",
       "compatibility": {
         "partFamily": "cv-axle",
-        "laterality": "unknown",
+        "laterality": "right",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -4720,12 +4822,12 @@ export const productImageOverrides = Object.freeze({
       "brandSlug": "gti",
       "generationPromptStatus": "recorded",
       "compatibility": {
-        "partFamily": "inner-cv-joint",
-        "laterality": "unknown",
+        "partFamily": "cv-axle",
+        "laterality": "right",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
-          "inner-cv-joint"
+          "cv-axle"
         ],
         "fitmentStatus": "conditional",
         "requirements": [
@@ -4777,12 +4879,12 @@ export const productImageOverrides = Object.freeze({
       "brandSlug": "gti",
       "generationPromptStatus": "recorded",
       "compatibility": {
-        "partFamily": "inner-cv-joint",
-        "laterality": "unknown",
+        "partFamily": "cv-axle",
+        "laterality": "left",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
-          "inner-cv-joint"
+          "cv-axle"
         ],
         "fitmentStatus": "conditional",
         "requirements": [
@@ -4835,7 +4937,7 @@ export const productImageOverrides = Object.freeze({
       "generationPromptStatus": "recorded",
       "compatibility": {
         "partFamily": "cv-axle",
-        "laterality": "unknown",
+        "laterality": "right",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -4949,7 +5051,7 @@ export const productImageOverrides = Object.freeze({
       "generationPromptStatus": "recorded",
       "compatibility": {
         "partFamily": "cv-axle",
-        "laterality": "unknown",
+        "laterality": "right",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -5119,12 +5221,12 @@ export const productImageOverrides = Object.freeze({
       "brandSlug": "gti",
       "generationPromptStatus": "recorded",
       "compatibility": {
-        "partFamily": "outer-cv-joint",
+        "partFamily": "cv-axle",
         "laterality": "unknown",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
-          "outer-cv-joint"
+          "cv-axle"
         ],
         "fitmentStatus": "conditional",
         "requirements": [
@@ -5292,7 +5394,7 @@ export const productImageOverrides = Object.freeze({
       "compatibility": {
         "partFamily": "outer-cv-joint",
         "laterality": "unknown",
-        "abs": "unknown",
+        "abs": "yes",
         "componentScope": "primary-component-only",
         "includedComponents": [
           "outer-cv-joint"
@@ -5348,7 +5450,7 @@ export const productImageOverrides = Object.freeze({
       "generationPromptStatus": "recorded",
       "compatibility": {
         "partFamily": "inner-cv-joint",
-        "laterality": "unknown",
+        "laterality": "left",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -5405,7 +5507,7 @@ export const productImageOverrides = Object.freeze({
       "generationPromptStatus": "recorded",
       "compatibility": {
         "partFamily": "inner-cv-joint",
-        "laterality": "unknown",
+        "laterality": "right",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -5462,7 +5564,7 @@ export const productImageOverrides = Object.freeze({
       "generationPromptStatus": "recorded",
       "compatibility": {
         "partFamily": "inner-cv-joint",
-        "laterality": "unknown",
+        "laterality": "right",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -5519,7 +5621,7 @@ export const productImageOverrides = Object.freeze({
       "generationPromptStatus": "recorded",
       "compatibility": {
         "partFamily": "inner-cv-joint",
-        "laterality": "unknown",
+        "laterality": "right",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -5907,7 +6009,7 @@ export const productImageOverrides = Object.freeze({
       "generationPromptStatus": "recorded",
       "compatibility": {
         "partFamily": "cv-axle",
-        "laterality": "unknown",
+        "laterality": "right",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -7271,7 +7373,7 @@ export const productImageOverrides = Object.freeze({
       "generationPromptStatus": "recorded",
       "compatibility": {
         "partFamily": "cv-axle",
-        "laterality": "unknown",
+        "laterality": "right",
         "abs": "no",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -7328,7 +7430,7 @@ export const productImageOverrides = Object.freeze({
       "generationPromptStatus": "recorded",
       "compatibility": {
         "partFamily": "cv-axle",
-        "laterality": "unknown",
+        "laterality": "left",
         "abs": "no",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -8317,7 +8419,7 @@ export const productImageOverrides = Object.freeze({
       "generationPromptStatus": "recorded",
       "compatibility": {
         "partFamily": "cv-axle",
-        "laterality": "unknown",
+        "laterality": "right",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -8556,7 +8658,7 @@ export const productImageOverrides = Object.freeze({
       "generationPromptStatus": "recorded",
       "compatibility": {
         "partFamily": "cv-axle",
-        "laterality": "unknown",
+        "laterality": "left",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -8613,7 +8715,7 @@ export const productImageOverrides = Object.freeze({
       "generationPromptStatus": "recorded",
       "compatibility": {
         "partFamily": "cv-axle",
-        "laterality": "unknown",
+        "laterality": "right",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -8670,7 +8772,7 @@ export const productImageOverrides = Object.freeze({
       "generationPromptStatus": "recorded",
       "compatibility": {
         "partFamily": "cv-axle",
-        "laterality": "unknown",
+        "laterality": "left",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -8727,7 +8829,7 @@ export const productImageOverrides = Object.freeze({
       "generationPromptStatus": "recorded",
       "compatibility": {
         "partFamily": "cv-axle",
-        "laterality": "unknown",
+        "laterality": "right",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -9299,7 +9401,7 @@ export const productImageOverrides = Object.freeze({
       "compatibility": {
         "partFamily": "outer-cv-joint",
         "laterality": "unknown",
-        "abs": "no",
+        "abs": "yes",
         "componentScope": "primary-component-only",
         "includedComponents": [
           "outer-cv-joint"
@@ -9870,7 +9972,7 @@ export const productImageOverrides = Object.freeze({
       "compatibility": {
         "partFamily": "outer-cv-joint",
         "laterality": "unknown",
-        "abs": "unknown",
+        "abs": "yes",
         "componentScope": "primary-component-only",
         "includedComponents": [
           "outer-cv-joint"
@@ -13083,7 +13185,7 @@ export const productImageOverrides = Object.freeze({
       "generationPromptStatus": "recorded",
       "compatibility": {
         "partFamily": "inner-cv-joint",
-        "laterality": "unknown",
+        "laterality": "right",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -13140,7 +13242,7 @@ export const productImageOverrides = Object.freeze({
       "generationPromptStatus": "recorded",
       "compatibility": {
         "partFamily": "cv-axle",
-        "laterality": "unknown",
+        "laterality": "right",
         "abs": "yes",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -13197,7 +13299,7 @@ export const productImageOverrides = Object.freeze({
       "generationPromptStatus": "recorded",
       "compatibility": {
         "partFamily": "cv-axle",
-        "laterality": "unknown",
+        "laterality": "left",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -13254,7 +13356,7 @@ export const productImageOverrides = Object.freeze({
       "generationPromptStatus": "recorded",
       "compatibility": {
         "partFamily": "cv-axle",
-        "laterality": "unknown",
+        "laterality": "left",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -13311,7 +13413,7 @@ export const productImageOverrides = Object.freeze({
       "generationPromptStatus": "recorded",
       "compatibility": {
         "partFamily": "cv-axle",
-        "laterality": "unknown",
+        "laterality": "left",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -13368,7 +13470,7 @@ export const productImageOverrides = Object.freeze({
       "generationPromptStatus": "recorded",
       "compatibility": {
         "partFamily": "cv-axle",
-        "laterality": "unknown",
+        "laterality": "left",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -13425,7 +13527,7 @@ export const productImageOverrides = Object.freeze({
       "generationPromptStatus": "recorded",
       "compatibility": {
         "partFamily": "cv-axle",
-        "laterality": "unknown",
+        "laterality": "left",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -13482,7 +13584,7 @@ export const productImageOverrides = Object.freeze({
       "generationPromptStatus": "recorded",
       "compatibility": {
         "partFamily": "cv-axle",
-        "laterality": "unknown",
+        "laterality": "right",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -13710,7 +13812,7 @@ export const productImageOverrides = Object.freeze({
       "generationPromptStatus": "recorded",
       "compatibility": {
         "partFamily": "cv-axle",
-        "laterality": "unknown",
+        "laterality": "left",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -13767,7 +13869,7 @@ export const productImageOverrides = Object.freeze({
       "generationPromptStatus": "recorded",
       "compatibility": {
         "partFamily": "cv-axle",
-        "laterality": "unknown",
+        "laterality": "right",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -13824,7 +13926,7 @@ export const productImageOverrides = Object.freeze({
       "generationPromptStatus": "recorded",
       "compatibility": {
         "partFamily": "cv-axle",
-        "laterality": "unknown",
+        "laterality": "left",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -13938,7 +14040,7 @@ export const productImageOverrides = Object.freeze({
       "generationPromptStatus": "recorded",
       "compatibility": {
         "partFamily": "cv-axle",
-        "laterality": "unknown",
+        "laterality": "left",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -13995,7 +14097,7 @@ export const productImageOverrides = Object.freeze({
       "generationPromptStatus": "recorded",
       "compatibility": {
         "partFamily": "cv-axle",
-        "laterality": "unknown",
+        "laterality": "right",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -14052,7 +14154,7 @@ export const productImageOverrides = Object.freeze({
       "generationPromptStatus": "recorded",
       "compatibility": {
         "partFamily": "inner-cv-joint",
-        "laterality": "unknown",
+        "laterality": "right",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -14109,7 +14211,7 @@ export const productImageOverrides = Object.freeze({
       "generationPromptStatus": "recorded",
       "compatibility": {
         "partFamily": "cv-axle",
-        "laterality": "unknown",
+        "laterality": "right",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -14166,7 +14268,7 @@ export const productImageOverrides = Object.freeze({
       "generationPromptStatus": "recorded",
       "compatibility": {
         "partFamily": "cv-axle",
-        "laterality": "unknown",
+        "laterality": "left",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -14622,7 +14724,7 @@ export const productImageOverrides = Object.freeze({
       "generationPromptStatus": "recorded",
       "compatibility": {
         "partFamily": "cv-axle",
-        "laterality": "unknown",
+        "laterality": "right",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -14793,7 +14895,7 @@ export const productImageOverrides = Object.freeze({
       "generationPromptStatus": "recorded",
       "compatibility": {
         "partFamily": "cv-axle",
-        "laterality": "unknown",
+        "laterality": "left",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -14850,7 +14952,7 @@ export const productImageOverrides = Object.freeze({
       "generationPromptStatus": "recorded",
       "compatibility": {
         "partFamily": "cv-axle",
-        "laterality": "unknown",
+        "laterality": "right",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -14907,7 +15009,7 @@ export const productImageOverrides = Object.freeze({
       "generationPromptStatus": "recorded",
       "compatibility": {
         "partFamily": "cv-axle",
-        "laterality": "unknown",
+        "laterality": "right",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -14964,7 +15066,7 @@ export const productImageOverrides = Object.freeze({
       "generationPromptStatus": "recorded",
       "compatibility": {
         "partFamily": "cv-axle",
-        "laterality": "unknown",
+        "laterality": "left",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -15021,7 +15123,7 @@ export const productImageOverrides = Object.freeze({
       "generationPromptStatus": "recorded",
       "compatibility": {
         "partFamily": "cv-axle",
-        "laterality": "unknown",
+        "laterality": "right",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -15078,7 +15180,7 @@ export const productImageOverrides = Object.freeze({
       "generationPromptStatus": "recorded",
       "compatibility": {
         "partFamily": "cv-axle",
-        "laterality": "unknown",
+        "laterality": "left",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -15135,7 +15237,7 @@ export const productImageOverrides = Object.freeze({
       "generationPromptStatus": "recorded",
       "compatibility": {
         "partFamily": "cv-axle",
-        "laterality": "unknown",
+        "laterality": "left",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -15249,7 +15351,7 @@ export const productImageOverrides = Object.freeze({
       "generationPromptStatus": "recorded",
       "compatibility": {
         "partFamily": "cv-axle",
-        "laterality": "unknown",
+        "laterality": "left",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -15306,7 +15408,7 @@ export const productImageOverrides = Object.freeze({
       "generationPromptStatus": "recorded",
       "compatibility": {
         "partFamily": "cv-axle",
-        "laterality": "unknown",
+        "laterality": "right",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -15363,7 +15465,7 @@ export const productImageOverrides = Object.freeze({
       "generationPromptStatus": "recorded",
       "compatibility": {
         "partFamily": "cv-axle",
-        "laterality": "unknown",
+        "laterality": "right",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -15420,7 +15522,7 @@ export const productImageOverrides = Object.freeze({
       "generationPromptStatus": "recorded",
       "compatibility": {
         "partFamily": "cv-axle",
-        "laterality": "unknown",
+        "laterality": "left",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -15705,7 +15807,7 @@ export const productImageOverrides = Object.freeze({
       "generationPromptStatus": "recorded",
       "compatibility": {
         "partFamily": "cv-axle",
-        "laterality": "unknown",
+        "laterality": "left",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -15990,7 +16092,7 @@ export const productImageOverrides = Object.freeze({
       "generationPromptStatus": "recorded",
       "compatibility": {
         "partFamily": "inner-cv-joint",
-        "laterality": "unknown",
+        "laterality": "left",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -16161,7 +16263,7 @@ export const productImageOverrides = Object.freeze({
       "generationPromptStatus": "recorded",
       "compatibility": {
         "partFamily": "cv-axle",
-        "laterality": "unknown",
+        "laterality": "right",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -16218,7 +16320,7 @@ export const productImageOverrides = Object.freeze({
       "generationPromptStatus": "recorded",
       "compatibility": {
         "partFamily": "cv-axle",
-        "laterality": "unknown",
+        "laterality": "left",
         "abs": "unknown",
         "componentScope": "primary-component-only",
         "includedComponents": [
@@ -16461,6 +16563,7 @@ export const productImageOverrides = Object.freeze({
         ]
       },
       "geometryEvidence": {
+        "evidenceStatus": "cross-brand-geometry-reference",
         "claimScope": "cross-brand-geometry-reference-only",
         "sourcePageUrl": "https://www.litoralpecas.com.br/freios-e-suspensao/bandejas/balanca-bandeja-suspensao-peugeot-208-esquerda-2021-2022-2023-2024-2025",
         "sourceImageUrl": "https://images.tcdn.com.br/img/img_prod/935189/balanca_bandeja_suspensao_peugeot_208_esquerda_2021_2022_2023_2024_2025_114237_2_9488d740a3dcdc465ed00343082f7332.jpg",
@@ -16522,6 +16625,7 @@ export const productImageOverrides = Object.freeze({
         ]
       },
       "geometryEvidence": {
+        "evidenceStatus": "cross-brand-geometry-reference",
         "claimScope": "cross-brand-geometry-reference-only",
         "sourcePageUrl": "https://valesulpecas.com.br/produto/bandeja-suspensao-diant-direita-peugeot-208-9833753280/",
         "sourceImageUrl": "https://valesulpecas.com.br/wp-content/uploads/2025/09/9833753280_01.webp",
@@ -16583,6 +16687,7 @@ export const productImageOverrides = Object.freeze({
         ]
       },
       "geometryEvidence": {
+        "evidenceStatus": "cross-brand-geometry-reference",
         "claimScope": "cross-brand-geometry-reference-only",
         "sourcePageUrl": "https://spareto.com/products/sasic-ball-joint/7570012",
         "sourceImageUrl": "https://cdn.spareto.com/variants/images/002/674/966/original/converted-20230218-3832547-la276d.jpg?1676746139",
@@ -16644,6 +16749,7 @@ export const productImageOverrides = Object.freeze({
         ]
       },
       "geometryEvidence": {
+        "evidenceStatus": "cross-brand-geometry-reference",
         "claimScope": "cross-brand-geometry-reference-only",
         "sourcePageUrl": "https://www.mercadolibre.com.ar/rotula-de-suspension-original-peugeot-2008-2016--2021/up/MLAU134463101",
         "sourceImageUrl": "https://http2.mlstatic.com/D_NQ_NP_677430-MLA75460342431_032024-O.webp",
