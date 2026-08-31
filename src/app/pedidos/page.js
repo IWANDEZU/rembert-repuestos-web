@@ -33,8 +33,8 @@ export default async function PedidosPage() {
   });
 
   return (
-    <main className="main-container section" style={{ padding: "40px 20px", minHeight: "70vh" }}>
-      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "30px" }}>
+    <main className="main-container section orders-page" style={{ padding: "40px 20px", minHeight: "70vh" }}>
+      <div className="orders-page__header" style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "30px" }}>
         <div>
           <h1 style={{ fontSize: "2rem", marginBottom: "5px" }}>📦 Mis Pedidos</h1>
           <p style={{ color: "var(--text-muted)" }}>

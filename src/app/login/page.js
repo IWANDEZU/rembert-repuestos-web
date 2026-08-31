@@ -23,7 +23,11 @@ export default function LoginPage() {
       setLoading(false);
       return;
     }
-    router.push("/perfil");
+    const requestedPath = new URLSearchParams(window.location.search).get("callbackUrl");
+    const destination = requestedPath?.startsWith("/") && !requestedPath.startsWith("//")
+      ? requestedPath
+      : "/perfil";
+    router.replace(destination);
     router.refresh();
   };
 
@@ -38,15 +42,15 @@ export default function LoginPage() {
           <span style={{ padding: "0 10px", fontSize: "0.85rem" }}>O usa tu correo</span>
           <div style={{ flex: 1, height: "1px", background: "#eee" }} />
         </div>
-        {error && <div role="alert" style={{ background: "#ffeeee", color: "#cc0000", padding: "10px", borderRadius: "6px", marginBottom: "20px", textAlign: "center", fontSize: "0.9rem" }}>{error}</div>}
+        {error && <div role="alert" aria-live="polite" style={{ background: "#ffeeee", color: "#cc0000", padding: "10px", borderRadius: "6px", marginBottom: "20px", textAlign: "center", fontSize: "0.9rem" }}>{error}</div>}
         <form onSubmit={handleSubmit} style={{ display: "flex", flexDirection: "column", gap: "15px" }}>
           <label style={{ fontSize: "0.9rem", fontWeight: "600", color: "#333" }}>
             Correo electrónico
-            <input type="email" value={email} onChange={(event) => setEmail(event.target.value)} required placeholder="tu@email.com" style={{ width: "100%", marginTop: "6px", padding: "10px 12px", border: "1px solid #ccc", borderRadius: "6px", fontSize: "16px", color: "#111", background: "#fff" }} />
+            <input type="email" name="email" autoComplete="email" spellCheck={false} value={email} onChange={(event) => setEmail(event.target.value)} required placeholder="tu@email.com" style={{ width: "100%", marginTop: "6px", padding: "10px 12px", border: "1px solid #ccc", borderRadius: "6px", fontSize: "16px", color: "#111", background: "#fff" }} />
           </label>
           <label style={{ fontSize: "0.9rem", fontWeight: "600", color: "#333" }}>
             Contraseña
-            <input type="password" value={password} onChange={(event) => setPassword(event.target.value)} required autoComplete="current-password" style={{ width: "100%", marginTop: "6px", padding: "10px 12px", border: "1px solid #ccc", borderRadius: "6px", fontSize: "16px", color: "#111", background: "#fff" }} />
+            <input type="password" name="password" value={password} onChange={(event) => setPassword(event.target.value)} required autoComplete="current-password" style={{ width: "100%", marginTop: "6px", padding: "10px 12px", border: "1px solid #ccc", borderRadius: "6px", fontSize: "16px", color: "#111", background: "#fff" }} />
           </label>
           <button type="submit" disabled={loading} className="btn btn--primary" style={{ marginTop: "10px", width: "100%", padding: "12px", fontSize: "1rem", fontWeight: "bold" }}>{loading ? "Cargando…" : "Ingresar"}</button>
         </form>

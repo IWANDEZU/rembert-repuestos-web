@@ -12,7 +12,7 @@ export default function CartIcon() {
       onClick={toggleCart}
       className="navbar__action-btn navbar__action-btn--cart"
       aria-label={`Carrito de compras (${cartCount} productos)`}
-      style={{ background: 'none', border: 'none', cursor: 'pointer', padding: 0 }}
+      style={{ background: 'none', border: 'none', cursor: 'pointer', minWidth: 44, minHeight: 44 }}
     >
       <div style={{ position: 'relative', display: 'inline-flex', alignItems: 'center', justifyContent: 'center' }}>
         <span className="navbar__action-icon">🛒</span>

@@ -1,9 +1,15 @@
 "use client";
 
 import { useState } from "react";
+import { usePathname } from "next/navigation";
 
 export default function ContactSidebar() {
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
+
+  // Los canales siguen disponibles en la barra superior; en autenticación el
+  // control flotante podía cubrir la acción principal en pantallas pequeñas.
+  if (pathname === "/login" || pathname === "/registro") return null;
 
   return (
     <div className="contact-widget">

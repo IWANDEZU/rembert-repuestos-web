@@ -50,6 +50,7 @@ export default function CartDrawer() {
 
   return (
     <div
+      className="cart-drawer-overlay"
       style={{
         position: "fixed",
         top: 0,
@@ -65,6 +66,7 @@ export default function CartDrawer() {
       onClick={closeCart}
     >
       <div
+        className="cart-drawer"
         onClick={(e) => e.stopPropagation()}
         role="dialog"
         aria-modal="true"
@@ -84,6 +86,7 @@ export default function CartDrawer() {
       >
         {/* Header Drawer */}
         <div
+          className="cart-drawer__header"
           style={{
             padding: "20px",
             borderBottom: "1px solid var(--border-color)",
@@ -119,6 +122,7 @@ export default function CartDrawer() {
 
         {/* Items List */}
         <div
+          className="cart-drawer__items"
           style={{
             flex: 1,
             overflowY: "auto",
@@ -141,6 +145,7 @@ export default function CartDrawer() {
                 Tu carrito está vacío
               </p>
               <button
+                type="button"
                 onClick={() => {
                   closeCart();
                   router.push("/catalogo");
@@ -314,6 +319,7 @@ export default function CartDrawer() {
             </div>
 
             <button
+              type="button"
               onClick={handleCheckout}
               className="btn btn--primary"
               style={{

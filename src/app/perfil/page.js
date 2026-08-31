@@ -13,7 +13,7 @@ export default async function ProfilePage() {
   const session = await getServerSession();
 
   if (!session) {
-    redirect("/login");
+    redirect("/login?callbackUrl=/perfil");
   }
 
   // Obtener la información completa del usuario desde la BD

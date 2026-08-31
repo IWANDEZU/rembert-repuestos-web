@@ -33,10 +33,10 @@ export default function UserMenu() {
           <span className="navbar__action-text">Cargando...</span>
         </div>
       ) : session ? (
-        <div ref={menuRef} className="navbar__action-btn user-dropdown">
+        <div ref={menuRef} className="user-dropdown">
           <button
             type="button"
-            className="user-dropdown__trigger"
+            className="navbar__action-btn user-dropdown__trigger"
             onClick={() => setIsOpen((open) => !open)}
             aria-expanded={isOpen}
             aria-haspopup="menu"
@@ -76,12 +76,10 @@ export default function UserMenu() {
           border: 0;
           background: transparent;
           color: inherit;
-          display: inline-flex;
-          align-items: center;
-          gap: 0.35rem;
           cursor: pointer;
           font: inherit;
-          padding: 0;
+          min-width: 44px;
+          min-height: 44px;
         }
         .dropdown-content {
           display: none;
@@ -104,6 +102,9 @@ export default function UserMenu() {
           display: block;
           font-size: 0.85rem;
           font-weight: 600;
+          min-height: 44px;
+          display: flex;
+          align-items: center;
           transition: background-color 0.2s ease, color 0.2s ease;
         }
         .dropdown-content a:hover, .dropdown-content button:hover {
@@ -112,6 +113,12 @@ export default function UserMenu() {
         }
         .dropdown-content.is-open {
           display: block;
+        }
+        .user-dropdown__trigger:focus-visible,
+        .dropdown-content a:focus-visible,
+        .dropdown-content button:focus-visible {
+          outline: 3px solid #FFFFFF;
+          outline-offset: 2px;
         }
       `}</style>
     </div>

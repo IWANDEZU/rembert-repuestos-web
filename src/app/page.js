@@ -3,6 +3,7 @@ import Image from "next/image";
 import { products as fallbackProducts } from "@/lib/products";
 import { prisma } from "@/lib/prisma";
 import CatalogGridWithModal from "@/components/CatalogGridWithModal";
+import HeroMediaShowcase from "@/components/HeroMediaShowcase";
 
 // La portada se genera durante la compilación. El catálogo y las rutas de cuenta
 // siguen siendo dinámicos, pero una visita a "/" no debe abrir Prisma ni consumir
@@ -85,28 +86,43 @@ export default async function Home() {
           quality={75}
           style={{ objectFit: 'cover', objectPosition: 'center 35%', zIndex: 0 }}
         />
-        <div aria-hidden="true" style={{ position: 'absolute', inset: 0, zIndex: 1, background: 'linear-gradient(90deg, rgba(10,10,10,0.92) 0%, rgba(10,10,10,0.72) 55%, rgba(10,10,10,0.45) 100%)' }} />
-        <div className="main-container" style={{ width: '100%', display: 'flex', flexDirection: 'column', gap: '1.25rem', position: 'relative', zIndex: 2 }}>
-          <div>
-            <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', background: '#E52421', color: '#FFFFFF', padding: '0.35rem 0.95rem', borderRadius: '30px', fontWeight: '900', fontSize: 'clamp(0.75rem, 2.5vw, 0.9rem)', marginBottom: '1rem', letterSpacing: '0.5px', boxShadow: '0 4px 15px rgba(229, 36, 33, 0.45)', flexWrap: 'wrap' }}>
-              ⭐ 38 AÑOS DE EXPERIENCIA EN EL SECTOR AUTOMOTRIZ
+        <div aria-hidden="true" style={{ position: 'absolute', inset: 0, zIndex: 1, background: 'linear-gradient(90deg, rgba(10,10,10,0.95) 0%, rgba(10,10,10,0.85) 50%, rgba(10,10,10,0.65) 100%)' }} />
+        <div className="main-container" style={{
+          width: '100%',
+          display: 'grid',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 340px), 1fr))',
+          gap: '2.5rem',
+          alignItems: 'center',
+          position: 'relative',
+          zIndex: 2,
+        }}>
+          {/* Columna Izquierda: Títulos y Botones de Acción */}
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
+            <div>
+              <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', background: '#E52421', color: '#FFFFFF', padding: '0.35rem 0.95rem', borderRadius: '30px', fontWeight: '900', fontSize: 'clamp(0.75rem, 2.5vw, 0.9rem)', marginBottom: '1rem', letterSpacing: '0.5px', boxShadow: '0 4px 15px rgba(229, 36, 33, 0.45)', flexWrap: 'wrap' }}>
+                ⭐ 38 AÑOS DE EXPERIENCIA EN EL SECTOR AUTOMOTRIZ
+              </div>
+              <h1 style={{ fontSize: 'clamp(2rem, 5.5vw, 3.4rem)', lineHeight: 1.1, marginBottom: '1rem', textTransform: 'uppercase', color: '#ffffff' }}>
+                Repuestos confiables <br />
+                <span className="text-primary">de la mejor calidad</span>
+              </h1>
+              <p style={{ color: '#E2E8F0', fontSize: 'clamp(0.95rem, 2.2vw, 1.05rem)', maxWidth: '580px', lineHeight: '1.5', margin: '0 0 1.5rem 0' }}>
+                Originales y alternativos para todas las marcas. Precios al por mayor y detal con envíos rápidos a todo el país.
+              </p>
             </div>
-            <h1 style={{ fontSize: 'clamp(2rem, 7vw, 3.8rem)', maxWidth: '850px', lineHeight: 1.1, marginBottom: '1rem', textTransform: 'uppercase', color: '#ffffff' }}>
-              Repuestos confiables <br />
-              <span className="text-primary">de la mejor calidad</span>
-            </h1>
-            <p style={{ color: '#E2E8F0', fontSize: 'clamp(0.95rem, 2.5vw, 1.1rem)', maxWidth: '650px', lineHeight: '1.5', margin: '0 0 1.5rem 0' }}>
-              Originales y alternativos para todas las marcas. Precios al por mayor y detal con envíos rápidos a todo el país.
-            </p>
+
+            <div style={{ display: 'flex', gap: '0.85rem', flexWrap: 'wrap' }}>
+              <Link href="/catalogo" className="btn btn--primary" style={{ padding: '0.85rem 1.8rem', fontSize: '0.95rem' }}>VER PRODUCTOS</Link>
+              <a href="https://wa.me/573102420490?text=Hola%2C%20quisiera%20cotizar%20un%20repuesto." target="_blank" rel="noopener noreferrer" className="btn btn--outline" style={{ padding: '0.85rem 1.8rem', color: '#fff', borderColor: '#fff', fontSize: '0.95rem' }}>
+                <span style={{ color: '#25D366' }}>💬</span> COMPRAR POR WHATSAPP
+              </a>
+            </div>
           </div>
 
-          <div style={{ display: 'flex', gap: '0.85rem', flexWrap: 'wrap', marginBottom: '2rem' }}>
-            <Link href="/catalogo" className="btn btn--primary" style={{ padding: '0.85rem 1.8rem', fontSize: '0.95rem' }}>VER PRODUCTOS</Link>
-            <a href="https://wa.me/573102420490?text=Hola%2C%20quisiera%20cotizar%20un%20repuesto." target="_blank" rel="noopener noreferrer" className="btn btn--outline" style={{ padding: '0.85rem 1.8rem', color: '#fff', borderColor: '#fff', fontSize: '0.95rem' }}>
-              <span style={{ color: '#25D366' }}>💬</span> COMPRAR POR WHATSAPP
-            </a>
+          {/* Columna Derecha: Zona de Flyers y Videos Automáticos */}
+          <div style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
+            <HeroMediaShowcase />
           </div>
-
         </div>
       </header>
 

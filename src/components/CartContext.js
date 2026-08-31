@@ -3,7 +3,10 @@ import { createContext, useCallback, useContext, useState, useEffect, useSyncExt
 
 const CartContext = createContext();
 
-const emptySubscribe = () => () => {};
+const subscribeAfterHydration = (onStoreChange) => {
+  queueMicrotask(onStoreChange);
+  return () => {};
+};
 
 const getStockLimit = (item) => {
   const stock = Number(item?.stock);
@@ -11,7 +14,7 @@ const getStockLimit = (item) => {
 };
 
 export function CartProvider({ children }) {
-  const isMounted = useSyncExternalStore(emptySubscribe, () => true, () => false);
+  const isMounted = useSyncExternalStore(subscribeAfterHydration, () => true, () => false);
   const [cart, setCart] = useState(() => {
     if (typeof window !== "undefined") {
       try {
