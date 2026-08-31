@@ -248,6 +248,7 @@ export function scoreProductSearch(product, rawQuery) {
 
     let tokenMatched = false;
     let inName = false;
+    let inFitment = false;
 
     for (const syn of synonyms) {
       const synClean = cleanText(syn);
@@ -256,6 +257,12 @@ export function scoreProductSearch(product, rawQuery) {
       if (name.includes(synClean) || (synAlpha.length >= 3 && nameAlpha.includes(synAlpha))) {
         tokenMatched = true;
         inName = true;
+        break;
+      }
+
+      if (fitmentSummary.includes(synClean) || fitmentTexts.includes(synClean)) {
+        tokenMatched = true;
+        inFitment = true;
         break;
       }
 
@@ -276,6 +283,9 @@ export function scoreProductSearch(product, rawQuery) {
       if (inName) {
         nameTokensCount++;
         score += 100;
+      }
+      if (inFitment) {
+        score += 120; // Bonificación de compatibilidad vehicular exacta
       }
     }
   }

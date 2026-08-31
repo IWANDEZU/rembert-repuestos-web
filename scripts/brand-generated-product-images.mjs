@@ -3,7 +3,18 @@ import fs from "node:fs/promises";
 import path from "node:path";
 import sharp from "sharp";
 import { products } from "../src/lib/products.js";
+import { adsGeneratedImageEvidence } from "../src/data/adsGeneratedImageEvidence.js";
 import { productImageOverrides } from "../src/data/productImageOverrides.js";
+import {
+  buildGeneratedImageCompatibility,
+  normalizeImageEvidenceKey,
+} from "../src/lib/generatedImageEvidence.js";
+import {
+  BRAND_TREATMENT_VERSION,
+  COLOR_POLICY,
+  MAX_ORANGE_RATIO,
+  measureOrangeRatio,
+} from "./lib/branded-image-policy.mjs";
 
 const ROOT = process.cwd();
 const PUBLIC_DIR = path.join(ROOT, "public");
@@ -15,24 +26,27 @@ const OUTPUT_SIZE = 1200;
 const BRAND_CONFIG = Object.freeze({
   ads: {
     name: "ADS",
-    badge: path.join(PUBLIC_DIR, "brands", "ads-product-logo-blue.svg"),
-    badgeVariant: "blue-wordmark",
+    badge: path.join(PUBLIC_DIR, "brands", "ads-product-logo-blue-catalog.png"),
+    badgePublicUrl: "/brands/ads-product-logo-blue-catalog.png",
+    badgeVariant: "catalog-blue-wordmark",
     outputDir: path.join(PUBLIC_DIR, "catalogo-ads", "branded"),
     publicDir: "/catalogo-ads/branded",
     disclosure: "Imagen generada de referencia; no es fotografía original. El logotipo ADS azul fue integrado digitalmente. Confirmar referencia, medidas y VIN antes de vender.",
+    colorPolicy: COLOR_POLICY,
   },
   gti: {
     name: "GTI",
     badge: path.join(PUBLIC_DIR, "brands", "gti-product-logo-capsule.svg"),
+    badgePublicUrl: "/brands/gti-product-logo-capsule.svg",
     badgeVariant: "yellow-on-blue-capsule",
     outputDir: path.join(PUBLIC_DIR, "catalogo-gti", "generated-branded"),
     publicDir: "/catalogo-gti/generated-branded",
     disclosure: "Imagen generada de referencia; no es fotografía original. El logotipo GTI amarillo en cápsula azul fue integrado digitalmente. Confirmar referencia, estrías, ABS, medidas y VIN antes de vender.",
+    colorPolicy: COLOR_POLICY,
   },
 });
 
 const clean = (value) => String(value ?? "").trim();
-const normalizeKey = (value) => clean(value).toUpperCase().replace(/[^A-Z0-9]/g, "");
 const slugify = (value) => clean(value)
   .normalize("NFD")
   .replace(/[\u0300-\u036f]/g, "")
@@ -49,15 +63,19 @@ function resolvePublicAsset(publicUrl, label) {
 }
 
 function sourceUrlFor(product, existingOverride) {
-  const recordedSource = existingOverride?.sourceRecord?.brandTreatment?.sourceImage;
-  if (recordedSource) return recordedSource;
   if (product.brand.slug === "ads") {
+    const evidenceAsset = adsGeneratedImageEvidence[normalizeImageEvidenceKey(product.sku)]?.generatedAsset;
+    if (evidenceAsset) return evidenceAsset;
     const exactGalleryImage = product.images?.find((image) => image?.isMain && image?.url)
       || product.images?.find((image) => image?.url);
     return exactGalleryImage?.url || product.image;
   }
+  const recordedSource = existingOverride?.sourceRecord?.brandTreatment?.sourceImage;
+  if (recordedSource) return recordedSource;
   return product.image;
 }
+
+const sha256 = (buffer) => crypto.createHash("sha256").update(buffer).digest("hex");
 
 async function renderBrandedImage({ sourcePath, badgePath }) {
   const source = await fs.readFile(sourcePath);
@@ -89,33 +107,53 @@ async function renderBrandedImage({ sourcePath, badgePath }) {
 
 const targets = products.filter((product) => {
   const slug = product?.brand?.slug;
-  return Boolean(BRAND_CONFIG[slug]) && product.imageStatus === "generated-reference-image";
+  if (!BRAND_CONFIG[slug]) return false;
+  const existingOverride = productImageOverrides[normalizeImageEvidenceKey(product.sku)];
+  return product.imageStatus === "generated-reference-image"
+    || existingOverride?.imageStatus === "generated-reference-image";
 });
 
 if (!targets.length) throw new Error("No se encontraron imágenes generadas ADS/GTI para marcar");
 
 const overrides = { ...productImageOverrides };
-const manifest = { version: 2, generatedAt: new Date().toISOString(), images: {} };
+const manifest = { version: 3, generatedAt: new Date().toISOString(), images: {} };
 const prepared = [];
 
 for (const product of targets) {
-  const skuKey = normalizeKey(product.sku);
+  const skuKey = normalizeImageEvidenceKey(product.sku);
   const config = BRAND_CONFIG[product.brand.slug];
   const existingOverride = overrides[skuKey] || {};
+  const adsEvidence = product.brand.slug === "ads" ? adsGeneratedImageEvidence[skuKey] : null;
+  if (product.brand.slug === "ads" && !adsEvidence) throw new Error(`${product.sku}: falta evidencia ADS estructurada`);
   const sourceUrl = sourceUrlFor(product, existingOverride);
   const sourcePath = resolvePublicAsset(sourceUrl, product.sku);
   const stats = await fs.stat(sourcePath).catch(() => null);
   if (!stats?.isFile()) throw new Error(`${product.sku}: no existe la fuente ${sourceUrl}`);
+  const orangeRatio = await measureOrangeRatio(sourcePath);
+  if (orangeRatio > MAX_ORANGE_RATIO) {
+    throw new Error(`${product.sku}: la fuente parece pintada de naranja (${(orangeRatio * 100).toFixed(2)}%); ADS/GTI deben conservar materiales naturales`);
+  }
 
   const fileName = `${slugify(product.sku)}-${slugify(product.slug || product.name).slice(0, 88)}-branded-v2.webp`;
   const outputPath = path.join(config.outputDir, fileName);
   const outputUrl = `${config.publicDir}/${fileName}`;
   const sourceBuffer = await fs.readFile(sourcePath);
-  const sourceSha256 = crypto.createHash("sha256").update(sourceBuffer).digest("hex");
+  const badgeBuffer = await fs.readFile(config.badge);
+  const sourceSha256 = sha256(sourceBuffer);
+  const badgeSha256 = sha256(badgeBuffer);
+  const compatibility = buildGeneratedImageCompatibility(product, adsEvidence || {});
+  if (compatibility.partFamily === "unknown") throw new Error(`${product.sku}: familia de pieza no identificada`);
+  const generationPrompt = adsEvidence?.generationPrompt || existingOverride?.sourceRecord?.generationPrompt;
+  if (!generationPrompt) throw new Error(`${product.sku}: falta prompt de generación auditable`);
   const alt = `Imagen generada de referencia de ${product.name}, SKU ${product.sku}; no es fotografía original. Identificada con el logotipo ${config.name}.`;
-  const generatedAt = new Date().toISOString();
+  const existingTreatment = existingOverride?.sourceRecord?.brandTreatment;
+  const generatedAt = existingTreatment?.sourceSha256 === sourceSha256
+    && existingTreatment?.badgeSha256 === badgeSha256
+    && existingTreatment?.version === BRAND_TREATMENT_VERSION
+    ? existingTreatment.appliedAt
+    : new Date().toISOString();
 
-  prepared.push({ product, config, sourcePath, outputPath, outputUrl });
+  prepared.push({ product, config, skuKey, sourcePath, outputPath, outputUrl });
   overrides[skuKey] = {
     ...existingOverride,
     image: outputUrl,
@@ -125,10 +163,31 @@ for (const product of targets) {
     sourceRecord: {
       ...(existingOverride.sourceRecord || {}),
       type: existingOverride.sourceRecord?.type || "ai-generated-reference",
+      sku: product.sku,
+      skuKey,
+      brandSlug: product.brand.slug,
+      generationPrompt,
+      generationPromptStatus: "recorded",
+      generatedAt: adsEvidence?.generatedAt || existingOverride.sourceRecord?.generatedAt,
+      compatibility,
+      ...(adsEvidence ? {
+        geometryEvidence: {
+          claimScope: "cross-brand-geometry-reference-only",
+          sourcePageUrl: adsEvidence.sourcePageUrl,
+          sourceImageUrl: adsEvidence.sourceImageUrl,
+          crossReferenceBrand: adsEvidence.crossReferenceBrand,
+          crossReferenceNumber: adsEvidence.crossReferenceNumber,
+          publishedAsPhysicalPhoto: false,
+        },
+      } : {}),
       brandTreatment: {
-        version: 2,
+        version: BRAND_TREATMENT_VERSION,
         brand: config.name,
         badgeVariant: config.badgeVariant,
+        badgeAsset: config.badgePublicUrl,
+        badgeSha256,
+        colorPolicy: config.colorPolicy,
+        orangePixelRatio: Number(orangeRatio.toFixed(6)),
         sourceImage: sourceUrl,
         sourceSha256,
         renderer: "scripts/brand-generated-product-images.mjs",
@@ -138,11 +197,19 @@ for (const product of targets) {
   };
   manifest.images[skuKey] = {
     sku: product.sku,
+    skuKey,
     brand: config.name,
+    brandSlug: product.brand.slug,
+    partFamily: compatibility.partFamily,
+    compatibility,
     sourceImage: sourceUrl,
     sourceSha256,
     outputImage: outputUrl,
     badgeVariant: config.badgeVariant,
+    badgeAsset: config.badgePublicUrl,
+    badgeSha256,
+    colorPolicy: config.colorPolicy,
+    orangePixelRatio: Number(orangeRatio.toFixed(6)),
     imageStatus: "generated-reference-image",
   };
 }
@@ -161,6 +228,9 @@ for (const item of prepared) {
   await fs.mkdir(path.dirname(item.outputPath), { recursive: true });
   const buffer = await renderBrandedImage({ sourcePath: item.sourcePath, badgePath: item.config.badge });
   await fs.writeFile(item.outputPath, buffer);
+  const outputSha256 = sha256(buffer);
+  overrides[item.skuKey].sourceRecord.brandTreatment.outputSha256 = outputSha256;
+  manifest.images[item.skuKey].outputSha256 = outputSha256;
 }
 
 const overrideSource = "// Generado por scripts/update-product-images.mjs, scripts/apply-generated-gti-image.mjs y scripts/brand-generated-product-images.mjs. No editar manualmente.\n"

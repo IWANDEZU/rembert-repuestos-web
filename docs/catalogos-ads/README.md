@@ -1,6 +1,6 @@
 # Catálogo ADS — trazabilidad de referencias
 
-Fecha de revisión: 2026-08-26
+Fecha de revisión: 2026-08-30
 
 Este conjunto reúne referencias ADS encontradas en el inventario REMBERT y en catálogos comerciales colombianos. La fotografía no demuestra compatibilidad: cada aplicación se publica con su referencia, posición y requisitos de validación.
 
@@ -67,6 +67,17 @@ Las otras ocho referencias del catálogo fuente conservan sus imágenes anterior
 - `51750-1J000`: se eliminó “ABS” del nombre. La pieza es una maza o brida delantera de cuatro puntos y 25 estrías; la evidencia consultada no respalda un rodamiento integrado ni un cable/sensor ABS.
 - `56500-07000`: se retiró la recreación hidráulica. La referencia corresponde a una cremallera mecánica/EPS para Picanto/Morning SA y no presenta tuberías hidráulicas.
 - `L0301622`: se retiró el cruce orientativo `35150-22600G`. La foto demuestra la marca ADS, pero la aplicación Rio Space/i25 procede solo del inventario y exige validar el OEM grabado, conector y cuerpo de aceleración.
+
+## Recreaciones referenciales incorporadas el 2026-08-30
+
+El catálogo ADS vigente contiene 12 fichas: cinco conservan fotografía física o una imagen de fuente exacta y siete emplean una recreación referencial con geometría apoyada por cruce OE. Las siete recreaciones son `9833753380`, `9833753280`, `9824626380`, `9802103780`, `364077`, `184441` y `184442`.
+
+- Cada prompt, fuente geométrica, familia, lateralidad y restricción ABS está registrado en `src/data/adsGeneratedImageEvidence.js`.
+- El repuesto conserva materiales naturales; no se pinta de naranja.
+- El logotipo azul se superpone desde `/brands/ads-product-logo-blue-catalog.png` después de generar la pieza.
+- La salida se publica como **imagen generada de referencia**, nunca como fotografía original ADS.
+- El control de ejecución compara SKU, marca, familia, lateralidad y ABS. Si el registro no coincide, la ficha vuelve de forma segura a **Foto real pendiente de validación**.
+- `184441` y `184442` se corrigieron con cruces geométricos distintos; no se reutiliza ni espeja un mismo soporte para ambas referencias.
 
 ## Regla comercial
 

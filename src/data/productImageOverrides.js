@@ -5,7 +5,7 @@ export const productImageOverrides = Object.freeze({
     "images": [
       {
         "url": "/catalogo-ads/branded/184441-ads-184441-soporte-hidraulico-peugeot-branded-v2.webp",
-        "alt": "Imagen generada de referencia de Soporte Hidráulico ADS 184441 — Peugeot, SKU 184441; no es fotografía original. Identificada con el logotipo ADS.",
+        "alt": "Imagen generada de referencia de Soporte de Motor ADS 184441 — Aplicación PSA/Fiat por confirmar, SKU 184441; no es fotografía original. Identificada con el logotipo ADS.",
         "isMain": true
       }
     ],
@@ -14,13 +14,50 @@ export const productImageOverrides = Object.freeze({
     "sourceRecord": {
       "type": "ai-generated-reference",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "ADS",
-        "badgeVariant": "blue-wordmark",
-        "sourceImage": "/catalogo-ads/ads-184441-soporte-hidraulico-peugeot-referencial.png",
-        "sourceSha256": "e00677369f993647504ed5f3b656233ed9655ce0d9411540562af7c466c87b8a",
+        "badgeVariant": "catalog-blue-wordmark",
+        "badgeAsset": "/brands/ads-product-logo-blue-catalog.png",
+        "badgeSha256": "56c3a934749c90926f203738ece622a64ee82bd5772d48a4ceae0c2133eb1c00",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
+        "sourceImage": "/catalogo-ads/ads-184441-soporte-motor-peugeot-referencial-v2.png",
+        "sourceSha256": "8c5fe7acc307cb56e7ef3d839cb29c1484ba4470bd4a6c2e19df78ec85b93597",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.222Z"
+        "appliedAt": "2026-08-31T00:14:57.196Z",
+        "outputSha256": "08af1fcdd33f1d73a28311e219a8c3075a0aaacc94e44d11eea2960c3262962c"
+      },
+      "sku": "184441",
+      "skuKey": "184441",
+      "brandSlug": "ads",
+      "generationPrompt": "Create a high-end photorealistic e-commerce product reference image of the exact same automotive engine/transmission mount geometry shown in the reference photo, corresponding to OE cross-reference 184441. Preserve the complete asymmetric steel bracket, large circular rubber-metal bushing, every visible mounting ear and threaded hole, proportions, orientation and component count. Clean new-product appearance, natural zinc-plated steel and matte black rubber, subtle realistic studio shadows, centered with comfortable whitespace on a pure white square background. Show only the primary mount. Remove all manufacturer logos, molded brand names, labels, watermarks, text, packaging and accessories. Do not add bolts, cables, sensors, ABS elements or other parts. Do not recolor anything orange. This is a geometry-grounded reference recreation, not a branded physical photograph.",
+      "generationPromptStatus": "recorded",
+      "generatedAt": "2026-08-31T00:09:18.000Z",
+      "compatibility": {
+        "partFamily": "engine-mount",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "engine-mount"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "VIN",
+          "motor",
+          "año",
+          "posición de montaje",
+          "altura",
+          "patrón de pernos"
+        ]
+      },
+      "geometryEvidence": {
+        "claimScope": "cross-brand-geometry-reference-only",
+        "sourcePageUrl": "https://spareto.com/products/febi-bilstein-engine-mounting/12346",
+        "sourceImageUrl": "https://cdn.spareto.com/variants/images/000/264/521/original/12346_1.jpg?1606227849",
+        "crossReferenceBrand": "FEBI BILSTEIN",
+        "crossReferenceNumber": "12346 / OE 184441",
+        "publishedAsPhysicalPhoto": false
       }
     }
   },
@@ -29,7 +66,7 @@ export const productImageOverrides = Object.freeze({
     "images": [
       {
         "url": "/catalogo-ads/branded/184442-ads-184442-soporte-hidraulico-peugeot-citroen-branded-v2.webp",
-        "alt": "Imagen generada de referencia de Soporte Hidráulico ADS 184442 — Peugeot / Citroën, SKU 184442; no es fotografía original. Identificada con el logotipo ADS.",
+        "alt": "Imagen generada de referencia de Soporte de Motor Derecho ADS 184442 — Peugeot / Citroën, SKU 184442; no es fotografía original. Identificada con el logotipo ADS.",
         "isMain": true
       }
     ],
@@ -38,13 +75,50 @@ export const productImageOverrides = Object.freeze({
     "sourceRecord": {
       "type": "ai-generated-reference",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "ADS",
-        "badgeVariant": "blue-wordmark",
-        "sourceImage": "/catalogo-ads/ads-184442-soporte-hidraulico-peugeot-citroen-referencial.png",
-        "sourceSha256": "c9b7ce0ef885f0673b3b7bbc53f6150ec1e33e12f66b12af2f2e21d68eff536a",
+        "badgeVariant": "catalog-blue-wordmark",
+        "badgeAsset": "/brands/ads-product-logo-blue-catalog.png",
+        "badgeSha256": "56c3a934749c90926f203738ece622a64ee82bd5772d48a4ceae0c2133eb1c00",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
+        "sourceImage": "/catalogo-ads/ads-184442-soporte-motor-peugeot-citroen-referencial-v2.png",
+        "sourceSha256": "9f3345addf6bbccc30dfab8ad0e0a2991230e37fb4a773624567368e5cd4b319",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.224Z"
+        "appliedAt": "2026-08-31T00:14:57.244Z",
+        "outputSha256": "52deeb4b41b2e084d43aa9f3da7b503ea55d15f516c48d229128ca8197e20bdc"
+      },
+      "sku": "184442",
+      "skuKey": "184442",
+      "brandSlug": "ads",
+      "generationPrompt": "Create a high-end photorealistic e-commerce product reference image of the exact same automotive right-side engine mount geometry shown in the reference photo, corresponding to OE cross-reference 184442. Preserve the tall compact cylindrical rubber-metal mount, upper and lower M10 threaded studs, stepped black rubber body, lower metal cup, proportions, orientation and single-component count. Clean new-product appearance, natural black rubber and silver/zinc metal, subtle realistic studio shadow, centered with comfortable whitespace on a pure white square background. Show only the primary mount. Remove all manufacturer logos, molded brand names, labels, watermarks, text, packaging and accessories. Do not add brackets, bolts, cables, sensors, ABS elements or other parts. Do not recolor anything orange. This is a geometry-grounded reference recreation, not a branded physical photograph.",
+      "generationPromptStatus": "recorded",
+      "generatedAt": "2026-08-31T00:09:18.000Z",
+      "compatibility": {
+        "partFamily": "engine-mount",
+        "laterality": "right",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "engine-mount"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "VIN",
+          "modelo",
+          "motor",
+          "lado distribución/derecho",
+          "altura",
+          "patrón de pernos"
+        ]
+      },
+      "geometryEvidence": {
+        "claimScope": "cross-brand-geometry-reference-only",
+        "sourcePageUrl": "https://spareto.com/products/febi-bilstein-engine-mounting/18696",
+        "sourceImageUrl": "https://cdn.spareto.com/variants/images/000/406/848/original/18696_1.jpg?1606244585",
+        "crossReferenceBrand": "FEBI BILSTEIN",
+        "crossReferenceNumber": "18696 / OE 184442",
+        "publishedAsPhysicalPhoto": false
       }
     }
   },
@@ -62,13 +136,50 @@ export const productImageOverrides = Object.freeze({
     "sourceRecord": {
       "type": "ai-generated-reference",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "ADS",
-        "badgeVariant": "blue-wordmark",
-        "sourceImage": "/catalogo-ads/ads-364077-rotula-inferior-peugeot-citroen-referencial.png",
-        "sourceSha256": "493de305a1263fa8b92bc3ca776e4c90856529949590ff6f8fbf80d7a168ed5c",
+        "badgeVariant": "catalog-blue-wordmark",
+        "badgeAsset": "/brands/ads-product-logo-blue-catalog.png",
+        "badgeSha256": "56c3a934749c90926f203738ece622a64ee82bd5772d48a4ceae0c2133eb1c00",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
+        "sourceImage": "/catalogo-ads/ads-364077-rotula-inferior-peugeot-citroen-referencial-v2.png",
+        "sourceSha256": "5d2e1d34377bbc40e5bf2775f083f51e019266fba7c9c78b7b533c0067c36149",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.220Z"
+        "appliedAt": "2026-08-31T00:14:57.145Z",
+        "outputSha256": "80bdcdf0d7c345280e2d627ff5d5fed51aa4a454c3c51c66582afcecd35e1447"
+      },
+      "sku": "364077",
+      "skuKey": "364077",
+      "brandSlug": "ads",
+      "generationPrompt": "Create a high-end photorealistic e-commerce reference image of this exact Citroën/Peugeot lower suspension ball-joint design, OE cross-reference 364077, cone pin 18 mm. Preserve the distinctive silver cast upper flange/housing, its three mounting ears and holes (rotate gently to a clear three-quarter catalog angle so all geometry is understandable), black lower protective body/boot, thin magenta-red sealing ring, machined tapered ball stud, exact proportions and single-component count. The source photo shows a side/upside-down angle; present the same part upright as a clean new replacement without changing its geometry. Natural silver cast metal, black rubber/polymer and muted magenta-red seal, subtle realistic studio shadow, centered with comfortable whitespace on a pure white square background. Remove every logo, stamped identifier, watermark, text, label, cardboard background, packaging and accessory. Do not add a nut, bolts, cable, sensor, ABS element or any extra component. Do not recolor anything orange. Geometry-grounded reference recreation, not a branded physical photograph.",
+      "generationPromptStatus": "recorded",
+      "generatedAt": "2026-08-31T00:09:18.000Z",
+      "compatibility": {
+        "partFamily": "ball-joint",
+        "laterality": "either",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "ball-joint"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "VIN",
+          "año",
+          "motor",
+          "perno de 18 mm",
+          "lado",
+          "brazo compatible"
+        ]
+      },
+      "geometryEvidence": {
+        "claimScope": "cross-brand-geometry-reference-only",
+        "sourcePageUrl": "https://exist.ua/citroen-peugeot-brand/opora-sharovaja-perednjaja-levaja-3640-77-9277780/",
+        "sourceImageUrl": "https://i.ebayimg.com/images/g/P-wAAOSwpr1m3HOa/s-l960.png",
+        "crossReferenceBrand": "PSA OE",
+        "crossReferenceNumber": "364077 / cone pin 18 mm",
+        "publishedAsPhysicalPhoto": false
       }
     }
   },
@@ -166,13 +277,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-27T21:20:20.495Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti04-161-punta-lado-rueda-gti-chevrolet-tracker-turbo-onix-turbo-generated-reference.webp",
         "sourceSha256": "6e589a17630aa4e5d3a7d8c41766583def073716eaa39eb0d0e1af9785a75141",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.207Z"
+        "appliedAt": "2026-08-31T00:14:56.824Z",
+        "outputSha256": "bb0ce693c5675391295ab8563e2082b694a8586e5ebe33ebedb4c8cc3d00ee88"
+      },
+      "sku": "GTI04-161",
+      "skuKey": "GTI04161",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "outer-cv-joint",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "outer-cv-joint"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "diámetro del sello",
+          "ABS y número de dientes de corona"
+        ]
       }
     }
   },
@@ -218,13 +358,39 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-27T21:20:22.193Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/punta-l-c-kia-picanto-all-new-1-2-25-21-gti106-092-generated-reference.webp",
         "sourceSha256": "d10727e4bbba4424a82a9fcc0fefc8237b9907c7bbcb4256a2440c7109c92ac5",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.208Z"
+        "appliedAt": "2026-08-31T00:14:56.838Z",
+        "outputSha256": "ad211d0f3f5a6b4891d45db110687d1f4ce0ff7996a83a2462de862b8de9dbdb"
+      },
+      "sku": "GTI106-092",
+      "skuKey": "GTI106092",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "inner-cv-joint",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "inner-cv-joint"
+        ],
+        "fitmentStatus": "inventory-listed",
+        "requirements": [
+          "VIN",
+          "año",
+          "motor",
+          "versión",
+          "muestra o referencia desmontada"
+        ]
       }
     }
   },
@@ -294,13 +460,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-27T21:37:30.863Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti04-089-punta-lado-rueda-gti-chevrolet-cobalt-taxi-elite-generated-reference.webp",
         "sourceSha256": "dd978546f4d5600b25fa91f1ed0d4fe44d3928790bbe01c4699b554faa6cb200",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.209Z"
+        "appliedAt": "2026-08-31T00:14:56.852Z",
+        "outputSha256": "e248ad3e8d7445deeb035ae1e85e07d18671652d0a274e98fecd190aa0422cb4"
+      },
+      "sku": "GTI04-089",
+      "skuKey": "GTI04089",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "outer-cv-joint",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "outer-cv-joint"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "diámetro del sello",
+          "ABS y número de dientes de corona"
+        ]
       }
     }
   },
@@ -322,13 +517,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-27T21:37:30.864Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti04-d01-punta-lado-rueda-gti-chevrolet-corsa-generated-reference.webp",
         "sourceSha256": "5c3fd02abdb46c6f6ab13109d0f7bb0a2b97fb8adc96941c20e86019edb90b60",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.210Z"
+        "appliedAt": "2026-08-31T00:14:56.865Z",
+        "outputSha256": "e5a8aa1689f5b44e4a30b8e743e7c0d0bf5dc943267ae2807a3def84743f8260"
+      },
+      "sku": "GTI04-D01",
+      "skuKey": "GTI04D01",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "outer-cv-joint",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "outer-cv-joint"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "diámetro del sello",
+          "ABS y número de dientes de corona"
+        ]
       }
     }
   },
@@ -350,13 +574,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-27T21:39:02.756Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti06-081-punta-lado-rueda-gti-hyundai-eon-generated-reference.webp",
         "sourceSha256": "c8c3a187bcfd54490bb595ef7d348aebd9c40ed91a1be85a6f9c7d9868e8f000",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.210Z"
+        "appliedAt": "2026-08-31T00:14:56.879Z",
+        "outputSha256": "589294b31b325fe52719a62671f59503c321a9d1ec66acd302afcfcd9b0eb11a"
+      },
+      "sku": "GTI06-081",
+      "skuKey": "GTI06081",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "outer-cv-joint",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "outer-cv-joint"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "diámetro del sello",
+          "ABS y número de dientes de corona"
+        ]
       }
     }
   },
@@ -402,13 +655,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-27T21:59:49.826Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti03-003-punta-lado-rueda-gti-kia-rio-stylus-1-5-generated-reference.webp",
         "sourceSha256": "5c8242f00fb53ccfc0eb3abda3b048a9659e36f53a53e019e765ab0b38417229",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.211Z"
+        "appliedAt": "2026-08-31T00:14:56.892Z",
+        "outputSha256": "8f588f7e76d462407d000f965181d4cb55a26fe58ac1433d021da7afa3f32296"
+      },
+      "sku": "GTI03-003",
+      "skuKey": "GTI03003",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "outer-cv-joint",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "outer-cv-joint"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "diámetro del sello",
+          "ABS y número de dientes de corona"
+        ]
       }
     }
   },
@@ -430,13 +712,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-27T21:59:49.827Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti01-092-punta-lado-rueda-gti-renault-kwid-generated-reference.webp",
         "sourceSha256": "c18171afc6dd9b141294f17334df0503305b1e36f3a73645284eac60e6b20543",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.211Z"
+        "appliedAt": "2026-08-31T00:14:56.906Z",
+        "outputSha256": "de3d8f62e3a29c247ca10e2c26f77db089848642d8d6bef65e2b70b61739f2dc"
+      },
+      "sku": "GTI01-092",
+      "skuKey": "GTI01092",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "outer-cv-joint",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "outer-cv-joint"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "diámetro del sello",
+          "ABS y número de dientes de corona"
+        ]
       }
     }
   },
@@ -458,13 +769,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-27T21:59:49.827Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti03-072-punta-lado-rueda-gti-mazda-2-generated-reference.webp",
         "sourceSha256": "4fa44816f58fa00ab212d0634c94bb63cd9e0406541b441b57544d25d4eaad53",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.212Z"
+        "appliedAt": "2026-08-31T00:14:56.919Z",
+        "outputSha256": "7eeb28b82408121e2c61cb6e157b3c92dfcd89e3149545317cc89f6cca1409e8"
+      },
+      "sku": "GTI03-072",
+      "skuKey": "GTI03072",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "outer-cv-joint",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "outer-cv-joint"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "diámetro del sello",
+          "ABS y número de dientes de corona"
+        ]
       }
     }
   },
@@ -510,13 +850,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-27T22:01:15.344Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti06-037-tulipa-lado-caja-gti-kia-rio-xcite-cerato-forte-hyundai-i25-generated-reference.webp",
         "sourceSha256": "53885042bd18399aa0f09ef0f0e30d94006737e44f213cebae5974fd3b49f3a1",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.212Z"
+        "appliedAt": "2026-08-31T00:14:56.932Z",
+        "outputSha256": "86c8c24fd456a5eefc58807ca89ec2c02602984c193345eb593d9d55767bf7da"
+      },
+      "sku": "GTI06-037",
+      "skuKey": "GTI06037",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "inner-cv-tulip",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "inner-cv-tulip"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "diámetro del sello",
+          "ABS y número de dientes de corona"
+        ]
       }
     }
   },
@@ -562,13 +931,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-27T22:09:40.715Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-038-tulipa-lado-caja-gti-hyundai-vision-kia-sephia-generated-reference.webp",
         "sourceSha256": "60671748fc08fc468cf4e692af2ee638f38f4121c2e964e0915f4d8982aeb85e",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.213Z"
+        "appliedAt": "2026-08-31T00:14:56.945Z",
+        "outputSha256": "5deba3ca0992e6e5b7d965892c40440eb53319281ae7464ccd97834cc2c0628d"
+      },
+      "sku": "GTI-038",
+      "skuKey": "GTI038",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "inner-cv-tulip",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "inner-cv-tulip"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "diámetro del sello",
+          "ABS y número de dientes de corona"
+        ]
       }
     }
   },
@@ -825,13 +1223,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T00:28:56.799Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti01-042-punta-eje-l-r-master-ii-2-5-2010-2013-abs-51t-generated-reference.webp",
         "sourceSha256": "d602789c6e435369fa3cf0fea24b065599a1a38df20407ddfbbf497772cb7622",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.232Z"
+        "appliedAt": "2026-08-31T00:14:57.462Z",
+        "outputSha256": "1d649adcbaee9c6cc0fbc1ccd3a65b04da8e577cad4260add1e8e4eeed299326"
+      },
+      "sku": "GTI01-042",
+      "skuKey": "GTI01042",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "outer-cv-joint",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "outer-cv-joint"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -853,13 +1280,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T00:28:56.800Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti01-056-eje-homocinetico-izq-master-ii-2-5-2010-2013-generated-reference.webp",
         "sourceSha256": "fe71d3272c2825f4f7803a6dcbf648075a9c0e20a7235550ed1537cc435fba07",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.233Z"
+        "appliedAt": "2026-08-31T00:14:57.495Z",
+        "outputSha256": "82528618094b86d515d47c2bd1387fbb30d45a5b1a4b5538124991011bec4bb1"
+      },
+      "sku": "GTI01-056",
+      "skuKey": "GTI01056",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "cv-axle",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "cv-axle"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -881,13 +1337,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T00:28:56.800Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti01-057-eje-homocinetico-der-master-ii-2-5-2010-2013-generated-reference.webp",
         "sourceSha256": "93c3849d011defd34e7e518d24e7c383d7e628a85931bed7e8a6bd6d0ebe334d",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.234Z"
+        "appliedAt": "2026-08-31T00:14:57.504Z",
+        "outputSha256": "0d806434f3d109441caca207a34fa78dd37b05751b355e5e92e520021a19804e"
+      },
+      "sku": "GTI01-057",
+      "skuKey": "GTI01057",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "cv-axle",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "cv-axle"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -909,13 +1394,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T00:28:56.800Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti01-058-punta-eje-l-c-der-master-ii-2-5-2010-2013-generated-reference.webp",
         "sourceSha256": "adfaa5e032cd1a3b25594c464b94b83adf7c010af05de39e633c7ad228ff1e49",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.234Z"
+        "appliedAt": "2026-08-31T00:14:57.516Z",
+        "outputSha256": "d85a9dacea5b9a2a9c1b1996e7c555d74eb6c9108e9cc17ae6baf041d39bf704"
+      },
+      "sku": "GTI01-058",
+      "skuKey": "GTI01058",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "inner-cv-joint",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "inner-cv-joint"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -985,13 +1499,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T00:33:36.668Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0.001622,
         "sourceImage": "/catalogo-gti/generated/gti-gti01-067-punta-eje-l-r-trafic-1-9-2013-2014-generated-reference.webp",
         "sourceSha256": "dda39244dba78d901f52befb6f4ebf99abfe1e4b2e6c8626435dcc9bd6ebffb6",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.235Z"
+        "appliedAt": "2026-08-31T00:14:57.556Z",
+        "outputSha256": "a6bdda88f6a861f3a6223a3dff16b4063c497a17b02d2b65178d732ecdccc6c3"
+      },
+      "sku": "GTI01-067",
+      "skuKey": "GTI01067",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "outer-cv-joint",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "outer-cv-joint"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -1013,13 +1556,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T00:33:36.669Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti01-072-eje-homocinetico-der-master-iii-new-master-2-3-2014-2017-generated-reference.webp",
         "sourceSha256": "6e3f4b9108ce0cd4824c17858c8f8a368b7d5966403a2a9af58caaf1d9ece1b5",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.235Z"
+        "appliedAt": "2026-08-31T00:14:57.578Z",
+        "outputSha256": "0b291090fefba0101cf80fecf8fff28bdd3dd2d42cfa9db4d3179db009c625bf"
+      },
+      "sku": "GTI01-072",
+      "skuKey": "GTI01072",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "cv-axle",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "cv-axle"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -1041,13 +1613,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T00:33:36.669Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti01-073-punta-eje-l-r-trafic-ii-2-0-2014-2015-generated-reference.webp",
         "sourceSha256": "31f0b457f647438161f661f563a60c338f344d49c76e9739c4755a6ac7a51d51",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.236Z"
+        "appliedAt": "2026-08-31T00:14:57.587Z",
+        "outputSha256": "33ffadf0338ac29217db5375a2f165ca1208a873d6e07d7f33a4fb2843128d33"
+      },
+      "sku": "GTI01-073",
+      "skuKey": "GTI01073",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "outer-cv-joint",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "outer-cv-joint"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -1069,13 +1670,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T00:43:28.165Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti01-051-punta-eje-l-r-clio-campus-twingo-16v-generated-reference.webp",
         "sourceSha256": "6db90648cb75cf79d8792cdada2db3bfb2f3d017b6aa55d71b63a4965c103e77",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.233Z"
+        "appliedAt": "2026-08-31T00:14:57.487Z",
+        "outputSha256": "237aff18296a7ae023af14d929cd3e63ee4a58ed77ecfc2792650ab483b0261c"
+      },
+      "sku": "GTI01-051",
+      "skuKey": "GTI01051",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "outer-cv-joint",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "outer-cv-joint"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -1097,13 +1727,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T00:43:28.165Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti01-062-punta-eje-l-r-laguna-25-dts-generated-reference.webp",
         "sourceSha256": "c5910926e23383b6c40ee53945e0045c05634c0cb370df15e395ae929a679fd0",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.234Z"
+        "appliedAt": "2026-08-31T00:14:57.527Z",
+        "outputSha256": "689e6d930360d5a83720a88db70a0afd83d2219974a92998f6e9bafcf7f7d858"
+      },
+      "sku": "GTI01-062",
+      "skuKey": "GTI01062",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "outer-cv-joint",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "outer-cv-joint"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -1125,13 +1784,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T00:43:28.165Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti01-063-punta-eje-l-r-scenic-30-dts-generated-reference.webp",
         "sourceSha256": "90c5ac8cec958ba0604cd19f6cfb9ec136d5355c55747cbfc0f84f002650b28f",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.234Z"
+        "appliedAt": "2026-08-31T00:14:57.536Z",
+        "outputSha256": "2f1475cb97b67ca9270719adb9c800204c810f89f3b63b3b6b1885efed58e7cc"
+      },
+      "sku": "GTI01-063",
+      "skuKey": "GTI01063",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "outer-cv-joint",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "outer-cv-joint"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -1153,13 +1841,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T00:51:21.728Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti03-013-punta-eje-l-r-allegro-2000-28-dts-generated-reference.webp",
         "sourceSha256": "3ae1cc7c5504447a07b06b35cb942e1338a7e30f8166dae60fb8249c5148d38f",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.240Z"
+        "appliedAt": "2026-08-31T00:14:57.742Z",
+        "outputSha256": "7da33e9accd189c16ef39a994a2c8d394234c66781c70e7ff1c185d81f87ad4f"
+      },
+      "sku": "GTI03-013",
+      "skuKey": "GTI03013",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "outer-cv-joint",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "outer-cv-joint"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -1181,13 +1898,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T00:51:21.729Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti03-014-punta-eje-l-r-allegro-95-99-aut-30-dts-generated-reference.webp",
         "sourceSha256": "f762b1a516d1474b2d9abbf8f591875e71bf72c8e37e4c2cca6cd8e67bbef017",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.240Z"
+        "appliedAt": "2026-08-31T00:14:57.756Z",
+        "outputSha256": "4c90900b8d69f0824fe0bb80855f2779f6d94b297611b19757ae158d07c90289"
+      },
+      "sku": "GTI03-014",
+      "skuKey": "GTI03014",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "outer-cv-joint",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "outer-cv-joint"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -1209,13 +1955,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T00:51:21.729Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti03-015-punta-eje-l-r-allegro-95-99-22-dts-generated-reference.webp",
         "sourceSha256": "a17bbbb3a467cdfc6140408afe50efcf1a3ec42a245a826ce6fadc28222c2dc5",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.240Z"
+        "appliedAt": "2026-08-31T00:14:57.771Z",
+        "outputSha256": "3ecfb2c962d6e6495ed90b4b93f8066941613916b1826eb7b706d4c47133e082"
+      },
+      "sku": "GTI03-015",
+      "skuKey": "GTI03015",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "outer-cv-joint",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "outer-cv-joint"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -1237,13 +2012,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T01:04:33.141Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti03-016-punta-eje-l-c-m323-22-dts-generated-reference.webp",
         "sourceSha256": "fdce593fdd4de05c9cbdc95fb944ce8237abe57ef90bec615b78ac61dfdccd9e",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.241Z"
+        "appliedAt": "2026-08-31T00:14:57.783Z",
+        "outputSha256": "3351ad94867adfd8269de4f364df71fce222bdf7659ce7e635f0fd1f6ce13e33"
+      },
+      "sku": "GTI03-016",
+      "skuKey": "GTI03016",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "inner-cv-joint",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "inner-cv-joint"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -1265,13 +2069,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T01:04:33.142Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti03-017-punta-eje-l-c-m626-84-92-2-0-hembra-generated-reference.webp",
         "sourceSha256": "8a876d5ceed85a5bcb018eaf303466df136607e7e996b02d523e0b0cc65f44a2",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.241Z"
+        "appliedAt": "2026-08-31T00:14:57.795Z",
+        "outputSha256": "3a6caa9038787848d07dab330e4307ee8ba4e9c4d38f0047ad68e7fdf595146f"
+      },
+      "sku": "GTI03-017",
+      "skuKey": "GTI03017",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "inner-cv-joint",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "inner-cv-joint"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -1293,13 +2126,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T01:04:33.142Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti03-018-punta-eje-l-c-m626-84-92-2-0-macho-generated-reference.webp",
         "sourceSha256": "86449c1c28d22ca6252516d217fa50e5b5da55ed65ccfed0efdd46134018a1b2",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.242Z"
+        "appliedAt": "2026-08-31T00:14:57.804Z",
+        "outputSha256": "b6afbc670ad8d9c7665a2953941c074195e098a5f5f13c22c5856dd929eeb352"
+      },
+      "sku": "GTI03-018",
+      "skuKey": "GTI03018",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "inner-cv-joint",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "inner-cv-joint"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -1321,13 +2183,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T01:10:14.704Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti03-019-punta-eje-l-c-m626-84-92-1-8-hembra-generated-reference.webp",
         "sourceSha256": "3a569d2e3c51af0e6e0bb90cd938d08e5c2a4a402ab7c216dc6028d58c0c02ec",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.243Z"
+        "appliedAt": "2026-08-31T00:14:57.814Z",
+        "outputSha256": "67364363ec25ba4ad34a8b56829ae3be5ff3c337fa8790336f8acf4dc6f38d72"
+      },
+      "sku": "GTI03-019",
+      "skuKey": "GTI03019",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "inner-cv-joint",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "inner-cv-joint"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -1349,13 +2240,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T01:10:14.705Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti03-020-punta-eje-l-c-m626-84-92-1-8-macho-generated-reference.webp",
         "sourceSha256": "b8168b7cf1adfaf5b6039c19148df3cf106d46fa66c8e804834c68244b46e504",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.243Z"
+        "appliedAt": "2026-08-31T00:14:57.829Z",
+        "outputSha256": "588e2846c450b1510aece0873bd677e3761b96244e456a88867eddaee305f40d"
+      },
+      "sku": "GTI03-020",
+      "skuKey": "GTI03020",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "inner-cv-joint",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "inner-cv-joint"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -1377,13 +2297,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T01:18:49.446Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti03-001-punta-eje-l-c-mb2600-hembra-todos-26x25-generated-reference.webp",
         "sourceSha256": "67eb26b1626276218c904d82eea47970291ec40f65d095a4994b0ea3e78187ce",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.237Z"
+        "appliedAt": "2026-08-31T00:14:57.636Z",
+        "outputSha256": "478ee7386be995a6fd8578042ca14979000052a48bf36cccd9fcf3eb9f32e8cb"
+      },
+      "sku": "GTI03-001",
+      "skuKey": "GTI03001",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "inner-cv-joint",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "inner-cv-joint"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -1405,13 +2354,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T01:18:49.447Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti03-002-punta-eje-l-c-mb2600-macho-todos-26x25-generated-reference.webp",
         "sourceSha256": "07ef5a3d36b1593a66f9eb575ba05530f58090068032d120cd9ad28eef7cdbee",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.237Z"
+        "appliedAt": "2026-08-31T00:14:57.646Z",
+        "outputSha256": "52384f7821c760783b2d58da18e56f06dca832de49264811697ce06dcac07436"
+      },
+      "sku": "GTI03-002",
+      "skuKey": "GTI03002",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "inner-cv-joint",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "inner-cv-joint"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -1433,13 +2411,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T01:18:49.447Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti03-024-punta-eje-l-r-mb2600-00-pin-interno-26x25-generated-reference.webp",
         "sourceSha256": "8b3e475b4d0086b39def1140c50115c3a9327ece7ab9f2ca19d5f36efbfcd9f2",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.244Z"
+        "appliedAt": "2026-08-31T00:14:57.858Z",
+        "outputSha256": "d11c29e8e4f288f56c249ddb83b182d227c127d6fe0396b4405253637b0204ca"
+      },
+      "sku": "GTI03-024",
+      "skuKey": "GTI03024",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "outer-cv-joint",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "outer-cv-joint"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -1461,13 +2468,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T01:36:43.467Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti03-004-punta-eje-l-r-m323-t-th-pin-externo-24x30-generated-reference.webp",
         "sourceSha256": "5c51a340a3b380452f8ec538da3485abdec57e21f6c4eba3ab28e2cf135ba4e9",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.238Z"
+        "appliedAt": "2026-08-31T00:14:57.655Z",
+        "outputSha256": "24bd2e25bb709e69d4d736f8e01167f8d42bd7949a2c29529a45fd339394435c"
+      },
+      "sku": "GTI03-004",
+      "skuKey": "GTI03004",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "outer-cv-joint",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "outer-cv-joint"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -1489,13 +2525,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T01:36:43.467Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti03-008-punta-eje-l-r-m626-asahi-1-8-pin-interno-cuello-30-mm-26x23-generated-reference.webp",
         "sourceSha256": "0e198196c1c2024691b89c0a42cc9217dc17d6ee55d238aafd38bf587dc4c58c",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.239Z"
+        "appliedAt": "2026-08-31T00:14:57.703Z",
+        "outputSha256": "14c0802b19e88e4791787772bb97d84eb0f6d1ff1384c79541efcaab157cad52"
+      },
+      "sku": "GTI03-008",
+      "skuKey": "GTI03008",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "outer-cv-joint",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "outer-cv-joint"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -1517,13 +2582,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T01:36:43.467Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti03-010-punta-eje-l-r-m626-1-8-84-88-pin-interno-cuello-28-mm-26x23-generated-reference.webp",
         "sourceSha256": "b7d1612a82f72d1596769c5f8b1d30a45361678694cc1f6b755dd6674d0796fa",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.239Z"
+        "appliedAt": "2026-08-31T00:14:57.714Z",
+        "outputSha256": "66ce19626a09736e350b42c48ce116ee3183fc3c3af909d9791a43f442309d01"
+      },
+      "sku": "GTI03-010",
+      "skuKey": "GTI03010",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "outer-cv-joint",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "outer-cv-joint"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -1545,13 +2639,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T01:45:14.592Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti03-006-punta-eje-l-r-m626-matsuri-28x23-generated-reference.webp",
         "sourceSha256": "5b07064acdcc8b3af8b622c62355e5a6381b495c4574b8bbb00428fcbb834f7a",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.238Z"
+        "appliedAt": "2026-08-31T00:14:57.675Z",
+        "outputSha256": "cceefe37284c1e5f7086e7cbfc18f839a6243e3eea7570f484fed02e8ad6cb5e"
+      },
+      "sku": "GTI03-006",
+      "skuKey": "GTI03006",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "outer-cv-joint",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "outer-cv-joint"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -1573,13 +2696,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T01:45:14.592Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti03-007-punta-eje-l-r-m626-asahi-2-0-pin-interno-26x25-generated-reference.webp",
         "sourceSha256": "98d66242cb730c8f785df644a5afdd49b71a4adedfc675865a713bec91e47134",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.239Z"
+        "appliedAt": "2026-08-31T00:14:57.689Z",
+        "outputSha256": "817b89d66d385a19dc64719f34f9d15552a90910cbdaa3e187603656320582dc"
+      },
+      "sku": "GTI03-007",
+      "skuKey": "GTI03007",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "outer-cv-joint",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "outer-cv-joint"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -1601,13 +2753,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T01:45:14.592Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti03-029-punta-eje-l-r-m626-84-89-pin-externo-26x25-generated-reference.webp",
         "sourceSha256": "57a0f2bce5d9197784a28ed46a51fc1af7c6f004ee06f0afd74f6dba12acbe0e",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.245Z"
+        "appliedAt": "2026-08-31T00:14:57.917Z",
+        "outputSha256": "02404d549b2bf7900a0e2c20a6a6753b311ce3e2d56d0b2661a91d1c1da03902"
+      },
+      "sku": "GTI03-029",
+      "skuKey": "GTI03029",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "outer-cv-joint",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "outer-cv-joint"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -1629,13 +2810,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T01:53:18.743Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti03-031-punta-eje-l-r-m626-milenium-allegro-1-8-pin-interno-abs-44-dts-28x30-generated-reference.webp",
         "sourceSha256": "9f951ddf92842bcd3a177e8fd0c6215466ce9e777a52cd5ab57af74e5037dded",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.246Z"
+        "appliedAt": "2026-08-31T00:14:57.931Z",
+        "outputSha256": "29870d676e3a60c2fe54f50b8ba78b8306866ab15875eff02849bdd5a546806f"
+      },
+      "sku": "GTI03-031",
+      "skuKey": "GTI03031",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "outer-cv-joint",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "outer-cv-joint"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -1657,13 +2867,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T01:53:18.744Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti03-032-punta-eje-l-r-m626-milenium-mazda-3-28x23-generated-reference.webp",
         "sourceSha256": "8390b6d6687624918b5b071a308220de078d67652b3d07a0a4540bd2b258a272",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.246Z"
+        "appliedAt": "2026-08-31T00:14:57.945Z",
+        "outputSha256": "d6d86726fa443980b03c8609eee2705263484376d38f1b2c6ded787710b28d28"
+      },
+      "sku": "GTI03-032",
+      "skuKey": "GTI03032",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "outer-cv-joint",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "outer-cv-joint"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -1685,13 +2924,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T01:53:18.744Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti03-033-punta-eje-l-c-m323-ecuatoriano-24x21-generated-reference.webp",
         "sourceSha256": "89b59bed7f9e16981290828151319f176c7a4bb028cff7fd7641496799599d0f",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.246Z"
+        "appliedAt": "2026-08-31T00:14:57.959Z",
+        "outputSha256": "3329cbb47ffba2ca5e14b94752aa6aa707203fc1bb3369ca6e733fbc820bfc1b"
+      },
+      "sku": "GTI03-033",
+      "skuKey": "GTI03033",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "inner-cv-joint",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "inner-cv-joint"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -1713,13 +2981,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T02:02:10.857Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti01-030-punta-eje-l-r-megane-ii-pin-externo-23x32-generated-reference.webp",
         "sourceSha256": "c5bdacd4dd1215aa7947259d916e41d7d0ad1a513d9e2c9227c9d00dcb0d2ced",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.230Z"
+        "appliedAt": "2026-08-31T00:14:57.385Z",
+        "outputSha256": "61092952f94309506b5fb8d138ebf81c35a31a2e6a2909cb45f33a6c784f3088"
+      },
+      "sku": "GTI01-030",
+      "skuKey": "GTI01030",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "outer-cv-joint",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "outer-cv-joint"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -1741,13 +3038,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T02:02:10.858Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti01-031-punta-eje-l-r-megane-ii-pin-externo-23x33-generated-reference.webp",
         "sourceSha256": "5c8d45f75598b3b6a74c08e95c33ba136fa1901f6a1a3c6bb639bc1015f7849c",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.230Z"
+        "appliedAt": "2026-08-31T00:14:57.400Z",
+        "outputSha256": "a2ca8cb902f46c6cf5453aa9d644272aeecc2bf334cac2deaea644d55f72186a"
+      },
+      "sku": "GTI01-031",
+      "skuKey": "GTI01031",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "outer-cv-joint",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "outer-cv-joint"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -1769,13 +3095,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T02:02:10.858Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti01-033-punta-eje-l-r-kangoo-07-pin-interno-23x23-generated-reference.webp",
         "sourceSha256": "d227cfbacc9c877492954b05742155a021f04f3f8cf5bfc70a2f1b1fbdee5df3",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.231Z"
+        "appliedAt": "2026-08-31T00:14:57.412Z",
+        "outputSha256": "0e7936a6c87d987ea49e9e0a4fd44ca7128e90ad1c7c3c3133561649e7f0019b"
+      },
+      "sku": "GTI01-033",
+      "skuKey": "GTI01033",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "outer-cv-joint",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "outer-cv-joint"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -1797,13 +3152,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T02:11:00.377Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti01-002-punta-eje-l-r-r18-gtx-21-rx-2-0-pin-externo-23x25-generated-reference.webp",
         "sourceSha256": "dfea2aff2769c03b4a65d8a8e2bad14cc473d56d426bc56d3de98fd9b7755d4b",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.224Z"
+        "appliedAt": "2026-08-31T00:14:57.260Z",
+        "outputSha256": "c5b21dc2c80c8011c06244ca5a10cffae2cde3f243113dab3a7b228e8716b6c3"
+      },
+      "sku": "GTI01-002",
+      "skuKey": "GTI01002",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "outer-cv-joint",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "outer-cv-joint"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -1825,13 +3209,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T02:11:00.378Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti01-006-triceta-eje-r9-12-18-22-estrias-agujas-generated-reference.webp",
         "sourceSha256": "c3bf6318f550ff1fc98a2fc5037a5e31b1b8be794ec82867f057f04459998cc2",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.225Z"
+        "appliedAt": "2026-08-31T00:14:57.274Z",
+        "outputSha256": "40336047ec2c99eac2498599ad986c436a0682a3035dc52208a9308450e7e4a4"
+      },
+      "sku": "GTI01-006",
+      "skuKey": "GTI01006",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "tripod-joint",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "tripod-joint"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -1853,13 +3266,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T02:11:00.378Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti01-015-eje-homocinetico-r18-gtl-3-pernos-20x23-generated-reference.webp",
         "sourceSha256": "9caee4a8343e731cf0861cc9650f91721d15d86bc2e29b864f7de642f1a13fba",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.229Z"
+        "appliedAt": "2026-08-31T00:14:57.342Z",
+        "outputSha256": "15e73b6fe5d3cbd1f13745e8435ce08e20e0faba7bd61aa7eece32c5cdcd3682"
+      },
+      "sku": "GTI01-015",
+      "skuKey": "GTI01015",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "cv-axle",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "cv-axle"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -1881,13 +3323,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T02:19:21.924Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti01-010-eje-homocinetico-r12-20x23-generated-reference.webp",
         "sourceSha256": "9226115970c47dbe3d6960ded98983276cf60ec1e0ce685295d267a7ffb1cb0f",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.228Z"
+        "appliedAt": "2026-08-31T00:14:57.310Z",
+        "outputSha256": "dbe6b671c8462deba8d6cfb4c4f36419cdd2fbf73b132df32c6ddd14b7515eda"
+      },
+      "sku": "GTI01-010",
+      "skuKey": "GTI01010",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "cv-axle",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "cv-axle"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -1909,13 +3380,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T02:19:21.925Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti03-005-punta-eje-l-r-mb2600-01-bt-50-gas-con-rosca-26x25-generated-reference.webp",
         "sourceSha256": "acab7966c49341d29feca9b5b120d557c68c1e90b553d013f89d4868bf75054e",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.238Z"
+        "appliedAt": "2026-08-31T00:14:57.664Z",
+        "outputSha256": "b975da0c64b01dd63a71e477e89f6eb1829b433641dfa7c77337a1e0b046ba6d"
+      },
+      "sku": "GTI03-005",
+      "skuKey": "GTI03005",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "outer-cv-joint",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "outer-cv-joint"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -1937,13 +3437,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T02:19:21.925Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti03-049-punta-eje-l-r-kia-grand-carnival-mecanica-31x28-generated-reference.webp",
         "sourceSha256": "56916582729c0b49562d4af52ee8046d07aab8a7023af8894d47e2a7e841f8f2",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.250Z"
+        "appliedAt": "2026-08-31T00:14:58.065Z",
+        "outputSha256": "ed7cd32f4a7e629612b50aad2efbc9bfd2ba679fad4ba9bcb14a5e72b28d927e"
+      },
+      "sku": "GTI03-049",
+      "skuKey": "GTI03049",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "outer-cv-joint",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "outer-cv-joint"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -1965,13 +3494,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T02:28:15.542Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti03-040-punta-eje-l-r-mazda-3-automatico-de-tornillo-36x22-generated-reference.webp",
         "sourceSha256": "3b1b02ee368b4f558e7ba7f108364a83dc9f2b604749790bbbe672273020269e",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.247Z"
+        "appliedAt": "2026-08-31T00:14:57.985Z",
+        "outputSha256": "2f8738e1fcb8c2ea6be30ae469ccbc2b4c38f776a1a68495d45ce536f481f514"
+      },
+      "sku": "GTI03-040",
+      "skuKey": "GTI03040",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "outer-cv-joint",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "outer-cv-joint"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -1993,13 +3551,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T02:28:15.542Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti03-058-punta-eje-l-r-mazda-3-22-dts-con-abs-generated-reference.webp",
         "sourceSha256": "8696a4235ea0a7fe279912db2d79a95c6a8c4417d3768e0a7d0b4fe9016968c4",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.252Z"
+        "appliedAt": "2026-08-31T00:14:58.118Z",
+        "outputSha256": "0189a4425a08cd20680b71c604e7fa5badecc72cc298fa51973e899324860739"
+      },
+      "sku": "GTI03-058",
+      "skuKey": "GTI03058",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "outer-cv-joint",
+        "laterality": "unknown",
+        "abs": "yes",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "outer-cv-joint"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -2021,13 +3608,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T02:28:15.542Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti03-062-punta-eje-l-r-mazda-3-24-dts-generated-reference.webp",
         "sourceSha256": "f4d5462bb8a204d7c370a47e1c16cab553afd856ba494a7f98348d13156e37eb",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.252Z"
+        "appliedAt": "2026-08-31T00:14:58.154Z",
+        "outputSha256": "955530e3d31dd57040e9a62909499d8fa8de000f2611af113301419207fc2c23"
+      },
+      "sku": "GTI03-062",
+      "skuKey": "GTI03062",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "outer-cv-joint",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "outer-cv-joint"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -2049,13 +3665,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T02:37:55.028Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti03-065-punta-eje-l-c-izq-mazda-3-automatico-macho-26x23-generated-reference.webp",
         "sourceSha256": "eaeefe85230d54aa374fa8f5e52ee683ac1db9d00b498847b227f9c52050ecf7",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.254Z"
+        "appliedAt": "2026-08-31T00:14:58.187Z",
+        "outputSha256": "926da773a1c9a1938c0e8dd30db1fe5673d5dcdaea6577a11461da46a50d4da1"
+      },
+      "sku": "GTI03-065",
+      "skuKey": "GTI03065",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "inner-cv-joint",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "inner-cv-joint"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -2077,13 +3722,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T02:37:55.029Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti03-079-punta-eje-l-c-der-mazda-3-mazda-5-mecanico-hembra-28x24-generated-reference.webp",
         "sourceSha256": "d7befc9d8beedb4dea6b82bf15a13ef3c2caa8d416e2303b4ba42c570de1f1c5",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.256Z"
+        "appliedAt": "2026-08-31T00:14:58.265Z",
+        "outputSha256": "808d0cb1675b08d83e01f1f117a2aad1c15d78d83670a7176c9b798f90c405ff"
+      },
+      "sku": "GTI03-079",
+      "skuKey": "GTI03079",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "inner-cv-joint",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "inner-cv-joint"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -2105,13 +3779,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T02:37:55.029Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti03-080-punta-eje-l-c-izq-mazda-3-mazda-5-mecanico-macho-28x24-generated-reference.webp",
         "sourceSha256": "4f5f263a23dae45e977c8e32e31f56c5738f9bafb53e79fd7ff5e718543aa88e",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.257Z"
+        "appliedAt": "2026-08-31T00:14:58.276Z",
+        "outputSha256": "0c0cf19063687cdd6a6e46614f3312a39140c8ce763ab45e2b34ab9dd61dedf1"
+      },
+      "sku": "GTI03-080",
+      "skuKey": "GTI03080",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "inner-cv-joint",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "inner-cv-joint"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -2133,13 +3836,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T02:47:14.427Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti03-042-punta-eje-l-c-der-m626-milenium-manual-hembra-28x30-generated-reference.webp",
         "sourceSha256": "8a886dd03be084fd926f2a8fc1abe5cb73fe8aeaf7c6efd628af102d649436ca",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.248Z"
+        "appliedAt": "2026-08-31T00:14:58.007Z",
+        "outputSha256": "caa4bf7384ec4062b8552047caf93c941135f0da49f16d640385ae82db061303"
+      },
+      "sku": "GTI03-042",
+      "skuKey": "GTI03042",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "inner-cv-joint",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "inner-cv-joint"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -2161,13 +3893,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T02:47:14.427Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti03-043-punta-eje-l-c-der-m626-milenium-aut-hembra-28x23-generated-reference.webp",
         "sourceSha256": "e23c2bf2856a1992157c1c39a59708a655dd1ae27cd31a98363f3bb369edf29f",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.248Z"
+        "appliedAt": "2026-08-31T00:14:58.020Z",
+        "outputSha256": "ffc1111a4e13255185e463559048b212540230b9930e105044d97823c1ef56b7"
+      },
+      "sku": "GTI03-043",
+      "skuKey": "GTI03043",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "inner-cv-joint",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "inner-cv-joint"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -2189,13 +3950,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T02:47:14.427Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti03-044-punta-eje-l-c-izq-m626-milenium-aut-macho-26x23-generated-reference.webp",
         "sourceSha256": "c075e7c32baddc88bc014d0f8f6db17724c9d1f312ed96904b9981bc35ea43d2",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.249Z"
+        "appliedAt": "2026-08-31T00:14:58.033Z",
+        "outputSha256": "b98c2f4585d970aa71480ce50590313415a6252da3b8159e4567cbb82e4d112a"
+      },
+      "sku": "GTI03-044",
+      "skuKey": "GTI03044",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "inner-cv-joint",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "inner-cv-joint"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -2317,13 +4107,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T03:04:21.710Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti03-025-eje-homocinetico-der-m323-24x24-generated-reference.webp",
         "sourceSha256": "f997ccd9fe2cfecc34da48b0231e921073c3492230af9e9db9162c0878773431",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.245Z"
+        "appliedAt": "2026-08-31T00:14:57.872Z",
+        "outputSha256": "ed5f8151358290a86613aee273470d5dc8a02fcaa4e4473faf286a810df7fcf8"
+      },
+      "sku": "GTI03-025",
+      "skuKey": "GTI03025",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "cv-axle",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "cv-axle"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -2345,13 +4164,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T03:04:21.711Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti03-027-punta-eje-l-r-m626-asahi-pin-externo-26x25-generated-reference.webp",
         "sourceSha256": "0b7d344efddbb446cd4458d92ea0178b4fdbfc75dba4d3d968fb609b592ae845",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.245Z"
+        "appliedAt": "2026-08-31T00:14:57.902Z",
+        "outputSha256": "f84b81a81dcbdd0abe9c8ccde64e4785f3d4f6674ffc877ccbeff84e4470ec93"
+      },
+      "sku": "GTI03-027",
+      "skuKey": "GTI03027",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "outer-cv-joint",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "outer-cv-joint"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -2373,13 +4221,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T03:04:21.711Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti03-048-eje-homocinetico-der-mazda-bt-50-gas-macho-26x26-generated-reference.webp",
         "sourceSha256": "8dc6ae7473db19b32d15b9091065557903c8861f15fc7becf8085f1e14af568e",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.249Z"
+        "appliedAt": "2026-08-31T00:14:58.054Z",
+        "outputSha256": "9415145fb80d9536ea1ed23a8a7d95763c16a596eddf6dc49af5c0afffe3b21b"
+      },
+      "sku": "GTI03-048",
+      "skuKey": "GTI03048",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "cv-axle",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "cv-axle"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -2426,13 +4303,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T03:13:10.192Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti03-051-eje-homocinetico-izq-mazda-bt-50-2-5-diesel-2010-28x28-generated-reference.webp",
         "sourceSha256": "5580c9340fc7c85f9762bab616af6f52d8552bf550737c32b0cd88348cd3685e",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.250Z"
+        "appliedAt": "2026-08-31T00:14:58.072Z",
+        "outputSha256": "82b40fa7c877fde2240d6e59778ccf7a7f4d010fa0c6b99e8dcd98fb48495bfa"
+      },
+      "sku": "GTI03-051",
+      "skuKey": "GTI03051",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "cv-axle",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "cv-axle"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -2454,13 +4360,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T03:13:10.193Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti03-055-punta-eje-l-r-mazda-bt-50-diesel-2010-28x36-generated-reference.webp",
         "sourceSha256": "9e419cab653918e64d416ceb4ead24b81ff35b72b78945e118be6db9f3993bf9",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.251Z"
+        "appliedAt": "2026-08-31T00:14:58.102Z",
+        "outputSha256": "513238e86cb31e80d1ca5590dc06c8a652fb8b621197b3f52e4b4849ac871afa"
+      },
+      "sku": "GTI03-055",
+      "skuKey": "GTI03055",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "outer-cv-joint",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "outer-cv-joint"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -2482,13 +4417,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T03:21:57.957Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti03-068-punta-eje-l-c-m121-22x21-generated-reference.webp",
         "sourceSha256": "78a3a0f342a539b7a18657c68a1b96ca2abda05654cea2433d9dd598c378ef78",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.254Z"
+        "appliedAt": "2026-08-31T00:14:58.211Z",
+        "outputSha256": "54408ef7c043656500a8ffda9cfbf1274e463022d2d8507dc9999baf398e83c9"
+      },
+      "sku": "GTI03-068",
+      "skuKey": "GTI03068",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "inner-cv-joint",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "inner-cv-joint"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -2510,13 +4474,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T03:21:57.957Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti03-070-eje-homocinetico-izq-mazda-3-de-tornillo-automatico-36x26-generated-reference.webp",
         "sourceSha256": "da1a8429086af8a20b45f67a442cba5339cfcaf6ea594af9d9c669e1cf200ed3",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.255Z"
+        "appliedAt": "2026-08-31T00:14:58.232Z",
+        "outputSha256": "7411338fa1f13b08a1103e38c966cd1f2805e26ad629c2f00ed363423f77aeb2"
+      },
+      "sku": "GTI03-070",
+      "skuKey": "GTI03070",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "cv-axle",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "cv-axle"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -2538,13 +4531,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T03:21:57.957Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti03-075-eje-homocinetico-izq-mazda-3-mazda-3-all-new-triptonico-28x28-generated-reference.webp",
         "sourceSha256": "ad2be14004be0028155491f2b2b4f7700fbb9bafd3bc97dc4912672801e1faa5",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.255Z"
+        "appliedAt": "2026-08-31T00:14:58.242Z",
+        "outputSha256": "ec82a56ee9c3e7b575eb50bac601c6e7a4bc65e1f485317d7a94a3a1fd55f7bf"
+      },
+      "sku": "GTI03-075",
+      "skuKey": "GTI03075",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "cv-axle",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "cv-axle"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -2566,13 +4588,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T03:31:17.202Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti03-082-eje-homocinetico-der-mazda-3-de-tornillo-automatico-36x28-generated-reference.webp",
         "sourceSha256": "3dc5aaa9aa2824264114086a42b4935dd35a52b11ce312a17881a16ed7c26b2a",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.258Z"
+        "appliedAt": "2026-08-31T00:14:58.297Z",
+        "outputSha256": "21fdf899dbabb4994086198a656346f7fa2a15e10bb721660d05e33ae2783082"
+      },
+      "sku": "GTI03-082",
+      "skuKey": "GTI03082",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "cv-axle",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "cv-axle"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -2594,13 +4645,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T03:40:04.844Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti01-009-eje-homocinetico-der-r9-21x23-generated-reference.webp",
         "sourceSha256": "446103989d34b66720bd1715950ba708c3c776de70bdb2dd9d0a3315ac6bad52",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.227Z"
+        "appliedAt": "2026-08-31T00:14:57.298Z",
+        "outputSha256": "7acf39c5820ebc44ded4fc4f721da1ba5013a18361bc7b22b84d8075146fc897"
+      },
+      "sku": "GTI01-009",
+      "skuKey": "GTI01009",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "cv-axle",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "cv-axle"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -2622,13 +4702,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T03:40:04.844Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti01-022-eje-homocinetico-der-symbol-citius-reemplaza-carcaza-larga-21x23-generated-reference.webp",
         "sourceSha256": "c3b54c4fb475fb8ff35dd721b8eeb4364fd6eb2fd79ede1e5f2701660e06844c",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.229Z"
+        "appliedAt": "2026-08-31T00:14:57.354Z",
+        "outputSha256": "3b2b3a9ac1bbd1eb35c8cf272b55e389654f66f2dfea7ea0a5b1318edd1988fe"
+      },
+      "sku": "GTI01-022",
+      "skuKey": "GTI01022",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "inner-cv-joint",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "inner-cv-joint"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -2650,13 +4759,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T03:40:04.844Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti01-024-eje-homocinetico-izq-symbol-citius-21x30-generated-reference.webp",
         "sourceSha256": "112b094991c9e2bc382e3d6a16b1f6395fcae32d55d55caa403cb48bae245010",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.230Z"
+        "appliedAt": "2026-08-31T00:14:57.364Z",
+        "outputSha256": "976dd8a1b72ee5c59cf786ad0f759f9a0830b8ea7e47a07d7aa6cbbecc3bc8ef"
+      },
+      "sku": "GTI01-024",
+      "skuKey": "GTI01024",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "inner-cv-joint",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "inner-cv-joint"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -2678,13 +4816,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T03:40:04.844Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti01-025-eje-homocinetico-der-logan-2010-t-original-21x23-generated-reference.webp",
         "sourceSha256": "67175313caadc698873a00835700a0e862cf24ee67fefc50b43e2069c21739ab",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.230Z"
+        "appliedAt": "2026-08-31T00:14:57.373Z",
+        "outputSha256": "2ef0c37afa4792b866df574e780fea1a25a291c569ad9d6f25678fb63bdf8690"
+      },
+      "sku": "GTI01-025",
+      "skuKey": "GTI01025",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "cv-axle",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "cv-axle"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -2706,13 +4873,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T03:48:43.888Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti01-039-punta-eje-l-r-laguna-23x29-generated-reference.webp",
         "sourceSha256": "c08ee3aae966c9cdae32889e7820fbde025949ea3a436de4cba5129f1ba7455b",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.232Z"
+        "appliedAt": "2026-08-31T00:14:57.438Z",
+        "outputSha256": "ee765387cca1845a3dbd4d97c994540db7441ffc1029dd9487294f3c81f63c50"
+      },
+      "sku": "GTI01-039",
+      "skuKey": "GTI01039",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "outer-cv-joint",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "outer-cv-joint"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -2734,13 +4930,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T03:48:43.888Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti01-045-eje-homocinetico-der-duster-oroch-4x4-2-0-aut-25x26-generated-reference.webp",
         "sourceSha256": "8b5a23696669e30f3ef39dbec88abe9c9669e333fc5bfb4d78c43356ab75b36f",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.233Z"
+        "appliedAt": "2026-08-31T00:14:57.470Z",
+        "outputSha256": "ef03eee99e3b5a2f7d291006a179c50d78eb3597b407641d904f06afb0acb54b"
+      },
+      "sku": "GTI01-045",
+      "skuKey": "GTI01045",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "cv-axle",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "cv-axle"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -2762,13 +4987,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T03:48:43.888Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti01-074-punta-eje-l-r-logan-sandero-new-automatico-23x30-generated-reference.webp",
         "sourceSha256": "15f0b9aba49a312862a04c7879884e7bbca2cd8094a98fb2c57d6a98c5e30570",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.236Z"
+        "appliedAt": "2026-08-31T00:14:57.600Z",
+        "outputSha256": "14ede511109de66ca8581dcc7ffd79fe1af39269fa4b9abcd303467edc986ed9"
+      },
+      "sku": "GTI01-074",
+      "skuKey": "GTI01074",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "outer-cv-joint",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "outer-cv-joint"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -2790,13 +5044,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T03:56:38.076Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti02-001-punta-eje-l-r-d-max-3-0-2010-rodeo-pin-interno-17x33-generated-reference.webp",
         "sourceSha256": "8acdffd688a0350dd4cf00c8476ad45a96212ccd9be43d891fd334716a3f408a",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.236Z"
+        "appliedAt": "2026-08-31T00:14:57.613Z",
+        "outputSha256": "9c0a3edf69d6678fbd7970cf05c243fe00a9b7dee3e18ac88bf709b3f7acc6bc"
+      },
+      "sku": "GTI02-001",
+      "skuKey": "GTI02001",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "outer-cv-joint",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "outer-cv-joint"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -2818,13 +5101,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T03:56:38.077Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti02-002-eje-homocinetico-d-max-3-0-4x4-08-l-r-17x17-609-mm-generated-reference.webp",
         "sourceSha256": "1a5002cf8976943199c4514f8b041b21beef36f7d5b963e14ed6f814497b9e8f",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.236Z"
+        "appliedAt": "2026-08-31T00:14:57.624Z",
+        "outputSha256": "69a89e8f8cce0fcb08603a75a40b4e9abc0ef3a7125a1623a435887d5bcc95cd"
+      },
+      "sku": "GTI02-002",
+      "skuKey": "GTI02002",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "outer-cv-joint",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "outer-cv-joint"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -2846,13 +5158,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T04:09:22.151Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti03-012-punta-eje-l-r-allegro-1-3-00-26x21x56-pin-interno-generated-reference.webp",
         "sourceSha256": "ba4c0033365b3e09183c8554b0f2263fe53a03679996f6a96c78cf24680e950a",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.240Z"
+        "appliedAt": "2026-08-31T00:14:57.727Z",
+        "outputSha256": "55d5f0c13e2f1abb63316ba6772494842902f6aac8b80ab4af3d1342c7b2e54b"
+      },
+      "sku": "GTI03-012",
+      "skuKey": "GTI03012",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "outer-cv-joint",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "outer-cv-joint"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -2874,13 +5215,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T04:09:22.152Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti03-022-punta-eje-l-r-ford-fiesta-1-3-25x20x57-pin-externo-generated-reference.webp",
         "sourceSha256": "8f3cef31c70c7fe212c0b201ba0d9a9f35e7af302be7fde7687c6d1a4362c888",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.244Z"
+        "appliedAt": "2026-08-31T00:14:57.843Z",
+        "outputSha256": "a681aa2d6bd208451105966de855ef70d438efe51ead8a96dd25f627f007dc1a"
+      },
+      "sku": "GTI03-022",
+      "skuKey": "GTI03022",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "outer-cv-joint",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "outer-cv-joint"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -2902,13 +5272,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T04:09:22.152Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti03-039-punta-eje-l-r-mazda-6-2-0-2-3-2002-2008-28x32x62-abs-44-pulsos-tope-generated-reference.webp",
         "sourceSha256": "7cd1256daa4b7f3f33458417162c4b6801bf69af001e743258d0792a0bd71d6e",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.247Z"
+        "appliedAt": "2026-08-31T00:14:57.972Z",
+        "outputSha256": "dc643f3ac39dfc9b5932471d804d61a7a371a1233db0bccc42454ab6386f7250"
+      },
+      "sku": "GTI03-039",
+      "skuKey": "GTI03039",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "outer-cv-joint",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "outer-cv-joint"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -2930,13 +5329,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T04:21:05.809Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti03-041-punta-eje-l-c-izq-m626-milenium-00-manual-28x30x35-macho-trebol-generated-reference.webp",
         "sourceSha256": "3f0bae91b6830316bc954c95dfbbddd9b9e9246ecfde4f41eab6eff9bc4cf392",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.247Z"
+        "appliedAt": "2026-08-31T00:14:57.996Z",
+        "outputSha256": "45bffa011c50710f0d78fbadefea463d97aa2f77bff2257ddad6d18136e95d62"
+      },
+      "sku": "GTI03-041",
+      "skuKey": "GTI03041",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "inner-cv-joint",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "inner-cv-joint"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -2958,13 +5386,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T04:21:05.810Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti03-054-punta-eje-l-c-der-mazda-bt-50-2-5-diesel-2006-2014-ford-ranger-2-5-2008-generated-reference.webp",
         "sourceSha256": "582e174db05524d9159a8cce214357c4277062206699e7a9d865b1172e7397c5",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.251Z"
+        "appliedAt": "2026-08-31T00:14:58.092Z",
+        "outputSha256": "f5047810fe2c0c5a88504ae97cc047b2f776c676776250c2ce8c8112eb619d4a"
+      },
+      "sku": "GTI03-054",
+      "skuKey": "GTI03054",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "inner-cv-joint",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "inner-cv-joint"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -2986,13 +5443,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T04:21:05.810Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti03-060-punta-eje-l-c-der-mazda-6-2-3-28x23x43-hembra-trebol-generated-reference.webp",
         "sourceSha256": "46e8d1681867aeb611fcd1fbf0b1e3918d29bf7116e55973dff1b14c9b4b7bf0",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.252Z"
+        "appliedAt": "2026-08-31T00:14:58.143Z",
+        "outputSha256": "ec16447e7c8bfb17cf32492654de3968f9cb53cc4f0286e15bf25ae100e748a3"
+      },
+      "sku": "GTI03-060",
+      "skuKey": "GTI03060",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "inner-cv-joint",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "inner-cv-joint"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -3014,13 +5500,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T04:30:59.090Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti03-064-punta-eje-l-c-der-mazda-allegro-1-3-1-6-2002-2009-28x29x43-hembra-generated-reference.webp",
         "sourceSha256": "20fa7321e1ce94be99f36706cd3fb24cb50fe6089877f8ca916ded7cba1ab395",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.253Z"
+        "appliedAt": "2026-08-31T00:14:58.176Z",
+        "outputSha256": "8b83dd8e2ab7091fa4ba9354c3a5e541ae4682df388fe8b7be76e3605f59e17f"
+      },
+      "sku": "GTI03-064",
+      "skuKey": "GTI03064",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "inner-cv-joint",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "inner-cv-joint"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -3042,13 +5557,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T04:30:59.091Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti03-069-punta-eje-l-r-mazda-demio-96-24x19x52-con-abs-generated-reference.webp",
         "sourceSha256": "26fa93fea57d7cce9dc7d88ea6bd357d6d0d3fbd414a91277c8d87e7ed3aa8d6",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.255Z"
+        "appliedAt": "2026-08-31T00:14:58.222Z",
+        "outputSha256": "2359515a58b3d79a00c78d1f4334cddaefade50e0a24de896b6ad5e735fe5732"
+      },
+      "sku": "GTI03-069",
+      "skuKey": "GTI03069",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "outer-cv-joint",
+        "laterality": "unknown",
+        "abs": "yes",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "outer-cv-joint"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -3070,13 +5614,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T04:30:59.091Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti03-085-punta-eje-l-r-mazda-bt-50-3-2-ford-ranger-2-5-diesel-4x4-28x26-pin-exter-generated-reference.webp",
         "sourceSha256": "898cb777c88bd1268886aa9aa1dbd5550d6510c571ea4cd372bc316a4ebfc549",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.260Z"
+        "appliedAt": "2026-08-31T00:14:58.328Z",
+        "outputSha256": "0e08523fba990c80c36df3f0bd95059ccfe0e9edbae611862ef0ebac712b5793"
+      },
+      "sku": "GTI03-085",
+      "skuKey": "GTI03085",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "outer-cv-joint",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "outer-cv-joint"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -3201,13 +5774,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T04:49:21.345Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti01-007-eje-homocinetico-r4-6-23x22-semieje-completo-sin-abs-generated-reference.webp",
         "sourceSha256": "31fc5e6c5953fdcedc9def001b20f5a4dca1e3bf461705b0c42390d8493dc462",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.226Z"
+        "appliedAt": "2026-08-31T00:14:57.285Z",
+        "outputSha256": "da7e61b0f02bf45371f8cedcf781b4f02f30bec3b90a59d0a9c7fb7a85ca3c84"
+      },
+      "sku": "GTI01-007",
+      "skuKey": "GTI01007",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "cv-axle",
+        "laterality": "unknown",
+        "abs": "no",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "cv-axle"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -3229,13 +5831,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T04:49:21.346Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti01-014-eje-homocinetico-r18-gtx-4-pernos-23x23-generated-reference.webp",
         "sourceSha256": "593e3fe7916cf8fe2cdc1204d8c9115b5b6703d97151054b808a1ddbf7ebd73c",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.228Z"
+        "appliedAt": "2026-08-31T00:14:57.331Z",
+        "outputSha256": "ac7edff2af9d0e9a90fc22453bd52ae37296d602ae7197a09fee01beb0aa5f4c"
+      },
+      "sku": "GTI01-014",
+      "skuKey": "GTI01014",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "cv-axle",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "cv-axle"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -3257,13 +5888,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T04:49:21.346Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti01-036-eje-homocinetico-der-logan-2011-23x23-generated-reference.webp",
         "sourceSha256": "76486080cccb93b84d8e438b4d6602c6dd53d039c3f7350893f0ca8cfa572763",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.231Z"
+        "appliedAt": "2026-08-31T00:14:57.423Z",
+        "outputSha256": "c4e1c2bf138e123b8f117c022e052a15f06b702ca4cba8e2ed97780aa4efda62"
+      },
+      "sku": "GTI01-036",
+      "skuKey": "GTI01036",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "cv-axle",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "cv-axle"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -3935,13 +6595,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T05:12:36.761Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti04-028-punta-eje-l-r-spark-cronos-dw-matiz-tico-23x19-generated-reference.webp",
         "sourceSha256": "a057b41bb7b1a9fa42d6c11f291ddfda0e46f779f0aa96f970a783e48154b33b",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.261Z"
+        "appliedAt": "2026-08-31T00:14:58.372Z",
+        "outputSha256": "a607987f69c00c38ceac81f1def92d0533eada2654f54358671fb95bfa607695"
+      },
+      "sku": "GTI04-028",
+      "skuKey": "GTI04028",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "outer-cv-joint",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "outer-cv-joint"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -4563,13 +7252,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T14:38:54.821Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti04-063-eje-homocinetico-der-spark-gt-sin-abs-2017-22x22-generated-reference.webp",
         "sourceSha256": "f0c6476b857572e8c22f47668c9b2264401d4f35b01cb06a4623684d29a8befd",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.263Z"
+        "appliedAt": "2026-08-31T00:14:58.405Z",
+        "outputSha256": "edd30d5da49f7eb768355206423d90402860ef7112b613547d9fb02dfde40a82"
+      },
+      "sku": "GTI04-063",
+      "skuKey": "GTI04063",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "cv-axle",
+        "laterality": "unknown",
+        "abs": "no",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "cv-axle"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -4591,13 +7309,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T14:38:54.822Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti04-064-eje-homocinetico-izq-spark-gt-sin-abs-2017-22x22-generated-reference.webp",
         "sourceSha256": "5ca3e4dbbfab37ce59c25daf9c3479e0cc54998a0e413659d53553a935944cdd",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.263Z"
+        "appliedAt": "2026-08-31T00:14:58.412Z",
+        "outputSha256": "1c2ab2f1082c86c192cca3e08d0c61cb325c2ffaeaec70670052c9023c0e4e57"
+      },
+      "sku": "GTI04-064",
+      "skuKey": "GTI04064",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "cv-axle",
+        "laterality": "unknown",
+        "abs": "no",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "cv-axle"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -5294,13 +8041,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T14:56:37.604Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti05-001-punta-eje-l-r-dw-espero-cielo-glx-nubira-33x29-generated-reference.webp",
         "sourceSha256": "eec86b4802bfbc6d9665743d193b7a22b02a34b4a31277c298cfbdec2d4bc1ac",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.267Z"
+        "appliedAt": "2026-08-31T00:14:58.553Z",
+        "outputSha256": "dbedb785fc51d76038140ff98c15c6b39ac9fbc9ac5b5028f04429f75c79d86f"
+      },
+      "sku": "GTI05-001",
+      "skuKey": "GTI05001",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "outer-cv-joint",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "outer-cv-joint"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -5522,13 +8298,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T15:05:01.718Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti06-009-eje-homocinetico-der-hd-accent-verna-indu-25x25-generated-reference.webp",
         "sourceSha256": "2561729941032f6aa053b35e10773d56694a9950f24b46e1f08e7965b1a8b460",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.267Z"
+        "appliedAt": "2026-08-31T00:14:58.562Z",
+        "outputSha256": "75209651dbe976cab8b016162fb3253ef5834fd244e154f57860610204ca930a"
+      },
+      "sku": "GTI06-009",
+      "skuKey": "GTI06009",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "cv-axle",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "cv-axle"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -5550,13 +8355,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T15:05:01.719Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti06-011-punta-eje-l-r-hd-accent-verna-gyro-vision-25x30-pin-ext-generated-reference.webp",
         "sourceSha256": "cd7a2dc73a377c67dffeee2181b2d0afc203918cda26110c646191402cea44bf",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.267Z"
+        "appliedAt": "2026-08-31T00:14:58.585Z",
+        "outputSha256": "48292d09a118b34f239d8b75f4291be3e75a6a9d2dcb53ec44a72cc850e2fb47"
+      },
+      "sku": "GTI06-011",
+      "skuKey": "GTI06011",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "outer-cv-joint",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "outer-cv-joint"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -5703,13 +8537,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T15:13:16.168Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti06-022-eje-homocinetico-izq-hd-vision-kia-rio-xcite-sephia-25x25-generated-reference.webp",
         "sourceSha256": "455c81fb8d599101dbb12d84908c6ee0e6f994635f239b7bd837832fc241f922",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.268Z"
+        "appliedAt": "2026-08-31T00:14:58.606Z",
+        "outputSha256": "8faef3c65928c99e09cd9a36334b3e40f49bf9876e87954c5f54b226c4ccf266"
+      },
+      "sku": "GTI06-022",
+      "skuKey": "GTI06022",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "cv-axle",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "cv-axle"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -5731,13 +8594,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T15:13:16.168Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti06-023-eje-homocinetico-der-hd-vision-kia-rio-xcite-sephia-25x25-generated-reference.webp",
         "sourceSha256": "df6e322073d3e8bee4afdc1782ab4205d3be5d49bef593f7453d5e63f5e90ca7",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.268Z"
+        "appliedAt": "2026-08-31T00:14:58.615Z",
+        "outputSha256": "b1817f9f0b06508a06a801087ea0e3d73530d60646b8b7291f238dfd5b3a0cc7"
+      },
+      "sku": "GTI06-023",
+      "skuKey": "GTI06023",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "cv-axle",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "cv-axle"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -5759,13 +8651,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T15:13:16.168Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti06-024-eje-homocinetico-izq-kia-rio-stylus-24x26-generated-reference.webp",
         "sourceSha256": "549aedee22ff16c5174cdfc3d87ad74228c89c24590c0b7a5c9c75fe04c4ab4c",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.269Z"
+        "appliedAt": "2026-08-31T00:14:58.625Z",
+        "outputSha256": "d21707761bc9ef9360b6b82e2402aa27e8a106246e15ef9835f7913707c43890"
+      },
+      "sku": "GTI06-024",
+      "skuKey": "GTI06024",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "cv-axle",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "cv-axle"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -5787,13 +8708,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T15:13:16.168Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti06-029-eje-homocinetico-der-hd-i-10-24x25-generated-reference.webp",
         "sourceSha256": "d917979f7bf814d89d44f4a47b21a9af41ac0d718370dc66d4dac6fcbcfbf026",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.269Z"
+        "appliedAt": "2026-08-31T00:14:58.636Z",
+        "outputSha256": "a9b75d7c2b4cfcc2f4bff6e308b044faa9c88b18f419d2a060bc3871608b9924"
+      },
+      "sku": "GTI06-029",
+      "skuKey": "GTI06029",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "cv-axle",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "cv-axle"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -5815,13 +8765,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T15:13:16.168Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti06-035-punta-eje-l-r-hd-santa-fe-2010-2012-36x30-generated-reference.webp",
         "sourceSha256": "9d4ecf20b36f0d7ff0e62607f5183d115d905c9c601ddf60b389968c036daf65",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.269Z"
+        "appliedAt": "2026-08-31T00:14:58.650Z",
+        "outputSha256": "827b37410eb2f96b36bd792e998c8c36f32652aa7c8209e80acf65544ff0d537"
+      },
+      "sku": "GTI06-035",
+      "skuKey": "GTI06035",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "outer-cv-joint",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "outer-cv-joint"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -6043,13 +9022,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T15:22:22.006Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti06-042-punta-eje-l-r-kia-sportage-revolution-hd-tucson-ix-35-4x4-4x2-mecanica-p-generated-reference.webp",
         "sourceSha256": "98992cde76a43084282c3dabc32582d6c57c133e57ca1c81d1d78b460452991a",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.270Z"
+        "appliedAt": "2026-08-31T00:14:58.676Z",
+        "outputSha256": "58b521e1d8dc29dda99b9a7ff52f79e42d10a3677d2932f76ac7cb168be70b4d"
+      },
+      "sku": "GTI06-042",
+      "skuKey": "GTI06042",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "outer-cv-joint",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "outer-cv-joint"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -6271,13 +9279,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T15:28:25.623Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti06-062-punta-eje-l-r-hd-tucson-ix-35-diesel-4x2-4x4-mecanica-kia-sportage-2-0-3-generated-reference.webp",
         "sourceSha256": "763a0619a5892a3d36953a0d09f38b3a9a8cb5883fd0a2ddb117c2b95d491489",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.271Z"
+        "appliedAt": "2026-08-31T00:14:58.714Z",
+        "outputSha256": "a74338bc55dea237ef0103e8864ecab8bc2120a8b4ea3a9dffcb21cb5ca451dc"
+      },
+      "sku": "GTI06-062",
+      "skuKey": "GTI06062",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "outer-cv-joint",
+        "laterality": "unknown",
+        "abs": "no",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "outer-cv-joint"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -6499,13 +9536,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T15:38:29.362Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti06-065-punta-eje-lado-rueda-l-r-hyundai-tucson-kia-new-sportage-gasolina-4x2-4x-generated-reference.webp",
         "sourceSha256": "766a39be834e1483804ec1879a74bc8d8e11d4ca97ce8a54c113766d965f6371",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.271Z"
+        "appliedAt": "2026-08-31T00:14:58.732Z",
+        "outputSha256": "27a121acdd2fc77031392acb07cb67b9989c1be568551ffb44fb001c8b920808"
+      },
+      "sku": "GTI06-065",
+      "skuKey": "GTI06065",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "outer-cv-joint",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "outer-cv-joint"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -6527,13 +9593,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T15:38:29.363Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti06-066-eje-homocinetico-completo-izquierdo-hyundai-grand-i-10-1-0-1-2-oem-49500-generated-reference.webp",
         "sourceSha256": "e9ae19816b775fd2744e6e9b27e73420192136b72d9dc4a18b0052471369c55f",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.271Z"
+        "appliedAt": "2026-08-31T00:14:58.739Z",
+        "outputSha256": "0713600a1d31a8810739fde5134a7ce67dbaf6bcfb4f454cd0b3beb062ba0392"
+      },
+      "sku": "GTI06-066",
+      "skuKey": "GTI06066",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "cv-axle",
+        "laterality": "left",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "cv-axle"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -6755,13 +9850,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T15:45:24.166Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti07-020-punta-eje-lado-rueda-l-r-kia-picanto-i-ii-ion-morning-y-ford-festiva-1-3-generated-reference.webp",
         "sourceSha256": "e6da3fef4a2c79de48cf4cd327e591ed5d3283a10c48529b8bc41bef03cae61d",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.273Z"
+        "appliedAt": "2026-08-31T00:14:58.773Z",
+        "outputSha256": "cd58bedff92f765204360c1c7ad17f99d8d79963f6f17bbf82ffebf86b93d982"
+      },
+      "sku": "GTI07-020",
+      "skuKey": "GTI07020",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "outer-cv-joint",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "outer-cv-joint"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -7008,13 +10132,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T15:51:33.666Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti07-032-punta-eje-lado-caja-kia-picanto-1-1-i-ii-y-picanto-ion-hasta-2018-25x20-generated-reference.webp",
         "sourceSha256": "1c65a28dbe9be7c63e852cc2192db0dc9766020022063c3486194876b1ba97a1",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.273Z"
+        "appliedAt": "2026-08-31T00:14:58.789Z",
+        "outputSha256": "1b927360c9f4b3fcf616cfa16a2e96002621db668474348403cf4b95263a896a"
+      },
+      "sku": "GTI07-032",
+      "skuKey": "GTI07032",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "inner-cv-joint",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "inner-cv-joint"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -9911,13 +13064,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T17:17:02.868Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti01-012-punta-eje-l-c-der-kangoo-generated-reference.webp",
         "sourceSha256": "bbe18fe2af2b304a29060376fc33844cf27fe052b770a683f786dc53aa65fe37",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.228Z"
+        "appliedAt": "2026-08-31T00:14:57.322Z",
+        "outputSha256": "998bfbce37b1c29bb096a0048a1f59738b89f352cf6d662103d769d929cdd94c"
+      },
+      "sku": "GTI01-012",
+      "skuKey": "GTI01012",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "inner-cv-joint",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "inner-cv-joint"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -9939,13 +13121,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T17:17:02.869Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti01-040-eje-homocinetico-der-megane-con-abs-generated-reference.webp",
         "sourceSha256": "ea9bc7416f65c5ef0ea8c385f061c5ac7d98a35e992ee42493151c19eb87838b",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.232Z"
+        "appliedAt": "2026-08-31T00:14:57.449Z",
+        "outputSha256": "58aa26689ee0849ba0b5f01348f997750868b9e67a92625c432f7473be47dd06"
+      },
+      "sku": "GTI01-040",
+      "skuKey": "GTI01040",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "cv-axle",
+        "laterality": "unknown",
+        "abs": "yes",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "cv-axle"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -9967,13 +13178,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T17:17:02.869Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti01-046-eje-homocinetico-izq-clio-campus-generated-reference.webp",
         "sourceSha256": "602695b987217db7dddf69df06383ca9664f5b31fbbcf8cfda3a6d708176f19c",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.233Z"
+        "appliedAt": "2026-08-31T00:14:57.478Z",
+        "outputSha256": "7bb5bd8c3f42a6b2f8f0b5b55c45974b03070f41c43ce19afb147a151d8f8fad"
+      },
+      "sku": "GTI01-046",
+      "skuKey": "GTI01046",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "cv-axle",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "cv-axle"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -9995,13 +13235,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T17:17:02.869Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti01-066-eje-homocinetico-izq-clio-i-generated-reference.webp",
         "sourceSha256": "0942ea7de16afb64c33068a6f55134282e3bcda0a4a9d50d452c3eaaedf34aac",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.235Z"
+        "appliedAt": "2026-08-31T00:14:57.545Z",
+        "outputSha256": "8a97f0ab846f2c4a2bd59179bddf5a662d7ab5aaff5517d27cf505eafa081a01"
+      },
+      "sku": "GTI01-066",
+      "skuKey": "GTI01066",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "cv-axle",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "cv-axle"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -10023,13 +13292,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T17:19:35.433Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti01-070-eje-homocinetico-izq-trafic-1-9-2013-2014-generated-reference.webp",
         "sourceSha256": "cd917878c51a95516926e3eee4537b8b03071798c8cb19eb48ccde7d110774d9",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.235Z"
+        "appliedAt": "2026-08-31T00:14:57.566Z",
+        "outputSha256": "5555e513ed4863b2c7e3fa09ebd486d10b3d55c9b284e6a5aacb5ba7fe4d4226"
+      },
+      "sku": "GTI01-070",
+      "skuKey": "GTI01070",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "cv-axle",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "cv-axle"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -10051,13 +13349,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T17:19:35.434Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti03-026-eje-homocinetico-izq-m323-generated-reference.webp",
         "sourceSha256": "21a7d6a59874b9d5d01b29b5660f1d1ffa0b840a6ebcba55ff80ab771a4e5601",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.245Z"
+        "appliedAt": "2026-08-31T00:14:57.886Z",
+        "outputSha256": "7b8912d18475e34dc837775274af687e4ba1dba2c9822f8151e8d38e4927031f"
+      },
+      "sku": "GTI03-026",
+      "skuKey": "GTI03026",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "cv-axle",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "cv-axle"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -10079,13 +13406,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T17:19:35.434Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti03-047-eje-homocinetico-izq-mazda-bt-50-gas-hembra-generated-reference.webp",
         "sourceSha256": "30a097c86711abb33feca8b4a0fbd56ca1906c879649cc1efa6d504f431dd2c9",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.249Z"
+        "appliedAt": "2026-08-31T00:14:58.043Z",
+        "outputSha256": "ac307de81ea2bf6b576e93cd4fe3af223522515abb68d8c323d8fc2daa0ecd6c"
+      },
+      "sku": "GTI03-047",
+      "skuKey": "GTI03047",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "cv-axle",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "cv-axle"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -10107,13 +13463,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T17:19:35.434Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti03-052-eje-homocinetico-der-mazda-bt-50-diesel-2010-generated-reference.webp",
         "sourceSha256": "79dd88df7d562e9e483064ab1d3eb47b3095272ad36b2a627e6ff591bedf3270",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.250Z"
+        "appliedAt": "2026-08-31T00:14:58.079Z",
+        "outputSha256": "b0b803f001b74a5d8dd9ade9c6aeb61c8f2e43bab72a4a1183e30893d18d8039"
+      },
+      "sku": "GTI03-052",
+      "skuKey": "GTI03052",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "cv-axle",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "cv-axle"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -10135,13 +13520,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T17:23:32.126Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti03-057-eje-interconeccion-mb2600-bt-50-gasolina-generated-reference.webp",
         "sourceSha256": "0d850e2e8877bf9c03e356e72c4e281b6fe6c71b03ac3e6ac6a2f23401dd1deb",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.251Z"
+        "appliedAt": "2026-08-31T00:14:58.109Z",
+        "outputSha256": "db0af5c1875edb3cc475a13ee3279a69f5781ed09887eed65e05a115be36602d"
+      },
+      "sku": "GTI03-057",
+      "skuKey": "GTI03057",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "intermediate-shaft",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "intermediate-shaft"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -10163,13 +13577,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T17:23:32.126Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti03-059-punta-eje-l-r-mazda-6-ford-fusion-33-dts-pin-ext-generated-reference.webp",
         "sourceSha256": "0666f59d103642a7862eb2e39c7a73e47a3249e1545dfe8d426cb88c8dbeaf2e",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.252Z"
+        "appliedAt": "2026-08-31T00:14:58.131Z",
+        "outputSha256": "733bd18ffd077e279aa64ded10534da27a56edab4f4284fe962f2d2ed911443f"
+      },
+      "sku": "GTI03-059",
+      "skuKey": "GTI03059",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "outer-cv-joint",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "outer-cv-joint"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -10191,13 +13634,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T17:23:32.126Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti03-063-eje-interconeccion-mazda-bt-50-diesel-generated-reference.webp",
         "sourceSha256": "71956a7a36e5665be29d17e16305ab57fc1f07bd6cb445985ba42edd2672022b",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.253Z"
+        "appliedAt": "2026-08-31T00:14:58.164Z",
+        "outputSha256": "df09dbf40bbd33ce3a3fe0e55aa61a5c13fe97dd9243fc5246694e8c4eddbf28"
+      },
+      "sku": "GTI03-063",
+      "skuKey": "GTI03063",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "intermediate-shaft",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "intermediate-shaft"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -10219,13 +13691,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T17:23:32.126Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti03-067-eje-homocinetico-izq-mazda-3-manual-generated-reference.webp",
         "sourceSha256": "aeff97597ae0166a410230c3b672c13ba310328f96e0891292e15b2930892052",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.254Z"
+        "appliedAt": "2026-08-31T00:14:58.198Z",
+        "outputSha256": "acf47502b7e2d975363fa2000a85e91db6d4eee35b51db9bb94c583d72caa377"
+      },
+      "sku": "GTI03-067",
+      "skuKey": "GTI03067",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "cv-axle",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "cv-axle"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -10247,13 +13748,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T17:23:32.127Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti03-076-eje-homocinetico-der-mazda-626-asahi-2-0-generated-reference.webp",
         "sourceSha256": "8e61040517fbe2250831dc27e1514a84e400947a279c76d99208f2bfd854caa7",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.256Z"
+        "appliedAt": "2026-08-31T00:14:58.249Z",
+        "outputSha256": "ce473b13afb5ebb1da0d2ca6a82e1c13e0d98562f6dc89bed588e5b6b38e7f24"
+      },
+      "sku": "GTI03-076",
+      "skuKey": "GTI03076",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "cv-axle",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "cv-axle"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -10275,13 +13805,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T17:23:32.127Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti03-077-eje-homocinetico-izq-mazda-626-asahi-2-0-generated-reference.webp",
         "sourceSha256": "154bce8c3507f1c3fad6af8935a9ffdb6774db3e066c21adab351c6678a34b6f",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.256Z"
+        "appliedAt": "2026-08-31T00:14:58.257Z",
+        "outputSha256": "cb58907c4a2839614aa42840e346ae24f7027c0d2091773fdcfa09992102af3c"
+      },
+      "sku": "GTI03-077",
+      "skuKey": "GTI03077",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "cv-axle",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "cv-axle"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -10303,13 +13862,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T17:23:32.127Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti03-081-punta-eje-l-r-mazda-3-1-6-generated-reference.webp",
         "sourceSha256": "a560745d742d4e9a48d7bd33cfa5d75fac6d16545a7b8363112d80c0d42dac3c",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.257Z"
+        "appliedAt": "2026-08-31T00:14:58.288Z",
+        "outputSha256": "9e712b91881137031655cfc34f6e3bdde5591549b007f5c5a95840b3a2c68fcc"
+      },
+      "sku": "GTI03-081",
+      "skuKey": "GTI03081",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "outer-cv-joint",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "outer-cv-joint"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -10331,13 +13919,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T17:23:32.127Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti03-083-eje-homocinetico-izq-mazda-bt-50-ford-ranger-2-5-diesel-4x4-generated-reference.webp",
         "sourceSha256": "481d07d2d56dd1b3b3482db4b3e027bf7ff127691efbb0d46cf388ebf0744a81",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.259Z"
+        "appliedAt": "2026-08-31T00:14:58.305Z",
+        "outputSha256": "b10e9760c078996a49511083bee9476d22fe455b394180ca5fd8c3d3438fd699"
+      },
+      "sku": "GTI03-083",
+      "skuKey": "GTI03083",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "cv-axle",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "cv-axle"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -10359,13 +13976,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T17:27:21.492Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti03-084-eje-homocinetico-der-mazda-bt-50-ford-ranger-2-5-diesel-4x4-generated-reference.webp",
         "sourceSha256": "224c498a51e293ff8ba6f62f746e6cda7e96fd01be117e8d3bb07ab0f43b1dbe",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.259Z"
+        "appliedAt": "2026-08-31T00:14:58.316Z",
+        "outputSha256": "8d2fa5c1341f8650ea320e6bb63d5201cbc55f11322e8b8ba2cb580d230f8b46"
+      },
+      "sku": "GTI03-084",
+      "skuKey": "GTI03084",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "cv-axle",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "cv-axle"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -10387,13 +14033,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T17:27:21.493Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0.000195,
         "sourceImage": "/catalogo-gti/generated/gti-gti03-087-punta-eje-l-c-der-mazda-bt-50-ford-ranger-2-5-diesel-4x4-macho-generated-reference.webp",
         "sourceSha256": "c11b0598265af4fffa47629ec8518b33c31463d1b57a7b949d1ebce9e4efe694",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.260Z"
+        "appliedAt": "2026-08-31T00:14:58.343Z",
+        "outputSha256": "94df48296e13a270c3049a28fe3263771d9c43284721c3993435b83106a014f5"
+      },
+      "sku": "GTI03-087",
+      "skuKey": "GTI03087",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "inner-cv-joint",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "inner-cv-joint"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -10415,13 +14090,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T17:27:21.493Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti04-018-eje-homocinetico-der-swift-1-3-generated-reference.webp",
         "sourceSha256": "847a40a00bbdced80cff1d2ab9ef880b3c0cdb7f3eeeee9d22a2b14864a5ebdd",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.261Z"
+        "appliedAt": "2026-08-31T00:14:58.354Z",
+        "outputSha256": "c0f5325b358112f8812867fcd20baec3f150898c30e68ca0b8d1d696f985f990"
+      },
+      "sku": "GTI04-018",
+      "skuKey": "GTI04018",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "cv-axle",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "cv-axle"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -10443,13 +14147,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T17:27:21.493Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti04-019-eje-homocinetico-izq-swift-1-3-generated-reference.webp",
         "sourceSha256": "37c7baf8f23e17a1d09801bce28a47d14318d3a1e39bd9044fc2105a41d15852",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.261Z"
+        "appliedAt": "2026-08-31T00:14:58.363Z",
+        "outputSha256": "fafcc6281249edf6eabb152972ad40bcdce61517993d822b6b1e50d110d2f7a6"
+      },
+      "sku": "GTI04-019",
+      "skuKey": "GTI04019",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "cv-axle",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "cv-axle"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -10471,13 +14204,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T17:27:21.493Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti04-054-punta-eje-l-r-cronos-21-dts-generated-reference.webp",
         "sourceSha256": "1e01ce28bfecc3eba1bf2e79ed550c093c78004de97a23b0a39c29999cb38deb",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.262Z"
+        "appliedAt": "2026-08-31T00:14:58.383Z",
+        "outputSha256": "f1a6dab5ed2a25b2e89f9b6f3180a7495f9886ea7388de5bb46be0eabc4bb441"
+      },
+      "sku": "GTI04-054",
+      "skuKey": "GTI04054",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "outer-cv-joint",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "outer-cv-joint"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -10499,13 +14261,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T17:27:21.493Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti04-058-eje-homocinetico-d-max-2010-sin-teta-generated-reference.webp",
         "sourceSha256": "a36c6584bf584ccbf6f7f32cc70cf420da5d8d4e6c336ba75d71f3b411c4d520",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.262Z"
+        "appliedAt": "2026-08-31T00:14:58.390Z",
+        "outputSha256": "bbab90962feb2ed5d682717a3683848f3cf0ee9b98b48ba28e2e3de9189747d3"
+      },
+      "sku": "GTI04-058",
+      "skuKey": "GTI04058",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "cv-axle",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "cv-axle"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -10527,13 +14318,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T17:27:21.493Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti04-059-punta-eje-l-r-d-max-2010-sin-teta-generated-reference.webp",
         "sourceSha256": "838926290ff6169bfeca69d65baa4616e6ccdd2d3d34b32001c4cda277be24f6",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.262Z"
+        "appliedAt": "2026-08-31T00:14:58.398Z",
+        "outputSha256": "f5361876d08434594ba792b7f1fa64b28d833905e065710042aa0c094c3eca68"
+      },
+      "sku": "GTI04-059",
+      "skuKey": "GTI04059",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "outer-cv-joint",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "outer-cv-joint"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -10555,13 +14375,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T17:27:21.493Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti04-065-punta-eje-l-r-spark-gt-generated-reference.webp",
         "sourceSha256": "e6ad395f04fd996fd688ac33f85b2132a6d58ee62808ce49d8ea08947c82ea35",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.263Z"
+        "appliedAt": "2026-08-31T00:14:58.420Z",
+        "outputSha256": "2f00568b0fe458e546acd6e5d3e5ff26c6be83890c0ceaa9b81f827c96d117d4"
+      },
+      "sku": "GTI04-065",
+      "skuKey": "GTI04065",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "outer-cv-joint",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "outer-cv-joint"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -10583,13 +14432,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T17:31:55.200Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti04-068-eje-homocinetico-captiva-2-4-mecanica-generated-reference.webp",
         "sourceSha256": "274f8dc466aecd0c6fa6f96c337cc7d59f36ff3ca285b6cc3e52b2015b6d381a",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.263Z"
+        "appliedAt": "2026-08-31T00:14:58.429Z",
+        "outputSha256": "be09d34682a515c53d229620b0d947513152762f3f96b7f38d4208a7b2e16e9d"
+      },
+      "sku": "GTI04-068",
+      "skuKey": "GTI04068",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "cv-axle",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "cv-axle"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -10611,13 +14489,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T17:31:55.201Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti04-069-punta-eje-l-r-captiva-24-dts-generated-reference.webp",
         "sourceSha256": "ccc4b74e010c929f2176d3467b1d2f2c0a794cd4b646bbe1db2ed7de3a3f5d15",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.264Z"
+        "appliedAt": "2026-08-31T00:14:58.438Z",
+        "outputSha256": "e922d9f571c03cc444415a31b4242b5df06264bdcc771f35940fa79f09afa3e0"
+      },
+      "sku": "GTI04-069",
+      "skuKey": "GTI04069",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "outer-cv-joint",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "outer-cv-joint"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -10639,13 +14546,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T17:31:55.201Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti04-073-punta-eje-l-c-captiva-mecanica-generated-reference.webp",
         "sourceSha256": "907236b4bf42bb3861cb749fa3a3aeabcab548a78138807e0bb07162afe4ee04",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.264Z"
+        "appliedAt": "2026-08-31T00:14:58.447Z",
+        "outputSha256": "d7589aae432fcd30f32cdd3beff3f8802b7463ec4eac3d8b8df995bd1d3b1a0c"
+      },
+      "sku": "GTI04-073",
+      "skuKey": "GTI04073",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "inner-cv-joint",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "inner-cv-joint"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -10667,13 +14603,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T17:31:55.201Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti04-074-eje-homocinetico-der-corsa-generated-reference.webp",
         "sourceSha256": "042212f8585754ee7e53f232753cfb02c4f80089f9f68612573e74eec0b80f82",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.264Z"
+        "appliedAt": "2026-08-31T00:14:58.458Z",
+        "outputSha256": "329b2a64b27b5b072c148c0ad466d5c85609df6ef709646e134194c34fa5bf8a"
+      },
+      "sku": "GTI04-074",
+      "skuKey": "GTI04074",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "cv-axle",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "cv-axle"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -10695,13 +14660,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T17:31:55.201Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti04-078-eje-homocinetico-tras-grand-vitara-sz-2-7-4x4-mt-at-2007-6-huecos-generated-reference.webp",
         "sourceSha256": "d06401a47f547ccbd2cb347519be3ba8e12b600297061673160c20fcc00cbb18",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.265Z"
+        "appliedAt": "2026-08-31T00:14:58.469Z",
+        "outputSha256": "165418c5b7fcc2f119590ac8bac6b2169dcb24b00f8073d5846faa739083ca4e"
+      },
+      "sku": "GTI04-078",
+      "skuKey": "GTI04078",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "cv-axle",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "cv-axle"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -10723,13 +14717,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T17:31:55.201Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti04-094-punta-eje-l-r-captiva-3-0-34-dts-generated-reference.webp",
         "sourceSha256": "76ae8b2e8ad7814f33aa480705bb6c3ed79dbb27b42f4140e507602213dfecc0",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.265Z"
+        "appliedAt": "2026-08-31T00:14:58.481Z",
+        "outputSha256": "dec76fb8d99cebafe8f28501971ab4cbede9dbd39a66bbf84a04d04bc32d38a8"
+      },
+      "sku": "GTI04-094",
+      "skuKey": "GTI04094",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "outer-cv-joint",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "outer-cv-joint"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -10751,13 +14774,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T17:31:55.201Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti04-095-eje-homocinetico-izq-aveo-generated-reference.webp",
         "sourceSha256": "f0709c4a78cd55f0881181bd35dc076d90687b4bcd2d64cda15afd1e0b3f90b7",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.265Z"
+        "appliedAt": "2026-08-31T00:14:58.492Z",
+        "outputSha256": "881b59defb900b89edc60d3e5170cd843f596b10f9a914a62cbccaf0c7f82be0"
+      },
+      "sku": "GTI04-095",
+      "skuKey": "GTI04095",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "cv-axle",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "cv-axle"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -10779,13 +14831,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T17:31:55.201Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti04-096-eje-homocinetico-der-aveo-generated-reference.webp",
         "sourceSha256": "50035a81fc0a8b53098ed087746caf7a96d8e46e0764392b051926dd5ba72a0a",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.265Z"
+        "appliedAt": "2026-08-31T00:14:58.502Z",
+        "outputSha256": "74d318255acf88b1454ca57a97032b160319355f4e699df25c74641b935cc766"
+      },
+      "sku": "GTI04-096",
+      "skuKey": "GTI04096",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "cv-axle",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "cv-axle"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -10807,13 +14888,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T17:35:35.367Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti04-103-eje-homocinetico-der-tracker-automatica-generated-reference.webp",
         "sourceSha256": "506bcfaa1be8207148abb2eba2d462d649c3ed3d16fd0a7d242e7680b02d9cc9",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.266Z"
+        "appliedAt": "2026-08-31T00:14:58.512Z",
+        "outputSha256": "8d497caa55d0fcf1a10b439f5f00a6f8da65554455d2a9309365e3add336db3a"
+      },
+      "sku": "GTI04-103",
+      "skuKey": "GTI04103",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "cv-axle",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "cv-axle"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -10835,13 +14945,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T17:35:35.368Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti04-104-eje-homocinetico-izq-tracker-automatica-generated-reference.webp",
         "sourceSha256": "ae73bc98fd714b682e67bbf263667aab82ff6731a1f032cd61e63059e5fcf9b3",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.266Z"
+        "appliedAt": "2026-08-31T00:14:58.523Z",
+        "outputSha256": "c35ce5d7c2af5a27b0f04df556a5b9672a6daf38503268d1fc8e9be5b7586841"
+      },
+      "sku": "GTI04-104",
+      "skuKey": "GTI04104",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "cv-axle",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "cv-axle"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -10863,13 +15002,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T17:35:35.368Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti04-105-eje-homocinetico-der-tracker-mecanica-generated-reference.webp",
         "sourceSha256": "715593fd0cfc19637695c862761205665eb7cbd506e3108456397154267f5240",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.266Z"
+        "appliedAt": "2026-08-31T00:14:58.533Z",
+        "outputSha256": "5db40d840d9772a8339486be4124696cfba37d42b57d2e5b3377f6e221abcaad"
+      },
+      "sku": "GTI04-105",
+      "skuKey": "GTI04105",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "cv-axle",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "cv-axle"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -10891,13 +15059,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T17:35:35.368Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti04-106-eje-homocinetico-izq-tracker-mecanica-generated-reference.webp",
         "sourceSha256": "69114bbb8b763cfd2331943ca92e17a44a93fb8e3623ab280d12f1d71c999da1",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.266Z"
+        "appliedAt": "2026-08-31T00:14:58.542Z",
+        "outputSha256": "9512e95516fd2b7543aafc2dde5bdf9258d7a05b7bfaf1d95c9b6df8829c5d36"
+      },
+      "sku": "GTI04-106",
+      "skuKey": "GTI04106",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "cv-axle",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "cv-axle"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -10919,13 +15116,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T17:35:35.368Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti06-010-eje-homocinetico-izq-hd-accent-generated-reference.webp",
         "sourceSha256": "5b32778669e02530f8ceee4b75d46a0cca33314deb4f93fc43a68eb52d0e392c",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.267Z"
+        "appliedAt": "2026-08-31T00:14:58.572Z",
+        "outputSha256": "14d04b1b64db35d7792937a9dbbfe43d0d2d2c2d9bc69c6a8904f1630a214c09"
+      },
+      "sku": "GTI06-010",
+      "skuKey": "GTI06010",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "cv-axle",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "cv-axle"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -10947,13 +15173,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T17:35:35.368Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti06-018-punta-eje-l-r-hd-tucson-4x2-23x27-dts-sin-abs-mecanico-generated-reference.webp",
         "sourceSha256": "75f5233f50589d102e2b0594e060658c44ec267036c13fab2075818fbc2f7236",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.268Z"
+        "appliedAt": "2026-08-31T00:14:58.595Z",
+        "outputSha256": "fe6e9ebde256582d4bd63dbf68b7629350c68e9231e84adc82a58f79744b584c"
+      },
+      "sku": "GTI06-018",
+      "skuKey": "GTI06018",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "outer-cv-joint",
+        "laterality": "unknown",
+        "abs": "no",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "outer-cv-joint"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -10975,13 +15230,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T17:35:35.368Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti06-036-eje-homocinetico-izq-hd-verna-gyro-generated-reference.webp",
         "sourceSha256": "e343dc4d408dcaa5c086465c527dd744c39532da84c9f755d8db394219f13810",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.270Z"
+        "appliedAt": "2026-08-31T00:14:58.663Z",
+        "outputSha256": "44172a135a9bc5eb25de0bd9ecaab5f9a1e8f63cb778cee9417fdc607024624b"
+      },
+      "sku": "GTI06-036",
+      "skuKey": "GTI06036",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "cv-axle",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "cv-axle"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -11003,13 +15287,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T17:35:35.368Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti06-045-eje-homocinetico-der-hd-tucson-4x2-automatico-generated-reference.webp",
         "sourceSha256": "9bd0ad07532d6c342dc912d1b9ff551e04ca3c6765d5581ceb65bd6fe50876bd",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.270Z"
+        "appliedAt": "2026-08-31T00:14:58.687Z",
+        "outputSha256": "5d452d509127bedb60c0141580309eff7adecd0be0ba8667aec177c525b7d546"
+      },
+      "sku": "GTI06-045",
+      "skuKey": "GTI06045",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "cv-axle",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "cv-axle"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -11031,13 +15344,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T17:41:32.394Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti06-047-eje-homocinetico-der-kia-sorento-generated-reference.webp",
         "sourceSha256": "a672ab2f2c947e9cf9d24c5c0427610847c893351960cb91809488de735fe845",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.270Z"
+        "appliedAt": "2026-08-31T00:14:58.700Z",
+        "outputSha256": "66e3e30bd47efcceee5087009b366da028f317042401c04ca6b58cbb24b84df0"
+      },
+      "sku": "GTI06-047",
+      "skuKey": "GTI06047",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "cv-axle",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "cv-axle"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -11059,13 +15401,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T17:41:32.395Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti06-064-eje-homocinetico-izq-hd-i-25-generated-reference.webp",
         "sourceSha256": "b170bcfbf94ce8e63eee02cebce0fe8837e1b1dc55210f1ab872bf0b5668b419",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.271Z"
+        "appliedAt": "2026-08-31T00:14:58.725Z",
+        "outputSha256": "cdd5bc482f3e164c8f7b57fcce0c3372b7a9c5f60cbe5a09a37474239b1cb381"
+      },
+      "sku": "GTI06-064",
+      "skuKey": "GTI06064",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "cv-axle",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "cv-axle"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -11087,13 +15458,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T17:41:32.395Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti07-006-punta-eje-l-r-fiat-147-zastava-20-dts-generated-reference.webp",
         "sourceSha256": "04ebed4ef88276cd2dc973e91fb4073afcdd4346b3287e0718ad2eefe6939287",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.272Z"
+        "appliedAt": "2026-08-31T00:14:58.749Z",
+        "outputSha256": "1b2df77aa3ebe81fccfd9de2ea673f4af1a886eb82d49b96624efb2b13a65523"
+      },
+      "sku": "GTI07-006",
+      "skuKey": "GTI07006",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "outer-cv-joint",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "outer-cv-joint"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -11115,13 +15515,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T17:41:32.395Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti07-014-punta-eje-l-r-toyota-corolla-1-8-1-6-at-mt-02-24d-generated-reference.webp",
         "sourceSha256": "1b3470a4a41c9be2e27da8fa377bfa3d50473c953bc0f7b4dc7ac605622f0472",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.272Z"
+        "appliedAt": "2026-08-31T00:14:58.760Z",
+        "outputSha256": "23924cede73f6c383029ac7726bb12c8dfd0ec409a461f4b2f1cedfc633e0828"
+      },
+      "sku": "GTI07-014",
+      "skuKey": "GTI07014",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "outer-cv-joint",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "outer-cv-joint"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -11143,13 +15572,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T17:41:32.395Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti07-025-punta-eje-l-r-kia-sephia-97-99-23-dts-generated-reference.webp",
         "sourceSha256": "132b8afb1695d69356e71cb9473cc38e9797e209a80b7c95d3a83093a33a4445",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.273Z"
+        "appliedAt": "2026-08-31T00:14:58.781Z",
+        "outputSha256": "e589c7ccc3695bde9fdb3bc9238853c924f1bf9fe7bf98bac0c4301c379049a7"
+      },
+      "sku": "GTI07-025",
+      "skuKey": "GTI07025",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "outer-cv-joint",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "outer-cv-joint"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -11171,13 +15629,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T17:41:32.395Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti07-051-punta-eje-l-r-peugeot-405-1-6-90t-generated-reference.webp",
         "sourceSha256": "b966a792c7fb482cde6e736a3a20fbc20328caeeb5b3e07c319504062a4f921a",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.273Z"
+        "appliedAt": "2026-08-31T00:14:58.799Z",
+        "outputSha256": "5c708e03bc10c5549b0d0a3d61b4a01d95ad3d977d0981053ec8c0064851d3ef"
+      },
+      "sku": "GTI07-051",
+      "skuKey": "GTI07051",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "outer-cv-joint",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "outer-cv-joint"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -11199,13 +15686,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T17:41:32.395Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti07-054-eje-homocinetico-izq-peugeot-306-405-generated-reference.webp",
         "sourceSha256": "8025f5cd21d27971074a61da1270275c56953df64c72df13fc9268925d149cba",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.274Z"
+        "appliedAt": "2026-08-31T00:14:58.806Z",
+        "outputSha256": "6e4e7fe37b2d969aa3ef2a5cc85d5dc77db8aaa4313394b4f88bf4b83d809d57"
+      },
+      "sku": "GTI07-054",
+      "skuKey": "GTI07054",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "cv-axle",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "cv-axle"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -11227,13 +15743,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T17:41:32.395Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti07-060-eje-homocinetico-toyota-hilux-vigo-generated-reference.webp",
         "sourceSha256": "faec6ece90190c3f40bd3435119bf514e3adc8483237f5e61ec0214eb8976f27",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.274Z"
+        "appliedAt": "2026-08-31T00:14:58.815Z",
+        "outputSha256": "a33d9cd4dd7f61aadbac91d9e63f53aadf7e9f7fa4b38f3e7c131dd2db713c63"
+      },
+      "sku": "GTI07-060",
+      "skuKey": "GTI07060",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "cv-axle",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "cv-axle"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -11255,13 +15800,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T17:46:21.799Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti07-062-punta-eje-l-c-aveo-1-6-emotion-aut-generated-reference.webp",
         "sourceSha256": "36f6aaf8a181b98454b39bca929dd19ff00e9d8980d51faf8ab11fc0048325da",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.275Z"
+        "appliedAt": "2026-08-31T00:14:58.823Z",
+        "outputSha256": "6eabc68344920fde7041b315317a9250e523d0e1399fe55a7d12906e9575764b"
+      },
+      "sku": "GTI07-062",
+      "skuKey": "GTI07062",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "inner-cv-joint",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "inner-cv-joint"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -11283,13 +15857,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T17:46:21.800Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti07-103-punta-eje-l-r-ford-fortaleza-150-expedition-generated-reference.webp",
         "sourceSha256": "e9dee92022010d8da518d51fce9e9a350230378a703bacaa2e3b83aa7affeaa2",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.276Z"
+        "appliedAt": "2026-08-31T00:14:58.832Z",
+        "outputSha256": "80caacf1b58409fae9ddb88db97871f2520481dfae6b5069b8609ab75fc930da"
+      },
+      "sku": "GTI07-103",
+      "skuKey": "GTI07103",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "outer-cv-joint",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "outer-cv-joint"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -11311,13 +15914,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T17:46:21.800Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti07-104-punta-eje-l-c-ford-eco-sport-4x2-89-02-generated-reference.webp",
         "sourceSha256": "3d94c36cc44ae4d0b6011d9598fa62747bbeb107e6d749a0600279d4cc5eb644",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.276Z"
+        "appliedAt": "2026-08-31T00:14:58.842Z",
+        "outputSha256": "f45f8e5fa36271915ee6dcd65bf71c27fd340ee9eb288944a5cfe1f8e60ac511"
+      },
+      "sku": "GTI07-104",
+      "skuKey": "GTI07104",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "inner-cv-joint",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "inner-cv-joint"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -11339,13 +15971,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T17:46:21.800Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti07-112-punta-eje-l-c-izq-ford-fiesta-charger-generated-reference.webp",
         "sourceSha256": "4ce18086fbd3552fc2d677728d4f7b226ef2eeecf2cb9153422819306dda56e3",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.277Z"
+        "appliedAt": "2026-08-31T00:14:58.850Z",
+        "outputSha256": "c7e7e1c715c1e1c94628d12c6403495a3e87cb8c33118403c585ddd3bb70801d"
+      },
+      "sku": "GTI07-112",
+      "skuKey": "GTI07112",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "inner-cv-joint",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "inner-cv-joint"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -11367,13 +16028,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T17:46:21.800Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti07-149-punta-eje-l-c-volkswagen-panel-t5-2011-hembra-larga-generated-reference.webp",
         "sourceSha256": "80240802b2cf3a7c82281b480960b03d222eb461f440f34777860305cf0e1f16",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.277Z"
+        "appliedAt": "2026-08-31T00:14:58.859Z",
+        "outputSha256": "7da5fa3ad91c12819f7179a0a80d7275c3d5c51d99a4ae9c4124e6fc122b5bfb"
+      },
+      "sku": "GTI07-149",
+      "skuKey": "GTI07149",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "inner-cv-joint",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "inner-cv-joint"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -11395,13 +16085,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T17:46:21.800Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti07-153-punta-eje-l-r-nissan-x-trail-generated-reference.webp",
         "sourceSha256": "d3abc823857c44934320b460a567ccee386f89179a8a94e184a1fb7b31964cb2",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.278Z"
+        "appliedAt": "2026-08-31T00:14:58.869Z",
+        "outputSha256": "71591a4ef541a5479c2fb2e87188194b017c2f2f9a3f7b39dd4269fd41b6dfea"
+      },
+      "sku": "GTI07-153",
+      "skuKey": "GTI07153",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "outer-cv-joint",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "outer-cv-joint"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -11423,13 +16142,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T17:46:21.800Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti07-154-eje-homocinetico-der-mitsubishi-sportero-generated-reference.webp",
         "sourceSha256": "a4b405821738e97414de49f157e20cedbc4a3dea4b1d6b873daad81439ad714e",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.278Z"
+        "appliedAt": "2026-08-31T00:14:58.880Z",
+        "outputSha256": "fa67c6906930e39647fd9d684b5b04d53d05eea2e169e648ce20f46ad87f50c7"
+      },
+      "sku": "GTI07-154",
+      "skuKey": "GTI07154",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "cv-axle",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "cv-axle"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -11451,13 +16199,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T17:46:21.800Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti07-155-eje-homocinetico-izq-mitsubishi-sportero-generated-reference.webp",
         "sourceSha256": "6def1338991cdc358927179e93bf712b4dbfb75374430620f40bb7339499f03d",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.278Z"
+        "appliedAt": "2026-08-31T00:14:58.892Z",
+        "outputSha256": "33f9c65fb37f0c204387405f00a517a67b302ce17405152e78d474931e84822e"
+      },
+      "sku": "GTI07-155",
+      "skuKey": "GTI07155",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "cv-axle",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "cv-axle"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -11479,13 +16256,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T17:48:48.229Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti07-156-punta-eje-l-r-mitsubishi-sportero-33-dts-generated-reference.webp",
         "sourceSha256": "3fcc99a215284c61b39edba43f5534e5c1f858440097f258578a4802cc4065e1",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.279Z"
+        "appliedAt": "2026-08-31T00:14:58.904Z",
+        "outputSha256": "319084d030792319b092476c7e129ebc2773dc745e7e60d14b34cd352035c702"
+      },
+      "sku": "GTI07-156",
+      "skuKey": "GTI07156",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "outer-cv-joint",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "outer-cv-joint"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -11507,13 +16313,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T17:48:48.230Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti07-160-punta-eje-l-r-nissan-almera-generated-reference.webp",
         "sourceSha256": "48867ad0fea6cc67521e0b8c4b7733c14a8e45e3f308a476bc9472795caad102",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.279Z"
+        "appliedAt": "2026-08-31T00:14:58.916Z",
+        "outputSha256": "3fb7a519209f48e51a573b9f1ef3eef48af93246d0d88bd5eb72f618458b7a9f"
+      },
+      "sku": "GTI07-160",
+      "skuKey": "GTI07160",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "outer-cv-joint",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "outer-cv-joint"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -11535,13 +16370,42 @@ export const productImageOverrides = Object.freeze({
       "renderer": "scripts/apply-generated-gti-image.mjs",
       "generatedAt": "2026-08-28T17:48:48.230Z",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "GTI",
         "badgeVariant": "yellow-on-blue-capsule",
+        "badgeAsset": "/brands/gti-product-logo-capsule.svg",
+        "badgeSha256": "03ed44ba49131d83405f66a92c072a5208f14a49eb05ccbe0fe362f96e2176ac",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
         "sourceImage": "/catalogo-gti/generated/gti-gti07-179-punta-eje-l-r-chevy-generated-reference.webp",
         "sourceSha256": "957782d99f7de784e0e21045a8438f21974becdf802dfc6a88888708ae2371db",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.279Z"
+        "appliedAt": "2026-08-31T00:14:58.930Z",
+        "outputSha256": "75a915af40e2b2f11ec07eedb63bfcb8f6fff2b4333ec5dc24cae526896e3395"
+      },
+      "sku": "GTI07-179",
+      "skuKey": "GTI07179",
+      "brandSlug": "gti",
+      "generationPromptStatus": "recorded",
+      "compatibility": {
+        "partFamily": "outer-cv-joint",
+        "laterality": "unknown",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "outer-cv-joint"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "referencia GTI exacta",
+          "VIN",
+          "año",
+          "motor",
+          "transmisión",
+          "lado de montaje",
+          "estrías internas y externas",
+          "ABS y número de dientes de corona cuando aplique"
+        ]
       }
     }
   },
@@ -11559,13 +16423,50 @@ export const productImageOverrides = Object.freeze({
     "sourceRecord": {
       "type": "ai-generated-reference",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "ADS",
-        "badgeVariant": "blue-wordmark",
-        "sourceImage": "/catalogo-ads/ads-9833753380-tijera-inferior-izquierda-peugeot-208-referencial.png",
-        "sourceSha256": "db87aca7006e8bd91b7b7e1b16733ea8327d8c978f7b3364b4d6d53529dbcdb4",
+        "badgeVariant": "catalog-blue-wordmark",
+        "badgeAsset": "/brands/ads-product-logo-blue-catalog.png",
+        "badgeSha256": "56c3a934749c90926f203738ece622a64ee82bd5772d48a4ceae0c2133eb1c00",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
+        "sourceImage": "/catalogo-ads/ads-9833753380-tijera-inferior-izquierda-peugeot-208-referencial-v2.png",
+        "sourceSha256": "a0e35a53c08826ce1b62ecc4e1d72828e8275a6c390701f57fb09385aa0dc879",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.214Z"
+        "appliedAt": "2026-08-31T00:14:56.991Z",
+        "outputSha256": "bc4180f3a57b5b3ce2cf2461e5b15aa0f897b9bbef2045e3102bbabed5962f8e"
+      },
+      "sku": "9833753380",
+      "skuKey": "9833753380",
+      "brandSlug": "ads",
+      "generationPrompt": "Create a high-end photorealistic e-commerce reference image of the exact LEFT front lower control arm/wishbone geometry shown, OE cross-reference 9833753380 for Peugeot 208 II/P21. Preserve the left-side orientation exactly—never mirror it—the crescent stamped-steel shape, two large circular lightening holes, smaller stamped recess, integrated ball joint at the left end, large round rear bushing at the opposite lower/right end, upper pivot bushing, every visible mounting point and the exact proportions. Present as a clean new black-painted steel component, natural rubber bushings and silver machined ball-joint stud, subtle realistic studio shadow, centered with comfortable whitespace on a pure white square background. Show only this one complete arm. Remove all stickers, barcodes, handwritten marks, manufacturer logos, text, packaging and accessories. Do not add bolts, cable, sensor or ABS hardware. Do not recolor anything orange. Geometry-grounded reference recreation, not a branded physical photograph.",
+      "generationPromptStatus": "recorded",
+      "generatedAt": "2026-08-31T00:09:18.000Z",
+      "compatibility": {
+        "partFamily": "control-arm",
+        "laterality": "left",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "control-arm"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "VIN",
+          "año",
+          "motor",
+          "lado izquierdo",
+          "geometría",
+          "bujes y rótula"
+        ]
+      },
+      "geometryEvidence": {
+        "claimScope": "cross-brand-geometry-reference-only",
+        "sourcePageUrl": "https://www.litoralpecas.com.br/freios-e-suspensao/bandejas/balanca-bandeja-suspensao-peugeot-208-esquerda-2021-2022-2023-2024-2025",
+        "sourceImageUrl": "https://images.tcdn.com.br/img/img_prod/935189/balanca_bandeja_suspensao_peugeot_208_esquerda_2021_2022_2023_2024_2025_114237_2_9488d740a3dcdc465ed00343082f7332.jpg",
+        "crossReferenceBrand": "Peugeot OE / pieza desmontada trazable",
+        "crossReferenceNumber": "9833753380",
+        "publishedAsPhysicalPhoto": false
       }
     }
   },
@@ -11583,13 +16484,50 @@ export const productImageOverrides = Object.freeze({
     "sourceRecord": {
       "type": "ai-generated-reference",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "ADS",
-        "badgeVariant": "blue-wordmark",
-        "sourceImage": "/catalogo-ads/ads-9833753280-tijera-inferior-derecha-peugeot-208-referencial.png",
-        "sourceSha256": "6d9fd08f56b69dacd453f14644774b80447f4c3d069dfd723090f7515b960fe7",
+        "badgeVariant": "catalog-blue-wordmark",
+        "badgeAsset": "/brands/ads-product-logo-blue-catalog.png",
+        "badgeSha256": "56c3a934749c90926f203738ece622a64ee82bd5772d48a4ceae0c2133eb1c00",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
+        "sourceImage": "/catalogo-ads/ads-9833753280-tijera-inferior-derecha-peugeot-208-referencial-v2.png",
+        "sourceSha256": "894c3f2a5ecfe9f1380e329b0072ae7316144cac998259dfec9f04a6788c714d",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.216Z"
+        "appliedAt": "2026-08-31T00:14:57.031Z",
+        "outputSha256": "3691fd2ee39087e7f16fad358229f1cbb42bd4addec0b4152faa64e24a2c89b1"
+      },
+      "sku": "9833753280",
+      "skuKey": "9833753280",
+      "brandSlug": "ads",
+      "generationPrompt": "Create a high-end photorealistic e-commerce reference image of the exact RIGHT front lower control arm/wishbone geometry shown, OE cross-reference 9833753280 for Peugeot 208 II/P21. Preserve the right-side orientation exactly—never mirror another part—the long curved stamped-steel shape, two large circular lightening holes, long stamped recess, integrated ball joint at the right end, large round rear bushing at the opposite lower/left end, upper pivot bushing, every visible mounting point and exact proportions. Present as a clean new black-painted steel component, natural rubber bushings and silver machined ball-joint stud, subtle realistic studio shadow, centered with comfortable whitespace on a pure white square background. Show only this one complete arm. Remove all stickers, barcodes, handwritten marks, manufacturer logos, text, packaging and accessories. Do not add bolts, cable, sensor or ABS hardware. Do not recolor anything orange. Geometry-grounded reference recreation, not a branded physical photograph.",
+      "generationPromptStatus": "recorded",
+      "generatedAt": "2026-08-31T00:09:18.000Z",
+      "compatibility": {
+        "partFamily": "control-arm",
+        "laterality": "right",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "control-arm"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "VIN",
+          "año",
+          "motor",
+          "lado derecho",
+          "geometría",
+          "bujes y rótula"
+        ]
+      },
+      "geometryEvidence": {
+        "claimScope": "cross-brand-geometry-reference-only",
+        "sourcePageUrl": "https://valesulpecas.com.br/produto/bandeja-suspensao-diant-direita-peugeot-208-9833753280/",
+        "sourceImageUrl": "https://valesulpecas.com.br/wp-content/uploads/2025/09/9833753280_01.webp",
+        "crossReferenceBrand": "Peugeot OE",
+        "crossReferenceNumber": "9833753280",
+        "publishedAsPhysicalPhoto": false
       }
     }
   },
@@ -11607,13 +16545,50 @@ export const productImageOverrides = Object.freeze({
     "sourceRecord": {
       "type": "ai-generated-reference",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "ADS",
-        "badgeVariant": "blue-wordmark",
-        "sourceImage": "/catalogo-ads/ads-9824626380-rotula-inferior-peugeot-208-2008-referencial.png",
-        "sourceSha256": "a6a8b9539d1db697c4e39d2e71572644a0a188c86d259b0937efac715ec31057",
+        "badgeVariant": "catalog-blue-wordmark",
+        "badgeAsset": "/brands/ads-product-logo-blue-catalog.png",
+        "badgeSha256": "56c3a934749c90926f203738ece622a64ee82bd5772d48a4ceae0c2133eb1c00",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
+        "sourceImage": "/catalogo-ads/ads-9824626380-rotula-inferior-peugeot-208-2008-referencial-v2.png",
+        "sourceSha256": "6e073fa1f4745fe48a752edf6ec2ac6525a4bc6b6277f0e9b17d8d804b7bf99a",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.217Z"
+        "appliedAt": "2026-08-31T00:14:57.068Z",
+        "outputSha256": "f79b6fe7641266253431cc12d340cf68f464e320906d28ce090a60ef16361706"
+      },
+      "sku": "9824626380",
+      "skuKey": "9824626380",
+      "brandSlug": "ads",
+      "generationPrompt": "Create a high-end photorealistic e-commerce reference image of the exact automotive lower suspension ball-joint geometry shown, cross-reference OE 9824626380. Preserve the asymmetrical three-hole mounting flange outline, all three hole positions and sizes, the compact lower housing, protective rubber boot, the exact tapered upper stud profile, top recess, proportions and viewing angle. New clean part, natural dark phosphate-coated/cast metal, natural silver machined stud and matte black rubber, subtle realistic studio shadow, centered with comfortable whitespace on a pure white square background. Show only this one ball joint. Remove the repeating SASIC watermark and every logo, molded brand, text, label, packaging and accessory. Do not add a nut, bolts, cable, sensor, ABS element or any extra component. Do not recolor anything orange. This is a geometry-grounded reference recreation, not a branded physical photograph.",
+      "generationPromptStatus": "recorded",
+      "generatedAt": "2026-08-31T00:09:18.000Z",
+      "compatibility": {
+        "partFamily": "ball-joint",
+        "laterality": "either",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "ball-joint"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "VIN",
+          "generación",
+          "año",
+          "diámetro del perno",
+          "lado",
+          "brazo compatible"
+        ]
+      },
+      "geometryEvidence": {
+        "claimScope": "cross-brand-geometry-reference-only",
+        "sourcePageUrl": "https://spareto.com/products/sasic-ball-joint/7570012",
+        "sourceImageUrl": "https://cdn.spareto.com/variants/images/002/674/966/original/converted-20230218-3832547-la276d.jpg?1676746139",
+        "crossReferenceBrand": "SASIC",
+        "crossReferenceNumber": "7570012 / OE 9824626380",
+        "publishedAsPhysicalPhoto": false
       }
     }
   },
@@ -11631,13 +16606,50 @@ export const productImageOverrides = Object.freeze({
     "sourceRecord": {
       "type": "ai-generated-reference",
       "brandTreatment": {
-        "version": 2,
+        "version": 3,
         "brand": "ADS",
-        "badgeVariant": "blue-wordmark",
-        "sourceImage": "/catalogo-ads/ads-9802103780-rotula-inferior-peugeot-2008-c3-aircross-referencial.png",
-        "sourceSha256": "791646c64e446fcc63cd8860b2af07efdd9d5b4452136d978a884eb996933ede",
+        "badgeVariant": "catalog-blue-wordmark",
+        "badgeAsset": "/brands/ads-product-logo-blue-catalog.png",
+        "badgeSha256": "56c3a934749c90926f203738ece622a64ee82bd5772d48a4ceae0c2133eb1c00",
+        "colorPolicy": "natural-materials-no-orange-recolor",
+        "orangePixelRatio": 0,
+        "sourceImage": "/catalogo-ads/ads-9802103780-rotula-inferior-peugeot-2008-c3-aircross-referencial-v2.png",
+        "sourceSha256": "f1fe5caedb8306cb75fa4fcd0e8ce97aff99ee15682bd85d8f872a4103cb7d42",
         "renderer": "scripts/brand-generated-product-images.mjs",
-        "appliedAt": "2026-08-30T22:53:45.219Z"
+        "appliedAt": "2026-08-31T00:14:57.100Z",
+        "outputSha256": "d384ccafe0bd97557acbf6447dda6f515ac762f2118eab08357da397b1277c90"
+      },
+      "sku": "9802103780",
+      "skuKey": "9802103780",
+      "brandSlug": "ads",
+      "generationPrompt": "Create a high-end photorealistic e-commerce reference image of the exact automotive lower suspension ball-joint geometry shown, cross-reference OE 9802103780. Preserve the specific asymmetric three-hole silver mounting flange outline, all three hole positions and sizes, central compact housing, green sealing rings, black protective rubber boot, short polished tapered stud with top recess, exact proportions and viewing angle. New clean part, natural silver cast/machined metal, black rubber and muted green seals, subtle realistic studio shadow, centered with comfortable whitespace on a pure white square background. Show only this one ball joint. Remove all embossed manufacturer identifiers, logos, labels, watermarks, text, packaging and accessories. Do not add a nut, bolts, cable, sensor, ABS element or any extra component. Do not recolor anything orange. This is a geometry-grounded reference recreation, not a branded physical photograph.",
+      "generationPromptStatus": "recorded",
+      "generatedAt": "2026-08-31T00:09:18.000Z",
+      "compatibility": {
+        "partFamily": "ball-joint",
+        "laterality": "either",
+        "abs": "unknown",
+        "componentScope": "primary-component-only",
+        "includedComponents": [
+          "ball-joint"
+        ],
+        "fitmentStatus": "conditional",
+        "requirements": [
+          "VIN",
+          "año",
+          "motor",
+          "diámetro de perno",
+          "lado",
+          "brazo compatible"
+        ]
+      },
+      "geometryEvidence": {
+        "claimScope": "cross-brand-geometry-reference-only",
+        "sourcePageUrl": "https://www.mercadolibre.com.ar/rotula-de-suspension-original-peugeot-2008-2016--2021/up/MLAU134463101",
+        "sourceImageUrl": "https://http2.mlstatic.com/D_NQ_NP_677430-MLA75460342431_032024-O.webp",
+        "crossReferenceBrand": "Peugeot OE",
+        "crossReferenceNumber": "9802103780",
+        "publishedAsPhysicalPhoto": false
       }
     }
   }

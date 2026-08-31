@@ -168,6 +168,14 @@ export function getProductDisplayImage(product) {
     return getDynamikLocalPhoto(product);
   }
 
+  // ADS y GTI usan un registro estructurado por SKU para sus recreaciones.
+  // Si la capa de integración rechaza una imagen por falta de evidencia o por
+  // incompatibilidad, no debe reaparecer mediante un fallback genérico.
+  const protectedBrand = normalize(product.brand?.slug || product.brand?.name || product.brand);
+  if (["ads", "gti"].includes(protectedBrand) && product.imageStatus === "pending-real-photo") {
+    return null;
+  }
+
   // 1. Fotografías verificadas manuales
   if (slug && PRODUCT_IMAGE_OVERRIDES[slug]) return PRODUCT_IMAGE_OVERRIDES[slug];
   if (cleanSlug && PRODUCT_IMAGE_OVERRIDES[cleanSlug]) return PRODUCT_IMAGE_OVERRIDES[cleanSlug];

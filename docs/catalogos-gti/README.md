@@ -1,6 +1,6 @@
 # Catálogo GTI integrado en REMBERT
 
-Fecha de revisión: 26 de agosto de 2026.
+Fecha de revisión: 30 de agosto de 2026.
 
 ## Alcance publicado
 
@@ -27,12 +27,12 @@ Las fichas `verified` cuentan con una coincidencia documental explícita de refe
 
 ## Política de imagen exacta
 
-- Una foto sólo se publica cuando la fuente identifica la referencia GTI exacta y la geometría coincide con el producto descrito.
-- La pieza debe verse completa, sobre fondo blanco y sin textos superpuestos dentro de la fotografía.
-- No se usan ilustraciones de familia, repuestos genéricos ni geometrías generadas para cubrir faltantes.
-- Las fichas sin evidencia inequívoca muestran el estado neutro **Foto real pendiente**.
-- Estado al corte: 32 referencias con fotografía directa trazable y 432 pendientes de foto exacta (16 disponibles + 416 externas).
-- El registro persistente está en `PENDIENTES_FOTO_EXACTA_2026-08-26.md` y se regenera con `node scripts/audit-gti-publication.mjs`.
+- Una fotografía física sólo se clasifica como tal cuando la fuente identifica la referencia GTI exacta y la geometría coincide con el producto descrito.
+- Cuando no existe foto física autorizada, se admite una recreación referencial claramente rotulada. No cuenta como foto real, no demuestra autenticidad GTI y no sustituye la validación de etiqueta, medidas, estrías, lado o ABS.
+- Las recreaciones muestran únicamente el componente principal, materiales naturales y fondo blanco. No incorporan cables, sensores, corona ABS, accesorios ni contenido de kit sin evidencia estructurada.
+- La cápsula GTI amarilla sobre azul se añade después del render desde `/brands/gti-product-logo-capsule.svg`; no se solicita al modelo generativo.
+- Estado al corte: 300 fichas con fotografía física o de fuente y 164 con recreación referencial. Diez de las 164 tienen existencia y son prioridad para recibir fotografía física.
+- El manifiesto vigente está en `/public/catalogo-generated-branded/manifest.json`; los controles se ejecutan con `npm run catalog:brand-generated-images:check`, `npm run catalog:gti-images:check` y `npm run catalog:gti-images:integrity`.
 
 ## Fuentes técnicas consultadas
 

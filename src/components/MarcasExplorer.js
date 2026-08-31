@@ -188,11 +188,11 @@ const ALL_BRANDS = [
   {
     name: "GTI Autoparts",
     slug: "gti",
-    logo: "/catalogo-gti/gti-linea-homocinetica-rembert.webp",
+    logo: "/brands/gti-product-logo-capsule.svg",
     category: "repuestos",
     categoryLabel: "Tracción y Homocinéticas",
-    models: "Ejes, juntas homocinéticas y tricetas",
-    count: 51,
+    models: "Ejes, juntas homocinéticas, tulipas, tricetas y guardapolvos",
+    count: 464,
     highlight: true,
   },
   {
@@ -218,11 +218,11 @@ const ALL_BRANDS = [
   {
     name: "ADS Componentes",
     slug: "ads",
-    logo: "/catalogo-ads/ads-51750-1j000-bocin-delantero-abs-kia-hyundai.webp",
+    logo: "/brands/ads-product-logo-blue-catalog.png",
     category: "repuestos",
-    categoryLabel: "Bocines y Dirección",
-    models: "Bocines de rueda ABS y cajas de dirección",
-    count: 7,
+    categoryLabel: "Dirección, Suspensión y Soportes",
+    models: "Bocines, dirección, suspensión, soportes y actuadores",
+    count: 12,
   },
   {
     name: "Dynamik",

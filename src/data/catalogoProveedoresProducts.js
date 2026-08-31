@@ -2,10 +2,16 @@ import { dynamikSupplementRefs, dynamikLaminaExistingSkus, dynamikLaminaRefs } f
 import { dynamikBrakeCoverageRefs } from "./dynamikBrakeCoverageRefs.js";
 import { dynamikOfficialNewRefs } from "./dynamikOfficialNewRefs.js";
 import { dynamikCiosaCompleteProducts } from "./dynamikCiosaCompleteProducts.js";
+import { adsGeneratedImageEvidence } from "./adsGeneratedImageEvidence.js";
 
 const catalogImage = (file) => `/catalogo-proveedores/${file}`;
 const tnkImage = (file) => `/catalogo-tnk/${file}`;
 const adsImage = (file) => `/catalogo-ads/${file}`;
+const adsGeneratedImage = (sku) => {
+  const evidence = adsGeneratedImageEvidence[String(sku).toUpperCase().replace(/[^A-Z0-9]/g, "")];
+  if (!evidence?.generatedAsset) throw new Error(`Falta evidencia de imagen generada ADS para ${sku}`);
+  return evidence.generatedAsset;
+};
 const alfaImage = (file) => `/catalogo-alfa/${file}`;
 const dynamikImage = (file) => `/catalogo-dynamik/${file}`;
 
@@ -1174,8 +1180,8 @@ export const catalogoProveedoresProducts = [
     fitmentSource: "Cruces OE consultados identifican 9833753380 como brazo de suspensión delantero izquierdo del Peugeot 208 nuevo/P21. El gráfico ADS aportado confirma la referencia comercial, pero no sustituye la validación por VIN.",
     shortDesc: "Tijera inferior izquierda ADS 9833753380 para Peugeot 208 nuevo/P21 · cotización con VIN.",
     description: "Tijera o brazo de suspensión delantero inferior izquierdo ADS 9833753380 para Peugeot 208 nuevo/P21. Confirmar VIN, año, motorización, lado y geometría antes de cotizar o despachar.",
-    image: adsImage("ads-peugeot-9833753380-9833753280-referencia.webp"),
-    images: [{ url: adsImage("ads-9833753380-tijera-inferior-izquierda-peugeot-208-referencial.png"), alt: "Recreación digital referencial de tijera inferior izquierda ADS 9833753380", isMain: true }],
+    image: adsGeneratedImage("9833753380"),
+    images: [{ url: adsGeneratedImage("9833753380"), alt: "Recreación digital referencial de tijera inferior izquierda ADS 9833753380", isMain: true }],
     imageStatus: "generated-reference-image", imageDisclosure: "Recreación digital referencial de la pieza; confirmar referencia física.",
     attributes: [
       { id: "ads-9833753380-ref", name: "Referencia", value: "9833753380" },
@@ -1197,8 +1203,8 @@ export const catalogoProveedoresProducts = [
     fitmentSource: "Cruces OE consultados identifican 9833753280 como brazo de suspensión delantero derecho del Peugeot 208 nuevo/P21. El gráfico ADS aportado confirma la referencia comercial, pero no sustituye la validación por VIN.",
     shortDesc: "Tijera inferior derecha ADS 9833753280 para Peugeot 208 nuevo/P21 · cotización con VIN.",
     description: "Tijera o brazo de suspensión delantero inferior derecho ADS 9833753280 para Peugeot 208 nuevo/P21. Confirmar VIN, año, motorización, lado y geometría antes de cotizar o despachar.",
-    image: adsImage("ads-peugeot-9833753380-9833753280-referencia.webp"),
-    images: [{ url: adsImage("ads-9833753280-tijera-inferior-derecha-peugeot-208-referencial.png"), alt: "Recreación digital referencial de tijera inferior derecha ADS 9833753280", isMain: true }],
+    image: adsGeneratedImage("9833753280"),
+    images: [{ url: adsGeneratedImage("9833753280"), alt: "Recreación digital referencial de tijera inferior derecha ADS 9833753280", isMain: true }],
     imageStatus: "generated-reference-image", imageDisclosure: "Recreación digital referencial de la pieza; confirmar referencia física.",
     attributes: [
       { id: "ads-9833753280-ref", name: "Referencia", value: "9833753280" },
@@ -1220,8 +1226,8 @@ export const catalogoProveedoresProducts = [
     fitmentSource: "El gráfico ADS aportado indica Peugeot 208 / 2008. Catálogos de cruce OE identifican 9824626380 como rótula inferior, izquierda/derecha, para plataformas PSA; la aplicación exacta se determina por VIN.",
     shortDesc: "Rótula inferior ADS 9824626380 para Peugeot 208 / 2008 · validar por VIN.",
     description: "Rótula de suspensión delantera inferior ADS 9824626380. El gráfico recibido la asocia a Peugeot 208 y 2008, pero existen diferencias por generación y plataforma; confirmar VIN, diámetro del perno y brazo antes de vender.",
-    image: adsImage("ads-rotulas-peugeot-citroen-referencia.webp"),
-    images: [{ url: adsImage("ads-9824626380-rotula-inferior-peugeot-208-2008-referencial.png"), alt: "Recreación digital referencial de rótula inferior ADS 9824626380", isMain: true }],
+    image: adsGeneratedImage("9824626380"),
+    images: [{ url: adsGeneratedImage("9824626380"), alt: "Recreación digital referencial de rótula inferior ADS 9824626380", isMain: true }],
     imageStatus: "generated-reference-image", imageDisclosure: "Recreación digital referencial de la pieza; confirmar referencia física.",
     attributes: [
       { id: "ads-9824626380-ref", name: "Referencia", value: "9824626380" },
@@ -1246,8 +1252,8 @@ export const catalogoProveedoresProducts = [
     fitmentSource: "El gráfico ADS aportado lista Peugeot 2008 y Citroën C3/C3 Aircross. El cruce OE 9802103780 la cataloga como rótula inferior izquierda/derecha en familias PSA; la compatibilidad final requiere VIN.",
     shortDesc: "Rótula inferior ADS 9802103780 · Peugeot 2008 / Citroën C3 Aircross · validar por VIN.",
     description: "Rótula de suspensión delantera inferior ADS 9802103780 para aplicaciones PSA indicadas. Confirmar VIN, año, motor, diámetro de perno y brazo de suspensión antes del despacho.",
-    image: adsImage("ads-rotulas-peugeot-citroen-referencia.webp"),
-    images: [{ url: adsImage("ads-9802103780-rotula-inferior-peugeot-2008-c3-aircross-referencial.png"), alt: "Recreación digital referencial de rótula inferior ADS 9802103780", isMain: true }],
+    image: adsGeneratedImage("9802103780"),
+    images: [{ url: adsGeneratedImage("9802103780"), alt: "Recreación digital referencial de rótula inferior ADS 9802103780", isMain: true }],
     imageStatus: "generated-reference-image", imageDisclosure: "Recreación digital referencial de la pieza; confirmar referencia física.",
     attributes: [
       { id: "ads-9802103780-ref", name: "Referencia", value: "9802103780" },
@@ -1272,8 +1278,8 @@ export const catalogoProveedoresProducts = [
     fitmentSource: "El gráfico ADS aportado lista Peugeot 208, Citroën C3 y C4 Cactus. Catálogos técnicos cruzan 364077 como rótula delantera inferior izquierda/derecha, con perno de 18 mm en aplicaciones C4 Cactus; validar el vehículo específico por VIN.",
     shortDesc: "Rótula inferior ADS 364077 · Peugeot/Citroën · confirmar VIN y perno de 18 mm.",
     description: "Rótula de suspensión delantera inferior ADS 364077 para familias Peugeot/Citroën indicadas. Confirmar por VIN, año, brazo y diámetro de perno (18 mm en el cruce técnico consultado) antes del despacho.",
-    image: adsImage("ads-rotulas-peugeot-citroen-referencia.webp"),
-    images: [{ url: adsImage("ads-364077-rotula-inferior-peugeot-citroen-referencial.png"), alt: "Recreación digital referencial de rótula inferior ADS 364077", isMain: true }],
+    image: adsGeneratedImage("364077"),
+    images: [{ url: adsGeneratedImage("364077"), alt: "Recreación digital referencial de rótula inferior ADS 364077", isMain: true }],
     imageStatus: "generated-reference-image", imageDisclosure: "Recreación digital referencial de la pieza; confirmar referencia física.",
     attributes: [
       { id: "ads-364077-ref", name: "Referencia", value: "364077" },
@@ -1284,19 +1290,19 @@ export const catalogoProveedoresProducts = [
   {
     id: "ads-184441-soporte-hidraulico-peugeot",
     slug: "ads-184441-soporte-hidraulico-peugeot",
-    name: "Soporte Hidráulico ADS 184441 — Peugeot",
+    name: "Soporte de Motor ADS 184441 — Aplicación PSA/Fiat por confirmar",
     category: { name: "Soportes, Retenedores y Guayas", slug: "soportes-retenedores-y-guayas" },
     brand: { name: "ADS", slug: "ads" },
     price: 0, stock: 0, inStock: false, catalogApproval: "explicit-batch",
     sku: "184441", referenceType: "manufacturer", fitmentStatus: "conditional",
-    fitments: [{ make: "Peugeot", model: "Aplicación por VIN", engine: "por confirmar", years: "por confirmar", position: "Soporte hidráulico · posición por confirmar" }],
-    fitmentSummary: "ADS 184441: soporte hidráulico Peugeot. La imagen aportada no informa una aplicación única; vender solo con VIN y muestra física.",
+    fitments: [{ make: "Peugeot / Citroën / Fiat", model: "Aplicación por VIN", engine: "por confirmar", years: "por confirmar", position: "Soporte de motor/transmisión · posición por confirmar" }],
+    fitmentSummary: "ADS 184441: soporte de motor/transmisión de caucho-metal. Los cruces OE no bastan para fijar vehículo ni posición; vender sólo con VIN y comparación física.",
     fitmentRequirements: ["VIN", "motor", "año", "posición de montaje", "altura", "patrón de pernos"],
-    fitmentSource: "El gráfico ADS aportado identifica 184441 como soporte hidráulico. Los cruces disponibles muestran aplicaciones PSA históricas diversas, por lo que no se publica un modelo único sin VIN.",
-    shortDesc: "Soporte hidráulico ADS 184441 para Peugeot · identificación obligatoria por VIN.",
-    description: "Soporte hidráulico ADS 184441. La forma y el número no bastan para asignar vehículo o lado: confirmar VIN, motor, posición, altura y patrón de pernos antes de cotizar.",
-    image: adsImage("ads-soportes-hidraulicos-peugeot-referencia.webp"),
-    images: [{ url: adsImage("ads-184441-soporte-hidraulico-peugeot-referencial.png"), alt: "Recreación digital referencial de soporte hidráulico ADS 184441", isMain: true }],
+    fitmentSource: "El gráfico ADS aportado identifica 184441 como soporte. Spareto cruza el OE 184441 con soportes de motor/transmisión de caucho-metal y proveedores especializados lo asocian a familias PSA/Fiat históricas; la aplicación final exige VIN y muestra física.",
+    shortDesc: "Soporte de motor/transmisión ADS 184441 · identificación obligatoria por VIN y muestra.",
+    description: "Soporte de motor/transmisión ADS 184441. Se eliminó la clasificación hidráulica no demostrada: confirmar VIN, motor, posición, diámetro, altura y patrón de fijación antes de cotizar.",
+    image: adsGeneratedImage("184441"),
+    images: [{ url: adsGeneratedImage("184441"), alt: "Recreación digital referencial de soporte de motor/transmisión ADS 184441", isMain: true }],
     imageStatus: "generated-reference-image", imageDisclosure: "Recreación digital referencial de la pieza; confirmar referencia física.",
     attributes: [
       { id: "ads-184441-ref", name: "Referencia", value: "184441" },
@@ -1306,23 +1312,23 @@ export const catalogoProveedoresProducts = [
   {
     id: "ads-184442-soporte-hidraulico-peugeot-citroen",
     slug: "ads-184442-soporte-hidraulico-peugeot-citroen",
-    name: "Soporte Hidráulico ADS 184442 — Peugeot / Citroën",
+    name: "Soporte de Motor Derecho ADS 184442 — Peugeot / Citroën",
     category: { name: "Soportes, Retenedores y Guayas", slug: "soportes-retenedores-y-guayas" },
     brand: { name: "ADS", slug: "ads" },
     price: 0, stock: 0, inStock: false, catalogApproval: "explicit-batch",
     sku: "184442", referenceType: "manufacturer", fitmentStatus: "conditional",
-    fitments: [{ make: "Peugeot / Citroën", model: "Familias PSA con soporte 184442", engine: "según motor", years: "confirmar VIN", position: "Soporte hidráulico · derecho/lado distribución según cruce" }],
-    fitmentSummary: "ADS 184442: soporte hidráulico compacto para aplicaciones PSA. Confirmar VIN, motor y posición; no cotizar por apariencia.",
+    fitments: [{ make: "Peugeot / Citroën", model: "Familias PSA con soporte 184442", engine: "según motor", years: "confirmar VIN", position: "Soporte de motor · derecho/lado distribución según cruce" }],
+    fitmentSummary: "ADS 184442: soporte de motor derecho para aplicaciones PSA. La construcción hidráulica o caucho-metal cambia según fabricante del cruce; confirmar VIN, motor y geometría.",
     fitmentRequirements: ["VIN", "modelo", "motor", "lado distribución/derecho", "altura", "patrón de pernos"],
-    fitmentSource: "El gráfico ADS aportado identifica 184442 como soporte hidráulico compacto. Cruces OE lo asocian a soporte hidráulico derecho/lado distribución en varias aplicaciones Peugeot/Citroën; confirmar VIN antes del despacho.",
-    shortDesc: "Soporte hidráulico ADS 184442 para Peugeot/Citroën · validar posición y VIN.",
-    description: "Soporte hidráulico ADS 184442 para aplicaciones PSA. Aunque los cruces lo sitúan normalmente al lado derecho/de distribución, pueden variar por motor y plataforma; confirmar VIN, motor, altura y pernos antes de vender.",
-    image: adsImage("ads-soportes-hidraulicos-peugeot-referencia.webp"),
-    images: [{ url: adsImage("ads-184442-soporte-hidraulico-peugeot-citroen-referencial.png"), alt: "Recreación digital referencial de soporte hidráulico ADS 184442", isMain: true }],
+    fitmentSource: "Spareto y AUTODOC cruzan 184442 con soportes de motor derechos para Peugeot/Citroën; existen variantes de caucho-metal e hidráulicas según fabricante, por lo que la referencia ADS debe validarse por VIN y geometría física.",
+    shortDesc: "Soporte de motor derecho ADS 184442 para Peugeot/Citroën · validar tipo, posición y VIN.",
+    description: "Soporte de motor ADS 184442 para aplicaciones PSA, normalmente derecho/lado distribución según cruce. Confirmar VIN, motor, tipo constructivo, altura, rosca y patrón de fijación antes de vender.",
+    image: adsGeneratedImage("184442"),
+    images: [{ url: adsGeneratedImage("184442"), alt: "Recreación digital referencial de soporte de motor derecho ADS 184442", isMain: true }],
     imageStatus: "generated-reference-image", imageDisclosure: "Recreación digital referencial de la pieza; confirmar referencia física.",
     attributes: [
       { id: "ads-184442-ref", name: "Referencia", value: "184442" },
-      { id: "ads-184442-position", name: "Cruce orientativo", value: "Soporte hidráulico derecho / lado distribución · confirmar VIN" },
+      { id: "ads-184442-position", name: "Cruce orientativo", value: "Soporte de motor derecho / lado distribución · tipo constructivo por confirmar" },
       { id: "ads-184442-validation", name: "Validación", value: "VIN, motor, posición, altura y pernos" },
     ],
   },

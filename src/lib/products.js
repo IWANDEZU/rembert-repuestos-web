@@ -15,6 +15,11 @@ import { gtiProducts } from "../data/gtiProducts.js";
 import { gtiQuoteCatalogProducts } from "../data/gtiQuoteCatalogProducts.js";
 import { motorcraftProducts } from "../data/motorcraftProducts.js";
 import { productImageOverrides } from "../data/productImageOverrides.js";
+import {
+  GENERATED_IMAGE_BRANDS,
+  isGeneratedImageOverrideCompatible,
+  productBrandSlug,
+} from "./generatedImageEvidence.js";
 import priorityCatalog from "../data/catalogo-prioridad-diesel.json" with { type: "json" };
 
 const toCatalogSlug = (value) => String(value || "producto")
@@ -1266,7 +1271,28 @@ const consolidateCatalogProducts = (catalog) => {
 const applyRealImageOverride = (product) => {
   const override = productImageOverrides[normalizeInventoryCode(product.sku)]
     || productImageOverrides[normalizeInventoryCode(product.manufacturerReference)];
-  if (!override) return product;
+  const brandSlug = productBrandSlug(product);
+  const generatedImageRequiresEvidence = GENERATED_IMAGE_BRANDS.has(brandSlug)
+    && product.imageStatus === "generated-reference-image";
+  const withoutUnverifiedGeneratedImage = () => ({
+    ...product,
+    image: null,
+    images: [],
+    imageStatus: "pending-real-photo",
+    imageDisclosure: "Foto real pendiente de validación.",
+  });
+
+  if (!override) {
+    return generatedImageRequiresEvidence ? withoutUnverifiedGeneratedImage() : product;
+  }
+
+  if (
+    override.imageStatus === "generated-reference-image"
+    && !isGeneratedImageOverrideCompatible(product, override)
+  ) {
+    return withoutUnverifiedGeneratedImage();
+  }
+
   const hasAuthenticPhotoOverride = ["real-source-photo", "real-source-watermarked", "authentic-product-photo", "exact-real-photo"]
     .includes(override.imageStatus);
   const description = hasAuthenticPhotoOverride

@@ -374,7 +374,7 @@ export default async function Home() {
 
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '0.35rem', width: '100%', marginTop: 'auto' }}>
                   <Link
-                    href={`/catalogo?search=${brand.query}`}
+                    href={`/catalogo?make=${brand.name.toLowerCase()}`}
                     style={{
                       background: 'var(--primary-color)',
                       color: '#111111',

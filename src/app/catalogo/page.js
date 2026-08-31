@@ -4,6 +4,7 @@ import { redirect } from "next/navigation";
 import CatalogGridWithModal from "@/components/CatalogGridWithModal";
 import CatalogPagination from "@/components/CatalogPagination";
 import CatalogSidebar from "@/components/CatalogSidebar";
+import VehicleFilterSelector from "@/components/VehicleFilterSelector";
 import VerkePriorityShowcase from "@/components/VerkePriorityShowcase";
 import RowenPriorityShowcase from "@/components/RowenPriorityShowcase";
 import { buildCatalogHref } from "@/lib/catalogUtils";
@@ -11,6 +12,7 @@ import { siteUrl } from "@/lib/site";
 import { products as fallbackCatalogProducts } from "@/lib/products";
 import { inventoryLineSummary } from "@/data/inventoryProducts";
 import { searchAndRankProducts, cleanText } from "@/lib/searchEngine";
+import { filterProductsByVehicle } from "@/lib/vehicleIndex";
 
 // El catálogo es público. La autenticación de favoritos se resuelve en el
 // cliente para no ejecutar Supabase + Prisma durante cada visita anónima.
@@ -317,7 +319,7 @@ function getPageNumber(value) {
   return Number.isSafeInteger(page) && page > 0 ? page : 1;
 }
 
-function filterFallbackCatalog({ categoryParam, brandParam, tipoParam, lineParam, vehicleParam, partParam, searchQuery }) {
+function filterFallbackCatalog({ categoryParam, brandParam, tipoParam, lineParam, makeParam, modelParam, vehicleParam, partParam, searchQuery }) {
   let filtered = [...fallbackCatalogProducts];
 
   if (categoryParam === "mantenimiento") {
@@ -407,11 +409,11 @@ function filterFallbackCatalog({ categoryParam, brandParam, tipoParam, lineParam
     filtered = filtered.filter((product) => product.inventoryLine === lineParam);
   }
 
-  if (vehicleParam) {
-    const vehicle = normalizeCatalogText(vehicleParam);
-    filtered = filtered.filter((product) => {
-      const attributes = (product.attributes || []).map((attribute) => `${attribute.name || ""} ${attribute.value || ""}`).join(" ");
-      return normalizeCatalogText(`${product.name} ${product.shortDesc || ""} ${product.description || ""} ${attributes}`).includes(vehicle);
+  if (makeParam || modelParam || vehicleParam) {
+    filtered = filterProductsByVehicle(filtered, {
+      make: makeParam,
+      model: modelParam,
+      vehicle: vehicleParam,
     });
   }
 
@@ -479,6 +481,8 @@ export default async function Catalogo({ searchParams }) {
   const brandParam = resolvedParams?.brand;
   const tipoParam = resolvedParams?.tipo;
   const lineParam = resolvedParams?.line;
+  const makeParam = resolvedParams?.make;
+  const modelParam = resolvedParams?.model;
   const vehicleParam = resolvedParams?.vehicle;
   const partParam = resolvedParams?.part;
   const searchQuery = resolvedParams?.search || resolvedParams?.q;
@@ -495,7 +499,7 @@ export default async function Catalogo({ searchParams }) {
   let gtiAvailabilitySummary = null;
 
   const applyFallbackCatalog = () => {
-    let filtered = filterFallbackCatalog({ categoryParam, brandParam, tipoParam, lineParam, vehicleParam, partParam, searchQuery });
+    let filtered = filterFallbackCatalog({ categoryParam, brandParam, tipoParam, lineParam, makeParam, modelParam, vehicleParam, partParam, searchQuery });
     if (brandParam === "gti") {
       const isAvailable = (product) => Boolean(product.inStock && Number(product.stock) > 0);
       const available = filtered.filter(isAvailable).length;
@@ -529,6 +533,8 @@ export default async function Catalogo({ searchParams }) {
       brand: brandParam,
       tipo: tipoParam,
       line: lineParam,
+      make: makeParam,
+      model: modelParam,
       vehicle: vehicleParam,
       part: partParam,
       search: searchQuery,
@@ -623,33 +629,45 @@ export default async function Catalogo({ searchParams }) {
     page,
   });
 
-  const hasActiveFilters = !!(categoryParam || brandParam || searchQuery || tipoParam || lineParam || vehicleParam || partParam);
+  const hasActiveFilters = !!(categoryParam || brandParam || searchQuery || tipoParam || lineParam || makeParam || modelParam || vehicleParam || partParam);
   const backHref = hasActiveFilters ? "/catalogo" : "/";
 
   const activePills = [];
   if (searchQuery) {
     activePills.push({
       label: `Búsqueda: "${searchQuery}"`,
-      href: buildCatalogHref({ category: categoryParam, brand: brandParam, tipo: tipoParam, line: lineParam, vehicle: vehicleParam, part: partParam, sort: sortParam }),
+      href: buildCatalogHref({ category: categoryParam, brand: brandParam, tipo: tipoParam, line: lineParam, make: makeParam, model: modelParam, vehicle: vehicleParam, part: partParam, sort: sortParam }),
     });
   }
   if (categoryParam) {
     activePills.push({
       label: `Categoría: ${categoryParam}`,
-      href: buildCatalogHref({ brand: brandParam, search: searchQuery, line: lineParam, vehicle: vehicleParam, part: partParam, sort: sortParam }),
+      href: buildCatalogHref({ brand: brandParam, search: searchQuery, line: lineParam, make: makeParam, model: modelParam, vehicle: vehicleParam, part: partParam, sort: sortParam }),
     });
   }
   if (brandParam) {
     const brandName = brands.find((b) => b.slug === brandParam)?.name || brandParam;
     activePills.push({
       label: `Marca: ${brandName}`,
-      href: buildCatalogHref({ category: categoryParam, search: searchQuery, tipo: tipoParam, line: lineParam, vehicle: vehicleParam, part: partParam, sort: sortParam }),
+      href: buildCatalogHref({ category: categoryParam, search: searchQuery, tipo: tipoParam, line: lineParam, make: makeParam, model: modelParam, vehicle: vehicleParam, part: partParam, sort: sortParam }),
     });
   }
   if (lineParam) {
     activePills.push({
       label: `Línea: ${lineParam}`,
-      href: buildCatalogHref({ category: categoryParam, brand: brandParam, search: searchQuery, tipo: tipoParam, vehicle: vehicleParam, part: partParam, sort: sortParam }),
+      href: buildCatalogHref({ category: categoryParam, brand: brandParam, search: searchQuery, tipo: tipoParam, make: makeParam, model: modelParam, vehicle: vehicleParam, part: partParam, sort: sortParam }),
+    });
+  }
+  if (makeParam) {
+    activePills.push({
+      label: `Auto Marca: ${makeParam}`,
+      href: buildCatalogHref({ category: categoryParam, brand: brandParam, search: searchQuery, tipo: tipoParam, line: lineParam, model: modelParam, vehicle: vehicleParam, part: partParam, sort: sortParam }),
+    });
+  }
+  if (modelParam) {
+    activePills.push({
+      label: `Auto Modelo: ${modelParam}`,
+      href: buildCatalogHref({ category: categoryParam, brand: brandParam, search: searchQuery, tipo: tipoParam, line: lineParam, make: makeParam, vehicle: vehicleParam, part: partParam, sort: sortParam }),
     });
   }
   if (vehicleParam) {
@@ -661,7 +679,7 @@ export default async function Catalogo({ searchParams }) {
   if (partParam) {
     activePills.push({
       label: `Repuesto: ${partParam.replace(/-/g, " ")}`,
-      href: buildCatalogHref({ category: categoryParam, brand: brandParam, search: searchQuery, tipo: tipoParam, line: lineParam, vehicle: vehicleParam, sort: sortParam }),
+      href: buildCatalogHref({ category: categoryParam, brand: brandParam, search: searchQuery, tipo: tipoParam, line: lineParam, make: makeParam, model: modelParam, vehicle: vehicleParam, sort: sortParam }),
     });
   }
 
@@ -723,6 +741,8 @@ export default async function Catalogo({ searchParams }) {
         brandParam={brandParam}
         tipoParam={tipoParam}
         lineParam={lineParam}
+        makeParam={makeParam}
+        modelParam={modelParam}
         vehicleParam={vehicleParam}
         partParam={partParam}
         searchQuery={searchQuery}
@@ -733,6 +753,18 @@ export default async function Catalogo({ searchParams }) {
           <h1>{bannerTitle}</h1>
           <p>{bannerSubtitle}</p>
         </header>
+
+        {/* Selector Dinámico de Marca y Modelo de Autos */}
+        <VehicleFilterSelector
+          activeMake={makeParam}
+          activeModel={modelParam}
+          activeVehicle={vehicleParam}
+          categoryParam={categoryParam}
+          brandParam={brandParam}
+          tipoParam={tipoParam}
+          lineParam={lineParam}
+          sortParam={sortParam}
+        />
 
         {categoryParam === "electrico-y-encendido" && !brandParam && !searchQuery && (
           <section
@@ -903,6 +935,8 @@ export default async function Catalogo({ searchParams }) {
             {brandParam && <input type="hidden" name="brand" value={brandParam} />}
             {tipoParam && <input type="hidden" name="tipo" value={tipoParam} />}
             {lineParam && <input type="hidden" name="line" value={lineParam} />}
+            {makeParam && <input type="hidden" name="make" value={makeParam} />}
+            {modelParam && <input type="hidden" name="model" value={modelParam} />}
             {vehicleParam && <input type="hidden" name="vehicle" value={vehicleParam} />}
             {partParam && <input type="hidden" name="part" value={partParam} />}
             {searchQuery && <input type="hidden" name="search" value={searchQuery} />}
@@ -927,6 +961,8 @@ export default async function Catalogo({ searchParams }) {
               brand: brandParam,
               tipo: tipoParam,
               line: lineParam,
+              make: makeParam,
+              model: modelParam,
               vehicle: vehicleParam,
               part: partParam,
               search: searchQuery,

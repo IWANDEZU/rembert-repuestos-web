@@ -2,6 +2,7 @@ import Link from "next/link";
 import { buildCatalogHref } from "@/lib/catalogUtils";
 import { products as fallbackCatalogProducts } from "@/lib/products";
 import { inventoryLineSummary } from "@/data/inventoryProducts";
+import { VEHICLE_MAKES } from "@/lib/vehicleIndex";
 
 function getFallbackBrands() {
   const brandMap = new Map();
@@ -39,6 +40,8 @@ export default function CatalogSidebar({
   brandParam,
   tipoParam,
   lineParam,
+  makeParam,
+  modelParam,
   vehicleParam,
   partParam,
   searchQuery,
@@ -46,9 +49,16 @@ export default function CatalogSidebar({
 }) {
   const brands = getFallbackBrands();
 
-  const categoryHref = (category, tipo) => buildCatalogHref({ category, tipo, search: searchQuery, sort: sortParam });
+  const categoryHref = (category, tipo) => buildCatalogHref({
+    category,
+    tipo,
+    make: makeParam,
+    model: modelParam,
+    search: searchQuery,
+    sort: sortParam,
+  });
 
-  const hasActiveFilters = !!(categoryParam || brandParam || searchQuery || tipoParam || lineParam || vehicleParam || partParam);
+  const hasActiveFilters = !!(categoryParam || brandParam || searchQuery || tipoParam || lineParam || makeParam || modelParam || vehicleParam || partParam);
   const backHref = hasActiveFilters ? "/catalogo" : "/";
 
   return (
@@ -127,7 +137,33 @@ export default function CatalogSidebar({
             </ul>
           </details>
 
-          <h2 className="catalog-sidebar__title">Marca</h2>
+          <details className="catalog-lines" open={Boolean(makeParam)}>
+            <summary className="catalog-sidebar__title">Marcas de Auto</summary>
+            <ul className="catalog-brand-list">
+              {VEHICLE_MAKES.map((vMake) => {
+                const active = makeParam === vMake.slug;
+                const href = buildCatalogHref({
+                  category: categoryParam,
+                  brand: brandParam,
+                  tipo: tipoParam,
+                  line: lineParam,
+                  make: active ? undefined : vMake.slug,
+                  search: searchQuery,
+                  sort: sortParam,
+                });
+                return (
+                  <li key={vMake.slug}>
+                    <Link href={href} className={`catalog-brand-link ${active ? "is-active" : ""}`} aria-current={active ? "page" : undefined}>
+                      <span className="catalog-brand-link__marker" aria-hidden="true" />
+                      <span>{vMake.name}</span>
+                    </Link>
+                  </li>
+                );
+              })}
+            </ul>
+          </details>
+
+          <h2 className="catalog-sidebar__title">Marca de Repuesto</h2>
           <ul className="catalog-brand-list">
             {brands.map((brand) => {
               const active = brandParam === brand.slug;

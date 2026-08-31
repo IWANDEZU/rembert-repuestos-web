@@ -23,6 +23,23 @@ const GENERATED_STATUSES = new Set([
   "generated-product-reference",
   "generated-reference-image",
 ]);
+const OWNER_SOURCE_TYPES = new Set([
+  "owner-photo",
+  "first-party-photo",
+  "in-house-photo",
+  "rembert-photo",
+]);
+const MANUFACTURER_SOURCE_TYPES = new Set([
+  "manufacturer",
+  "manufacturer-catalog",
+  "official-manufacturer",
+]);
+const SUPPLIER_SOURCE_TYPES = new Set([
+  "supplier",
+  "supplier-catalog",
+  "authorized-distributor",
+  "distributor",
+]);
 
 type LegacyProduct = (typeof products)[number] & Record<string, unknown>;
 
@@ -32,28 +49,112 @@ function cleanObject(value: unknown): Record<string, unknown> {
     : {};
 }
 
-function imageProvenance(status: string) {
-  if (GENERATED_STATUSES.has(status)) {
+function normalizedValue(value: unknown): string {
+  return String(value || "").trim().toLowerCase();
+}
+
+function firstHttpsUrl(...values: unknown[]): string | undefined {
+  for (const value of values.flat()) {
+    if (typeof value === "string" && /^https:\/\//i.test(value.trim())) return value.trim();
+  }
+  return undefined;
+}
+
+function sourceUrlFor(product: LegacyProduct, sourceRecord: Record<string, unknown>): string | undefined {
+  const brandTreatment = cleanObject(sourceRecord.brandTreatment);
+  const geometryEvidence = cleanObject(sourceRecord.geometryEvidence);
+  const pages = Array.isArray(sourceRecord.pages) ? sourceRecord.pages : [];
+
+  return firstHttpsUrl(
+    sourceRecord.sourceUrl,
+    sourceRecord.image,
+    sourceRecord.sourceImageUrl,
+    sourceRecord.sourcePageUrl,
+    sourceRecord.referenceUrl,
+    brandTreatment.sourceUrl,
+    brandTreatment.sourceImageUrl,
+    geometryEvidence.sourcePageUrl,
+    geometryEvidence.sourceImageUrl,
+    product.sourceUrl,
+    product.imageReferenceSourceUrl,
+    pages,
+  );
+}
+
+function sourceSha256For(sourceRecord: Record<string, unknown>): string | undefined {
+  const brandTreatment = cleanObject(sourceRecord.brandTreatment);
+  const candidates = [
+    sourceRecord.sourceSha256,
+    sourceRecord.sha256,
+    brandTreatment.sourceSha256,
+  ];
+  const hash = candidates.find((value) => typeof value === "string" && /^[a-f0-9]{64}$/i.test(value));
+  return typeof hash === "string" ? hash.toLowerCase() : undefined;
+}
+
+function hasVerifiedSourceEvidence(sourceRecord: Record<string, unknown>): boolean {
+  return sourceRecord.exactReferenceConfirmed === true
+    && sourceRecord.usageAuthorized === true
+    && typeof sourceRecord.referenceEvidence === "string"
+    && sourceRecord.referenceEvidence.trim().length > 0;
+}
+
+function imageProvenance(
+  status: string,
+  sourceRecord: Record<string, unknown>,
+  sourceUrl?: string,
+) {
+  const sourceType = normalizedValue(sourceRecord.sourceType);
+  const sourceRecordType = normalizedValue(sourceRecord.type);
+  const isGenerated = GENERATED_STATUSES.has(status)
+    || sourceRecordType.includes("generated")
+    || sourceRecord.generationPrompt !== undefined;
+
+  // Structured generation evidence always wins over a legacy status. A branded
+  // render cannot become an owner or supplier photograph during import.
+  if (isGenerated) {
     return { provenance: "GENERATED_REFERENCE", verificationStatus: "GENERATED_REFERENCE" } as const;
   }
-  if (REAL_STATUSES.has(status)) {
+
+  const verified = hasVerifiedSourceEvidence(sourceRecord);
+  if (OWNER_SOURCE_TYPES.has(sourceType) && verified) {
     return { provenance: "OWNER_PHOTO", verificationStatus: "VERIFIED_REAL" } as const;
+  }
+  if (MANUFACTURER_SOURCE_TYPES.has(sourceType)) {
+    return {
+      provenance: "MANUFACTURER",
+      verificationStatus: verified ? "VERIFIED_REAL" : "PENDING",
+    } as const;
+  }
+  if (SUPPLIER_SOURCE_TYPES.has(sourceType)) {
+    return {
+      provenance: "SUPPLIER",
+      verificationStatus: verified ? "VERIFIED_REAL" : "PENDING",
+    } as const;
+  }
+
+  if (status === "manufacturer-exact") {
+    return { provenance: "MANUFACTURER", verificationStatus: "PENDING" } as const;
+  }
+
+  // A web URL is source evidence, but not proof that REMBERT owns the image or
+  // that a visible product is the exact SKU. Keep it pending unless the
+  // structured record above establishes both identity and authorization.
+  if (sourceUrl || status === "source-grounded-web-image") {
+    return { provenance: "VERIFIED_WEB_SOURCE", verificationStatus: "PENDING" } as const;
+  }
+  if (REAL_STATUSES.has(status)) {
+    return { provenance: "UNKNOWN", verificationStatus: "PENDING" } as const;
   }
   return { provenance: "CATEGORY_REFERENCE", verificationStatus: "PENDING" } as const;
 }
 
 function normalizeLegacyProduct(product: LegacyProduct): CatalogProductInput {
   const status = String(product.imageStatus || "PENDING");
-  const provenance = imageProvenance(status);
   const sourceRecord = cleanObject(product.sourceRecord);
-  const sourceUrl =
-    typeof sourceRecord.image === "string" && /^https:\/\//i.test(sourceRecord.image)
-      ? sourceRecord.image
-      : undefined;
-  const sourceSha256 =
-    typeof sourceRecord.sha256 === "string" && /^[a-f0-9]{64}$/i.test(sourceRecord.sha256)
-      ? sourceRecord.sha256.toLowerCase()
-      : undefined;
+  const sourceUrl = sourceUrlFor(product, sourceRecord);
+  const sourceSha256 = sourceSha256For(sourceRecord);
+  const provenance = imageProvenance(status, sourceRecord, sourceUrl);
   const rawImages: unknown[] = Array.isArray(product.images) && product.images.length
     ? (product.images as unknown[])
     : product.image
