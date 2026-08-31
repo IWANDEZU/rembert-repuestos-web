@@ -118,17 +118,17 @@ export default function HeroMediaShowcase() {
         maxWidth: "660px",
         height: "585px",
         margin: "0 auto",
-        borderRadius: "20px",
+        borderRadius: "24px",
         overflow: "hidden",
-        background: "transparent",
+        background: "rgba(10, 10, 10, 0.2)",
         border: "none",
         outline: "none",
-        boxShadow: "none",
+        boxShadow: "0 0 70px 35px rgba(10, 10, 10, 0.95), 0 0 130px 65px rgba(10, 10, 10, 0.85)",
         display: "flex",
         flexDirection: "column",
       }}
     >
-      {/* Contenedor del Medio (Video o Imagen) con difuminado negro */}
+      {/* Contenedor del Medio (Video o Imagen) */}
       <div style={{ position: "relative", width: "100%", flex: 1, overflow: "hidden", background: "transparent" }}>
         {currentItem.type === "video" ? (
           <video
@@ -161,7 +161,7 @@ export default function HeroMediaShowcase() {
           />
         )}
 
-        {/* Capa de Difuminado Negro Profundo (Vignette ajustado a los límites exteriores) */}
+        {/* Capa de Difuminado Negro Perimetral */}
         <div
           aria-hidden="true"
           style={{
@@ -169,8 +169,8 @@ export default function HeroMediaShowcase() {
             inset: 0,
             zIndex: 4,
             pointerEvents: "none",
-            background: "radial-gradient(ellipse at center, transparent 48%, rgba(10, 10, 10, 0.4) 75%, rgba(10, 10, 10, 0.98) 100%)",
-            boxShadow: "inset 0 0 45px 25px #0a0a0a, inset 0 0 90px 48px rgba(10, 10, 10, 0.85)",
+            background: "radial-gradient(ellipse at center, transparent 55%, rgba(10, 10, 10, 0.35) 80%, rgba(10, 10, 10, 0.95) 100%)",
+            boxShadow: "inset 0 0 40px 20px #0a0a0a, inset 0 0 80px 40px rgba(10, 10, 10, 0.8)",
           }}
         />
 

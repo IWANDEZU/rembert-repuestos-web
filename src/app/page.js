@@ -119,9 +119,24 @@ export default async function Home() {
             </div>
           </div>
 
-          {/* Columna Derecha: Zona de Flyers y Videos Automáticos */}
-          <div style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
-            <HeroMediaShowcase />
+          {/* Columna Derecha: Zona de Flyers y Videos Automáticos con Difuminado Externo Amplio */}
+          <div style={{ display: 'flex', justifyContent: 'center', width: '100%', position: 'relative' }}>
+            {/* Halo difuminado negro externo expansivo que se funde con la fachada */}
+            <div
+              aria-hidden="true"
+              style={{
+                position: 'absolute',
+                inset: '-60px -80px',
+                background: 'radial-gradient(ellipse 70% 70% at 50% 50%, rgba(10, 10, 10, 0.98) 25%, rgba(10, 10, 10, 0.75) 60%, rgba(10, 10, 10, 0) 100%)',
+                filter: 'blur(45px)',
+                zIndex: 1,
+                pointerEvents: 'none',
+                borderRadius: '50px',
+              }}
+            />
+            <div style={{ position: 'relative', zIndex: 2, width: '100%', display: 'flex', justifyContent: 'center' }}>
+              <HeroMediaShowcase />
+            </div>
           </div>
         </div>
       </header>
