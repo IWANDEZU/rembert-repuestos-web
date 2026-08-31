@@ -123,7 +123,7 @@ export default function HeroMediaShowcase() {
         background: "rgba(10, 10, 10, 0.2)",
         border: "none",
         outline: "none",
-        boxShadow: "0 0 70px 35px rgba(10, 10, 10, 0.95), 0 0 130px 65px rgba(10, 10, 10, 0.85)",
+        boxShadow: "0 14px 36px rgba(0, 0, 0, 0.42), 0 0 24px rgba(0, 0, 0, 0.24)",
         display: "flex",
         flexDirection: "column",
       }}

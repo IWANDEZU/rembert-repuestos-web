@@ -119,19 +119,19 @@ export default async function Home() {
             </div>
           </div>
 
-          {/* Columna Derecha: Zona de Flyers y Videos Automáticos con Difuminado Externo Amplio */}
+          {/* Columna Derecha: Zona de Flyers y Videos Automáticos con halo exterior sutil */}
           <div style={{ display: 'flex', justifyContent: 'center', width: '100%', position: 'relative' }}>
-            {/* Halo difuminado negro externo expansivo que se funde con la fachada */}
+            {/* El halo queda fuera del contenido para mantener nítida la publicidad. */}
             <div
               aria-hidden="true"
               style={{
                 position: 'absolute',
-                inset: '-80px -100px',
-                background: 'radial-gradient(ellipse 75% 75% at 50% 50%, rgba(10, 10, 10, 0.98) 30%, rgba(10, 10, 10, 0.7) 65%, rgba(10, 10, 10, 0) 100%)',
-                filter: 'blur(55px)',
+                inset: '-32px -44px',
+                background: 'radial-gradient(ellipse 75% 75% at 50% 50%, rgba(10, 10, 10, 0.58) 28%, rgba(10, 10, 10, 0.32) 68%, rgba(10, 10, 10, 0) 100%)',
+                filter: 'blur(18px)',
                 zIndex: 1,
                 pointerEvents: 'none',
-                borderRadius: '60px',
+                borderRadius: '36px',
               }}
             />
             <div style={{ position: 'relative', zIndex: 2, width: '100%', display: 'flex', justifyContent: 'center' }}>

@@ -2913,7 +2913,7 @@ h1, h2, h3, h4 {
     max-width: 100% !important;
     border: none !important;
     outline: none !important;
-    box-shadow: 0 0 50px 25px rgba(10, 10, 10, 0.95) !important;
+    box-shadow: 0 10px 26px rgba(0, 0, 0, 0.38) !important;
   }
 
   .btn-add-to-cart,
